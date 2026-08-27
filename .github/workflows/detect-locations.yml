@@ -35,6 +35,18 @@ jobs:
         with:
           node-version: '20'
 
+      # Diagnostic: can the runner reach GDELT at all, at the plain-curl level,
+      # independent of Node and undici? Never fails the job.
+      - name: Probe GDELT from the runner
+        continue-on-error: true
+        run: |
+          echo "resolving api.gdeltproject.org:"
+          getent hosts api.gdeltproject.org || true
+          curl -sS -m 30 -o /dev/null \
+            -w "curl says: %{http_code}  (connect %{time_connect}s, total %{time_total}s, errno %{errno})\n" \
+            "https://api.gdeltproject.org/api/v2/geo/geo?query=Ukraine&mode=PointData&format=GeoJSON&timespan=3d&maxpoints=5" \
+            || echo "curl failed (exit $?)"
+
       - name: Detect locations
         id: detect
         run: node scripts/detect-locations.mjs

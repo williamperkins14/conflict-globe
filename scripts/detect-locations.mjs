@@ -10,20 +10,27 @@
 // GDELT geocodes MENTIONS, not events. A point here means "several articles
 // about this conflict named this place", nothing stronger.
 //
-// No dependencies. Node 20+ (uses the built-in fetch).
+// No dependencies to install. Node 20+ (built-in fetch; optionally reaches for
+// the bundled undici to lengthen the connect timeout).
 // ---------------------------------------------------------------------------
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { existsSync, appendFileSync } from 'node:fs';
+import dns from 'node:dns';
+
+// api.gdeltproject.org only has an A record, but force IPv4 anyway so a broken
+// IPv6 path on the runner can't get picked first.
+dns.setDefaultResultOrder('ipv4first');
 
 const CONFLICTS_PATH = 'conflicts.json';
 const OUTPUT_PATH = 'auto-locations.json';
 
 const GEO_ENDPOINT = 'https://api.gdeltproject.org/api/v2/geo/geo';
-const REQUEST_TIMEOUT_MS = 20_000;   // GDELT hangs under load; give up and move on
+const REQUEST_TIMEOUT_MS = 45_000;   // whole-request ceiling (AbortController)
+const CONNECT_TIMEOUT_MS = 45_000;   // TCP-connect ceiling (undici's own default is ~10s)
 const GAP_BETWEEN_CONFLICTS_MS = 5_000;
-const ATTEMPTS_PER_CONFLICT = 2;
-const RETRY_PAUSE_MS = 8_000;
+const ATTEMPTS_PER_CONFLICT = 3;
+const RETRY_PAUSE_MS = 15_000;
 
 const MIN_ARTICLES = 3;              // one mention is noise
 const MAX_PER_CONFLICT = 25;
@@ -32,6 +39,25 @@ const EXPIRY_DAYS = 14;              // show the current war, not everything tha
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const todayISO = () => new Date().toISOString().slice(0, 10);
+
+// The failure we keep hitting is UND_ERR_CONNECT_TIMEOUT: undici gives up on
+// the TCP connect after ~10s regardless of any AbortController. undici ships
+// inside Node but is not always importable as a bare specifier; if it is, push
+// the connect timeout out to match CONNECT_TIMEOUT_MS. If it isn't, we just run
+// with the default and the log says so.
+let dispatcherNote = 'node default (connect timeout ~10s)';
+try {
+  const { setGlobalDispatcher, Agent } = await import('undici');
+  setGlobalDispatcher(new Agent({
+    connect: { timeout: CONNECT_TIMEOUT_MS },
+    headersTimeout: REQUEST_TIMEOUT_MS,
+    bodyTimeout: REQUEST_TIMEOUT_MS,
+  }));
+  dispatcherNote = `undici Agent (connect timeout ${CONNECT_TIMEOUT_MS / 1000}s)`;
+} catch (err) {
+  dispatcherNote = `undici not importable (${err.code || err.message}); using node default`;
+}
+console.log(`HTTP dispatcher: ${dispatcherNote}`);
 
 // GEO 2.0's exact property names were unverified when this was written. The
 // first response that actually comes back gets dumped to the log, once, so
