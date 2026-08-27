@@ -83,6 +83,28 @@ Measured directly in the browser, not assumed:
 - Untested, because GDELT started refusing requests: whether `sourcelang:english`
   or `sourcelang:eng` actually works as a query operator.
 
+## Decision: headline cleanup is OFF (27 Aug 2026)
+Chrome ships an on-device language model (`LanguageModel`, reports `available`,
+free, no key, no server). It was wired up to rewrite the clumsy machine
+translations into plain English, tested, and then deliberately switched off
+behind `const HEADLINE_CLEANUP = false` in index.html.
+
+Reason, from measured output: it made headlines read better and made them less
+accurate. "Герань-4", a Geran strike drone, survived translation as
+"Geranium-4" but the rewrite turned it into "an explosion involving a
+geranium". Station gridlock ("колапс") became "a settlement to collapse".
+"Destroyed" softened to "damaged".
+
+Clumsy English warns the reader it is machine output. Fluent English removes
+that warning without removing the errors. Do not re-enable without a way to
+catch this class of failure.
+
+Also tested and rejected: extracting structured event fields (area, target,
+casualties) from headlines. The model did NOT invent casualty figures, it
+correctly returned null every time, because headlines almost never state them.
+It did misread the drone as the target. That format needs ACLED, not a model
+reading headlines.
+
 ## Open editorial question
 Should the feed show local-language sources (most relevant, unreadable to most
 visitors) or English only (readable, much thinner)? Not decided.
