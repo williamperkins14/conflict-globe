@@ -1,54 +1,472 @@
 [
   {
-    "name": "Kyiv, Ukraine",
+    "id": "ukraine",
+    "bbox": [44, 56, 22, 46],
+    "name": "Russia-Ukraine war",
     "type": "Interstate war",
-    "updated": "2026-08-25",
-    "lat": 50.4501, "lng": 30.5234, "intensity": 0.9,
-    "query": "(Kyiv OR Kiev)",
-    "match": ["Kyiv", "Kiev"],
-    "summary": "Kyiv was Russia's first objective of the invasion. Troops advancing from Belarus reached the northern suburbs in February 2022 but failed to take the city and withdrew on 2 April, leaving mass killings of civilians behind them in Bucha and Irpin. The capital has faced no ground threat since, but is struck regularly by missiles and drones.",
-    "sources": [
-      { "label": "Whatever you want the link to say", "url": "https://..." }
+    "updated": "2026-08-27",
+    "lat": 49.0,
+    "lng": 32.0,
+    "intensity": 1.0,
+    "query": "Ukraine",
+    "match": [
+      "Ukraine",
+      "Ukrainian"
+    ],
+    "summary": "",
+    "sources": [],
+    "locations": [
+      {
+        "name": "Kyiv",
+        "lat": 50.4501,
+        "lng": 30.5234,
+        "intensity": 0.9,
+        "query": "(Kyiv OR Kiev)",
+        "match": [
+          "Kyiv",
+          "Kiev",
+          "Київ",
+          "Киев"
+        ],
+        "summary": "Kyiv was Russia's first objective of the invasion. Troops advancing from Belarus reached the northern suburbs in February 2022 but failed to take the city and withdrew on 2 April, leaving mass killings of civilians behind them in Bucha and Irpin. The capital has faced no ground threat since, but is struck regularly by missiles and drones.",
+        "sources": []
+      },
+      {
+        "name": "Kharkiv",
+        "lat": 49.9935,
+        "lng": 36.2304,
+        "intensity": 0.8,
+        "query": "(Kharkiv OR Kharkov)",
+        "match": [
+          "Kharkiv",
+          "Kharkov",
+          "Харків"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Pokrovsk",
+        "lat": 48.2811,
+        "lng": 37.1761,
+        "intensity": 0.9,
+        "query": "Pokrovsk",
+        "match": [
+          "Pokrovsk",
+          "Покровськ"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Donetsk",
+        "lat": 48.0159,
+        "lng": 37.8028,
+        "intensity": 0.8,
+        "query": "Donetsk",
+        "match": [
+          "Donetsk",
+          "Донецьк",
+          "Донецк"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Mariupol",
+        "lat": 47.0951,
+        "lng": 37.5413,
+        "intensity": 0.5,
+        "query": "Mariupol",
+        "match": [
+          "Mariupol",
+          "Маріуполь"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Zaporizhzhia",
+        "lat": 47.8388,
+        "lng": 35.1396,
+        "intensity": 0.7,
+        "query": "Zaporizhzhia",
+        "match": [
+          "Zaporizhzhia",
+          "Zaporizhia",
+          "Запоріжжя"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Kherson",
+        "lat": 46.6354,
+        "lng": 32.6169,
+        "intensity": 0.7,
+        "query": "Kherson",
+        "match": [
+          "Kherson",
+          "Херсон"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Odesa",
+        "lat": 46.4825,
+        "lng": 30.7233,
+        "intensity": 0.6,
+        "query": "(Odesa OR Odessa)",
+        "match": [
+          "Odesa",
+          "Odessa",
+          "Одеса"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Sumy",
+        "lat": 50.9077,
+        "lng": 34.7981,
+        "intensity": 0.6,
+        "query": "Sumy",
+        "match": [
+          "Sumy",
+          "Суми"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Dnipro",
+        "lat": 48.4647,
+        "lng": 35.0462,
+        "intensity": 0.5,
+        "query": "Dnipro",
+        "match": [
+          "Dnipro",
+          "Дніпро"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Belgorod",
+        "lat": 50.5977,
+        "lng": 36.5858,
+        "intensity": 0.4,
+        "query": "Belgorod",
+        "match": [
+          "Belgorod",
+          "Белгород"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Kursk",
+        "lat": 51.7373,
+        "lng": 36.1874,
+        "intensity": 0.5,
+        "query": "Kursk",
+        "match": [
+          "Kursk",
+          "Курск"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173,
+        "intensity": 0.3,
+        "query": "Moscow drone",
+        "match": [
+          "Moscow",
+          "Москва"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Novorossiysk",
+        "lat": 44.7239,
+        "lng": 37.7683,
+        "intensity": 0.3,
+        "query": "Novorossiysk",
+        "match": [
+          "Novorossiysk",
+          "Новороссийск"
+        ],
+        "summary": "",
+        "sources": []
+      }
     ]
   },
   {
-    "name": "Khartoum, Sudan",
+    "id": "sudan",
+    "bbox": [8, 23, 21, 39],
+    "name": "Sudan civil war",
     "type": "Civil war",
-    "updated": "2026-08-25",
-    "lat": 15.5007, "lng": 32.5599, "intensity": 0.8,
-    "query": "(Khartoum OR Sudan)",
-    "match": ["Khartoum", "Sudan"],
-    "summary": "PLACEHOLDER. Write two or three sentences here.",
-    "sources": []
+    "updated": "2026-08-27",
+    "lat": 15.0,
+    "lng": 30.0,
+    "intensity": 0.9,
+    "query": "Sudan",
+    "match": [
+      "Sudan",
+      "Sudanese"
+    ],
+    "summary": "",
+    "sources": [],
+    "locations": [
+      {
+        "name": "Khartoum",
+        "lat": 15.5007,
+        "lng": 32.5599,
+        "intensity": 0.8,
+        "query": "Khartoum",
+        "match": [
+          "Khartoum"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Omdurman",
+        "lat": 15.6445,
+        "lng": 32.4777,
+        "intensity": 0.7,
+        "query": "Omdurman",
+        "match": [
+          "Omdurman"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "El Fasher",
+        "lat": 13.6279,
+        "lng": 25.3494,
+        "intensity": 0.9,
+        "query": "\"El Fasher\"",
+        "match": [
+          "El Fasher",
+          "Fasher"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Nyala",
+        "lat": 12.0489,
+        "lng": 24.8807,
+        "intensity": 0.6,
+        "query": "Nyala Sudan",
+        "match": [
+          "Nyala"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Port Sudan",
+        "lat": 19.6158,
+        "lng": 37.2164,
+        "intensity": 0.5,
+        "query": "\"Port Sudan\"",
+        "match": [
+          "Port Sudan"
+        ],
+        "summary": "",
+        "sources": []
+      }
+    ]
   },
   {
-    "name": "Gaza City",
+    "id": "gaza",
+    "bbox": [31.0, 31.7, 34.1, 34.6],
+    "name": "Gaza",
     "type": "Armed conflict",
-    "updated": "2026-08-25",
-    "lat": 31.5017, "lng": 34.4668, "intensity": 1.0,
+    "updated": "2026-08-27",
+    "lat": 31.42,
+    "lng": 34.36,
+    "intensity": 1.0,
     "query": "Gaza",
-    "match": ["Gaza"],
-    "summary": "PLACEHOLDER. Write two or three sentences here.",
-    "sources": []
+    "match": [
+      "Gaza"
+    ],
+    "summary": "",
+    "sources": [],
+    "locations": [
+      {
+        "name": "Gaza City",
+        "lat": 31.5017,
+        "lng": 34.4668,
+        "intensity": 0.9,
+        "query": "\"Gaza City\"",
+        "match": [
+          "Gaza City",
+          "Gaza"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Khan Younis",
+        "lat": 31.34,
+        "lng": 34.306,
+        "intensity": 0.8,
+        "query": "\"Khan Younis\"",
+        "match": [
+          "Khan Younis",
+          "Khan Yunis"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Rafah",
+        "lat": 31.2969,
+        "lng": 34.2439,
+        "intensity": 0.8,
+        "query": "Rafah",
+        "match": [
+          "Rafah"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Jabalia",
+        "lat": 31.5286,
+        "lng": 34.4964,
+        "intensity": 0.7,
+        "query": "Jabalia",
+        "match": [
+          "Jabalia",
+          "Jabaliya"
+        ],
+        "summary": "",
+        "sources": []
+      }
+    ]
   },
   {
-    "name": "Port-au-Prince, Haiti",
+    "id": "haiti",
+    "bbox": [17.9, 20.2, -74.6, -71.6],
+    "name": "Haiti gang violence",
     "type": "Gang violence and state collapse",
-    "updated": "2026-08-25",
-    "lat": 18.5944, "lng": -72.3074, "intensity": 0.6,
-    "query": "(\"Port-au-Prince\" OR Haiti)",
-    "match": ["Port-au-Prince", "Haiti"],
-    "summary": "PLACEHOLDER. Write two or three sentences here.",
-    "sources": []
+    "updated": "2026-08-27",
+    "lat": 19.0,
+    "lng": -72.5,
+    "intensity": 0.6,
+    "query": "Haiti",
+    "match": [
+      "Haiti",
+      "Haitian"
+    ],
+    "summary": "",
+    "sources": [],
+    "locations": [
+      {
+        "name": "Port-au-Prince",
+        "lat": 18.5944,
+        "lng": -72.3074,
+        "intensity": 0.7,
+        "query": "\"Port-au-Prince\"",
+        "match": [
+          "Port-au-Prince",
+          "Port au Prince"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Cite Soleil",
+        "lat": 18.575,
+        "lng": -72.335,
+        "intensity": 0.6,
+        "query": "\"Cite Soleil\"",
+        "match": [
+          "Cite Soleil",
+          "Cité Soleil"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Gonaives",
+        "lat": 19.45,
+        "lng": -72.6833,
+        "intensity": 0.4,
+        "query": "Gonaives",
+        "match": [
+          "Gonaives",
+          "Gonaïves"
+        ],
+        "summary": "",
+        "sources": []
+      }
+    ]
   },
   {
-    "name": "Tehran, Iran",
+    "id": "iran",
+    "bbox": [25, 40, 44, 64],
+    "name": "Iran regional tensions",
     "type": "Regional tensions",
-    "updated": "2026-08-25",
-    "lat": 35.6892, "lng": 51.389, "intensity": 0.5,
-    "query": "(Tehran OR Iran)",
-    "match": ["Tehran", "Iran"],
-    "summary": "PLACEHOLDER. Write two or three sentences here.",
-    "sources": []
+    "updated": "2026-08-27",
+    "lat": 32.4,
+    "lng": 53.7,
+    "intensity": 0.5,
+    "query": "Iran",
+    "match": [
+      "Iran",
+      "Iranian"
+    ],
+    "summary": "",
+    "sources": [],
+    "locations": [
+      {
+        "name": "Tehran",
+        "lat": 35.6892,
+        "lng": 51.389,
+        "intensity": 0.5,
+        "query": "Tehran",
+        "match": [
+          "Tehran"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Natanz",
+        "lat": 33.7248,
+        "lng": 51.91,
+        "intensity": 0.4,
+        "query": "Natanz",
+        "match": [
+          "Natanz"
+        ],
+        "summary": "",
+        "sources": []
+      },
+      {
+        "name": "Isfahan",
+        "lat": 32.6539,
+        "lng": 51.666,
+        "intensity": 0.3,
+        "query": "Isfahan",
+        "match": [
+          "Isfahan",
+          "Esfahan"
+        ],
+        "summary": "",
+        "sources": []
+      }
+    ]
   }
 ]

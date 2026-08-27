@@ -57,6 +57,98 @@
       color: #fff;
     }
 
+    #panel-back {
+      display: none;
+      background: none;
+      border: none;
+      padding: 0 0 14px;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+    }
+
+    #panel-back:hover { color: #ff8177; }
+    #panel-back.visible { display: block; }
+
+    .loc-heading {
+      margin: 28px 0 6px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    .loc-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 10px 0;
+      background: none;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      font: inherit;
+      font-size: 14px;
+      color: rgba(232, 234, 237, 0.85);
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .loc-item:hover { color: #ff8177; }
+
+    .loc-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ff2a1f;
+      flex: 0 0 auto;
+      margin-left: 12px;
+    }
+
+    /* ---- Auto-detected locations ---------------------------------
+       A second, clearly subordinate layer. Amber not red, smaller,
+       italic, hollow dot. Nothing here is verified. -------------- */
+    .loc-heading-auto {
+      color: rgba(255, 176, 32, 0.75);
+    }
+
+    .loc-item-auto {
+      color: rgba(232, 234, 237, 0.55);
+      font-style: italic;
+    }
+
+    .loc-item-auto:hover { color: #ffc357; }
+
+    .loc-dot-auto {
+      background: none;
+      border: 1px solid #ffb020;
+    }
+
+    .loc-count {
+      margin-left: auto;
+      margin-right: 10px;
+      font-size: 11px;
+      font-style: normal;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    #panel-summary .auto-note {
+      color: #ffb020;
+      font-weight: 600;
+    }
+
+    #panel-summary .auto-stats {
+      display: block;
+      margin-top: 14px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
     #panel-title {
       margin: 0 0 10px;
       font-size: 24px;
@@ -124,6 +216,16 @@
       color: rgba(255, 255, 255, 0.35);
     }
 
+    /* The headline as originally published, shown under the translation. */
+    .news-original {
+      display: block;
+      margin-top: 4px;
+      font-size: 12px;
+      line-height: 1.4;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
     /* ---- Sources for the written summary --------------------------- */
     .source-item {
       display: block;
@@ -149,10 +251,12 @@
   <!-- The side panel. Empty to start with. JavaScript fills it in. -->
   <div id="panel">
     <button id="panel-close">&times;</button>
+    <button id="panel-back">&larr; All conflicts</button>
     <h1 id="panel-title"></h1>
     <p id="panel-meta"></p>
     <p id="panel-summary"></p>
     <div id="panel-sources"></div>
+    <div id="panel-locations"></div>
     <div id="panel-news"></div>
   </div>
 
@@ -189,7 +293,9 @@
       return Math.max(0.03, Math.min(cameraAltitude, 3));
     }
 
-    const markerRadius = d => (0.33 + d.intensity * 0.12) * zoomScale();
+    // Auto-detected markers are deliberately smaller than any curated one
+    // and do not pulse. They read as a hint, not a fact.
+    const markerRadius = d => (d.auto ? 0.2 : (0.33 + d.intensity * 0.12)) * zoomScale();
     const ringRadius   = d => (1.1 + d.intensity * 1.4) * zoomScale();
 
     // ---------------------------------------------------------------
@@ -223,65 +329,248 @@
     // ---------------------------------------------------------------
     // PART 3: fetch the data, then draw the markers.
     // ---------------------------------------------------------------
+    // Everything loaded from conflicts.json, and which conflict is open.
+    let allConflicts = [];
+    let activeConflict = null;
+
+    // Auto-detected locations, keyed by conflict id, from auto-locations.json.
+    // This layer is additive: if the file is missing or broken the site behaves
+    // exactly as it did before it existed.
+    let autoLocations = {};
+
+    // True while the camera is flying somewhere under our own instruction.
+    // Without this, the "zoom out to go back" rule below fires during the
+    // fly-in, because the camera passes through the trigger altitude on the
+    // way down. A handler must not react to a movement we caused ourselves.
+    let navigating = false;
+
+    function flyTo(pov, ms) {
+      navigating = true;
+
+      // Size the markers for where the camera is GOING, not where it is.
+      // Otherwise new markers appear at the old altitude's size and then
+      // visibly shrink as the camera catches up, which reads as lag.
+      if (typeof pov.altitude === 'number') {
+        cameraAltitude = pov.altitude;
+        globe.pointRadius(d => markerRadius(d)).ringMaxRadius(d => ringRadius(d));
+      }
+      // Deferred by one tick on purpose. Rebuilding the marker geometry and
+      // starting a camera transition in the same frame cancels the
+      // transition: the camera simply never moves, silently. Letting the
+      // geometry settle first costs 60ms and makes it reliable.
+      setTimeout(() => globe.pointOfView(pov, ms), 60);
+      setTimeout(() => { navigating = false; }, ms + 400);
+    }
+
+    // Load the auto-detected layer in the background. A failure here must
+    // never stop the globe loading, so it only ever logs a warning.
+    fetch('auto-locations.json')
+      .then(r => (r.ok ? r.json() : null))
+      .then(data => {
+        if (data && data.conflicts) autoLocations = data.conflicts;
+      })
+      .catch(() => console.warn('auto-locations.json not loaded; showing curated markers only.'));
+
+    // Curated locations for a conflict, plus its auto-detected ones tagged
+    // so every downstream check can tell them apart.
+    function locationsFor(c) {
+      const curated = c.locations || [];
+      const auto = (autoLocations[c.id] || []).map(a => Object.assign({}, a, {
+        auto: true,
+        intensity: 0.2,
+        type: 'Auto-detected from news'
+      }));
+      return curated.concat(auto);
+    }
+
     fetch('conflicts.json')
       .then(response => response.json())
       .then(conflicts => {
-        globe
-          .pointsData(conflicts)
-          .pointLat(d => d.lat)
-          .pointLng(d => d.lng)
-          .pointAltitude(0.004)
-          .pointRadius(markerRadius)
-          .pointColor(() => '#ff2a1f')
-          .pointLabel(d => d.name)
-                    .onPointClick(d => showPanel(d))
-          .ringsData(conflicts)
-          .ringLat(d => d.lat)
-          .ringLng(d => d.lng)
-          .ringMaxRadius(ringRadius)
-          .ringPropagationSpeed(1.2)
-          .ringRepeatPeriod(1400)
-          .ringColor(() => t => `rgba(255,60,48,${1 - t})`);
+        allConflicts = conflicts;
+        drawMarkers(conflicts);
 
-        // Fires whenever the camera moves. Store the new altitude and hand
-        // the size functions back to globe.gl so it redraws at the new scale.
         globe.onZoom(pov => {
-          // Relative, not absolute. A 0.01 change is nothing at altitude 2.5
-          // but a tenth of the way at altitude 0.1, which made the markers
-          // jump in visible steps when zoomed in close.
+          // Ignore camera movement we started ourselves. flyTo has already
+          // set the size for the destination; recalculating from the
+          // in-flight altitude would undo it frame by frame.
+          if (navigating) return;
           if (Math.abs(pov.altitude - cameraAltitude) / cameraAltitude < 0.004) return;
           cameraAltitude = pov.altitude;
-          // Wrapped in fresh arrow functions on purpose. globe.gl only
-          // redraws when a setting actually changes, and it compares
-          // functions by identity. Handing back the same function object
-          // looks like "nothing changed" and the markers never resize.
           globe.pointRadius(d => markerRadius(d)).ringMaxRadius(d => ringRadius(d));
+
+          // Pulling back far enough returns you to the world view, so you
+          // are never stuck inside a country with no way out but the button.
+          if (activeConflict && pov.altitude > 1.7) showWorld();
         });
       });
 
+    // One place that puts markers on the globe, whichever level we are at.
+    function drawMarkers(items, ms) {
+      // globe.gl can animate markers appearing and disappearing, but the
+      // same setting also applies to the radius updates we fire on every
+      // zoom tick. Left on, resizing lags behind the camera and smears.
+      //
+      // So: turn the animation on for the swap, then turn it straight back
+      // off once the new markers have grown in.
+      // Note: globe.gl has pointsTransitionDuration but there is no
+      // ringsTransitionDuration. Assuming symmetry here threw a TypeError
+      // that silently wiped every marker on the globe.
+      const dur = (ms === undefined) ? 550 : ms;
+      globe.pointsTransitionDuration(dur);
+      setTimeout(() => globe.pointsTransitionDuration(0), dur + 120);
+
+      globe
+        .pointsData(items)
+        .pointLat(d => d.lat)
+        .pointLng(d => d.lng)
+        .pointAltitude(0.004)
+        .pointRadius(d => markerRadius(d))
+        .pointColor(d => d.auto ? '#ffb020' : '#ff2a1f')
+        .pointLabel(d => d.auto ? d.name + ' (auto-detected)' : d.name)
+        .onPointClick(d => d.locations ? openConflict(d) : openLocation(d))
+        // Only curated markers pulse. A ring on an auto marker would read as
+        // "something is happening here", which is more than we know.
+        .ringsData(items.filter(d => !d.auto))
+        .ringLat(d => d.lat)
+        .ringLng(d => d.lng)
+        .ringMaxRadius(d => ringRadius(d))
+        .ringPropagationSpeed(1.2)
+        .ringRepeatPeriod(1400)
+        .ringColor(() => t => `rgba(255,60,48,${1 - t})`);
+    }
+
     // ---------------------------------------------------------------
-    // PART 5: the panel.
-    // YOUR CODE GOES HERE. See the instructions in chat.
+    // PART 5: the panel, and moving between the two levels.
     // ---------------------------------------------------------------
     const panel = document.getElementById('panel');
+    const panelBack = document.getElementById('panel-back');
 
-    function showPanel(d) {
-      document.getElementById('panel-title').textContent = d.name;
-      document.getElementById('panel-meta').textContent = d.type + ' · updated ' + d.updated;
-      document.getElementById('panel-summary').textContent = d.summary;
+    // Level 1: every conflict, one marker each.
+    function showWorld() {
+      activeConflict = null;
+      panelBack.classList.remove('visible');
+      panel.classList.remove('open');
+      globe.controls().autoRotate = true;
+      flyTo({ altitude: 2.5 }, 1400);
 
-      panel.classList.add('open');
+      // Same idea on the way out: let the camera start pulling back before
+      // the location markers give way to the conflict markers.
+      setTimeout(() => drawMarkers(allConflicts), 500);
+    }
+
+    // Level 2: one conflict, its locations.
+    function openConflict(c) {
+      activeConflict = c;
+      panelBack.classList.add('visible');
+
+      fillPanel(c);
+      showLocationList(c);
 
       globe.controls().autoRotate = false;
-      globe.pointOfView({ lat: d.lat, lng: d.lng, altitude: 1.6 }, 1000);
+      flyTo({ lat: c.lat, lng: c.lng, altitude: 0.85 }, 1800);
 
+      // Swap the markers a third of the way into the flight rather than
+      // before it. The country is already growing on screen, so the new
+      // locations appear to emerge from it instead of replacing it.
+      setTimeout(() => drawMarkers(locationsFor(c)), 600);
+    }
+
+    // A single place inside a conflict.
+    function openLocation(d) {
+      fillPanel(d);
+      document.getElementById('panel-locations').innerHTML = '';
+      globe.controls().autoRotate = false;
+      flyTo({ lat: d.lat, lng: d.lng, altitude: 0.45 }, 1300);
+    }
+
+    // Shared: title, meta, summary, sources, news. Works for either level.
+    function fillPanel(d) {
+      document.getElementById('panel-title').textContent = d.name;
+
+      const summary = document.getElementById('panel-summary');
+
+      // Auto-detected place: no write-up, no news feed, just a plain
+      // statement of what it is and the numbers behind it.
+      if (d.auto) {
+        document.getElementById('panel-meta').textContent =
+          'Auto-detected \u00b7 ' + (activeConflict ? activeConflict.name : '');
+        summary.style.color = '';
+        summary.innerHTML =
+          '<span class="auto-note">Automatically detected from news coverage. '
+          + 'Not verified.</span><br><br>'
+          + 'Recent articles about this conflict mentioned this place repeatedly. '
+          + 'That is all this marker means. It is not confirmation that an event '
+          + 'happened here.'
+          + '<span class="auto-stats">'
+          + escapeHtml(String(d.count)) + ' article' + (d.count === 1 ? '' : 's')
+          + ' in the last few days<br>'
+          + 'First seen ' + escapeHtml(String(d.firstSeen))
+          + ' \u00b7 last seen ' + escapeHtml(String(d.lastSeen))
+          + '</span>';
+        panel.classList.add('open');
+        document.getElementById('panel-sources').innerHTML = '';
+        document.getElementById('panel-news').innerHTML = '';
+        return;
+      }
+
+      document.getElementById('panel-meta').textContent =
+        (d.type || (activeConflict ? activeConflict.name : '')) +
+        (d.updated ? ' \u00b7 updated ' + d.updated : '');
+
+      if (d.summary && d.summary.trim()) {
+        summary.textContent = d.summary;
+        summary.style.color = '';
+      } else {
+        summary.textContent = 'No write-up yet.';
+        summary.style.color = 'rgba(255,255,255,0.3)';
+      }
+
+      panel.classList.add('open');
       showSources(d);
       loadNews(d);
     }
 
+    // The clickable list of places, so you can navigate from the panel
+    // as well as from the globe.
+    function showLocationList(c) {
+      const box = document.getElementById('panel-locations');
+      const curated = c.locations || [];
+      const auto = (autoLocations[c.id] || []).map(a => Object.assign({}, a, {
+        auto: true, intensity: 0.2, type: 'Auto-detected from news'
+      }));
+
+      if (curated.length === 0 && auto.length === 0) { box.innerHTML = ''; return; }
+      box.innerHTML = '';
+
+      addLocSection('Locations', curated, false);
+      addLocSection('Auto-detected · unverified', auto, true);
+
+      function addLocSection(heading, list, isAuto) {
+        if (list.length === 0) return;
+        const h = document.createElement('div');
+        h.className = 'loc-heading' + (isAuto ? ' loc-heading-auto' : '');
+        h.textContent = heading;
+        box.appendChild(h);
+
+        list.forEach(loc => {
+          const b = document.createElement('button');
+          b.className = 'loc-item' + (isAuto ? ' loc-item-auto' : '');
+          const count = isAuto
+            ? '<span class="loc-count">' + escapeHtml(String(loc.count)) + '</span>'
+            : '';
+          const dot = '<span class="loc-dot' + (isAuto ? ' loc-dot-auto' : '') + '"></span>';
+          b.innerHTML = '<span>' + escapeHtml(loc.name) + '</span>' + count + dot;
+          b.addEventListener('click', () => openLocation(loc));
+          box.appendChild(b);
+        });
+      }
+    }
+
+    panelBack.addEventListener('click', () => showWorld());
+
     document.getElementById('panel-close').addEventListener('click', () => {
       panel.classList.remove('open');
-      globe.controls().autoRotate = true;
+      if (!activeConflict) globe.controls().autoRotate = true;
     });
 
     // ---------------------------------------------------------------
@@ -322,6 +611,193 @@
       if (CONFLICT_WORDS.some(w => title.includes(w))) score += 1;
       if (a.language === 'English') score += 2;
       return score;
+    }
+
+    // GDELT reports languages by name. MyMemory wants ISO codes.
+    const LANG_CODES = {
+      Ukrainian: 'uk', Russian: 'ru', Polish: 'pl', Czech: 'cs', Slovak: 'sk',
+      Hungarian: 'hu', Romanian: 'ro', Bulgarian: 'bg', Serbian: 'sr',
+      Croatian: 'hr', Bosnian: 'bs', Slovenian: 'sl', Macedonian: 'mk',
+      Albanian: 'sq', Greek: 'el', Turkish: 'tr', Arabic: 'ar', Hebrew: 'he',
+      Persian: 'fa', Pashto: 'ps', Kurdish: 'ku', Urdu: 'ur', Hindi: 'hi',
+      Bengali: 'bn', Nepali: 'ne', Burmese: 'my', Thai: 'th',
+      Vietnamese: 'vi', Indonesian: 'id', Malay: 'ms', Filipino: 'tl',
+      Chinese: 'zh', Japanese: 'ja', Korean: 'ko', French: 'fr',
+      Spanish: 'es', Portuguese: 'pt', Italian: 'it', German: 'de',
+      Dutch: 'nl', Swedish: 'sv', Norwegian: 'no', Danish: 'da',
+      Finnish: 'fi', Estonian: 'et', Latvian: 'lv', Lithuanian: 'lt',
+      Georgian: 'ka', Armenian: 'hy', Azerbaijani: 'az', Somali: 'so',
+      Amharic: 'am', Swahili: 'sw'
+    };
+
+    // Translations are stable, so keep them between visits. Wrapped in
+    // try/catch because private browsing can make localStorage throw.
+    const TRANSLATION_STORE = 'conflictGlobeTranslations';
+    let translationCache = {};
+    try {
+      translationCache = JSON.parse(localStorage.getItem(TRANSLATION_STORE) || '{}');
+    } catch (e) {
+      translationCache = {};
+    }
+
+    function saveTranslations() {
+      try {
+        localStorage.setItem(TRANSLATION_STORE, JSON.stringify(translationCache));
+      } catch (e) {
+        // Storage full or unavailable. Not worth breaking the page over.
+      }
+    }
+
+    // Returns the article with a `titleEn` added, or unchanged if the
+    // headline is already English, the language is unknown, or the
+    // service fails. Never rejects: a missing translation is not an error.
+    function translateArticle(a) {
+      if (!a.language || a.language === 'English') return Promise.resolve(a);
+
+      const code = LANG_CODES[a.language];
+      if (!code) return Promise.resolve(a);
+
+      const key = code + '|' + a.title;
+      if (translationCache[key]) {
+        a.titleEn = translationCache[key];
+        return Promise.resolve(a);
+      }
+
+      const url = 'https://api.mymemory.translated.net/get'
+        + '?q=' + encodeURIComponent(a.title.slice(0, 480))
+        + '&langpair=' + code + '|en';
+
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 8000);
+
+      return fetch(url, { signal: controller.signal })
+        .then(r => r.json())
+        .then(j => {
+          const out = j && j.responseData && j.responseData.translatedText;
+          // MyMemory returns its own error text in this field when it fails,
+          // so reject anything that looks like a complaint rather than a
+          // translation.
+          if (out && !/^[A-Z ]*(QUERY LENGTH|INVALID|INVALID LANGUAGE|MYMEMORY WARNING)/i.test(out)) {
+            a.titleEn = out;
+            translationCache[key] = out;
+          }
+          return a;
+        })
+        .catch(() => a)
+        .finally(() => clearTimeout(timer));
+    }
+
+    // ---------------------------------------------------------------
+    // Headline cleanup, using Chrome's on-device language model.
+    //
+    // Machine translation produces readable but clumsy English. This
+    // rewrites it into plain English. It runs entirely on the reader's
+    // machine: no API key, no server, no cost, nothing sent anywhere.
+    //
+    // It only exists in recent Chrome. Everywhere else the site falls
+    // back to the raw translation, which is why this never blocks
+    // anything and never throws.
+    // ---------------------------------------------------------------
+    // OFF by default. Deliberately.
+    //
+    // The rewrite makes headlines read better and makes them less accurate,
+    // which is the worst combination for a site about conflict. Measured
+    // examples from real output:
+    //
+    //   "Герань-4" (a Geran-4 strike drone)
+    //     -> translated as "Geranium-4", clumsy but the name survives
+    //     -> rewritten as "an explosion involving a geranium"
+    //        The only militarily meaningful word became a flower.
+    //
+    //   "на вокзалі утворився колапс" (gridlock at the station)
+    //     -> rewritten as "causes a settlement to collapse"
+    //
+    //   "знищили" (destroyed) -> quietly softened to "damaged"
+    //
+    // Clumsy English signals "machine output, verify this". Fluent English
+    // signals "a person wrote this". Making wrong text fluent removes the
+    // reader's only warning. Set to true only with a plan for catching this.
+    const HEADLINE_CLEANUP = false;
+
+    let cleanupModel = null;
+    let cleanupUnavailable = false;
+
+    const CLEANUP_RULES = 'You rewrite awkward machine-translated news headlines into clear, '
+      + 'plain English. Never add facts that are not in the input. Never guess. Never invent '
+      + 'numbers, places or casualties. Keep it under 20 words. Reply with the rewritten '
+      + 'headline only, nothing else.';
+
+    async function getCleanupModel() {
+      if (!HEADLINE_CLEANUP) return null;
+      if (cleanupUnavailable) return null;
+      if (cleanupModel) return cleanupModel;
+
+      if (typeof LanguageModel === 'undefined') { cleanupUnavailable = true; return null; }
+
+      try {
+        // "available" means the model is already on this machine. Anything
+        // else would mean a large download, which we are not going to
+        // trigger on someone's behalf.
+        if (await LanguageModel.availability() !== 'available') {
+          cleanupUnavailable = true;
+          return null;
+        }
+        cleanupModel = await LanguageModel.create({
+          initialPrompts: [{ role: 'system', content: CLEANUP_RULES }]
+        });
+        return cleanupModel;
+      } catch (e) {
+        cleanupUnavailable = true;
+        return null;
+      }
+    }
+
+    // Adds `titleClean` where it can. Returns true if anything changed.
+    async function polishHeadlines(articles) {
+      const model = await getCleanupModel();
+      if (!model) return false;
+
+      let changed = false;
+
+      for (const a of articles) {
+        if (!a.titleEn) continue;              // only touch machine translations
+
+        const key = 'polish|' + a.titleEn;
+        if (translationCache[key]) {
+          a.titleClean = translationCache[key];
+          changed = true;
+          continue;
+        }
+
+        try {
+          // A session remembers everything it has been asked. Reusing one
+          // across headlines let details from one story leak into the next,
+          // which produced a confident sentence about a destroyed toy shop
+          // in a headline that was about air-raid sirens.
+          //
+          // clone() gives a fresh session with the system prompt and no
+          // history, so every headline is rewritten in isolation.
+          const isolated = await model.clone();
+          let out;
+          try {
+            out = (await isolated.prompt(a.titleEn) || '').trim().replace(/^["']|["']$/g, '');
+          } finally {
+            isolated.destroy();
+          }
+
+          // Reject anything suspicious: empty, rambling, or a refusal.
+          if (out && out.length > 8 && out.length < 200) {
+            a.titleClean = out;
+            translationCache[key] = out;
+            changed = true;
+          }
+        } catch (e) {
+          // One failed headline should not stop the rest.
+        }
+      }
+
+      saveTranslations();
+      return changed;
     }
 
     function loadNews(d) {
@@ -372,8 +848,21 @@
           const weak = strong.length === 0 && ranked.length > 0;
           const articles = (weak ? ranked : strong).slice(0, 10);
 
-          newsCache[d.name] = { articles: articles, weak: weak };
+          // Translate the non-English headlines before showing anything,
+          // so the list does not visibly rewrite itself under the reader.
           renderNews(articles, weak);
+          Promise.all(articles.map(translateArticle)).then(translated => {
+            saveTranslations();
+            newsCache[d.name] = { articles: translated, weak: weak };
+            renderNews(translated, weak);
+
+            // Then quietly improve the wording in the background. Each
+            // headline takes a few seconds, so this re-renders once at
+            // the end rather than making the list twitch line by line.
+            polishHeadlines(translated).then(changed => {
+              if (changed) renderNews(translated, weak);
+            });
+          });
         })
         .catch(err => {
           clearTimeout(timer);
@@ -399,9 +888,20 @@
 
       news.innerHTML = heading + articles.map(a => {
         const safeUrl = /^https?:\/\//i.test(a.url) ? escapeHtml(a.url) : '#';
-        const lang = a.language && a.language !== 'English' ? ' &middot; ' + escapeHtml(a.language) : '';
+        // Say plainly when a headline has been machine-processed.
+        const lang = a.language && a.language !== 'English'
+          ? ' &middot; ' + escapeHtml(a.language) + (a.titleEn ? ' &middot; auto-translated' : '')
+          : '';
+        // Show the translation as the headline, but keep the original
+        // underneath. The reader can always see what was actually published.
+        const headline = a.titleClean || a.titleEn || a.title;
+        const original = a.titleEn
+          ? '<span class="news-original">' + escapeHtml(a.title) + '</span>'
+          : '';
+
         return '<a class="news-item" href="' + safeUrl + '" target="_blank" rel="noopener">'
-          + '<span class="news-title">' + escapeHtml(a.title) + '</span>'
+          + '<span class="news-title">' + escapeHtml(headline) + '</span>'
+          + original
           + '<span class="news-source">' + escapeHtml(a.domain) + ' &middot; '
           + formatDate(a.seendate) + lang + '</span>'
           + '</a>';
