@@ -1,0 +1,53 @@
+name: Detect conflict locations
+
+# ---------------------------------------------------------------------------
+# Asks GDELT which places recent news is mentioning for each conflict and
+# updates auto-locations.json. Runs itself, commits the result back.
+#
+# The schedule is COMMENTED OUT until a manual run has been checked. Run this
+# by hand from the Actions tab (the "Run workflow" button) first, read the
+# log, confirm auto-locations.json looks sane, THEN uncomment the schedule.
+# ---------------------------------------------------------------------------
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 */6 * * *'   # every 6 hours
+
+# Lets the job push its commit back to the repo.
+permissions:
+  contents: write
+
+# Never let two runs fight over the same file.
+concurrency:
+  group: detect-locations
+  cancel-in-progress: false
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Detect locations
+        id: detect
+        run: node scripts/detect-locations.mjs
+
+      - name: Commit auto-locations.json if it changed
+        if: steps.detect.outputs.changed == 'true'
+        run: |
+          if [ -z "$(git status --porcelain auto-locations.json)" ]; then
+            echo "Script reported a change but git sees none. Nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add auto-locations.json
+          git commit -m "Auto-locations: ${{ steps.detect.outputs.summary }}"
+          git push
