@@ -33,6 +33,11 @@ const EXPIRY_DAYS = 14;              // show the current war, not everything tha
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const todayISO = () => new Date().toISOString().slice(0, 10);
 
+// GEO 2.0's exact property names were unverified when this was written. The
+// first response that actually comes back gets dumped to the log, once, so
+// they can be checked against reality.
+let sampleLogged = false;
+
 // ---------------------------------------------------------------------------
 // Geometry
 // ---------------------------------------------------------------------------
@@ -125,7 +130,7 @@ function readFeature(feature) {
 // Per-conflict processing
 // ---------------------------------------------------------------------------
 
-async function processConflict(conflict, existingForId, logSample) {
+async function processConflict(conflict, existingForId) {
   const id = conflict.id;
   const curated = Array.isArray(conflict.locations) ? conflict.locations : [];
   const box = conflict.bbox;
@@ -142,7 +147,8 @@ async function processConflict(conflict, existingForId, logSample) {
       raw = await fetchGeoRaw(conflict.query);
       break;
     } catch (err) {
-      console.error(`  [${id}] attempt ${attempt} failed: ${err.name || err.message}`);
+      const cause = err && err.cause ? ` (cause: ${err.cause.code || err.cause.message || err.cause})` : '';
+      console.error(`  [${id}] attempt ${attempt} failed: ${err.name}: ${err.message}${cause}`);
       if (attempt < ATTEMPTS_PER_CONFLICT) await sleep(RETRY_PAUSE_MS);
     }
   }
@@ -151,8 +157,10 @@ async function processConflict(conflict, existingForId, logSample) {
     return { points: existingForId, stats, failed: true };
   }
 
-  if (logSample) {
-    console.log(`\n--- RAW GEO 2.0 RESPONSE for [${id}] (query: ${conflict.query}) ---`);
+  const firstResponse = !sampleLogged;
+  if (firstResponse) {
+    sampleLogged = true;
+    console.log(`\n--- RAW GEO 2.0 RESPONSE for [${id}] (${geoUrl(conflict.query)}) ---`);
     console.log(`HTTP ${raw.status}`);
     console.log(raw.text.slice(0, 4000));
     console.log('--- end raw sample ---\n');
@@ -171,8 +179,8 @@ async function processConflict(conflict, existingForId, logSample) {
   const features = Array.isArray(geo.features) ? geo.features : [];
   stats.returned = features.length;
 
-  if (logSample && features[0]) {
-    console.log(`  [${id}] first feature .properties keys: ${Object.keys(features[0].properties || {}).join(', ')}`);
+  if (firstResponse && features[0]) {
+    console.log(`  [${id}] first feature: ${JSON.stringify(features[0])}`);
   }
 
   // --- filter ---
@@ -281,13 +289,10 @@ async function main() {
       ? previous.conflicts[conflict.id]
       : [];
 
-    // log a full raw sample for the first conflict of the first run
-    const logSample = firstRun && i === 0;
-
     console.log(`\n[${conflict.id}] query: ${conflict.query}`);
     let result;
     try {
-      result = await processConflict(conflict, existingForId, logSample);
+      result = await processConflict(conflict, existingForId);
     } catch (err) {
       console.error(`  [${conflict.id}] unexpected error, keeping existing: ${err.stack || err}`);
       result = { points: existingForId, stats: null, failed: true };
@@ -317,7 +322,15 @@ async function main() {
   // --- decide whether anything actually changed ---
   const oldBody = JSON.stringify(previous.conflicts || {});
   const newBody = JSON.stringify(nextConflicts);
-  const changed = oldBody !== newBody;
+  const bodyChanged = oldBody !== newBody;
+
+  const processed = Object.keys(nextConflicts).length;
+  const allFailed = processed > 0 && totals.failed >= processed;
+  const hasContent = Object.values(nextConflicts).some(a => a.length > 0);
+
+  // Don't create or commit a file off the back of a run where every fetch
+  // failed - that is a network problem, not a real "no locations" result.
+  const write = bodyChanged && !allFailed && (hasContent || !firstRun);
 
   const summary =
     `+${totals.added} new, ${totals.expired} expired` +
@@ -325,10 +338,11 @@ async function main() {
     (totals.failed ? `, ${totals.failed} conflict(s) failed` : '');
 
   console.log(`\n==============================`);
-  console.log(changed ? `CHANGED: ${summary}` : `NO CHANGE (${summary})`);
+  console.log(`${write ? 'WRITE' : 'NO WRITE'}: ${summary}`);
+  if (allFailed) console.log('Every conflict failed to fetch - leaving auto-locations.json untouched.');
   console.log(`==============================`);
 
-  if (changed) {
+  if (write) {
     const doc = {
       generated: new Date().toISOString(),
       conflicts: nextConflicts,
@@ -341,12 +355,13 @@ async function main() {
 
   // hand the workflow what it needs for the commit step
   if (process.env.GITHUB_OUTPUT) {
-    appendFileSync(process.env.GITHUB_OUTPUT, `changed=${changed}\n`);
+    appendFileSync(process.env.GITHUB_OUTPUT, `changed=${write}\n`);
     appendFileSync(process.env.GITHUB_OUTPUT, `summary=${summary}\n`);
   }
 
-  // a failed fetch is not a failed run; GDELT flakiness is expected
-  process.exit(0);
+  // One conflict failing is expected (GDELT is flaky). Every conflict failing
+  // is a real problem and the run should go red so someone looks.
+  process.exit(allFailed ? 1 : 0);
 }
 
 main().catch(err => {
