@@ -1,6 +1,7 @@
 # macOS
 .DS_Store
 
-# local backup copies
+# local backup / draft files
 *.backup
-*.bak2
+*.bak*
+DATA-ACCESS-EMAILS.md

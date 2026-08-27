@@ -64,13 +64,35 @@ Globe renders, markers sized by intensity with pulsing rings, click opens the pa
 and flies the camera to the location, summary and sources render, GDELT headlines
 load and are filtered to English articles whose titles mention the place.
 
+## GDELT findings (27 Aug 2026)
+Measured directly in the browser, not assumed:
+- OR'd terms **must** be wrapped in parentheses. `Kyiv OR Kiev` is rejected;
+  `(Kyiv OR Kiev)` works. GDELT returns that rejection as **plain text with an
+  HTTP 200 status**, so `.json()` throws and a broad catch hides the message.
+- `sort=datedesc` returns a narrow slice of the newest wire copy, heavily
+  syndicated. `sort=hybridrel` gives a better spread across the week.
+- Deduplicating on a normalised title collapsed 75 results to 18 unique stories.
+- **The biggest finding:** for `(Kyiv OR Kiev)` the highest-relevance results are
+  almost entirely Ukrainian-language local outlets, and they are the *best*
+  coverage of strikes on the city ("Київ обстріл 27 серпня", "Вибухи в Київській
+  області"). An English-only filter throws away the most relevant sources. A
+  Latin-alphabet title match never matches Cyrillic headlines.
+- GDELT rate-limits hard. After sustained testing, requests start failing with
+  network errors or hanging past 20 seconds. It recovers on its own.
+- The GEO 2.0 API sends no CORS headers and cannot be called from the browser.
+- Untested, because GDELT started refusing requests: whether `sourcelang:english`
+  or `sourcelang:eng` actually works as a query operator.
+
+## Open editorial question
+Should the feed show local-language sources (most relevant, unreadable to most
+visitors) or English only (readable, much thinner)? Not decided.
+
 ## Known issues, roughly by priority
 1. **GDELT rate limits.** Heavy testing got requests throttled to the point of
    hanging. The site needs to cache results per conflict rather than refetching on
    every click.
-2. **`innerHTML` is used with unsanitised external strings** in `loadNews`. Article
-   titles come straight from GDELT into the DOM. Must be fixed before this is
-   public.
+2. ~~`innerHTML` unsanitised~~ FIXED. `escapeHtml` now escapes titles, domains and
+   languages, and hrefs are checked against `^https?://` before use.
 3. **Relevance is still imperfect.** "Inside Kherson Red Zone: A Kyiv Post Special
    Report" passes the Kyiv filter because the outlet name contains "Kyiv". Query and
    match tuning is ongoing editorial work and belongs to William, not to you.
