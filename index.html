@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Conflict Globe</title>
+  <link rel="icon" href="data:,">
+
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+
+    /* ---- The side panel ------------------------------------------
+       It is always on the page. We just slide it off-screen to the
+       left until a marker is clicked. That is what translateX does.
+    ---------------------------------------------------------------- */
+    #panel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 380px;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 40px 32px;
+      background: rgba(10, 12, 16, 0.92);
+      backdrop-filter: blur(12px);
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      color: #e8eaed;
+      transform: translateX(-100%);
+      transition: transform 0.35s ease;
+      overflow-y: auto;
+    }
+
+    /* When the panel also has the class "open", slide it into view. */
+    #panel.open {
+      transform: translateX(0);
+    }
+
+    #panel-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 26px;
+      line-height: 1;
+      cursor: pointer;
+      padding: 4px;
+    } 
+
+    #panel-close:hover {
+      color: #fff;
+    }
+
+    #panel-title {
+      margin: 0 0 10px;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    #panel-meta {
+      margin: 0 0 24px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #ff5a4d;
+    }
+
+    #panel-summary {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.65;
+      color: rgba(232, 234, 237, 0.78);
+    }
+
+    /* ---- The recent coverage list ---------------------------------- */
+    .news-heading {
+      margin: 32px 0 14px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    .news-status {
+      margin: 32px 0 0;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    .news-item {
+      display: block;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .news-item:hover .news-title {
+      color: #ff8177;
+    }
+
+    .news-title {
+      display: block;
+      font-size: 14px;
+      line-height: 1.45;
+      color: rgba(232, 234, 237, 0.9);
+    }
+
+    .news-source {
+      display: block;
+      margin-top: 5px;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    /* ---- Sources for the written summary --------------------------- */
+    .source-item {
+      display: block;
+      padding: 7px 0;
+      font-size: 13px;
+      line-height: 1.4;
+      color: rgba(232, 234, 237, 0.62);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .source-item:hover {
+      color: #ff8177;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- The globe gets drawn inside this box. -->
+  <div id="globeViz"></div>
+
+  <!-- The side panel. Empty to start with. JavaScript fills it in. -->
+  <div id="panel">
+    <button id="panel-close">&times;</button>
+    <h1 id="panel-title"></h1>
+    <p id="panel-meta"></p>
+    <p id="panel-summary"></p>
+    <div id="panel-sources"></div>
+    <div id="panel-news"></div>
+  </div>
+
+  <!-- Downloads the globe.gl library and gives us the Globe() function. -->
+  <script src="https://cdn.jsdelivr.net/npm/globe.gl@2.46.2/dist/globe.gl.min.js"></script>
+
+  <script>
+    // ---------------------------------------------------------------
+    // PART 1: build the globe itself.
+    // ---------------------------------------------------------------
+    const globe = Globe()(document.getElementById('globeViz'))
+      .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-dark.jpg')
+      .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
+      .backgroundImageUrl('https://unpkg.com/three-globe/example/img/night-sky.png')
+      .atmosphereColor('#3a7bd5')
+      .atmosphereAltitude(0.18);
+
+    // ---------------------------------------------------------------
+    // PART 2: camera and motion.
+    // ---------------------------------------------------------------
+    globe.controls().autoRotate = true;
+    globe.controls().autoRotateSpeed = 0.4;
+    globe.pointOfView({ lat: 25, lng: 20, altitude: 2.5 });
+
+    // ---------------------------------------------------------------
+    // PART 3: fetch the data, then draw the markers.
+    // ---------------------------------------------------------------
+    fetch('conflicts.json')
+      .then(response => response.json())
+      .then(conflicts => {
+        globe
+          .pointsData(conflicts)
+          .pointLat(d => d.lat)
+          .pointLng(d => d.lng)
+          .pointAltitude(d => 0.02 + d.intensity * 0.06)
+          .pointRadius(d => 0.45 + d.intensity * 0.35)
+          .pointColor(() => '#ff2a1f')
+          .pointLabel(d => d.name)
+                    .onPointClick(d => showPanel(d))
+          .ringsData(conflicts)
+          .ringLat(d => d.lat)
+          .ringLng(d => d.lng)
+          .ringMaxRadius(d => 2 + d.intensity * 3)
+          .ringPropagationSpeed(1.2)
+          .ringRepeatPeriod(1400)
+          .ringColor(() => t => `rgba(255,60,48,${1 - t})`);
+      });
+
+    // ---------------------------------------------------------------
+    // PART 5: the panel.
+    // YOUR CODE GOES HERE. See the instructions in chat.
+    // ---------------------------------------------------------------
+    const panel = document.getElementById('panel');
+
+    function showPanel(d) {
+      document.getElementById('panel-title').textContent = d.name;
+      document.getElementById('panel-meta').textContent = d.type + ' · updated ' + d.updated;
+      document.getElementById('panel-summary').textContent = d.summary;
+
+      panel.classList.add('open');
+
+      globe.controls().autoRotate = false;
+      globe.pointOfView({ lat: d.lat, lng: d.lng, altitude: 1.6 }, 1000);
+
+      showSources(d);
+      loadNews(d);
+    }
+
+    document.getElementById('panel-close').addEventListener('click', () => {
+      panel.classList.remove('open');
+      globe.controls().autoRotate = true;
+    });
+
+    // ---------------------------------------------------------------
+    // PART 6: live news from GDELT.
+    // YOUR CODE GOES HERE. See the instructions in chat.
+    // ---------------------------------------------------------------
+    function loadNews(d) {
+      const news = document.getElementById('panel-news');
+      news.innerHTML = '<p class="news-status">Loading recent coverage…</p>';
+
+      const url = 'https://api.gdeltproject.org/api/v2/doc/doc'
+        + '?query=' + encodeURIComponent(d.query)
+        + '&mode=artlist&format=json&maxrecords=75&sort=datedesc&timespan=7d';
+
+      fetch(url)
+        .then(r => r.text())
+        .then(text => {
+          // GDELT returns errors as plain text with a 200 status, so try to
+          // parse and show the message rather than failing silently.
+          let data;
+          try {
+            data = JSON.parse(text);
+          } catch (e) {
+            news.innerHTML = '<p class="news-status">GDELT rejected the query: ' + text + '</p>';
+            return;
+          }
+
+          const articles = (data.articles || [])
+            .filter(a => a.language === 'English')
+            .filter(a => d.match.some(term => a.title.toLowerCase().includes(term.toLowerCase())))
+            .slice(0, 10);
+
+          if (articles.length === 0) {
+            news.innerHTML = '<p class="news-status">No relevant coverage in the last 7 days.</p>';
+            return;
+          }
+
+          news.innerHTML = '<div class="news-heading">Recent coverage</div>'
+            + articles.map(a =>
+                '<a class="news-item" href="' + a.url + '" target="_blank" rel="noopener">'
+              + '<span class="news-title">' + a.title + '</span>'
+              + '<span class="news-source">' + a.domain + ' · ' + formatDate(a.seendate) + '</span>'
+              + '</a>'
+            ).join('');
+        })
+        .catch(() => {
+          news.innerHTML = '<p class="news-status">Could not load coverage.</p>';
+        });
+    }
+
+    function showSources(d) {
+      const box = document.getElementById('panel-sources');
+      const list = d.sources || [];
+
+      if (list.length === 0) {
+        box.innerHTML = '';
+        return;
+      }
+
+      box.innerHTML = '<div class="news-heading">Sources</div>'
+        + list.map(s =>
+            '<a class="source-item" href="' + s.url + '" target="_blank" rel="noopener">'
+          + s.label
+          + '</a>'
+          ).join('');
+    }
+
+    function formatDate(s) {
+      const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      return s.slice(6, 8) + ' ' + months[parseInt(s.slice(4, 6), 10) - 1];
+    }
+
+    // ---------------------------------------------------------------
+    // PART 4: keep the globe filling the window when it is resized.
+    // ---------------------------------------------------------------
+    window.addEventListener('resize', () => {
+      globe.width(window.innerWidth);
+      globe.height(window.innerHeight);
+    });
+  </script>
+
+</body>
+
+</html>

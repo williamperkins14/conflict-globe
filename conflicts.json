@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Kyiv, Ukraine",
+    "type": "Interstate war",
+    "updated": "2026-08-25",
+    "lat": 50.4501, "lng": 30.5234, "intensity": 0.9,
+    "query": "(Kyiv OR Kiev)",
+    "match": ["Kyiv", "Kiev"],
+    "summary": "Kyiv was Russia's first objective of the invasion. Troops advancing from Belarus reached the northern suburbs in February 2022 but failed to take the city and withdrew on 2 April, leaving mass killings of civilians behind them in Bucha and Irpin. The capital has faced no ground threat since, but is struck regularly by missiles and drones.",
+    "sources": [
+          "sources": [
+      { "label": "Whatever you want the link to say", "url": "https://..." }
+    ]
+    ]
+  },
+  {
+    "name": "Khartoum, Sudan",
+    "type": "Civil war",
+    "updated": "2026-08-25",
+    "lat": 15.5007, "lng": 32.5599, "intensity": 0.8,
+    "query": "(Khartoum OR Sudan)",
+    "match": ["Khartoum", "Sudan"],
+    "summary": "PLACEHOLDER. Write two or three sentences here.",
+    "sources": []
+  },
+  {
+    "name": "Gaza City",
+    "type": "Armed conflict",
+    "updated": "2026-08-25",
+    "lat": 31.5017, "lng": 34.4668, "intensity": 1.0,
+    "query": "Gaza",
+    "match": ["Gaza"],
+    "summary": "PLACEHOLDER. Write two or three sentences here.",
+    "sources": []
+  },
+  {
+    "name": "Port-au-Prince, Haiti",
+    "type": "Gang violence and state collapse",
+    "updated": "2026-08-25",
+    "lat": 18.5944, "lng": -72.3074, "intensity": 0.6,
+    "query": "(\"Port-au-Prince\" OR Haiti)",
+    "match": ["Port-au-Prince", "Haiti"],
+    "summary": "PLACEHOLDER. Write two or three sentences here.",
+    "sources": []
+  },
+  {
+    "name": "Tehran, Iran",
+    "type": "Regional tensions",
+    "updated": "2026-08-25",
+    "lat": 35.6892, "lng": 51.389, "intensity": 0.5,
+    "query": "(Tehran OR Iran)",
+    "match": ["Tehran", "Iran"],
+    "summary": "PLACEHOLDER. Write two or three sentences here.",
+    "sources": []
+  }
+]
