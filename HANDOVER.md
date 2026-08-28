@@ -1,3 +1,64 @@
+# WHERE WE STOPPED (28 Aug 2026, late)
+
+William stopped here, tired, after a long session. Pick up from this point.
+
+## The good news: the GKG pipeline WORKS
+
+The GEO 2.0 API is dead (404 from every machine, three separate runs, while
+DOC returns 200 on the same host). We rewrote the fetching half to download
+GDELT's raw Global Knowledge Graph files from data.gdeltproject.org instead.
+See AUTO-MARKERS-SPEC-V2.md.
+
+It ran end to end and produced a real auto-locations.json. Download, unzip,
+parse, theme filter, bbox filter, thresholds, merge and expiry all function.
+
+## The one problem, and it is small
+
+The places it found are the wrong KIND of place:
+
+    ukraine: "Ukraine" (49, 32)  count 37     <- the country, not a city
+             "Romanian" (46, 25) count 6      <- a demonym
+    sudan:   "Ethiopians" (8, 38) count 3     <- a demonym, wrong country
+
+GKG's V2Locations includes a location TYPE as the first hash-separated field:
+
+    1 = country        2 = US state       3 = US city
+    4 = world city     5 = world state/ADM1
+
+We are currently keeping every type, so country centroids and demonyms swamp
+the actual cities. **The fix is to keep only type 4, and possibly 5.** That is
+a one-line filter in parseLocations(), plus a log line counting what each type
+contributed so the choice can be checked rather than assumed.
+
+Verify the type is really field 0 by reading the logged sample entry first.
+Assumed data shapes have cost this project two false starts already.
+
+## Immediate next steps, in order
+
+1. Filter V2Locations by type (keep 4, evaluate 5). Re-run with
+   WINDOW_FILES = 2 and check the places are cities inside the right country.
+2. Widen to WINDOW_FILES = 12 and confirm it finishes in time.
+3. Look at the results by eye. This is the editorial checkpoint: are these
+   places where something actually happened, or just places that got
+   mentioned? Tune CONFLICT_THEMES and MIN_ARTICLES from real output.
+4. Remove the now-pointless GEO probe from the workflow; keep a DOC canary.
+5. Only then enable the schedule.
+
+## Still outstanding, unrelated to the above
+
+- Four conflict summaries are empty and Kyiv's `sources` still contains the
+  placeholder "Whatever you want the link to say" pointing at https://...
+  This is live on the internet.
+- The GDELT news feed scoring still gives +2 for English and matches only
+  Latin-alphabet terms, so the best local-language coverage arrives via the
+  "loosely matched" fallback rather than on merit.
+- ACLED and UCDP emails are drafted in DATA-ACCESS-EMAILS.md and unsent.
+  William intends to send them; he has not yet.
+- Asked about using trusted X/Twitter accounts as a source. X has no free API
+  and scraping it breaches their terms, so this is not a route. Telegram
+  channels and outlet RSS feeds are the realistic equivalent and are worth
+  investigating instead.
+
 # Conflict Globe — handover notes
 
 ## What this is

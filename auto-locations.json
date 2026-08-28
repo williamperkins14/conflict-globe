@@ -1,0 +1,93 @@
+{
+  "generated": "2026-08-28T00:14:46.764Z",
+  "conflicts": {
+    "ukraine": [
+      {
+        "name": "Ukraine",
+        "lat": 49,
+        "lng": 32,
+        "count": 37,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-28"
+      },
+      {
+        "name": "Romanian",
+        "lat": 46,
+        "lng": 25,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-28"
+      }
+    ],
+    "sudan": [
+      {
+        "name": "Ethiopians",
+        "lat": 8,
+        "lng": 38,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-28"
+      },
+      {
+        "name": "South Sudan",
+        "lat": 8,
+        "lng": 30,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-28"
+      }
+    ],
+    "gaza": [],
+    "haiti": [],
+    "iran": [
+      {
+        "name": "Iranian",
+        "lat": 32,
+        "lng": 53,
+        "count": 46,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-28"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 20,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-28"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 10,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-28"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 10,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-28"
+      },
+      {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 9,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-28"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-28"
+      }
+    ]
+  }
+}
