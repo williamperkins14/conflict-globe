@@ -51,6 +51,14 @@ jobs:
             -w "DOC says: %{http_code} (connect %{time_connect}s)\n" \
             "https://api.gdeltproject.org/api/v2/doc/doc?query=Ukraine&mode=artlist&format=json&maxrecords=3" \
             || echo "DOC curl failed (exit $?)"
+          echo "--- raw GKG file host (data.gdeltproject.org) ---"
+          curl -sS -m 30 -w "\nlastupdate: %{http_code} (connect %{time_connect}s)\n" \
+            "http://data.gdeltproject.org/gdeltv2/lastupdate.txt" \
+            || echo "lastupdate curl failed (exit $?)"
+          curl -sS -m 30 -o /dev/null \
+            -w "masterlist: %{http_code} (connect %{time_connect}s)\n" \
+            "http://data.gdeltproject.org/gdeltv2/masterfilelist.txt" \
+            || echo "masterlist curl failed (exit $?)"
 
       - name: Detect locations
         id: detect
