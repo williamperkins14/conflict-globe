@@ -1,46 +1,241 @@
 {
-  "generated": "2026-08-29T12:16:11.685Z",
+  "generated": "2026-08-29T12:31:26.316Z",
   "conflicts": {
     "ukraine": [
       {
-        "name": "Ukraine",
-        "lat": 49,
-        "lng": 32,
-        "count": 36,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-29"
-      },
-      {
-        "name": "Izmail, Odes'ka Oblast, Ukraine",
-        "lat": 45.3493,
-        "lng": 28.8408,
-        "count": 21,
-        "firstSeen": "2026-08-29",
-        "lastSeen": "2026-08-29"
-      },
-      {
-        "name": "Vyshneve, Chernihivs'ka Oblast', Ukraine",
-        "lat": 51.7667,
-        "lng": 31.2167,
-        "count": 11,
-        "firstSeen": "2026-08-29",
-        "lastSeen": "2026-08-29"
-      },
-      {
-        "name": "Romanian",
-        "lat": 46,
-        "lng": 25,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-28"
-      },
-      {
-        "name": "Dmytrivka, Mykolayivs'ka Oblast', Ukraine",
-        "lat": 46.6314,
-        "lng": 31.7386,
+        "name": "Bryansk",
+        "lat": 53.271,
+        "lng": 34.3214,
+        "source": "telegram",
         "count": 4,
         "firstSeen": "2026-08-29",
-        "lastSeen": "2026-08-29"
+        "lastSeen": "2026-08-29",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51874",
+            "at": "2026-08-29T11:36:45Z",
+            "excerpt": "…ssian Buk-M3 air defense system was destroyed near Klintsy, Bryansk region, on August 28."
+          },
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51867",
+            "at": "2026-08-29T11:18:03Z",
+            "excerpt": "…yed a Russian Pantsir-S1 air defense system near Kletnya in Bryansk region on August 27. The system belonged to the 210th Air Defense Missile Regim…"
+          },
+          {
+            "channel": "wartranslated",
+            "url": "https://t.me/wartranslated/18418",
+            "at": "2026-08-29T09:40:09Z",
+            "excerpt": "…air defense system covering an Iskander missile complex in Bryansk region was destroyed. One Russian occupier was killed, another wounded. The fat…"
+          }
+        ]
+      },
+      {
+        "name": "Rostov-on-Don",
+        "lat": 47.22,
+        "lng": 39.7077,
+        "source": "telegram",
+        "count": 3,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29",
+        "evidence": [
+          {
+            "channel": "wartranslated",
+            "url": "https://t.me/wartranslated/18416",
+            "at": "2026-08-29T09:28:09Z",
+            "excerpt": "Rostov region declared a state of emergency on August 28 after drone strikes disrupted…"
+          },
+          {
+            "channel": "wartranslated",
+            "url": "https://t.me/wartranslated/18410",
+            "at": "2026-08-29T07:39:55Z",
+            "excerpt": "Drones hit Rostov region overnight, striking warehouses belonging to OZON, DNS electronics retail…"
+          },
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51855",
+            "at": "2026-08-29T05:11:11Z",
+            "excerpt": "…inian attack drones slammed into a DNS warehouse complex in Rostov-on-Don this morning amid a large-scale drone attack. The facility caught fire as explo…"
+          }
+        ]
+      },
+      {
+        "name": "Hvardiyske",
+        "lat": 45.1169,
+        "lng": 34.0219,
+        "source": "telegram",
+        "count": 3,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51874",
+            "at": "2026-08-29T11:36:45Z",
+            "excerpt": "…rone storage, preparation and launch sites near Donetsk and Hvardiiske in occupied Crimea on August 28-29, Ukraine's General Staff says. An electronic…"
+          },
+          {
+            "channel": "wartranslated",
+            "url": "https://t.me/wartranslated/18411",
+            "at": "2026-08-29T07:39:59Z",
+            "excerpt": "…satellite data also shows a fire at a military airfield in Hvardiyske, occupied Crimea."
+          },
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51863",
+            "at": "2026-08-29T05:15:23Z",
+            "excerpt": "NASA FIRMS detected two fires at and near Hvardiiske airbase in occupied Crimea following an attack. One is near military aircraft a…"
+          }
+        ]
+      },
+      {
+        "name": "Chernihiv",
+        "lat": 51.5054,
+        "lng": 31.2866,
+        "source": "telegram",
+        "count": 2,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51868",
+            "at": "2026-08-29T11:19:31Z",
+            "excerpt": "…ary leadership to plan offensive operations toward Kyiv and Chernihiv, but no offensive groupings are currently observed in those directions."
+          },
+          {
+            "channel": "wartranslated",
+            "url": "https://t.me/wartranslated/18414",
+            "at": "2026-08-29T07:59:35Z",
+            "excerpt": "…istics dates back to February 28, 2022, hitting Epicentr in Chernihiv. Over the following four and a half years, 25 separate strikes hit Ukrainian ret…"
+          }
+        ]
+      },
+      {
+        "name": "Klintsy",
+        "lat": 52.7603,
+        "lng": 32.239,
+        "source": "telegram",
+        "count": 2,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51874",
+            "at": "2026-08-29T11:36:45Z",
+            "excerpt": "…that a Russian Buk-M3 air defense system was destroyed near Klintsy, Bryansk region, on August 28."
+          },
+          {
+            "channel": "wartranslated",
+            "url": "https://t.me/wartranslated/18417",
+            "at": "2026-08-29T09:39:15Z",
+            "excerpt": "…, a Buk-M3 surface-to-air missile system was destroyed near Klintsy, also in Bryansk region, per the General Staff."
+          }
+        ]
+      },
+      {
+        "name": "Zhytomyr",
+        "lat": 50.2623,
+        "lng": 28.6791,
+        "source": "telegram",
+        "count": 1,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-28",
+        "evidence": [
+          {
+            "channel": "wartranslated",
+            "url": "https://t.me/wartranslated/18407",
+            "at": "2026-08-28T18:40:21Z",
+            "excerpt": "A large fire broke out near the Zhytomyr highway outside Kyiv, reportedly after a Russian drone attack."
+          }
+        ]
+      },
+      {
+        "name": "Kletnya",
+        "lat": 53.3898,
+        "lng": 33.2173,
+        "source": "telegram",
+        "count": 1,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51867",
+            "at": "2026-08-29T11:18:03Z",
+            "excerpt": "…rone destroyed a Russian Pantsir-S1 air defense system near Kletnya in Bryansk region on August 27. The system belonged to the 210th Air Defense Mi…"
+          }
+        ]
+      },
+      {
+        "name": "Luhansk",
+        "lat": 48.5681,
+        "lng": 39.3055,
+        "source": "telegram",
+        "count": 1,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51868",
+            "at": "2026-08-29T11:19:31Z",
+            "excerpt": "…ary with reaching the administrative borders of Donetsk and Luhansk regions by December 31, while Russian commanders are seeking a March 31 deadlin…"
+          }
+        ]
+      },
+      {
+        "name": "Znamianka",
+        "lat": 45.5429,
+        "lng": 34.352,
+        "source": "telegram",
+        "count": 1,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51874",
+            "at": "2026-08-29T11:36:45Z",
+            "excerpt": "…ine's General Staff says. An electronic warfare system near Znamianka in occupied Crimea and a drone command post in Berestky, Donetsk region, were a…"
+          }
+        ]
+      },
+      {
+        "name": "Berestky",
+        "lat": 48.0127,
+        "lng": 37.2588,
+        "source": "telegram",
+        "count": 1,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51874",
+            "at": "2026-08-29T11:36:45Z",
+            "excerpt": "…ar Znamianka in occupied Crimea and a drone command post in Berestky, Donetsk region, were also hit. The General Staff separately confirmed that a R…"
+          }
+        ]
+      },
+      {
+        "name": "Dmytrivka",
+        "lat": 50.6028,
+        "lng": 29.7839,
+        "source": "telegram",
+        "count": 1,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51875",
+            "at": "2026-08-29T11:40:35Z",
+            "excerpt": "…least 27 people, with officials warning the toll may rise. Dmytrivka community head Taras Didych was among those killed. He had gone to the scene sh…"
+          }
+        ]
       }
     ],
     "sudan": [
@@ -113,5 +308,6 @@
         "lastSeen": "2026-08-29"
       }
     ]
-  }
+  },
+  "attribution": "Place data (c) GeoNames, CC BY 4.0 - https://www.geonames.org/"
 }

@@ -1,3 +1,36 @@
+## TELEGRAM LAYER BUILT (29 Aug) — awaiting William's editorial review
+
+`scripts/telegram-detect.mjs` + `gazetteer.json.gz` (GeoNames UA+RU, committed).
+Matches settlement names in `noel_reports` and `wartranslated` posts against the
+gazetteer, disambiguates by the oblast named in the post, drops the ambiguous.
+Ran by hand 29 Aug: 11 places, 2 dropped, 5 suppressed as already-curated.
+
+- Ukraine's GKG layer is PAUSED: `SKIP = new Set(['ukraine'])` in
+  detect-locations.mjs. The telegram detector owns `auto-locations.json`'s
+  ukraine array; stale GKG entries there were dropped.
+- Frontend: telegram markers are blue (curated red, GKG amber), panel shows
+  each post excerpt + channel + date + link, wording "Reported by [channel].
+  Not independently verified."
+- NOT wired to a schedule. `auto-locations.json` + `seen-posts.json` here are
+  a hand-run result committed for review.
+- **Not visually verified** — no browser this session. Load the site and click
+  a blue Ukraine marker.
+- Soft matches for William to judge: "Zhytomyr" (the highway, not the city),
+  "Luhansk"/"Chernihiv" (analytical mentions, not events). `STOPLIST` in the
+  script is where common-word / surname collisions get killed; it grows from
+  output (peskov, tkachenko, etc. already added).
+- Next: wire a dispatch-only workflow (t.me returns 200 from the runner,
+  confirmed run 33252016028), then a schedule once the matches hold up.
+
+## OPEN BUG (found 29 Aug, live on the site)
+
+On first page load the globe draws **19 markers**: the 5 conflicts PLUS all 14
+Ukraine locations, mixed together at world level. Calling showWorld() corrects
+it to 5, so showWorld itself is fine and the fault is in the initial draw after
+conflicts.json loads. Suspect something added with the auto-locations layer.
+
+Small fix, but it defeats the two-tier design for anyone arriving fresh.
+
 # WHERE WE STOPPED (28 Aug 2026, late)
 
 William stopped here, tired, after a long session. Pick up from this point.

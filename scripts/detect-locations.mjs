@@ -31,6 +31,11 @@ const execFileP = promisify(execFile);
 const CONFLICTS_PATH = 'conflicts.json';
 const OUTPUT_PATH = 'auto-locations.json';
 
+// Conflicts whose auto layer is handled elsewhere. Ukraine is served by the
+// Telegram detector (scripts/telegram-detect.mjs) while that is being judged;
+// the GKG layer for it is paused, not deleted. See TELEGRAM-SPEC.md.
+const SKIP = new Set(['ukraine']);
+
 const GKG_HOST = 'https://data.gdeltproject.org/gdeltv2';
 
 // How many 15-minute GKG files to pull, stepping back from the latest.
@@ -423,6 +428,14 @@ async function main() {
     if (!conflict.id) { console.error(`conflict with no id, skipping`); continue; }
     const existingForId = Array.isArray(previous.conflicts[conflict.id])
       ? previous.conflicts[conflict.id] : [];
+
+    // Paused conflict: carry its existing entries through untouched so the
+    // other detector's markers are not wiped, and move on.
+    if (SKIP.has(conflict.id)) {
+      nextConflicts[conflict.id] = existingForId;
+      console.log(`\n[${conflict.id}] GKG layer paused - kept ${existingForId.length} existing entries`);
+      continue;
+    }
 
     const { points, stats } = processConflict(conflict, existingForId, themedRows, globals);
     nextConflicts[conflict.id] = points;

@@ -149,6 +149,32 @@
       color: rgba(255, 255, 255, 0.4);
     }
 
+    /* ---- Telegram-reported locations: a third layer, blue --------- */
+    .loc-heading-tg { color: rgba(74, 163, 255, 0.8); }
+    .loc-item-tg:hover { color: #9cc9ff; }
+    .loc-dot-tg { background: none; border: 1px solid #4aa3ff; }
+
+    .tg-evidence {
+      display: block;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      text-decoration: none;
+    }
+    .tg-ev-meta {
+      display: block;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      color: rgba(74, 163, 255, 0.8);
+    }
+    .tg-ev-text {
+      display: block;
+      margin-top: 4px;
+      font-size: 13px;
+      line-height: 1.45;
+      color: rgba(232, 234, 237, 0.75);
+    }
+    .tg-evidence:hover .tg-ev-text { color: #cfe4ff; }
+
     #panel-title {
       margin: 0 0 10px;
       font-size: 24px;
@@ -378,7 +404,7 @@
       const auto = (autoLocations[c.id] || []).map(a => Object.assign({}, a, {
         auto: true,
         intensity: 0.2,
-        type: 'Auto-detected from news'
+        type: a.source === 'telegram' ? 'Reported by a trusted channel' : 'Auto-detected from news'
       }));
       return curated.concat(auto);
     }
@@ -425,8 +451,9 @@
         .pointLng(d => d.lng)
         .pointAltitude(0.004)
         .pointRadius(d => markerRadius(d))
-        .pointColor(d => d.auto ? '#ffb020' : '#ff2a1f')
-        .pointLabel(d => d.auto ? d.name + ' (auto-detected)' : d.name)
+        .pointColor(d => !d.auto ? '#ff2a1f' : d.source === 'telegram' ? '#4aa3ff' : '#ffb020')
+        .pointLabel(d => !d.auto ? d.name
+          : d.name + (d.source === 'telegram' ? ' (reported)' : ' (auto-detected)'))
         .onPointClick(d => d.locations ? openConflict(d) : openLocation(d))
         // Only curated markers pulse. A ring on an auto marker would read as
         // "something is happening here", which is more than we know.
@@ -490,7 +517,36 @@
       const summary = document.getElementById('panel-summary');
 
       // Auto-detected place: no write-up, no news feed, just a plain
-      // statement of what it is and the numbers behind it.
+      // statement of what it is and the evidence behind it.
+      if (d.auto && d.source === 'telegram') {
+        const channels = [...new Set((d.evidence || []).map(e => e.channel))];
+        document.getElementById('panel-meta').textContent =
+          'Reported \u00b7 ' + (activeConflict ? activeConflict.name : '');
+        summary.style.color = '';
+        summary.innerHTML =
+          '<span class="auto-note">Reported by '
+          + escapeHtml(channels.join(', ') || 'a trusted channel')
+          + '. Not independently verified.</span><br><br>'
+          + 'A source William follows said something happened here. '
+          + 'It does not mean it did.'
+          + '<span class="auto-stats">'
+          + escapeHtml(String(d.count)) + ' post' + (d.count === 1 ? '' : 's')
+          + ' \u00b7 first ' + escapeHtml(String(d.firstSeen))
+          + ' \u00b7 last ' + escapeHtml(String(d.lastSeen))
+          + '</span>';
+        const ev = (d.evidence || []).map(e =>
+          '<a class="tg-evidence" href="' + (/^https:\/\/t\.me\//.test(e.url) ? escapeHtml(e.url) : '#')
+          + '" target="_blank" rel="noopener">'
+          + '<span class="tg-ev-meta">' + escapeHtml(e.channel) + ' \u00b7 '
+          + escapeHtml((e.at || '').slice(0, 10)) + '</span>'
+          + '<span class="tg-ev-text">' + escapeHtml(e.excerpt || '') + '</span></a>'
+        ).join('');
+        document.getElementById('panel-sources').innerHTML = ev;
+        document.getElementById('panel-news').innerHTML = '';
+        panel.classList.add('open');
+        return;
+      }
+
       if (d.auto) {
         document.getElementById('panel-meta').textContent =
           'Auto-detected \u00b7 ' + (activeConflict ? activeConflict.name : '');
@@ -535,30 +591,34 @@
     function showLocationList(c) {
       const box = document.getElementById('panel-locations');
       const curated = c.locations || [];
-      const auto = (autoLocations[c.id] || []).map(a => Object.assign({}, a, {
-        auto: true, intensity: 0.2, type: 'Auto-detected from news'
+      const allAuto = (autoLocations[c.id] || []).map(a => Object.assign({}, a, {
+        auto: true, intensity: 0.2
       }));
+      const reported = allAuto.filter(a => a.source === 'telegram');
+      const auto = allAuto.filter(a => a.source !== 'telegram');
 
-      if (curated.length === 0 && auto.length === 0) { box.innerHTML = ''; return; }
+      if (curated.length === 0 && allAuto.length === 0) { box.innerHTML = ''; return; }
       box.innerHTML = '';
 
-      addLocSection('Locations', curated, false);
-      addLocSection('Auto-detected · unverified', auto, true);
+      addLocSection('Locations', curated, '');
+      addLocSection('Reported · unverified', reported, 'tg');
+      addLocSection('Auto-detected · unverified', auto, 'auto');
 
-      function addLocSection(heading, list, isAuto) {
+      function addLocSection(heading, list, kind) {
         if (list.length === 0) return;
+        const sub = kind ? ' loc-heading-' + kind : '';
         const h = document.createElement('div');
-        h.className = 'loc-heading' + (isAuto ? ' loc-heading-auto' : '');
+        h.className = 'loc-heading' + sub;
         h.textContent = heading;
         box.appendChild(h);
 
         list.forEach(loc => {
           const b = document.createElement('button');
-          b.className = 'loc-item' + (isAuto ? ' loc-item-auto' : '');
-          const count = isAuto
+          b.className = 'loc-item' + (kind ? ' loc-item-auto loc-item-' + kind : '');
+          const count = kind
             ? '<span class="loc-count">' + escapeHtml(String(loc.count)) + '</span>'
             : '';
-          const dot = '<span class="loc-dot' + (isAuto ? ' loc-dot-auto' : '') + '"></span>';
+          const dot = '<span class="loc-dot' + (kind ? ' loc-dot-' + kind : '') + '"></span>';
           b.innerHTML = '<span>' + escapeHtml(loc.name) + '</span>' + count + dot;
           b.addEventListener('click', () => openLocation(loc));
           box.appendChild(b);
