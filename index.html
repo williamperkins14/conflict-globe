@@ -413,7 +413,14 @@
       .then(response => response.json())
       .then(conflicts => {
         allConflicts = conflicts;
-        drawMarkers(conflicts);
+
+        // First paint: no transition (there is nothing to animate from), and
+        // swallow marker clicks for a beat. globe.gl counts a stray pointer
+        // down+up near a marker as a click; one landing during load would
+        // fire openConflict and leave a country's locations on the world view.
+        navigating = true;
+        drawMarkers(conflicts, 0);
+        setTimeout(() => { navigating = false; }, 800);
 
         globe.onZoom(pov => {
           // Ignore camera movement we started ourselves. flyTo has already
@@ -454,7 +461,10 @@
         .pointColor(d => !d.auto ? '#ff2a1f' : d.source === 'telegram' ? '#4aa3ff' : '#ffb020')
         .pointLabel(d => !d.auto ? d.name
           : d.name + (d.source === 'telegram' ? ' (reported)' : ' (auto-detected)'))
-        .onPointClick(d => d.locations ? openConflict(d) : openLocation(d))
+        // Ignore clicks that land while the camera is already moving - during
+        // the load settle or any flyTo. Without this a click meant for empty
+        // space, caught mid-flight, navigates somewhere unexpected.
+        .onPointClick(d => { if (navigating) return; return d.locations ? openConflict(d) : openLocation(d); })
         // Only curated markers pulse. A ring on an auto marker would read as
         // "something is happening here", which is more than we know.
         .ringsData(items.filter(d => !d.auto))
