@@ -59,6 +59,23 @@ Assumed data shapes have cost this project two false starts already.
   channels and outlet RSS feeds are the realistic equivalent and are worth
   investigating instead.
 
+## Infrastructure set up this session (for a fresh Claude session)
+
+- Repo: github.com/williamperkins14/conflict-globe. Pages serves `main` at
+  https://williamperkins14.github.io/conflict-globe/
+- `gh` CLI is installed at `~/.local/bin/gh` and authenticated as
+  williamperkins14. `git push` works via gh's credential helper.
+- **Security debt:** a classic PAT (`ghp_...`, full `repo` scope) was pasted
+  into chat early on. Revoke it at GitHub → Settings → Developer settings →
+  Tokens (classic) if not already done. gh uses its own token now, so this is
+  safe to revoke.
+- `auto-markers` branch is merged into `main`; safe to delete.
+- If a `git` command fails with a `.git/index.lock` error and nothing is
+  running, it is a stale lock from VS Code — `rm .git/index.lock`.
+- Workflow `detect-locations.yml` is on `main`: `workflow_dispatch` only,
+  `schedule:` commented out, still carries a now-pointless GEO probe step.
+  `WINDOW_FILES = 2`. Run it from the Actions tab; check the log.
+
 # Conflict Globe — handover notes
 
 ## What this is
