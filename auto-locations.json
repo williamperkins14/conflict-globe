@@ -1,14 +1,30 @@
 {
-  "generated": "2026-08-28T00:14:46.764Z",
+  "generated": "2026-08-29T12:16:11.685Z",
   "conflicts": {
     "ukraine": [
       {
         "name": "Ukraine",
         "lat": 49,
         "lng": 32,
-        "count": 37,
+        "count": 36,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-28"
+        "lastSeen": "2026-08-29"
+      },
+      {
+        "name": "Izmail, Odes'ka Oblast, Ukraine",
+        "lat": 45.3493,
+        "lng": 28.8408,
+        "count": 21,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29"
+      },
+      {
+        "name": "Vyshneve, Chernihivs'ka Oblast', Ukraine",
+        "lat": 51.7667,
+        "lng": 31.2167,
+        "count": 11,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29"
       },
       {
         "name": "Romanian",
@@ -17,6 +33,14 @@
         "count": 6,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-08-28"
+      },
+      {
+        "name": "Dmytrivka, Mykolayivs'ka Oblast', Ukraine",
+        "lat": 46.6314,
+        "lng": 31.7386,
+        "count": 4,
+        "firstSeen": "2026-08-29",
+        "lastSeen": "2026-08-29"
       }
     ],
     "sudan": [
@@ -44,33 +68,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 46,
+        "count": 38,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-28"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 20,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-28"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 10,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-28"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 10,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-28"
+        "lastSeen": "2026-08-29"
       },
       {
         "name": "Kuwait",
@@ -81,12 +81,36 @@
         "lastSeen": "2026-08-28"
       },
       {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-29"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-29"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-29"
+      },
+      {
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
-        "count": 5,
+        "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-28"
+        "lastSeen": "2026-08-29"
       }
     ]
   }
