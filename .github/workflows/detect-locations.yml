@@ -59,6 +59,10 @@ jobs:
             -w "masterlist: %{http_code} (%{size_download} bytes)\n" \
             "https://data.gdeltproject.org/gdeltv2/masterfilelist.txt" \
             || echo "masterlist curl failed (exit $?)"
+          echo "--- Telegram channel preview page ---"
+          curl -sS -m 30 -o /dev/null -w "telegram: %{http_code}\n" \
+            "https://t.me/s/noel_reports" \
+            || echo "telegram curl failed (exit $?)"
 
       - name: Detect locations
         id: detect
