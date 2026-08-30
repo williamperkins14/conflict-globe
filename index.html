@@ -197,11 +197,48 @@
       color: rgba(232, 234, 237, 0.78);
     }
 
+    /* ---- Key events: the curated history layer --------------------- */
+    .ke-item {
+      display: flex;
+      gap: 12px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .ke-date {
+      flex: none;
+      width: 74px;
+      text-align: right;
+      padding-top: 1px;
+      font-size: 11px;
+      font-variant-numeric: tabular-nums;
+      color: rgba(255, 90, 77, 0.85);
+    }
+
+    .ke-text {
+      flex: 1;
+      min-width: 0;
+      font-size: 13.5px;
+      line-height: 1.5;
+      color: rgba(232, 234, 237, 0.85);
+    }
+
+    .ke-note {
+      display: block;
+      margin-top: 4px;
+      font-size: 11px;
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.32);
+    }
+
     /* ---- Recent events, from the Telegram layer -------------------- */
-    .ev-note {
-      margin: -6px 0 16px;
-      font-size: 12px;
-      color: rgba(74, 163, 255, 0.75);
+    /* The caveat lives in the heading rather than in a sentence of its
+       own: still present on every location, but not shouting. */
+    .ev-unver {
+      margin-left: 6px;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.28);
     }
 
     .ev-day { margin-bottom: 22px; }
@@ -369,6 +406,7 @@
     <h1 id="panel-title"></h1>
     <p id="panel-meta"></p>
     <p id="panel-summary"></p>
+    <div id="panel-key-events"></div>
     <div id="panel-events"></div>
     <div id="panel-sources"></div>
     <div id="panel-locations"></div>
@@ -650,6 +688,7 @@
         document.getElementById('panel-sources').innerHTML = ev;
         document.getElementById('panel-news').innerHTML = '';
         document.getElementById('panel-events').innerHTML = '';
+        document.getElementById('panel-key-events').innerHTML = '';
         panel.classList.add('open');
         return;
       }
@@ -674,6 +713,7 @@
         document.getElementById('panel-sources').innerHTML = '';
         document.getElementById('panel-news').innerHTML = '';
         document.getElementById('panel-events').innerHTML = '';
+        document.getElementById('panel-key-events').innerHTML = '';
         return;
       }
 
@@ -690,6 +730,7 @@
       }
 
       panel.classList.add('open');
+      showKeyEvents(d);
       showEvents(d);
       showSources(d);
       loadNews(d);
@@ -1092,6 +1133,37 @@
     // that is the same cross-event leak that once put 38 deaths on the
     // wrong city, and it would be no more true here than in the parser.
     // ---------------------------------------------------------------
+    // Curated history: the handful of events that changed what this place
+    // is, oldest first. Distinct from the Telegram feed below it in both
+    // colour and certainty — these are checked and dated, that is reported
+    // and unverified, and the panel should never let the two blur.
+    //
+    // Where an event has two defensible dates the alternative is carried in
+    // `note` and shown, rather than being resolved silently. A recorded
+    // disagreement is worth more than a clean-looking single number.
+    function showKeyEvents(d) {
+      const box = document.getElementById('panel-key-events');
+      if (!box) return;
+      const list = d.keyEvents || [];
+      if (list.length === 0) { box.innerHTML = ''; return; }
+
+      box.innerHTML = '<div class="news-heading">Key events</div>'
+        + list.map(e =>
+            '<div class="ke-item">'
+          + '<span class="ke-date">' + escapeHtml(formatShortDate(e.date)) + '</span>'
+          + '<span class="ke-text">' + escapeHtml(e.text)
+          + (e.note ? '<span class="ke-note">' + escapeHtml(e.note) + '</span>' : '')
+          + '</span></div>'
+          ).join('');
+    }
+
+    function formatShortDate(iso) {
+      const m = ['Jan','Feb','Mar','Apr','May','Jun',
+                 'Jul','Aug','Sep','Oct','Nov','Dec'];
+      const p = String(iso).split('-');
+      return String(Number(p[2])) + ' ' + m[Number(p[1]) - 1] + ' ' + p[0];
+    }
+
     function showEvents(d) {
       const box = document.getElementById('panel-events');
       if (!box) return;
@@ -1112,9 +1184,8 @@
       });
 
       box.innerHTML =
-        '<div class="news-heading">Recent events</div>'
-        + '<div class="ev-note">Reported by channels you follow. '
-        + 'Not independently verified.</div>'
+        '<div class="news-heading">Recent events '
+        + '<span class="ev-unver">unverified</span></div>'
         + days.map(g => {
             const chans = [...new Set(g.items.map(e => e.channel))];
             const times = g.items.map(e => String(e.at).slice(11, 16)).sort();

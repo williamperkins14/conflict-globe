@@ -10,15 +10,15 @@
     "name": "Russia-Ukraine war",
     "type": "Interstate war",
     "updated": "2026-08-27",
-    "lat": 49.0,
-    "lng": 32.0,
-    "intensity": 1.0,
+    "lat": 49,
+    "lng": 32,
+    "intensity": 1,
     "query": "Ukraine",
     "match": [
       "Ukraine",
       "Ukrainian"
     ],
-    "summary": "Russia invaded Ukraine on 24 February 2022, eight years after seizing Crimea and backing separatist forces in the Donbas. The drive on Kyiv failed within weeks, and the war became a grinding contest along a front running through the east and south, with both sides striking deep into the other's territory. Russia holds roughly a fifth of Ukraine and the fighting continues.",
+    "summary": "Russia invaded Ukraine on 24 February 2022, eight years after seizing Crimea and backing separatist forces in the Donbas. The drive on Kyiv failed within weeks, and the war became a grinding contest along a front running through the east and south, with both sides striking deep into the other's territory. Russia holds roughly a fifth of Ukraine and the fighting continues. ---",
     "sources": [],
     "locations": [
       {
@@ -34,7 +34,29 @@
           "Киев"
         ],
         "summary": "Kyiv was Russia's first objective of the invasion. Troops advancing from Belarus reached the northern suburbs in February 2022 but failed to take the city and withdrew on 2 April, leaving mass killings of civilians behind them in Bucha and Irpin. The capital has faced no ground threat since, but is struck regularly by missiles and drones.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2022-02-24",
+            "text": "Russian troops crossed from Belarus and an airborne assault seized Hostomel airport north-west of the city."
+          },
+          {
+            "date": "2022-04-02",
+            "text": "Russian forces completed their withdrawal from Kyiv oblast, leaving mass killings of civilians documented at Bucha and Irpin."
+          },
+          {
+            "date": "2022-10-10",
+            "text": "Russia began mass missile strikes on Ukrainian cities two days after the Kerch bridge attack, hitting central Kyiv in the morning rush hour."
+          },
+          {
+            "date": "2022-10-17",
+            "text": "Shahed drones killed four people in a residential block in Shevchenkivskyi district, among them a woman six months pregnant."
+          },
+          {
+            "date": "2024-07-08",
+            "text": "A cruise missile struck the Okhmatdyt children's hospital, killing two adults and injuring sixteen."
+          }
+        ]
       },
       {
         "name": "Kharkiv",
@@ -48,7 +70,30 @@
           "Харків"
         ],
         "summary": "Kharkiv is Ukraine's second city and sits thirty kilometres from the Russian border. Russian troops reached its outskirts in February 2022 and shelled it for months before Ukraine's September counteroffensive drove them out of the oblast; a second Russian push north of the city opened in May 2024 and stalled at Vovchansk. Its proximity to the border leaves it under near-daily glide bomb and drone attack.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2022-02-24",
+            "text": "Russian forces reached the city's outskirts and sustained shelling of residential districts began."
+          },
+          {
+            "date": "2022-03-01",
+            "text": "Two missiles struck the regional administration building on Freedom Square, killing 29.",
+            "note": "CONTESTED toll: same-day reports said 6–10; 29 is the April 2022 confirmed figure"
+          },
+          {
+            "date": "2022-09-06",
+            "text": "Ukraine's counteroffensive broke the front; Izium was retaken on 10 September and Russian forces were driven from most of the oblast."
+          },
+          {
+            "date": "2024-05-10",
+            "text": "Russia opened a second offensive into northern Kharkiv oblast, which stalled at Vovchansk."
+          },
+          {
+            "date": "2024-05-25",
+            "text": "A glide bomb hit the Epicentr hardware store, killing 19 and wounding more than 50."
+          }
+        ]
       },
       {
         "name": "Pokrovsk",
@@ -61,7 +106,21 @@
           "Покровськ"
         ],
         "summary": "Pokrovsk was the road and rail hub supplying Ukrainian positions across the Donetsk front. Russian forces began pushing towards it in mid-2024, ground through the approaches for over a year, and claimed the city on 2 December 2025. Russian momentum stalled after its capture, and fighting has continued in the sectors east and north of the town.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2023-08-07",
+            "text": "Two Iskander missiles hit a hotel and an apartment block forty minutes apart, the second killing rescuers who had arrived after the first; 10 died and 82 were wounded."
+          },
+          {
+            "date": "2024-08-19",
+            "text": "Ukraine ordered the mandatory evacuation of families with children as Russian forces closed on the town."
+          },
+          {
+            "date": "2025-12-02",
+            "text": "Russia claimed the capture of the city after more than a year of fighting on its approaches."
+          }
+        ]
       },
       {
         "name": "Donetsk",
@@ -75,7 +134,21 @@
           "Донецк"
         ],
         "summary": "Donetsk was seized by Russian-backed forces in April 2014 and became the capital of the self-declared Donetsk People's Republic, which Russia annexed in September 2022. The city has been under Russian control for over a decade and now sits well behind the front line rather than on it. It is hit by Ukrainian shelling and drone strikes aimed at the military infrastructure inside it.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2014-04-07",
+            "text": "Separatists occupying the regional administration building declared the Donetsk People's Republic."
+          },
+          {
+            "date": "2014-05-26",
+            "text": "Fighting for Donetsk airport began; the terminal held out until separatist forces took it on 21 January 2015."
+          },
+          {
+            "date": "2022-09-30",
+            "text": "Russia signed treaties annexing Donetsk oblast along with Luhansk, Zaporizhzhia and Kherson."
+          }
+        ]
       },
       {
         "name": "Mariupol",
@@ -88,7 +161,26 @@
           "Маріуполь"
         ],
         "summary": "Mariupol was besieged from the opening days of the invasion and destroyed in the taking. Russian aircraft bombed the drama theatre sheltering civilians on 16 March 2022, and the last defenders surrendered at the Azovstal steelworks on 20 May; estimates of the civilian dead run into the thousands. The city has been occupied since, and its port is now a Ukrainian drone target.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2022-03-02",
+            "text": "The city was fully encircled, cutting water, power and heat."
+          },
+          {
+            "date": "2022-03-09",
+            "text": "Russian aircraft bombed maternity hospital No. 3."
+          },
+          {
+            "date": "2022-03-16",
+            "text": "The drama theatre, sheltering civilians with \"CHILDREN\" written outside it, was bombed.",
+            "note": "CONTESTED toll: Amnesty says at least 12 and likely many more; an AP investigation estimated around 600"
+          },
+          {
+            "date": "2022-05-20",
+            "text": "The last defenders at the Azovstal steelworks surrendered and Russia declared full control."
+          }
+        ]
       },
       {
         "name": "Zaporizhzhia",
@@ -102,7 +194,23 @@
           "Запоріжжя"
         ],
         "summary": "Zaporizhzhia city has never been taken, but the front line has sat some forty kilometres to its south since 2022, and Europe's largest nuclear plant — held by Russian forces at Enerhodar downriver since March 2022 — lies inside the same oblast. Ukraine's 2023 counteroffensive on this axis gained little ground. The city is struck regularly, including in a wave of attacks across Ukraine on 11 August 2026.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2022-03-04",
+            "text": "Russian forces seized the Zaporizhzhia nuclear plant at Enerhodar, the first time an operating nuclear station had been taken in war."
+          },
+          {
+            "date": "2022-09-30",
+            "text": "Sixteen missiles hit a civilian convoy on the city's outskirts, killing 32, hours before Russia's annexation ceremony.",
+            "note": "CONTESTED toll: same-day reports 23–30; 32 is the confirmed figure"
+          },
+          {
+            "date": "2023-06-04",
+            "text": "Ukraine's southern counteroffensive opened on this axis and gained little ground over the summer.",
+            "note": "CONTESTED date: ISW dates the onset to 4 June; most Western outlets reported the visible Zaporizhzhia push from 8 June"
+          }
+        ]
       },
       {
         "name": "Kherson",
@@ -115,7 +223,25 @@
           "Херсон"
         ],
         "summary": "Kherson was the only regional capital Russia captured intact, falling on 2 March 2022 and held for eight months before Russian forces withdrew across the Dnipro on 11 November. The river now forms the front line and the city sits directly on it. It is shelled daily from the occupied left bank and has become known for drone attacks flown deliberately at civilians in the streets.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2022-03-02",
+            "text": "Kherson fell, the only Ukrainian regional capital captured in the invasion."
+          },
+          {
+            "date": "2022-09-30",
+            "text": "Russia annexed the oblast."
+          },
+          {
+            "date": "2022-11-11",
+            "text": "Ukrainian forces entered the city as Russian troops withdrew across the Dnipro."
+          },
+          {
+            "date": "2023-06-06",
+            "text": "The Kakhovka dam was breached, flooding the lower Dnipro and affecting some 40,000 people."
+          }
+        ]
       },
       {
         "name": "Odesa",
@@ -129,7 +255,26 @@
           "Одеса"
         ],
         "summary": "Odesa is Ukraine's main port and the outlet for its grain exports, which makes its harbour infrastructure a standing target. Russian forces never reached the city, and the naval threat receded after Ukraine pushed the Black Sea Fleet out of the western Black Sea. Strikes now fall on port facilities and the power grid; an attack on 9 August 2026 left the city in darkness.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2014-05-02",
+            "text": "Street clashes between rival demonstrators ended in a fire at the Trade Unions House; 42 died in the building and six in the earlier fighting.",
+            "note": "DECIDE — see note below"
+          },
+          {
+            "date": "2022-07-22",
+            "text": "The Black Sea Grain Initiative was signed in Istanbul, reopening the port to grain exports."
+          },
+          {
+            "date": "2023-07-17",
+            "text": "Russia withdrew from the grain deal and strikes on port infrastructure followed."
+          },
+          {
+            "date": "2023-07-23",
+            "text": "Missile strikes damaged the Transfiguration Cathedral, destroying its central altar."
+          }
+        ]
       },
       {
         "name": "Sumy",
@@ -142,7 +287,26 @@
           "Суми"
         ],
         "summary": "Sumy sits on the Russian border in Ukraine's north-east and was partly overrun in the opening weeks of the invasion before Russian forces withdrew in April 2022. It served as the staging ground for Ukraine's incursion into Kursk oblast in August 2024, and drew a Russian counter-push into the northern part of the oblast after that operation ended. The city is within artillery and drone range and is struck routinely.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2022-02-24",
+            "text": "Russian columns crossed the border and parts of the oblast were occupied within days."
+          },
+          {
+            "date": "2022-04-08",
+            "text": "The governor declared the oblast clear of Russian troops.",
+            "note": "CONTESTED: he said no settlements remained occupied on 4 April; 8 April is the declared completion"
+          },
+          {
+            "date": "2024-08-06",
+            "text": "Ukraine launched its incursion into Kursk oblast from Sumy."
+          },
+          {
+            "date": "2025-04-13",
+            "text": "Two ballistic missiles struck the city centre on Palm Sunday, killing 35."
+          }
+        ]
       },
       {
         "name": "Dnipro",
@@ -155,7 +319,21 @@
           "Дніпро"
         ],
         "summary": "Dnipro is the logistics and medical hub behind the eastern front, the city through which wounded soldiers and supplies move. It has never been threatened on the ground but is struck from the air; a missile hit an apartment block on 14 January 2023, killing forty-six people. Russian forces crossed into the surrounding oblast in 2025 and were pushed back out in a Ukrainian counteroffensive completed in August 2026.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2023-01-14",
+            "text": "A Kh-22 missile destroyed part of a nine-storey apartment block, killing 46 including six children."
+          },
+          {
+            "date": "2024-11-21",
+            "text": "Russia used the Oreshnik intermediate-range missile in combat for the first time, against the Pivdenmash plant."
+          },
+          {
+            "date": "2026-08-14",
+            "text": "A Ukrainian counteroffensive completed the recovery of occupied ground in Dnipropetrovsk oblast."
+          }
+        ]
       },
       {
         "name": "Belgorod",
@@ -168,7 +346,21 @@
           "Белгород"
         ],
         "summary": "Belgorod is the Russian city closest to the border, forty kilometres from Ukraine, and was a staging area for the invasion in 2022. It has been under Ukrainian shelling and drone attack since, which makes it the Russian city most exposed to the war. A drone attack on 9 August 2026 killed five people.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2022-04-01",
+            "text": "Two helicopters struck a fuel depot in the city in the first widely reported air strike on Russian soil; Ukraine did not claim responsibility and attribution remains disputed."
+          },
+          {
+            "date": "2023-05-22",
+            "text": "Fighters of the Russian Volunteer Corps and the Freedom of Russia Legion crossed into the oblast at Hraivoron."
+          },
+          {
+            "date": "2023-12-30",
+            "text": "Shelling of the city centre killed 25 including five children, the deadliest attack on a Russian city of the war."
+          }
+        ]
       },
       {
         "name": "Kursk",
@@ -181,7 +373,27 @@
           "Курск"
         ],
         "summary": "Kursk oblast was the target of Ukraine's only sustained offensive onto Russian soil, launched on 6 August 2024, which seized the town of Sudzha and around a thousand square kilometres of territory. The ground proved impossible to hold. Russian forces, reinforced by North Korean troops, retook Sudzha in March 2025 and the campaign ended after 218 days.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2024-08-06",
+            "text": "Ukrainian forces crossed the border in the first sustained incursion by a foreign army into Russia since the Second World War."
+          },
+          {
+            "date": "2024-08-15",
+            "text": "Zelensky confirmed the capture of Sudzha.",
+            "note": "CONTESTED: some accounts date effective control to 8–12 August"
+          },
+          {
+            "date": "2024-10-28",
+            "text": "NATO and the Pentagon confirmed the deployment of North Korean troops to Kursk oblast."
+          },
+          {
+            "date": "2025-03-16",
+            "text": "Ukrainian forces withdrew from Sudzha and the campaign ended after 218 days.",
+            "note": "CONTESTED: ISW and DeepState geolocated the withdrawal to 12 March; 16 March is Ukraine's General Staff confirmation"
+          }
+        ]
       },
       {
         "name": "Moscow",
@@ -194,7 +406,21 @@
           "Москва"
         ],
         "summary": "Moscow lies some 450 kilometres from Ukraine and was first reached by Ukrainian drones in 2023. The attacks have grown in scale since: Ukraine launched around six hundred drones towards the city in a single night in July 2026, and strikes have set the Moscow refinery alight more than once. They cause limited physical damage but repeatedly close the capital's airports.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2023-05-03",
+            "text": "Two drones were destroyed over the Kremlin."
+          },
+          {
+            "date": "2023-05-30",
+            "text": "Drones struck residential districts, the first attack on the capital's housing."
+          },
+          {
+            "date": "2026-07-28",
+            "text": "Around six hundred drones were launched towards the city in a single night."
+          }
+        ]
       },
       {
         "name": "Novorossiysk",
@@ -207,7 +433,59 @@
           "Новороссийск"
         ],
         "summary": "Novorossiysk is Russia's largest Black Sea port and became the main base for the Black Sea Fleet after Ukrainian strikes made Sevastopol untenable. It handles a large share of Russian oil and grain exports, which makes it a target of strategic rather than tactical value. A Ukrainian strike on the night of 11 August 2026 hit the naval base, oil terminals and grain facilities, and suspended operations at two major grain terminals.",
-        "sources": []
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2023-08-04",
+            "text": "Naval drones holed the landing ship Olenegorsky Gornyak in the harbour."
+          },
+          {
+            "date": "2023-10-01",
+            "text": "The Black Sea Fleet dispersed vessels from Sevastopol and Novorossiysk became its main working port.",
+            "note": "note: a dispersal under fire, not a formal change of base"
+          },
+          {
+            "date": "2026-08-11",
+            "text": "A large strike hit the naval base, oil terminals and grain facilities, suspending operations at two grain terminals."
+          }
+        ]
+      },
+      {
+        "name": "Nord Stream",
+        "lat": 55.32,
+        "lng": 15.55,
+        "intensity": 0.7,
+        "query": "(Nord Stream)",
+        "match": [
+          "Nord Stream",
+          "Nordstream",
+          "Nord Stream 1",
+          "Nord Stream 2"
+        ],
+        "summary": "Nord Stream 1 and 2 carried Russian gas under the Baltic Sea to Germany until underwater explosions ruptured both pipelines near the Danish island of Bornholm on 26 September 2022. No state has admitted responsibility. German prosecutors charged a former Ukrainian officer in July 2026 and allege the operation was ordered from Ukraine, which denies involvement; the pipelines have never returned to service.",
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2022-09-26",
+            "text": "Underwater explosions ruptured both Nord Stream pipelines near the Danish island of Bornholm, ending Russian pipeline gas to Germany."
+          },
+          {
+            "date": "2023-06-13",
+            "text": "Reporting revealed that Dutch intelligence had warned the CIA in June 2022 of a Ukrainian plan to attack the pipelines, and that the CIA had told Ukraine not to proceed."
+          },
+          {
+            "date": "2024-08-14",
+            "text": "German prosecutors issued an arrest warrant for a Ukrainian diver over the sabotage."
+          },
+          {
+            "date": "2026-07-02",
+            "text": "German prosecutors charged a former Ukrainian officer with directing an attack against civilian objects, alleging the operation was ordered from Ukraine."
+          },
+          {
+            "date": "2026-08-23",
+            "text": "Zelensky said Ukraine was not behind the sabotage and offered to assist the investigation."
+          }
+        ]
       }
     ]
   },
@@ -222,8 +500,8 @@
     "name": "Sudan civil war",
     "type": "Civil war",
     "updated": "2026-08-27",
-    "lat": 15.0,
-    "lng": 30.0,
+    "lat": 15,
+    "lng": 30,
     "intensity": 0.9,
     "query": "Sudan",
     "match": [
@@ -299,7 +577,7 @@
   {
     "id": "gaza",
     "bbox": [
-      31.0,
+      31,
       31.7,
       34.1,
       34.6
@@ -309,7 +587,7 @@
     "updated": "2026-08-27",
     "lat": 31.42,
     "lng": 34.36,
-    "intensity": 1.0,
+    "intensity": 1,
     "query": "Gaza",
     "match": [
       "Gaza"
@@ -381,7 +659,7 @@
     "name": "Haiti gang violence",
     "type": "Gang violence and state collapse",
     "updated": "2026-08-27",
-    "lat": 19.0,
+    "lat": 19,
     "lng": -72.5,
     "intensity": 0.6,
     "query": "Haiti",

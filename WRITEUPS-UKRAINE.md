@@ -128,3 +128,7 @@ handles a large share of Russian oil and grain exports, which makes it a target
 of strategic rather than tactical value. A Ukrainian strike on the night of 11
 August 2026 hit the naval base, oil terminals and grain facilities, and
 suspended operations at two major grain terminals.
+
+## Nord Stream
+
+Nord Stream 1 and 2 carried Russian gas under the Baltic Sea to Germany until underwater explosions ruptured both pipelines near the Danish island of Bornholm on 26 September 2022. No state has admitted responsibility. German prosecutors charged a former Ukrainian officer in July 2026 and allege the operation was ordered from Ukraine, which denies involvement; the pipelines have never returned to service.
