@@ -1,0 +1,58 @@
+name: Backfill Telegram events
+
+# ---------------------------------------------------------------------------
+# One-off historical backfill of the `events` layer in auto-locations.json.
+# Walks each trusted channel back ~90 days through t.me/s/<channel>?before=<id>,
+# running every post through the same matcher and sentence parser as the
+# incremental detector.
+#
+# Manual only. It is slow (roughly an hour per channel, 1.5s between requests)
+# and it is RESUMABLE: state is checkpointed to scripts/backfill-state.json
+# after every page and committed back. Re-run it from the Actions tab until
+# every channel shows done. A channel already marked done or paused is skipped.
+#
+# Shares the `detect-locations` concurrency group with the scheduled detector
+# so the two never write auto-locations.json at the same time.
+# ---------------------------------------------------------------------------
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: detect-locations
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Step timeout sits below the job timeout so that, if the walk runs long,
+      # this step fails but the checkpoint commit below still runs.
+      - name: Backfill
+        timeout-minutes: 335
+        run: node scripts/telegram-backfill.mjs
+
+      - name: Commit auto-locations.json and backfill-state.json
+        if: always()
+        run: |
+          if [ -z "$(git status --porcelain auto-locations.json scripts/backfill-state.json)" ]; then
+            echo "Nothing changed. Nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add auto-locations.json scripts/backfill-state.json
+          git commit -m "Backfill: Telegram events (checkpoint)"
+          git push
