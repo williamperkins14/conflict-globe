@@ -47,6 +47,10 @@ const summary =
 const sm = parseSentence(summary, placesNamed(summary, gaz));
 check(sm === null, `strike-summary sentence (>=3 places) parses as null  (got ${JSON.stringify(sm)})`);
 
+// countries outside the UA+RU gazetteer still count toward the >=3 rule
+check(placesNamed('GRU-linked operatives ran training programs in Serbia, Bosnia and Moscow', gaz).size >= 3,
+  '"Serbia, Bosnia and Moscow" counts as 3 places (foreign countries counted)');
+
 // --- a clean single-event sentence still parses -------------------------------
 const clean = 'Yeysk airfield was hit overnight, with secondary detonations reported.';
 const cl = parseSentence(clean, placesNamed(clean, gaz));

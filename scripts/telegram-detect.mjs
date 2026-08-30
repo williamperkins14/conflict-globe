@@ -416,9 +416,34 @@ function sentenceAt(text, offset) {
   return text.replace(/\s+/g, ' ').trim();
 }
 
-// Count the distinct places (settlements + region names) a sentence mentions.
-// Three or more means a strike-summary sentence that cannot be pinned to one
-// location, so the parser refuses it.
+// Countries and foreign cities these channels name. The gazetteer is UA+RU
+// only, so without this "in Serbia, Bosnia and Moscow" would count as one
+// place. Kept place-only (never unit or weapon model names). Deliberately
+// excludes Ukraine, Russia, Belarus and Crimea — named in almost every post,
+// they would inflate the count everywhere.
+const WORLD_PLACES = new Set([
+  'serbia', 'bosnia', 'kosovo', 'croatia', 'slovenia', 'hungary', 'slovakia',
+  'poland', 'romania', 'moldova', 'bulgaria', 'greece', 'austria', 'germany',
+  'france', 'britain', 'england', 'ireland', 'italy', 'spain', 'portugal',
+  'netherlands', 'belgium', 'luxembourg', 'denmark', 'norway', 'sweden',
+  'finland', 'estonia', 'latvia', 'lithuania', 'iceland', 'switzerland',
+  'georgia', 'armenia', 'azerbaijan', 'turkey', 'turkiye', 'kazakhstan',
+  'uzbekistan', 'kyrgyzstan', 'tajikistan', 'turkmenistan', 'mongolia',
+  'china', 'india', 'pakistan', 'japan', 'vietnam', 'thailand', 'indonesia',
+  'iran', 'iraq', 'syria', 'lebanon', 'israel', 'jordan', 'yemen', 'egypt',
+  'libya', 'sudan', 'ethiopia', 'somalia', 'nigeria', 'algeria', 'morocco',
+  'canada', 'mexico', 'brazil', 'argentina', 'venezuela', 'cuba', 'australia',
+  'washington', 'london', 'paris', 'berlin', 'brussels', 'warsaw', 'minsk',
+  'tehran', 'baghdad', 'damascus', 'cairo', 'beijing', 'pyongyang', 'seoul',
+  'tokyo', 'ankara', 'istanbul', 'tbilisi', 'yerevan', 'baku', 'astana',
+  'vienna', 'geneva', 'zurich', 'budapest', 'bucharest', 'sofia', 'belgrade',
+  'sarajevo', 'zagreb', 'helsinki', 'stockholm', 'oslo', 'copenhagen',
+  'amsterdam', 'rome', 'madrid', 'lisbon', 'athens', 'dublin', 'ottawa',
+]);
+
+// Count the distinct places (settlements, regions, countries, foreign cities)
+// a sentence mentions. Three or more means a strike-summary or a commentary
+// line that cannot be pinned to one location, so it is refused.
 function placesNamed(sentence, gaz) {
   const toks = [...sentence.matchAll(WORD)].map(m => ({
     raw: m[0], lc: m[0].toLowerCase().replace(/[.'’]+$/, ''),
@@ -430,7 +455,9 @@ function placesNamed(sentence, gaz) {
     for (let n = Math.min(4, toks.length - i); n >= 1; n--) {
       const phrase = toks.slice(i, i + n).map(t => t.lc).join(' ');
       if (!isCapitalised(toks[i].raw) || phrase.length < MIN_NAME_LEN || STOPLIST.has(phrase)) continue;
-      if (gaz.byName.has(phrase) || gaz.regionCodes.has(phrase)) { found.add(phrase); adv = n; break; }
+      if (gaz.byName.has(phrase) || gaz.regionCodes.has(phrase) || WORLD_PLACES.has(phrase)) {
+        found.add(phrase); adv = n; break;
+      }
     }
     i += adv;
   }

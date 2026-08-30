@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T20:15:57.367Z",
+  "generated": "2026-08-30T20:29:52.630Z",
   "conflicts": {
     "ukraine": [
       {
@@ -852,48 +852,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51847",
-          "at": "2026-08-28T21:23:19Z",
-          "text": "Prime Minister Serhii Koretskyi says the tragedy in Vyshneve \"did not become a lesson\" after a Russian strike in Bucha district caused a fire and subsequent detonations at warehouse facilities. He called repeating the same mistakes in the fifth year of the…\n\n0:11\n\n    This media is not supported in your browser\n    VIEW IN TELEGRAM\n\nThe very first moment of detonation caught on video. Six people have aready been injured in Russia's attack on Bucha district, Kyiv regional chief Tymur Tkachenko says. A large fire spread to private homes, while fires at 5 houses and a food establishment have been extinguished. At least 165 people have been evacuated.",
-          "sentence": "Six people have aready been injured in Russia's attack on Bucha district, Kyiv regional chief Tymur Tkachenko says.",
-          "excerpt": "…. Six people have aready been injured in Russia's attack on Bucha district, Kyiv regional chief Tymur Tkachenko says. A large fire spread to priv…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": null,
-            "casualties": "6 injured"
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51844",
-          "at": "2026-08-28T19:49:43Z",
-          "text": "Kyiv regional authorities say warehouse facilities are burning in Bucha district after an attack, with explosions accompanying the fire. Traffic is temporarily blocked on the M-06 Kyiv-Chop highway.",
-          "sentence": "Kyiv regional authorities say warehouse facilities are burning in Bucha district after an attack, with explosions accompanying the fire.",
-          "excerpt": "Kyiv regional authorities say warehouse facilities are burning in Bucha district aft…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": "warehouse",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51842",
-          "at": "2026-08-28T17:32:07Z",
-          "text": "UNICEF says life-saving supplies for children and families were destroyed in an attack that hit a UNICEF-contracted warehouse in Chubynske, Kyiv region. The agency says the destruction is impeding delivery of vital support to the most vulnerable as Ukraine approaches another harsh winter.",
-          "sentence": "UNICEF says life-saving supplies for children and families were destroyed in an attack that hit a UNICEF-contracted warehouse in Chubynske, Kyiv region.",
-          "excerpt": "…oyed in an attack that hit a UNICEF-contracted warehouse in Chubynske, Kyiv region. The agency says the destruction is impeding delivery of vital sup…",
-          "parsed": {
-            "weapon": null,
-            "target": "attack",
-            "targetType": "warehouse",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51790",
           "at": "2026-08-27T11:39:53Z",
           "text": "Russia used the upgraded 9M723-2 ballistic missile, informally known as Iskander-1000, for the first time during a combined strike on Kyiv this summer, Ukraine's HUR says. Part of the Bora-M system, the missile has a larger engine and a range of up to 550 km, versus 390 km for the 9M723-1.",
@@ -978,29 +936,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51438",
-          "at": "2026-08-21T09:06:00Z",
-          "text": "❗️Ukraine is seeking Elon Musk's approval to use Starlink-equipped attack drones against Russian ballistic missile launchers up to 200 km inside Russia, the FT reports. Kyiv sees the approach as a way to strike launchers, command systems and logistics directly as Patriot interceptor shortages worsen. Zelensky reportedly asked Trump in July to raise the issue with Musk, but Trump was non-committal and those present believed Musk would not approve the request.",
-          "sentence": "Kyiv sees the approach as a way to strike launchers, command systems and logistics directly as Patriot interceptor shortages worsen.",
-          "excerpt": "…ssile launchers up to 200 km inside Russia, the FT reports. Kyiv sees the approach as a way to strike launchers, command systems and logistics d…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51414",
-          "at": "2026-08-20T17:54:49Z",
-          "text": "Zelensky said about 90% of Russian cruise missiles in the latest combined attack were intercepted, while defenses against ballistic missiles performed significantly worse. He said Ukraine needs more Patriot missiles and stressed that Kyiv is ready to buy them, not asking for gifts. Zelensky urged partners, especially the US, to make the necessary political decisions, saying only they can provide the interceptors Ukraine needs.",
-          "sentence": "He said Ukraine needs more Patriot missiles and stressed that Kyiv is ready to buy them, not asking for gifts.",
-          "excerpt": "…said Ukraine needs more Patriot missiles and stressed that Kyiv is ready to buy them, not asking for gifts. Zelensky urged partners, especially…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51396",
           "at": "2026-08-20T08:27:14Z",
           "text": "The death toll from Russia's mass attack on Kyiv has risen to 13 after rescuers found another woman's body under rubble in Solomianskyi district. Across Kyiv and the region, 14 people were killed and more than 40 injured. Around 20 residential buildings in the capital were damaged.",
@@ -1034,85 +969,6 @@
             "target": null,
             "targetType": null,
             "casualties": "12 injured, 12 killed"
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51378",
-          "at": "2026-08-20T06:10:15Z",
-          "text": "Horrible footage coming out of Ukraine. Russia, master in causing mass terror, launched a large-scale missile and drone attack across Ukraine overnight, using ballistic missiles, Kalibr cruise missiles, hypersonic cruise missiles and strike drones. Kyiv was hit repeatedly. At least 12 people were killed and 33 injured in the capital. In Solomianskyi district, the upper floors of a 9-story residential building were destroyed, while other homes, a school and a children's hospital were damaged. Fires broke out at warehouses and non-residential sites in Sviatoshynskyi and Darnytskyi districts.\n\nRussian drones also reportedly entered Moldovan and Romanian airspace during the attack, with one exploding in an uninhabited area of Romania.",
-          "sentence": "Kyiv was hit repeatedly.",
-          "excerpt": "…ise missiles, hypersonic cruise missiles and strike drones. Kyiv was hit repeatedly. At least 12 people were killed and 33 injured in the capita…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51073",
-          "at": "2026-08-13T18:19:21Z",
-          "text": "❗️Poland could decide within days whether to transfer another batch of Patriot interceptor missiles to Ukraine, Deputy Defense Minister Magdalena Sobkowiak-Czarnecka said. She stressed that any decision must take Poland's security into account. Poland officially confirmed transferring several Patriot missiles to Ukraine in July, while Kyiv continues to appeal to allies for more interceptors against Russian ballistic missile attacks.",
-          "sentence": "Poland officially confirmed transferring several Patriot missiles to Ukraine in July, while Kyiv continues to appeal to allies for more interceptors against Russian ballistic missile attacks.",
-          "excerpt": "…sferring several Patriot missiles to Ukraine in July, while Kyiv continues to appeal to allies for more interceptors against Russian ballistic m…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50938",
-          "at": "2026-08-11T11:26:18Z",
-          "text": "❗️Europe is struggling to find more Patriot interceptors for Ukraine ahead of expected Russian winter attacks. Kyiv is seeking hundreds of missiles, but Germany says its stocks are reaching their limits and other European donors have few they can safely spare. US supplies are also strained, while new production will come too late. In July, Ukrainian air defenses intercepted 29 of 195 Russian ballistic missiles, with another 40 failing to reach their targets.",
-          "sentence": "Kyiv is seeking hundreds of missiles, but Germany says its stocks are reaching their limits and other European donors have few they can safely spare.",
-          "excerpt": "…ptors for Ukraine ahead of expected Russian winter attacks. Kyiv is seeking hundreds of missiles, but Germany says its stocks are reaching their…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50937",
-          "at": "2026-08-11T10:56:27Z",
-          "text": "Satellite footage shows the Wildberries warehouse near Voronezh as of 12:00 Kyiv time after it was hit by Ukrainian drones. A large part of the warehouse burned down.",
-          "sentence": "Satellite footage shows the Wildberries warehouse near Voronezh as of 12:00 Kyiv time after it was hit by Ukrainian drones.",
-          "excerpt": "…e shows the Wildberries warehouse near Voronezh as of 12:00 Kyiv time after it was hit by Ukrainian drones. A large part of the warehouse burned…",
-          "parsed": {
-            "weapon": "drone",
-            "target": "Kyiv time after it",
-            "targetType": "warehouse",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50910",
-          "at": "2026-08-11T07:20:58Z",
-          "text": "Zaporizhzhia under fire: 5 people were killed and at least 20 injured after Russia launched a combined strike with ballistic missiles and guided bombs. Four ballistic missiles hit Zaporizhzhia, while 6 struck Kyiv. Large fires and power outages were reported.",
-          "sentence": "Four ballistic missiles hit Zaporizhzhia, while 6 struck Kyiv.",
-          "excerpt": "…s. Four ballistic missiles hit Zaporizhzhia, while 6 struck Kyiv. Large fires and power outages were reported.",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50646",
-          "at": "2026-08-05T17:11:04Z",
-          "text": "Zelensky said Ukraine is working with every partner able to provide interceptor missiles against Russian attacks on civilians and civilian infrastructure. After speaking with NATO Secretary General Mark Rutte, he said Kyiv and NATO coordinated outreach to countries holding the needed missiles. Zelensky urged partners to remove bureaucracy and make the political decisions required for deliveries, saying lives depend on their resolve.",
-          "sentence": "After speaking with NATO Secretary General Mark Rutte, he said Kyiv and NATO coordinated outreach to countries holding the needed missiles.",
-          "excerpt": "…er speaking with NATO Secretary General Mark Rutte, he said Kyiv and NATO coordinated outreach to countries holding the needed missiles. Zelensk…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
           }
         },
         {
@@ -1155,57 +1011,11 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50587",
-          "at": "2026-08-04T22:13:56Z",
-          "text": "❗️Kyiv is under a Russian ballistic missile attack, with approximately 30 missiles reportedly launched at the capital. Jet-powered Shahed drones are also active over Ukraine.",
-          "sentence": "❗️Kyiv is under a Russian ballistic missile attack, with approximately 30 missiles reportedly launched at the capital.",
-          "excerpt": "❗️Kyiv is under a Russian ballistic missile attack, with approximately 30 missiles rep…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50586",
           "at": "2026-08-04T21:57:03Z",
           "text": "Russian strikes sparked fires near Vyshneve and Brovary, as well as in Kyiv's Sviatoshynskyi and Obolonskyi districts, local authorities said. Residents on the capital's right bank were urged to immediately close their windows because of the aftermath.",
           "sentence": "Russian strikes sparked fires near Vyshneve and Brovary, as well as in Kyiv's Sviatoshynskyi and Obolonskyi districts, local authorities said.",
           "excerpt": "Russian strikes sparked fires near Vyshneve and Brovary, as well as in Kyiv's Sviatoshynskyi and Obolonskyi districts, loca…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50263",
-          "at": "2026-07-30T20:22:25Z",
-          "text": "Russia destroyed a Kyiv drone factory owned by US-registered Terminal Autonomy with a ballistic missile, The Guardian reported. The plant produced AI-guided AQ-400 Scythe and AQ-100 Bayonet deep-strike drones designed to resist Russian jamming. The strike appears to be the first known Russian attack on a US-owned company in Ukraine. No one was killed, according to a source familiar with the company.",
-          "sentence": "Russia destroyed a Kyiv drone factory owned by US-registered Terminal Autonomy with a ballistic missile, The Guardian reported.",
-          "excerpt": "Russia destroyed a Kyiv drone factory owned by US-registered Terminal Autonomy with a ballistic missile…",
-          "parsed": {
-            "weapon": "missile",
-            "target": "Kyiv drone factory",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50134",
-          "at": "2026-07-28T19:17:26Z",
-          "text": "Oh the irony. Iran has demanded compensation from Ukraine for a destroyed vessel, Foreign Minister Abbas Araghchi said. He added that Ukraine’s foreign minister assured Tehran the strike on the Iranian ship was unintentional and that Kyiv does not seek escalation.",
-          "sentence": "He added that Ukraine’s foreign minister assured Tehran the strike on the Iranian ship was unintentional and that Kyiv does not seek escalation.",
-          "excerpt": "…n the strike on the Iranian ship was unintentional and that Kyiv does not seek escalation.",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50116",
-          "at": "2026-07-28T11:45:36Z",
-          "text": "Iraqi authorities claimed detained groups behind several attacks in Iraq confessed to working for Ukraine. Kyiv rejected the allegations as baseless and unsupported, saying they echoed Russian propaganda aimed at damaging Ukraine’s Middle East ties.",
-          "sentence": "Kyiv rejected the allegations as baseless and unsupported, saying they echoed Russian propaganda aimed at damaging Ukraine’s Middle East ties.",
-          "excerpt": "…d several attacks in Iraq confessed to working for Ukraine. Kyiv rejected the allegations as baseless and unsupported, saying they echoed Russia…",
           "parsed": null
         },
         {
@@ -1216,20 +1026,6 @@
           "sentence": "❗️President Volodymyr Zelensky said the target of Russia’s strike in Bucha district was a weapons event that should not have been held, especially near homes.",
           "excerpt": "…nt Volodymyr Zelensky said the target of Russia’s strike in Bucha district was a weapons event that should not have been held, especially near ho…",
           "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49962",
-          "at": "2026-07-24T14:48:00Z",
-          "text": "Ukraine’s Air Force said Russia fired three Iskander-M/S-400 ballistic missiles at Bucha district, Kyiv Oblast: one was intercepted and two struck. Two Oniks missiles targeting Odesa Oblast failed to reach their targets. Air defenses also downed or suppressed 81 of more than 90 drones.",
-          "sentence": "Ukraine’s Air Force said Russia fired three Iskander-M/S-400 ballistic missiles at Bucha district, Kyiv Oblast: one was intercepted and two struck.",
-          "excerpt": "…d Russia fired three Iskander-M/S-400 ballistic missiles at Bucha district, Kyiv Oblast: one was intercepted and two struck. Two Oniks missiles t…",
-          "parsed": {
-            "weapon": "Iskander",
-            "target": null,
-            "targetType": "air defence system",
-            "casualties": null
-          }
         },
         {
           "channel": "noel_reports",
@@ -1247,20 +1043,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49607",
-          "at": "2026-07-19T07:51:06Z",
-          "text": "President Zelensky says Russia launched more than 40 missiles and 120 attack drones overnight, with most missiles targeting Kyiv. One person was killed and 16 were injured in Kyiv and the surrounding region, while nearly 600 rescuers continue response operations.",
-          "sentence": "President Zelensky says Russia launched more than 40 missiles and 120 attack drones overnight, with most missiles targeting Kyiv.",
-          "excerpt": "…d 120 attack drones overnight, with most missiles targeting Kyiv. One person was killed and 16 were injured in Kyiv and the surrounding region, w…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/49597",
           "at": "2026-07-19T07:17:51Z",
           "text": "Russia’s overnight attack on Kyiv killed one person and injured eight others. Strikes and fires were recorded across five districts of the capital, damaging residential and non-residential buildings, vehicles and a dormitory as emergency crews responded.",
@@ -1271,34 +1053,6 @@
             "target": null,
             "targetType": null,
             "casualties": "1 injured, 1 killed"
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49584",
-          "at": "2026-07-19T00:03:47Z",
-          "text": "Disturbing images are emerging from Kyiv as multiple fires burn following Russia’s missile attack. One of the hardest-hit areas is near the Kyivska Rus cinema on Lukianivka.",
-          "sentence": "Disturbing images are emerging from Kyiv as multiple fires burn following Russia’s missile attack.",
-          "excerpt": "Disturbing images are emerging from Kyiv as multiple fires burn following Russia’s missile attack. One of the hardest-hi…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49478",
-          "at": "2026-07-17T13:25:25Z",
-          "text": "❗️Kathimerini reports NATO and the EU are pressing Greece to provide Patriot interceptor missiles to Ukraine. According to the report, Kyiv has requested up to 200 PAC-2 missiles, some of which have been in Greek service for more than two decades. A proposal under discussion would see Greece sell the interceptors to Norway before they are transferred to Ukraine, but Athens has not yet agreed to the arrangement.",
-          "sentence": "According to the report, Kyiv has requested up to 200 PAC-2 missiles, some of which have been in Greek service for more than two decades.",
-          "excerpt": "…t interceptor missiles to Ukraine. According to the report, Kyiv has requested up to 200 PAC-2 missiles, some of which have been in Greek servic…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
           }
         },
         {
@@ -1335,34 +1089,6 @@
             "weapon": "missile",
             "target": null,
             "targetType": "air defence system",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49385",
-          "at": "2026-07-15T13:23:11Z",
-          "text": "The US has begun the process of granting Ukraine licenses to produce Patriot interceptor missiles, The Kyiv Independent reported, citing a senior Ukrainian official. Lockheed Martin supports the move, and the official said the process may take less than several months.",
-          "sentence": "The US has begun the process of granting Ukraine licenses to produce Patriot interceptor missiles, The Kyiv Independent reported, citing a senior Ukrainian official.",
-          "excerpt": "…raine licenses to produce Patriot interceptor missiles, The Kyiv Independent reported, citing a senior Ukrainian official. Lockheed Martin suppo…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49195",
-          "at": "2026-07-11T13:00:39Z",
-          "text": "Russia struck Kyiv with ballistic missiles overnight, injuring 10 people, including a child. Fires broke out in office, warehouse, and infrastructure sites across the Solomianskyi, Darnytskyi, and Dniprovskyi districts.",
-          "sentence": "Russia struck Kyiv with ballistic missiles overnight, injuring 10 people, including a child.",
-          "excerpt": "Russia struck Kyiv with ballistic missiles overnight, injuring 10 people, including a child. Fires…",
-          "parsed": {
-            "weapon": "missile",
-            "target": "Kyiv with ballistic",
-            "targetType": null,
             "casualties": null
           }
         },
@@ -1410,54 +1136,12 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49112",
-          "at": "2026-07-09T15:15:20Z",
-          "text": "Ukraine’s Defense Ministry outlined results from the NATO summit in Ankara: &#036;80 billion for Ukraine’s defense in 2026, with the same level planned for 2027. Norway will provide over &#036;306 million for Patriot missiles, Germany will fund production of Bars drone-missiles on its territory for Ukraine, and Kyiv signed new Drone Deals with Estonia, the Netherlands, and Denmark.",
-          "sentence": "Norway will provide over &#036;306 million for Patriot missiles, Germany will fund production of Bars drone-missiles on its territory for Ukraine, and Kyiv signed new Drone Deals with Estonia, the Netherlands, and Denmark.",
-          "excerpt": "…on of Bars drone-missiles on its territory for Ukraine, and Kyiv signed new Drone Deals with Estonia, the Netherlands, and Denmark.",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49058",
-          "at": "2026-07-08T15:08:05Z",
-          "text": "Trump said the U.S. will give Ukraine a license to produce Patriot missiles, while Zelensky said Kyiv is starting work on a drone deal with Washington. Rubio said Ukrainian deep strikes are making it harder for Russia to defend its airspace and could create room for negotiations. Trump called the strikes on Russian oil refineries an escalation that could help bring the war to an end.",
-          "sentence": "Trump said the U.S. will give Ukraine a license to produce Patriot missiles, while Zelensky said Kyiv is starting work on a drone deal with Washington.",
-          "excerpt": "…a license to produce Patriot missiles, while Zelensky said Kyiv is starting work on a drone deal with Washington. Rubio said Ukrainian deep str…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/48968",
           "at": "2026-07-06T19:40:58Z",
           "text": "Prime Minister Yuliia Svyrydenko said the destruction in Vyshneve after a secondary detonation on July 6 was the worst residential-sector damage of Russia’s full-scale invasion. Around 500 rescuers and more than 400 police are working at the site. She said the government will allocate reserve fund money to support the community.",
           "sentence": "Prime Minister Yuliia Svyrydenko said the destruction in Vyshneve after a secondary detonation on July 6 was the worst residential-sector damage of Russia’s full-scale invasion.",
           "excerpt": "Prime Minister Yuliia Svyrydenko said the destruction in Vyshneve after a secondary detonation on July 6 was the worst residential-sector damage…",
           "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48960",
-          "at": "2026-07-06T16:05:55Z",
-          "text": "Defense Ministry adviser Serhii “Flash” warned Kyiv is in serious danger, saying Ukraine currently lacks missiles to intercept Russian ballistic missiles. He said partners are keeping them because they see a threat from Russia.",
-          "sentence": "Defense Ministry adviser Serhii “Flash” warned Kyiv is in serious danger, saying Ukraine currently lacks missiles to intercept Russian ballistic missiles.",
-          "excerpt": "Defense Ministry adviser Serhii “Flash” warned Kyiv is in serious danger, saying Ukraine currently lacks missiles to intercept Russ…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
         },
         {
           "channel": "noel_reports",
@@ -1602,15 +1286,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48201",
-          "at": "2026-06-23T06:00:46Z",
-          "text": "US deputy envoy Dan Negrea told the UN Security Council that Russia must make a deal with Ukraine, warning that “time is not on Moscow’s side.” Washington reaffirmed support for Kyiv and condemned Russian strikes on civilian infrastructure and cultural heritage sites, including the Kyiv Pechersk Lavra.",
-          "sentence": "Washington reaffirmed support for Kyiv and condemned Russian strikes on civilian infrastructure and cultural heritage sites, including the Kyiv Pechersk Lavra.",
-          "excerpt": "…is not on Moscow’s side.” Washington reaffirmed support for Kyiv and condemned Russian strikes on civilian infrastructure and cultural heritage…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47838",
           "at": "2026-06-16T06:26:00Z",
           "text": "Zelensky vowed to respond after the attack on the Pechersk Lavra. Ukrainian long-range drones struck the Moscow oil refinery early morning, triggering a major fire and heavy smoke at one of Russia’s largest refining sites. The facility processes about 12.8 million tonnes of oil per year, or roughly 245,000-250,000 barrels per day, and supplies around 35-40% of fuel consumed in Moscow and the surrounding region.",
@@ -1634,15 +1309,6 @@
           "text": "Russia launched a mass attack on Ukrainian cities, killing 4 people and injuring 25 in Kyiv, including 2 children. In Kharkiv, 5 rescuers were killed and at least 5 wounded during firefighting after a repeat Russian strike. Sumy and Dnipro also reported casualties and damage.",
           "sentence": "Russia launched a mass attack on Ukrainian cities, killing 4 people and injuring 25 in Kyiv, including 2 children.",
           "excerpt": "…ck on Ukrainian cities, killing 4 people and injuring 25 in Kyiv, including 2 children. In Kharkiv, 5 rescuers were killed and at least 5 wounde…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47700",
-          "at": "2026-06-13T12:16:06Z",
-          "text": "Putin claimed Russian forces are advancing across all directions of the war and said Ukraine cannot contain the pressure. He described Ukrainian strikes on targets inside Russia as “terrorist methods” and claimed that no attacks by Ukraine’s Armed Forces on Russian territory will help Kyiv.",
-          "sentence": "He described Ukrainian strikes on targets inside Russia as “terrorist methods” and claimed that no attacks by Ukraine’s Armed Forces on Russian territory will help Kyiv.",
-          "excerpt": "…ks by Ukraine’s Armed Forces on Russian territory will help Kyiv.",
           "parsed": null
         }
       ],
@@ -1697,35 +1363,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51928",
-          "at": "2026-08-30T14:13:56Z",
-          "text": "Belgorod is reportedly under a large-scale attack, according to local media. Strikes have been reported near a thermal power plant and electrical substations.",
-          "sentence": "Belgorod is reportedly under a large-scale attack, according to local media.",
-          "excerpt": "Belgorod is reportedly under a large-scale attack, according to local media. Strikes hav…",
-          "parsed": null
-        },
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/18468",
-          "at": "2026-08-30T14:02:12Z",
-          "text": "Russian Belgorod is under a massive missile strike right now, Exilenova+ reports.",
-          "sentence": "Russian Belgorod is under a massive missile strike right now, Exilenova+ reports.",
-          "excerpt": "Russian Belgorod is under a massive missile strike right now, Exilenova+ reports.",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          },
-          "corroboration": [
-            {
-              "channel": "wartranslated",
-              "url": "https://t.me/wartranslated/18470"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51924",
           "at": "2026-08-30T14:00:32Z",
           "text": "Loud explosions are heard in Belgorod.",
@@ -1741,34 +1378,11 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50809",
-          "at": "2026-08-09T07:04:51Z",
-          "text": "Belgorod came under another overnight Ukrainian drone attack, with Russian authorities reporting injuries and fires. Local reports cited 13 injured. Target of the attacks were the thermal power plant and regional FSB headquarters.",
-          "sentence": "Belgorod came under another overnight Ukrainian drone attack, with Russian authorities reporting injuries and fires.",
-          "excerpt": "Belgorod came under another overnight Ukrainian drone attack, with Russian authorities r…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50802",
           "at": "2026-08-08T21:26:40Z",
           "text": "A series of powerful explosions is being reported in Belgorod.",
           "sentence": "A series of powerful explosions is being reported in Belgorod.",
           "excerpt": "A series of powerful explosions is being reported in Belgorod.",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50731",
-          "at": "2026-08-07T07:35:05Z",
-          "text": "A series of explosions has just hit Belgorod, Russia.",
-          "sentence": "A series of explosions has just hit Belgorod, Russia.",
-          "excerpt": "A series of explosions has just hit Belgorod, Russia.",
           "parsed": null
         },
         {
@@ -1801,60 +1415,12 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50461",
-          "at": "2026-08-03T06:42:53Z",
-          "text": "Ukrainian attack drones struck Belgorod State Technological University overnight. The targeted building housed Russian drone development, testing and operator training. The university had also worked on an automated UAV control system based on the Russian-made Milandr microprocessor. Footage showed a large fire, while the development center reportedly suffered significant damage.",
-          "sentence": "Ukrainian attack drones struck Belgorod State Technological University overnight.",
-          "excerpt": "Ukrainian attack drones struck Belgorod State Technological University overnight. The targeted building housed Russian…",
-          "parsed": {
-            "weapon": "drone",
-            "target": "Belgorod State Technological",
-            "targetType": null,
-            "casualties": null
-          },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50478"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49973",
-          "at": "2026-07-24T21:41:33Z",
-          "text": "Drones targeted Belgorod, with one strike hitting a warehouse belonging to an agricultural holding company. No further details on the extent of the damage have been released.",
-          "sentence": "Drones targeted Belgorod, with one strike hitting a warehouse belonging to an agricultural holding company.",
-          "excerpt": "Drones targeted Belgorod, with one strike hitting a warehouse belonging to an agricultural holding compa…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": "warehouse",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/49902",
           "at": "2026-07-23T17:15:16Z",
           "text": "Ukrainian forces have reportedly begun targeting fuel stations in Belgorod following Russian strikes on gas stations in Ukraine, Russian media reported. Around 20 stations, nearly one-third of the city’s total, have reportedly been hit in the past four days.",
           "sentence": "Ukrainian forces have reportedly begun targeting fuel stations in Belgorod following Russian strikes on gas stations in Ukraine, Russian media reported.",
           "excerpt": "…ian forces have reportedly begun targeting fuel stations in Belgorod following Russian strikes on gas stations in Ukraine, Russian media reported. A…",
           "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48976",
-          "at": "2026-07-06T22:15:21Z",
-          "text": "More from Belgorod, which is subject to large-scale missile and GMLRS attacks at the moment.",
-          "sentence": "More from Belgorod, which is subject to large-scale missile and GMLRS attacks at the moment.",
-          "excerpt": "More from Belgorod, which is subject to large-scale missile and GMLRS attacks at the moment.",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
         },
         {
           "channel": "noel_reports",
@@ -1872,20 +1438,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48970",
-          "at": "2026-07-06T20:23:12Z",
-          "text": "A reported missile strike targeted energy infrastructure in Russia's Belgorod, with a thermal power plant under attack. A large fire was reported at the site.",
-          "sentence": "A reported missile strike targeted energy infrastructure in Russia's Belgorod, with a thermal power plant under attack.",
-          "excerpt": "…d missile strike targeted energy infrastructure in Russia's Belgorod, with a thermal power plant under attack. A large fire was reported at the site…",
-          "parsed": {
-            "weapon": "missile",
-            "target": "energy infrastructure",
-            "targetType": "thermal power plant",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/48807",
           "at": "2026-07-04T08:26:23Z",
           "text": "Ukrainian HIMARS strikes hit energy infrastructure in Belgorod, Russia, with at least 25 rockets reportedly used. Targets included the Avtoremzavod 110 kV substation, the Belgorod Thermal Power Plant and the Dubovoe 110 kV substation at the Luch power facility. Multiple reports said the attack caused power and water outages across parts of the city, while Russian authorities acknowledged damage to energy infrastructure.",
@@ -1897,29 +1449,6 @@
             "targetType": null,
             "casualties": null
           }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48767",
-          "at": "2026-07-03T06:59:25Z",
-          "text": "Ukrainian forces struck Belgorod City this morning with several HIMARS rockets, hitting power infrastructure inside the city. Impacts were recorded at the electrical substation of the Michurinskaya thermal power plant and the Yuzhnaya 110 kV electrical substation. One civilian was killed, and locals reported power outages.",
-          "sentence": "Ukrainian forces struck Belgorod City this morning with several HIMARS rockets, hitting power infrastructure inside the city.",
-          "excerpt": "Ukrainian forces struck Belgorod City this morning with several HIMARS rockets, hitting power infrastructure ins…",
-          "parsed": {
-            "weapon": "HIMARS",
-            "target": "Belgorod City",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48452",
-          "at": "2026-06-27T08:15:41Z",
-          "text": "A large fire has been reported in Shebekino, Russia’s Belgorod region. Residents shared photos showing heavy smoke rising near the industrial area. The reports came after authorities issued an aerial bomb warning.\n\n0:09\n\n      This media is not supported in your browser\n      VIEW IN TELEGRAM\n\n0:10\n\n      This media is not supported in your browser\n      VIEW IN TELEGRAM\n\nLarge plumes of smoke are rising over Shebekino in Russia’s Belgorod region. The fire is visible from Belgorod.",
-          "sentence": "The fire is visible from Belgorod.",
-          "excerpt": "…ekino in Russia’s Belgorod region. The fire is visible from Belgorod.",
-          "parsed": null
         },
         {
           "channel": "noel_reports",
@@ -1967,20 +1496,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49890",
-          "at": "2026-07-23T11:13:03Z",
-          "text": "The 237th Separate Unmanned Systems Battalion of Ukraine’s 7th Air Assault Corps said it destroyed two Russian pickups, a truck, and a Molniya drone launch site in Selidove and along the Selidove-Pokrovsk highway using Chaklun strike drones.",
-          "sentence": "The 237th Separate Unmanned Systems Battalion of Ukraine’s 7th Air Assault Corps said it destroyed two Russian pickups, a truck, and a Molniya drone launch site in Selidove and along the Selidove-Pokrovsk highway using Chaklun strike drones.",
-          "excerpt": "…ussian pickups, a truck, and a Molniya drone launch site in Selidove and along the Selidove-Pokrovsk highway using Chaklun strike drones.",
-          "parsed": {
-            "weapon": "drone",
-            "target": "pickups",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/48906",
           "at": "2026-07-05T17:12:34Z",
           "text": "Ukrainian aviation carried out two strikes on Russian positions in Rodynske, targeting enemy personnel and an ammunition stockpile.",
@@ -2020,163 +1535,12 @@
       "Moscow": [
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51887",
-          "at": "2026-08-29T17:47:42Z",
-          "text": "Ukraine's HUR says sustained strikes on Russian refineries have substantially reduced aviation kerosene production, forcing Moscow to seek imported Jet A-1 fuel from South Korea and Egypt. Russia has also introduced a temporary ban on exports of its own aviation fuel. HUR says three Russian shadow-fleet tankers have already delivered 70,000 tons of Jet A-1 to St. Petersburg and Vladivostok.",
-          "sentence": "Ukraine's HUR says sustained strikes on Russian refineries have substantially reduced aviation kerosene production, forcing Moscow to seek imported Jet A-1 fuel from South Korea and Egypt.",
-          "excerpt": "…substantially reduced aviation kerosene production, forcing Moscow to seek imported Jet A-1 fuel from South Korea and Egypt. Russia has also intro…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": "refinery",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51792",
-          "at": "2026-08-27T14:57:56Z",
-          "text": "Ukraine's HUR says Russia asked North Korea for 120 ballistic missiles and 6 launchers, including newer KN-30 missiles, three times more powerful than KN-23/24. HUR says no KN-30 transfers have been detected yet. Moscow has reportedly received 40 KN-23/24 missiles, 2 of which were used in a recent attack on Ukraine. Russia is also seeking a North Korean missile unit of up to 90 personnel and 30,000-50,000 troops.",
-          "sentence": "Moscow has reportedly received 40 KN-23/24 missiles, 2 of which were used in a recent attack on Ukraine.",
-          "excerpt": "…-23/24. HUR says no KN-30 transfers have been detected yet. Moscow has reportedly received 40 KN-23/24 missiles, 2 of which were used in a recent…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51694",
           "at": "2026-08-26T05:58:36Z",
           "text": "❗️CIA Director John Ratcliffe made a surprise trip to Moscow, his first publicly known visit to the Russian capital. The CIA declined to disclose its purpose. The Wall Street Journal reported that US intelligence had detected early Russian preparations for possible military mobilization and plans to test NATO's resolve. Analysts said Ratcliffe may have met Putin to deliver a warning. The US had also reportedly asked Ukraine to pause strikes on Moscow during the high-level visit.",
           "sentence": "The US had also reportedly asked Ukraine to pause strikes on Moscow during the high-level visit.",
           "excerpt": "…he US had also reportedly asked Ukraine to pause strikes on Moscow during the high-level visit.",
           "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51557",
-          "at": "2026-08-23T10:46:56Z",
-          "text": "Russia's foreign minister issued another warning to Europe over support for Ukraine, saying Moscow may treat European involvement in strikes on Russia as \"participation in the war.\" He also claimed NATO and EU countries are already trying to preemptively distance themselves from responsibility.",
-          "sentence": "Russia's foreign minister issued another warning to Europe over support for Ukraine, saying Moscow may treat European involvement in strikes on Russia as \"participation in the war.\"",
-          "excerpt": "…another warning to Europe over support for Ukraine, saying Moscow may treat European involvement in strikes on Russia as \"participation in the wa…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51297",
-          "at": "2026-08-18T17:09:06Z",
-          "text": "Russian Foreign Minister Sergey Lavrov said Moscow has the right to regard the “proudly announced” direct participation of British missile forces in strikes on Russia as participation in the war. He warned that such involvement would carry “all the corresponding consequences.”",
-          "sentence": "Russian Foreign Minister Sergey Lavrov said Moscow has the right to regard the “proudly announced” direct participation of British missile forces in strikes on Russia as participation in the war.",
-          "excerpt": "Russian Foreign Minister Sergey Lavrov said Moscow has the right to regard the “proudly announced” direct participation of British…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51275",
-          "at": "2026-08-18T09:02:54Z",
-          "text": "❗️Britain says it will continue supplying Ukraine with military equipment despite Moscow warning of “consequences” following reports that British-built drones were used in Ukrainian deep strikes inside Russia. Russia’s embassy accused London of escalating its involvement and said it would pay a higher price. UK minister Lilian Greenwood responded that Britain remains “completely steadfast” and will keep providing Ukraine with the equipment it needs.",
-          "sentence": "❗️Britain says it will continue supplying Ukraine with military equipment despite Moscow warning of “consequences” following reports that British-built drones were used in Ukrainian deep strikes inside Russia.",
-          "excerpt": "…continue supplying Ukraine with military equipment despite Moscow warning of “consequences” following reports that British-built drones were used…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51266",
-          "at": "2026-08-18T06:04:40Z",
-          "text": "❗️Moscow faced its largest drone attack in two years, according to Russian sources. Mayor Sergei Sobyanin claimed 627 UAVs headed toward the capital, with around 180 downed over the Moscow region. Local reports cited a fire near the Kapotnya refinery, a strike on a Wildberries warehouse, damage to homes, vehicles and a transformer substation, while all four Moscow airports faced restrictions. The attack is  still ongoing.",
-          "sentence": "❗️Moscow faced its largest drone attack in two years, according to Russian sources.",
-          "excerpt": "❗️Moscow faced its largest drone attack in two years, according to Russian sources. Mayo…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51271"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51215",
-          "at": "2026-08-16T17:48:30Z",
-          "text": "Fire Point displayed a mock-up of its FP-9 ballistic missile at an exhibition in Denmark, with development nearing completion. The Ukrainian company’s first ballistic missile is designed to carry an 800-pound warhead more than 850 km, putting Moscow within range.",
-          "sentence": "The Ukrainian company’s first ballistic missile is designed to carry an 800-pound warhead more than 850 km, putting Moscow within range.",
-          "excerpt": "…ned to carry an 800-pound warhead more than 850 km, putting Moscow within range.",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51222"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51126",
-          "at": "2026-08-14T16:42:05Z",
-          "text": "❗️A New York Times investigation details an extensive Russian campaign to destabilize Moldova. It says GRU-linked operatives ran training programs in Serbia, Bosnia and Moscow to prepare pro-Russian Moldovans for election interference, including breaking police cordons and setting buildings on fire. Moscow also paid hundreds of Orthodox priests to recruit voters and push Russian narratives, and spent hundreds of millions of dollars on a vote-buying scheme.",
-          "sentence": "It says GRU-linked operatives ran training programs in Serbia, Bosnia and Moscow to prepare pro-Russian Moldovans for election interference, including breaking police cordons and setting buildings on fire.",
-          "excerpt": "…nked operatives ran training programs in Serbia, Bosnia and Moscow to prepare pro-Russian Moldovans for election interference, including breaking…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51124",
-          "at": "2026-08-14T15:46:52Z",
-          "text": "Fire Point also responded to Russia’s winter threats, posting a graphic of a missile over central Moscow with the message: “We’ll talk about winter after autumn.”",
-          "sentence": "Fire Point also responded to Russia’s winter threats, posting a graphic of a missile over central Moscow with the message: “We’ll talk about winter after autumn.”",
-          "excerpt": "…winter threats, posting a graphic of a missile over central Moscow with the message: “We’ll talk about winter after autumn.”",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50798",
-          "at": "2026-08-08T18:10:45Z",
-          "text": "President Zelensky says a decision has been made for 30,000 to 50,000 North Koreans to be deployed in Russia, where he warns they are gaining experience in modern warfare. He said Ukraine has already found North Korean missiles on its territory and expects Pyongyang to receive licenses and military tools from Moscow. Zelensky urged South Korea to deepen cooperation with Ukraine, particularly on air defense, and said Kyiv is ready to work with Seoul on a potential Drone Deal.",
-          "sentence": "He said Ukraine has already found North Korean missiles on its territory and expects Pyongyang to receive licenses and military tools from Moscow.",
-          "excerpt": "…pects Pyongyang to receive licenses and military tools from Moscow. Zelensky urged South Korea to deepen cooperation with Ukraine, particularly on…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50749",
-          "at": "2026-08-07T14:49:41Z",
-          "text": "Vantor satellite imagery from August 4 shows Russia expanding anti-drone defenses over nuclear submarines at the Rybachiy naval base on the Kamchatka Peninsula. More than five submarines are visible beneath large protective nets, compared with only two in May. Analysts noted that the base hosts both ballistic-missile and attack nuclear submarines, and framed the expansion as evidence Moscow sees even remote strategic naval assets as potentially vulnerable.",
-          "sentence": "Analysts noted that the base hosts both ballistic-missile and attack nuclear submarines, and framed the expansion as evidence Moscow sees even remote strategic naval assets as potentially vulnerable.",
-          "excerpt": "…ck nuclear submarines, and framed the expansion as evidence Moscow sees even remote strategic naval assets as potentially vulnerable.",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
         },
         {
           "channel": "noel_reports",
@@ -2191,15 +1555,6 @@
             "targetType": null,
             "casualties": null
           }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50682",
-          "at": "2026-08-06T10:11:17Z",
-          "text": "❗️Ukraine’s FP-7 ground-attack ballistic missile has reportedly completed around 15 test launches and is undergoing codification by the Ministry of Defence, a process Fire Point expects to take another two to four weeks. The company aims for its first combat use in early autumn 2026. Fire Point also expects the larger FP-9, reportedly capable of reaching Moscow, to begin combat testing against targets in Russia in late autumn, CEO Iryna Terekh told Reuters.",
-          "sentence": "Fire Point also expects the larger FP-9, reportedly capable of reaching Moscow, to begin combat testing against targets in Russia in late autumn, CEO Iryna Terekh told Reuters.",
-          "excerpt": "…lso expects the larger FP-9, reportedly capable of reaching Moscow, to begin combat testing against targets in Russia in late autumn, CEO Iryna Te…",
-          "parsed": null
         },
         {
           "channel": "noel_reports",
@@ -2249,62 +1604,6 @@
               "url": "https://t.me/noel_reports/50391"
             }
           ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50093",
-          "at": "2026-07-28T07:18:58Z",
-          "text": "Drones struck the Moscow region, targeting Wildberries’ largest logistics hub, a 3PL warehouse storing goods for supermarkets, and the Hydrostalkonstruktsiya plant. Russian media reported large fires, while several Moscow airports temporarily suspended operations.",
-          "sentence": "Russian media reported large fires, while several Moscow airports temporarily suspended operations.",
-          "excerpt": "…ya plant. Russian media reported large fires, while several Moscow airports temporarily suspended operations.",
-          "parsed": null,
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50101"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50040",
-          "at": "2026-07-26T11:59:45Z",
-          "text": "❗️US and Ukrainian officials discussed a proposal for an air ceasefire that would be presented to Russian authorities as part of a new round of peace talks, Reuters reported, citing a source. Some officials believe the economic pressure created by sustained Ukrainian drone and missile strikes could soften Putin’s position and make Moscow more receptive.",
-          "sentence": "Some officials believe the economic pressure created by sustained Ukrainian drone and missile strikes could soften Putin’s position and make Moscow more receptive.",
-          "excerpt": "…and missile strikes could soften Putin’s position and make Moscow more receptive.",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50018",
-          "at": "2026-07-25T19:15:28Z",
-          "text": "❗️President Zelensky said Putin is preparing to expand mobilization as Russian losses outpace recruitment. He said Russia added 221,000 troops in under seven months but lost nearly 225,500: 131,000 killed and almost 93,000 wounded. Zelensky also said Russia wants 30,000 more troops from North Korea and that Pyongyang is preparing new ballistic missile launchers for Moscow.",
-          "sentence": "Zelensky also said Russia wants 30,000 more troops from North Korea and that Pyongyang is preparing new ballistic missile launchers for Moscow.",
-          "excerpt": "…Pyongyang is preparing new ballistic missile launchers for Moscow.",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49897",
-          "at": "2026-07-23T14:14:18Z",
-          "text": "InformNapalm claims a Ukrainian HUMINT-CYBINT operation manipulated Russia’s BARS Moscow air defenses into shooting down a Su-57 in Moscow region. The group said it intercepted training streams, analyzed the system’s software, hardware, combat procedures, and vulnerabilities, then passed its findings to Ukraine’s Defense Forces. Russia’s Defense Ministry blamed a technical malfunction without naming the aircraft, while Russian Z-channels reported possible sabotage.",
-          "sentence": "InformNapalm claims a Ukrainian HUMINT-CYBINT operation manipulated Russia’s BARS Moscow air defenses into shooting down a Su-57 in Moscow region.",
-          "excerpt": "…Ukrainian HUMINT-CYBINT operation manipulated Russia’s BARS Moscow air defenses into shooting down a Su-57 in Moscow region. The group said it int…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49703",
-          "at": "2026-07-20T17:16:17Z",
-          "text": "Satellite imagery published by Radio Svoboda shows the aftermath of a strike on the Yuzhnye Vorota industrial park in Domodedovo. At 12:10 p.m. Moscow time, fire covered 30,000 square meters of one building's roof. Regional authorities said 6 people were injured, including 3 foreigners.",
-          "sentence": "At 12:10 p.m. Moscow time, fire covered 30,000 square meters of one building's roof.",
-          "excerpt": "…Yuzhnye Vorota industrial park in Domodedovo. At 12:10 p.m. Moscow time, fire covered 30,000 square meters of one building's roof. Regional author…",
-          "parsed": null
         },
         {
           "channel": "noel_reports",
@@ -2392,100 +1691,11 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48923",
-          "at": "2026-07-06T06:20:34Z",
-          "text": "Drones hit Russia’s Slavneft-Yanos oil refinery in Yaroslavl overnight, about 250 km northeast of Moscow. The facility is one of Russia’s largest refineries, with a reported capacity of about 15 million tons of oil per year, or roughly 300,000 barrels per day. It produces gasoline, diesel, aviation kerosene, fuel oil, bitumen and petrochemical feedstock.",
-          "sentence": "Drones hit Russia’s Slavneft-Yanos oil refinery in Yaroslavl overnight, about 250 km northeast of Moscow.",
-          "excerpt": "…refinery in Yaroslavl overnight, about 250 km northeast of Moscow. The facility is one of Russia’s largest refineries, with a reported capacity of…",
-          "parsed": {
-            "weapon": "drone",
-            "target": "Russia",
-            "targetType": "refinery",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48741",
-          "at": "2026-07-02T15:27:56Z",
-          "text": "Zelensky said only pressure on Moscow, not Crimea, can force Putin to stop the war. He rejected Putin’s claims of a special attachment to Crimea, saying the Russian leader knows both Crimea and Ukraine’s east only through officers’ reports. Zelensky said Putin needs to sell Russian society a major victory, but has none, so Moscow relies on mass strikes, intimidation, and aggressive rhetoric.",
-          "sentence": "Zelensky said Putin needs to sell Russian society a major victory, but has none, so Moscow relies on mass strikes, intimidation, and aggressive rhetoric.",
-          "excerpt": "…s to sell Russian society a major victory, but has none, so Moscow relies on mass strikes, intimidation, and aggressive rhetoric.",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48698",
-          "at": "2026-07-01T20:52:22Z",
-          "text": "Kazakhstan agreed to supply 50,000 tons of gasoline to Russia, Reuters reports. The shipment comes as Moscow tries to stabilize its domestic fuel market after repeated Ukrainian strikes on refineries, depots, and logistics routes have added pressure to supply chains and regional availability.",
-          "sentence": "The shipment comes as Moscow tries to stabilize its domestic fuel market after repeated Ukrainian strikes on refineries, depots, and logistics routes have added pressure to supply chains and regional availability.",
-          "excerpt": "…gasoline to Russia, Reuters reports. The shipment comes as Moscow tries to stabilize its domestic fuel market after repeated Ukrainian strikes on…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": "refinery",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48666",
-          "at": "2026-07-01T07:31:50Z",
-          "text": "❗️A substation caught fire in Lyubertsy, Moscow Oblast, leaving parts of the city without electricity. The cause of the incident has not yet been officially confirmed.",
-          "sentence": "❗️A substation caught fire in Lyubertsy, Moscow Oblast, leaving parts of the city without electricity.",
-          "excerpt": "❗️A substation caught fire in Lyubertsy, Moscow Oblast, leaving parts of the city without electricity. The cause of the…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": "substation",
-            "casualties": null
-          },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/48692"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48630",
-          "at": "2026-06-30T18:12:04Z",
-          "text": "❗️❗️A missile attack was reported in Moscow Oblast this evening. Details on targets, impacts, and damage have not yet emerged.\n\n0:05\n\n    This media is not supported in your browser\n    VIEW IN TELEGRAM\n\nFootage reportedly taken right after impact. Local channels report a missile struck an area just south of Moscow.",
-          "sentence": "Local channels report a missile struck an area just south of Moscow.",
-          "excerpt": "…ocal channels report a missile struck an area just south of Moscow.",
-          "parsed": {
-            "weapon": "missile",
-            "target": "area just south",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/48609",
           "at": "2026-06-30T05:07:59Z",
           "text": "Ukrainian forces struck Dubna near Moscow, with two explosions reported and smoke visible after the blasts. Dubna hosts the Moscow Space Communications Center, which had already been attacked and damaged in recent strikes.",
           "sentence": "Ukrainian forces struck Dubna near Moscow, with two explosions reported and smoke visible after the blasts.",
           "excerpt": "Ukrainian forces struck Dubna near Moscow, with two explosions reported and smoke visible after the blasts. Dubna hosts t…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48416",
-          "at": "2026-06-26T15:51:35Z",
-          "text": "❗️Russian hardliners are urging Putin to abandon US-mediated diplomacy and escalate the war after Ukrainian deep strikes hit Moscow, St Petersburg and Crimea, Reuters reports. Nationalist commentators are calling for full mobilization, heavier bombing, strikes on Kyiv’s leadership and attacks on European drone factories, while the Kremlin has so far kept talks open.",
-          "sentence": "❗️Russian hardliners are urging Putin to abandon US-mediated diplomacy and escalate the war after Ukrainian deep strikes hit Moscow, St Petersburg and Crimea, Reuters reports.",
-          "excerpt": "…omacy and escalate the war after Ukrainian deep strikes hit Moscow, St Petersburg and Crimea, Reuters reports. Nationalist commentators are callin…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48370",
-          "at": "2026-06-26T06:55:58Z",
-          "text": "The fuel crisis in Russia is now also hitting Moscow and its region.",
-          "sentence": "The fuel crisis in Russia is now also hitting Moscow and its region.",
-          "excerpt": "The fuel crisis in Russia is now also hitting Moscow and its region.",
           "parsed": null
         },
         {
@@ -2499,20 +1709,6 @@
             "weapon": "drone",
             "target": null,
             "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48272",
-          "at": "2026-06-24T12:57:29Z",
-          "text": "❗️Jackpot: Reuters reports the Moscow oil refinery is unlikely to resume production this year after suffering extensive damage in Ukrainian drone strikes. Repairs are expected to take at least six months, worsening fuel shortages and pressure on Russia’s energy sector.",
-          "sentence": "❗️Jackpot: Reuters reports the Moscow oil refinery is unlikely to resume production this year after suffering extensive damage in Ukrainian drone strikes.",
-          "excerpt": "❗️Jackpot: Reuters reports the Moscow oil refinery is unlikely to resume production this year after suffering extensi…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": "refinery",
             "casualties": null
           }
         },
@@ -2580,62 +1776,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47998",
-          "at": "2026-06-18T20:18:45Z",
-          "text": "Footage of today’s strikes on Moscow was displayed at the Eurosatory 2026 defense exhibition in Paris on a large screen positioned behind Fire Point missiles. Mock-ups of the FP-9 and FP-7 ballistic missiles and the FP-5 cruise missile are displayed.",
-          "sentence": "Footage of today’s strikes on Moscow was displayed at the Eurosatory 2026 defense exhibition in Paris on a large screen positioned behind Fire Point missiles.",
-          "excerpt": "Footage of today’s strikes on Moscow was displayed at the Eurosatory 2026 defense exhibition in Paris on a large scr…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47996",
-          "at": "2026-06-18T20:15:56Z",
-          "text": "The U.S. Embassy in Moscow warned Americans in Russia to seek shelter during drone attacks and avoid travel to the country. The alert cited UAV strikes and explosions near Ukraine’s border and in major Russian cities, including Moscow, Kazan and St. Petersburg.",
-          "sentence": "The alert cited UAV strikes and explosions near Ukraine’s border and in major Russian cities, including Moscow, Kazan and St. Petersburg.",
-          "excerpt": "…ear Ukraine’s border and in major Russian cities, including Moscow, Kazan and St. Petersburg.",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47987",
-          "at": "2026-06-18T15:44:38Z",
-          "text": "❗️Jackpot&#33; Ukraine’s June 16 and June 18 strikes disabled both of the Moscow Oil Refinery’s key crude distillation units, CDU-6 and Euro+, Reuters reported. Together, the two units account for 100% of the plant’s primary oil processing capacity.",
-          "sentence": "❗️Jackpot&#33; Ukraine’s June 16 and June 18 strikes disabled both of the Moscow Oil Refinery’s key crude distillation units, CDU-6 and Euro+, Reuters reported.",
-          "excerpt": "…Ukraine’s June 16 and June 18 strikes disabled both of the Moscow Oil Refinery’s key crude distillation units, CDU-6 and Euro+, Reuters reported.…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": "refinery",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47984",
-          "at": "2026-06-18T15:33:15Z",
-          "text": "Some more footage from Moscow, aftermath of the Ukrainian mass drone attack on the Moscow Oil Refinery.",
-          "sentence": "Some more footage from Moscow, aftermath of the Ukrainian mass drone attack on the Moscow Oil Refinery.",
-          "excerpt": "Some more footage from Moscow, aftermath of the Ukrainian mass drone attack on the Moscow Oil Refinery.",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": "refinery",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47982",
           "at": "2026-06-18T10:29:48Z",
           "text": "Oil rain fell on Moscow after Ukrainian drones attacked the local refinery.",
@@ -2644,20 +1784,6 @@
           "parsed": {
             "weapon": "drone",
             "target": "local refinery",
-            "targetType": "refinery",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47980",
-          "at": "2026-06-18T09:58:13Z",
-          "text": "Zelensky warned that if Ukraine burns, Moscow will burn too, saying Kyiv will not sit quietly if Putin refuses to end the war. He confirmed Ukraine’s long-range strikes again reached the Moscow region and hit the Moscow refinery for the second time in a week.",
-          "sentence": "He confirmed Ukraine’s long-range strikes again reached the Moscow region and hit the Moscow refinery for the second time in a week.",
-          "excerpt": "…g-range strikes again reached the Moscow region and hit the Moscow refinery for the second time in a week.",
-          "parsed": {
-            "weapon": null,
-            "target": "Moscow refinery",
             "targetType": "refinery",
             "casualties": null
           }
@@ -2692,48 +1818,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47975",
-          "at": "2026-06-18T08:18:07Z",
-          "text": "❗️Ukraine’s Foreign Minister Andrii Sybiha responded to Moscow refinery strikes, saying Russians asking “what is happening?” should remember their country launched a war of aggression and has killed Ukrainians for years. He told them to ask Putin when he plans to stop.",
-          "sentence": "❗️Ukraine’s Foreign Minister Andrii Sybiha responded to Moscow refinery strikes, saying Russians asking “what is happening?”",
-          "excerpt": "❗️Ukraine’s Foreign Minister Andrii Sybiha responded to Moscow refinery strikes, saying Russians asking “what is happening?” should remember t…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": "refinery",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47973",
-          "at": "2026-06-18T08:00:22Z",
-          "text": "Ukraine’s Unmanned Systems Forces struck the Moscow oil refinery again on June 18 in coordination with SSO, GUR, SBU and other defense components. The operation involved the 1st Separate Center, the 412th Nemesis Brigade, the 413th Raid Regiment and the 414th Magyar’s Birds Brigade. The refinery is among Russia’s 10 largest, with capacity of 11 million tons of oil per year, and supplies fuel and petroleum products for Russia’s economy and military logistics.",
-          "sentence": "Ukraine’s Unmanned Systems Forces struck the Moscow oil refinery again on June 18 in coordination with SSO, GUR, SBU and other defense components.",
-          "excerpt": "Ukraine’s Unmanned Systems Forces struck the Moscow oil refinery again on June 18 in coordination with SSO, GUR, SBU and other defe…",
-          "parsed": {
-            "weapon": null,
-            "target": "Moscow oil refinery",
-            "targetType": "refinery",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47970",
-          "at": "2026-06-18T07:51:07Z",
-          "text": "Alongside long-range strike drones, Ukrainian Bars drone-missiles were used in the strike wave targeting Moscow. The jet-powered RS-1 Bars is a domestically developed long-range weapon with an estimated 700-800 km range and a warhead believed to be in the 50-100 kg class.",
-          "sentence": "Alongside long-range strike drones, Ukrainian Bars drone-missiles were used in the strike wave targeting Moscow.",
-          "excerpt": "…Bars drone-missiles were used in the strike wave targeting Moscow. The jet-powered RS-1 Bars is a domestically developed long-range weapon with an…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47968",
           "at": "2026-06-18T07:46:08Z",
           "text": "❗️More than 527 flights have been canceled or delayed at Moscow airports amid the ongoing Ukrainian drone attack wave, according to Russian media.",
@@ -2748,20 +1832,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47964",
-          "at": "2026-06-18T07:09:50Z",
-          "text": "Zelensky confirmed Ukraine’s long-range strikes reached the Moscow region overnight, damaging the Moscow oil refinery for the second time in a week. He said targets were also struck in Rostov region and on temporarily occupied Ukrainian territory. Zelenskyy called the attacks a fair response to Russian strikes on Ukrainian cities and thanked the SBU, Unmanned Systems Forces, SSO, GUR and a Ukrainian missile brigade.",
-          "sentence": "Zelensky confirmed Ukraine’s long-range strikes reached the Moscow region overnight, damaging the Moscow oil refinery for the second time in a week.",
-          "excerpt": "…e strikes reached the Moscow region overnight, damaging the Moscow oil refinery for the second time in a week. He said targets were also struck in…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": "refinery",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47961",
           "at": "2026-06-18T07:07:34Z",
           "text": "Some reactions from Russian channels to the attack on the Moscow refinery: “It’s time to wake up and stop playing the game of bureaucratic intrigue,” “In Moscow, many people have finally realised that there is a war going on,” “What colour will the line be today?”",
@@ -2771,20 +1841,6 @@
             "weapon": null,
             "target": null,
             "targetType": "refinery",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47951",
-          "at": "2026-06-18T06:46:29Z",
-          "text": "Thick black smoke covered parts of Moscow after a mass Ukrainian drone attack triggered multiple fires across the capital. Russian authorities reportedly activated evacuation measures in several neighborhoods as emergency services responded.",
-          "sentence": "Thick black smoke covered parts of Moscow after a mass Ukrainian drone attack triggered multiple fires across the capital.",
-          "excerpt": "Thick black smoke covered parts of Moscow after a mass Ukrainian drone attack triggered multiple fires across the capital…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": null,
             "casualties": null
           }
         },
@@ -2852,40 +1908,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47838",
-          "at": "2026-06-16T06:26:00Z",
-          "text": "Zelensky vowed to respond after the attack on the Pechersk Lavra. Ukrainian long-range drones struck the Moscow oil refinery early morning, triggering a major fire and heavy smoke at one of Russia’s largest refining sites. The facility processes about 12.8 million tonnes of oil per year, or roughly 245,000-250,000 barrels per day, and supplies around 35-40% of fuel consumed in Moscow and the surrounding region.",
-          "sentence": "Ukrainian long-range drones struck the Moscow oil refinery early morning, triggering a major fire and heavy smoke at one of Russia’s largest refining sites.",
-          "excerpt": "…the Pechersk Lavra. Ukrainian long-range drones struck the Moscow oil refinery early morning, triggering a major fire and heavy smoke at one of R…",
-          "parsed": {
-            "weapon": "drone",
-            "target": "Moscow oil refinery",
-            "targetType": "refinery",
-            "casualties": null
-          },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/47846"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47797",
-          "at": "2026-06-15T12:17:39Z",
-          "text": "❗️Zelensky said Ukraine proposed a meeting with Putin during the G7 summit in France, with Trump, Macron and European leaders present. Speaking near the Kyiv-Pechersk Lavra damaged by Russia’s strike, he said Moscow again showed it is not ready for dialogue.",
-          "sentence": "Speaking near the Kyiv-Pechersk Lavra damaged by Russia’s strike, he said Moscow again showed it is not ready for dialogue.",
-          "excerpt": "…the Kyiv-Pechersk Lavra damaged by Russia’s strike, he said Moscow again showed it is not ready for dialogue.",
-          "parsed": {
-            "weapon": null,
-            "target": "by Russia",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47781",
           "at": "2026-06-15T07:57:28Z",
           "text": "A fire broke out in Reutov near Moscow after a drone attack, roughly 600 meters from NPO Mashinostroyeniya. The defense enterprise is linked to development of Russia’s Zircon hypersonic missile and Avangard strategic missile system.",
@@ -2902,29 +1924,6 @@
       "Mariupol": [
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51869",
-          "at": "2026-08-29T11:22:41Z",
-          "text": "❗️The sanctioned cargo ship ALFA-1 was struck overnight in the port of Russian-occupied Mariupol. The vessel had been listed in a database of ships linked to transporting cargo from occupied Ukrainian territories. No details on the extent of damage were provided.",
-          "sentence": "❗️The sanctioned cargo ship ALFA-1 was struck overnight in the port of Russian-occupied Mariupol.",
-          "excerpt": "…ALFA-1 was struck overnight in the port of Russian-occupied Mariupol. The vessel had been listed in a database of ships linked to transporting cargo…",
-          "parsed": {
-            "weapon": null,
-            "target": "ALFA-1",
-            "targetType": "port",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51035",
-          "at": "2026-08-13T07:57:55Z",
-          "text": "Overnight, occupied Mariupol came under attack. There are reports of power outages after the attack.",
-          "sentence": "Overnight, occupied Mariupol came under attack.",
-          "excerpt": "Overnight, occupied Mariupol came under attack. There are reports of power outages after the attack.",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50704",
           "at": "2026-08-06T20:21:19Z",
           "text": "A series of strikes hit energy infrastructure facilities in Russian-occupied Mariupol.",
@@ -2933,20 +1932,6 @@
           "parsed": {
             "weapon": null,
             "target": "energy infrastructure facilities",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50681",
-          "at": "2026-08-06T10:01:25Z",
-          "text": "Ukraine's SIGNUM unit says it has placed the main Russian logistics route from Mariupol to Chonhar under drone fire control. The unit is using Hornet middle-strike drones to hit vehicles and supply traffic across occupied Donetsk, Zaporizhzhia and Kherson regions, disrupting the so-called land corridor to Crimea. New batteries have extended the drones' range and allow strikes deeper behind Russian lines.",
-          "sentence": "Ukraine's SIGNUM unit says it has placed the main Russian logistics route from Mariupol to Chonhar under drone fire control.",
-          "excerpt": "…it says it has placed the main Russian logistics route from Mariupol to Chonhar under drone fire control. The unit is using Hornet middle-strike dro…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
             "targetType": null,
             "casualties": null
           }
@@ -2981,15 +1966,6 @@
           "text": "Explosions have been reported in occupied Mariupol.",
           "sentence": "Explosions have been reported in occupied Mariupol.",
           "excerpt": "Explosions have been reported in occupied Mariupol.",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49304",
-          "at": "2026-07-13T17:40:37Z",
-          "text": "Operators of Ukraine’s 3rd Operational Brigade “Spartan” of the National Guard expanded their strike range from the outskirts of Donetsk to occupied Mariupol. They destroyed a Russian boat and continue striking military vehicles transporting ammunition and fuel.",
-          "sentence": "Operators of Ukraine’s 3rd Operational Brigade “Spartan” of the National Guard expanded their strike range from the outskirts of Donetsk to occupied Mariupol.",
-          "excerpt": "…heir strike range from the outskirts of Donetsk to occupied Mariupol. They destroyed a Russian boat and continue striking military vehicles transport…",
           "parsed": null
         },
         {
@@ -3075,15 +2051,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51793",
-          "at": "2026-08-27T15:02:12Z",
-          "text": "Defense Express says debris recovered after the Donetsk strike may point to Ukraine's first use of JDAM-LR, a jet-powered weapon with a stated range above 550 km. One fragment carried the code 6F8W7, linked to Australian firm Ferra Aerospace, which manufactures wing kits for JDAM-ER. The outlet says JDAM-LR uses the same wing kit and can carry a 500-pound Mk-82 bomb. The identification remains a hypothesis and has not been confirmed.",
-          "sentence": "Defense Express says debris recovered after the Donetsk strike may point to Ukraine's first use of JDAM-LR, a jet-powered weapon with a stated range above 550 km.",
-          "excerpt": "Defense Express says debris recovered after the Donetsk strike may point to Ukraine's first use of JDAM-LR, a jet-powered weapon with a…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51791",
           "at": "2026-08-27T14:54:05Z",
           "text": "Did Ukraine hit something important in occupied Donetsk? Russia threatened that its response to Ukrainian strikes using British weapons could be directed against any UK military facilities in Ukraine or elsewhere. Russian Foreign Ministry spokesperson Maria Vodkarova issued the warning.",
@@ -3150,20 +2117,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51740",
-          "at": "2026-08-26T15:16:44Z",
-          "text": "Occupied Donetsk came under a large missile and drone attack today, with around 10 explosions reported. One strike hit a building at 97 Illicha Avenue that previously housed research and industrial institutes. Witnesses reported loud screams from the site; who was inside is unknown.",
-          "sentence": "Occupied Donetsk came under a large missile and drone attack today, with around 10 explosions reported.",
-          "excerpt": "Occupied Donetsk came under a large missile and drone attack today, with around 10 explosions re…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51738",
           "at": "2026-08-26T14:09:16Z",
           "text": "Lots of damage inflicted after a Ukrainian missile strike in occupied Donetsk. It is not clear yet what target was hit.\n\n0:28\n\n    This media is not supported in your browser\n    VIEW IN TELEGRAM\n\nMoment of impact(s) in occupied Donetsk. Several direct hits are heard. The missile strike may have targeted the command post of Russia's 51st Combined Arms Army. The army, formed from the former 1st \"DPR\" Army Corps, is one of Russia's main formations operating on the Pokrovsk-Dobropillia axis.",
@@ -3172,20 +2125,6 @@
           "parsed": {
             "weapon": "missile",
             "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51445",
-          "at": "2026-08-21T11:13:40Z",
-          "text": "❗️A drone attack hit occupied Donetsk, producing a large column of smoke over the city. Local reports described secondary detonations following the strike. Initial reports suggested an oil depot may be burning, but the target had not yet been confirmed.",
-          "sentence": "❗️A drone attack hit occupied Donetsk, producing a large column of smoke over the city.",
-          "excerpt": "❗️A drone attack hit occupied Donetsk, producing a large column of smoke over the city. Local reports described secon…",
-          "parsed": {
-            "weapon": "drone",
-            "target": "occupied Donetsk",
             "targetType": null,
             "casualties": null
           }
@@ -3201,20 +2140,6 @@
             "weapon": "drone",
             "target": "Galaktika center",
             "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51085",
-          "at": "2026-08-13T20:41:50Z",
-          "text": "A Russian airstrike hit residential buildings in Kramatorsk, killing 1 person and injuring 15, Donetsk regional authorities say. Russia attacked Kramatorsk and Bilenke 8 times between 20:30 and 20:56, reportedly using aerial bombs. An apartment building was damaged.",
-          "sentence": "A Russian airstrike hit residential buildings in Kramatorsk, killing 1 person and injuring 15, Donetsk regional authorities say.",
-          "excerpt": "…buildings in Kramatorsk, killing 1 person and injuring 15, Donetsk regional authorities say. Russia attacked Kramatorsk and Bilenke 8 times betwee…",
-          "parsed": {
-            "weapon": null,
-            "target": "residential buildings",
-            "targetType": "apartment block",
             "casualties": null
           }
         },
@@ -3271,15 +2196,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49304",
-          "at": "2026-07-13T17:40:37Z",
-          "text": "Operators of Ukraine’s 3rd Operational Brigade “Spartan” of the National Guard expanded their strike range from the outskirts of Donetsk to occupied Mariupol. They destroyed a Russian boat and continue striking military vehicles transporting ammunition and fuel.",
-          "sentence": "Operators of Ukraine’s 3rd Operational Brigade “Spartan” of the National Guard expanded their strike range from the outskirts of Donetsk to occupied Mariupol.",
-          "excerpt": "…nal Guard expanded their strike range from the outskirts of Donetsk to occupied Mariupol. They destroyed a Russian boat and continue striking milit…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/49209",
           "at": "2026-07-11T17:01:19Z",
           "text": "Ukrainian FP-2 drone strikes on a Russian command post in occupied Donetsk.",
@@ -3291,26 +2207,6 @@
             "targetType": null,
             "casualties": null
           }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48644",
-          "at": "2026-07-01T06:06:17Z",
-          "text": "Ukrainian FP-2 drones struck occupied Donetsk overnight, triggering a large fire. NASA FIRMS data shows major fires burning at a truck depot in Donetsk after the attack.",
-          "sentence": "Ukrainian FP-2 drones struck occupied Donetsk overnight, triggering a large fire.",
-          "excerpt": "Ukrainian FP-2 drones struck occupied Donetsk overnight, triggering a large fire. NASA FIRMS data shows major fires burning a…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/48683"
-            }
-          ]
         },
         {
           "channel": "noel_reports",
@@ -3330,35 +2226,12 @@
       "Novorossiysk": [
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51829",
-          "at": "2026-08-28T13:22:53Z",
-          "text": "Zelensky says Ukrainian intelligence has evidence that the Kstovo refinery, one of Russia's largest and capable of processing 17 million tons of oil annually, has stopped operating. He also said internal Russian documents show some export components fell by 80% this month. According to Zelensky, Ukrainian strikes have effectively confined Russia's Black Sea Fleet ships to Novorossiysk, while strikes on the Kamensky plant have sharply reduced solid-fuel rocket motor production capacity.",
-          "sentence": "According to Zelensky, Ukrainian strikes have effectively confined Russia's Black Sea Fleet ships to Novorossiysk, while strikes on the Kamensky plant have sharply reduced solid-fuel rocket motor production capacity.",
-          "excerpt": "…have effectively confined Russia's Black Sea Fleet ships to Novorossiysk, while strikes on the Kamensky plant have sharply reduced solid-fuel rocket mot…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51358",
           "at": "2026-08-19T17:48:35Z",
           "text": "Russia's Black Sea Fleet lost two Kalibr carriers in the August 12 strike on Novorossiysk naval base. Frigates Admiral Makarov, the fleet flagship, and Admiral Essen reportedly suffered critical damage and are out of service for at least a year. Essen's 3S14 launcher and Trebovaniye-M combat system were destroyed, while Makarov suffered an internal detonation and burned-out 3S14 launch cells.",
           "sentence": "Russia's Black Sea Fleet lost two Kalibr carriers in the August 12 strike on Novorossiysk naval base.",
           "excerpt": "…a Fleet lost two Kalibr carriers in the August 12 strike on Novorossiysk naval base. Frigates Admiral Makarov, the fleet flagship, and Admiral Essen rep…",
           "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51289",
-          "at": "2026-08-18T15:16:33Z",
-          "text": "A drone attack hit the Liberian-flagged, Greek-operated bulk carrier ANNA S about 20 nautical miles from Novorossiysk, outside territorial waters, Reuters reports. The ship was heading to load Russian grain and was reportedly attacked by five drones, sparking a fire and causing significant damage. All 21 crew members, including 20 Filipinos and the Romanian captain, were evacuated safely. It was the second Greek-operated vessel attacked in 24 hours.",
-          "sentence": "A drone attack hit the Liberian-flagged, Greek-operated bulk carrier ANNA S about 20 nautical miles from Novorossiysk, outside territorial waters, Reuters reports.",
-          "excerpt": "…k-operated bulk carrier ANNA S about 20 nautical miles from Novorossiysk, outside territorial waters, Reuters reports. The ship was heading to load Russ…",
-          "parsed": {
-            "weapon": "drone",
-            "target": "Liberian-flagged",
-            "targetType": null,
-            "casualties": null
-          }
         },
         {
           "channel": "noel_reports",
@@ -3385,35 +2258,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51008",
-          "at": "2026-08-12T16:54:40Z",
-          "text": "❗️❗️Ukraine’s Defense Forces confirmed four Russian warships were damaged during the August 12 joint operation against the Novorossiysk naval base. The preliminary list includes Project 11356 frigates Admiral Makarov and Admiral Essen, a Project 21631 Buyan-M small missile ship, and Project 22160 patrol ship Vasily Bykov. The vessels sustained damage of varying severity, while further information is still being clarified.",
-          "sentence": "❗️❗️Ukraine’s Defense Forces confirmed four Russian warships were damaged during the August 12 joint operation against the Novorossiysk naval base.",
-          "excerpt": "…re damaged during the August 12 joint operation against the Novorossiysk naval base. The preliminary list includes Project 11356 frigates Admiral Makaro…",
-          "parsed": {
-            "weapon": null,
-            "target": "warships",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51003",
-          "at": "2026-08-12T15:30:02Z",
-          "text": "❗️Exilenova+ satellite analysis of the August 12 Novorossiysk strike shows extensive damage at three key sites: the NKHP grain and fuel-oil terminals, Russia’s naval base and the Sheskharis oil-export terminal. Admiral Makarov and Admiral Essen were likely hit near their Kalibr launchers, while a minesweeper, patrol ship, intelligence ship and experimental vessel also appear damaged. NKHP handles around 12% of Russian grain exports, while Sheskharis suffered hits on its main tanker berths.",
-          "sentence": "❗️Exilenova+ satellite analysis of the August 12 Novorossiysk strike shows extensive damage at three key sites: the NKHP grain and fuel-oil terminals, Russia’s naval base and the Sheskharis oil-export terminal.",
-          "excerpt": "❗️Exilenova+ satellite analysis of the August 12 Novorossiysk strike shows extensive damage at three key sites: the NKHP grain and fuel-oil t…",
-          "parsed": null,
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51007"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50998",
           "at": "2026-08-12T13:18:51Z",
           "text": "❗️Satellite imagery published by Supernova+ after Ukraine’s August 12 attack on Novorossiysk shows extensive damage across several sections of the port. The identified sites include the Novorossiysk Grain Products Plant, Novorossiysk Grain Terminal, a tanker at the Sheskharis oil-loading terminal, and multiple piers or vessels in the area of Russia’s Novorossiysk naval base.",
@@ -3423,29 +2267,6 @@
             "weapon": null,
             "target": null,
             "targetType": "port",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50991",
-          "at": "2026-08-12T12:45:06Z",
-          "text": "Novorossiysk after Ukraine’s massive combined strike. Extensive damage is visible across the port and its surroundings, pointing to one of, if not the largest, combined Ukrainian missile and drone attacks on the Russian Black Sea stronghold since the start of the full-scale war.",
-          "sentence": "Novorossiysk after Ukraine’s massive combined strike.",
-          "excerpt": "Novorossiysk after Ukraine’s massive combined strike. Extensive damage is visible across the…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50987",
-          "at": "2026-08-12T11:49:08Z",
-          "text": "Aftermath footage from Novorossiysk after it was attacked by Ukrainian missiles and drones. The port area is covered in dust, and lots of damage can be seen to port infrastructure with fires still ongoing.",
-          "sentence": "Aftermath footage from Novorossiysk after it was attacked by Ukrainian missiles and drones.",
-          "excerpt": "Aftermath footage from Novorossiysk after it was attacked by Ukrainian missiles and drones. The port area is covere…",
-          "parsed": {
-            "weapon": "missile",
-            "target": "Novorossiysk after it",
-            "targetType": null,
             "casualties": null
           }
         },
@@ -3480,54 +2301,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50979",
-          "at": "2026-08-12T08:18:36Z",
-          "text": "Zelensky confirmed Ukrainian forces struck the Novorossiysk naval base overnight in what he called a unique operation. Palyanytsia jet drones, Neptune missiles and unmanned maritime systems hit designated targets, with strikes confirmed on Russian air defense positions, piers and seaport infrastructure. Zelensky described Novorossiysk as the Russian fleet’s last main Black Sea outpost, more than 300 km from the front.",
-          "sentence": "Zelensky confirmed Ukrainian forces struck the Novorossiysk naval base overnight in what he called a unique operation.",
-          "excerpt": "Zelensky confirmed Ukrainian forces struck the Novorossiysk naval base overnight in what he called a unique operation. Palyanytsia jet dron…",
-          "parsed": {
-            "weapon": null,
-            "target": "Novorossiysk naval base",
-            "targetType": null,
-            "casualties": null
-          },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50981"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50978",
-          "at": "2026-08-12T08:07:49Z",
-          "text": "❗️Bingo: Ukraine’s overnight drone strikes forced Russia’s Novorossiysk grain terminal to suspend operations. The terminal’s owner confirmed the facility sustained damage, while an assessment is underway. Operations remain halted at the major Russian Black Sea grain export terminal.",
-          "sentence": "❗️Bingo: Ukraine’s overnight drone strikes forced Russia’s Novorossiysk grain terminal to suspend operations.",
-          "excerpt": "❗️Bingo: Ukraine’s overnight drone strikes forced Russia’s Novorossiysk grain terminal to suspend operations. The terminal’s owner confirmed the facili…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": "grain terminal",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50977",
-          "at": "2026-08-12T07:29:44Z",
-          "text": "One of the vessels damaged earlier has been towed to Novorossiysk. The ship was highly likely hit during a Ukrainian drone strike in the Black Sea.",
-          "sentence": "One of the vessels damaged earlier has been towed to Novorossiysk.",
-          "excerpt": "One of the vessels damaged earlier has been towed to Novorossiysk. The ship was highly likely hit during a Ukrainian drone strike in the Black Sea…",
-          "parsed": {
-            "weapon": null,
-            "target": "earlier has been",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50976",
           "at": "2026-08-12T07:27:46Z",
           "text": "❗️Ukraine halted an intense drone campaign against oil tankers using the CPC terminal in Novorossiysk after US Vice President JD Vance asked Zelensky to stop the strikes during a July 31 call. The terminal handles Kazakhstan’s main oil export route, and Washington was concerned the attacks were destabilizing oil markets and harming US companies. Ukraine agreed not to target CPC infrastructure or non-Russian vessels unless they were sanctioned or carrying Russian cargo.",
@@ -3539,30 +2312,6 @@
             "targetType": null,
             "casualties": null
           }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50956",
-          "at": "2026-08-11T21:47:32Z",
-          "text": "Disco in Novorossyisk. Ukrainian forces have been attacking the port of Novorossiysk for several hours, with Russian air defenses and mobile fire groups actively trying to repel the attack. Loud explosions are being reported in the city.",
-          "sentence": "Ukrainian forces have been attacking the port of Novorossiysk for several hours, with Russian air defenses and mobile fire groups actively trying to repel the attack.",
-          "excerpt": "…orossyisk. Ukrainian forces have been attacking the port of Novorossiysk for several hours, with Russian air defenses and mobile fire groups actively tr…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": "port",
-            "casualties": null
-          },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50967"
-            },
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50972"
-            }
-          ]
         },
         {
           "channel": "noel_reports",
@@ -3598,20 +2347,6 @@
               "url": "https://t.me/noel_reports/51326"
             }
           ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50535",
-          "at": "2026-08-04T06:31:22Z",
-          "text": "Ukrainian attack drones struck the Ro-Ro cargo ship Nadezhda off Novorossiysk, severely damaging the vessel and setting it ablaze. Turkish media reported that the crew is Turkish. The vessel has been identified as IMO 7702657.",
-          "sentence": "Ukrainian attack drones struck the Ro-Ro cargo ship Nadezhda off Novorossiysk, severely damaging the vessel and setting it ablaze.",
-          "excerpt": "…nian attack drones struck the Ro-Ro cargo ship Nadezhda off Novorossiysk, severely damaging the vessel and setting it ablaze. Turkish media reported tha…",
-          "parsed": {
-            "weapon": "drone",
-            "target": "Ro-Ro cargo ship",
-            "targetType": null,
-            "casualties": null
-          }
         },
         {
           "channel": "noel_reports",
@@ -3668,15 +2403,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50485",
-          "at": "2026-08-03T08:28:42Z",
-          "text": "More footage has emerged showing the recently revealed STASH short-range air defense system in service with Ukraine's Defense Forces. The video, released by the 302nd Kharkiv Anti-Aircraft Missile Brigade, shows the system in operation.",
-          "sentence": "The video, released by the 302nd Kharkiv Anti-Aircraft Missile Brigade, shows the system in operation.",
-          "excerpt": "…Ukraine's Defense Forces. The video, released by the 302nd Kharkiv Anti-Aircraft Missile Brigade, shows the system in operation.",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/49621",
           "at": "2026-07-19T11:02:35Z",
           "text": "A Russian strike destroyed a Nova Poshta postal terminal in a suburb of Kharkiv, the regional administration said. Three people were killed and 20 injured, with three of the wounded in serious condition.",
@@ -3685,20 +2411,6 @@
           "parsed": {
             "weapon": null,
             "target": "Nova Poshta postal",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47817",
-          "at": "2026-06-15T17:23:06Z",
-          "text": "❗️Another Russian low. A drone strike hit Kharkiv Zoo, damaging animal enclosures. Mayor Ihor Terekhov confirmed the impact and said reports of injured animals are being received as authorities assess the full extent of the damage.",
-          "sentence": "A drone strike hit Kharkiv Zoo, damaging animal enclosures.",
-          "excerpt": "❗️Another Russian low. A drone strike hit Kharkiv Zoo, damaging animal enclosures. Mayor Ihor Terekhov confirmed the impact and s…",
-          "parsed": {
-            "weapon": "drone",
-            "target": "Kharkiv Zoo",
             "targetType": null,
             "casualties": null
           }
@@ -3718,69 +2430,6 @@
           }
         }
       ],
-      "Sumy": [
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51810",
-          "at": "2026-08-28T07:26:57Z",
-          "text": "Nova Poshta says its sorting centers in Sumy and Kyiv region were destroyed overnight. Four guided aerial bombs hit the Sumy terminal, damaging 3 trucks, while a drone destroyed the Kyiv region depot. Separately, an Epicentr store in Zaporizhzhia was also attacked during the overnight strikes.",
-          "sentence": "Four guided aerial bombs hit the Sumy terminal, damaging 3 trucks, while a drone destroyed the Kyiv region depot.",
-          "excerpt": "…were destroyed overnight. Four guided aerial bombs hit the Sumy terminal, damaging 3 trucks, while a drone destroyed the Kyiv region depot. Sep…",
-          "parsed": {
-            "weapon": "drone",
-            "target": "Sumy terminal",
-            "targetType": "depot",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50966",
-          "at": "2026-08-12T06:55:56Z",
-          "text": "Ukraine’s Air Force says 112 of 138 Russian drones were downed or suppressed overnight. Russia also launched an Iskander-M ballistic missile, a Kh-31P anti-radar missile and Kh-35 guided missiles. Sumy and Odesa regions were the main targets, with strikes recorded at 16 locations.",
-          "sentence": "Sumy and Odesa regions were the main targets, with strikes recorded at 16 locations.",
-          "excerpt": "…ile, a Kh-31P anti-radar missile and Kh-35 guided missiles. Sumy and Odesa regions were the main targets, with strikes recorded at 16 locations.",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50671",
-          "at": "2026-08-06T07:23:17Z",
-          "text": "Russian forces hit Sumy eight times with guided aerial bombs in just eight minutes, city officials said. Air defenses destroyed one bomb. The attack injured 13 people and damaged a shopping center, five stores, 10 apartment blocks, three private homes and five vehicles.",
-          "sentence": "Russian forces hit Sumy eight times with guided aerial bombs in just eight minutes, city officials said.",
-          "excerpt": "Russian forces hit Sumy eight times with guided aerial bombs in just eight minutes, city officials said…",
-          "parsed": {
-            "weapon": null,
-            "target": "Sumy eight times",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49712",
-          "at": "2026-07-20T20:44:32Z",
-          "text": "Sumy regional authorities released footage of a fire at a shopping center destroyed in a Russian attack. Governor Oleh Hryhorov said the scale of the damage was extensive.",
-          "sentence": "Sumy regional authorities released footage of a fire at a shopping center destroyed in a Russian attack.",
-          "excerpt": "Sumy regional authorities released footage of a fire at a shopping center destroyed…",
-          "parsed": null,
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/49713"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47776",
-          "at": "2026-06-15T07:46:45Z",
-          "text": "Russia launched a mass attack on Ukrainian cities, killing 4 people and injuring 25 in Kyiv, including 2 children. In Kharkiv, 5 rescuers were killed and at least 5 wounded during firefighting after a repeat Russian strike. Sumy and Dnipro also reported casualties and damage.",
-          "sentence": "Sumy and Dnipro also reported casualties and damage.",
-          "excerpt": "…wounded during firefighting after a repeat Russian strike. Sumy and Dnipro also reported casualties and damage.",
-          "parsed": null
-        }
-      ],
       "Odesa": [
         {
           "channel": "noel_reports",
@@ -3798,64 +2447,12 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51250",
-          "at": "2026-08-17T14:53:50Z",
-          "text": "A Russian strike hit a private home in Chornomorsk, Odesa region, destroying the roof, starting a fire and damaging neighboring houses. Local media identified an Kh-31P missile. Separately, monitors reported a Banderol missile-drone entered Moldova and later fell 35 km from Ukraine.",
-          "sentence": "A Russian strike hit a private home in Chornomorsk, Odesa region, destroying the roof, starting a fire and damaging neighboring houses.",
-          "excerpt": "A Russian strike hit a private home in Chornomorsk, Odesa region, destroying the roof, starting a fire and damaging neighboring ho…",
-          "parsed": {
-            "weapon": null,
-            "target": "private home",
-            "targetType": null,
-            "casualties": null
-          },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51257"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50966",
-          "at": "2026-08-12T06:55:56Z",
-          "text": "Ukraine’s Air Force says 112 of 138 Russian drones were downed or suppressed overnight. Russia also launched an Iskander-M ballistic missile, a Kh-31P anti-radar missile and Kh-35 guided missiles. Sumy and Odesa regions were the main targets, with strikes recorded at 16 locations.",
-          "sentence": "Sumy and Odesa regions were the main targets, with strikes recorded at 16 locations.",
-          "excerpt": "…-31P anti-radar missile and Kh-35 guided missiles. Sumy and Odesa regions were the main targets, with strikes recorded at 16 locations.",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50823",
           "at": "2026-08-09T10:17:51Z",
           "text": "An attack on Odesa is ongoing. Russia used several missiles including its new small cruise missile S8000 banderol. Reportedly at least two missiles were shot down. Impacts are being determined.",
           "sentence": "An attack on Odesa is ongoing.",
           "excerpt": "An attack on Odesa is ongoing. Russia used several missiles including its new small cruise missile…",
           "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50815",
-          "at": "2026-08-09T07:10:21Z",
-          "text": "Russia struck Kharkiv and Odesa in separate attacks. A missile hit a 10-story residential building in Kharkiv, killing 2 people and injuring 21; the 7th through 9th floors were destroyed. In Odesa Oblast, at least 8 people were injured in a combined missile and drone attack.",
-          "sentence": "Russia struck Kharkiv and Odesa in separate attacks.",
-          "excerpt": "Russia struck Kharkiv and Odesa in separate attacks. A missile hit a 10-story residential building in Kharkiv,…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50808",
-          "at": "2026-08-09T07:01:04Z",
-          "text": "179 targets stopped overnight. Ukraine's Air Force says defenses downed or suppressed 174 of 202 Russian drones plus 5 Banderol loitering munitions. Odesa was the main target as Russia also fired Iskander-M/S-400, Onyx and Kh-31P missiles. Hits were recorded at 22 locations.",
-          "sentence": "Odesa was the main target as Russia also fired Iskander-M/S-400, Onyx and Kh-31P missiles.",
-          "excerpt": "…of 202 Russian drones plus 5 Banderol loitering munitions. Odesa was the main target as Russia also fired Iskander-M/S-400, Onyx and Kh-31P miss…",
-          "parsed": {
-            "weapon": "Iskander",
-            "target": null,
-            "targetType": "air defence system",
-            "casualties": null
-          }
         },
         {
           "channel": "noel_reports",
@@ -3868,20 +2465,6 @@
             "weapon": null,
             "target": "vessel",
             "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50112",
-          "at": "2026-07-28T10:24:37Z",
-          "text": "OkoGora analysis says Russian missile attacks blocked the grain corridor for ships heading to Odesa ports amid Ukrainian strikes on Russia’s shadow fleet in the Sea of Azov. At the peak of the wheat harvest, Ukraine is effectively cut off from the sea.",
-          "sentence": "OkoGora analysis says Russian missile attacks blocked the grain corridor for ships heading to Odesa ports amid Ukrainian strikes on Russia’s shadow fleet in the Sea of Azov.",
-          "excerpt": "…ile attacks blocked the grain corridor for ships heading to Odesa ports amid Ukrainian strikes on Russia’s shadow fleet in the Sea of Azov. At th…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": "port",
             "casualties": null
           }
         },
@@ -3929,58 +2512,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49360",
-          "at": "2026-07-14T18:57:30Z",
-          "text": "Russia attacked two civilian vessels flying the flags of Tanzania and Liberia in the Black Sea, Odesa regional authorities said. The captain of one vessel was killed. Eleven crew members were evacuated, including 3 who were injured.",
-          "sentence": "Russia attacked two civilian vessels flying the flags of Tanzania and Liberia in the Black Sea, Odesa regional authorities said.",
-          "excerpt": "…flying the flags of Tanzania and Liberia in the Black Sea, Odesa regional authorities said. The captain of one vessel was killed. Eleven crew me…",
-          "parsed": {
-            "weapon": null,
-            "target": "civilian vessels flying",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49353",
-          "at": "2026-07-14T15:37:39Z",
-          "text": "Russia struck the Tanzania-flagged cargo vessel ATLAS BE off the coast of Odesa. The ship was sailing from Chornomorsk to Turkey carrying sunflower meal. A jet-powered drone hit the vessel, causing a fire and killing one crew member.",
-          "sentence": "Russia struck the Tanzania-flagged cargo vessel ATLAS BE off the coast of Odesa.",
-          "excerpt": "…the Tanzania-flagged cargo vessel ATLAS BE off the coast of Odesa. The ship was sailing from Chornomorsk to Turkey carrying sunflower meal. A jet-…",
-          "parsed": {
-            "weapon": null,
-            "target": "Tanzania-flagged cargo vessel",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48318",
-          "at": "2026-06-25T09:56:32Z",
-          "text": "Ukraine’s Odesa operational group said the blue-and-yellow flag was raised on Kinburn Spit after Ukrainian fire forced Russian troops to retreat from their positions. Surviving personnel are now evacuating and abandoning defensive lines. Let's see if this is purely a flag operation or not.",
-          "sentence": "Ukraine’s Odesa operational group said the blue-and-yellow flag was raised on Kinburn Spit after Ukrainian fire forced Russian troops to retreat from their positions.",
-          "excerpt": "Ukraine’s Odesa operational group said the blue-and-yellow flag was raised on Kinburn Spit afte…",
-          "parsed": null,
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/48321"
-            }
-          ]
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48183",
-          "at": "2026-06-22T20:08:54Z",
-          "text": "I read statements about Russians allegedly leaving the Kinburn Spit. This is untrue.\n\nOTU Odesa commander Col. Denys Nosikov said Russian forces on the Kinburn Spit are facing serious logistical difficulties as Ukrainian forces expand their strike coverage of the area. Several Ukrainian outlets and telegram channels subsequently falsely reported that Russian troops may be pulling back from some positions.",
-          "sentence": "OTU Odesa commander Col. Denys Nosikov said Russian forces on the Kinburn Spit are facing serious logistical difficulties as Ukrainian forces expand their strike coverage of the area.",
-          "excerpt": "…ns allegedly leaving the Kinburn Spit. This is untrue. OTU Odesa commander Col. Denys Nosikov said Russian forces on the Kinburn Spit are facing…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47781",
           "at": "2026-06-15T07:57:28Z",
           "text": "A fire broke out in Reutov near Moscow after a drone attack, roughly 600 meters from NPO Mashinostroyeniya. The defense enterprise is linked to development of Russia’s Zircon hypersonic missile and Avangard strategic missile system.",
@@ -4025,29 +2556,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50524",
-          "at": "2026-08-03T19:46:16Z",
-          "text": "A mass drone attack has reportedly caused a widespread blackout across the Russian-occupied parts of Kherson and Zaporizhzhia regions, leaving large areas without electricity.",
-          "sentence": "A mass drone attack has reportedly caused a widespread blackout across the Russian-occupied parts of Kherson and Zaporizhzhia regions, leaving large areas without electricity.",
-          "excerpt": "…a widespread blackout across the Russian-occupied parts of Kherson and Zaporizhzhia regions, leaving large areas without electricity.",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49444",
-          "at": "2026-07-16T16:53:50Z",
-          "text": "Russian forces set fire to one of the buildings of the Kherson State Maritime Academy, Vice-Rector Oleksandr Shumei said. He wrote that maritime education is part of Kherson’s identity, not its buildings, and compared the attack to the destruction seen during World War II.",
-          "sentence": "Russian forces set fire to one of the buildings of the Kherson State Maritime Academy, Vice-Rector Oleksandr Shumei said.",
-          "excerpt": "Russian forces set fire to one of the buildings of the Kherson State Maritime Academy, Vice-Rector Oleksandr Shumei said. He wrote that mariti…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47692",
           "at": "2026-06-13T06:07:36Z",
           "text": "Russian forces launched a massive guided bomb attack on Kherson from early morning. Numerous fires broke out across different districts of the city.",
@@ -4070,87 +2578,6 @@
             "targetType": null,
             "casualties": null
           }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49816",
-          "at": "2026-07-22T09:02:18Z",
-          "text": "Ukraine’s Kursk grouping released an expanded account of yesterday’s strikes on Khalino airfield, saying medium-range strike drones from its forces and other Ukrainian units were used. The attack destroyed the main control building of a satellite communications center and struck Shahed launch sites, an air defense system, a fuel and lubricants park, and other military targets.",
-          "sentence": "Ukraine’s Kursk grouping released an expanded account of yesterday’s strikes on Khalino airfield, saying medium-range strike drones from its forces and other Ukrainian units were used.",
-          "excerpt": "Ukraine’s Kursk grouping released an expanded account of yesterday’s strikes on Khalino airfiel…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": "airfield",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49757",
-          "at": "2026-07-21T11:34:13Z",
-          "text": "❗️Ukraine's 15th Separate Artillery Reconnaissance Brigade struck a Russian MiG-29 fighter and a Pantsir-S1 air defense system at Khalino airfield in Russia's Kursk region.",
-          "sentence": "❗️Ukraine's 15th Separate Artillery Reconnaissance Brigade struck a Russian MiG-29 fighter and a Pantsir-S1 air defense system at Khalino airfield in Russia's Kursk region.",
-          "excerpt": "…ssian MiG-29 fighter and a Pantsir-S1 air defense system at Khalino airfield in Russia's Kursk region.",
-          "parsed": {
-            "weapon": "artillery",
-            "target": "MiG-29 fighter",
-            "targetType": "air defence system",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49188",
-          "at": "2026-07-10T20:33:45Z",
-          "text": "Ukraine’s Kursk Group intelligence located a Russian 203 mm Pion self-propelled gun and destroyed it with strike drones, HX-2 loitering munitions, Hornet UAVs, and HIMARS fire.",
-          "sentence": "Ukraine’s Kursk Group intelligence located a Russian 203 mm Pion self-propelled gun and destroyed it with strike drones, HX-2 loitering munitions, Hornet UAVs, and HIMARS fire.",
-          "excerpt": "Ukraine’s Kursk Group intelligence located a Russian 203 mm Pion self-propelled gun and destroy…",
-          "parsed": {
-            "weapon": "HIMARS",
-            "target": "it with strike",
-            "targetType": null,
-            "casualties": null
-          }
-        }
-      ],
-      "Dnipro": [
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49562",
-          "at": "2026-07-18T15:19:56Z",
-          "text": "Dnipro OSINT analysis shows Russia’s Ryazan oil refinery remains under repair after the May 15 drone strike. New satellite imagery shows cranes working on damaged equipment, while older damage has yet to be addressed. The main ELOU AT-6 unit may have been restored.",
-          "sentence": "Dnipro OSINT analysis shows Russia’s Ryazan oil refinery remains under repair after the May 15 drone strike.",
-          "excerpt": "Dnipro OSINT analysis shows Russia’s Ryazan oil refinery remains under repair after th…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": "refinery",
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49340",
-          "at": "2026-07-14T13:39:25Z",
-          "text": "Ukraine’s Neptune cruise missile has now been verified in strikes on 26 Russian targets using at least 31 missiles, according to Dnipro OSINT analysis. Confirmed targets include warships, arms factories, oil infrastructure, logistics hubs, ferries, and military facilities.",
-          "sentence": "Ukraine’s Neptune cruise missile has now been verified in strikes on 26 Russian targets using at least 31 missiles, according to Dnipro OSINT analysis.",
-          "excerpt": "…26 Russian targets using at least 31 missiles, according to Dnipro OSINT analysis. Confirmed targets include warships, arms factories, oil infrast…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47776",
-          "at": "2026-06-15T07:46:45Z",
-          "text": "Russia launched a mass attack on Ukrainian cities, killing 4 people and injuring 25 in Kyiv, including 2 children. In Kharkiv, 5 rescuers were killed and at least 5 wounded during firefighting after a repeat Russian strike. Sumy and Dnipro also reported casualties and damage.",
-          "sentence": "Sumy and Dnipro also reported casualties and damage.",
-          "excerpt": "…during firefighting after a repeat Russian strike. Sumy and Dnipro also reported casualties and damage.",
-          "parsed": null
         }
       ],
       "Zaporizhzhia": [
