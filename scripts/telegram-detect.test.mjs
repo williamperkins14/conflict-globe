@@ -1,0 +1,72 @@
+// ---------------------------------------------------------------------------
+// Regression check for the sentence parser.  Run:  node scripts/telegram-detect.test.mjs
+//
+// Guards the fabricated-casualty bug: a post about a fire "near the Zhytomyr
+// highway outside Kyiv ... after a Russian drone attack" was parsing as
+// weapon=missile / casualties="38 killed", inheriting the 38 deaths from a
+// strike on Myla three sentences further down the same post.
+// ---------------------------------------------------------------------------
+
+import { parseSentence, sentenceAt, placesNamed, loadGazetteer, EVENT_WORDS } from './telegram-detect.mjs';
+
+const gaz = loadGazetteer();
+
+let failed = 0;
+const check = (cond, msg) => {
+  console.log(`${cond ? 'PASS' : 'FAIL'}  ${msg}`);
+  if (!cond) failed++;
+};
+
+const parseFromPost = (post, needle) => {
+  const sentence = sentenceAt(post, post.indexOf(needle));
+  return { sentence, parsed: parseSentence(sentence, placesNamed(sentence, gaz)) };
+};
+
+// --- the Zhytomyr highway event -------------------------------------------------
+const zhytomyrPost =
+  'A large fire broke out near the Zhytomyr highway outside Kyiv, reportedly after a Russian drone attack. ' +
+  '0:12 This media is not supported in your browser VIEW IN TELEGRAM ' +
+  '38 people were killed in the Russian strike and subsequent warehouse detonation in Myla, Bucha district, Zelensky says. ' +
+  'Four more are still missing.';
+
+const zh = parseFromPost(zhytomyrPost, 'outside Kyiv');
+console.log(`\nsentence: "${zh.sentence}"`);
+console.log(`parsed  : ${JSON.stringify(zh.parsed)}\n`);
+
+check(
+  zh.sentence === 'A large fire broke out near the Zhytomyr highway outside Kyiv, reportedly after a Russian drone attack.',
+  'only the sentence naming the place is isolated',
+);
+check(zh.parsed !== null, 'parsed is not null');
+check(zh.parsed?.weapon === 'drone', `weapon === "drone"  (got ${JSON.stringify(zh.parsed?.weapon)})`);
+check(zh.parsed?.casualties === null, `casualties === null — the 38 deaths are NOT inherited  (got ${JSON.stringify(zh.parsed?.casualties)})`);
+
+// --- a strike-summary sentence naming many places must not parse ---------------
+const summary =
+  'Targets included a drone warehouse in Khartsyzk, a command post near Chumatske, depots in Donetsk region and Kadiivka, and a radar in Bryansk region.';
+const sm = parseSentence(summary, placesNamed(summary, gaz));
+check(sm === null, `strike-summary sentence (>=3 places) parses as null  (got ${JSON.stringify(sm)})`);
+
+// --- a clean single-event sentence still parses -------------------------------
+const clean = 'Yeysk airfield was hit overnight, with secondary detonations reported.';
+const cl = parseSentence(clean, placesNamed(clean, gaz));
+check(cl?.targetType === 'airfield', `clean sentence still parses targetType=airfield  (got ${JSON.stringify(cl)})`);
+
+// --- extended target-type vocabulary -----------------------------------------
+const tpp = parseSentence('Early reports say a thermal power plant was hit in Belgorod.', placesNamed('...', gaz));
+check(tpp?.targetType === 'thermal power plant', `"thermal power plant" recognised  (got ${JSON.stringify(tpp?.targetType)})`);
+const hub = parseSentence('Its sorting centre and delivery hub were struck.', new Set());
+check(hub?.targetType === 'sorting centre', `"sorting centre" recognised  (got ${JSON.stringify(hub?.targetType)})`);
+
+// --- war-aims commentary is not an event -------------------------------------
+check(
+  !EVENT_WORDS.test("Russia's goal is not Donetsk or Luhansk alone."),
+  'a sentence about war aims has no event word (Donetsk commentary is dropped)',
+);
+check(
+  EVENT_WORDS.test('Yeysk airfield was hit overnight.'),
+  'a real strike sentence still has an event word',
+);
+
+console.log(failed ? `\n${failed} check(s) FAILED` : '\nall checks passed');
+process.exit(failed ? 1 : 0);

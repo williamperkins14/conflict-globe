@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T18:02:55.657Z",
+  "generated": "2026-08-30T19:07:00.665Z",
   "conflicts": {
     "ukraine": [
       {
@@ -7,35 +7,48 @@
         "lat": 46.6926,
         "lng": 38.2791,
         "source": "telegram",
-        "count": 9,
+        "count": 4,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-08-30",
         "evidence": [
           {
             "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51931",
+            "at": "2026-08-30T15:37:38Z",
+            "excerpt": "…condary detonations of ammunition were recorded at Russia's Yeysk airbase in Krasnodar region following the overnight Ukrainian strike on the mil…",
+            "sentence": "Secondary detonations of ammunition were recorded at Russia's Yeysk airbase in Krasnodar region following the overnight Ukrainian strike on the military facility.",
+            "parsed": {
+              "weapon": null,
+              "target": null,
+              "targetType": "airfield",
+              "casualties": null
+            }
+          },
+          {
+            "channel": "noel_reports",
             "url": "https://t.me/noel_reports/51922",
             "at": "2026-08-30T12:42:59Z",
             "excerpt": "…, a Sopka-2 radar and an aviation weapons depot at Russia's Yeysk airfield. Geolocation and NASA FIRMS data recorded fires at at least three loca…",
-            "parsed": null
+            "sentence": "Ukraine's Defense Forces used FP-1 drones to destroy a Pantsir-S1 air defense system, a Sopka-2 radar and an aviation weapons depot at Russia's Yeysk airfield.",
+            "parsed": {
+              "weapon": "drone",
+              "target": null,
+              "targetType": "air defence system",
+              "casualties": null
+            }
           },
           {
             "channel": "wartranslated",
             "url": "https://t.me/wartranslated/18456",
             "at": "2026-08-30T11:30:01Z",
             "excerpt": "Yeysk airfield was hit overnight, with secondary detonations reported. NASA FIRMS con…",
+            "sentence": "Yeysk airfield was hit overnight, with secondary detonations reported.",
             "parsed": {
               "weapon": null,
               "target": "Yeysk airfield",
               "targetType": "airfield",
               "casualties": null
             }
-          },
-          {
-            "channel": "wartranslated",
-            "url": "https://t.me/wartranslated/18451",
-            "at": "2026-08-30T11:06:03Z",
-            "excerpt": "…strikes on drone launch sites in Oryol and Rostov regions, Yeysk military airfield, a Black Sea target, and the Kirishi refinery in Leningrad re…",
-            "parsed": null
           }
         ]
       },
@@ -44,15 +57,24 @@
         "lat": 47.22,
         "lng": 39.7077,
         "source": "telegram",
-        "count": 7,
+        "count": 4,
         "firstSeen": "2026-08-29",
         "lastSeen": "2026-08-30",
         "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51935",
+            "at": "2026-08-30T17:56:38Z",
+            "excerpt": "…heading toward the Bryansk, Kursk, Belgorod, Voronezh, and Rostov regions.",
+            "sentence": "❗️Over 200 drones are reported heading toward the Bryansk, Kursk, Belgorod, Voronezh, and Rostov regions.",
+            "parsed": null
+          },
           {
             "channel": "wartranslated",
             "url": "https://t.me/wartranslated/18451",
             "at": "2026-08-30T11:06:03Z",
             "excerpt": "…firmed overnight strikes on drone launch sites in Oryol and Rostov regions, Yeysk military airfield, a Black Sea target, and the Kirishi refinery…",
+            "sentence": null,
             "parsed": null
           },
           {
@@ -60,13 +82,7 @@
             "url": "https://t.me/wartranslated/18447",
             "at": "2026-08-30T09:49:36Z",
             "excerpt": "…firmed overnight strikes on drone launch sites in Oryol and Rostov regions, Yeysk military airfield, a Black Sea target, and the Kirishi refinery…",
-            "parsed": null
-          },
-          {
-            "channel": "noel_reports",
-            "url": "https://t.me/noel_reports/51914",
-            "at": "2026-08-30T09:20:34Z",
-            "excerpt": "…ck-drone storage, preparation and launch site in Millerovo, Rostov region, and Yeysk airfield in Krasnodar region. Fires were recorded at all thre…",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -76,15 +92,24 @@
         "lat": 53.271,
         "lng": 34.3214,
         "source": "telegram",
-        "count": 5,
+        "count": 4,
         "firstSeen": "2026-08-29",
         "lastSeen": "2026-08-30",
         "evidence": [
           {
             "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51935",
+            "at": "2026-08-30T17:56:38Z",
+            "excerpt": "❗️Over 200 drones are reported heading toward the Bryansk, Kursk, Belgorod, Voronezh, and Rostov regions.",
+            "sentence": "❗️Over 200 drones are reported heading toward the Bryansk, Kursk, Belgorod, Voronezh, and Rostov regions.",
+            "parsed": null
+          },
+          {
+            "channel": "noel_reports",
             "url": "https://t.me/noel_reports/51921",
             "at": "2026-08-30T12:38:43Z",
             "excerpt": "❗️A Russian air defense launcher was reportedly hit in Bryansk, followed by a secondary detonation.",
+            "sentence": "❗️A Russian air defense launcher was reportedly hit in Bryansk, followed by a secondary detonation.",
             "parsed": null
           },
           {
@@ -92,19 +117,8 @@
             "url": "https://t.me/noel_reports/51918",
             "at": "2026-08-30T10:36:31Z",
             "excerpt": "…pied Crimea, an ammunition depot in Kadiivka and a radar in Bryansk region. Additional analysis confirmed a Pantsir-S1 air defense system was destr…",
+            "sentence": null,
             "parsed": null
-          },
-          {
-            "channel": "noel_reports",
-            "url": "https://t.me/noel_reports/51874",
-            "at": "2026-08-29T11:36:45Z",
-            "excerpt": "…ssian Buk-M3 air defense system was destroyed near Klintsy, Bryansk region, on August 28.",
-            "parsed": {
-              "weapon": null,
-              "target": "Buk-M3",
-              "targetType": "air defence system",
-              "casualties": null
-            }
           }
         ]
       },
@@ -122,18 +136,15 @@
             "url": "https://t.me/noel_reports/51923",
             "at": "2026-08-30T12:44:58Z",
             "excerpt": "…Systems Forces and HUR, struck the Kirishi oil refinery in Leningrad region overnight. The plant processes around 20 million tons of oil annually an…",
-            "parsed": {
-              "weapon": null,
-              "target": "Kirishi oil refinery",
-              "targetType": "refinery",
-              "casualties": null
-            }
+            "sentence": null,
+            "parsed": null
           },
           {
             "channel": "wartranslated",
             "url": "https://t.me/wartranslated/18451",
             "at": "2026-08-30T11:06:03Z",
             "excerpt": "…y airfield, a Black Sea target, and the Kirishi refinery in Leningrad region. Strikes in Bashkortostan and Arkhangelsk this week also confirmed. USF…",
+            "sentence": null,
             "parsed": null
           },
           {
@@ -141,6 +152,7 @@
             "url": "https://t.me/wartranslated/18447",
             "at": "2026-08-30T09:49:36Z",
             "excerpt": "…y airfield, a Black Sea target, and the Kirishi refinery in Leningrad region. Strikes in Bashkortostan and Arkhangelsk this week also confirmed.",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -159,6 +171,7 @@
             "url": "https://t.me/wartranslated/18451",
             "at": "2026-08-30T11:06:03Z",
             "excerpt": "…pons depot, and an ammunition storage site across Yeysk and Millerovo airfields overnight on August 30, Robert \"Madyar\" Brovdi reports. The primary…",
+            "sentence": null,
             "parsed": null
           },
           {
@@ -166,18 +179,15 @@
             "url": "https://t.me/noel_reports/51919",
             "at": "2026-08-30T10:47:15Z",
             "excerpt": "…anned Systems Forces say overnight strikes around Yeysk and Millerovo airfields destroyed a Pantsir-S1 and four radar systems: Sopka-2, Kasta-2E2, RS…",
-            "parsed": {
-              "weapon": null,
-              "target": "Pantsir-S1",
-              "targetType": "air defence system",
-              "casualties": null
-            }
+            "sentence": null,
+            "parsed": null
           },
           {
             "channel": "noel_reports",
             "url": "https://t.me/noel_reports/51914",
             "at": "2026-08-30T09:20:34Z",
             "excerpt": "…on, an attack-drone storage, preparation and launch site in Millerovo, Rostov region, and Yeysk airfield in Krasnodar region. Fires were recorded at…",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -187,15 +197,29 @@
         "lat": 45.1169,
         "lng": 34.0219,
         "source": "telegram",
-        "count": 3,
+        "count": 4,
         "firstSeen": "2026-08-29",
-        "lastSeen": "2026-08-29",
+        "lastSeen": "2026-08-30",
         "evidence": [
+          {
+            "channel": "wartranslated",
+            "url": "https://t.me/wartranslated/18464",
+            "at": "2026-08-30T13:03:56Z",
+            "excerpt": "Fires broke out again at Crimea's Hvardiiske airfield near aircraft hangars, according to Crimean Wind monitoring group citi…",
+            "sentence": "Fires broke out again at Crimea's Hvardiiske airfield near aircraft hangars, according to Crimean Wind monitoring group citing satellite imagery.",
+            "parsed": {
+              "weapon": null,
+              "target": null,
+              "targetType": "airfield",
+              "casualties": null
+            }
+          },
           {
             "channel": "noel_reports",
             "url": "https://t.me/noel_reports/51874",
             "at": "2026-08-29T11:36:45Z",
             "excerpt": "…rone storage, preparation and launch sites near Donetsk and Hvardiiske in occupied Crimea on August 28-29, Ukraine's General Staff says. An electronic…",
+            "sentence": null,
             "parsed": null
           },
           {
@@ -203,13 +227,7 @@
             "url": "https://t.me/wartranslated/18411",
             "at": "2026-08-29T07:39:59Z",
             "excerpt": "…satellite data also shows a fire at a military airfield in Hvardiyske, occupied Crimea.",
-            "parsed": null
-          },
-          {
-            "channel": "noel_reports",
-            "url": "https://t.me/noel_reports/51863",
-            "at": "2026-08-29T05:15:23Z",
-            "excerpt": "NASA FIRMS detected two fires at and near Hvardiiske airbase in occupied Crimea following an attack. One is near military aircraft a…",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -228,6 +246,7 @@
             "url": "https://t.me/noel_reports/51914",
             "at": "2026-08-30T09:20:34Z",
             "excerpt": "…nch site in Millerovo, Rostov region, and Yeysk airfield in Krasnodar region. Fires were recorded at all three sites, while the extent of the damage…",
+            "sentence": null,
             "parsed": null
           },
           {
@@ -235,6 +254,7 @@
             "url": "https://t.me/wartranslated/18444",
             "at": "2026-08-30T08:20:37Z",
             "excerpt": "…ary. A drone launch site in Millerovo and Yeysk airfield in Krasnodar region were also struck and set ablaze.",
+            "sentence": null,
             "parsed": null
           },
           {
@@ -242,12 +262,8 @@
             "url": "https://t.me/noel_reports/51904",
             "at": "2026-08-30T07:16:07Z",
             "excerpt": "…detected multiple major fires at Russia's Yeysk airbase in Krasnodar region after a Ukrainian drone attack overnight. Local reports described numero…",
-            "parsed": {
-              "weapon": "drone",
-              "target": null,
-              "targetType": "airfield",
-              "casualties": null
-            }
+            "sentence": null,
+            "parsed": null
           }
         ]
       },
@@ -265,6 +281,7 @@
             "url": "https://t.me/noel_reports/51868",
             "at": "2026-08-29T11:19:31Z",
             "excerpt": "…ary leadership to plan offensive operations toward Kyiv and Chernihiv, but no offensive groupings are currently observed in those directions.",
+            "sentence": null,
             "parsed": null
           },
           {
@@ -272,6 +289,7 @@
             "url": "https://t.me/wartranslated/18414",
             "at": "2026-08-29T07:59:35Z",
             "excerpt": "…istics dates back to February 28, 2022, hitting Epicentr in Chernihiv. Over the following four and a half years, 25 separate strikes hit Ukrainian ret…",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -290,24 +308,16 @@
             "url": "https://t.me/noel_reports/51874",
             "at": "2026-08-29T11:36:45Z",
             "excerpt": "…that a Russian Buk-M3 air defense system was destroyed near Klintsy, Bryansk region, on August 28.",
-            "parsed": {
-              "weapon": null,
-              "target": "Buk-M3",
-              "targetType": "air defence system",
-              "casualties": null
-            }
+            "sentence": null,
+            "parsed": null
           },
           {
             "channel": "wartranslated",
             "url": "https://t.me/wartranslated/18417",
             "at": "2026-08-29T09:39:15Z",
             "excerpt": "…, a Buk-M3 surface-to-air missile system was destroyed near Klintsy, also in Bryansk region, per the General Staff.",
-            "parsed": {
-              "weapon": null,
-              "target": "Buk-M3",
-              "targetType": "air defence system",
-              "casualties": null
-            }
+            "sentence": null,
+            "parsed": null
           }
         ]
       },
@@ -325,6 +335,7 @@
             "url": "https://t.me/wartranslated/18446",
             "at": "2026-08-30T08:39:13Z",
             "excerpt": "A large fire broke out near the Zhytomyr highway outside Kyiv, reportedly after a Russian drone attack. 0:12 This…",
+            "sentence": null,
             "parsed": null
           },
           {
@@ -332,6 +343,7 @@
             "url": "https://t.me/wartranslated/18407",
             "at": "2026-08-28T18:40:21Z",
             "excerpt": "A large fire broke out near the Zhytomyr highway outside Kyiv, reportedly after a Russian drone attack.",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -350,24 +362,16 @@
             "url": "https://t.me/noel_reports/51918",
             "at": "2026-08-30T10:36:31Z",
             "excerpt": "…onfirmed a Pantsir-S1 air defense system was destroyed near Kletnya on August 27.",
-            "parsed": {
-              "weapon": null,
-              "target": "Pantsir-S1",
-              "targetType": "air defence system",
-              "casualties": null
-            }
+            "sentence": null,
+            "parsed": null
           },
           {
             "channel": "noel_reports",
             "url": "https://t.me/noel_reports/51867",
             "at": "2026-08-29T11:18:03Z",
             "excerpt": "…rone destroyed a Russian Pantsir-S1 air defense system near Kletnya in Bryansk region on August 27. The system belonged to the 210th Air Defense Mi…",
-            "parsed": {
-              "weapon": null,
-              "target": "Pantsir-S1",
-              "targetType": "air defence system",
-              "casualties": null
-            }
+            "sentence": null,
+            "parsed": null
           }
         ]
       },
@@ -385,6 +389,7 @@
             "url": "https://t.me/wartranslated/18460",
             "at": "2026-08-30T12:02:38Z",
             "excerpt": "…key points, per reporters. Russia's goal is not Donetsk or Luhansk alone. It wants all of Ukraine, and for Ukraine this war is existential. Only…",
+            "sentence": "Russia's goal is not Donetsk or Luhansk alone.",
             "parsed": null
           },
           {
@@ -392,6 +397,7 @@
             "url": "https://t.me/noel_reports/51868",
             "at": "2026-08-29T11:19:31Z",
             "excerpt": "…ary with reaching the administrative borders of Donetsk and Luhansk regions by December 31, while Russian commanders are seeking a March 31 deadlin…",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -410,6 +416,7 @@
             "url": "https://t.me/noel_reports/51912",
             "at": "2026-08-30T09:12:27Z",
             "excerpt": "Zelensky says 38 people were killed by Russia's strike on Myla, Kyiv region, and subsequent detonations. Another 20 people, including 2 childr…",
+            "sentence": null,
             "parsed": null
           },
           {
@@ -417,6 +424,7 @@
             "url": "https://t.me/wartranslated/18446",
             "at": "2026-08-30T08:39:13Z",
             "excerpt": "…n the Russian strike and subsequent warehouse detonation in Myla, Bucha district, Zelensky says. Four more are still missing. Over this past wee…",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -435,6 +443,7 @@
             "url": "https://t.me/noel_reports/51913",
             "at": "2026-08-30T09:15:50Z",
             "excerpt": "…ar and a two-story service building are on fire in occupied Sevastopol, with a preliminary area of 800 square meters. One person sustained burns and w…",
+            "sentence": null,
             "parsed": null
           },
           {
@@ -442,6 +451,7 @@
             "url": "https://t.me/noel_reports/51908",
             "at": "2026-08-30T08:59:57Z",
             "excerpt": "DobrostroyA large fire is burning in Russian-occupied Sevastopol, with thick black smoke reported near Dobrostroy. The cause of the fire is curr…",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -460,6 +470,7 @@
             "url": "https://t.me/wartranslated/18451",
             "at": "2026-08-30T11:06:03Z",
             "excerpt": "…lensky confirmed overnight strikes on drone launch sites in Oryol and Rostov regions, Yeysk military airfield, a Black Sea target, and the Kirish…",
+            "sentence": null,
             "parsed": null
           },
           {
@@ -467,6 +478,34 @@
             "url": "https://t.me/wartranslated/18447",
             "at": "2026-08-30T09:49:36Z",
             "excerpt": "…lensky confirmed overnight strikes on drone launch sites in Oryol and Rostov regions, Yeysk military airfield, a Black Sea target, and the Kirish…",
+            "sentence": null,
+            "parsed": null
+          }
+        ]
+      },
+      {
+        "name": "Anapa",
+        "lat": 44.895,
+        "lng": 37.3162,
+        "source": "telegram",
+        "count": 2,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-08-30",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51939",
+            "at": "2026-08-30T18:57:20Z",
+            "excerpt": "…ns will do it to themselves. A large wildfire is burning in Anapa after reeds caught fire around noon. Strong winds are helping the flames spread…",
+            "sentence": "A large wildfire is burning in Anapa after reeds caught fire around noon.",
+            "parsed": null
+          },
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51927",
+            "at": "2026-08-30T14:11:39Z",
+            "excerpt": "…ns will do it to themselves. A large wildfire is burning in Anapa after reeds caught fire around noon. Strong winds are helping the flames spread…",
+            "sentence": "A large wildfire is burning in Anapa after reeds caught fire around noon.",
             "parsed": null
           }
         ]
@@ -485,6 +524,7 @@
             "url": "https://t.me/noel_reports/51874",
             "at": "2026-08-29T11:36:45Z",
             "excerpt": "…ine's General Staff says. An electronic warfare system near Znamianka in occupied Crimea and a drone command post in Berestky, Donetsk region, were a…",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -503,6 +543,7 @@
             "url": "https://t.me/noel_reports/51874",
             "at": "2026-08-29T11:36:45Z",
             "excerpt": "…ar Znamianka in occupied Crimea and a drone command post in Berestky, Donetsk region, were also hit. The General Staff separately confirmed that a R…",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -521,6 +562,7 @@
             "url": "https://t.me/noel_reports/51875",
             "at": "2026-08-29T11:40:35Z",
             "excerpt": "…least 27 people, with officials warning the toll may rise. Dmytrivka community head Taras Didych was among those killed. He had gone to the scene sh…",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -539,6 +581,7 @@
             "url": "https://t.me/noel_reports/51918",
             "at": "2026-08-30T10:36:31Z",
             "excerpt": "…to August 30. Targets included a Rubikon drone warehouse in Khartsyzk, a UAV command post near Chumatske, command posts in Sukhodilsk, logistics depo…",
+            "sentence": null,
             "parsed": null
           }
         ]
@@ -557,7 +600,99 @@
             "url": "https://t.me/wartranslated/18463",
             "at": "2026-08-30T12:52:05Z",
             "excerpt": "…rs for control, according to Ukrainian presidential advisor Serhii Flesh.",
+            "sentence": "Russian jet-powered Shaheds target Kyiv along the Belarus border so their LTE modems can connect to Belarusian cell towers for control, according to Ukrainian presidential advisor Serhii Flesh.",
+            "parsed": {
+              "weapon": "Shahed",
+              "target": null,
+              "targetType": null,
+              "casualties": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "Voronezh",
+        "lat": 51.6683,
+        "lng": 39.192,
+        "source": "telegram",
+        "count": 1,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-08-30",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51935",
+            "at": "2026-08-30T17:56:38Z",
+            "excerpt": "…s are reported heading toward the Bryansk, Kursk, Belgorod, Voronezh, and Rostov regions.",
+            "sentence": "❗️Over 200 drones are reported heading toward the Bryansk, Kursk, Belgorod, Voronezh, and Rostov regions.",
             "parsed": null
+          }
+        ]
+      },
+      {
+        "name": "Lyman",
+        "lat": 48.9901,
+        "lng": 37.8084,
+        "source": "telegram",
+        "count": 1,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-08-30",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51938",
+            "at": "2026-08-30T18:57:20Z",
+            "excerpt": "…bropillia direction, drones struck Russian infantry. On the Lyman direction, they also burned several vans, trucks and cars. In the Huliaipole se…",
+            "sentence": "On the Lyman direction, they also burned several vans, trucks and cars.",
+            "parsed": null
+          }
+        ]
+      },
+      {
+        "name": "Hulyaypole",
+        "lat": 47.6668,
+        "lng": 36.2558,
+        "source": "telegram",
+        "count": 1,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-08-30",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51938",
+            "at": "2026-08-30T18:57:20Z",
+            "excerpt": "…ion, they also burned several vans, trucks and cars. In the Huliaipole sector, drones struck Russian logistics, while on the Toretsk direction they hi…",
+            "sentence": "In the Huliaipole sector, drones struck Russian logistics, while on the Toretsk direction they hit transport, a ground robotic system and infantry groups.",
+            "parsed": {
+              "weapon": "drone",
+              "target": "logistics",
+              "targetType": null,
+              "casualties": null
+            }
+          }
+        ]
+      },
+      {
+        "name": "Toretsk",
+        "lat": 48.3948,
+        "lng": 37.8478,
+        "source": "telegram",
+        "count": 1,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-08-30",
+        "evidence": [
+          {
+            "channel": "noel_reports",
+            "url": "https://t.me/noel_reports/51938",
+            "at": "2026-08-30T18:57:20Z",
+            "excerpt": "…ipole sector, drones struck Russian logistics, while on the Toretsk direction they hit transport, a ground robotic system and infantry groups.",
+            "sentence": "In the Huliaipole sector, drones struck Russian logistics, while on the Toretsk direction they hit transport, a ground robotic system and infantry groups.",
+            "parsed": {
+              "weapon": "drone",
+              "target": "logistics",
+              "targetType": null,
+              "casualties": null
+            }
           }
         ]
       }
@@ -648,5 +783,137 @@
         "lastSeen": "2026-08-30"
       }
     ]
-  }
+  },
+  "events": {
+    "ukraine": {
+      "Kyiv": [
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18461",
+          "at": "2026-08-30T12:17:21Z",
+          "text": "Kyiv's 7th air raid alert of the day right now, explosions going off downtown as jet drones hit the city for a fourth day straight. Firefighters put out a 3,000 sq m fire in Holosiivskyi district this morning. No casualties.",
+          "sentence": "Firefighters put out a 3,000 sq m fire in Holosiivskyi district this morning.",
+          "excerpt": "…rth day straight. Firefighters put out a 3,000 sq m fire in Holosiivskyi district this morning. No casualties.",
+          "parsed": null,
+          "corroboration": [
+            {
+              "channel": "wartranslated",
+              "url": "https://t.me/wartranslated/18463"
+            }
+          ]
+        }
+      ],
+      "Belgorod": [
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/51932",
+          "at": "2026-08-30T17:38:35Z",
+          "text": "Ozon confirmed its sorting center and delivery hub in Belgorod were hit in an attack. Employees were evacuated and preliminary reports indicate injuries. The company has suspended deliveries, customer orders and seller intake across Belgorod region until it can rebuild its logistics routes.",
+          "sentence": "Ozon confirmed its sorting center and delivery hub in Belgorod were hit in an attack.",
+          "excerpt": "Ozon confirmed its sorting center and delivery hub in Belgorod were hit in an attack. Employees were evacuated and preliminary reports indicat…",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "sorting centre",
+            "casualties": null
+          }
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18471",
+          "at": "2026-08-30T14:37:51Z",
+          "text": "Early reports say a thermal power plant was hit in Belgorod. Also word of a possible strike on an Ozon warehouse there.",
+          "sentence": "Early reports say a thermal power plant was hit in Belgorod.",
+          "excerpt": "Early reports say a thermal power plant was hit in Belgorod. Also word of a possible strike on an Ozon warehouse there.",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "thermal power plant",
+            "casualties": null
+          },
+          "corroboration": [
+            {
+              "channel": "wartranslated",
+              "url": "https://t.me/wartranslated/18472"
+            }
+          ]
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/51929",
+          "at": "2026-08-30T14:20:27Z",
+          "text": "Warehouses belonging to Estate Logistics caught fire in Belgorod following explosions in the city.",
+          "sentence": "Warehouses belonging to Estate Logistics caught fire in Belgorod following explosions in the city.",
+          "excerpt": "Warehouses belonging to Estate Logistics caught fire in Belgorod following explosions in the city.",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "warehouse",
+            "casualties": null
+          }
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/51928",
+          "at": "2026-08-30T14:13:56Z",
+          "text": "Belgorod is reportedly under a large-scale attack, according to local media. Strikes have been reported near a thermal power plant and electrical substations.",
+          "sentence": "Belgorod is reportedly under a large-scale attack, according to local media.",
+          "excerpt": "Belgorod is reportedly under a large-scale attack, according to local media. Strikes hav…",
+          "parsed": null
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18468",
+          "at": "2026-08-30T14:02:12Z",
+          "text": "Russian Belgorod is under a massive missile strike right now, Exilenova+ reports.",
+          "sentence": "Russian Belgorod is under a massive missile strike right now, Exilenova+ reports.",
+          "excerpt": "Russian Belgorod is under a massive missile strike right now, Exilenova+ reports.",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "corroboration": [
+            {
+              "channel": "wartranslated",
+              "url": "https://t.me/wartranslated/18470"
+            }
+          ]
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/51924",
+          "at": "2026-08-30T14:00:32Z",
+          "text": "Loud explosions are heard in Belgorod.",
+          "sentence": "Loud explosions are heard in Belgorod.",
+          "excerpt": "Loud explosions are heard in Belgorod.",
+          "parsed": null,
+          "corroboration": [
+            {
+              "channel": "noel_reports",
+              "url": "https://t.me/noel_reports/51925"
+            }
+          ]
+        }
+      ],
+      "Pokrovsk": [
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/51938",
+          "at": "2026-08-30T18:57:20Z",
+          "text": "Ukraine's Phoenix border guard drone unit says its pilots destroyed a BM-21 Grad MLRS, a Hyacinth-B gun and a D-20 howitzer over the past week. On the Dobropillia direction, drones struck Russian infantry. On the Lyman direction, they also burned several vans, trucks and cars. In the Huliaipole sector, drones struck Russian logistics, while on the Toretsk direction they hit transport, a ground robotic system and infantry groups.",
+          "sentence": "On the Dobropillia direction, drones struck Russian infantry.",
+          "excerpt": "…acinth-B gun and a D-20 howitzer over the past week. On the Dobropillia direction, drones struck Russian infantry. On the Lyman direction, they also bu…",
+          "parsed": {
+            "weapon": "drone",
+            "target": "infantry",
+            "targetType": null,
+            "casualties": null
+          }
+        }
+      ]
+    }
+  },
+  "attribution": "Place data (c) GeoNames, CC BY 4.0 - https://www.geonames.org/"
 }
