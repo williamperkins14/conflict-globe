@@ -4,15 +4,14 @@ name: Detect conflict locations
 # Asks GDELT which places recent news is mentioning for each conflict and
 # updates auto-locations.json. Runs itself, commits the result back.
 #
-# The schedule is COMMENTED OUT until a manual run has been checked. Run this
-# by hand from the Actions tab (the "Run workflow" button) first, read the
-# log, confirm auto-locations.json looks sane, THEN uncomment the schedule.
+# Runs every 6 hours on a schedule, and on demand from the Actions tab
+# ("Run workflow"). The concurrency group below stops two runs colliding.
 # ---------------------------------------------------------------------------
 
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: '0 */6 * * *'   # every 6 hours
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
 
 # Lets the job push its commit back to the repo.
 permissions:

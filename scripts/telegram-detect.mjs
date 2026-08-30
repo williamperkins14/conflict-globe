@@ -205,6 +205,104 @@ function chooseCandidate(name, cands, regionCodes, bbox, drops) {
 
 const isCapitalised = tok => /^[\p{Lu}]/u.test(tok);
 
+// ---------------------------------------------------------------------------
+// Rule-based excerpt parser
+//
+// Turns one excerpt into { weapon, target, targetType, casualties }. Pure
+// regex, no model, no guessing. If fewer than two of the four fields fill,
+// it returns null and the frontend falls back to the verbatim excerpt.
+//
+// `parsed` is attached ALONGSIDE the raw excerpt, never in place of it.
+// ---------------------------------------------------------------------------
+
+// First match wins, so list the specific systems before the generic word.
+const WEAPON_RULES = [
+  ['glide bomb', /\bglide bombs?\b|\bKABs?\b|\bKAB[- ]?\d+\b|\bUMPK\b/i],
+  ['Shahed',     /\bShaheds?(?:[- ]?\d+)?\b/i],
+  ['Geran',      /\bGeran(?:[- ]?\d+)?\b|\bГеран[ья]/i],
+  ['Iskander',   /\bIskander(?:[- ][A-Z0-9]+)?\b/i],
+  ['HIMARS',     /\bHIMARS\b/i],
+  ['ATACMS',     /\bATACMS\b/i],
+  // "missile" the weapon, not "missile system" / "surface-to-air missile" (an
+  // air-defence target) — those are caught by TARGET_TYPE_RULES instead.
+  ['missile',    /\b(?<!surface-to-air )(?<!air defense )(?<!air defence )(?:cruise |ballistic |anti-?ship |guided )?missiles?\b(?!\s+(?:system|regiment|brigade|division|complex|launcher|battery|unit|forces|defen))|\bmissile strike\b/i],
+  // "drone" only counts as the weapon used, not when it describes the thing
+  // hit ("drone warehouse", "drone command post", "drone launch site").
+  ['drone',      /\b(?:kamikaze |attack |strike |FPV |naval |long-range )?drones?\b(?!\s+(?:launch|command|storage|warehouse|depot|stockpile|site|sites|factor|plant|assembl|operator|unit|regiment|base|hub|hangar))|\bUAVs?\b(?!\s+(?:launch|command|site|base))|\bloitering munitions?\b/i],
+  ['artillery',  /\bartillery\b|\bMLRS\b|\bGrad(?: rockets?)?\b|\brocket artillery\b|\bmortars?\b|\bhowitzers?\b/i],
+  ['shell',      /\bshell(?:ed|ing|s|fire)?\b/i],
+];
+
+// Category vocabulary is fixed by the spec. First match wins.
+const TARGET_TYPE_RULES = [
+  ['oil terminal',       /\boil (?:terminal|storage|tank farm)\b|\bfuel terminal\b/i],
+  ['refinery',           /\brefiner(?:y|ies)\b/i],
+  ['air defence system', /\bair[ -]defen[cs]e (?:system|battery|missile system|unit)\b|\bSAM (?:site|system|battery)\b|\bsurface-to-air missile system\b|\bS-[0-9]{3}\b|\bPantsir(?:-[A-Z0-9]+)?\b|\bBuk(?:-[A-Z0-9]+)?\b|\belectronic warfare (?:system|complex)\b/i],
+  ['apartment block',    /\bapartment (?:block|building|complex)s?\b|\bresidential (?:building|block|tower|high-rise)s?\b|\bblock of flats\b/i],
+  ['warehouse',          /\bwarehouses?\b/i],
+  ['airfield',           /\bairfields?\b|\bair ?base\b|\baerodrome\b/i],
+  ['substation',         /\b(?:electrical |power |traction )?substations?\b/i],
+  ['depot',              /\b(?:ammunition|ammo|fuel|supply|arms|oil) depots?\b|\bdepots?\b/i],
+  ['port',               /\b(?:sea)?ports?\b|\bharbou?r\b/i],
+  ['school',             /\bschools?\b|\bkindergartens?\b/i],
+  ['hospital',           /\bhospitals?\b|\bclinics?\b|\bmedical facilit(?:y|ies)\b/i],
+];
+
+const EVENT_VERB_AFTER  = /\b(?:struck|hit|destroyed|damaged|attacked|targeted|shelled|blew up|knocked out|wrecked)\s+(?:a |an |the |several |two |three |four |\d+ )*([A-Za-z][\w'-]*(?: [A-Za-z][\w'-]*){0,2})/i;
+const EVENT_VERB_BEFORE = /\b(?:a |an |the )?([A-Z][\w'-]*(?: [a-z][\w'-]*){0,3})\s+(?:was|were)\s+(?:struck|hit|destroyed|damaged|attacked|targeted|shelled|blown up|set (?:on )?fire)/;
+const TARGET_LEAD = /^(?:a |an |the |another |and |or |also |russian |ukrainian |enemy |russia's |ukraine's )+/i;
+const TARGET_TAIL = /\s+\b(and|or|also|in|on|at|near|of|the|a|an|belonging|was|were|from|over|this|that|region|regions|oblast|air|surface|missile|system|systems|complex)\b.*$/i;
+const TARGET_STOP = new Set([
+  'russian', 'ukrainian', 'enemy', 'occupier', 'occupiers', 'them', 'it',
+  'people', 'area', 'region', 'target', 'targets', 'city', 'building',
+]);
+
+function parseExcerpt(excerpt) {
+  if (!excerpt) return null;
+  const text = excerpt.replace(/^[…\s]+|[…\s]+$/g, '');
+
+  let weapon = null;
+  for (const [label, re] of WEAPON_RULES) if (re.test(text)) { weapon = label; break; }
+
+  let targetType = null;
+  for (const [label, re] of TARGET_TYPE_RULES) if (re.test(text)) { targetType = label; break; }
+
+  // target: the noun next to an event verb, either word order.
+  let target = null;
+  const before = text.match(EVENT_VERB_BEFORE);
+  const after = text.match(EVENT_VERB_AFTER);
+  let cand = (before && before[1]) || (after && after[1]) || '';
+  cand = cand.replace(TARGET_LEAD, '').replace(TARGET_TAIL, '').trim();
+  const junk = /\b(set|ablaze|alight|fire|burning|reported|struck|hit|destroyed|damaged|attacked|overnight)\b/i.test(cand);
+  if (cand.length >= 3 && !junk && !/^\d+$/.test(cand) && !TARGET_STOP.has(cand.toLowerCase())) target = cand;
+
+  // casualties: "N killed", "N wounded", "N injured" (and "N dead"), either
+  // order. A few interposed words are allowed ("20 people ... were injured")
+  // but a unit/time word in the gap ("20 minutes after ... killed") rules it out.
+  const NUMWORD = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
+  const N = '(\\d{1,4}|one|two|three|four|five|six|seven|eight|nine|ten)';
+  const GAP = "(?:[a-z’'-]+\\s+){0,4}?";
+  const GAP_BAD = /\b(minute|hour|day|week|month|year|km|kilomet|mile|meters?|metres?|sq|percent|floor|storey|story|aircraft|drones?|missiles?)\b/i;
+  const cas = [];
+  const seen = new Set();
+  const toNum = s => NUMWORD[s.toLowerCase()] ?? s;
+  const push = (n, kindRaw) => {
+    const kind = kindRaw.toLowerCase() === 'dead' ? 'killed' : kindRaw.toLowerCase();
+    if (seen.has(kind)) return;
+    seen.add(kind);
+    cas.push(`${toNum(n)} ${kind}`);
+  };
+  for (const m of text.matchAll(new RegExp(`\\b${N}\\s+(${GAP})(?:were\\s+|are\\s+|reported\\s+|confirmed\\s+|left\\s+)?(killed|dead|wounded|injured)\\b`, 'gi')))
+    if (!GAP_BAD.test(m[2])) push(m[1], m[3]);
+  for (const m of text.matchAll(new RegExp(`\\b(killed|wounded|injured)\\s+(?:at least\\s+|around\\s+|some\\s+)?${N}\\b`, 'gi')))
+    push(m[2], m[1]);
+  const casualties = cas.length ? cas.join(', ') : null;
+
+  const filled = [weapon, target, targetType, casualties].filter(Boolean).length;
+  if (filled < 2) return null;
+  return { weapon, target, targetType, casualties };
+}
+
 function matchPost(post, gaz, bbox, curated) {
   const { codes: regionCodes, hits: regionHits } = detectRegions(post.text, gaz.regionCodes);
   const tokens = [...post.text.matchAll(WORD)].map(m => ({
@@ -299,6 +397,9 @@ async function main() {
   const places = new Map();          // key -> { name, lat, lng, a1, evidence:[] }
   const allDrops = [];
   const suppressedNames = new Map(); // name -> curated marker it collided with
+  const newEvents = {};              // curated marker name -> [ {channel,url,at,excerpt,parsed} ]
+
+  const clipExcerpt = s => (s.length > EXCERPT_CHARS ? s.slice(0, EXCERPT_CHARS) + '…' : s);
 
   const addEvidence = (m, post) => {
     const key = `${m.place.lat.toFixed(2)},${m.place.lng.toFixed(2)}`;
@@ -307,18 +408,36 @@ async function main() {
     }
     const ev = places.get(key).evidence;
     if (ev.some(e => e.url === post.url)) return;   // one post counts once per place
+    const excerpt = clipExcerpt(m.excerpt);
     ev.push({
       channel: post.channel,
       url: post.url,
       at: post.at ? post.at.replace('+00:00', 'Z') : null,
-      excerpt: m.excerpt.length > EXCERPT_CHARS ? m.excerpt.slice(0, EXCERPT_CHARS) + '…' : m.excerpt,
+      excerpt,
+      parsed: parseExcerpt(excerpt),
+    });
+  };
+
+  // A suppressed match is a real event at a place that already has a curated
+  // red marker. It makes no new marker, but it IS reported news, so it lands
+  // in auto-locations.json under `events`, keyed by the curated marker name.
+  const addEvent = (s, post) => {
+    const list = (newEvents[s.curated] ||= []);
+    if (list.some(e => e.url === post.url)) return;
+    const excerpt = clipExcerpt(s.excerpt);
+    list.push({
+      channel: post.channel,
+      url: post.url,
+      at: post.at ? post.at.replace('+00:00', 'Z') : null,
+      excerpt,
+      parsed: parseExcerpt(excerpt),
     });
   };
 
   for (const post of allPosts) {
     const { matches, suppressed, drops } = matchPost(post, gaz, bbox, curated);
     for (const d of drops) allDrops.push({ ...d, post: post.url, at: post.at });
-    for (const s of suppressed) suppressedNames.set(s.name, s.curated);
+    for (const s of suppressed) { suppressedNames.set(s.name, s.curated); addEvent(s, post); }
     for (const m of matches) addEvidence(m, post);
   }
 
@@ -383,9 +502,58 @@ async function main() {
     .filter(e => new Date(e.lastSeen + 'T00:00:00Z') >= cutoff)
     .sort((a, b) => b.count - a.count);
 
+  // Attach `parsed` to every piece of evidence, recomputing for entries
+  // carried over from an older file that never had it.
+  for (const e of telegramOut) {
+    e.evidence = e.evidence.map(ev => ({
+      channel: ev.channel, url: ev.url, at: ev.at, excerpt: ev.excerpt,
+      parsed: parseExcerpt(ev.excerpt),
+    }));
+  }
+
   doc.conflicts[CONFLICT_ID] = [...keepOther, ...telegramOut];
+
+  // --- merge `events` (suppressed matches at curated markers) ---
+  const EVENTS_CAP = 12;
+  doc.events = (doc.events && typeof doc.events === 'object' && !Array.isArray(doc.events)) ? doc.events : {};
+  const prevEvents = (doc.events[CONFLICT_ID] && typeof doc.events[CONFLICT_ID] === 'object' && !Array.isArray(doc.events[CONFLICT_ID]))
+    ? doc.events[CONFLICT_ID] : {};
+  const outEvents = {};
+  for (const marker of new Set([...Object.keys(prevEvents), ...Object.keys(newEvents)])) {
+    const combined = [...(newEvents[marker] || []), ...(prevEvents[marker] || [])]
+      .filter((e, idx, arr) => arr.findIndex(x => x.url === e.url) === idx)
+      .sort((a, b) => (b.at || '').localeCompare(a.at || ''))
+      .slice(0, EVENTS_CAP)
+      .map(e => ({
+        channel: e.channel, url: e.url, at: e.at, excerpt: e.excerpt,
+        parsed: parseExcerpt(e.excerpt),
+      }));
+    if (combined.length) outEvents[marker] = combined;
+  }
+  doc.events[CONFLICT_ID] = outEvents;
+
   doc.generated = new Date().toISOString();
   doc.attribution ||= gaz.attribution;
+
+  // --- parsed-excerpt table (hit-rate check) ---
+  const parsedRows = [];
+  for (const p of telegramOut)
+    for (const e of p.evidence) parsedRows.push({ where: `${p.name}`, e });
+  for (const [marker, list] of Object.entries(outEvents))
+    for (const e of list) parsedRows.push({ where: `${marker} «event»`, e });
+
+  const got = parsedRows.filter(r => r.e.parsed).length;
+  console.log(`\n${'='.repeat(70)}\nPARSED EXCERPTS  (${got}/${parsedRows.length} parsed, ${parsedRows.length - got} fall back to verbatim)\n${'='.repeat(70)}`);
+  for (const { where, e } of parsedRows) {
+    console.log(`\n[${where}]  ${e.channel}`);
+    console.log(`   excerpt: "${e.excerpt}"`);
+    if (e.parsed) {
+      const f = e.parsed;
+      console.log(`   parsed : weapon=${f.weapon ?? '-'}  target=${f.target ?? '-'}  targetType=${f.targetType ?? '-'}  casualties=${f.casualties ?? '-'}`);
+    } else {
+      console.log(`   parsed : null  (frontend shows the excerpt verbatim)`);
+    }
+  }
 
   // advance seen-posts
   for (const ch of CHANNELS) {
