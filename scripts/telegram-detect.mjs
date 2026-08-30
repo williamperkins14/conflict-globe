@@ -521,8 +521,20 @@ async function gdeltCorroborates(placeName, atISO, sentence, fetchImpl = fetch) 
   const d = new Date(atISO);
   if (Number.isNaN(+d)) return null;
 
+  // The sentence's significant words, minus two kinds of freeloader.
+  //
+  // Generic strike vocabulary first: 'strike', 'attack', 'Russian' and the
+  // rest appear in nearly every headline about this war, so a match on them
+  // is not evidence of anything.
+  //
+  // Then the place name itself, and this one is easy to miss: the query
+  // below asks GDELT only for articles about this place, so the place name
+  // is in almost every title that comes back. Leave it in and it matches for
+  // free — the >= 2 shared-word test below silently becomes a 1-word test.
+  const GENERIC = new Set(['attack', 'attacks', 'strike', 'strikes', 'struck', 'hit', 'russian', 'ukrainian', 'war']);
   const nouns = significantWords(sentence);
-  nouns.delete(placeName.toLowerCase());
+  for (const g of GENERIC) nouns.delete(g);
+  for (const w of significantWords(placeName)) nouns.delete(w);   // multi-word places too
   if (nouns.size < 2) return null;                  // nothing specific enough to match on
 
   const stamp = x => new Date(x).toISOString().slice(0, 10).replace(/-/g, '') + '000000';
