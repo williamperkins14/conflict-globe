@@ -29,6 +29,7 @@ const EXPIRY_DAYS = 14;
 const EXCERPT_CHARS = 160;
 const MIN_NAME_LEN = 3;
 const CURATED_SUPPRESS_KM = 25;   // already a red marker -> not an auto one
+const EVENTS_CAP = 200;           // events kept per curated marker, newest first
 
 // Settlement names that are also ordinary words / names that collide with
 // non-place capitalised words in this domain (unit names, surnames, brands).
@@ -63,6 +64,9 @@ const fetchTimeout = (url, ms = 25_000) => {
 };
 
 const todayISO = () => new Date().toISOString().slice(0, 10);
+
+const clipExcerpt = s => (s.length > EXCERPT_CHARS ? s.slice(0, EXCERPT_CHARS) + '…' : s);
+const clipText = s => (s.length > 4000 ? s.slice(0, 4000) + '…' : s);
 
 // ---------------------------------------------------------------------------
 // Telegram parsing (traps from TELEGRAM-SPEC.md)
@@ -306,6 +310,58 @@ function wordOverlap(a, b) {
   return shared / Math.min(a.size, b.size);
 }
 
+// The event-entry shape written under auto-locations.json > events > <marker>.
+// `parsed` is filled by mergeMarkerEvents, from the sentence, at merge time.
+const buildEventEntry = (s, post) => ({
+  channel: post.channel,
+  url: post.url,
+  at: post.at ? post.at.replace('+00:00', 'Z') : null,
+  text: clipText(post.text),
+  sentence: s.sentence,
+  excerpt: clipExcerpt(s.excerpt),
+});
+
+// Within one location, fold near-duplicate reports of the same event into a
+// single entry (keep the earliest) and list the rest as corroboration.
+function dedupeEvents(list) {
+  const kept = [];
+  for (const ev of list.slice().sort((a, b) => (a.at || '').localeCompare(b.at || ''))) {
+    const sig = significantWords(ev.text || ev.excerpt || '');
+    const dup = kept.find(k => wordOverlap(sig, k._sig) > 0.6);
+    if (dup) {
+      (dup.corroboration ||= []).push({ channel: ev.channel, url: ev.url });
+      for (const c of ev.corroboration || []) dup.corroboration.push(c);
+    } else {
+      kept.push({ ...ev, _sig: sig });
+    }
+  }
+  return kept
+    .sort((a, b) => (b.at || '').localeCompare(a.at || ''))
+    .map(({ _sig, ...e }) => e);
+}
+
+// Merge new event entries for one curated marker into the ones already stored:
+// keep only entries with an isolated sentence that names a single occurrence
+// and fewer than three places, dedupe by URL, fold near-duplicates, cap the
+// list newest-first. Shared by the incremental detector and the backfill.
+function mergeMarkerEvents(prevList, newList, gaz) {
+  const raw = [...(newList || []), ...(prevList || [])]
+    .filter(e => e.sentence)
+    .filter(e => EVENT_WORDS.test(e.sentence) && placesNamed(e.sentence, gaz).size < 3)
+    .filter((e, idx, arr) => arr.findIndex(x => x.url === e.url) === idx)
+    .map(e => ({
+      channel: e.channel,
+      url: e.url,
+      at: e.at,
+      text: e.text || null,
+      sentence: e.sentence,
+      excerpt: e.excerpt,
+      parsed: parseSentence(e.sentence, placesNamed(e.sentence, gaz)),
+      ...(Array.isArray(e.corroboration) && e.corroboration.length ? { corroboration: e.corroboration } : {}),
+    }));
+  return dedupeEvents(raw).slice(0, EVENTS_CAP);
+}
+
 // Split a post into sentences and return the one covering character `offset`.
 // Boundaries: . ! ? … followed by whitespace/end, or a newline. A period right
 // after a lone capital ("U.S.", "Gen.") is not treated as a boundary.
@@ -511,9 +567,6 @@ async function main() {
   const suppressedNames = new Map(); // name -> curated marker it collided with
   const newEvents = {};              // curated marker name -> [ {channel,url,at,text,excerpt,parsed} ]
 
-  const clipExcerpt = s => (s.length > EXCERPT_CHARS ? s.slice(0, EXCERPT_CHARS) + '…' : s);
-  const clipText = s => (s.length > 4000 ? s.slice(0, 4000) + '…' : s);
-
   const addEvidence = (m, post) => {
     const key = `${m.place.lat.toFixed(2)},${m.place.lng.toFixed(2)}`;
     if (!places.has(key)) {
@@ -540,20 +593,12 @@ async function main() {
   // `text` (the whole post) is kept only for the near-duplicate check below.
   let eventsDroppedNoWord = 0, eventsDroppedSummary = 0;
   const addEvent = (s, post) => {
-    const places = placesNamed(s.sentence, gaz);
-    if (places.size >= 3) { eventsDroppedSummary++; return; }
+    const pl = placesNamed(s.sentence, gaz);
+    if (pl.size >= 3) { eventsDroppedSummary++; return; }
     if (!EVENT_WORDS.test(s.sentence)) { eventsDroppedNoWord++; return; }
     const list = (newEvents[s.curated] ||= []);
     if (list.some(e => e.url === post.url)) return;
-    list.push({
-      channel: post.channel,
-      url: post.url,
-      at: post.at ? post.at.replace('+00:00', 'Z') : null,
-      text: clipText(post.text),
-      sentence: s.sentence,
-      excerpt: clipExcerpt(s.excerpt),
-      parsed: parseSentence(s.sentence, places),
-    });
+    list.push({ ...buildEventEntry(s, post), parsed: parseSentence(s.sentence, pl) });
   };
 
   for (const post of allPosts) {
@@ -642,50 +687,12 @@ async function main() {
   doc.conflicts[CONFLICT_ID] = [...keepOther, ...telegramOut];
 
   // --- merge `events` (suppressed matches at curated markers) ---
-  const EVENTS_CAP = 12;
-
-  // Within one location, fold near-duplicate reports of the same event into a
-  // single entry (keep the earliest) and list the rest as corroboration.
-  const dedupeEvents = list => {
-    const kept = [];
-    for (const ev of list.slice().sort((a, b) => (a.at || '').localeCompare(b.at || ''))) {
-      const sig = significantWords(ev.text || ev.excerpt || '');
-      const dup = kept.find(k => wordOverlap(sig, k._sig) > 0.6);
-      if (dup) {
-        (dup.corroboration ||= []).push({ channel: ev.channel, url: ev.url });
-        for (const c of ev.corroboration || []) dup.corroboration.push(c);
-      } else {
-        kept.push({ ...ev, _sig: sig });
-      }
-    }
-    return kept
-      .sort((a, b) => (b.at || '').localeCompare(a.at || ''))
-      .map(({ _sig, ...e }) => e);
-  };
-
   doc.events = (doc.events && typeof doc.events === 'object' && !Array.isArray(doc.events)) ? doc.events : {};
   const prevEvents = (doc.events[CONFLICT_ID] && typeof doc.events[CONFLICT_ID] === 'object' && !Array.isArray(doc.events[CONFLICT_ID]))
     ? doc.events[CONFLICT_ID] : {};
   const outEvents = {};
   for (const marker of new Set([...Object.keys(prevEvents), ...Object.keys(newEvents)])) {
-    const raw = [...(newEvents[marker] || []), ...(prevEvents[marker] || [])]
-      // drop entries written before sentence-scoping (their parse leaked across events)
-      .filter(e => e.sentence)
-      // the sentence naming the place must itself describe an occurrence, and
-      // must not be a strike-summary line naming three or more places
-      .filter(e => EVENT_WORDS.test(e.sentence) && placesNamed(e.sentence, gaz).size < 3)
-      .filter((e, idx, arr) => arr.findIndex(x => x.url === e.url) === idx)
-      .map(e => ({
-        channel: e.channel,
-        url: e.url,
-        at: e.at,
-        text: e.text || null,
-        sentence: e.sentence,
-        excerpt: e.excerpt,
-        parsed: parseSentence(e.sentence, placesNamed(e.sentence, gaz)),
-        ...(Array.isArray(e.corroboration) && e.corroboration.length ? { corroboration: e.corroboration } : {}),
-      }));
-    const deduped = dedupeEvents(raw).slice(0, EVENTS_CAP);
+    const deduped = mergeMarkerEvents(prevEvents[marker], newEvents[marker], gaz);
     if (deduped.length) outEvents[marker] = deduped;
   }
   doc.events[CONFLICT_ID] = outEvents;
@@ -742,4 +749,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   main().catch(err => { console.error(err.stack || String(err)); process.exit(1); });
 }
 
-export { parseSentence, sentenceAt, placesNamed, loadGazetteer, EVENT_WORDS };
+export {
+  parseSentence, sentenceAt, placesNamed, loadGazetteer, EVENT_WORDS,
+  parseChannel, matchPost, buildEventEntry, mergeMarkerEvents,
+  CHANNELS, CONFLICT_ID, CONFLICTS_PATH, OUTPUT_PATH, GAZETTEER_PATH,
+};
