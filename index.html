@@ -197,6 +197,94 @@
       color: rgba(232, 234, 237, 0.78);
     }
 
+    /* ---- Recent events, from the Telegram layer -------------------- */
+    .ev-note {
+      margin: -6px 0 16px;
+      font-size: 12px;
+      color: rgba(74, 163, 255, 0.75);
+    }
+
+    .ev-day { margin-bottom: 22px; }
+
+    .ev-day-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(74, 163, 255, 0.25);
+    }
+
+    .ev-date {
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(232, 234, 237, 0.9);
+    }
+
+    .ev-count {
+      font-size: 11px;
+      white-space: nowrap;
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    .ev-item {
+      display: flex;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .ev-time {
+      flex: none;
+      width: 38px;
+      padding-top: 1px;
+      font-size: 11px;
+      font-variant-numeric: tabular-nums;
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    .ev-body { flex: 1; min-width: 0; }
+
+    .ev-line {
+      display: block;
+      font-size: 14px;
+      line-height: 1.45;
+      color: rgba(232, 234, 237, 0.92);
+    }
+
+    /* Unparsed reports are shown in the source's own words. Italic marks
+       them as a quotation rather than a summary we produced. */
+    .ev-line-plain {
+      font-style: italic;
+      color: rgba(232, 234, 237, 0.75);
+    }
+
+    .ev-said {
+      display: block;
+      margin-top: 3px;
+      font-size: 12px;
+      line-height: 1.45;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .ev-chan {
+      display: block;
+      margin-top: 5px;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      color: rgba(74, 163, 255, 0.7);
+    }
+
+    .ev-item:hover .ev-line { color: #cfe4ff; }
+
+    .ev-chans {
+      margin-top: 9px;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.28);
+    }
+
     /* ---- The recent coverage list ---------------------------------- */
     .news-heading {
       margin: 32px 0 14px;
@@ -281,6 +369,7 @@
     <h1 id="panel-title"></h1>
     <p id="panel-meta"></p>
     <p id="panel-summary"></p>
+    <div id="panel-events"></div>
     <div id="panel-sources"></div>
     <div id="panel-locations"></div>
     <div id="panel-news"></div>
@@ -364,6 +453,12 @@
     // exactly as it did before it existed.
     let autoLocations = {};
 
+    // Events at curated places, keyed by conflict id then location name.
+    // These are the matches the detector suppresses for MARKER creation
+    // (the place already has a red marker) but which are still real
+    // reports about that place. They used to be logged and thrown away.
+    let autoEvents = {};
+
     // True while the camera is flying somewhere under our own instruction.
     // Without this, the "zoom out to go back" rule below fires during the
     // fly-in, because the camera passes through the trigger altitude on the
@@ -394,6 +489,7 @@
       .then(r => (r.ok ? r.json() : null))
       .then(data => {
         if (data && data.conflicts) autoLocations = data.conflicts;
+        if (data && data.events) autoEvents = data.events;
       })
       .catch(() => console.warn('auto-locations.json not loaded; showing curated markers only.'));
 
@@ -553,6 +649,7 @@
         ).join('');
         document.getElementById('panel-sources').innerHTML = ev;
         document.getElementById('panel-news').innerHTML = '';
+        document.getElementById('panel-events').innerHTML = '';
         panel.classList.add('open');
         return;
       }
@@ -576,6 +673,7 @@
         panel.classList.add('open');
         document.getElementById('panel-sources').innerHTML = '';
         document.getElementById('panel-news').innerHTML = '';
+        document.getElementById('panel-events').innerHTML = '';
         return;
       }
 
@@ -592,6 +690,7 @@
       }
 
       panel.classList.add('open');
+      showEvents(d);
       showSources(d);
       loadNews(d);
     }
@@ -976,6 +1075,103 @@
           + formatDate(a.seendate) + lang + '</span>'
           + '</a>';
       }).join('');
+    }
+
+
+    // ---------------------------------------------------------------
+    // Recent events at a place, from the trusted Telegram channels.
+    //
+    // Grouped by calendar day, newest first, because a single attack is
+    // reported in fragments over several hours: Belgorod on 30 August
+    // arrived as six posts between 14:00 and 17:38, from the first
+    // explosions to Ozon confirming its depot was hit. Listed flat that
+    // reads as six separate attacks.
+    //
+    // Every report stays its own line. The display layer deliberately
+    // does NOT merge a weapon from one post with a target from another:
+    // that is the same cross-event leak that once put 38 deaths on the
+    // wrong city, and it would be no more true here than in the parser.
+    // ---------------------------------------------------------------
+    function showEvents(d) {
+      const box = document.getElementById('panel-events');
+      if (!box) return;
+
+      const forConflict = (activeConflict && autoEvents[activeConflict.id]) || {};
+      const list = forConflict[d.name] || [];
+      if (list.length === 0) { box.innerHTML = ''; return; }
+
+      const sorted = list.slice()
+        .sort((a, b) => String(b.at).localeCompare(String(a.at)));
+
+      const days = [];
+      sorted.forEach(e => {
+        const day = String(e.at).slice(0, 10);
+        const last = days[days.length - 1];
+        if (last && last.day === day) last.items.push(e);
+        else days.push({ day: day, items: [e] });
+      });
+
+      box.innerHTML =
+        '<div class="news-heading">Recent events</div>'
+        + '<div class="ev-note">Reported by channels you follow. '
+        + 'Not independently verified.</div>'
+        + days.map(g => {
+            const chans = [...new Set(g.items.map(e => e.channel))];
+            const times = g.items.map(e => String(e.at).slice(11, 16)).sort();
+            const span = times.length > 1
+              ? times[0] + '–' + times[times.length - 1]
+              : times[0];
+            return '<div class="ev-day">'
+              + '<div class="ev-day-head">'
+              + '<span class="ev-date">' + escapeHtml(formatDay(g.day)) + '</span>'
+              + '<span class="ev-count">' + g.items.length + ' report'
+              + (g.items.length === 1 ? '' : 's') + ' · ' + escapeHtml(span)
+              + '</span></div>'
+              + g.items.map(renderEvent).join('')
+              + '<div class="ev-chans">' + escapeHtml(chans.join(', ')) + '</div>'
+              + '</div>';
+          }).join('');
+    }
+
+    // One report. A structured line when the parser filled the fields from
+    // the single sentence naming this place, and that sentence verbatim
+    // when it could not. The source sentence is shown underneath either
+    // way, so a summary can always be checked against what was posted.
+    function renderEvent(e) {
+      const p = e.parsed;
+      const safeUrl = /^https:\/\/t\.me\//.test(e.url) ? escapeHtml(e.url) : '#';
+      const said = e.sentence || e.excerpt || '';
+
+      let head;
+      if (p) {
+        let line = '';
+        if (p.weapon && p.targetType) line = cap(p.weapon) + ' strike on a ' + p.targetType;
+        else if (p.weapon)            line = cap(p.weapon) + ' strike';
+        else if (p.targetType)        line = cap(p.targetType) + ' hit';
+        if (p.target)     line += ' (' + p.target + ')';
+        if (p.casualties) line += ' · ' + p.casualties;
+        head = '<span class="ev-line">' + escapeHtml(line) + '</span>'
+             + '<span class="ev-said">' + escapeHtml(said) + '</span>';
+      } else {
+        head = '<span class="ev-line ev-line-plain">' + escapeHtml(said) + '</span>';
+      }
+
+      return '<a class="ev-item" href="' + safeUrl + '" target="_blank" rel="noopener">'
+        + '<span class="ev-time">' + escapeHtml(String(e.at).slice(11, 16)) + '</span>'
+        + '<span class="ev-body">' + head
+        + '<span class="ev-chan">' + escapeHtml(e.channel) + '</span>'
+        + '</span></a>';
+    }
+
+    function cap(s) {
+      return String(s).charAt(0).toUpperCase() + String(s).slice(1);
+    }
+
+    function formatDay(iso) {
+      const months = ['January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'];
+      const p = String(iso).split('-');
+      return String(Number(p[2])) + ' ' + months[Number(p[1]) - 1] + ' ' + p[0];
     }
 
     function showSources(d) {
