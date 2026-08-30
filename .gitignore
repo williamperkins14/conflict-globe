@@ -6,3 +6,4 @@
 *.bak*
 DATA-ACCESS-EMAILS.md
 .claude/
+*.env

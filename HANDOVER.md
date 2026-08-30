@@ -1,3 +1,60 @@
+# WHERE WE STOPPED (29 Aug 2026)
+
+## Done since last time
+
+**Telegram integration works.** scripts/telegram-detect.mjs, gazetteer.json.gz
+(UA + RU from GeoNames), seen-posts.json. Committed and pushed. It produced 11
+Ukraine markers from noel_reports and wartranslated, rendered in blue against
+the curated red.
+
+**The 19-marker load bug is FIXED** (commit e4395d5) and verified on the live
+site: 5 markers, activeConflict null, panel closed.
+
+Cause: a stray pointer click landing during page load. globe.gl counts a quick
+pointerdown+up near a marker as a click, and Ukraine's marker sits near screen
+centre at the default camera, so clicking into the window to focus it while the
+globe settles fired openConflict. Fix: no transition on first paint, plus
+navigating=true for 800ms so early clicks are swallowed, plus onPointClick
+returning early while navigating.
+
+Note for anyone revisiting this: the "it's the pulsing rings" theory is WRONG.
+The count came from globe.pointsData(), which is the data array, not rendered
+geometry, and the entries were named Kyiv, Kharkiv, Pokrovsk etc. Do not
+re-investigate the rings.
+
+## THE NEXT STEP, and it is William's, not a machine's
+
+Review the 11 Telegram markers and decide which belong. This is the checkpoint
+the whole method rests on.
+
+Eight look like genuine events:
+  Klintsy (Bryansk) Buk-M3 destroyed | Kletnya (Bryansk) Pantsir-S1 destroyed
+  Bryansk | Rostov-on-Don drone strikes | Hvardiyske (Crimea) drone sites
+  Znamianka (Crimea) EW system | Berestky (Donetsk) drone command post
+  Dmytrivka community head killed
+
+Three look like the place being DISCUSSED rather than an event happening there:
+  Chernihiv  - post says offensive groupings are NOT currently there
+  Luhansk    - a stated objective for December, not an event
+  Zhytomyr   - a fire on the "Zhytomyr highway", which is outside Kyiv
+
+That is the failure mode now: the place is matched correctly, but the post is
+talking about it rather than reporting something there. Proposed fix, pending
+William's verdict: require an event word (struck, hit, destroyed, killed,
+shelling, attack) within a short distance of the matched name, and treat
+"X highway" and "X region" as special cases.
+
+## Still open
+
+- Whether GitHub runners can reach t.me. Workflow run 33252016028 was testing
+  it; the result was never read. If they cannot, the job runs on the Mac.
+- Four conflict summaries are empty; Kyiv's `sources` still has the placeholder
+  "Whatever you want the link to say" pointing at https://... Live on the site.
+- GKG layer still produces country centroids and demonyms for Sudan and Iran.
+  Recommendation stands: pause it for Ukraine while judging Telegram alone.
+- ACLED and UCDP emails drafted in DATA-ACCESS-EMAILS.md, unsent.
+- Backup files index.html.backup through .bak9 and conflicts.json.bak can go.
+
 ## TELEGRAM LAYER BUILT (29 Aug) — awaiting William's editorial review
 
 `scripts/telegram-detect.mjs` + `gazetteer.json.gz` (GeoNames UA+RU, committed).
