@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T20:29:52.630Z",
+  "generated": "2026-08-30T22:04:51.273Z",
   "conflicts": {
     "ukraine": [
       {
@@ -795,12 +795,9 @@
           "sentence": "Firefighters put out a 3,000 sq m fire in Holosiivskyi district this morning.",
           "excerpt": "…rth day straight. Firefighters put out a 3,000 sq m fire in Holosiivskyi district this morning. No casualties.",
           "parsed": null,
-          "corroboration": [
-            {
-              "channel": "wartranslated",
-              "url": "https://t.me/wartranslated/18463"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-08-30",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -814,7 +811,10 @@
             "target": null,
             "targetType": "apartment block",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-29",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -828,7 +828,10 @@
             "target": "Defense Forces ammunition",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-29",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -843,12 +846,9 @@
             "targetType": null,
             "casualties": null
           },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51875"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-08-29",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -862,7 +862,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-27",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -876,7 +879,10 @@
             "target": "Kyiv's Lobanovskyi Dynamo",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-27",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -890,7 +896,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-26",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -904,7 +913,10 @@
             "target": null,
             "targetType": "apartment block",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-25",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -918,7 +930,10 @@
             "target": "railway infrastructure",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-22",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -932,7 +947,10 @@
             "target": "railway facility",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-22",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -941,7 +959,10 @@
           "text": "The death toll from Russia's mass attack on Kyiv has risen to 13 after rescuers found another woman's body under rubble in Solomianskyi district. Across Kyiv and the region, 14 people were killed and more than 40 injured. Around 20 residential buildings in the capital were damaged.",
           "sentence": "The death toll from Russia's mass attack on Kyiv has risen to 13 after rescuers found another woman's body under rubble in Solomianskyi district.",
           "excerpt": "The death toll from Russia's mass attack on Kyiv has risen to 13 after rescuers found another woman's body under rubble in Solom…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-20",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -955,7 +976,10 @@
             "target": null,
             "targetType": null,
             "casualties": "12 injured, 12 killed"
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-20",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -969,7 +993,10 @@
             "target": null,
             "targetType": null,
             "casualties": "12 injured, 12 killed"
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-20",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -983,7 +1010,10 @@
             "target": null,
             "targetType": null,
             "casualties": "17 injured, 17 killed"
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-05",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -998,16 +1028,9 @@
             "targetType": null,
             "casualties": "2 injured, 2 killed"
           },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50600"
-            },
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50604"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-08-05",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1016,7 +1039,10 @@
           "text": "Russian strikes sparked fires near Vyshneve and Brovary, as well as in Kyiv's Sviatoshynskyi and Obolonskyi districts, local authorities said. Residents on the capital's right bank were urged to immediately close their windows because of the aftermath.",
           "sentence": "Russian strikes sparked fires near Vyshneve and Brovary, as well as in Kyiv's Sviatoshynskyi and Obolonskyi districts, local authorities said.",
           "excerpt": "Russian strikes sparked fires near Vyshneve and Brovary, as well as in Kyiv's Sviatoshynskyi and Obolonskyi districts, loca…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-04",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1025,7 +1051,10 @@
           "text": "❗️President Volodymyr Zelensky said the target of Russia’s strike in Bucha district was a weapons event that should not have been held, especially near homes. Ten people were killed, 70 injured, and criminal proceedings have been opened.",
           "sentence": "❗️President Volodymyr Zelensky said the target of Russia’s strike in Bucha district was a weapons event that should not have been held, especially near homes.",
           "excerpt": "…nt Volodymyr Zelensky said the target of Russia’s strike in Bucha district was a weapons event that should not have been held, especially near ho…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-24",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1039,7 +1068,10 @@
             "target": "UKRTAC",
             "targetType": "warehouse",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-19",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1053,7 +1085,10 @@
             "target": null,
             "targetType": null,
             "casualties": "1 injured, 1 killed"
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-19",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1067,7 +1102,10 @@
             "target": null,
             "targetType": "depot",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-17",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1076,7 +1114,10 @@
           "text": "❗️The EU has approved sanctions for the first time in response to Russia’s deadly July 1-2 strikes on Kyiv and its campaign against civilian infrastructure. The measures target five companies from the ABS Electro group that produce electronic components for drones, including modules designed to improve Shahed drones’ resistance to jamming. Board chair Irina Kharisova was also sanctioned with an EU asset freeze and travel ban.",
           "sentence": "❗️The EU has approved sanctions for the first time in response to Russia’s deadly July 1-2 strikes on Kyiv and its campaign against civilian infrastructure.",
           "excerpt": "…rst time in response to Russia’s deadly July 1-2 strikes on Kyiv and its campaign against civilian infrastructure. The measures target five comp…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-17",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1090,7 +1131,10 @@
             "target": null,
             "targetType": "air defence system",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-15",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1104,7 +1148,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-10",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1118,7 +1165,10 @@
             "target": null,
             "targetType": null,
             "casualties": "50 killed"
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-09",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1132,7 +1182,10 @@
             "target": "by Russian missiles",
             "targetType": "depot",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-09",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1141,7 +1194,10 @@
           "text": "Prime Minister Yuliia Svyrydenko said the destruction in Vyshneve after a secondary detonation on July 6 was the worst residential-sector damage of Russia’s full-scale invasion. Around 500 rescuers and more than 400 police are working at the site. She said the government will allocate reserve fund money to support the community.",
           "sentence": "Prime Minister Yuliia Svyrydenko said the destruction in Vyshneve after a secondary detonation on July 6 was the worst residential-sector damage of Russia’s full-scale invasion.",
           "excerpt": "Prime Minister Yuliia Svyrydenko said the destruction in Vyshneve after a secondary detonation on July 6 was the worst residential-sector damage…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-06",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1150,7 +1206,10 @@
           "text": "Ukraine’s foreign minister Andrii Sybiha said there is no more urgent task than protecting children from Russian terror after the overnight attack on Kyiv. He urged NATO leaders in Ankara to strengthen Ukraine’s air defense, saying Kyiv urgently needs PAC-3 missiles. Sybiha also said Ukraine wants an emergency UN Security Council meeting over Russia’s mass attack.",
           "sentence": "Ukraine’s foreign minister Andrii Sybiha said there is no more urgent task than protecting children from Russian terror after the overnight attack on Kyiv.",
           "excerpt": "…children from Russian terror after the overnight attack on Kyiv. He urged NATO leaders in Ankara to strengthen Ukraine’s air defense, saying Kyi…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-06",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1164,7 +1223,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-06",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1178,7 +1240,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-03",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1187,7 +1252,10 @@
           "text": "Russian strike death toll in Kyiv rises to 30 after rescuers recovered three more bodies from the rubble of a building. Kyiv is marking a day of mourning today.",
           "sentence": "Russian strike death toll in Kyiv rises to 30 after rescuers recovered three more bodies from the rubble of a building.",
           "excerpt": "Russian strike death toll in Kyiv rises to 30 after rescuers recovered three more bodies from the rubble of a bui…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-03",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1196,7 +1264,10 @@
           "text": "❗️Following Russia’s massive strike on Kyiv, a White House official said President Trump wants to end the “senseless killing” and remains optimistic that Russia and Ukraine can still reach a peace agreement. The statement said Trump and his team continue working to bring the war to an end despite the latest escalation.",
           "sentence": "❗️Following Russia’s massive strike on Kyiv, a White House official said President Trump wants to end the “senseless killing” and remains optimistic that Russia and Ukraine can still reach a peace agreement.",
           "excerpt": "❗️Following Russia’s massive strike on Kyiv, a White House official said President Trump wants to end the “senseless killin…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-02",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1210,7 +1281,10 @@
             "target": "Red Cross",
             "targetType": "warehouse",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-02",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1224,7 +1298,10 @@
             "target": null,
             "targetType": null,
             "casualties": "17 killed"
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-02",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1239,12 +1316,9 @@
             "targetType": "air defence system",
             "casualties": null
           },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/48401"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-06-26",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1259,16 +1333,9 @@
             "targetType": null,
             "casualties": null
           },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/48707"
-            },
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/48715"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-06-25",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1282,7 +1349,10 @@
             "target": "roof",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-23",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1291,7 +1361,10 @@
           "text": "Zelensky vowed to respond after the attack on the Pechersk Lavra. Ukrainian long-range drones struck the Moscow oil refinery early morning, triggering a major fire and heavy smoke at one of Russia’s largest refining sites. The facility processes about 12.8 million tonnes of oil per year, or roughly 245,000-250,000 barrels per day, and supplies around 35-40% of fuel consumed in Moscow and the surrounding region.",
           "sentence": "Zelensky vowed to respond after the attack on the Pechersk Lavra.",
           "excerpt": "Zelensky vowed to respond after the attack on the Pechersk Lavra. Ukrainian long-range drones struck the Moscow oil refinery early morning…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-16",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1300,7 +1373,10 @@
           "text": "UNESCO condemned the June 15 strike on Kyiv-Pechersk Lavra, part of the World Heritage property “Kyiv: Saint-Sophia Cathedral and Related Monastic Buildings, Kyiv-Pechersk Lavra.” The organization said the Dormition Cathedral and nearby historic structures were damaged.",
           "sentence": "UNESCO condemned the June 15 strike on Kyiv-Pechersk Lavra, part of the World Heritage property “Kyiv: Saint-Sophia Cathedral and Related Monastic Buildings, Kyiv-Pechersk Lavra.”",
           "excerpt": "…n Kyiv-Pechersk Lavra, part of the World Heritage property “Kyiv: Saint-Sophia Cathedral and Related Monastic Buildings, Kyiv-Pechersk Lavra.” T…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-15",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1309,7 +1385,10 @@
           "text": "Russia launched a mass attack on Ukrainian cities, killing 4 people and injuring 25 in Kyiv, including 2 children. In Kharkiv, 5 rescuers were killed and at least 5 wounded during firefighting after a repeat Russian strike. Sumy and Dnipro also reported casualties and damage.",
           "sentence": "Russia launched a mass attack on Ukrainian cities, killing 4 people and injuring 25 in Kyiv, including 2 children.",
           "excerpt": "…ck on Ukrainian cities, killing 4 people and injuring 25 in Kyiv, including 2 children. In Kharkiv, 5 rescuers were killed and at least 5 wounde…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-15",
+          "statusEvidence": []
         }
       ],
       "Belgorod": [
@@ -1325,7 +1404,10 @@
             "target": null,
             "targetType": "sorting centre",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-30",
+          "statusEvidence": []
         },
         {
           "channel": "wartranslated",
@@ -1340,12 +1422,9 @@
             "targetType": "thermal power plant",
             "casualties": null
           },
-          "corroboration": [
-            {
-              "channel": "wartranslated",
-              "url": "https://t.me/wartranslated/18472"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-08-30",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1359,7 +1438,10 @@
             "target": null,
             "targetType": "warehouse",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-30",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1369,12 +1451,9 @@
           "sentence": "Loud explosions are heard in Belgorod.",
           "excerpt": "Loud explosions are heard in Belgorod.",
           "parsed": null,
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51925"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-08-30",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1383,7 +1462,10 @@
           "text": "A series of powerful explosions is being reported in Belgorod.",
           "sentence": "A series of powerful explosions is being reported in Belgorod.",
           "excerpt": "A series of powerful explosions is being reported in Belgorod.",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-08",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1397,7 +1479,10 @@
             "target": "Yak-40 turbojet",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-05",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1411,7 +1496,10 @@
             "target": "Delovye Linii warehouse",
             "targetType": "warehouse",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-03",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1420,7 +1508,10 @@
           "text": "Ukrainian forces have reportedly begun targeting fuel stations in Belgorod following Russian strikes on gas stations in Ukraine, Russian media reported. Around 20 stations, nearly one-third of the city’s total, have reportedly been hit in the past four days.",
           "sentence": "Ukrainian forces have reportedly begun targeting fuel stations in Belgorod following Russian strikes on gas stations in Ukraine, Russian media reported.",
           "excerpt": "…ian forces have reportedly begun targeting fuel stations in Belgorod following Russian strikes on gas stations in Ukraine, Russian media reported. A…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-23",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1434,7 +1525,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-06",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1448,7 +1542,10 @@
             "target": "energy infrastructure",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-04",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1462,7 +1559,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-20",
+          "statusEvidence": []
         }
       ],
       "Pokrovsk": [
@@ -1478,7 +1578,10 @@
             "target": "infantry",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-30",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1492,7 +1595,10 @@
             "target": "positions",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-06",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1501,7 +1607,10 @@
           "text": "Ukrainian aviation carried out two strikes on Russian positions in Rodynske, targeting enemy personnel and an ammunition stockpile.",
           "sentence": "Ukrainian aviation carried out two strikes on Russian positions in Rodynske, targeting enemy personnel and an ammunition stockpile.",
           "excerpt": "…an aviation carried out two strikes on Russian positions in Rodynske, targeting enemy personnel and an ammunition stockpile.",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-05",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1515,7 +1624,10 @@
             "target": "nearly",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-25",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1529,7 +1641,10 @@
             "target": "troop gathering",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-20",
+          "statusEvidence": []
         }
       ],
       "Moscow": [
@@ -1540,7 +1655,10 @@
           "text": "❗️CIA Director John Ratcliffe made a surprise trip to Moscow, his first publicly known visit to the Russian capital. The CIA declined to disclose its purpose. The Wall Street Journal reported that US intelligence had detected early Russian preparations for possible military mobilization and plans to test NATO's resolve. Analysts said Ratcliffe may have met Putin to deliver a warning. The US had also reportedly asked Ukraine to pause strikes on Moscow during the high-level visit.",
           "sentence": "The US had also reportedly asked Ukraine to pause strikes on Moscow during the high-level visit.",
           "excerpt": "…he US had also reportedly asked Ukraine to pause strikes on Moscow during the high-level visit.",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-26",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1554,7 +1672,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-07",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1563,7 +1684,10 @@
           "text": "Armed Russian security personnel were seen at the scene of the Moscow restaurant explosion despite preliminary claims from pro-Kremlin media that the blast was caused by a gas leak.\n\n❗️The death toll from the explosion at Moscow's Balzi Rossi restaurant has risen to 5, Russian media reported. Two people died in hospital, while more than 6 others remain in serious condition. The victims have not been named.",
           "sentence": "Armed Russian security personnel were seen at the scene of the Moscow restaurant explosion despite preliminary claims from pro-Kremlin media that the blast was caused by a gas leak.",
           "excerpt": "…ed Russian security personnel were seen at the scene of the Moscow restaurant explosion despite preliminary claims from pro-Kremlin media that the…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-02",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1578,12 +1702,9 @@
             "targetType": null,
             "casualties": "3 injured, 3 killed"
           },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50394"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-08-01",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1598,12 +1719,9 @@
             "targetType": null,
             "casualties": "3 killed, 15 injured"
           },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50391"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-08-01",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1617,7 +1735,10 @@
             "target": null,
             "targetType": "logistics hub",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-20",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1631,7 +1752,10 @@
             "target": null,
             "targetType": "fuel depot",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-20",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1645,7 +1769,10 @@
             "target": "by Ukrainian long-range",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-18",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1659,7 +1786,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-14",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1673,7 +1803,10 @@
             "target": null,
             "targetType": "refinery",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-10",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1687,7 +1820,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-10",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1696,7 +1832,10 @@
           "text": "Ukrainian forces struck Dubna near Moscow, with two explosions reported and smoke visible after the blasts. Dubna hosts the Moscow Space Communications Center, which had already been attacked and damaged in recent strikes.",
           "sentence": "Ukrainian forces struck Dubna near Moscow, with two explosions reported and smoke visible after the blasts.",
           "excerpt": "Ukrainian forces struck Dubna near Moscow, with two explosions reported and smoke visible after the blasts. Dubna hosts t…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-30",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1710,7 +1849,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-24",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1724,7 +1866,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-22",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1739,12 +1884,9 @@
             "targetType": "refinery",
             "casualties": null
           },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/48085"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-06-20",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1758,7 +1900,10 @@
             "target": null,
             "targetType": "refinery",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-20",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1772,7 +1917,10 @@
             "target": null,
             "targetType": "refinery",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1786,7 +1934,10 @@
             "target": "local refinery",
             "targetType": "refinery",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1800,7 +1951,10 @@
             "target": "key primary",
             "targetType": "refinery",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1814,7 +1968,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1828,7 +1985,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1842,7 +2002,10 @@
             "target": null,
             "targetType": "refinery",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1856,7 +2019,10 @@
             "target": "shopping",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1871,12 +2037,9 @@
             "targetType": "refinery",
             "casualties": null
           },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/47959"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1890,7 +2053,10 @@
             "target": null,
             "targetType": "refinery",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-16",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1904,7 +2070,10 @@
             "target": "large Wildberries warehouse",
             "targetType": "warehouse",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-16",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1918,7 +2087,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-15",
+          "statusEvidence": []
         }
       ],
       "Mariupol": [
@@ -1934,7 +2106,10 @@
             "target": "energy infrastructure facilities",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-06",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1948,7 +2123,10 @@
             "target": null,
             "targetType": "airfield",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-02",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1957,7 +2135,10 @@
           "text": "A strike in Russian-occupied Mariupol sparked a large fire. Thick smoke was seen rising over the city, while the nature of the blaze suggests fuel and petroleum products ignited. Reports also indicate additional objects near the area were affected.",
           "sentence": "A strike in Russian-occupied Mariupol sparked a large fire.",
           "excerpt": "A strike in Russian-occupied Mariupol sparked a large fire. Thick smoke was seen rising over the city, while the natu…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-21",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1966,7 +2147,10 @@
           "text": "Explosions have been reported in occupied Mariupol.",
           "sentence": "Explosions have been reported in occupied Mariupol.",
           "excerpt": "Explosions have been reported in occupied Mariupol.",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-19",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1980,7 +2164,10 @@
             "target": "supply vehicle",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-22",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -1994,7 +2181,10 @@
             "target": "vehicles",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-21",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2008,7 +2198,10 @@
             "target": null,
             "targetType": "port",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2022,7 +2215,10 @@
             "target": "UAV warehouse",
             "targetType": "warehouse",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-16",
+          "statusEvidence": []
         }
       ],
       "Donetsk": [
@@ -2038,7 +2234,10 @@
             "target": "with high precision",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-29",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2047,7 +2246,10 @@
           "text": "Lt. Col. Andrey Moisenko, a senior staff officer of Russia's 41st Army, was reportedly killed in the August 26 strike on a headquarters in Donetsk.\n\n❗️UPDATE: Reports from Donetsk claim 27 Russian personnel were killed and 58 wounded in strikes on several command posts, including one linked to the “Center” grouping. Two generals, a colonel and 2 lieutenant colonels are reportedly among the seriously wounded. The figures refer only to those recovered so far, while more personnel are said to remain under the rubble. The casualty count is expected to rise.",
           "sentence": "Lt. Col. Andrey Moisenko, a senior staff officer of Russia's 41st Army, was reportedly killed in the August 26 strike on a headquarters in Donetsk.",
           "excerpt": "…ortedly killed in the August 26 strike on a headquarters in Donetsk. ❗️UPDATE: Reports from Donetsk claim 27 Russian personnel were killed and 58 w…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-28",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2061,7 +2263,10 @@
             "target": "something important",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-27",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2075,7 +2280,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-26",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2090,16 +2298,9 @@
             "targetType": null,
             "casualties": null
           },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51779"
-            },
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51822"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-08-26",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2113,7 +2314,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-26",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2127,7 +2331,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-26",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2141,7 +2348,10 @@
             "target": "Galaktika center",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-15",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2150,7 +2360,10 @@
           "text": "Ukraine’s 82nd Air Assault Brigade took part in the offensive operation on the Oleksandrivka axis as part of the main strike force, breaching Russian defenses and targeting personnel, equipment and logistics. The broader operation by Ukraine’s Air Assault Forces and other Defense Forces units restored control over more than 745 km² and 26 settlements across Dnipropetrovsk, Donetsk and Zaporizhzhia regions.",
           "sentence": "Ukraine’s 82nd Air Assault Brigade took part in the offensive operation on the Oleksandrivka axis as part of the main strike force, breaching Russian defenses and targeting personnel, equipment and logistics.",
           "excerpt": "…Assault Brigade took part in the offensive operation on the Oleksandrivka axis as part of the main strike force, breaching Russian defenses and targeting…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-13",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2164,7 +2377,10 @@
             "target": "drone directly",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-08",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2178,7 +2394,10 @@
             "target": "Crimea boat base",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-30",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2192,7 +2411,10 @@
             "target": "occupied Donetsk",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-13",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2206,7 +2428,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-11",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2220,7 +2445,10 @@
             "target": "trucks",
             "targetType": "bridge",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-15",
+          "statusEvidence": []
         }
       ],
       "Novorossiysk": [
@@ -2231,7 +2459,10 @@
           "text": "Russia's Black Sea Fleet lost two Kalibr carriers in the August 12 strike on Novorossiysk naval base. Frigates Admiral Makarov, the fleet flagship, and Admiral Essen reportedly suffered critical damage and are out of service for at least a year. Essen's 3S14 launcher and Trebovaniye-M combat system were destroyed, while Makarov suffered an internal detonation and burned-out 3S14 launch cells.",
           "sentence": "Russia's Black Sea Fleet lost two Kalibr carriers in the August 12 strike on Novorossiysk naval base.",
           "excerpt": "…a Fleet lost two Kalibr carriers in the August 12 strike on Novorossiysk naval base. Frigates Admiral Makarov, the fleet flagship, and Admiral Essen rep…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-19",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2240,7 +2471,10 @@
           "text": "❗️Bingo: All three grain terminals at Novorossiysk have now suspended operations after Ukraine’s August 12 attack. KSK, the largest grain terminal in Russia’s Black Sea region, halted unloading from road and rail, grain loading onto ships and other operations. In 2025, KSK handled 7.37 million tonnes of grain, accounting for around 41% of grain exports through Novorossiysk. The other two terminals had already suspended operations following damage from the attack.",
           "sentence": "❗️Bingo: All three grain terminals at Novorossiysk have now suspended operations after Ukraine’s August 12 attack.",
           "excerpt": "❗️Bingo: All three grain terminals at Novorossiysk have now suspended operations after Ukraine’s August 12 attack. KSK, the larges…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-13",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2254,7 +2488,10 @@
             "target": null,
             "targetType": "oil depot",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-12",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2268,7 +2505,10 @@
             "target": null,
             "targetType": "port",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-12",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2277,7 +2517,10 @@
           "text": "❗️More from the damage in Novorossiysk. Ukrainian sources say the Novorossiysk strike also scored a direct hit on a Russian missile carrier. Waiting for more info.",
           "sentence": "❗️More from the damage in Novorossiysk.",
           "excerpt": "❗️More from the damage in Novorossiysk. Ukrainian sources say the Novorossiysk strike also scored a direct hit on a Rus…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-12",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2292,12 +2535,9 @@
             "targetType": "grain terminal",
             "casualties": null
           },
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51013"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-08-12",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2311,7 +2551,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-12",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2321,32 +2564,9 @@
           "sentence": "A fire is reported aboard a vessel near Novorossiysk, with smoke visible off the coast near Gelendzhik, according to local reports.",
           "excerpt": "A fire is reported aboard a vessel near Novorossiysk, with smoke visible off the coast near Gelendzhik, according to local reports.",
           "parsed": null,
-          "corroboration": [
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50868"
-            },
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50870"
-            },
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/50973"
-            },
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51043"
-            },
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51258"
-            },
-            {
-              "channel": "noel_reports",
-              "url": "https://t.me/noel_reports/51326"
-            }
-          ]
+          "status": "reported",
+          "statusChanged": "2026-08-07",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2360,7 +2580,10 @@
             "target": null,
             "targetType": "port",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-30",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2374,7 +2597,10 @@
             "target": "transshipment",
             "targetType": "oil depot",
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-14",
+          "statusEvidence": []
         }
       ],
       "Kharkiv": [
@@ -2385,7 +2611,10 @@
           "text": "Russian media report that Sergei Sechkov, a serviceman of Russia's 332nd Helicopter Regiment, was killed in a car explosion in St. Petersburg. In May 2022, after a Mi-28 from Russian military unit 12633 was shot down near Kharkiv, Ukraine's HUR accused the regiment of strikes on civilians in Kharkiv region. Sechkov later reportedly told superiors he was on \"liquidation lists.\"",
           "sentence": "In May 2022, after a Mi-28 from Russian military unit 12633 was shot down near Kharkiv, Ukraine's HUR accused the regiment of strikes on civilians in Kharkiv region.",
           "excerpt": "…a Mi-28 from Russian military unit 12633 was shot down near Kharkiv, Ukraine's HUR accused the regiment of strikes on civilians in Kharkiv region.…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-28",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2399,7 +2628,10 @@
             "target": "troops",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-17",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2413,7 +2645,10 @@
             "target": "Nova Poshta postal",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-19",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2427,7 +2662,10 @@
             "target": null,
             "targetType": null,
             "casualties": "5 killed, 5 wounded"
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-15",
+          "statusEvidence": []
         }
       ],
       "Odesa": [
@@ -2443,7 +2681,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-24",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2452,7 +2693,10 @@
           "text": "An attack on Odesa is ongoing. Russia used several missiles including its new small cruise missile S8000 banderol. Reportedly at least two missiles were shot down. Impacts are being determined.",
           "sentence": "An attack on Odesa is ongoing.",
           "excerpt": "An attack on Odesa is ongoing. Russia used several missiles including its new small cruise missile…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-09",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2466,7 +2710,10 @@
             "target": "vessel",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-28",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2480,7 +2727,10 @@
             "target": "during",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-26",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2494,7 +2744,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-25",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2508,7 +2761,10 @@
             "target": null,
             "targetType": "hospital",
             "casualties": "5 killed"
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-19",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2522,7 +2778,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-15",
+          "statusEvidence": []
         }
       ],
       "Kherson": [
@@ -2538,7 +2797,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-21",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2552,7 +2814,10 @@
             "target": null,
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-04",
+          "statusEvidence": []
         },
         {
           "channel": "noel_reports",
@@ -2561,7 +2826,10 @@
           "text": "Russian forces launched a massive guided bomb attack on Kherson from early morning. Numerous fires broke out across different districts of the city.",
           "sentence": "Russian forces launched a massive guided bomb attack on Kherson from early morning.",
           "excerpt": "Russian forces launched a massive guided bomb attack on Kherson from early morning. Numerous fires broke out across different districts of the…",
-          "parsed": null
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-13",
+          "statusEvidence": []
         }
       ],
       "Kursk": [
@@ -2577,7 +2845,10 @@
             "target": "ballistic",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-10",
+          "statusEvidence": []
         }
       ],
       "Zaporizhzhia": [
@@ -2593,7 +2864,10 @@
             "target": "tank",
             "targetType": null,
             "casualties": null
-          }
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-15",
+          "statusEvidence": []
         }
       ]
     }
