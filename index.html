@@ -126,7 +126,7 @@
 
     .loc-dot-auto {
       background: none;
-      border: 1px solid #ffb020;
+      border: 1px solid #a855f7;
     }
 
     .loc-count {
@@ -138,7 +138,7 @@
     }
 
     #panel-summary .auto-note {
-      color: #ffb020;
+      color: rgba(168, 85, 247, 0.85);
       font-weight: 600;
     }
 
@@ -150,9 +150,9 @@
     }
 
     /* ---- Telegram-reported locations: a third layer, blue --------- */
-    .loc-heading-tg { color: rgba(74, 163, 255, 0.8); }
-    .loc-item-tg:hover { color: #9cc9ff; }
-    .loc-dot-tg { background: none; border: 1px solid #4aa3ff; }
+    .loc-heading-tg { color: rgba(168, 85, 247, 0.85); }
+    .loc-item-tg:hover { color: #c99cff; }
+    .loc-dot-tg { background: none; border: 1px solid #a855f7; }
 
     .tg-evidence {
       display: block;
@@ -164,7 +164,7 @@
       display: block;
       font-size: 11px;
       letter-spacing: 0.04em;
-      color: rgba(74, 163, 255, 0.8);
+      color: rgba(255, 255, 255, 0.42);
     }
     .tg-ev-text {
       display: block;
@@ -173,7 +173,7 @@
       line-height: 1.45;
       color: rgba(232, 234, 237, 0.75);
     }
-    .tg-evidence:hover .tg-ev-text { color: #cfe4ff; }
+    .tg-evidence:hover .tg-ev-text { color: rgba(255, 255, 255, 0.95); }
 
     #panel-title {
       margin: 0 0 10px;
@@ -238,7 +238,7 @@
       margin-left: 6px;
       font-weight: 400;
       letter-spacing: 0.08em;
-      color: rgba(255, 255, 255, 0.28);
+      color: rgba(168, 85, 247, 0.9);
     }
 
     .ev-day { margin-bottom: 22px; }
@@ -249,7 +249,7 @@
       justify-content: space-between;
       gap: 12px;
       padding-bottom: 8px;
-      border-bottom: 1px solid rgba(74, 163, 255, 0.25);
+      border-bottom: 1px solid rgba(168, 85, 247, 0.35);
     }
 
     .ev-date {
@@ -311,10 +311,10 @@
       margin-top: 5px;
       font-size: 11px;
       letter-spacing: 0.04em;
-      color: rgba(74, 163, 255, 0.7);
+      color: rgba(255, 255, 255, 0.4);
     }
 
-    .ev-item:hover .ev-line { color: #cfe4ff; }
+    .ev-item:hover .ev-line { color: #c99cff; }
 
     .ev-chans {
       margin-top: 9px;
@@ -592,7 +592,12 @@
         .pointLng(d => d.lng)
         .pointAltitude(0.004)
         .pointRadius(d => markerRadius(d))
-        .pointColor(d => !d.auto ? '#ff2a1f' : d.source === 'telegram' ? '#4aa3ff' : '#ffb020')
+        // Red is a claim the site stands behind. Purple is a claim
+        // somebody else made that we are passing on. The two must never
+        // look alike: a reader who cannot tell them apart is being told
+        // that a scraped Telegram post carries the same weight as a
+        // checked historical record, and it does not.
+        .pointColor(d => d.auto ? '#a855f7' : '#ff2a1f')
         .pointLabel(d => !d.auto ? d.name
           : d.name + (d.source === 'telegram' ? ' (reported)' : ' (auto-detected)'))
         // Ignore clicks that land while the camera is already moving - during
@@ -750,9 +755,12 @@
       if (curated.length === 0 && allAuto.length === 0) { box.innerHTML = ''; return; }
       box.innerHTML = '';
 
-      addLocSection('Locations', curated, '');
-      addLocSection('Reported · unverified', reported, 'tg');
-      addLocSection('Auto-detected · unverified', auto, 'auto');
+      // Alphabetical within each section. The file order was the order
+      // things happened to be written in, which means nothing to a reader.
+      const az = (a, b) => a.name.localeCompare(b.name, 'en');
+      addLocSection('Locations', curated.slice().sort(az), '');
+      addLocSection('Reported · unverified', reported.slice().sort(az), 'tg');
+      addLocSection('Auto-detected · unverified', auto.slice().sort(az), 'auto');
 
       function addLocSection(heading, list, kind) {
         if (list.length === 0) return;
