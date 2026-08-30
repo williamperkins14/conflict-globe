@@ -23,6 +23,7 @@ const CONFLICTS_PATH = 'conflicts.json';
 const GAZETTEER_PATH = 'gazetteer.json.gz';
 const OUTPUT_PATH = 'auto-locations.json';
 const SEEN_PATH = 'seen-posts.json';
+const EXPIRED_PATH = 'expired-events.json';
 
 const MAX_EVIDENCE = 3;
 const EXPIRY_DAYS = 14;
@@ -346,16 +347,145 @@ function metonymyReject(sentence, name) {
   return { ok: false, reason: 'bare occurrence — not written as a location' };
 }
 
+// ---------------------------------------------------------------------------
+// Confidence ladder (phase one, no external accounts)
+//
+//   reported     -> one source said it happened
+//   corroborated -> a second INDEPENDENT source, or a GDELT news match
+//   confirmed    -> reserved for press/official sources (not phase one)
+// ---------------------------------------------------------------------------
+
+// Source type of a channel. Only telegram exists today; press/official are
+// declared here so the independence rule already knows about them.
+const SOURCE_TYPE = { noel_reports: 'telegram', wartranslated: 'telegram' };
+const sourceType = channel => SOURCE_TYPE[channel] || 'telegram';
+
+// The originating source a post is quoting. Two telegram channels both relaying
+// "the General Staff says …" are ONE source, not two.
+const ORIGIN_PATTERNS = [
+  ['Ukraine General Staff',   /\bgeneral staff\b/i],
+  ['Ukraine Air Force',       /\bair force(?: command)?\b/i],
+  ['HUR',                     /\bHUR\b|\bdefen[cs]e intelligence\b|\bmilitary intelligence\b/i],
+  ['SBU',                     /\bSBU\b|\bsecurity service of ukraine\b/i],
+  ['Ukraine Navy',            /\bukrainian navy\b|\bnavy command\b/i],
+  ['Unmanned Systems Forces', /\bunmanned systems forces\b/i],
+  ['Special Operations Forces',/\bspecial operations forces\b|\bSSO\b/i],
+  ['Zelensky',                /\bzelensky+\b/i],
+  ['Ukraine MoD',             /\bukrainian (?:defense|defence) ministry\b|\bministry of defen[cs]e of ukraine\b/i],
+  ['Russian MoD',             /\brussian (?:defense|defence) ministry\b|\brussian mod\b/i],
+  ['Reuters',                 /\breuters\b/i],
+  ['AP',                      /\bassociated press\b/i],
+  ['AFP',                     /\bAFP\b/i],
+  ['Bloomberg',               /\bbloomberg\b/i],
+  ['NYT',                     /\bnew york times\b/i],
+  ['BBC',                     /\bBBC\b/i],
+  ['CNN',                     /\bCNN\b/i],
+  ['ISW',                     /\bISW\b|\binstitute for the study of war\b/i],
+  ['NASA FIRMS',              /\bNASA FIRMS\b|\bFIRMS data\b/i],
+  ['Crimean Wind',            /\bcrimean wind\b/i],
+  ['ASTRA',                   /\bASTRA\b/i],
+  ['Baza',                    /\bBaza\b/i],
+  ['Mash',                    /\bMash\b/i],
+  ['Exilenova',               /\bexilenova\b/i],
+  ['governor',                /\bgovernor\b|\bregion(?:al)? (?:head|chief|administration)\b/i],
+  ['mayor',                   /\bmayor\b/i],
+  ['local authorities',       /\blocal (?:authorities|officials|media)\b/i],
+  ['emergency service',       /\b(?:state )?emergency service\b|\bDSNS\b/i],
+];
+
+function namedOrigins(text) {
+  const out = new Set();
+  for (const [label, re] of ORIGIN_PATTERNS) if (re.test(text || '')) out.add(label);
+  return out;
+}
+
+// Count the INDEPENDENT sources backing an event. Two sources are independent
+// only if their types differ, or they are two telegram channels that do not
+// name the same originating source.
+function independentSourceCount(event) {
+  const src = [
+    { type: sourceType(event.channel), channel: event.channel, origins: namedOrigins(event.text || event.sentence || '') },
+    ...(event.corroboration || []).map(c => ({
+      type: sourceType(c.channel), channel: c.channel,
+      origins: new Set(c.origins || namedOrigins(c.text || '')),
+    })),
+  ];
+  const groups = [];   // each group is one effective source
+  for (const s of src) {
+    const same = groups.find(g => {
+      if (g.type !== s.type) return false;
+      if (g.type !== 'telegram') return true;                 // same non-telegram type: treat as one outlet for now
+      if (g.channels.has(s.channel)) return true;             // same channel
+      for (const o of s.origins) if (g.origins.has(o)) return true;   // shared named origin
+      return false;
+    });
+    if (same) {
+      same.channels.add(s.channel);
+      for (const o of s.origins) same.origins.add(o);
+    } else {
+      groups.push({ type: s.type, channels: new Set([s.channel]), origins: new Set(s.origins) });
+    }
+  }
+  return groups.length;
+}
+
+const iso10 = d => new Date(d).toISOString().slice(0, 10);
+
+// Give an event its ladder fields if it has none. Existing events start
+// 'reported', dated to when they were first seen.
+function initLadder(event) {
+  if (!event.status) {
+    event.status = 'reported';
+    event.statusChanged = event.at ? iso10(event.at) : iso10(Date.now());
+    event.statusEvidence = [];
+  }
+  event.statusEvidence ||= [];
+  return event;
+}
+
+// The corroboration promotion. Idempotent; run it on every pass.
+function applyCorroboration(event, now = new Date()) {
+  initLadder(event);
+  if (event.status !== 'reported') return event;
+  if (independentSourceCount(event) < 2) return event;
+  event.status = 'corroborated';
+  event.statusChanged = iso10(now);
+  event.statusEvidence.push({
+    kind: 'corroboration',
+    at: iso10(now),
+    sources: [
+      { channel: event.channel, origins: [...namedOrigins(event.text || event.sentence || '')] },
+      ...(event.corroboration || []).map(c => ({ channel: c.channel, origins: c.origins || [] })),
+    ],
+  });
+  return event;
+}
+
 // Within one location, fold near-duplicate reports of the same event into a
-// single entry (keep the earliest) and list the rest as corroboration.
+// single entry (keep the earliest). A repost by the SAME channel is deduped
+// but is not corroboration; a different channel is recorded with the named
+// origins it quotes, so the independence check can weigh it.
 function dedupeEvents(list) {
   const kept = [];
   for (const ev of list.slice().sort((a, b) => (a.at || '').localeCompare(b.at || ''))) {
     const sig = significantWords(ev.text || ev.excerpt || '');
     const dup = kept.find(k => wordOverlap(sig, k._sig) > 0.6);
     if (dup) {
-      (dup.corroboration ||= []).push({ channel: ev.channel, url: ev.url });
-      for (const c of ev.corroboration || []) dup.corroboration.push(c);
+      dup.corroboration ||= [];
+      const add = c => {
+        if (!c || !c.url || c.channel === dup.channel) return;             // same channel is not corroboration
+        if (dup.corroboration.some(x => x.url === c.url)) return;          // already recorded
+        dup.corroboration.push({ channel: c.channel, url: c.url, origins: c.origins || [] });
+      };
+      add({ channel: ev.channel, url: ev.url, origins: [...namedOrigins(ev.text || '')] });
+      for (const c of ev.corroboration || []) add(c);
+      // carry the higher ladder rung and its evidence forward
+      const RANK = { reported: 0, corroborated: 1, confirmed: 2 };
+      if (Array.isArray(ev.statusEvidence)) dup.statusEvidence = [...(dup.statusEvidence || []), ...ev.statusEvidence];
+      if (ev.status && (RANK[ev.status] || 0) > (RANK[dup.status || 'reported'] || 0)) {
+        dup.status = ev.status;
+        dup.statusChanged = ev.statusChanged || dup.statusChanged;
+      }
     } else {
       kept.push({ ...ev, _sig: sig });
     }
@@ -363,6 +493,65 @@ function dedupeEvents(list) {
   return kept
     .sort((a, b) => (b.at || '').localeCompare(a.at || ''))
     .map(({ _sig, ...e }) => e);
+}
+
+const EVENT_EXPIRY_DAYS = 14;
+
+// An event still 'reported' this many days after it was posted has had no
+// corroboration and no news pickup. It is not deleted — the caller moves the
+// whole entry to expired-events.json.
+function isExpired(event, now = new Date()) {
+  if (!event || event.status !== 'reported' || !event.at) return false;
+  const ageDays = (now - new Date(event.at)) / 86_400_000;
+  return ageDays > EVENT_EXPIRY_DAYS;
+}
+
+// GDELT news cross-check. Query the DOC API for the place over the event date
+// +/- 1 day and look for an article whose title shares the event sentence's
+// significant nouns (the place name itself does not count).
+//
+// Three distinct returns, because the caller needs to tell them apart:
+//   { url, title, shared }  a match          -> promote to 'corroborated'
+//   false                   checked, nothing -> event has now been looked at
+//   null                    not checkable    (no date, or too thin to query)
+// A real GDELT failure (network, timeout, rejection) THROWS, so the caller can
+// see that the pass was incomplete and hold off on expiring anything.
+async function gdeltCorroborates(placeName, atISO, sentence, fetchImpl = fetch) {
+  if (!atISO || !sentence) return null;
+  const d = new Date(atISO);
+  if (Number.isNaN(+d)) return null;
+
+  const nouns = significantWords(sentence);
+  nouns.delete(placeName.toLowerCase());
+  if (nouns.size < 2) return null;                  // nothing specific enough to match on
+
+  const stamp = x => new Date(x).toISOString().slice(0, 10).replace(/-/g, '') + '000000';
+  const start = new Date(d); start.setUTCDate(start.getUTCDate() - 1);
+  const end = new Date(d);   end.setUTCDate(end.getUTCDate() + 2);
+  const url = 'https://api.gdeltproject.org/api/v2/doc/doc'
+    + `?query=${encodeURIComponent(`"${placeName}"`)}`
+    + '&mode=artlist&format=json&maxrecords=50&sort=hybridrel'
+    + `&startdatetime=${stamp(start)}&enddatetime=${stamp(end)}`;
+
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), 20_000);
+  let articles;
+  try {
+    const res = await fetchImpl(url, { signal: ctrl.signal, headers: { 'user-agent': 'Mozilla/5.0 conflict-globe' } });
+    if (!res.ok) throw new Error(`GDELT HTTP ${res.status}`);
+    const body = await res.text();
+    if (!body.trim().startsWith('{')) throw new Error('GDELT returned a non-JSON body');   // its errors are plain text with HTTP 200
+    articles = JSON.parse(body).articles || [];
+  } finally {
+    clearTimeout(t);
+  }
+
+  for (const a of articles) {
+    const titleWords = significantWords(a.title || '');
+    const shared = [...nouns].filter(w => titleWords.has(w));
+    if (shared.length >= 2) return { url: a.url, title: a.title, domain: a.domain, shared };
+  }
+  return false;
 }
 
 // Merge new event entries for one curated marker into the ones already stored:
@@ -384,9 +573,13 @@ function mergeMarkerEvents(prevList, newList, gaz, markerName) {
       sentence: e.sentence,
       excerpt: e.excerpt,
       parsed: parseSentence(e.sentence, placesNamed(e.sentence, gaz)),
+      ...(e.status ? { status: e.status, statusChanged: e.statusChanged, statusEvidence: e.statusEvidence || [] } : {}),
       ...(Array.isArray(e.corroboration) && e.corroboration.length ? { corroboration: e.corroboration } : {}),
     }));
-  return dedupeEvents(raw).slice(0, EVENTS_CAP);
+  // fold near-duplicates, then run the (idempotent) corroboration promotion
+  return dedupeEvents(raw)
+    .slice(0, EVENTS_CAP)
+    .map(e => applyCorroboration(e));
 }
 
 // Split a post into sentences and return the one covering character `offset`.
@@ -760,9 +953,33 @@ async function main() {
     const deduped = mergeMarkerEvents(prevEvents[marker], newEvents[marker], gaz, marker);
     if (deduped.length) outEvents[marker] = deduped;
   }
+
+  // Expiry: an event still 'reported' after 14 days moves to expired-events.json.
+  // Nothing is deleted. (Corroboration ran inside mergeMarkerEvents; the GDELT
+  // cross-check is heavier and lives in scripts/confidence-ladder.mjs.)
+  let expiredDoc = { expired: [] };
+  if (existsSync(EXPIRED_PATH)) {
+    try { expiredDoc = JSON.parse(await readFile(EXPIRED_PATH, 'utf8')); expiredDoc.expired ||= []; } catch {}
+  }
+  const seenExpired = new Set(expiredDoc.expired.map(e => e.url));
+  let expiredCount = 0;
+  for (const marker of Object.keys(outEvents)) {
+    const live = [];
+    for (const e of outEvents[marker]) {
+      if (isExpired(e) && !seenExpired.has(e.url)) {
+        expiredDoc.expired.push({ expiredOn: new Date().toISOString().slice(0, 10), reason: 'no corroboration within 14 days', marker, ...e });
+        seenExpired.add(e.url);
+        expiredCount++;
+      } else {
+        live.push(e);
+      }
+    }
+    if (live.length) outEvents[marker] = live; else delete outEvents[marker];
+  }
   doc.events[CONFLICT_ID] = outEvents;
   if (eventsDroppedNoWord || eventsDroppedSummary)
     console.log(`events: dropped ${eventsDroppedNoWord} with no event word in the sentence, ${eventsDroppedSummary} strike-summary (>=3 places)`);
+  if (expiredCount) console.log(`events: ${expiredCount} expired (still 'reported' after ${EVENT_EXPIRY_DAYS} days) -> ${EXPIRED_PATH}`);
 
   doc.generated = new Date().toISOString();
   doc.attribution ||= gaz.attribution;
@@ -802,6 +1019,7 @@ async function main() {
   if (!process.env.TG_DRY_RUN) {
     await writeFile(OUTPUT_PATH, JSON.stringify(doc, null, 2) + '\n');
     await writeFile(SEEN_PATH, JSON.stringify(seen, null, 2) + '\n');
+    if (expiredCount) await writeFile(EXPIRED_PATH, JSON.stringify(expiredDoc, null, 2) + '\n');
     console.log(`\nwrote ${OUTPUT_PATH} (${telegramOut.length} telegram places for ${CONFLICT_ID}) and ${SEEN_PATH}`);
   } else {
     console.log(`\n[dry run] would write ${telegramOut.length} telegram places`);
@@ -817,5 +1035,8 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 export {
   parseSentence, sentenceAt, placesNamed, loadGazetteer, EVENT_WORDS,
   parseChannel, matchPost, buildEventEntry, mergeMarkerEvents, metonymyReject,
+  namedOrigins, sourceType, independentSourceCount,
+  initLadder, applyCorroboration, isExpired, gdeltCorroborates, significantWords,
+  EVENT_EXPIRY_DAYS,
   CHANNELS, CONFLICT_ID, CONFLICTS_PATH, OUTPUT_PATH, GAZETTEER_PATH,
 };

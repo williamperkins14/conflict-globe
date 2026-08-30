@@ -17,6 +17,15 @@ name: Backfill Telegram events
 
 on:
   workflow_dispatch:
+    inputs:
+      job:
+        description: 'Which job to run'
+        required: true
+        default: 'backfill'
+        type: choice
+        options:
+          - backfill
+          - ladder
 
 permissions:
   contents: write
@@ -26,7 +35,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  backfill:
+  run:
     runs-on: ubuntu-latest
     timeout-minutes: 350
     steps:
@@ -41,18 +50,28 @@ jobs:
       # Step timeout sits below the job timeout so that, if the walk runs long,
       # this step fails but the checkpoint commit below still runs.
       - name: Backfill
+        if: inputs.job == 'backfill'
         timeout-minutes: 335
         run: node scripts/telegram-backfill.mjs
 
-      - name: Commit auto-locations.json and backfill-state.json
+      # --write is required because the ladder's default is a dry run: it is
+      # the only job here that can take events off the map, so committing to
+      # disk has to be asked for rather than assumed.
+      - name: Confidence ladder
+        if: inputs.job == 'ladder'
+        timeout-minutes: 60
+        run: node scripts/confidence-ladder.mjs --write
+
+      - name: Commit results
         if: always()
         run: |
-          if [ -z "$(git status --porcelain auto-locations.json scripts/backfill-state.json)" ]; then
+          FILES="auto-locations.json scripts/backfill-state.json expired-events.json"
+          if [ -z "$(git status --porcelain $FILES)" ]; then
             echo "Nothing changed. Nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add auto-locations.json scripts/backfill-state.json
-          git commit -m "Backfill: Telegram events (checkpoint)"
+          git add $FILES
+          git commit -m "${{ inputs.job }}: auto-locations update"
           git push

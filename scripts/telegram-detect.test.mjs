@@ -7,7 +7,10 @@
 // strike on Myla three sentences further down the same post.
 // ---------------------------------------------------------------------------
 
-import { parseSentence, sentenceAt, placesNamed, loadGazetteer, EVENT_WORDS, metonymyReject } from './telegram-detect.mjs';
+import {
+  parseSentence, sentenceAt, placesNamed, loadGazetteer, EVENT_WORDS, metonymyReject,
+  namedOrigins, independentSourceCount, initLadder, applyCorroboration, isExpired,
+} from './telegram-detect.mjs';
 
 const gaz = loadGazetteer();
 
@@ -83,6 +86,38 @@ check(metonymyReject('Explosions were heard in central Kyiv this morning.', 'Kyi
   '"explosions ... in central Kyiv" is kept (a real location)');
 check(metonymyReject("Firefighters put out a fire in Kyiv's Darnytsia district.", 'Kyiv').ok,
   '"Kyiv\'s Darnytsia district" is kept (possessive naming a place)');
+
+// --- confidence ladder ------------------------------------------------------
+check(namedOrigins('the Ukrainian General Staff says a depot was hit').has('Ukraine General Staff'),
+  'namedOrigins picks up "General Staff"');
+
+// two telegram channels, no shared named origin -> 2 independent sources
+check(independentSourceCount({
+  channel: 'noel_reports', text: 'A warehouse was hit in Belgorod, local channels report.',
+  corroboration: [{ channel: 'wartranslated', origins: [] }],
+}) === 2, 'two telegram channels with no shared origin count as 2');
+
+// same story, both relaying the General Staff -> 1 source
+check(independentSourceCount({
+  channel: 'noel_reports', text: 'The General Staff says a Pantsir was destroyed near Kletnya.',
+  corroboration: [{ channel: 'wartranslated', origins: ['Ukraine General Staff'] }],
+}) === 1, 'two channels relaying the same origin count as 1');
+
+// an event is never corroborated by its own channel
+check(independentSourceCount({
+  channel: 'noel_reports', text: 'Explosions in Belgorod.',
+  corroboration: [{ channel: 'noel_reports', origins: [] }],
+}) === 1, 'a repost by the same channel is not a second source');
+
+// corroboration promotes 'reported' -> 'corroborated'
+const evt = initLadder({ channel: 'noel_reports', at: '2026-08-20T10:00:00Z', sentence: 'A depot was hit in Belgorod.', text: 'A depot was hit in Belgorod, ASTRA reports.', corroboration: [{ channel: 'wartranslated', origins: ['governor'] }] });
+applyCorroboration(evt, new Date('2026-08-30'));
+check(evt.status === 'corroborated' && evt.statusEvidence.length === 1, 'applyCorroboration promotes and records evidence');
+
+// expiry only touches 'reported' events past 14 days
+check(isExpired({ status: 'reported', at: '2026-08-01T00:00:00Z' }, new Date('2026-08-30')), 'a 29-day-old reported event is expired');
+check(!isExpired({ status: 'corroborated', at: '2026-01-01T00:00:00Z' }, new Date('2026-08-30')), 'a corroborated event never expires');
+check(!isExpired({ status: 'reported', at: '2026-08-25T00:00:00Z' }, new Date('2026-08-30')), 'a 5-day-old reported event is not expired');
 
 console.log(failed ? `\n${failed} check(s) FAILED` : '\nall checks passed');
 process.exit(failed ? 1 : 0);

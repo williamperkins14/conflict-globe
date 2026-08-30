@@ -306,6 +306,14 @@
       color: rgba(255, 255, 255, 0.4);
     }
 
+    /* A 'reported' event is one source's words. Naming the channel inline
+       keeps the grammar honest: the channel is speaking, not the site. */
+    .ev-speaker {
+      font-style: normal;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
     .ev-chan {
       display: block;
       margin-top: 5px;
@@ -313,6 +321,20 @@
       letter-spacing: 0.04em;
       color: rgba(255, 255, 255, 0.4);
     }
+
+    /* Rung on the confidence ladder. */
+    .ev-status {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+    .ev-status-reported     { color: rgba(168, 85, 247, 0.95); border: 1px solid rgba(168, 85, 247, 0.45); }
+    .ev-status-corroborated { color: rgba(94, 201, 150, 0.95); border: 1px solid rgba(94, 201, 150, 0.45); }
+    .ev-status-confirmed    { color: rgba(255, 120, 110, 0.95); border: 1px solid rgba(255, 120, 110, 0.45); }
 
     .ev-item:hover .ev-line { color: #c99cff; }
 
@@ -1212,17 +1234,24 @@
           }).join('');
     }
 
-    // One report. A structured line when the parser filled the fields from
-    // the single sentence naming this place, and that sentence verbatim
-    // when it could not. The source sentence is shown underneath either
-    // way, so a summary can always be checked against what was posted.
+    // One report, rendered by its rung on the confidence ladder.
+    //   'reported'      -> one source. Shown in that source's own words,
+    //                      prefixed with the channel name so the grammar
+    //                      makes clear who is speaking, not the site.
+    //   'corroborated'+ -> a second independent source, or news pickup.
+    //                      Gets the structured line the parser produced,
+    //                      with the source sentence underneath to check it.
     function renderEvent(e) {
       const p = e.parsed;
       const safeUrl = /^https:\/\/t\.me\//.test(e.url) ? escapeHtml(e.url) : '#';
       const said = e.sentence || e.excerpt || '';
+      const status = e.status || 'reported';
+      const structured = (status === 'corroborated' || status === 'confirmed') && p;
+
+      const badge = '<span class="ev-status ev-status-' + status + '">' + status + '</span>';
 
       let head;
-      if (p) {
+      if (structured) {
         let line = '';
         if (p.weapon && p.targetType) line = cap(p.weapon) + ' strike on a ' + p.targetType;
         else if (p.weapon)            line = cap(p.weapon) + ' strike';
@@ -1232,13 +1261,16 @@
         head = '<span class="ev-line">' + escapeHtml(line) + '</span>'
              + '<span class="ev-said">' + escapeHtml(said) + '</span>';
       } else {
-        head = '<span class="ev-line ev-line-plain">' + escapeHtml(said) + '</span>';
+        head = '<span class="ev-line ev-line-plain">'
+             + '<span class="ev-speaker">' + escapeHtml(e.channel) + ':</span> '
+             + escapeHtml('“' + said + '”') + '</span>';
       }
 
       return '<a class="ev-item" href="' + safeUrl + '" target="_blank" rel="noopener">'
         + '<span class="ev-time">' + escapeHtml(String(e.at).slice(11, 16)) + '</span>'
         + '<span class="ev-body">' + head
-        + '<span class="ev-chan">' + escapeHtml(e.channel) + '</span>'
+        + '<span class="ev-chan">' + badge
+        + (structured ? ' &middot; ' + escapeHtml(e.channel) : '') + '</span>'
         + '</span></a>';
     }
 
