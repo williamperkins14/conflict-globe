@@ -321,6 +321,31 @@ const buildEventEntry = (s, post) => ({
   excerpt: clipExcerpt(s.excerpt),
 });
 
+// Metonymy filter. A place name is not always a place: "Moscow warned of
+// consequences" is the government, "a graphic of a missile over central Moscow"
+// is a picture. Before a match counts, the sentence has to use the name as a
+// LOCATION where something happened. Returns { ok } or { ok:false, reason }.
+const LOCATIVE_BEFORE = /\b(in|at|near|on|over|outside|across|into|towards?)\b[^.,;:!?()"']{0,22}$/i;
+const POSSESSIVE_PLACE = /^['’]s\s+\p{Lu}/u;
+// name immediately (allowing a short adverb) followed by a speech / policy verb
+const SPEECH_VERB = /^[,\s]*(?:(?:has|had|also|now|then|reportedly|however|again|since|repeatedly)\s+)*(says?|said|warn(?:s|ed|ing)?|announce[sd]?|denie[sd]|deny|claim(?:s|ed)?|threaten(?:s|ed|ing)?|agree[sd]?|refuse[sd]?|respond(?:s|ed)?|reject(?:s|ed)?|accuse[sd]?|urge[sd]?)\b/i;
+// the sentence is about a depiction or an intention, not an occurrence
+const DEPICTION = /\b(post(?:ed|ing) a|a graphic|footage of|responded to|responding to|says? it will|said it would|plans? to|planning to|threaten(?:ed|s)? to|intends? to|vow(?:ed|s)? to|pledg(?:ed|es) to|warn(?:s|ed|ing) of|warning that)\b/i;
+
+function metonymyReject(sentence, name) {
+  if (!sentence || !name) return { ok: true };
+  const re = new RegExp(`\\b${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'iu');
+  const m = re.exec(sentence);
+  if (!m) return { ok: true };                      // name not in this sentence; other filters handle it
+  const before = sentence.slice(0, m.index);
+  const after = sentence.slice(m.index + m[0].length);
+
+  if (DEPICTION.test(sentence)) return { ok: false, reason: 'depiction or stated intention, not an occurrence' };
+  if (SPEECH_VERB.test(after))  return { ok: false, reason: 'place is the subject of a speech/policy verb' };
+  if (LOCATIVE_BEFORE.test(before) || POSSESSIVE_PLACE.test(after)) return { ok: true };
+  return { ok: false, reason: 'bare occurrence — not written as a location' };
+}
+
 // Within one location, fold near-duplicate reports of the same event into a
 // single entry (keep the earliest) and list the rest as corroboration.
 function dedupeEvents(list) {
@@ -341,13 +366,15 @@ function dedupeEvents(list) {
 }
 
 // Merge new event entries for one curated marker into the ones already stored:
-// keep only entries with an isolated sentence that names a single occurrence
-// and fewer than three places, dedupe by URL, fold near-duplicates, cap the
-// list newest-first. Shared by the incremental detector and the backfill.
-function mergeMarkerEvents(prevList, newList, gaz) {
+// keep only entries with an isolated sentence that names a single occurrence,
+// fewer than three places, and the marker used as a location rather than as a
+// government or a picture; dedupe by URL, fold near-duplicates, cap the list
+// newest-first. Shared by the incremental detector and the backfill.
+function mergeMarkerEvents(prevList, newList, gaz, markerName) {
   const raw = [...(newList || []), ...(prevList || [])]
     .filter(e => e.sentence)
     .filter(e => EVENT_WORDS.test(e.sentence) && placesNamed(e.sentence, gaz).size < 3)
+    .filter(e => metonymyReject(e.sentence, markerName).ok)
     .filter((e, idx, arr) => arr.findIndex(x => x.url === e.url) === idx)
     .map(e => ({
       channel: e.channel,
@@ -506,6 +533,17 @@ function matchPost(post, gaz, bbox, curated) {
         const nearCurated = curated.find(c =>
           c.name.toLowerCase() === chosen.name.toLowerCase() ||
           haversineKm(chosen.lat, chosen.lng, c.lat, c.lng) < CURATED_SUPPRESS_KM);
+
+        // metonymy: "Moscow warned of consequences" is the government, not a
+        // place where something happened. This bites hardest on the big city
+        // names, which are exactly the curated markers, so apply it to the
+        // event path only. Judge against the name as it was matched.
+        if (nearCurated) {
+          const matchedText = tokens.slice(i, i + n).map(t => t.raw).join(' ');
+          const met = metonymyReject(sentence, matchedText);
+          if (!met.ok) { drops.push({ name: phrase, reason: met.reason }); break; }
+        }
+
         (nearCurated ? suppressed : matches).push({
           name: chosen.name, place: chosen, excerpt, sentence,
           ...(nearCurated ? { curated: nearCurated.name } : {}),
@@ -692,7 +730,7 @@ async function main() {
     ? doc.events[CONFLICT_ID] : {};
   const outEvents = {};
   for (const marker of new Set([...Object.keys(prevEvents), ...Object.keys(newEvents)])) {
-    const deduped = mergeMarkerEvents(prevEvents[marker], newEvents[marker], gaz);
+    const deduped = mergeMarkerEvents(prevEvents[marker], newEvents[marker], gaz, marker);
     if (deduped.length) outEvents[marker] = deduped;
   }
   doc.events[CONFLICT_ID] = outEvents;
@@ -751,6 +789,6 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 
 export {
   parseSentence, sentenceAt, placesNamed, loadGazetteer, EVENT_WORDS,
-  parseChannel, matchPost, buildEventEntry, mergeMarkerEvents,
+  parseChannel, matchPost, buildEventEntry, mergeMarkerEvents, metonymyReject,
   CHANNELS, CONFLICT_ID, CONFLICTS_PATH, OUTPUT_PATH, GAZETTEER_PATH,
 };

@@ -7,7 +7,7 @@
 // strike on Myla three sentences further down the same post.
 // ---------------------------------------------------------------------------
 
-import { parseSentence, sentenceAt, placesNamed, loadGazetteer, EVENT_WORDS } from './telegram-detect.mjs';
+import { parseSentence, sentenceAt, placesNamed, loadGazetteer, EVENT_WORDS, metonymyReject } from './telegram-detect.mjs';
 
 const gaz = loadGazetteer();
 
@@ -67,6 +67,18 @@ check(
   EVENT_WORDS.test('Yeysk airfield was hit overnight.'),
   'a real strike sentence still has an event word',
 );
+
+// --- metonymy filter: the place name has to mean the place -------------------
+check(!metonymyReject('despite Moscow warning of consequences', 'Moscow').ok,
+  '"Moscow warning of consequences" is rejected (the government)');
+check(!metonymyReject('posting a graphic of a missile over central Moscow', 'Moscow').ok,
+  '"posting a graphic ... over central Moscow" is rejected (a picture)');
+check(!metonymyReject('Kyiv says it will retaliate.', 'Kyiv').ok,
+  '"Kyiv says it will ..." is rejected (speech + intention)');
+check(metonymyReject('Explosions were heard in central Kyiv this morning.', 'Kyiv').ok,
+  '"explosions ... in central Kyiv" is kept (a real location)');
+check(metonymyReject("Firefighters put out a fire in Kyiv's Darnytsia district.", 'Kyiv').ok,
+  '"Kyiv\'s Darnytsia district" is kept (possessive naming a place)');
 
 console.log(failed ? `\n${failed} check(s) FAILED` : '\nall checks passed');
 process.exit(failed ? 1 : 0);
