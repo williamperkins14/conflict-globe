@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T12:54:50.048Z",
+  "generated": "2026-08-30T18:02:55.657Z",
   "conflicts": {
     "ukraine": [
       {
@@ -587,9 +587,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 38,
+        "count": 18,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-29"
+        "lastSeen": "2026-08-30"
       },
       {
         "name": "Kuwait",
@@ -600,20 +600,28 @@
         "lastSeen": "2026-08-28"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-29"
-      },
-      {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-30"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-30"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
         "count": 4,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-29"
+        "lastSeen": "2026-08-30"
       },
       {
         "name": "Bahrain",
@@ -624,115 +632,21 @@
         "lastSeen": "2026-08-29"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
+        "name": "Basij, Fars, Iran",
+        "lat": 30.608,
+        "lng": 53.1874,
         "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-29"
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-08-30"
+      },
+      {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 3,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-08-30"
       }
     ]
-  },
-  "attribution": "Place data (c) GeoNames, CC BY 4.0 - https://www.geonames.org/",
-  "events": {
-    "ukraine": {
-      "Kyiv": [
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/18463",
-          "at": "2026-08-30T12:52:05Z",
-          "excerpt": "…rth day straight. Firefighters put out a 3,000 sq m fire in Holosiivskyi district this morning. No casualties. Russian jet-powered Shaheds target Kyiv along th…",
-          "parsed": null
-        },
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/18461",
-          "at": "2026-08-30T12:17:21Z",
-          "excerpt": "…rth day straight. Firefighters put out a 3,000 sq m fire in Holosiivskyi district this morning. No casualties.",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51912",
-          "at": "2026-08-30T09:12:27Z",
-          "excerpt": "…nsky says 38 people were killed by Russia's strike on Myla, Kyiv region, and subsequent detonations. Another 20 people, including 2 children, we…",
-          "parsed": null
-        },
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/18446",
-          "at": "2026-08-30T08:39:13Z",
-          "excerpt": "A large fire broke out near the Zhytomyr highway outside Kyiv, reportedly after a Russian drone attack. 0:12 This media is not supporte…",
-          "parsed": null
-        }
-      ],
-      "Moscow": [
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/18462",
-          "at": "2026-08-30T12:42:06Z",
-          "excerpt": "1,455 drones targeted the Moscow region over the past week, Mayor Sobyanin says.",
-          "parsed": {
-            "weapon": "drone",
-            "target": "Moscow",
-            "targetType": null,
-            "casualties": null
-          }
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51911",
-          "at": "2026-08-30T09:09:53Z",
-          "excerpt": "…between Trump, Putin and Zelensky during his covert trip to Moscow this week, Axios reports, citing two sources briefed on the talks. Ratcliffe me…",
-          "parsed": null
-        }
-      ],
-      "Donetsk": [
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/18460",
-          "at": "2026-08-30T12:02:38Z",
-          "excerpt": "…n Khmara's key points, per reporters. Russia's goal is not Donetsk or Luhansk alone. It wants all of Ukraine, and for Ukraine this war is existent…",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51918",
-          "at": "2026-08-30T10:36:31Z",
-          "excerpt": "…Chumatske, command posts in Sukhodilsk, logistics depots in Donetsk region and occupied Crimea, an ammunition depot in Kadiivka and a radar in Brya…",
-          "parsed": null
-        },
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/18449",
-          "at": "2026-08-30T10:00:44Z",
-          "excerpt": "…Ukrainian Army Aviation Mi-17 helicopter in the air on the Donetsk front. Looks like a 1:0.",
-          "parsed": null
-        },
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/18448",
-          "at": "2026-08-30T09:50:07Z",
-          "excerpt": "…Ukrainian Army Aviation Mi-17 helicopter in the air on the Donetsk front.",
-          "parsed": null
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51917",
-          "at": "2026-08-30T09:49:29Z",
-          "excerpt": "…e narrowly missed a Ukrainian Air Force Mi-17 helicopter in Donetsk region, passing just a meter from the aircraft while the helicopter was firing…",
-          "parsed": null
-        }
-      ],
-      "Pokrovsk": [
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51918",
-          "at": "2026-08-30T10:36:31Z",
-          "excerpt": "…bikon drone warehouse in Khartsyzk, a UAV command post near Chumatske, command posts in Sukhodilsk, logistics depots in Donetsk region and occupied C…",
-          "parsed": null
-        }
-      ]
-    }
   }
 }
