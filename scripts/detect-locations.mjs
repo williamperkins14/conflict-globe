@@ -383,6 +383,11 @@ async function main() {
   const started = Date.now();
   const conflicts = JSON.parse(await readFile(CONFLICTS_PATH, 'utf8'));
 
+  // This script owns exactly two top-level keys: `generated` and `conflicts`.
+  // Everything else in the file belongs to another writer — `events` is the
+  // Telegram detector's layer (scripts/telegram-detect.mjs) — so read the whole
+  // object and carry every key we do not own through untouched. Rebuilding the
+  // file from just our two keys wiped all 130 Telegram events on 30 Aug 2026.
   const firstRun = !existsSync(OUTPUT_PATH);
   let previous = { generated: null, conflicts: {} };
   if (!firstRun) {
@@ -468,9 +473,10 @@ async function main() {
   console.log(`==============================`);
 
   if (write) {
-    await writeFile(OUTPUT_PATH,
-      JSON.stringify({ generated: new Date().toISOString(), conflicts: nextConflicts }, null, 2) + '\n',
-      'utf8');
+    // Spread `previous` first so any key we do not own (e.g. the Telegram
+    // detector's `events`) survives; then overwrite our own two keys.
+    const merged = { ...previous, generated: new Date().toISOString(), conflicts: nextConflicts };
+    await writeFile(OUTPUT_PATH, JSON.stringify(merged, null, 2) + '\n', 'utf8');
     console.log(`Wrote ${OUTPUT_PATH}`);
   } else {
     console.log(`${OUTPUT_PATH} left untouched`);
