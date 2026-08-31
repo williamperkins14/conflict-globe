@@ -502,8 +502,32 @@ function applyCorroboration(event, now = new Date()) {
 function dedupeEvents(list) {
   const kept = [];
   for (const ev of list.slice().sort((a, b) => (a.at || '').localeCompare(b.at || ''))) {
-    const sig = significantWords(ev.text || ev.excerpt || '');
-    const dup = kept.find(k => wordOverlap(sig, k._sig) > 0.6);
+    // Compare the ISOLATED SENTENCE, not the whole post.
+    //
+    // Two channels reporting the same strike write entirely different posts —
+    // different framing, different surrounding stories, and in intelslava's
+    // case a flag-emoji header. Full-post overlap between them almost never
+    // reaches 0.6, so genuinely identical events sat in the data as strangers:
+    //
+    //   "An explosion hit the Balzi Rossi restaurant in central Moscow."
+    //   "🇷🇺⚡️ — An explosion occurred at the Balzi Rossi restaurant near the
+    //    Barrikadnaya metro station"
+    //
+    // The sentence is the unit that actually describes the event, so it is the
+    // unit to compare. Measured on 282 stored events: 21 further merges, 3 of
+    // them across opposing sides.
+    //
+    // Two guards, because short sentences make the ratio noisy: at least four
+    // significant words on each side, and at least three of them shared. A
+    // bare ratio would let "Explosions in Belgorod." match almost anything.
+    const sig = significantWords(ev.sentence || '');
+    const dup = kept.find(k => {
+      if (sig.size < 4 || k._sig.size < 4) return false;
+      let shared = 0;
+      for (const w of sig) if (k._sig.has(w)) shared++;
+      if (shared < 3) return false;
+      return wordOverlap(sig, k._sig) > 0.6;
+    });
     if (dup) {
       dup.corroboration ||= [];
       const add = c => {
@@ -1208,7 +1232,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
 
 export {
   parseSentence, sentenceAt, placesNamed, loadGazetteer, EVENT_WORDS,
-  parseChannel, matchPost, buildEventEntry, mergeMarkerEvents, metonymyReject,
+  parseChannel, matchPost, dedupeEvents, buildEventEntry, mergeMarkerEvents, metonymyReject,
   namedOrigins, sourceType, independentSourceCount,
   initLadder, applyCorroboration, isExpired, gdeltCorroborates, significantWords,
   gdeltArticlesFor, gdeltMatchInArticles, corroborationReason,

@@ -1150,23 +1150,6 @@
           "statusEvidence": []
         },
         {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51393",
-          "at": "2026-08-20T08:08:25Z",
-          "text": "Russia's overnight attack on Kyiv killed 12 people and injured more than 30, according to Mayor Vitali Klitschko. Eight of those killed were residents of the Solomianskyi district, which suffered the highest death toll in the capital.",
-          "sentence": "Russia's overnight attack on Kyiv killed 12 people and injured more than 30, according to Mayor Vitali Klitschko.",
-          "excerpt": "Russia's overnight attack on Kyiv killed 12 people and injured more than 30, according to Mayor Vitali Klitschko.…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": null,
-            "casualties": "12 injured, 12 killed"
-          },
-          "status": "reported",
-          "statusChanged": "2026-08-20",
-          "statusEvidence": []
-        },
-        {
           "channel": "intelslava",
           "url": "https://t.me/intelslava/92839",
           "at": "2026-08-19T21:42:02Z",
@@ -1244,24 +1227,8 @@
           },
           "status": "reported",
           "statusChanged": "2026-08-05",
-          "statusEvidence": []
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50594",
-          "at": "2026-08-05T07:15:05Z",
-          "text": "Russia's attack on Kyiv and the surrounding region killed 2 people and injured at least 28, according to emergency officials. Large fires hit warehouses, logistics hubs, businesses, retail sites and industrial facilities across Kyiv and the Brovary, Fastiv and Bucha districts. In Kyiv, fires and damage were reported in the Obolonskyi, Sviatoshynskyi, Holosiivskyi and Desnianskyi districts, while a minor ammonia leak at an industrial site was contained.",
-          "sentence": "Russia's attack on Kyiv and the surrounding region killed 2 people and injured at least 28, according to emergency officials.",
-          "excerpt": "Russia's attack on Kyiv and the surrounding region killed 2 people and injured at least 28, according t…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": null,
-            "casualties": "2 injured, 2 killed"
-          },
-          "status": "reported",
-          "statusChanged": "2026-08-05",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": []
         },
         {
           "channel": "noel_reports",
@@ -1282,18 +1249,6 @@
           "text": "Russian milbloggers say there are no serious military targets in Kyiv, and the strikes are mostly for show to pressure civilians until they break and demand a \"deal\".",
           "sentence": "Russian milbloggers say there are no serious military targets in Kyiv, and the strikes are mostly for show to pressure civilians until they break and demand a \"deal\".",
           "excerpt": "…an milbloggers say there are no serious military targets in Kyiv, and the strikes are mostly for show to pressure civilians until they break and…",
-          "parsed": null,
-          "status": "reported",
-          "statusChanged": "2026-08-01",
-          "statusEvidence": []
-        },
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/17762",
-          "at": "2026-08-01T07:34:31Z",
-          "text": "Russia hit Ukraine overnight with 35 missiles and 185 drones. Air defense shot down 2 missiles and 154 drones. Kyiv was the main target.\n\n0:11\n\n    This media is not supported in your browser\n    VIEW IN TELEGRAM\n\nThick smoke over Kyiv after last night's attack.",
-          "sentence": "Thick smoke over Kyiv after last night's attack.",
-          "excerpt": "…rted in your browser VIEW IN TELEGRAM Thick smoke over Kyiv after last night's attack.",
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-08-01",
@@ -1375,23 +1330,6 @@
           "statusEvidence": []
         },
         {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49613",
-          "at": "2026-07-19T09:28:38Z",
-          "text": "A Russian missile strike completely destroyed UKRTAC’s factory and warehouses in Kyiv, the company’s founder said. A logistics complex of more than 100,000 m² storing parcels, medicines, and humanitarian aid was also destroyed. All employees survived.",
-          "sentence": "A Russian missile strike completely destroyed UKRTAC’s factory and warehouses in Kyiv, the company’s founder said.",
-          "excerpt": "…ike completely destroyed UKRTAC’s factory and warehouses in Kyiv, the company’s founder said. A logistics complex of more than 100,000 m² storin…",
-          "parsed": {
-            "weapon": "missile",
-            "target": "UKRTAC",
-            "targetType": "warehouse",
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-07-19",
-          "statusEvidence": []
-        },
-        {
           "channel": "wartranslated",
           "url": "https://t.me/wartranslated/17464",
           "at": "2026-07-19T09:23:52Z",
@@ -1406,7 +1344,14 @@
           },
           "status": "reported",
           "statusChanged": "2026-07-19",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": [
+            {
+              "channel": "noel_reports",
+              "url": "https://t.me/noel_reports/49613",
+              "origins": []
+            }
+          ]
         },
         {
           "channel": "noel_reports",
@@ -1455,18 +1400,6 @@
           "statusEvidence": []
         },
         {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49472",
-          "at": "2026-07-17T12:37:38Z",
-          "text": "❗️The EU has approved sanctions for the first time in response to Russia’s deadly July 1-2 strikes on Kyiv and its campaign against civilian infrastructure. The measures target five companies from the ABS Electro group that produce electronic components for drones, including modules designed to improve Shahed drones’ resistance to jamming. Board chair Irina Kharisova was also sanctioned with an EU asset freeze and travel ban.",
-          "sentence": "❗️The EU has approved sanctions for the first time in response to Russia’s deadly July 1-2 strikes on Kyiv and its campaign against civilian infrastructure.",
-          "excerpt": "…rst time in response to Russia’s deadly July 1-2 strikes on Kyiv and its campaign against civilian infrastructure. The measures target five comp…",
-          "parsed": null,
-          "status": "reported",
-          "statusChanged": "2026-07-17",
-          "statusEvidence": []
-        },
-        {
           "channel": "wartranslated",
           "url": "https://t.me/wartranslated/17423",
           "at": "2026-07-17T12:31:13Z",
@@ -1476,24 +1409,14 @@
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-07-17",
-          "statusEvidence": []
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49404",
-          "at": "2026-07-15T22:09:36Z",
-          "text": "Russia launched S-400 ballistic missiles at Kyiv in two waves. Explosions were heard across the capital, with both impacts and interceptions recorded before the airspace was declared clear.",
-          "sentence": "Russia launched S-400 ballistic missiles at Kyiv in two waves.",
-          "excerpt": "Russia launched S-400 ballistic missiles at Kyiv in two waves. Explosions were heard across the capital, with both impacts and i…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": "air defence system",
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-07-15",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": [
+            {
+              "channel": "noel_reports",
+              "url": "https://t.me/noel_reports/49472",
+              "origins": []
+            }
+          ]
         },
         {
           "channel": "noel_reports",
@@ -1554,23 +1477,6 @@
           "sentence": "During the latest Russian attack, a shelter in Vyshneve burned down completely.",
           "excerpt": "During the latest Russian attack, a shelter in Vyshneve burned down completely. If the family had been hiding inside, they wouldn't hav…",
           "parsed": null,
-          "status": "reported",
-          "statusChanged": "2026-07-08",
-          "statusEvidence": []
-        },
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/17225",
-          "at": "2026-07-08T15:54:46Z",
-          "text": "The moment a jet-powered drone struck a high-rise building in Kyiv.",
-          "sentence": "The moment a jet-powered drone struck a high-rise building in Kyiv.",
-          "excerpt": "…e moment a jet-powered drone struck a high-rise building in Kyiv.",
-          "parsed": {
-            "weapon": "drone",
-            "target": "high-rise building",
-            "targetType": null,
-            "casualties": null
-          },
           "status": "reported",
           "statusChanged": "2026-07-08",
           "statusEvidence": []
@@ -1658,23 +1564,6 @@
           "statusEvidence": []
         },
         {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48919",
-          "at": "2026-07-06T06:18:26Z",
-          "text": "Russian forces launched a large-scale overnight missile and drone attack on Kyiv, killing at least 11 people and injuring 46, according to city authorities. Residential buildings in the Podil and Darnytskyi districts sustained heavy damage, including the partial collapse of a nine-story building. Search and rescue operations are underway at more than 20 locations as crews continue looking for people trapped under the rubble.",
-          "sentence": "Russian forces launched a large-scale overnight missile and drone attack on Kyiv, killing at least 11 people and injuring 46, according to city authorities.",
-          "excerpt": "…aunched a large-scale overnight missile and drone attack on Kyiv, killing at least 11 people and injuring 46, according to city authorities. Res…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-07-06",
-          "statusEvidence": []
-        },
-        {
           "channel": "intelslava",
           "url": "https://t.me/intelslava/89804",
           "at": "2026-07-06T00:54:15Z",
@@ -1730,19 +1619,8 @@
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-07-02",
-          "statusEvidence": []
-        },
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/17073",
-          "at": "2026-07-02T21:32:48Z",
-          "text": "The death toll in Kyiv has climbed to 25. Rescue teams are still clearing rubble and searching for people at one of the sites. Five victims have been found here alone, and eight more are missing.\n\nIn Kyiv, the death toll from the Russian attack has risen to 27. One of the injured, who was in a critical condition, has died in hospital. As of now, there are reports of a further 91 people injured.",
-          "sentence": "In Kyiv, the death toll from the Russian attack has risen to 27.",
-          "excerpt": "…have been found here alone, and eight more are missing. In Kyiv, the death toll from the Russian attack has risen to 27. One of the injured, wh…",
-          "parsed": null,
-          "status": "reported",
-          "statusChanged": "2026-07-02",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": []
         },
         {
           "channel": "noel_reports",
@@ -1783,7 +1661,8 @@
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-07-02",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": []
         },
         {
           "channel": "wartranslated",
@@ -1829,7 +1708,8 @@
           },
           "status": "reported",
           "statusChanged": "2026-07-02",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": []
         },
         {
           "channel": "noel_reports",
@@ -1863,7 +1743,8 @@
           },
           "status": "reported",
           "statusChanged": "2026-06-25",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": []
         },
         {
           "channel": "noel_reports",
@@ -1904,7 +1785,8 @@
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-06-15",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": []
         },
         {
           "channel": "noel_reports",
@@ -1985,23 +1867,6 @@
             "weapon": null,
             "target": null,
             "targetType": "sorting centre",
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-08-30",
-          "statusEvidence": []
-        },
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/18471",
-          "at": "2026-08-30T14:37:51Z",
-          "text": "Early reports say a thermal power plant was hit in Belgorod. Also word of a possible strike on an Ozon warehouse there.",
-          "sentence": "Early reports say a thermal power plant was hit in Belgorod.",
-          "excerpt": "Early reports say a thermal power plant was hit in Belgorod. Also word of a possible strike on an Ozon warehouse there.",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": "thermal power plant",
             "casualties": null
           },
           "status": "reported",
@@ -2165,23 +2030,6 @@
         },
         {
           "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/17115",
-          "at": "2026-07-03T20:54:44Z",
-          "text": "A power substation and the Luch thermal power plant in Belgorod are under missile strike right now.",
-          "sentence": "A power substation and the Luch thermal power plant in Belgorod are under missile strike right now.",
-          "excerpt": "A power substation and the Luch thermal power plant in Belgorod are under missile strike right now.",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": "thermal power plant",
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-07-03",
-          "statusEvidence": []
-        },
-        {
-          "channel": "wartranslated",
           "url": "https://t.me/wartranslated/17077",
           "at": "2026-07-03T06:48:50Z",
           "text": "The Michurinska thermal power plant in Belgorod was struck this morning. Locals reporting power outages.",
@@ -2195,7 +2043,8 @@
           },
           "status": "reported",
           "statusChanged": "2026-07-03",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": []
         },
         {
           "channel": "noel_reports",
@@ -2378,23 +2227,6 @@
           "statusEvidence": []
         },
         {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47334",
-          "at": "2026-06-05T19:56:53Z",
-          "text": "Ukraine’s Defense Forces struck a Russian Molniya attack drone launch and aerial reconnaissance site in central Pokrovsk. The site was used for drone launches and air surveillance as Russian forces tried to build up troops in the city.",
-          "sentence": "Ukraine’s Defense Forces struck a Russian Molniya attack drone launch and aerial reconnaissance site in central Pokrovsk.",
-          "excerpt": "…tack drone launch and aerial reconnaissance site in central Pokrovsk. The site was used for drone launches and air surveillance as Russian forces tri…",
-          "parsed": {
-            "weapon": null,
-            "target": "Molniya attack",
-            "targetType": null,
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-06-05",
-          "statusEvidence": []
-        },
-        {
           "channel": "wartranslated",
           "url": "https://t.me/wartranslated/16321",
           "at": "2026-06-05T16:16:28Z",
@@ -2404,27 +2236,17 @@
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-06-05",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": [
+            {
+              "channel": "noel_reports",
+              "url": "https://t.me/noel_reports/47334",
+              "origins": []
+            }
+          ]
         }
       ],
       "Moscow": [
-        {
-          "channel": "intelslava",
-          "url": "https://t.me/intelslava/93495",
-          "at": "2026-08-30T00:01:03Z",
-          "text": "⚡🇺🇦🇷🇺 Ukraine has launched at least 500 drones toward Russia. First reports of drones being shot down near Moscow.\n\nFor a moment it seemed that the Russian attack on Kiev had ended, but it is still ongoing.\n\nOther regions and cities of Ukraine are also being attacked, including Odesa, with the use of missiles and drones.",
-          "sentence": "First reports of drones being shot down near Moscow.",
-          "excerpt": "…toward Russia. First reports of drones being shot down near Moscow. For a moment it seemed that the Russian attack on Kiev had ended, but it is st…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-08-30",
-          "statusEvidence": []
-        },
         {
           "channel": "wartranslated",
           "url": "https://t.me/wartranslated/18336",
@@ -2491,47 +2313,6 @@
           "statusEvidence": []
         },
         {
-          "channel": "intelslava",
-          "url": "https://t.me/intelslava/91896",
-          "at": "2026-08-01T20:56:54Z",
-          "text": "🇺🇦🇷🇺⚡️ —  A bomb with a 1 kg TNT equivalent, filled with metal balls, exploded at the entrance to a restaurant - Media reports.  The target of the explosion near Balzi Rossi in central Moscow was a group of guests gathered for a private event on the restaurant's…\n\nAccording to my information, there was a plan to assassinate one of the commanders of the Aerospace Forces. However, his relatives were the ones who died.\n\nAnd the package was delivered by a woman from Central Asia.\n\n@Intelslava",
-          "sentence": "The target of the explosion near Balzi Rossi in central Moscow was a group of guests gathered for a private event on the restaurant's…",
-          "excerpt": "…s. The target of the explosion near Balzi Rossi in central Moscow was a group of guests gathered for a private event on the restaurant's… Accord…",
-          "parsed": null,
-          "status": "reported",
-          "statusChanged": "2026-08-01",
-          "statusEvidence": []
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50392",
-          "at": "2026-08-01T18:40:12Z",
-          "text": "Russian channels claimed the Balzi Rossi restaurant, where an explosion killed 3 people and injured 15 in central Moscow, was hosting members of Russia's elite. Some Russian media reported the event was a general's birthday celebration. These claims remain…\n\nRussian media claimed that Russian Aerospace Forces commander Alexander Chaiko was celebrating his birthday at the Moscow restaurant where an explosion killed 3 people and injured 15. Chaiko commanded Russia's Eastern grouping in 2022.",
-          "sentence": "Russian channels claimed the Balzi Rossi restaurant, where an explosion killed 3 people and injured 15 in central Moscow, was hosting members of Russia's elite.",
-          "excerpt": "…here an explosion killed 3 people and injured 15 in central Moscow, was hosting members of Russia's elite. Some Russian media reported the event w…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": null,
-            "casualties": "3 injured, 3 killed"
-          },
-          "status": "reported",
-          "statusChanged": "2026-08-01",
-          "statusEvidence": []
-        },
-        {
-          "channel": "intelslava",
-          "url": "https://t.me/intelslava/91892",
-          "at": "2026-08-01T17:54:41Z",
-          "text": "🇷🇺⚡️ — An explosion occurred at the Balzi Rossi restaurant near the Barrikadnaya metro station in Moscow.\n\n▶️ According to preliminary media reports, about 20 people were injured, and at least one person has died\n\n▶️ A fire broke out in the building following the explosion. Dozens of ambulances and fire crews have arrived at the scene, and traffic in the area has been blocked.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
-          "sentence": "🇷🇺⚡️ — An explosion occurred at the Balzi Rossi restaurant near the Barrikadnaya metro station in Moscow.",
-          "excerpt": "…lzi Rossi restaurant near the Barrikadnaya metro station in Moscow. ▶️ According to preliminary media reports, about 20 people were injured, and a…",
-          "parsed": null,
-          "status": "reported",
-          "statusChanged": "2026-08-01",
-          "statusEvidence": []
-        },
-        {
           "channel": "wartranslated",
           "url": "https://t.me/wartranslated/17786",
           "at": "2026-08-01T17:46:00Z",
@@ -2584,6 +2365,21 @@
               "channel": "intelslava",
               "url": "https://t.me/intelslava/91895",
               "origins": []
+            },
+            {
+              "channel": "intelslava",
+              "url": "https://t.me/intelslava/91892",
+              "origins": []
+            },
+            {
+              "channel": "noel_reports",
+              "url": "https://t.me/noel_reports/50392",
+              "origins": []
+            },
+            {
+              "channel": "intelslava",
+              "url": "https://t.me/intelslava/91896",
+              "origins": []
             }
           ]
         },
@@ -2615,23 +2411,6 @@
             "weapon": null,
             "target": null,
             "targetType": "logistics hub",
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-07-20",
-          "statusEvidence": []
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49665",
-          "at": "2026-07-20T08:32:28Z",
-          "text": "Ukrainian drones struck Podolsk near Moscow overnight, setting a fuel depot on fire. Local reports said the Wildberries logistics hub in the area was also hit. Moscow Mayor Sergei Sobyanin said ~400 drones had been launched toward the Moscow region overnight.",
-          "sentence": "Ukrainian drones struck Podolsk near Moscow overnight, setting a fuel depot on fire.",
-          "excerpt": "Ukrainian drones struck Podolsk near Moscow overnight, setting a fuel depot on fire. Local reports said the Wildberries log…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": "fuel depot",
             "casualties": null
           },
           "status": "reported",
@@ -2841,23 +2620,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/48063",
-          "at": "2026-06-20T09:39:49Z",
-          "text": "Satellite imagery confirms damage at the Moscow Oil Refinery following recent Ukrainian strikes. Firefighting vehicle tracks are visible near most key processing units, while local assessments indicate the refinery has halted operations. The nearby Sadovod shopping center was also damaged by falling drone debris.",
-          "sentence": "Satellite imagery confirms damage at the Moscow Oil Refinery following recent Ukrainian strikes.",
-          "excerpt": "Satellite imagery confirms damage at the Moscow Oil Refinery following recent Ukrainian strikes. Firefighting vehicle tracks ar…",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": "refinery",
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-06-20",
-          "statusEvidence": []
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/48060",
           "at": "2026-06-20T08:41:02Z",
           "text": "Satellite imagery from June 19 shows fresh damage at the Moscow refinery. At least two tanks burned out completely, another was heavily damaged, and two more show visible signs of fire or impact. A bitumen production area, including the loading rack for bitumen trucks, was also likely partly burned, while technical racks suffered serious damage.",
@@ -2871,7 +2633,8 @@
           },
           "status": "reported",
           "statusChanged": "2026-06-20",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": []
         },
         {
           "channel": "wartranslated",
@@ -3181,7 +2944,8 @@
           },
           "status": "reported",
           "statusChanged": "2026-06-16",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": []
         },
         {
           "channel": "intelslava",
@@ -3254,23 +3018,6 @@
         }
       ],
       "Mariupol": [
-        {
-          "channel": "wartranslated",
-          "url": "https://t.me/wartranslated/17892",
-          "at": "2026-08-06T21:56:39Z",
-          "text": "A fire is reported at the \"Misto 11\" substation in Mariupol. 4 hits have been recorded.",
-          "sentence": "A fire is reported at the \"Misto 11\" substation in Mariupol.",
-          "excerpt": "A fire is reported at the \"Misto 11\" substation in Mariupol. 4 hits have been recorded.",
-          "parsed": {
-            "weapon": null,
-            "target": null,
-            "targetType": "substation",
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-08-06",
-          "statusEvidence": []
-        },
         {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50704",
@@ -3480,7 +3227,14 @@
           },
           "status": "reported",
           "statusChanged": "2026-06-07",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": [
+            {
+              "channel": "wartranslated",
+              "url": "https://t.me/wartranslated/17892",
+              "origins": []
+            }
+          ]
         },
         {
           "channel": "noel_reports",
@@ -3677,23 +3431,6 @@
           "statusEvidence": []
         },
         {
-          "channel": "intelslava",
-          "url": "https://t.me/intelslava/93319",
-          "at": "2026-08-27T08:45:33Z",
-          "text": "Ukraine carried out a large-scale, combined missile strike on Donetsk today, using a mix of FP-5 Flamingo cruise missiles, Storm Shadow/SCALP-EG cruise missiles, and potentially another unidentified munition. Two separate targets were struck.\n\nSix missiles hit an underground parking facility at an unfinished residential complex, while another seven struck an industrial building. Ukrainian channels claim both locations were being used to store large quantities of military equipment, including missile and rocket launchers, armored vehicles, and personnel.\n\nSeveral fragments with folded wings, typically associated with glide bombs and jet-powered stand-off munitions, were recovered. Based on the surviving markings, at least some of the munitions used in the strike have been identified as Storm Shadow/SCALP-EG cruise missiles.\n\nOne fragment bears a manufacturer’s plate marked MBDA FRANCE, along with the manufacturer code F0555. Another fragment contains a toothed mechanism, serial number 10625, and the date 20.08.2024. This is likely part of the mechanism used to deploy or control the missile’s wing.\n\nAs for the unidentified munition, one possibility is a weapon developed under the U.S. Extended-Range Attack Missile (ERAM) program. However, no confirmed photographs of an intact ERAM missile have emerged so far, making this identification highly speculative.\n\nAnother possibility is the AGM-158A JASSM air-launched cruise missile.",
-          "sentence": "Ukraine carried out a large-scale, combined missile strike on Donetsk today, using a mix of FP-5 Flamingo cruise missiles, Storm Shadow/SCALP-EG cruise missiles, and potentially another unidentified munition.",
-          "excerpt": "…raine carried out a large-scale, combined missile strike on Donetsk today, using a mix of FP-5 Flamingo cruise missiles, Storm Shadow/SCALP-EG crui…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-08-27",
-          "statusEvidence": []
-        },
-        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51751",
           "at": "2026-08-26T20:02:35Z",
@@ -3706,26 +3443,38 @@
             "targetType": null,
             "casualties": null
           },
-          "status": "reported",
-          "statusChanged": "2026-08-26",
-          "statusEvidence": []
-        },
-        {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/51748",
-          "at": "2026-08-26T19:53:43Z",
-          "text": "Aftermath in occupied Donetsk shows extensive damage after a missile and drone strike. Local reports say about 13 impacts hit Russian military sites, including a former research institute, used as a troop deployment site and headquarters. An underground parking complex reportedly used to shelter launchers and armored vehicles was hit by at least 6 missiles.",
-          "sentence": "Aftermath in occupied Donetsk shows extensive damage after a missile and drone strike.",
-          "excerpt": "Aftermath in occupied Donetsk shows extensive damage after a missile and drone strike. Local reports say abou…",
-          "parsed": {
-            "weapon": "missile",
-            "target": null,
-            "targetType": null,
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-08-26",
-          "statusEvidence": []
+          "status": "corroborated",
+          "statusChanged": "2026-08-31",
+          "statusEvidence": [
+            {
+              "kind": "corroboration",
+              "at": "2026-08-31",
+              "reason": "Ukrainian-side report confirmed by Russian-aligned media",
+              "sides": [
+                "ukraine_aligned",
+                "russia_aligned"
+              ],
+              "sources": [
+                {
+                  "channel": "noel_reports",
+                  "side": "ukraine_aligned",
+                  "origins": []
+                },
+                {
+                  "channel": "intelslava",
+                  "side": "russia_aligned",
+                  "origins": []
+                }
+              ]
+            }
+          ],
+          "corroboration": [
+            {
+              "channel": "intelslava",
+              "url": "https://t.me/intelslava/93319",
+              "origins": []
+            }
+          ]
         },
         {
           "channel": "noel_reports",
@@ -3776,7 +3525,8 @@
           },
           "status": "reported",
           "statusChanged": "2026-08-26",
-          "statusEvidence": []
+          "statusEvidence": [],
+          "corroboration": []
         },
         {
           "channel": "intelslava",

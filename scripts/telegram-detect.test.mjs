@@ -191,5 +191,40 @@ check(!isExpired({ status: 'reported', at: '2026-08-25T00:00:00Z' }, new Date('2
   check(Array.isArray(k.matches), 'a recognised Ukrainian region still resolves');
 }
 
+// ---------------------------------------------------------------------------
+// dedupeEvents compares the isolated sentence, not the whole post. Two channels
+// describing one event write different posts; only the sentence is comparable.
+// ---------------------------------------------------------------------------
+{
+  const { dedupeEvents } = await import('./telegram-detect.mjs');
+  const same = dedupeEvents([
+    { channel: 'wartranslated', url: 'https://t.me/w/1', at: '2026-08-01T10:00:00Z',
+      text: 'Some long unrelated preamble about the day. An explosion hit the Balzi Rossi restaurant in central Moscow.',
+      sentence: 'An explosion hit the Balzi Rossi restaurant in central Moscow.' },
+    { channel: 'intelslava', url: 'https://t.me/i/1', at: '2026-08-01T11:00:00Z',
+      text: 'Completely different framing and a pile of other stories entirely.',
+      sentence: 'An explosion occurred at the Balzi Rossi restaurant in central Moscow near the metro.' },
+  ]);
+  check(same.length === 1, 'two channels describing one event fold into one');
+  check((same[0].corroboration || []).length === 1, 'the second channel is recorded as corroboration');
+
+  const different = dedupeEvents([
+    { channel: 'noel_reports', url: 'https://t.me/n/1', at: '2026-08-22T10:00:00Z',
+      sentence: 'Russian forces launched a large-scale overnight missile and drone attack on Kyiv, killing at least 17 people.' },
+    { channel: 'intelslava', url: 'https://t.me/i/2', at: '2026-08-22T11:00:00Z',
+      sentence: 'A Russian missile destroyed a Roshen Corporation building in Kyiv.' },
+  ]);
+  check(different.length === 2,
+        'a mass attack and one building hit within it stay separate events');
+
+  const tooShort = dedupeEvents([
+    { channel: 'noel_reports', url: 'https://t.me/n/2', at: '2026-08-30T10:00:00Z',
+      sentence: 'Explosions in Belgorod.' },
+    { channel: 'intelslava', url: 'https://t.me/i/3', at: '2026-08-30T11:00:00Z',
+      sentence: 'Explosions in Belgorod.' },
+  ]);
+  check(tooShort.length === 2,
+        'sentences below the word floor never match, however similar');
+}
 console.log(failed ? `\n${failed} check(s) FAILED` : '\nall checks passed');
 process.exit(failed ? 1 : 0);
