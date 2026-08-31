@@ -32,6 +32,17 @@ const USE_GDELT = !process.env.LADDER_NO_GDELT;
 // Writing is the destructive path — it is what moves events off the map — so
 // it has to be asked for. Interactive runs report and stop; --write commits.
 const WRITE = process.argv.includes('--write');
+
+// --limit N stops after N GDELT queries. For diagnosing where GDELT will and
+// will not answer from without spending an hour to find out: 92 queries from
+// a GitHub runner failed 92 times, and the same code needs testing elsewhere.
+const LIMIT_ARG = process.argv.find(a => a.startsWith('--limit='));
+const QUERY_LIMIT = LIMIT_ARG ? Number(LIMIT_ARG.split('=')[1]) : Infinity;
+
+// --shape=timespan swaps startdatetime/enddatetime for timespan=Nd. The
+// probe on 31 Aug had the quoted+datetime shape time out while quoted+timespan
+// returned 200 from the same runner, and the ladder shipped the failing one.
+const SHAPE = (process.argv.find(a => a.startsWith('--shape=')) || '').split('=')[1] || 'datetime';
 const DRY   = !WRITE;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const today = new Date().toISOString().slice(0, 10);
@@ -101,10 +112,17 @@ if (USE_GDELT) {
     const key = `${marker}|${String(e.at).slice(0, 10)}`;
     let articles = listCache.get(key);
     if (articles === undefined) {
+      if (gdeltQueries >= QUERY_LIMIT) break;
       await sleep(GDELT_GAP_MS);
       gdeltQueries++;
-      try { articles = await gdeltArticlesFor(marker, e.at); }
-      catch { articles = new Error('GDELT fetch failed'); gdeltErrors++; }
+      const t0 = Date.now();
+      try {
+        articles = await gdeltArticlesFor(marker, e.at, undefined, SHAPE);
+        console.log(`  ok    ${marker} ${String(e.at).slice(0,10)}  ${((Date.now()-t0)/1000).toFixed(1)}s  ${articles.length} articles`);
+      } catch (err) {
+        articles = new Error('GDELT fetch failed'); gdeltErrors++;
+        console.log(`  FAIL  ${marker} ${String(e.at).slice(0,10)}  ${((Date.now()-t0)/1000).toFixed(1)}s  ${err.message}`);
+      }
       listCache.set(key, articles);
     }
     if (articles instanceof Error) continue;   // this place+date could not be checked

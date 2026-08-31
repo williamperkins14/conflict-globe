@@ -529,7 +529,7 @@ const isConnFailure = err =>
 // Returns the article array (possibly empty) on success; null when there is
 // nothing to query (no/invalid date); THROWS on a real failure after retries,
 // so the caller can see the pass was incomplete and hold off on expiring.
-async function gdeltArticlesFor(placeName, atISO, fetchImpl = fetch) {
+async function gdeltArticlesFor(placeName, atISO, fetchImpl = fetch, shape = 'datetime') {
   if (!placeName || !atISO) return null;
   const d = new Date(atISO);
   if (Number.isNaN(+d)) return null;
@@ -540,7 +540,12 @@ async function gdeltArticlesFor(placeName, atISO, fetchImpl = fetch) {
   const url = 'https://api.gdeltproject.org/api/v2/doc/doc'
     + `?query=${encodeURIComponent(`"${placeName}"`)}`
     + '&mode=artlist&format=json&maxrecords=50&sort=hybridrel'
-    + `&startdatetime=${stamp(start)}&enddatetime=${stamp(end)}`;
+    + (shape === 'timespan'
+         // Coarser: a fixed window back from now rather than around the event.
+         // Worth having because the datetime form is the one that timed out
+         // from a GitHub runner while this one returned 200.
+         ? '&timespan=14d'
+         : `&startdatetime=${stamp(start)}&enddatetime=${stamp(end)}`);
 
   for (let attempt = 0; ; attempt++) {
     const ctrl = new AbortController();
