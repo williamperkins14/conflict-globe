@@ -223,6 +223,18 @@
       color: rgba(232, 234, 237, 0.85);
     }
 
+    .ke-src {
+      display: inline-block;
+      margin-top: 5px;
+      font-size: 10.5px;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.34);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .ke-src:hover { color: #ff8177; border-bottom-color: rgba(255, 90, 77, 0.5); }
+
     .ke-note {
       display: block;
       margin-top: 4px;
@@ -336,7 +348,49 @@
     .ev-status-corroborated { color: rgba(94, 201, 150, 0.95); border: 1px solid rgba(94, 201, 150, 0.45); }
     .ev-status-confirmed    { color: rgba(255, 120, 110, 0.95); border: 1px solid rgba(255, 120, 110, 0.45); }
 
+    .ev-said-link { text-decoration: none; color: inherit; display: block; }
     .ev-item:hover .ev-line { color: #c99cff; }
+
+    /* The corroborating source, set apart from the report it corroborates.
+       Green because it is the one thing on this panel that another party
+       had to concede. */
+    .ev-why {
+      display: block;
+      margin-top: 7px;
+      padding-left: 9px;
+      border-left: 2px solid rgba(94, 201, 150, 0.5);
+    }
+
+    .ev-why-reason {
+      display: block;
+      font-size: 11.5px;
+      line-height: 1.4;
+      color: rgba(94, 201, 150, 0.95);
+    }
+
+    .ev-why-link { text-decoration: none; }
+
+    .ev-why-src {
+      display: block;
+      margin-top: 3px;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .ev-why-side {
+      font-size: 10px;
+      letter-spacing: 0.05em;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .ev-why-title {
+      display: block;
+      font-size: 11.5px;
+      line-height: 1.4;
+      color: rgba(232, 234, 237, 0.62);
+    }
+
+    .ev-why-link:hover .ev-why-title { color: #cfe4ff; }
 
     .ev-chans {
       margin-top: 9px;
@@ -1048,14 +1102,21 @@
         return;
       }
 
-      news.innerHTML = '<p class="news-status">Loading recent coverage. GDELT can take up to 20 seconds.</p>';
+      news.innerHTML = '<p class="news-status">Loading recent coverage. '
+        + 'GDELT is slow and can take half a minute.</p>';
 
       const url = 'https://api.gdeltproject.org/api/v2/doc/doc'
         + '?query=' + encodeURIComponent(d.query)
         + '&mode=artlist&format=json&maxrecords=75&sort=hybridrel&timespan=7d';
 
       const controller = new AbortController();
-      const timer = setTimeout(() => controller.abort(), 22000);
+      // GDELT was measured at 23-24s per query from a GitHub runner on
+      // 31 Aug 2026. A 22s abort sits inside that margin, which is exactly
+      // the bug that made the confidence ladder return nothing: every good
+      // query killed a few seconds early. Browsers are usually quicker than
+      // that runner, so this was marginal rather than broken — but marginal
+      // against a measured 24s is not a margin.
+      const timer = setTimeout(() => controller.abort(), 45000);
 
       fetch(url, { signal: controller.signal })
         .then(r => r.text())
@@ -1178,13 +1239,27 @@
       if (list.length === 0) { box.innerHTML = ''; return; }
 
       box.innerHTML = '<div class="news-heading">Key events</div>'
-        + list.map(e =>
-            '<div class="ke-item">'
-          + '<span class="ke-date">' + escapeHtml(formatShortDate(e.date)) + '</span>'
-          + '<span class="ke-text">' + escapeHtml(e.text)
-          + (e.note ? '<span class="ke-note">' + escapeHtml(e.note) + '</span>' : '')
-          + '</span></div>'
-          ).join('');
+        + list.map(e => {
+            // The citation is the point. Every one of these dates was checked
+            // against a specific source; showing the domain lets a reader see
+            // what kind of source before they click, and an event with no
+            // citation shows none — the absence is the honest signal, not
+            // something to paper over with a plausible-looking link.
+            let cite = '';
+            if (/^https?:\/\//i.test(e.source || '')) {
+              let host = '';
+              try { host = new URL(e.source).hostname.replace(/^www\./, ''); }
+              catch (err) { host = 'source'; }
+              cite = '<a class="ke-src" href="' + escapeHtml(e.source) + '"'
+                   + ' target="_blank" rel="noopener">' + escapeHtml(host) + '</a>';
+            }
+            return '<div class="ke-item">'
+              + '<span class="ke-date">' + escapeHtml(formatShortDate(e.date)) + '</span>'
+              + '<span class="ke-text">' + escapeHtml(e.text)
+              + (e.note ? '<span class="ke-note">' + escapeHtml(e.note) + '</span>' : '')
+              + cite
+              + '</span></div>';
+          }).join('');
     }
 
     function formatShortDate(iso) {
@@ -1214,8 +1289,13 @@
       });
 
       box.innerHTML =
-        '<div class="news-heading">Recent events '
-        + '<span class="ev-unver">unverified</span></div>'
+        // Only claim the whole section is unverified while it actually is.
+        // Once anything in it has been corroborated the blanket label is a
+        // false statement, and each row carries its own badge anyway.
+        '<div class="news-heading">Recent events'
+        + (sorted.every(e => (e.status || 'reported') === 'reported')
+             ? ' <span class="ev-unver">unverified</span>' : '')
+        + '</div>'
         + days.map(g => {
             const chans = [...new Set(g.items.map(e => e.channel))];
             const times = g.items.map(e => String(e.at).slice(11, 16)).sort();
@@ -1266,12 +1346,38 @@
              + escapeHtml('“' + said + '”') + '</span>';
       }
 
-      return '<a class="ev-item" href="' + safeUrl + '" target="_blank" rel="noopener">'
+      // What actually promoted this event, and by whom. With adversarial
+      // corroboration the source is the substance of the claim: "a Ukrainian
+      // channel said it and Russian state media conceded it" is a far
+      // stronger sentence than "corroborated", and the reader should see the
+      // opposing outlet by name rather than take our word for the label.
+      let why = '';
+      const g = (e.statusEvidence || []).slice().reverse()
+                  .find(x => x.kind === 'gdelt' && x.reason);
+      if (g) {
+        const gUrl = /^https?:\/\//i.test(g.url || '') ? escapeHtml(g.url) : '';
+        const cite = '<span class="ev-why-src">' + escapeHtml(g.domain || '')
+                   + (g.side ? ' <span class="ev-why-side">'
+                               + escapeHtml(g.side.replace('_', '-')) + '</span>' : '')
+                   + '</span>'
+                   + '<span class="ev-why-title">' + escapeHtml(g.title || '') + '</span>';
+        why = '<span class="ev-why">'
+            + '<span class="ev-why-reason">' + escapeHtml(g.reason) + '</span>'
+            + (gUrl ? '<a class="ev-why-link" href="' + gUrl
+                      + '" target="_blank" rel="noopener">' + cite + '</a>'
+                    : cite)
+            + '</span>';
+      }
+
+      return '<div class="ev-item">'
         + '<span class="ev-time">' + escapeHtml(String(e.at).slice(11, 16)) + '</span>'
-        + '<span class="ev-body">' + head
+        + '<span class="ev-body">'
+        + '<a class="ev-said-link" href="' + safeUrl + '" target="_blank" rel="noopener">'
+        + head + '</a>'
+        + why
         + '<span class="ev-chan">' + badge
         + (structured ? ' &middot; ' + escapeHtml(e.channel) : '') + '</span>'
-        + '</span></a>';
+        + '</span></div>';
     }
 
     function cap(s) {

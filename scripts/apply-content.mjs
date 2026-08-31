@@ -37,11 +37,18 @@ for (const [name, lines] of Object.entries(
   for (const line of lines) {
     const m = line.trim().match(DATED);
     if (!m) continue;
-    let text = m[2].trim(), note = null;
+    let text = m[2].trim(), note = null, source = null;
+    // ` | src: <url>` at the very end of a line is the citation for that
+    // event. Stripped before the bracket note so the two can coexist.
+    const sm = text.match(/\s*\|\s*src:\s*(\S+)\s*$/);
+    if (sm) { source = sm[1]; text = text.slice(0, sm.index).trim(); }
     // [CONTESTED ...] / [DECIDE ...] notes are kept as data, not shown.
     const b = text.match(/\s*\[(CONTESTED|DECIDE|note)([^\]]*)\]\s*$/i);
     if (b) { note = (b[1] + b[2]).trim(); text = text.slice(0, b.index).trim(); }
-    evs.push(note ? { date: m[1], text, note } : { date: m[1], text });
+    const ev = { date: m[1], text };
+    if (note) ev.note = note;
+    if (source) ev.source = source;
+    evs.push(ev);
   }
   if (evs.length) keyEvents[name] = evs.sort((a, b) => a.date.localeCompare(b.date));
 }

@@ -38,23 +38,29 @@
         "keyEvents": [
           {
             "date": "2022-02-24",
-            "text": "Russian troops crossed from Belarus and an airborne assault seized Hostomel airport north-west of the city."
+            "text": "Russian troops crossed from Belarus and an airborne assault seized Hostomel airport north-west of the city.",
+            "source": "https://en.wikipedia.org/wiki/Kyiv_offensive_(2022)"
           },
           {
             "date": "2022-04-02",
-            "text": "Russian forces completed their withdrawal from Kyiv oblast, leaving mass killings of civilians documented at Bucha and Irpin."
+            "text": "Russian forces completed their withdrawal from Kyiv oblast, leaving mass killings of civilians documented at Bucha and Irpin.",
+            "note": "CONTESTED: 2 April is when the withdrawal was declared complete and the Bucha killings became known; the Kyiv offensive is dated to 8 April in some accounts",
+            "source": "https://en.wikipedia.org/wiki/Russian_occupation_of_Kyiv_Oblast"
           },
           {
             "date": "2022-10-10",
-            "text": "Russia began mass missile strikes on Ukrainian cities two days after the Kerch bridge attack, hitting central Kyiv in the morning rush hour."
+            "text": "Russia began mass missile strikes on Ukrainian cities two days after the Kerch bridge attack, hitting central Kyiv in the morning rush hour.",
+            "source": "https://www.aljazeera.com/news/2022/10/10/missile-attacks-hit-cities-across-ukraine-what-we-know-so-far"
           },
           {
             "date": "2022-10-17",
-            "text": "Shahed drones killed four people in a residential block in Shevchenkivskyi district, among them a woman six months pregnant."
+            "text": "Shahed drones killed four people in a residential block in Shevchenkivskyi district, among them a woman six months pregnant.",
+            "source": "https://www.aljazeera.com/news/2022/10/17/several-blasts-hit-ukrainian-capital-in-early-morning-raids"
           },
           {
             "date": "2024-07-08",
-            "text": "A cruise missile struck the Okhmatdyt children's hospital, killing two adults and injuring sixteen."
+            "text": "A cruise missile struck the Okhmatdyt children's hospital, killing two adults and injuring sixteen.",
+            "source": "https://en.wikipedia.org/wiki/8_July_2024_Ukraine_missile_strikes"
           }
         ]
       },
@@ -79,19 +85,23 @@
           {
             "date": "2022-03-01",
             "text": "Two missiles struck the regional administration building on Freedom Square, killing 29.",
-            "note": "CONTESTED toll: same-day reports said 6–10; 29 is the April 2022 confirmed figure"
+            "note": "CONTESTED toll: same-day reports said 6–10; 29 is the April 2022 confirmed figure",
+            "source": "https://en.wikipedia.org/wiki/Kharkiv_government_building_airstrike"
           },
           {
             "date": "2022-09-06",
-            "text": "Ukraine's counteroffensive broke the front; Izium was retaken on 10 September and Russian forces were driven from most of the oblast."
+            "text": "Ukraine's counteroffensive broke the front; Izium was retaken on 10 September and Russian forces were driven from most of the oblast.",
+            "source": "https://en.wikipedia.org/wiki/2022_Kharkiv_counteroffensive"
           },
           {
             "date": "2024-05-10",
-            "text": "Russia opened a second offensive into northern Kharkiv oblast, which stalled at Vovchansk."
+            "text": "Russia opened a second offensive into northern Kharkiv oblast, which stalled at Vovchansk.",
+            "source": "https://en.wikipedia.org/wiki/Northern_Kharkiv_front_of_the_Russo-Ukrainian_War"
           },
           {
             "date": "2024-05-25",
-            "text": "A glide bomb hit the Epicentr hardware store, killing 19 and wounding more than 50."
+            "text": "A glide bomb hit the Epicentr hardware store, killing 19 and wounding more than 50.",
+            "source": "https://en.wikipedia.org/wiki/25_May_2024_Kharkiv_missile_strikes"
           }
         ]
       },
@@ -110,15 +120,18 @@
         "keyEvents": [
           {
             "date": "2023-08-07",
-            "text": "Two Iskander missiles hit a hotel and an apartment block forty minutes apart, the second killing rescuers who had arrived after the first; 10 died and 82 were wounded."
+            "text": "Two Iskander missiles hit a hotel and an apartment block forty minutes apart, the second killing rescuers who had arrived after the first; 10 died and 82 were wounded.",
+            "source": "https://en.wikipedia.org/wiki/2023_Pokrovsk_missile_strike"
           },
           {
             "date": "2024-08-19",
-            "text": "Ukraine ordered the mandatory evacuation of families with children as Russian forces closed on the town."
+            "text": "Ukraine ordered the mandatory evacuation of families with children as Russian forces closed on the town.",
+            "source": "https://www.pbs.org/newshour/world/pokrovsk-families-with-children-to-evacuate-under-mandatory-order-from-ukrainian-officials"
           },
           {
             "date": "2025-12-02",
-            "text": "Russia claimed the capture of the city after more than a year of fighting on its approaches."
+            "text": "Russia claimed the capture of the city after more than a year of fighting on its approaches.",
+            "source": "https://www.aljazeera.com/news/2025/12/2/russia-says-it-captured-pokrovsk-a-key-logistics-hub-in-eastern-ukraine"
           }
         ]
       },
@@ -138,15 +151,18 @@
         "keyEvents": [
           {
             "date": "2014-04-07",
-            "text": "Separatists occupying the regional administration building declared the Donetsk People's Republic."
+            "text": "Separatists occupying the regional administration building declared the Donetsk People's Republic.",
+            "source": "https://en.wikipedia.org/wiki/Donetsk_People%27s_Republic"
           },
           {
             "date": "2014-05-26",
-            "text": "Fighting for Donetsk airport began; the terminal held out until separatist forces took it on 21 January 2015."
+            "text": "Fighting for Donetsk airport began; the terminal held out until separatist forces took it on 21 January 2015.",
+            "source": "https://en.wikipedia.org/wiki/Battle_of_Donetsk_Airport"
           },
           {
             "date": "2022-09-30",
-            "text": "Russia signed treaties annexing Donetsk oblast along with Luhansk, Zaporizhzhia and Kherson."
+            "text": "Russia signed treaties annexing Donetsk oblast along with Luhansk, Zaporizhzhia and Kherson.",
+            "source": "https://en.wikipedia.org/wiki/Russian_annexation_of_Donetsk,_Kherson,_Luhansk_and_Zaporizhzhia_oblasts"
           }
         ]
       },
@@ -165,20 +181,24 @@
         "keyEvents": [
           {
             "date": "2022-03-02",
-            "text": "The city was fully encircled, cutting water, power and heat."
+            "text": "The city was fully encircled, cutting water, power and heat.",
+            "source": "https://en.wikipedia.org/wiki/Siege_of_Mariupol"
           },
           {
             "date": "2022-03-09",
-            "text": "Russian aircraft bombed maternity hospital No. 3."
+            "text": "Russian aircraft bombed maternity hospital No. 3.",
+            "source": "https://en.wikipedia.org/wiki/Mariupol_hospital_airstrike"
           },
           {
             "date": "2022-03-16",
             "text": "The drama theatre, sheltering civilians with \"CHILDREN\" written outside it, was bombed.",
-            "note": "CONTESTED toll: Amnesty says at least 12 and likely many more; an AP investigation estimated around 600"
+            "note": "CONTESTED toll: Amnesty says at least 12 and likely many more; an AP investigation estimated around 600",
+            "source": "https://en.wikipedia.org/wiki/Mariupol_theatre_airstrike"
           },
           {
             "date": "2022-05-20",
-            "text": "The last defenders at the Azovstal steelworks surrendered and Russia declared full control."
+            "text": "The last defenders at the Azovstal steelworks surrendered and Russia declared full control.",
+            "source": "https://en.wikipedia.org/wiki/Siege_of_Mariupol"
           }
         ]
       },
@@ -198,17 +218,20 @@
         "keyEvents": [
           {
             "date": "2022-03-04",
-            "text": "Russian forces seized the Zaporizhzhia nuclear plant at Enerhodar, the first time an operating nuclear station had been taken in war."
+            "text": "Russian forces seized the Zaporizhzhia nuclear plant at Enerhodar, the first time an operating nuclear station had been taken in war.",
+            "source": "https://en.wikipedia.org/wiki/Zaporizhzhia_Nuclear_Power_Plant"
           },
           {
             "date": "2022-09-30",
             "text": "Sixteen missiles hit a civilian convoy on the city's outskirts, killing 32, hours before Russia's annexation ceremony.",
-            "note": "CONTESTED toll: same-day reports 23–30; 32 is the confirmed figure"
+            "note": "CONTESTED toll: same-day reports 23–30; 32 is the confirmed figure",
+            "source": "https://en.wikipedia.org/wiki/Zaporizhzhia_civilian_convoy_attack"
           },
           {
             "date": "2023-06-04",
             "text": "Ukraine's southern counteroffensive opened on this axis and gained little ground over the summer.",
-            "note": "CONTESTED date: ISW dates the onset to 4 June; most Western outlets reported the visible Zaporizhzhia push from 8 June"
+            "note": "CONTESTED date: ISW dates the onset to 4 June; most Western outlets reported the visible Zaporizhzhia push from 8 June",
+            "source": "https://en.wikipedia.org/wiki/2023_Ukrainian_counteroffensive"
           }
         ]
       },
@@ -227,19 +250,23 @@
         "keyEvents": [
           {
             "date": "2022-03-02",
-            "text": "Kherson fell, the only Ukrainian regional capital captured in the invasion."
+            "text": "Kherson fell, the only Ukrainian regional capital captured in the invasion.",
+            "source": "https://en.wikipedia.org/wiki/Battle_of_Kherson"
           },
           {
             "date": "2022-09-30",
-            "text": "Russia annexed the oblast."
+            "text": "Russia annexed the oblast.",
+            "source": "https://en.wikipedia.org/wiki/Russian_annexation_of_Donetsk,_Kherson,_Luhansk_and_Zaporizhzhia_oblasts"
           },
           {
             "date": "2022-11-11",
-            "text": "Ukrainian forces entered the city as Russian troops withdrew across the Dnipro."
+            "text": "Ukrainian forces entered the city as Russian troops withdrew across the Dnipro.",
+            "source": "https://en.wikipedia.org/wiki/Liberation_of_Kherson"
           },
           {
             "date": "2023-06-06",
-            "text": "The Kakhovka dam was breached, flooding the lower Dnipro and affecting some 40,000 people."
+            "text": "The Kakhovka dam was breached, flooding the lower Dnipro and affecting some 40,000 people.",
+            "source": "https://en.wikipedia.org/wiki/Destruction_of_the_Kakhovka_Dam"
           }
         ]
       },
@@ -260,19 +287,23 @@
           {
             "date": "2014-05-02",
             "text": "Street clashes between rival demonstrators ended in a fire at the Trade Unions House; 42 died in the building and six in the earlier fighting.",
-            "note": "DECIDE — see note below"
+            "note": "DECIDE — see note below",
+            "source": "https://ukraine.ohchr.org/en/accountability-killings-and-violent-deaths-2-may-2014-odesa-briefing-note-EN"
           },
           {
             "date": "2022-07-22",
-            "text": "The Black Sea Grain Initiative was signed in Istanbul, reopening the port to grain exports."
+            "text": "The Black Sea Grain Initiative was signed in Istanbul, reopening the port to grain exports.",
+            "source": "https://en.wikipedia.org/wiki/Black_Sea_Grain_Initiative"
           },
           {
             "date": "2023-07-17",
-            "text": "Russia withdrew from the grain deal and strikes on port infrastructure followed."
+            "text": "Russia withdrew from the grain deal and strikes on port infrastructure followed.",
+            "source": "https://en.wikipedia.org/wiki/Black_Sea_Grain_Initiative"
           },
           {
             "date": "2023-07-23",
-            "text": "Missile strikes damaged the Transfiguration Cathedral, destroying its central altar."
+            "text": "Missile strikes damaged the Transfiguration Cathedral, destroying its central altar.",
+            "source": "https://www.aljazeera.com/news/2023/7/23/russian-missile-attack-on-odesa-kills-one-damages-cathedral"
           }
         ]
       },
@@ -291,20 +322,24 @@
         "keyEvents": [
           {
             "date": "2022-02-24",
-            "text": "Russian columns crossed the border and parts of the oblast were occupied within days."
+            "text": "Russian columns crossed the border and parts of the oblast were occupied within days.",
+            "source": "https://en.wikipedia.org/wiki/Kyiv_offensive_(2022)"
           },
           {
             "date": "2022-04-08",
             "text": "The governor declared the oblast clear of Russian troops.",
-            "note": "CONTESTED: he said no settlements remained occupied on 4 April; 8 April is the declared completion"
+            "note": "CONTESTED: he said no settlements remained occupied on 4 April; 8 April is the declared completion",
+            "source": "https://en.wikipedia.org/wiki/Russian_occupation_of_Sumy_Oblast"
           },
           {
             "date": "2024-08-06",
-            "text": "Ukraine launched its incursion into Kursk oblast from Sumy."
+            "text": "Ukraine launched its incursion into Kursk oblast from Sumy.",
+            "source": "https://en.wikipedia.org/wiki/August_2024_Kursk_Oblast_incursion"
           },
           {
             "date": "2025-04-13",
-            "text": "Two ballistic missiles struck the city centre on Palm Sunday, killing 35."
+            "text": "Two ballistic missiles struck the city centre on Palm Sunday, killing 35.",
+            "source": "https://en.wikipedia.org/wiki/2025_Sumy_airstrike"
           }
         ]
       },
@@ -323,15 +358,18 @@
         "keyEvents": [
           {
             "date": "2023-01-14",
-            "text": "A Kh-22 missile destroyed part of a nine-storey apartment block, killing 46 including six children."
+            "text": "A Kh-22 missile destroyed part of a nine-storey apartment block, killing 46 including six children.",
+            "source": "https://en.wikipedia.org/wiki/2023_Dnipro_residential_building_airstrike"
           },
           {
             "date": "2024-11-21",
-            "text": "Russia used the Oreshnik intermediate-range missile in combat for the first time, against the Pivdenmash plant."
+            "text": "Russia used the Oreshnik intermediate-range missile in combat for the first time, against the Pivdenmash plant.",
+            "source": "https://en.wikipedia.org/wiki/Oreshnik_(missile)"
           },
           {
             "date": "2026-08-14",
-            "text": "A Ukrainian counteroffensive completed the recovery of occupied ground in Dnipropetrovsk oblast."
+            "text": "A Ukrainian counteroffensive completed the recovery of occupied ground in Dnipropetrovsk oblast.",
+            "source": "https://www.aljazeera.com/news/2026/8/14/ukraine-liberates-dnipropetrovsk-as-russia-intensifies-missile-attacks"
           }
         ]
       },
@@ -350,15 +388,18 @@
         "keyEvents": [
           {
             "date": "2022-04-01",
-            "text": "Two helicopters struck a fuel depot in the city in the first widely reported air strike on Russian soil; Ukraine did not claim responsibility and attribution remains disputed."
+            "text": "Two helicopters struck a fuel depot in the city in the first widely reported air strike on Russian soil; Ukraine did not claim responsibility and attribution remains disputed.",
+            "source": "https://en.wikipedia.org/wiki/Attacks_in_Russia_during_the_Russo-Ukrainian_war_(2022%E2%80%93present)"
           },
           {
             "date": "2023-05-22",
-            "text": "Fighters of the Russian Volunteer Corps and the Freedom of Russia Legion crossed into the oblast at Hraivoron."
+            "text": "Fighters of the Russian Volunteer Corps and the Freedom of Russia Legion crossed into the oblast at Hraivoron.",
+            "source": "https://en.wikipedia.org/wiki/2023_Belgorod_Oblast_incursions"
           },
           {
             "date": "2023-12-30",
-            "text": "Shelling of the city centre killed 25 including five children, the deadliest attack on a Russian city of the war."
+            "text": "Shelling of the city centre killed 25 including five children, the deadliest attack on a Russian city of the war.",
+            "source": "https://en.wikipedia.org/wiki/30_December_2023_Belgorod_shelling"
           }
         ]
       },
@@ -377,21 +418,25 @@
         "keyEvents": [
           {
             "date": "2024-08-06",
-            "text": "Ukrainian forces crossed the border in the first sustained incursion by a foreign army into Russia since the Second World War."
+            "text": "Ukrainian forces crossed the border in the first sustained incursion by a foreign army into Russia since the Second World War.",
+            "source": "https://en.wikipedia.org/wiki/August_2024_Kursk_Oblast_incursion"
           },
           {
             "date": "2024-08-15",
             "text": "Zelensky confirmed the capture of Sudzha.",
-            "note": "CONTESTED: some accounts date effective control to 8–12 August"
+            "note": "CONTESTED: some accounts date effective control to 8–12 August",
+            "source": "https://kyivindependent.com/breaking-zelensky-confirms-full-capture-of-russian-town-of-sudzha-in-kursk-oblast/"
           },
           {
             "date": "2024-10-28",
-            "text": "NATO and the Pentagon confirmed the deployment of North Korean troops to Kursk oblast."
+            "text": "NATO and the Pentagon confirmed the deployment of North Korean troops to Kursk oblast.",
+            "source": "https://www.aljazeera.com/news/2024/10/28/nato-pentagon-confirm-deployment-of-north-korean-troops-to-russia"
           },
           {
             "date": "2025-03-16",
             "text": "Ukrainian forces withdrew from Sudzha and the campaign ended after 218 days.",
-            "note": "CONTESTED: ISW and DeepState geolocated the withdrawal to 12 March; 16 March is Ukraine's General Staff confirmation"
+            "note": "CONTESTED: ISW and DeepState geolocated the withdrawal to 12 March; 16 March is Ukraine's General Staff confirmation",
+            "source": "https://kyivindependent.com/russia-claims-to-retake-sudzha-kyiv-hasnt-confirmed/"
           }
         ]
       },
@@ -410,15 +455,18 @@
         "keyEvents": [
           {
             "date": "2023-05-03",
-            "text": "Two drones were destroyed over the Kremlin."
+            "text": "Two drones were destroyed over the Kremlin.",
+            "source": "https://en.wikipedia.org/wiki/2023_Kremlin_drone_attack"
           },
           {
             "date": "2023-05-30",
-            "text": "Drones struck residential districts, the first attack on the capital's housing."
+            "text": "Drones struck residential districts, the first attack on the capital's housing.",
+            "source": "https://en.wikipedia.org/wiki/30_May_2023_Moscow_drone_strikes"
           },
           {
             "date": "2026-07-28",
-            "text": "Around six hundred drones were launched towards the city in a single night."
+            "text": "Around six hundred drones were launched towards the city in a single night.",
+            "source": "https://www.themoscowtimes.com/2026/07/28/hundreds-of-ukrainian-drones-target-moscow-in-overnight-blitz-a93356"
           }
         ]
       },
@@ -437,16 +485,19 @@
         "keyEvents": [
           {
             "date": "2023-08-04",
-            "text": "Naval drones holed the landing ship Olenegorsky Gornyak in the harbour."
+            "text": "Naval drones holed the landing ship Olenegorsky Gornyak in the harbour.",
+            "source": "https://www.aljazeera.com/news/2023/8/4/ukraine-drones-hit-russias-key-port-damage-naval-ship-ukrainian-official"
           },
           {
             "date": "2023-10-01",
             "text": "The Black Sea Fleet dispersed vessels from Sevastopol and Novorossiysk became its main working port.",
-            "note": "note: a dispersal under fire, not a formal change of base"
+            "note": "note: a dispersal under fire, not a formal change of base",
+            "source": "https://kyivindependent.com/isw-russia-transfers-black-sea-fleet-vessels-to-avoid-ukrainian-fire/"
           },
           {
             "date": "2026-08-11",
-            "text": "A large strike hit the naval base, oil terminals and grain facilities, suspending operations at two grain terminals."
+            "text": "A large strike hit the naval base, oil terminals and grain facilities, suspending operations at two grain terminals.",
+            "source": "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-august-12-2026"
           }
         ]
       },
@@ -467,23 +518,28 @@
         "keyEvents": [
           {
             "date": "2022-09-26",
-            "text": "Underwater explosions ruptured both Nord Stream pipelines near the Danish island of Bornholm, ending Russian pipeline gas to Germany."
+            "text": "Underwater explosions ruptured both Nord Stream pipelines near the Danish island of Bornholm, ending Russian pipeline gas to Germany.",
+            "source": "https://www.aljazeera.com/news/2026/7/2/german-prosecutors-allege-ukraine-ordered-nord-stream-pipeline-attack"
           },
           {
             "date": "2023-06-13",
-            "text": "Reporting revealed that Dutch intelligence had warned the CIA in June 2022 of a Ukrainian plan to attack the pipelines, and that the CIA had told Ukraine not to proceed."
+            "text": "Reporting revealed that Dutch intelligence had warned the CIA in June 2022 of a Ukrainian plan to attack the pipelines, and that the CIA had told Ukraine not to proceed.",
+            "source": "https://www.malaymail.com/news/world/2023/06/13/nos-dutch-intelligence-tipped-cia-on-alleged-ukraine-plan-to-attack-nord-stream/74132"
           },
           {
             "date": "2024-08-14",
-            "text": "German prosecutors issued an arrest warrant for a Ukrainian diver over the sabotage."
+            "text": "German prosecutors issued an arrest warrant for a Ukrainian diver over the sabotage.",
+            "source": "https://www.aljazeera.com/news/2024/8/14/germany-arrest-warrant-for-ukrainian-diver-in-nord-stream-probe"
           },
           {
             "date": "2026-07-02",
-            "text": "German prosecutors charged a former Ukrainian officer with directing an attack against civilian objects, alleging the operation was ordered from Ukraine."
+            "text": "German prosecutors charged a former Ukrainian officer with directing an attack against civilian objects, alleging the operation was ordered from Ukraine.",
+            "source": "https://www.aljazeera.com/news/2026/7/2/german-prosecutors-charge-ukrainian-suspect-over-nord-stream-explosions"
           },
           {
             "date": "2026-08-23",
-            "text": "Zelensky said Ukraine was not behind the sabotage and offered to assist the investigation."
+            "text": "Zelensky said Ukraine was not behind the sabotage and offered to assist the investigation.",
+            "source": "https://www.pravda.com.ua/eng/news/2026/08/23/8049956/"
           }
         ]
       }
