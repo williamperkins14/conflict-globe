@@ -1,0 +1,57 @@
+{
+  "_comment": [
+    "Which side a news domain reports from, for adversarial corroboration.",
+    "",
+    "The principle (William's, 31 Aug 2026): two sources agreeing is weak when",
+    "they share incentives, strong when they do not. Five Telegram channels all",
+    "reporting a Ukrainian strike is one perspective repeated. RT and the Kyiv",
+    "Independent both reporting that a Moscow warehouse burned is evidence,",
+    "because neither side gains from conceding it.",
+    "",
+    "IMPORTANT: adversarial agreement corroborates THAT SOMETHING HAPPENED. It",
+    "does not corroborate the weapon, the target, the attribution or the",
+    "casualty count — those are exactly what the two sides will disagree about.",
+    "Promote the event; never promote the parsed fields.",
+    "",
+    "'side' is about reporting position in THIS war, not about quality. The",
+    "Kyiv Independent is a good newspaper and is still on one side of it.",
+    "",
+    "Editorial file. William reviews. Unlisted domains are treated as 'unknown'",
+    "and count for nothing until classified."
+  ],
+
+  "russia_aligned": [
+    "rt.com", "russian.rt.com", "tass.ru", "ria.ru", "vesti.ru", "iz.ru",
+    "lenta.ru", "gazeta.ru", "kp.ru", "rg.ru", "interfax.ru", "kommersant.ru",
+    "sputniknews.com", "tvzvezda.ru", "smotrim.ru"
+  ],
+
+  "ukraine_aligned": [
+    "ukrinform.net", "pravda.com.ua", "kyivindependent.com", "unian.info",
+    "suspilne.media", "censor.net", "kyivpost.com", "armyinform.com.ua",
+    "espreso.tv", "liga.net", "nv.ua", "hromadske.ua"
+  ],
+
+  "third_party": [
+    "reuters.com", "apnews.com", "bbc.com", "bbc.co.uk", "aljazeera.com",
+    "dw.com", "france24.com", "lemonde.fr", "theguardian.com", "nytimes.com",
+    "washingtonpost.com", "ft.com", "economist.com", "afp.com", "cnn.com",
+    "abcnews.go.com", "nbcnews.com", "politico.eu", "euronews.com",
+    "rferl.org", "meduza.io", "novayagazeta.eu", "moscowtimes.com",
+    "themoscowtimes.com"
+  ],
+
+  "_note_on_third_party": [
+    "Meduza, Novaya Gazeta Europe and the Moscow Times are Russian outlets",
+    "operating in exile and banned in Russia. They are not Russian state media",
+    "and they are not Ukrainian. Third party is the honest slot for them, but",
+    "it is a judgement call and it is yours to overrule."
+  ],
+
+  "rules": {
+    "reported": "one source, or several from the same side",
+    "corroborated": "two sides agree that the event occurred, OR one third-party wire reports it",
+    "confirmed": "a body with jurisdiction confirms it, or physical evidence supports it",
+    "verified": "a professional dataset (ACLED, UCDP) has recorded it — not yet reachable"
+  }
+}
