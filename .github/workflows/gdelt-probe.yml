@@ -1,0 +1,74 @@
+name: GDELT probe
+
+# ---------------------------------------------------------------------------
+# Throwaway diagnostic. The confidence ladder's GDELT step took 25 minutes for
+# work that should take 3 — 130 queries each hitting a 20s timeout — so GDELT
+# was unreachable from the runner for the whole run. This asks, from the same
+# kind of runner, which part is at fault: the query shape, the datetime
+# parameters, or rate limiting.
+#
+# Never fails the job. Delete this file once we have the answer.
+# ---------------------------------------------------------------------------
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Can we reach the host at all
+        continue-on-error: true
+        run: |
+          echo "--- DNS ---"
+          getent hosts api.gdeltproject.org || echo "DNS FAILED"
+          echo "--- TCP 443 ---"
+          timeout 15 bash -c 'cat < /dev/null > /dev/tcp/api.gdeltproject.org/443' \
+            && echo "TCP OK" || echo "TCP FAILED"
+
+      - name: Query shapes
+        continue-on-error: true
+        run: |
+          Q='https://api.gdeltproject.org/api/v2/doc/doc'
+          UA='Mozilla/5.0 conflict-globe'
+
+          probe () {
+            echo "==================================================="
+            echo "$1"
+            echo "---------------------------------------------------"
+            curl -sS -o /tmp/out.json \
+                 -w 'http=%{http_code}  total=%{time_total}s  connect=%{time_connect}s  size=%{size_download}\n' \
+                 --max-time 30 -A "$UA" "$2" || echo "curl exited $?"
+            head -c 300 /tmp/out.json 2>/dev/null || true
+            echo; echo
+          }
+
+          # 1. exactly what the ladder sends
+          probe "A  quoted query + startdatetime/enddatetime  (THE LADDER'S SHAPE)" \
+            "$Q?query=%22Belgorod%22&mode=artlist&format=json&maxrecords=5&sort=hybridrel&startdatetime=20260829000000&enddatetime=20260901000000"
+
+          # 2. same, without the quotes
+          probe "B  unquoted query + datetime range" \
+            "$Q?query=Belgorod&mode=artlist&format=json&maxrecords=5&sort=hybridrel&startdatetime=20260829000000&enddatetime=20260901000000"
+
+          # 3. the shape the live site uses, which is known to work from a browser
+          probe "C  quoted query + timespan=7d  (THE SITE'S SHAPE)" \
+            "$Q?query=%22Belgorod%22&mode=artlist&format=json&maxrecords=5&sort=hybridrel&timespan=7d"
+
+          # 4. the simplest thing that could possibly work
+          probe "D  bare minimum" \
+            "$Q?query=Belgorod&mode=artlist&format=json&maxrecords=5"
+
+      - name: Rate limiting — five in a row, 1.4s apart, as the ladder does
+        continue-on-error: true
+        run: |
+          Q='https://api.gdeltproject.org/api/v2/doc/doc'
+          for i in 1 2 3 4 5; do
+            printf 'query %d: ' "$i"
+            curl -sS -o /dev/null -w 'http=%{http_code} total=%{time_total}s\n' \
+                 --max-time 30 -A 'Mozilla/5.0 conflict-globe' \
+                 "$Q?query=Belgorod&mode=artlist&format=json&maxrecords=5&timespan=7d" \
+              || echo "curl exited $?"
+            sleep 1.4
+          done
