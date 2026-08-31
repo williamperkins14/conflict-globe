@@ -91,12 +91,18 @@
   },
   "telegram_channels": {
     "noel_reports": "ukraine_aligned",
-    "wartranslated": "ukraine_aligned"
+    "wartranslated": "ukraine_aligned",
+    "intelslava": "russia_aligned"
   },
   "_note_on_channels": [
-    "Both channels currently feeding the site report from the Ukrainian side.",
-    "That is why no event has ever been corroborated by a second channel: there",
-    "is only one perspective in the pool, arriving twice. A Russian-side or",
-    "third-party channel would change this immediately."
+    "noel_reports and wartranslated report from the Ukrainian side. intelslava is",
+    "a Russian-side English-language aggregator, added 31 Aug 2026 so that",
+    "adversarial corroboration can happen between channels rather than depending",
+    "on GDELT, which went unreachable that day.",
+    "",
+    "intelslava publishes claims that turn out to be false. That is expected and",
+    "is what the ladder is for: an intelslava report with nothing on the Ukrainian",
+    "side backing it stays 'reported', is shown as a quotation attributed to the",
+    "channel, and expires after 14 days. It is never spoken in the site's voice."
   ]
 }

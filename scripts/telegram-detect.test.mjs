@@ -109,10 +109,47 @@ check(independentSourceCount({
   corroboration: [{ channel: 'noel_reports', origins: [] }],
 }) === 1, 'a repost by the same channel is not a second source');
 
-// corroboration promotes 'reported' -> 'corroborated'
-const evt = initLadder({ channel: 'noel_reports', at: '2026-08-20T10:00:00Z', sentence: 'A depot was hit in Belgorod.', text: 'A depot was hit in Belgorod, ASTRA reports.', corroboration: [{ channel: 'wartranslated', origins: ['governor'] }] });
-applyCorroboration(evt, new Date('2026-08-30'));
-check(evt.status === 'corroborated' && evt.statusEvidence.length === 1, 'applyCorroboration promotes and records evidence');
+// Corroboration needs OPPOSING sides, not merely two independent sources.
+// noel_reports and wartranslated both report from the Ukrainian side, so two
+// of them agreeing is one perspective arriving twice. This test asserted the
+// old source-counting rule and failed the moment sides were enforced, which is
+// the test doing its job.
+const sameSide = initLadder({
+  channel: 'noel_reports', at: '2026-08-20T10:00:00Z',
+  sentence: 'A depot was hit in Belgorod.',
+  text: 'A depot was hit in Belgorod, ASTRA reports.',
+  corroboration: [{ channel: 'wartranslated', origins: ['governor'] }],
+});
+applyCorroboration(sameSide, new Date('2026-08-30'));
+check(sameSide.status === 'reported',
+      'two Ukrainian channels agreeing does NOT promote (same side)');
+
+// A Russian-side channel agreeing with a Ukrainian one is adversarial: neither
+// gains from conceding the other's claim.
+const opposed = initLadder({
+  channel: 'noel_reports', at: '2026-08-20T10:00:00Z',
+  sentence: 'A depot was hit in Belgorod.',
+  text: 'A depot was hit in Belgorod, ASTRA reports.',
+  corroboration: [{ channel: 'intelslava', origins: [] }],
+});
+applyCorroboration(opposed, new Date('2026-08-30'));
+check(opposed.status === 'corroborated' && opposed.statusEvidence.length === 1,
+      'a Russian-side channel agreeing DOES promote (adversarial)');
+check(/Russian-aligned|Ukrainian-side/.test(
+        (opposed.statusEvidence[0] || {}).reason || ''),
+      'the promotion records which sides agreed');
+
+// Independence still applies on top: a Russian channel merely relaying the
+// same named origin is not a second source.
+const relay = initLadder({
+  channel: 'noel_reports', at: '2026-08-20T10:00:00Z',
+  sentence: 'A Pantsir was destroyed near Kletnya.',
+  text: 'The General Staff says a Pantsir was destroyed near Kletnya.',
+  corroboration: [{ channel: 'intelslava', origins: ['Ukraine General Staff'] }],
+});
+applyCorroboration(relay, new Date('2026-08-30'));
+check(relay.status === 'reported',
+      'opposing sides sharing one named origin still counts as one source');
 
 // expiry only touches 'reported' events past 14 days
 check(isExpired({ status: 'reported', at: '2026-08-01T00:00:00Z' }, new Date('2026-08-30')), 'a 29-day-old reported event is expired');

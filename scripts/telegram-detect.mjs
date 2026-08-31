@@ -16,7 +16,12 @@ import { existsSync, readFileSync } from 'node:fs';
 import { gunzipSync } from 'node:zlib';
 import { pathToFileURL } from 'node:url';
 
-const CHANNELS = ['noel_reports', 'wartranslated'];
+// Both original channels report from the Ukrainian side, which is why nothing
+// ever corroborated anything: one perspective arriving twice. intelslava is a
+// Russian-side English-language aggregator of the same shape, so adversarial
+// corroboration can now happen between channels — no third-party API in the
+// middle, which matters given GDELT went dark on 31 Aug 2026.
+const CHANNELS = ['noel_reports', 'wartranslated', 'intelslava'];
 const CONFLICT_ID = 'ukraine';
 
 const CONFLICTS_PATH = 'conflicts.json';
@@ -447,15 +452,44 @@ function initLadder(event) {
 function applyCorroboration(event, now = new Date()) {
   initLadder(event);
   if (event.status !== 'reported') return event;
+
+  // TWO tests, and both must pass.
+  //
+  // First, independence: channels relaying the same named origin ("the General
+  // Staff says") are one source wearing two hats, however many of them there
+  // are.
+  //
+  // Second, and this is the one that was missing: SIDES. The GDELT path has
+  // required opposing sides since 31 Aug, but this path still only counted
+  // sources — so two Ukrainian channels agreeing would promote, which is the
+  // precise thing the rule exists to prevent. Harmless while both channels
+  // were on the same side and nothing ever matched. Not harmless the moment a
+  // third channel arrives.
   if (independentSourceCount(event) < 2) return event;
+
+  const sides = [...new Set([
+    sideOfChannel(event.channel),
+    ...(event.corroboration || []).map(c => sideOfChannel(c.channel)),
+  ])];
+  const reason = corroborationReason(
+    sides.filter(x => x !== sideOfChannel(event.channel)),
+    sideOfChannel(event.channel),
+  );
+  if (!reason) return event;   // agreement from its own side is not corroboration
+
   event.status = 'corroborated';
   event.statusChanged = iso10(now);
   event.statusEvidence.push({
     kind: 'corroboration',
     at: iso10(now),
+    reason,
+    sides,
     sources: [
-      { channel: event.channel, origins: [...namedOrigins(event.text || event.sentence || '')] },
-      ...(event.corroboration || []).map(c => ({ channel: c.channel, origins: c.origins || [] })),
+      { channel: event.channel, side: sideOfChannel(event.channel),
+        origins: [...namedOrigins(event.text || event.sentence || '')] },
+      ...(event.corroboration || []).map(c => ({
+        channel: c.channel, side: sideOfChannel(c.channel), origins: c.origins || [],
+      })),
     ],
   });
   return event;
