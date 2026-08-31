@@ -844,6 +844,28 @@ function matchPost(post, gaz, bbox, curated) {
       if (STOPLIST.has(phrase)) { advanced = n; break; }
 
       const localDrops = [];
+
+      // "<Name> region" / "<Name> oblast" names an administrative area, not a
+      // town. detectRegions() only knows Ukrainian oblasts, so a Russian one
+      // resolves to nothing — and chooseCandidate() then falls through to its
+      // bounding-box path and happily returns a same-named village inside
+      // Ukraine. That is how "the Kirishi oil refinery in Leningrad region"
+      // put a marker on a hamlet in Kherson oblast, 1,400km from the refinery
+      // and in the wrong country.
+      //
+      // The bounding box did not merely fail to catch it. It SELECTED the
+      // wrong answer: it rejected the real Leningrad oblast for being outside
+      // Ukraine and accepted the namesake for being inside. So when a name is
+      // presented as a region and we do not recognise that region, drop it.
+      // Never fall back to a settlement.
+      const after = post.text.slice(tokens[i + n - 1].idx + tokens[i + n - 1].raw.length);
+      const asRegion = /^['’]?s?\s*(region|oblast|krai|province|raion|district)\b/i.test(after);
+      if (asRegion && !regionHits.includes(phrase)) {
+        drops.push({ name: phrase, reason: 'named as a region we do not recognise; refusing a settlement fallback' });
+        advanced = n;
+        break;
+      }
+
       const chosen = chooseCandidate(phrase, gaz.byName.get(phrase), regionCodes, bbox, localDrops);
       advanced = n;
 

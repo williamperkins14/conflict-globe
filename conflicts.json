@@ -564,7 +564,7 @@
       "Sudan",
       "Sudanese"
     ],
-    "summary": "",
+    "summary": "Fighting broke out on 15 April 2023 between Sudan's army and the Rapid Support Forces, a paramilitary group that had grown out of the Darfur militias, after a power struggle between their two commanders over the country's political transition turned into open war. The army holds the centre and east, including the recaptured capital; the RSF holds most of Darfur and runs a rival administration from Nyala. The war has produced the largest displacement crisis in the world and confirmed famine, and no peace process is under way. ---",
     "sources": [],
     "locations": [
       {
@@ -576,8 +576,31 @@
         "match": [
           "Khartoum"
         ],
-        "summary": "",
-        "sources": []
+        "summary": "Khartoum is where the war began: on 15 April 2023 fighting erupted across the capital and the Rapid Support Forces held most of it within days, including the airport and much of the city centre. The army fought its way back over the following two years, retaking the Republican Palace on 21 March 2025 and clearing the last RSF positions from Khartoum state that May. The government returned from Port Sudan on 11 January 2026 to a capital largely destroyed.",
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2023-04-15",
+            "text": "Fighting erupted across the capital between the army and the Rapid Support Forces, and the RSF took most of the city within days.",
+            "source": "https://www.hrw.org/breaking-news/2023/04/15/sudan-fighting-erupts-between-armed-forces"
+          },
+          {
+            "date": "2025-03-21",
+            "text": "The army retook the Republican Palace, the seat of government, after nearly two years of RSF control.",
+            "source": "https://www.pbs.org/newshour/world/sudans-military-says-it-has-retaken-republican-palace-in-khartoum-seat-of-nations-government"
+          },
+          {
+            "date": "2025-03-26",
+            "text": "The army retook Khartoum International Airport and Burhan declared the capital free.",
+            "note": "CONTESTED: some outlets date the declaration to 27 March",
+            "source": "https://en.wikipedia.org/wiki/Battle_of_Khartoum_(2023%E2%80%932025)"
+          },
+          {
+            "date": "2026-01-11",
+            "text": "The government returned to Khartoum from Port Sudan after more than two years of war.",
+            "source": "https://www.aljazeera.com/news/2026/1/11/sudan-announces-governments-return-to-khartoum-from-wartime-capital"
+          }
+        ]
       },
       {
         "name": "Omdurman",
@@ -588,8 +611,20 @@
         "match": [
           "Omdurman"
         ],
-        "summary": "",
-        "sources": []
+        "summary": "Omdurman sits across the Nile from Khartoum and was divided between the two forces for most of the war. The army recaptured the national radio and television complex there on 12 March 2024, its first significant gain in the capital region, but fighting continued in the southern districts for another year. Salha, the last RSF stronghold, fell on 20 May 2025, and Khartoum state was declared clear of the RSF the same day.",
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2024-03-12",
+            "text": "The army recaptured the national radio and television complex, its first significant gain in the capital region.",
+            "source": "https://www.thenationalnews.com/mena/2024/03/12/sudans-army-recaptures-state-radio-and-tv-complex-in-omdurman/"
+          },
+          {
+            "date": "2025-05-20",
+            "text": "The army took Salha, the last RSF stronghold in southern Omdurman, and declared Khartoum state entirely clear.",
+            "source": "https://www.aljazeera.com/news/2025/5/20/sudans-army-declares-khartoum-state-completely-free-of-paramilitary-rsf"
+          }
+        ]
       },
       {
         "name": "El Fasher",
@@ -601,8 +636,38 @@
           "El Fasher",
           "Fasher"
         ],
-        "summary": "",
-        "sources": []
+        "summary": "El Fasher was the last city in Darfur still held by the army, and the RSF besieged it from May 2024. The siege lasted eighteen months, starved the displacement camps around the city and ended when the RSF stormed the army's divisional headquarters on 26 October 2025. Satellite imagery and UN investigators documented mass killings in the days that followed, and a UN fact-finding mission concluded in February 2026 that the events bore the hallmarks of genocide against the Fur and Zaghawa.",
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2024-05-10",
+            "text": "The RSF began its assault on the city, opening a siege that would last eighteen months.",
+            "note": "CONTESTED: the UN dates the siege to \"May 2024\" without a day; Crisis Group dates the collapse of the local truce to 10-14 April 2024",
+            "source": "https://www.ohchr.org/en/documents/country-reports/report-ohchr-sudan-country-office-siege-el-fasher-north-darfur-may-2024"
+          },
+          {
+            "date": "2024-08-01",
+            "text": "The IPC confirmed famine in Zamzam camp outside the city, only the third famine determination in its history.",
+            "source": "https://www.ipcinfo.org/ipcinfo-website/countries-in-focus-archive/issue-107/en/"
+          },
+          {
+            "date": "2025-04-11",
+            "text": "The RSF overran Zamzam camp, which held around 400,000 displaced people; a UN report later documented at least 1,013 civilians killed and 319 summarily executed.",
+            "source": "https://www.ohchr.org/en/press-releases/2025/12/sudan-un-report-details-horrific-patterns-violations-committed-during-rsf"
+          },
+          {
+            "date": "2025-10-26",
+            "text": "The RSF stormed the army's divisional headquarters and took the city, ending the siege.",
+            "note": "CONTESTED toll: the UN documented ~6,000 killed in the first three days; Yale researchers estimate ~60,000 over three weeks; the governor of Darfur said ~27,000. Do not cite a single figure.",
+            "source": "https://www.ohchr.org/en/documents/country-reports/ohchr-report-rsf-final-offensive-and-capture-besieged-el-fasher-24-30"
+          },
+          {
+            "date": "2026-02-01",
+            "text": "A UN fact-finding mission concluded that the events at El Fasher bore the hallmarks of genocide against the Fur and Zaghawa.",
+            "note": "CONTESTED: February 2026, exact day not established",
+            "source": "https://www.aljazeera.com/news/2025/10/28/yale-report-finds-evidence-of-rsf-mass-killings-in-sudans-el-fasher"
+          }
+        ]
       },
       {
         "name": "Nyala",
@@ -613,8 +678,21 @@
         "match": [
           "Nyala"
         ],
-        "summary": "",
-        "sources": []
+        "summary": "Nyala is the largest city in Darfur and fell to the RSF on 26 October 2023, handing them the region's main airport and its principal supply hub. It has since become the seat of the parallel government that the RSF and its allies established, with Hemedti sworn in as chairman of its presidential council there on 30 August 2025. That administration holds no international recognition and represents the clearest step yet towards Sudan's partition.",
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2023-10-26",
+            "text": "The RSF stormed the army's last holdout in the city and took Nyala, the largest city in Darfur, with its airport and supply hub.",
+            "source": "https://en.wikipedia.org/wiki/Battle_of_Nyala"
+          },
+          {
+            "date": "2025-08-30",
+            "text": "Hemedti was sworn in at Nyala as chairman of the presidential council of a parallel government, which holds no international recognition.",
+            "note": "CONTESTED: the RSF announced the government on 15 April 2025 and named Nyala its seat in late July; 30 August is the swearing-in",
+            "source": "https://www.crisisgroup.org/alr/africa/sudan/sudans-rsf-proclaims-parallel-government-raising-threat-partition"
+          }
+        ]
       },
       {
         "name": "Port Sudan",
@@ -625,8 +703,16 @@
         "match": [
           "Port Sudan"
         ],
-        "summary": "",
-        "sources": []
+        "summary": "Port Sudan on the Red Sea became the wartime capital after the government fled Khartoum in 2023, and it handles most of the aid entering the country. It went untouched until 4 May 2025, when RSF drones struck the airbase, the fuel depots and the power station over several consecutive days, ending the assumption that the east lay beyond the war's reach. The government returned to Khartoum in January 2026, but the port remains the country's lifeline.",
+        "sources": [],
+        "keyEvents": [
+          {
+            "date": "2025-05-04",
+            "text": "RSF drones struck Port Sudan for the first time, hitting the Osman Digna airbase and, over the following days, fuel depots, the power station and the naval base.",
+            "note": "CONTESTED: Wikipedia dates the first wave to 3 May; AFP, AP, Reuters and the Centre for Information Resilience all use 4 May",
+            "source": "https://www.info-res.org/reports/alleged-drone-strikes-in-port-sudan/"
+          }
+        ]
       }
     ]
   },

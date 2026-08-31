@@ -57,9 +57,14 @@ jobs:
       # --write is required because the ladder's default is a dry run: it is
       # the only job here that can take events off the map, so committing to
       # disk has to be asked for rather than assumed.
+      # 92 place+date queries at GDELT's measured 23-24s each is ~37 minutes
+      # before any retries, and roughly half of connections fail on the first
+      # attempt. The first run was killed at a 60-minute limit having written
+      # nothing. The script now flushes as it goes and skips what an earlier
+      # run already checked, so a kill is survivable — but give it room.
       - name: Confidence ladder
         if: inputs.job == 'ladder'
-        timeout-minutes: 60
+        timeout-minutes: 335
         run: node scripts/confidence-ladder.mjs --write
 
       - name: Commit results

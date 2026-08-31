@@ -73,15 +73,31 @@ for (const { marker, e } of all) {
 
 // ---- 3: GDELT cross-check ----------------------------------------------
 const promotedByGdelt = [];
-let gdeltQueries = 0, gdeltErrors = 0;
+let gdeltQueries = 0, gdeltErrors = 0, alreadyChecked = 0;
+const FLUSH_EVERY = 5;   // place+date groups between writes
 if (USE_GDELT) {
   // One query per place+date, not per sentence. GDELT's article list depends
   // only on `${marker}|${date}`, so keying the cache on the sentence too (as
   // this once did) defeated it — every event was its own query. Fetch the
   // list once, then test each event's sentence against it in memory.
+  //
+  // This loop is resumable, and it has to be. The first real run was killed at
+  // the 60-minute step limit with every result held in memory and one write at
+  // the very end — an hour of queries thrown away, nothing retained. So: skip
+  // anything a previous run already checked, and flush to disk as we go. A
+  // killed run now costs the queries it was mid-way through, not all of them.
   const listCache = new Map();   // `${marker}|${date}` -> articles[] | null | Error
+  let sinceFlush = 0;
+  const flush = async () => {
+    if (DRY) return;
+    doc.events[CONFLICT_ID] = events;
+    await writeFile(OUTPUT_PATH, JSON.stringify(doc, null, 2) + '\n');
+    sinceFlush = 0;
+  };
+
   for (const { marker, e } of all) {
     if (e.status !== 'reported' || !e.at) continue;
+    if (e.checkedOn) { alreadyChecked++; continue; }   // a previous run did this one
     const key = `${marker}|${String(e.at).slice(0, 10)}`;
     let articles = listCache.get(key);
     if (articles === undefined) {
@@ -92,6 +108,7 @@ if (USE_GDELT) {
       listCache.set(key, articles);
     }
     if (articles instanceof Error) continue;   // this place+date could not be checked
+    if (++sinceFlush >= FLUSH_EVERY) await flush();
     const hit = gdeltMatchInArticles(articles, marker, e.sentence);
     // Stamp the event as checked whether or not GDELT found anything. This
     // is what earns it the right to expire later: an event that has never
@@ -131,6 +148,8 @@ if (USE_GDELT) {
       }
     }
   }
+
+  await flush();
 }
 
 // ---- 4: expiry --------------------------------------------------------
@@ -170,6 +189,7 @@ const totalPromoted = promotedByCorr.length + promotedByGdelt.length;
 const rule = '='.repeat(66);
 console.log(`\n${rule}\nCONFIDENCE LADDER — report (nothing written yet)\n${rule}`);
 console.log(`events considered : ${all.length}`);
+console.log(`already checked by an earlier run (skipped) : ${alreadyChecked}`);
 console.log(`self-corroboration entries stripped (own-channel repost) : ${selfCorrStripped}`);
 console.log(`promoted to 'corroborated' : ${totalPromoted}  (${promotedByCorr.length} by a second source, ${promotedByGdelt.length} by GDELT)`);
 console.log(`expired (>${EVENT_EXPIRY_DAYS}d, still 'reported') : ${expired.length}`);

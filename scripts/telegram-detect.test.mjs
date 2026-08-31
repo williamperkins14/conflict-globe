@@ -119,5 +119,40 @@ check(isExpired({ status: 'reported', at: '2026-08-01T00:00:00Z' }, new Date('20
 check(!isExpired({ status: 'corroborated', at: '2026-01-01T00:00:00Z' }, new Date('2026-08-30')), 'a corroborated event never expires');
 check(!isExpired({ status: 'reported', at: '2026-08-25T00:00:00Z' }, new Date('2026-08-30')), 'a 5-day-old reported event is not expired');
 
+// ---------------------------------------------------------------------------
+// The Leningrad class. "<Name> region" names an administrative area. When we
+// do not recognise that area, we must NOT quietly fall back to a same-named
+// settlement that happens to sit inside the bounding box.
+//
+// Real failure, 31 Aug 2026: "struck the Kirishi oil refinery in Leningrad
+// region" put a marker on a village in Kherson oblast — wrong country, 1,400km
+// out. The bbox rejected the real Leningrad oblast for being outside Ukraine
+// and accepted the namesake for being inside, so the guard that was meant to
+// protect us picked the wrong answer.
+// ---------------------------------------------------------------------------
+{
+  const { matchPost, loadGazetteer } = await import('./telegram-detect.mjs');
+  const gaz = loadGazetteer();
+  const bbox = [44, 56, 22, 46];   // Ukraine
+
+  const regionPost = {
+    text: 'Ukraine struck the Kirishi oil refinery in Leningrad region overnight.',
+  };
+  const r = matchPost(regionPost, gaz, bbox, []);
+  check(!r.matches.some(m => m.name === 'Leningrad'),
+        '"Leningrad region" does not produce a Leningrad marker');
+
+  // The guard must not swallow a place named as a place.
+  const plainPost = { text: 'Drones struck a fuel depot in Bryansk overnight.' };
+  const p = matchPost(plainPost, gaz, bbox, []);
+  check(p.matches.some(m => m.name === 'Bryansk'),
+        'a place named WITHOUT "region" still matches');
+
+  // A Ukrainian oblast we DO recognise must keep working.
+  const knownPost = { text: 'Six people were injured in Kyiv region overnight.' };
+  const k = matchPost(knownPost, gaz, bbox, []);
+  check(Array.isArray(k.matches), 'a recognised Ukrainian region still resolves');
+}
+
 console.log(failed ? `\n${failed} check(s) FAILED` : '\nall checks passed');
 process.exit(failed ? 1 : 0);
