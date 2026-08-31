@@ -1167,11 +1167,18 @@
         })
         .catch(err => {
           clearTimeout(timer);
+          // Say which part failed. GDELT is a free service with no uptime
+          // guarantee and it went unreachable entirely on 31 Aug 2026 — four
+          // separate networks, no TCP connection. A reader seeing "could not
+          // load" assumes this site is broken; they should be told that the
+          // news source is down and that everything else on the page still
+          // stands on its own sources.
           news.innerHTML = '<p class="news-status">'
             + (err.name === 'AbortError'
-                ? 'GDELT did not respond in time. Try again in a moment.'
-                : 'Could not load coverage.')
-            + '</p>';
+                ? 'The news service (GDELT) did not respond in time.'
+                : 'The news service (GDELT) is unreachable right now.')
+            + '<br>Key events and the write-ups above are unaffected — '
+            + 'they come from cited sources, not from this feed.</p>';
         });
     }
 
