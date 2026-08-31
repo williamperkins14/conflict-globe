@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T00:03:27.695Z",
+  "generated": "2026-08-31T06:03:51.999Z",
   "conflicts": {
     "ukraine": [
       {
@@ -722,23 +722,23 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 121,
+        "count": 67,
         "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-31"
+      },
+      {
+        "name": "Larak, Khorasan-E Janubi, Iran",
+        "lat": 31.8706,
+        "lng": 59.9008,
+        "count": 18,
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-08-31"
       },
       {
         "name": "Larak Island, Hormozgan, Iran",
         "lat": 26.8533,
         "lng": 56.3556,
-        "count": 60,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-08-31"
-      },
-      {
-        "name": "Bandar Abbas, Hormozgan, Iran",
-        "lat": 27.1865,
-        "lng": 56.2808,
-        "count": 18,
+        "count": 17,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-08-31"
       },
@@ -751,22 +751,6 @@
         "lastSeen": "2026-08-31"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 15,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-31"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 13,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-31"
-      },
-      {
         "name": "Qeshm, Kordestan, Iran",
         "lat": 35.4421,
         "lng": 47.3506,
@@ -775,20 +759,20 @@
         "lastSeen": "2026-08-31"
       },
       {
-        "name": "Larak, Khorasan-E Janubi, Iran",
-        "lat": 31.8706,
-        "lng": 59.9008,
-        "count": 10,
-        "firstSeen": "2026-08-31",
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 12,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-08-31"
       },
       {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
         "count": 9,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-28"
+        "lastSeen": "2026-08-31"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
@@ -803,6 +787,22 @@
         "lat": 33.9037,
         "lng": 46.0696,
         "count": 7,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-08-31"
+      },
+      {
+        "name": "Sirik, Hormozgan, Iran",
+        "lat": 26.5055,
+        "lng": 57.122,
+        "count": 7,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-08-31"
+      },
+      {
+        "name": "Bandar Abbas, Hormozgan, Iran",
+        "lat": 27.1865,
+        "lng": 56.2808,
+        "count": 6,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-08-31"
       },
@@ -823,12 +823,12 @@
         "lastSeen": "2026-08-31"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
         "count": 4,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-30"
+        "lastSeen": "2026-08-31"
       },
       {
         "name": "Shahed, Fars, Iran",
@@ -842,9 +842,25 @@
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-08-31"
+      },
+      {
+        "name": "Kharg, Bushehr, Iran",
+        "lat": 29.25,
+        "lng": 50.3286,
+        "count": 4,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-08-31"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
         "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-29"
+        "lastSeen": "2026-08-31"
       },
       {
         "name": "Basij, Fars, Iran",
