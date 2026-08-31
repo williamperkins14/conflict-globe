@@ -20,7 +20,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import {
   loadGazetteer, initLadder, applyCorroboration, independentSourceCount,
-  isExpired, gdeltCorroborates, EVENT_EXPIRY_DAYS,
+  isExpired, gdeltArticlesFor, gdeltMatchInArticles, EVENT_EXPIRY_DAYS,
   OUTPUT_PATH, CONFLICT_ID,
 } from './telegram-detect.mjs';
 
@@ -74,18 +74,24 @@ for (const { marker, e } of all) {
 const promotedByGdelt = [];
 let gdeltQueries = 0, gdeltErrors = 0;
 if (USE_GDELT) {
-  const cache = new Map();   // `${marker}|${date}` -> articles-checked flag is inside gdeltCorroborates; we cache the (place,date,sentence) result
+  // One query per place+date, not per sentence. GDELT's article list depends
+  // only on `${marker}|${date}`, so keying the cache on the sentence too (as
+  // this once did) defeated it — every event was its own query. Fetch the
+  // list once, then test each event's sentence against it in memory.
+  const listCache = new Map();   // `${marker}|${date}` -> articles[] | null | Error
   for (const { marker, e } of all) {
     if (e.status !== 'reported' || !e.at) continue;
-    const key = `${marker}|${String(e.at).slice(0, 10)}|${e.sentence}`;
-    let hit = cache.get(key);
-    if (hit === undefined) {
+    const key = `${marker}|${String(e.at).slice(0, 10)}`;
+    let articles = listCache.get(key);
+    if (articles === undefined) {
       await sleep(GDELT_GAP_MS);
       gdeltQueries++;
-      try { hit = await gdeltCorroborates(marker, e.at, e.sentence); }
-      catch { hit = null; gdeltErrors++; }
-      cache.set(key, hit);
+      try { articles = await gdeltArticlesFor(marker, e.at); }
+      catch { articles = new Error('GDELT fetch failed'); gdeltErrors++; }
+      listCache.set(key, articles);
     }
+    if (articles instanceof Error) continue;   // this place+date could not be checked
+    const hit = gdeltMatchInArticles(articles, marker, e.sentence);
     // Stamp the event as checked whether or not GDELT found anything. This
     // is what earns it the right to expire later: an event that has never
     // been looked at must never be dropped for failing to be corroborated.

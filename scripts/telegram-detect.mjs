@@ -506,36 +506,33 @@ function isExpired(event, now = new Date()) {
   return ageDays > EVENT_EXPIRY_DAYS;
 }
 
-// GDELT news cross-check. Query the DOC API for the place over the event date
-// +/- 1 day and look for an article whose title shares the event sentence's
-// significant nouns (the place name itself does not count).
+// GDELT news cross-check. Two halves, split so the caller can fetch a place's
+// article list once and test many events from the same date against it:
 //
-// Three distinct returns, because the caller needs to tell them apart:
-//   { url, title, shared }  a match          -> promote to 'corroborated'
-//   false                   checked, nothing -> event has now been looked at
-//   null                    not checkable    (no date, or too thin to query)
-// A real GDELT failure (network, timeout, rejection) THROWS, so the caller can
-// see that the pass was incomplete and hold off on expiring anything.
-async function gdeltCorroborates(placeName, atISO, sentence, fetchImpl = fetch) {
-  if (!atISO || !sentence) return null;
+//   gdeltArticlesFor(place, date)      -> the DOC API's article list for that
+//                                         place over date +/- 1 day
+//   gdeltMatchInArticles(list, ...)    -> does any title share the sentence's
+//                                         significant nouns?
+//
+// gdeltCorroborates() keeps the old one-shot signature by composing the two.
+
+// From a runner GDELT answers in 23-24s, so a 20s abort killed every good
+// query 3s early. 60s leaves headroom. On a connection failure (DNS/TCP never
+// established) retry twice, 3s then 9s apart; an HTTP status or a non-JSON
+// body is GDELT answering and is not retried.
+const GDELT_TIMEOUT_MS = 60_000;
+const GDELT_RETRY_PAUSES_MS = [3_000, 9_000];
+
+const isConnFailure = err =>
+  err?.name === 'AbortError' || err?.name === 'TimeoutError' || err instanceof TypeError;
+
+// Returns the article array (possibly empty) on success; null when there is
+// nothing to query (no/invalid date); THROWS on a real failure after retries,
+// so the caller can see the pass was incomplete and hold off on expiring.
+async function gdeltArticlesFor(placeName, atISO, fetchImpl = fetch) {
+  if (!placeName || !atISO) return null;
   const d = new Date(atISO);
   if (Number.isNaN(+d)) return null;
-
-  // The sentence's significant words, minus two kinds of freeloader.
-  //
-  // Generic strike vocabulary first: 'strike', 'attack', 'Russian' and the
-  // rest appear in nearly every headline about this war, so a match on them
-  // is not evidence of anything.
-  //
-  // Then the place name itself, and this one is easy to miss: the query
-  // below asks GDELT only for articles about this place, so the place name
-  // is in almost every title that comes back. Leave it in and it matches for
-  // free — the >= 2 shared-word test below silently becomes a 1-word test.
-  const GENERIC = new Set(['attack', 'attacks', 'strike', 'strikes', 'struck', 'hit', 'russian', 'ukrainian', 'war']);
-  const nouns = significantWords(sentence);
-  for (const g of GENERIC) nouns.delete(g);
-  for (const w of significantWords(placeName)) nouns.delete(w);   // multi-word places too
-  if (nouns.size < 2) return null;                  // nothing specific enough to match on
 
   const stamp = x => new Date(x).toISOString().slice(0, 10).replace(/-/g, '') + '000000';
   const start = new Date(d); start.setUTCDate(start.getUTCDate() - 1);
@@ -545,18 +542,51 @@ async function gdeltCorroborates(placeName, atISO, sentence, fetchImpl = fetch) 
     + '&mode=artlist&format=json&maxrecords=50&sort=hybridrel'
     + `&startdatetime=${stamp(start)}&enddatetime=${stamp(end)}`;
 
-  const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), 20_000);
-  let articles;
-  try {
-    const res = await fetchImpl(url, { signal: ctrl.signal, headers: { 'user-agent': 'Mozilla/5.0 conflict-globe' } });
-    if (!res.ok) throw new Error(`GDELT HTTP ${res.status}`);
-    const body = await res.text();
-    if (!body.trim().startsWith('{')) throw new Error('GDELT returned a non-JSON body');   // its errors are plain text with HTTP 200
-    articles = JSON.parse(body).articles || [];
-  } finally {
-    clearTimeout(t);
+  for (let attempt = 0; ; attempt++) {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), GDELT_TIMEOUT_MS);
+    try {
+      const res = await fetchImpl(url, { signal: ctrl.signal, headers: { 'user-agent': 'Mozilla/5.0 conflict-globe' } });
+      if (!res.ok) throw new Error(`GDELT HTTP ${res.status}`);
+      const body = await res.text();
+      if (!body.trim().startsWith('{')) throw new Error('GDELT returned a non-JSON body');   // its errors are plain text with HTTP 200
+      return JSON.parse(body).articles || [];
+    } catch (err) {
+      if (attempt < GDELT_RETRY_PAUSES_MS.length && isConnFailure(err)) {
+        await new Promise(r => setTimeout(r, GDELT_RETRY_PAUSES_MS[attempt]));
+        continue;
+      }
+      throw err;
+    } finally {
+      clearTimeout(t);
+    }
   }
+}
+
+// Look for an article whose title shares the event sentence's significant
+// nouns (the place name itself does not count).
+//
+//   { url, title, shared }  a match          -> promote to 'corroborated'
+//   false                   checked, nothing -> event has now been looked at
+//   null                    not checkable    (no article list, or too thin)
+function gdeltMatchInArticles(articles, placeName, sentence) {
+  if (!sentence || !Array.isArray(articles)) return null;
+
+  // The sentence's significant words, minus two kinds of freeloader.
+  //
+  // Generic strike vocabulary first: 'strike', 'attack', 'Russian' and the
+  // rest appear in nearly every headline about this war, so a match on them
+  // is not evidence of anything.
+  //
+  // Then the place name itself, and this one is easy to miss: the query asks
+  // GDELT only for articles about this place, so the place name is in almost
+  // every title that comes back. Leave it in and it matches for free — the
+  // >= 2 shared-word test below silently becomes a 1-word test.
+  const GENERIC = new Set(['attack', 'attacks', 'strike', 'strikes', 'struck', 'hit', 'russian', 'ukrainian', 'war']);
+  const nouns = significantWords(sentence);
+  for (const g of GENERIC) nouns.delete(g);
+  for (const w of significantWords(placeName)) nouns.delete(w);   // multi-word places too
+  if (nouns.size < 2) return null;                  // nothing specific enough to match on
 
   for (const a of articles) {
     const titleWords = significantWords(a.title || '');
@@ -564,6 +594,15 @@ async function gdeltCorroborates(placeName, atISO, sentence, fetchImpl = fetch) 
     if (shared.length >= 2) return { url: a.url, title: a.title, domain: a.domain, shared };
   }
   return false;
+}
+
+async function gdeltCorroborates(placeName, atISO, sentence, fetchImpl = fetch) {
+  if (!atISO || !sentence) return null;
+  // Skip the query entirely when the sentence is too thin to ever match.
+  if (gdeltMatchInArticles([], placeName, sentence) === null) return null;
+  const articles = await gdeltArticlesFor(placeName, atISO, fetchImpl);
+  if (articles === null) return null;
+  return gdeltMatchInArticles(articles, placeName, sentence);
 }
 
 // Merge new event entries for one curated marker into the ones already stored:
@@ -1049,6 +1088,7 @@ export {
   parseChannel, matchPost, buildEventEntry, mergeMarkerEvents, metonymyReject,
   namedOrigins, sourceType, independentSourceCount,
   initLadder, applyCorroboration, isExpired, gdeltCorroborates, significantWords,
+  gdeltArticlesFor, gdeltMatchInArticles,
   EVENT_EXPIRY_DAYS,
   CHANNELS, CONFLICT_ID, CONFLICTS_PATH, OUTPUT_PATH, GAZETTEER_PATH,
 };
