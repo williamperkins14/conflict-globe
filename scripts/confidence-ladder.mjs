@@ -21,6 +21,7 @@ import { existsSync } from 'node:fs';
 import {
   loadGazetteer, initLadder, applyCorroboration, independentSourceCount,
   isExpired, gdeltArticlesFor, gdeltMatchInArticles, EVENT_EXPIRY_DAYS,
+  corroborationReason, sideOfChannel,
   OUTPUT_PATH, CONFLICT_ID,
 } from './telegram-detect.mjs';
 
@@ -96,11 +97,38 @@ if (USE_GDELT) {
     // is what earns it the right to expire later: an event that has never
     // been looked at must never be dropped for failing to be corroborated.
     if (hit !== null) e.checkedOn = today;
-    if (hit) {
-      e.status = 'corroborated';
-      e.statusChanged = today;
-      e.statusEvidence.push({ kind: 'gdelt', at: today, url: hit.url, title: hit.title, shared: hit.shared });
-      promotedByGdelt.push({ marker, e });
+
+    // A match is not yet corroboration. What decides it is WHOSE match:
+    // an article from the opposing side, or a third-party wire. A second
+    // Ukrainian outlet agreeing with a Ukrainian Telegram channel is the
+    // same perspective arriving twice, and promotes nothing.
+    if (hit && hit.matches) {
+      const reason = corroborationReason(hit.sides, sideOfChannel(e.channel));
+      if (reason) {
+        e.status = 'corroborated';
+        e.statusChanged = today;
+        // Record the article that actually carried the weight, not the first
+        // one that happened to match: whichever match is on the opposing side.
+        const opposed = { russia_aligned: 'ukraine_aligned', ukraine_aligned: 'russia_aligned' };
+        const want = opposed[sideOfChannel(e.channel)];
+        const key = hit.matches.find(m => m.side === 'third_party')
+                 || hit.matches.find(m => m.side === want)
+                 || hit.matches[0];
+        e.statusEvidence.push({
+          kind: 'gdelt', at: today, reason,
+          url: key.url, title: key.title, domain: key.domain,
+          side: key.side, shared: key.shared,
+          sides: hit.sides,
+        });
+        promotedByGdelt.push({ marker, e, reason });
+      } else {
+        // Matched, but only from its own side. Worth recording that we looked
+        // and what we found — a near-miss is data, not nothing.
+        e.statusEvidence.push({
+          kind: 'gdelt-same-side', at: today, sides: hit.sides,
+          note: 'matched only sources on the reporting side; not corroboration',
+        });
+      }
     }
   }
 }
@@ -163,9 +191,10 @@ sample(promotedByCorr, 'PROMOTED by a second independent source', ({ marker, e }
   return `\n[${marker}] x${independentSourceCount(e)} independent\n  "${e.sentence}"\n  sources: ${srcs}`;
 });
 
-sample(promotedByGdelt, 'PROMOTED by GDELT news match', ({ marker, e }) => {
+sample(promotedByGdelt, 'PROMOTED by an opposing or third-party source', ({ marker, e }) => {
   const g = [...e.statusEvidence].reverse().find(x => x.kind === 'gdelt');
-  return `\n[${marker}] "${e.sentence}"\n  match: ${g.title}\n  ${g.url}\n  shared nouns: ${g.shared?.join(', ')}`;
+  return `\n[${marker}] "${e.sentence}"\n  ${g.reason}\n  ${g.domain} (${g.side})`
+       + `\n  "${g.title}"\n  ${g.url}\n  shared nouns: ${g.shared?.join(', ')}`;
 });
 
 sample(expired, 'EXPIRED', r => `\n[${r.marker}] posted ${String(r.at).slice(0, 10)}\n  "${r.sentence}"\n  ${r.url}`);

@@ -569,6 +569,35 @@ async function gdeltArticlesFor(placeName, atISO, fetchImpl = fetch) {
 //   { url, title, shared }  a match          -> promote to 'corroborated'
 //   false                   checked, nothing -> event has now been looked at
 //   null                    not checkable    (no article list, or too thin)
+// Which side of this war a domain reports from. Loaded lazily from
+// source-tiers.json so the classification stays an editable, reviewable file
+// rather than a list buried in code.
+let _tiers = null;
+function sourceTiers() {
+  if (_tiers) return _tiers;
+  const raw = JSON.parse(readFileSync('source-tiers.json', 'utf8'));
+  const byDomain = new Map();
+  for (const side of ['russia_aligned', 'ukraine_aligned', 'third_party']) {
+    for (const dom of raw[side] || []) byDomain.set(dom.toLowerCase(), side);
+  }
+  _tiers = { byDomain, channels: raw.telegram_channels || {} };
+  return _tiers;
+}
+
+// Longest-suffix match, so russian.rt.com resolves via rt.com.
+function sideOfDomain(domain) {
+  if (!domain) return 'unknown';
+  const d = String(domain).toLowerCase().replace(/^www\./, '');
+  const { byDomain } = sourceTiers();
+  if (byDomain.has(d)) return byDomain.get(d);
+  for (const [known, side] of byDomain) if (d.endsWith('.' + known)) return side;
+  return 'unknown';
+}
+
+function sideOfChannel(channel) {
+  return sourceTiers().channels[channel] || 'unknown';
+}
+
 function gdeltMatchInArticles(articles, placeName, sentence) {
   if (!sentence || !Array.isArray(articles)) return null;
 
@@ -588,12 +617,45 @@ function gdeltMatchInArticles(articles, placeName, sentence) {
   for (const w of significantWords(placeName)) nouns.delete(w);   // multi-word places too
   if (nouns.size < 2) return null;                  // nothing specific enough to match on
 
+  // Collect EVERY matching article rather than stopping at the first, because
+  // what matters is not that something matched but who it was. Two sources
+  // agreeing is weak when they share incentives — which is why two Ukrainian
+  // channels never corroborate each other. Two sources on OPPOSING sides
+  // agreeing is strong: neither gains from conceding the other's claim.
+  const matches = [];
   for (const a of articles) {
     const titleWords = significantWords(a.title || '');
     const shared = [...nouns].filter(w => titleWords.has(w));
-    if (shared.length >= 2) return { url: a.url, title: a.title, domain: a.domain, shared };
+    if (shared.length >= 2) {
+      matches.push({ url: a.url, title: a.title, domain: a.domain,
+                     shared, side: sideOfDomain(a.domain) });
+    }
   }
-  return false;
+  if (matches.length === 0) return false;
+
+  const sides = new Set(matches.map(m => m.side));
+  return { matches, sides: [...sides] };
+}
+
+// Does this set of matches, plus the side the original report came from,
+// amount to corroboration? Returns the reason, or null for no.
+//
+// Scope, and it is the whole point: this decides whether the EVENT OCCURRED.
+// It never promotes the parsed weapon, target or casualty count. Those are
+// exactly what opposing sources will disagree about, and an adversarial
+// match is evidence for the fact of the thing, not for anyone's account
+// of its details.
+function corroborationReason(sides, reporterSide) {
+  if (!sides || sides.length === 0) return null;
+  if (sides.includes('third_party')) return 'third-party wire';
+  const opposed = { russia_aligned: 'ukraine_aligned', ukraine_aligned: 'russia_aligned' };
+  const other = opposed[reporterSide];
+  if (other && sides.includes(other)) {
+    return reporterSide === 'ukraine_aligned'
+      ? 'Ukrainian-side report confirmed by Russian-aligned media'
+      : 'Russian-side report confirmed by Ukrainian-aligned media';
+  }
+  return null;   // same side, or unclassified: not corroboration
 }
 
 async function gdeltCorroborates(placeName, atISO, sentence, fetchImpl = fetch) {
@@ -1088,7 +1150,8 @@ export {
   parseChannel, matchPost, buildEventEntry, mergeMarkerEvents, metonymyReject,
   namedOrigins, sourceType, independentSourceCount,
   initLadder, applyCorroboration, isExpired, gdeltCorroborates, significantWords,
-  gdeltArticlesFor, gdeltMatchInArticles,
+  gdeltArticlesFor, gdeltMatchInArticles, corroborationReason,
+  sideOfDomain, sideOfChannel,
   EVENT_EXPIRY_DAYS,
   CHANNELS, CONFLICT_ID, CONFLICTS_PATH, OUTPUT_PATH, GAZETTEER_PATH,
 };
