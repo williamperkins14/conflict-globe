@@ -79,4 +79,27 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add $FILES
           git commit -m "${{ inputs.job }}: auto-locations update"
-          git push
+
+          # Push with a rebase-and-retry. A plain push fails the instant someone
+          # commits from their laptop while this is running — which is exactly
+          # what killed run #4 on 31 Aug: 4.3 minutes of scraping finished, the
+          # push was rejected as non-fast-forward, and the whole run was thrown
+          # away one second later.
+          #
+          # Rebase rather than merge: our commit only touches generated data
+          # files, so replaying it on top of whatever arrived is always right,
+          # and it keeps the history linear.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected (attempt $attempt) — rebasing on origin/main"
+            git pull --rebase --autostash origin main || {
+              echo "rebase failed; leaving the commit unpushed rather than forcing"
+              exit 1
+            }
+            sleep 3
+          done
+          echo "could not push after 3 attempts"
+          exit 1
