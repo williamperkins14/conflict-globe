@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T18:03:24.277Z",
+  "generated": "2026-08-31T19:07:26.471Z",
   "conflicts": {
     "ukraine": [
       {
@@ -845,6 +845,18 @@
           "statusEvidence": []
         },
         {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/93495",
+          "at": "2026-08-30T00:01:03Z",
+          "text": "⚡🇺🇦🇷🇺 Ukraine has launched at least 500 drones toward Russia. First reports of drones being shot down near Moscow.\n\nFor a moment it seemed that the Russian attack on Kiev had ended, but it is still ongoing.\n\nOther regions and cities of Ukraine are also being attacked, including Odesa, with the use of missiles and drones.",
+          "sentence": "For a moment it seemed that the Russian attack on Kiev had ended, but it is still ongoing.",
+          "excerpt": "…Moscow. For a moment it seemed that the Russian attack on Kiev had ended, but it is still ongoing. Other regions and cities of Ukraine are al…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-30",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51889",
           "at": "2026-08-29T19:30:39Z",
@@ -857,6 +869,18 @@
             "targetType": "apartment block",
             "casualties": null
           },
+          "status": "reported",
+          "statusChanged": "2026-08-29",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/93464",
+          "at": "2026-08-29T15:02:16Z",
+          "text": "🇷🇺🇺🇦⚡️ — The attack on Kiev has been going on for about 80 hours now.  @IntelSlava\n\nI remind you that Ukraine is already almost winning 😂",
+          "sentence": "🇷🇺🇺🇦⚡️ — The attack on Kiev has been going on for about 80 hours now.",
+          "excerpt": "🇷🇺🇺🇦⚡️ — The attack on Kiev has been going on for about 80 hours now. @IntelSlava I remind you that Ukrai…",
+          "parsed": null,
           "status": "reported",
           "statusChanged": "2026-08-29",
           "statusEvidence": []
@@ -893,6 +917,35 @@
           },
           "status": "reported",
           "statusChanged": "2026-08-29",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18407",
+          "at": "2026-08-28T18:40:21Z",
+          "text": "A large fire broke out near the Zhytomyr highway outside Kyiv, reportedly after a Russian drone attack.",
+          "sentence": "A large fire broke out near the Zhytomyr highway outside Kyiv, reportedly after a Russian drone attack.",
+          "excerpt": "A large fire broke out near the Zhytomyr highway outside Kyiv, reportedly after a Russian drone attack.",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-28",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18400",
+          "at": "2026-08-28T15:07:21Z",
+          "text": "Peskov claims strikes on Kyiv are \"systematic and targeted,\" allegedly going after \"military infrastructure of the Kyiv regime.\" Escalation fears are just \"Western media scare stories,\" he says. Russia is pushing ahead and frontline progress is \"obvious,\" per Peskov.",
+          "sentence": "Peskov claims strikes on Kyiv are \"systematic and targeted,\" allegedly going after \"military infrastructure of the Kyiv regime.\"",
+          "excerpt": "Peskov claims strikes on Kyiv are \"systematic and targeted,\" allegedly going after \"military infrastructure o…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-28",
           "statusEvidence": []
         },
         {
@@ -947,6 +1000,18 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18339",
+          "at": "2026-08-26T09:15:29Z",
+          "text": "Putin promised not to launch massive strikes on Kyiv during CIA Director John Ratcliffe’s two-day visit to Moscow, provided that Ukraine does not attack Moscow and St. Petersburg.\n\nThe CIA director also told Putin that Ukraine and the U.S. are preparing operations that could block Russia’s southern ports, and proposed a compromise regarding the Donbas. In response, Putin threatened a strike \"three times as powerful.\"",
+          "sentence": "Putin promised not to launch massive strikes on Kyiv during CIA Director John Ratcliffe’s two-day visit to Moscow, provided that Ukraine does not attack Moscow and St. Petersburg.",
+          "excerpt": "Putin promised not to launch massive strikes on Kyiv during CIA Director John Ratcliffe’s two-day visit to Moscow, provided that Ukr…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-26",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51642",
           "at": "2026-08-25T07:16:21Z",
@@ -961,6 +1026,18 @@
           },
           "status": "reported",
           "statusChanged": "2026-08-25",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18264",
+          "at": "2026-08-22T14:15:09Z",
+          "text": "Zelensky met Keith Kellogg in Kyiv during the Veterans Forum and discussed Russia ramping up strikes on infrastructure and civilians. He says anti-ballistic defense is the top priority and Ukraine is ready to buy Patriot interceptors to get through winter.",
+          "sentence": "Zelensky met Keith Kellogg in Kyiv during the Veterans Forum and discussed Russia ramping up strikes on infrastructure and civilians.",
+          "excerpt": "Zelensky met Keith Kellogg in Kyiv during the Veterans Forum and discussed Russia ramping up strikes on infrastruc…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-22",
           "statusEvidence": []
         },
         {
@@ -995,6 +1072,52 @@
           },
           "status": "reported",
           "statusChanged": "2026-08-22",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/92955",
+          "at": "2026-08-21T22:20:45Z",
+          "text": "⚡🇷🇺🇺🇦 A new strike on Kiev has begun using ballistic missiles.",
+          "sentence": "⚡🇷🇺🇺🇦 A new strike on Kiev has begun using ballistic missiles.",
+          "excerpt": "⚡🇷🇺🇺🇦 A new strike on Kiev has begun using ballistic missiles.",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-21",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18205",
+          "at": "2026-08-20T15:39:20Z",
+          "text": "In Kyiv, a woman was crying over the body of her 29-year-old grandson who died as a result of an RF attack. The guy died in bed from the collapse of the building's structure.",
+          "sentence": "In Kyiv, a woman was crying over the body of her 29-year-old grandson who died as a result of an RF attack.",
+          "excerpt": "In Kyiv, a woman was crying over the body of her 29-year-old grandson who died as a res…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-20",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18202",
+          "at": "2026-08-20T14:01:27Z",
+          "text": "Today, the Russians \"courageously\" defeated a watermelon warehouse in Ukraine.\n As a result of today's attack on Kyiv and the region, a supermarket chain distribution center was damaged, and a craft ice cream manufacturer's warehouse was destroyed.",
+          "sentence": "As a result of today's attack on Kyiv and the region, a supermarket chain distribution center was damaged, and a craft ice cream manufacturer's warehouse was destroyed.",
+          "excerpt": "…lon warehouse in Ukraine. As a result of today's attack on Kyiv and the region, a supermarket chain distribution center was damaged, and a craf…",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-20",
           "statusEvidence": []
         },
         {
@@ -1044,6 +1167,69 @@
           "statusEvidence": []
         },
         {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/92839",
+          "at": "2026-08-19T21:42:02Z",
+          "text": "Close-up footage showing a Russian double-tap with two Iskander-M/KN-23 tactical ballistic missiles striking the same location in Kyiv.",
+          "sentence": "Close-up footage showing a Russian double-tap with two Iskander-M/KN-23 tactical ballistic missiles striking the same location in Kyiv.",
+          "excerpt": "…3 tactical ballistic missiles striking the same location in Kyiv.",
+          "parsed": {
+            "weapon": "Iskander",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-19",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17868",
+          "at": "2026-08-05T20:24:53Z",
+          "text": "Russia struck a \"Rozetka\" warehouse in Brovary, near Kyiv, today.",
+          "sentence": "Russia struck a \"Rozetka\" warehouse in Brovary, near Kyiv, today.",
+          "excerpt": "Russia struck a \"Rozetka\" warehouse in Brovary, near Kyiv, today.",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "status": "corroborated",
+          "statusChanged": "2026-08-31",
+          "statusEvidence": [
+            {
+              "kind": "corroboration",
+              "at": "2026-08-31",
+              "reason": "Ukrainian-side report confirmed by Russian-aligned media",
+              "sides": [
+                "ukraine_aligned",
+                "russia_aligned"
+              ],
+              "sources": [
+                {
+                  "channel": "wartranslated",
+                  "side": "ukraine_aligned",
+                  "origins": []
+                },
+                {
+                  "channel": "intelslava",
+                  "side": "russia_aligned",
+                  "origins": []
+                }
+              ]
+            }
+          ],
+          "corroboration": [
+            {
+              "channel": "intelslava",
+              "url": "https://t.me/intelslava/92867",
+              "origins": []
+            }
+          ]
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50605",
           "at": "2026-08-05T07:24:14Z",
@@ -1090,6 +1276,76 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17782",
+          "at": "2026-08-01T14:45:47Z",
+          "text": "Russian milbloggers say there are no serious military targets in Kyiv, and the strikes are mostly for show to pressure civilians until they break and demand a \"deal\".",
+          "sentence": "Russian milbloggers say there are no serious military targets in Kyiv, and the strikes are mostly for show to pressure civilians until they break and demand a \"deal\".",
+          "excerpt": "…an milbloggers say there are no serious military targets in Kyiv, and the strikes are mostly for show to pressure civilians until they break and…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-01",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17762",
+          "at": "2026-08-01T07:34:31Z",
+          "text": "Russia hit Ukraine overnight with 35 missiles and 185 drones. Air defense shot down 2 missiles and 154 drones. Kyiv was the main target.\n\n0:11\n\n    This media is not supported in your browser\n    VIEW IN TELEGRAM\n\nThick smoke over Kyiv after last night's attack.",
+          "sentence": "Thick smoke over Kyiv after last night's attack.",
+          "excerpt": "…rted in your browser VIEW IN TELEGRAM Thick smoke over Kyiv after last night's attack.",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-01",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17690",
+          "at": "2026-07-28T21:22:26Z",
+          "text": "On Mykhailivska Square in Kyiv, an installation was unveiled and a memorial evening was held to mark the fourth anniversary of the Olenivka terrorist attack.",
+          "sentence": "On Mykhailivska Square in Kyiv, an installation was unveiled and a memorial evening was held to mark the fourth anniversary of the Olenivka terrorist attack.",
+          "excerpt": "On Mykhailivska Square in Kyiv, an installation was unveiled and a memorial evening was held to mark the fourt…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-28",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/91596",
+          "at": "2026-07-27T21:12:37Z",
+          "text": "🇺🇦⚔️🇷🇺Tonight, Ukraine launched a large scale attack on Russia's new territories and other bordering areas using at least 300 drones.\n\nMeanwhile, the first tents are beginning to appear in the Kyiv metro: residents of the Ukrainian capital are preparing for a possible shelling in retaliation.",
+          "sentence": "Meanwhile, the first tents are beginning to appear in the Kyiv metro: residents of the Ukrainian capital are preparing for a possible shelling in retaliation.",
+          "excerpt": "…Meanwhile, the first tents are beginning to appear in the Kyiv metro: residents of the Ukrainian capital are preparing for a possible shelling…",
+          "parsed": {
+            "weapon": "shell",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-27",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17625",
+          "at": "2026-07-25T19:24:05Z",
+          "text": "Iranian Telegram channels are threatening ballistic missile strikes on Ukraine after Zelensky said they hit a military vessel carrying cargo between Russia and Iran.\n\nIran’s Foreign Ministry claims Ukraine attacked an Iranian cargo ship in the Caspian Sea, killing one crew member and injuring another, calling on the UN to condemn Kyiv.",
+          "sentence": "Iran’s Foreign Ministry claims Ukraine attacked an Iranian cargo ship in the Caspian Sea, killing one crew member and injuring another, calling on the UN to condemn Kyiv.",
+          "excerpt": "…w member and injuring another, calling on the UN to condemn Kyiv.",
+          "parsed": {
+            "weapon": null,
+            "target": "Iranian cargo ship",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-25",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/49972",
           "at": "2026-07-24T21:11:54Z",
@@ -1097,6 +1353,23 @@
           "sentence": "❗️President Volodymyr Zelensky said the target of Russia’s strike in Bucha district was a weapons event that should not have been held, especially near homes.",
           "excerpt": "…nt Volodymyr Zelensky said the target of Russia’s strike in Bucha district was a weapons event that should not have been held, especially near ho…",
           "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-24",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/91378",
+          "at": "2026-07-24T16:53:43Z",
+          "text": "🇷🇺🇺🇦⚡️ — The Russian military struck a facility near Kiev where UAVs, including foreign ones, were being demonstrated  - the Ministry of Defence reported.  At the time of the strike, drone manufacturers, representatives of the command of the Ukrainian Armed…\n\n🇷🇺🇺🇦⚡️ — As a result of the strike on the exhibition of weapons and unmanned systems of the ARMADA association, which was held in the village of Kapitanovka in the Bucha district near Kiev, preliminary reports indicate seven killed and more than 30 wounded.\n\n@IntelSlava",
+          "sentence": "🇷🇺🇺🇦⚡️ — The Russian military struck a facility near Kiev where UAVs, including foreign ones, were being demonstrated - the Ministry of Defence reported.",
+          "excerpt": "🇷🇺🇺🇦⚡️ — The Russian military struck a facility near Kiev where UAVs, including foreign ones, were being demonstrated - the Ministry of…",
+          "parsed": {
+            "weapon": "drone",
+            "target": "facility",
+            "targetType": null,
+            "casualties": null
+          },
           "status": "reported",
           "statusChanged": "2026-07-24",
           "statusEvidence": []
@@ -1119,6 +1392,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17464",
+          "at": "2026-07-19T09:23:52Z",
+          "text": "A Russian missile strike completely destroyed the UKRTAC plant and warehouses in Kyiv. Company founder Severion Dangadze called it \"the biggest tragedy in the company's history\" but confirmed all employees are alive. UKRTAC produces tactical equipment, body armor, helmets and military gear.",
+          "sentence": "A Russian missile strike completely destroyed the UKRTAC plant and warehouses in Kyiv.",
+          "excerpt": "…ike completely destroyed the UKRTAC plant and warehouses in Kyiv. Company founder Severion Dangadze called it \"the biggest tragedy in the company…",
+          "parsed": {
+            "weapon": "missile",
+            "target": "UKRTAC plant",
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-19",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/49597",
           "at": "2026-07-19T07:17:51Z",
@@ -1131,6 +1421,18 @@
             "targetType": null,
             "casualties": "1 injured, 1 killed"
           },
+          "status": "reported",
+          "statusChanged": "2026-07-19",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17459",
+          "at": "2026-07-19T05:31:40Z",
+          "text": "Over 40 explosions hit Kyiv overnight, buildings, a shopping mall and cars on fire. One killed, 13 wounded so far. The largest ballistic strike on the city.",
+          "sentence": "Over 40 explosions hit Kyiv overnight, buildings, a shopping mall and cars on fire.",
+          "excerpt": "Over 40 explosions hit Kyiv overnight, buildings, a shopping mall and cars on fire. One killed, 13 wounded…",
+          "parsed": null,
           "status": "reported",
           "statusChanged": "2026-07-19",
           "statusEvidence": []
@@ -1159,6 +1461,18 @@
           "text": "❗️The EU has approved sanctions for the first time in response to Russia’s deadly July 1-2 strikes on Kyiv and its campaign against civilian infrastructure. The measures target five companies from the ABS Electro group that produce electronic components for drones, including modules designed to improve Shahed drones’ resistance to jamming. Board chair Irina Kharisova was also sanctioned with an EU asset freeze and travel ban.",
           "sentence": "❗️The EU has approved sanctions for the first time in response to Russia’s deadly July 1-2 strikes on Kyiv and its campaign against civilian infrastructure.",
           "excerpt": "…rst time in response to Russia’s deadly July 1-2 strikes on Kyiv and its campaign against civilian infrastructure. The measures target five comp…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-17",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17423",
+          "at": "2026-07-17T12:31:13Z",
+          "text": "The EU Council approved its first sanctions against Russia over deadly strikes on Kyiv July 1-2 and attacks on civilian infrastructure. Five ABS Electro companies are targeted for developing drone components including modules that help Shaheds resist jamming.\n\nBoard chair Irina Kharisova also faces sanctions. Her EU assets will be frozen, she's banned from entering the bloc, and Europeans can't do business with her.",
+          "sentence": "The EU Council approved its first sanctions against Russia over deadly strikes on Kyiv July 1-2 and attacks on civilian infrastructure.",
+          "excerpt": "…d its first sanctions against Russia over deadly strikes on Kyiv July 1-2 and attacks on civilian infrastructure. Five ABS Electro companies are…",
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-07-17",
@@ -1233,6 +1547,52 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17231",
+          "at": "2026-07-08T20:58:17Z",
+          "text": "During the latest Russian attack, a shelter in Vyshneve burned down completely. If the family had been hiding inside, they wouldn't have stood a chance.",
+          "sentence": "During the latest Russian attack, a shelter in Vyshneve burned down completely.",
+          "excerpt": "During the latest Russian attack, a shelter in Vyshneve burned down completely. If the family had been hiding inside, they wouldn't hav…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-08",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17225",
+          "at": "2026-07-08T15:54:46Z",
+          "text": "The moment a jet-powered drone struck a high-rise building in Kyiv.",
+          "sentence": "The moment a jet-powered drone struck a high-rise building in Kyiv.",
+          "excerpt": "…e moment a jet-powered drone struck a high-rise building in Kyiv.",
+          "parsed": {
+            "weapon": "drone",
+            "target": "high-rise building",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-08",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17217",
+          "at": "2026-07-08T09:44:13Z",
+          "text": "Last night, Russia destroyed a Philip Morris warehouse in Kyiv.\n\nA cigarette warehouse - what a powerful strategic target for the Russians.",
+          "sentence": "Last night, Russia destroyed a Philip Morris warehouse in Kyiv.",
+          "excerpt": "Last night, Russia destroyed a Philip Morris warehouse in Kyiv. A cigarette warehouse - what a powerful strategic target for the Russians.",
+          "parsed": {
+            "weapon": null,
+            "target": "Philip Morris warehouse",
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-08",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/48968",
           "at": "2026-07-06T19:40:58Z",
@@ -1240,6 +1600,47 @@
           "sentence": "Prime Minister Yuliia Svyrydenko said the destruction in Vyshneve after a secondary detonation on July 6 was the worst residential-sector damage of Russia’s full-scale invasion.",
           "excerpt": "Prime Minister Yuliia Svyrydenko said the destruction in Vyshneve after a secondary detonation on July 6 was the worst residential-sector damage…",
           "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-06",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17187",
+          "at": "2026-07-06T18:50:20Z",
+          "text": "Photographer Efrem Lukatsky has published a photo from one of the strike sites in Kyiv.\n\n\"It was a difficult decision for me to show this photograph. A Russian missile killed an entire family. Will this photo stop the war? Most likely not. But I believe the world must see the truth. I hope those to whom this photograph causes pain will forgive me.\" - he noted.",
+          "sentence": "Photographer Efrem Lukatsky has published a photo from one of the strike sites in Kyiv.",
+          "excerpt": "…atsky has published a photo from one of the strike sites in Kyiv. \"It was a difficult decision for me to show this photograph. A Russian missile…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-06",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17179",
+          "at": "2026-07-06T12:51:40Z",
+          "text": "Russia launched 419 projectiles at Ukraine: Air Defence Forces intercepted 363 of them - 37 missiles and 326 drones. The main target of the attack was Kyiv. At the same time, monitors call this attack almost the worst since the start of the full-scale war and emphasise that neither ballistic missiles nor \"Zircons\" were shot down.",
+          "sentence": "The main target of the attack was Kyiv.",
+          "excerpt": "…missiles and 326 drones. The main target of the attack was Kyiv. At the same time, monitors call this attack almost the worst since the start of…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-06",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17178",
+          "at": "2026-07-06T11:58:14Z",
+          "text": "Russia has once again launched a massive shelling campaign against Ukraine. Residential areas in the capital have come under attack. Rescue teams are still searching for people trapped under the rubble in damaged buildings across several districts of Kyiv. 11 people are known to have died so far.",
+          "sentence": "Rescue teams are still searching for people trapped under the rubble in damaged buildings across several districts of Kyiv.",
+          "excerpt": "…the rubble in damaged buildings across several districts of Kyiv. 11 people are known to have died so far.",
+          "parsed": {
+            "weapon": null,
+            "target": "buildings across several",
+            "targetType": null,
+            "casualties": null
+          },
           "status": "reported",
           "statusChanged": "2026-07-06",
           "statusEvidence": []
@@ -1266,6 +1667,23 @@
           "parsed": {
             "weapon": "missile",
             "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-06",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89804",
+          "at": "2026-07-06T00:54:15Z",
+          "text": "A Russian missile destroyed a Roshen Corporation building in Kyiv. Roshen is a Ukrainian confectionery manufacturing company.",
+          "sentence": "A Russian missile destroyed a Roshen Corporation building in Kyiv.",
+          "excerpt": "…Russian missile destroyed a Roshen Corporation building in Kyiv. Roshen is a Ukrainian confectionery manufacturing company.",
+          "parsed": {
+            "weapon": "missile",
+            "target": "Roshen Corporation building",
             "targetType": null,
             "casualties": null
           },
@@ -1303,6 +1721,30 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17076",
+          "at": "2026-07-02T21:58:56Z",
+          "text": "The moment of the RF strike on a high-rise building in Kyiv.\n\nIf our translations help you stay informed, consider supporting the project.\nIt keeps WarTranslated independent and active every day.\n\n🩵 Patreon: patreon.com/c/WarTranslated\n☕️ BuyMeACoffee: buymeacoffee.com/wartranslated",
+          "sentence": "The moment of the RF strike on a high-rise building in Kyiv.",
+          "excerpt": "The moment of the RF strike on a high-rise building in Kyiv. If our translations help you stay informed, consider supporting the project. I…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-02",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17073",
+          "at": "2026-07-02T21:32:48Z",
+          "text": "The death toll in Kyiv has climbed to 25. Rescue teams are still clearing rubble and searching for people at one of the sites. Five victims have been found here alone, and eight more are missing.\n\nIn Kyiv, the death toll from the Russian attack has risen to 27. One of the injured, who was in a critical condition, has died in hospital. As of now, there are reports of a further 91 people injured.",
+          "sentence": "In Kyiv, the death toll from the Russian attack has risen to 27.",
+          "excerpt": "…have been found here alone, and eight more are missing. In Kyiv, the death toll from the Russian attack has risen to 27. One of the injured, wh…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-02",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/48752",
           "at": "2026-07-02T18:31:40Z",
@@ -1325,6 +1767,47 @@
             "weapon": null,
             "target": "Red Cross",
             "targetType": "warehouse",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-02",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17059",
+          "at": "2026-07-02T15:15:16Z",
+          "text": "The EU is proposing NEW sanctions against Russia following the overnight strike on the Ukrainian capital.\n\"Sanctions against an even greater number of entities supporting the Russian military-industrial complex, in response to these strikes. The more often Moscow attacks the civilian population, the more sanctions need to be imposed.\" - said the EU’s top diplomat, Kaja Kallas.\nMeanwhile, the death toll in Kyiv has risen to 21 - there are still people trapped under the rubble of a destroyed building.",
+          "sentence": "Meanwhile, the death toll in Kyiv has risen to 21 - there are still people trapped under the rubble of a destroyed building.",
+          "excerpt": "…U’s top diplomat, Kaja Kallas. Meanwhile, the death toll in Kyiv has risen to 21 - there are still people trapped under the rubble of a destroye…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-02",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17058",
+          "at": "2026-07-02T15:04:03Z",
+          "text": "European Parliament staff were staying at a hotel in Kyiv, which came under attack by the Russian Federation during the night.",
+          "sentence": "European Parliament staff were staying at a hotel in Kyiv, which came under attack by the Russian Federation during the night.",
+          "excerpt": "European Parliament staff were staying at a hotel in Kyiv, which came under attack by the Russian Federation during the night.",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-02",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17057",
+          "at": "2026-07-02T13:55:12Z",
+          "text": "Russia launched a massive attack on Kyiv overnight, using virtually every weapon in its arsenal: Shahed and Geran drones, Zircon and Iskander missiles, everything except its much-hyped Oreshnik missile. At least 20 residential buildings were directly hit, while nearly 100 more across the capital sustained damage. Emergency crews from the State Emergency Service of Ukraine are still working at 15 locations, clearing the rubble. As of now, 13 people have been confirmed dead and nearly 100 others injured, including children.",
+          "sentence": "Russia launched a massive attack on Kyiv overnight, using virtually every weapon in its arsenal: Shahed and Geran drones, Zircon and Iskander missiles, everything except its much-hyped Oreshnik missile.",
+          "excerpt": "Russia launched a massive attack on Kyiv overnight, using virtually every weapon in its arsenal: Shahed and Geran drones…",
+          "parsed": {
+            "weapon": "Shahed",
+            "target": null,
+            "targetType": null,
             "casualties": null
           },
           "status": "reported",
@@ -1412,6 +1895,18 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16638",
+          "at": "2026-06-15T19:34:32Z",
+          "text": "During last night's Russian attack, 42,000 people, including 3,400 children, took shelter in the Kyiv metro.",
+          "sentence": "During last night's Russian attack, 42,000 people, including 3,400 children, took shelter in the Kyiv metro.",
+          "excerpt": "…2,000 people, including 3,400 children, took shelter in the Kyiv metro.",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-15",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47794",
           "at": "2026-06-15T11:18:11Z",
@@ -1434,9 +1929,51 @@
           "status": "reported",
           "statusChanged": "2026-06-15",
           "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/88863",
+          "at": "2026-06-12T06:00:33Z",
+          "text": "🇷🇺🇺🇦⚡️ — An oil depot was burned down in a strike near Kiev.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺🇺🇦⚡️ — An oil depot was burned down in a strike near Kiev.",
+          "excerpt": "🇷🇺🇺🇦⚡️ — An oil depot was burned down in a strike near Kiev. @Intelslava Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "oil depot",
+            "casualties": null
+          },
+          "corroboration": [],
+          "statusEvidence": [],
+          "status": "reported",
+          "statusChanged": "2026-06-12"
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16269",
+          "at": "2026-06-04T17:23:27Z",
+          "text": "Standing against the backdrop of the Lukyanivka neighborhood in Kyiv, destroyed by the Russians, NATO Secretary General Mark Rutte condemned the occupiers' cowardly tactics.",
+          "sentence": "Standing against the backdrop of the Lukyanivka neighborhood in Kyiv, destroyed by the Russians, NATO Secretary General Mark Rutte condemned the occupiers' cowardly tactics.",
+          "excerpt": "…ding against the backdrop of the Lukyanivka neighborhood in Kyiv, destroyed by the Russians, NATO Secretary General Mark Rutte condemned the occ…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-04",
+          "statusEvidence": []
         }
       ],
       "Belgorod": [
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/93553",
+          "at": "2026-08-30T19:11:01Z",
+          "text": "🇺🇦⚔️🇷🇺Heavy Ukrainian strikes on Belgorod throughout the day. Targets seem to include warehouses/depots and a TV tower.",
+          "sentence": "🇺🇦⚔️🇷🇺Heavy Ukrainian strikes on Belgorod throughout the day.",
+          "excerpt": "🇺🇦⚔️🇷🇺Heavy Ukrainian strikes on Belgorod throughout the day. Targets seem to include warehouses/depots and a TV tower.",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-30",
+          "statusEvidence": []
+        },
         {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51932",
@@ -1530,6 +2067,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17824",
+          "at": "2026-08-03T11:32:40Z",
+          "text": "It is reported that a university building in Belgorod, Russia, was attacked last night; Russian UAVs were likely being assembled and tested there.",
+          "sentence": "It is reported that a university building in Belgorod, Russia, was attacked last night; Russian UAVs were likely being assembled and tested there.",
+          "excerpt": "It is reported that a university building in Belgorod, Russia, was attacked last night; Russian UAVs were likely being assembled and…",
+          "parsed": {
+            "weapon": "drone",
+            "target": "last night",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-03",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50487",
           "at": "2026-08-03T08:40:42Z",
@@ -1544,6 +2098,23 @@
           },
           "status": "reported",
           "statusChanged": "2026-08-03",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17537",
+          "at": "2026-07-23T20:59:36Z",
+          "text": "This June, Belgorod lost a quarter of its gas stations due to drone attacks. It is reported that drones struck 19 out of 71 gas stations in the Belgorod agglomeration. That is 26.7% of all gas stations in the city and its suburbs.",
+          "sentence": "It is reported that drones struck 19 out of 71 gas stations in the Belgorod agglomeration.",
+          "excerpt": "…eported that drones struck 19 out of 71 gas stations in the Belgorod agglomeration. That is 26.7% of all gas stations in the city and its suburbs.",
+          "parsed": {
+            "weapon": "drone",
+            "target": "out",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-23",
           "statusEvidence": []
         },
         {
@@ -1593,6 +2164,40 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17115",
+          "at": "2026-07-03T20:54:44Z",
+          "text": "A power substation and the Luch thermal power plant in Belgorod are under missile strike right now.",
+          "sentence": "A power substation and the Luch thermal power plant in Belgorod are under missile strike right now.",
+          "excerpt": "A power substation and the Luch thermal power plant in Belgorod are under missile strike right now.",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
+            "targetType": "thermal power plant",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-03",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17077",
+          "at": "2026-07-03T06:48:50Z",
+          "text": "The Michurinska thermal power plant in Belgorod was struck this morning. Locals reporting power outages.",
+          "sentence": "The Michurinska thermal power plant in Belgorod was struck this morning.",
+          "excerpt": "The Michurinska thermal power plant in Belgorod was struck this morning. Locals reporting power outages.",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "thermal power plant",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-03",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/48062",
           "at": "2026-06-20T09:17:54Z",
@@ -1608,6 +2213,36 @@
           "status": "reported",
           "statusChanged": "2026-06-20",
           "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16414",
+          "at": "2026-06-08T15:33:38Z",
+          "text": "It appears that a Russian guided bomb struck an ammunition depot in Belgorod. The Russians were likely storing their Iskander or S-300 missiles there.",
+          "sentence": "It appears that a Russian guided bomb struck an ammunition depot in Belgorod.",
+          "excerpt": "…rs that a Russian guided bomb struck an ammunition depot in Belgorod. The Russians were likely storing their Iskander or S-300 missiles there.",
+          "parsed": {
+            "weapon": null,
+            "target": "ammunition depot",
+            "targetType": "depot",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-08",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/88659",
+          "at": "2026-06-08T14:18:00Z",
+          "text": "🇺🇦🇷🇺A powerful explosion has been reported on the outskirts of Belgorod.\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇺🇦🇷🇺A powerful explosion has been reported on the outskirts of Belgorod.",
+          "excerpt": "…\uddfaA powerful explosion has been reported on the outskirts of Belgorod. Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": null,
+          "corroboration": [],
+          "statusEvidence": [],
+          "status": "reported",
+          "statusChanged": "2026-06-08"
         }
       ],
       "Pokrovsk": [
@@ -1643,6 +2278,40 @@
           },
           "status": "reported",
           "statusChanged": "2026-08-06",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17408",
+          "at": "2026-07-16T17:29:00Z",
+          "text": "Ukrainian aviation struck Russian drone operator positions in Kotlyne.",
+          "sentence": "Ukrainian aviation struck Russian drone operator positions in Kotlyne.",
+          "excerpt": "…rainian aviation struck Russian drone operator positions in Kotlyne.",
+          "parsed": {
+            "weapon": null,
+            "target": "drone operator",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-16",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/90153",
+          "at": "2026-07-10T08:48:38Z",
+          "text": "🇷🇺🇺🇦⚡️ — Russian Aerospace Forces' daily combat operations across multiple sectors.\n\n0:00–0:13: A Kh-39 Light Multipurpose Guided Missile (LMUR) strikes a Ukrainian troop deployment point in the border village of Hrushivka, northern Kharkiv Oblast.\n\n0:14–0:28: Five FAB-250 glide bombs fitted with UMPK guidance kits strike Ukrainian troop positions in Orikhiv, Zaporizhzhia Oblast.\n\n0:29–0:44: Two FAB-500 bombs equipped with UMPK guidance kits strike the position of a Ukrainian drone unit in Dobropillia, Donetsk Oblast.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "0:29–0:44: Two FAB-500 bombs equipped with UMPK guidance kits strike the position of a Ukrainian drone unit in Dobropillia, Donetsk Oblast.",
+          "excerpt": "…dance kits strike the position of a Ukrainian drone unit in Dobropillia, Donetsk Oblast. @IntelSlava Please open Telegram to view this post V…",
+          "parsed": {
+            "weapon": "glide bomb",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-10",
           "statusEvidence": []
         },
         {
@@ -1690,9 +2359,84 @@
           "status": "reported",
           "statusChanged": "2026-06-20",
           "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16375",
+          "at": "2026-06-07T10:08:50Z",
+          "text": "Azov Brigade fighters shot down 11 Russian kamikaze drones with small arms fire in the Dobropillia direction, catching it all on GoPro.",
+          "sentence": "Azov Brigade fighters shot down 11 Russian kamikaze drones with small arms fire in the Dobropillia direction, catching it all on GoPro.",
+          "excerpt": "…down 11 Russian kamikaze drones with small arms fire in the Dobropillia direction, catching it all on GoPro.",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-07",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47334",
+          "at": "2026-06-05T19:56:53Z",
+          "text": "Ukraine’s Defense Forces struck a Russian Molniya attack drone launch and aerial reconnaissance site in central Pokrovsk. The site was used for drone launches and air surveillance as Russian forces tried to build up troops in the city.",
+          "sentence": "Ukraine’s Defense Forces struck a Russian Molniya attack drone launch and aerial reconnaissance site in central Pokrovsk.",
+          "excerpt": "…tack drone launch and aerial reconnaissance site in central Pokrovsk. The site was used for drone launches and air surveillance as Russian forces tri…",
+          "parsed": {
+            "weapon": null,
+            "target": "Molniya attack",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-05",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16321",
+          "at": "2026-06-05T16:16:28Z",
+          "text": "Ukraine's defense forces carried out a precision airstrike in central Pokrovsk, hitting a Russian Molniya drone launch and reconnaissance site. The strike significantly limited Russian drone units' ability to conduct surveillance and attacks in the area.",
+          "sentence": "Ukraine's defense forces carried out a precision airstrike in central Pokrovsk, hitting a Russian Molniya drone launch and reconnaissance site.",
+          "excerpt": "…defense forces carried out a precision airstrike in central Pokrovsk, hitting a Russian Molniya drone launch and reconnaissance site. The strike sig…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-05",
+          "statusEvidence": []
         }
       ],
       "Moscow": [
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/93495",
+          "at": "2026-08-30T00:01:03Z",
+          "text": "⚡🇺🇦🇷🇺 Ukraine has launched at least 500 drones toward Russia. First reports of drones being shot down near Moscow.\n\nFor a moment it seemed that the Russian attack on Kiev had ended, but it is still ongoing.\n\nOther regions and cities of Ukraine are also being attacked, including Odesa, with the use of missiles and drones.",
+          "sentence": "First reports of drones being shot down near Moscow.",
+          "excerpt": "…toward Russia. First reports of drones being shot down near Moscow. For a moment it seemed that the Russian attack on Kiev had ended, but it is st…",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-30",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18336",
+          "at": "2026-08-26T09:04:21Z",
+          "text": "Yesterday, after the CIA director left the U.S. Embassy in Moscow, all U.S. flags were taken down.",
+          "sentence": "Yesterday, after the CIA director left the U.S. Embassy in Moscow, all U.S. flags were taken down.",
+          "excerpt": "Yesterday, after the CIA director left the U.S. Embassy in Moscow, all U.S. flags were taken down.",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-26",
+          "statusEvidence": []
+        },
         {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51694",
@@ -1703,6 +2447,18 @@
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-08-26",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17897",
+          "at": "2026-08-07T09:39:43Z",
+          "text": "Massive explosion reported across Moscow and the surrounding region around 11 AM. Heard everywhere from the city center to Khimki and Krasnogorsk, rattling windows. No official info yet.",
+          "sentence": "Massive explosion reported across Moscow and the surrounding region around 11 AM.",
+          "excerpt": "Massive explosion reported across Moscow and the surrounding region around 11 AM. Heard everywhere from the city center…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-07",
           "statusEvidence": []
         },
         {
@@ -1735,6 +2491,18 @@
           "statusEvidence": []
         },
         {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/91896",
+          "at": "2026-08-01T20:56:54Z",
+          "text": "🇺🇦🇷🇺⚡️ —  A bomb with a 1 kg TNT equivalent, filled with metal balls, exploded at the entrance to a restaurant - Media reports.  The target of the explosion near Balzi Rossi in central Moscow was a group of guests gathered for a private event on the restaurant's…\n\nAccording to my information, there was a plan to assassinate one of the commanders of the Aerospace Forces. However, his relatives were the ones who died.\n\nAnd the package was delivered by a woman from Central Asia.\n\n@Intelslava",
+          "sentence": "The target of the explosion near Balzi Rossi in central Moscow was a group of guests gathered for a private event on the restaurant's…",
+          "excerpt": "…s. The target of the explosion near Balzi Rossi in central Moscow was a group of guests gathered for a private event on the restaurant's… Accord…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-01",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50392",
           "at": "2026-08-01T18:40:12Z",
@@ -1752,17 +2520,85 @@
           "statusEvidence": []
         },
         {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/50390",
-          "at": "2026-08-01T18:03:28Z",
-          "text": "Three people were killed and 15 injured in an explosion at the Balzi Rossi restaurant in central Moscow, according to police. The venue had reportedly been closed for a private event. Police and ambulances responded in large numbers, while the cause of the explosion has not been announced.",
-          "sentence": "Three people were killed and 15 injured in an explosion at the Balzi Rossi restaurant in central Moscow, according to police.",
-          "excerpt": "…ed in an explosion at the Balzi Rossi restaurant in central Moscow, according to police. The venue had reportedly been closed for a private event.…",
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/91892",
+          "at": "2026-08-01T17:54:41Z",
+          "text": "🇷🇺⚡️ — An explosion occurred at the Balzi Rossi restaurant near the Barrikadnaya metro station in Moscow.\n\n▶️ According to preliminary media reports, about 20 people were injured, and at least one person has died\n\n▶️ A fire broke out in the building following the explosion. Dozens of ambulances and fire crews have arrived at the scene, and traffic in the area has been blocked.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺⚡️ — An explosion occurred at the Balzi Rossi restaurant near the Barrikadnaya metro station in Moscow.",
+          "excerpt": "…lzi Rossi restaurant near the Barrikadnaya metro station in Moscow. ▶️ According to preliminary media reports, about 20 people were injured, and a…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-01",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17786",
+          "at": "2026-08-01T17:46:00Z",
+          "text": "An explosion hit the Balzi Rossi restaurant in central Moscow. One person reportedly killed, 16 injured. No cause given yet.",
+          "sentence": "An explosion hit the Balzi Rossi restaurant in central Moscow.",
+          "excerpt": "An explosion hit the Balzi Rossi restaurant in central Moscow. One person reportedly killed, 16 injured. No cause given yet.",
           "parsed": {
             "weapon": null,
+            "target": "Balzi Rossi restaurant",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "corroborated",
+          "statusChanged": "2026-08-31",
+          "statusEvidence": [
+            {
+              "kind": "corroboration",
+              "at": "2026-08-31",
+              "reason": "Ukrainian-side report confirmed by Russian-aligned media",
+              "sides": [
+                "ukraine_aligned",
+                "russia_aligned"
+              ],
+              "sources": [
+                {
+                  "channel": "wartranslated",
+                  "side": "ukraine_aligned",
+                  "origins": []
+                },
+                {
+                  "channel": "noel_reports",
+                  "side": "ukraine_aligned",
+                  "origins": []
+                },
+                {
+                  "channel": "intelslava",
+                  "side": "russia_aligned",
+                  "origins": []
+                }
+              ]
+            }
+          ],
+          "corroboration": [
+            {
+              "channel": "noel_reports",
+              "url": "https://t.me/noel_reports/50390",
+              "origins": []
+            },
+            {
+              "channel": "intelslava",
+              "url": "https://t.me/intelslava/91895",
+              "origins": []
+            }
+          ]
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17766",
+          "at": "2026-08-01T10:18:05Z",
+          "text": "Moscow authorities claim 6225 drones flew toward the region in a month, with 780 allegedly shot down approaching Moscow.",
+          "sentence": "Moscow authorities claim 6225 drones flew toward the region in a month, with 780 allegedly shot down approaching Moscow.",
+          "excerpt": "…region in a month, with 780 allegedly shot down approaching Moscow.",
+          "parsed": {
+            "weapon": "drone",
             "target": null,
             "targetType": null,
-            "casualties": "3 killed, 15 injured"
+            "casualties": null
           },
           "status": "reported",
           "statusChanged": "2026-08-01",
@@ -1796,6 +2632,23 @@
             "weapon": "drone",
             "target": null,
             "targetType": "fuel depot",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-20",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/90993",
+          "at": "2026-07-20T04:47:40Z",
+          "text": "🇷🇺🇺🇦⚡️ — Sobyanin reported an attack involving over 400 drones on the Moscow region.\n\nThe majority of the drones were neutralized by air defense forces at a distance, and 85 drones were destroyed as they approached Moscow.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "The majority of the drones were neutralized by air defense forces at a distance, and 85 drones were destroyed as they approached Moscow.",
+          "excerpt": "…a distance, and 85 drones were destroyed as they approached Moscow. @Intelslava Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": {
+            "weapon": "drone",
+            "target": "as they approached",
+            "targetType": null,
             "casualties": null
           },
           "status": "reported",
@@ -1838,23 +2691,6 @@
         },
         {
           "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49149",
-          "at": "2026-07-10T12:05:34Z",
-          "text": "A fire broke out at Moscow’s Kapotnya oil refinery after a Ukrainian drone attack. Missile alerts were issued across Moscow and the surrounding region as drones approached the capital. Newly deployed Pantsir-S1 systems could not prevent the attack.",
-          "sentence": "A fire broke out at Moscow’s Kapotnya oil refinery after a Ukrainian drone attack.",
-          "excerpt": "A fire broke out at Moscow’s Kapotnya oil refinery after a Ukrainian drone attack. Missile alerts were issued across…",
-          "parsed": {
-            "weapon": "drone",
-            "target": null,
-            "targetType": "refinery",
-            "casualties": null
-          },
-          "status": "reported",
-          "statusChanged": "2026-07-10",
-          "statusEvidence": []
-        },
-        {
-          "channel": "noel_reports",
           "url": "https://t.me/noel_reports/49148",
           "at": "2026-07-10T11:57:43Z",
           "text": "Russian analyst Rybar claimed Ukraine launched two domestically made ballistic missiles, an FP-9 and a Sapsan, toward Moscow on June 30 and that both were intercepted. The account conflicts with Russia’s Defense Ministry, which reported one missile downed, while the FP-9 developer denied a launch. Open-source footage and reports of multiple explosions leave the number of missiles and any impacts unconfirmed.",
@@ -1871,6 +2707,57 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17261",
+          "at": "2026-07-10T08:59:55Z",
+          "text": "A fire has broken out in Moscow, reportedly near the Kapotnya oil refinery. A missile alert was declared in Moscow and the region. Details being confirmed, Exilenova+ reports.",
+          "sentence": "A fire has broken out in Moscow, reportedly near the Kapotnya oil refinery.",
+          "excerpt": "A fire has broken out in Moscow, reportedly near the Kapotnya oil refinery. A missile alert was declared in Mos…",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "refinery",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-10",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89861",
+          "at": "2026-07-07T05:02:52Z",
+          "text": "🇷🇺🇺🇦⚡️ — Over 430 drones were flying towards the Moscow region from the evening until 6:00 am.\n\nMost of them were destroyed at long-range positions, and 36 UAVs were eliminated on their approach to Moscow.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "Most of them were destroyed at long-range positions, and 36 UAVs were eliminated on their approach to Moscow.",
+          "excerpt": "…positions, and 36 UAVs were eliminated on their approach to Moscow. @Intelslava Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": {
+            "weapon": "drone",
+            "target": "Most",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-07",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17042",
+          "at": "2026-07-01T16:55:43Z",
+          "text": "A fire \"suddenly\" erupted at a power substation in the Moscow suburbs, and some people have no water either. Officials reported a technical failure, but locals say the power vanished right after a drone visit, as UAVs were being intercepted on the approaches to Moscow.",
+          "sentence": "A fire \"suddenly\" erupted at a power substation in the Moscow suburbs, and some people have no water either.",
+          "excerpt": "A fire \"suddenly\" erupted at a power substation in the Moscow suburbs, and some people have no water either. Officials reported a technical f…",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "substation",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-01",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/48609",
           "at": "2026-06-30T05:07:59Z",
@@ -1880,6 +2767,18 @@
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-06-30",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89413",
+          "at": "2026-06-27T06:49:56Z",
+          "text": "🇷🇺⚡️ — Reuters reports that in Moscow, hardliners are allegedly urging Putin to abandon diplomacy and escalate the conflict, including by launching nuclear strikes.\n\nThey have previously called on the Kremlin leader to consider various harsh measures, up to the assassination of Zelensky and the use of tactical nuclear weapons.\n\nAccording to the same Reuters, the Kremlin is currently resisting calls to abandon negotiations and other radical proposals.\n\nIn the West, it seems that they are seriously considering the statements of ex-generals who have been given a microphone to entertain them, who are completely detached from reality.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺⚡️ — Reuters reports that in Moscow, hardliners are allegedly urging Putin to abandon diplomacy and escalate the conflict, including by launching nuclear strikes.",
+          "excerpt": "🇷🇺⚡️ — Reuters reports that in Moscow, hardliners are allegedly urging Putin to abandon diplomacy and escalate the co…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-27",
           "statusEvidence": []
         },
         {
@@ -1898,6 +2797,30 @@
           "status": "reported",
           "statusChanged": "2026-06-24",
           "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16848",
+          "at": "2026-06-22T11:24:40Z",
+          "text": "According to reports, missile alerts were issued in Moscow and other regions.",
+          "sentence": "According to reports, missile alerts were issued in Moscow and other regions.",
+          "excerpt": "According to reports, missile alerts were issued in Moscow and other regions.",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-22",
+          "statusEvidence": [],
+          "corroboration": [
+            {
+              "channel": "noel_reports",
+              "url": "https://t.me/noel_reports/49149",
+              "origins": []
+            }
+          ]
         },
         {
           "channel": "noel_reports",
@@ -1951,6 +2874,35 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16739",
+          "at": "2026-06-19T13:00:11Z",
+          "text": "Russian war correspondents whine that Ukrainian drones are attacking the capital again. In total, 19 drones have been downed today, they write.\n\nMoscow's mayor reports 37 Ukrainian drones shot down so far in another attack on the capital with emergency services at impact sites. Third attack on Moscow this week after yesterday's strike torched the city's oil refinery.",
+          "sentence": "Third attack on Moscow this week after yesterday's strike torched the city's oil refinery.",
+          "excerpt": "…al with emergency services at impact sites. Third attack on Moscow this week after yesterday's strike torched the city's oil refinery.",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "refinery",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-19",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16736",
+          "at": "2026-06-19T11:17:12Z",
+          "text": "100% of long-range strikes on Russia use Ukrainian-made weapons, Ukrainian Foreign Minister Sybiha says. Putin's propaganda claimed Russia was fighting the collective West, not just Ukraine, but now all strikes on Moscow and other regions use Ukrainian-produced weapons, he notes.",
+          "sentence": "Putin's propaganda claimed Russia was fighting the collective West, not just Ukraine, but now all strikes on Moscow and other regions use Ukrainian-produced weapons, he notes.",
+          "excerpt": "…e collective West, not just Ukraine, but now all strikes on Moscow and other regions use Ukrainian-produced weapons, he notes.",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-19",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/48006",
           "at": "2026-06-18T21:03:23Z",
@@ -1968,15 +2920,61 @@
           "statusEvidence": []
         },
         {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/47982",
-          "at": "2026-06-18T10:29:48Z",
-          "text": "Oil rain fell on Moscow after Ukrainian drones attacked the local refinery.",
-          "sentence": "Oil rain fell on Moscow after Ukrainian drones attacked the local refinery.",
-          "excerpt": "Oil rain fell on Moscow after Ukrainian drones attacked the local refinery.",
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16718",
+          "at": "2026-06-18T18:15:50Z",
+          "text": "Following the strike on the Moscow oil refinery, Solovyov began calling on Russians to prepare for hard times and self-sacrifice.",
+          "sentence": "Following the strike on the Moscow oil refinery, Solovyov began calling on Russians to prepare for hard times and self-sacrifice.",
+          "excerpt": "Following the strike on the Moscow oil refinery, Solovyov began calling on Russians to prepare for hard times and…",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "refinery",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16717",
+          "at": "2026-06-18T17:37:07Z",
+          "text": "Today in Paris, during the Eurosatory-2026 exhibition, a screen positioned in front of Fire Point missiles displayed footage of strikes on Moscow.",
+          "sentence": "Today in Paris, during the Eurosatory-2026 exhibition, a screen positioned in front of Fire Point missiles displayed footage of strikes on Moscow.",
+          "excerpt": "…ront of Fire Point missiles displayed footage of strikes on Moscow.",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16704",
+          "at": "2026-06-18T13:34:07Z",
+          "text": "Lavrov commented on the strike on Moscow: the Russian Federation will conduct massive strikes on AFU facilities, and the task set by Putin is being fulfilled. Words alone are not enough in response to Kyiv's actions, Lavrov commented regarding the UAV attack on Moscow.",
+          "sentence": "Lavrov commented on the strike on Moscow: the Russian Federation will conduct massive strikes on AFU facilities, and the task set by Putin is being fulfilled.",
+          "excerpt": "Lavrov commented on the strike on Moscow: the Russian Federation will conduct massive strikes on AFU facilities, and the…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-18",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16702",
+          "at": "2026-06-18T13:18:13Z",
+          "text": "According to monitoring channels, during the attack on the Moscow oil refinery, drones struck a unit considered the main hub of the entire facility. And these are not all the results of the strikes. Experts call this unit the \"heart\" of the plant because it accounts for half of the entire Moscow refinery's capacity.",
+          "sentence": "According to monitoring channels, during the attack on the Moscow oil refinery, drones struck a unit considered the main hub of the entire facility.",
+          "excerpt": "According to monitoring channels, during the attack on the Moscow oil refinery, drones struck a unit considered the main hub of the entire facili…",
           "parsed": {
             "weapon": "drone",
-            "target": "local refinery",
+            "target": "unit considered",
             "targetType": "refinery",
             "casualties": null
           },
@@ -2087,6 +3085,54 @@
           "statusEvidence": []
         },
         {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89133",
+          "at": "2026-06-18T04:52:20Z",
+          "text": "🇺🇦🇷🇺⚡️ — The oil refinery in Kapotnya in Moscow was attacked again, reported the mayor of the Russian capital, Sergei Sobyanin.\n\nHe stated that more than 50 drones were shot down on their approach to Moscow in the morning. According to Sobyanin, several of them managed to reach the plant.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇺🇦🇷🇺⚡️ — The oil refinery in Kapotnya in Moscow was attacked again, reported the mayor of the Russian capital, Sergei Sobyanin.",
+          "excerpt": "🇺🇦🇷🇺⚡️ — The oil refinery in Kapotnya in Moscow was attacked again, reported the mayor of the Russian capital, Sergei…",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "refinery",
+            "casualties": null
+          },
+          "status": "corroborated",
+          "statusChanged": "2026-08-31",
+          "statusEvidence": [
+            {
+              "kind": "corroboration",
+              "at": "2026-08-31",
+              "reason": "Russian-side report confirmed by Ukrainian-aligned media",
+              "sides": [
+                "russia_aligned",
+                "ukraine_aligned"
+              ],
+              "sources": [
+                {
+                  "channel": "intelslava",
+                  "side": "russia_aligned",
+                  "origins": [
+                    "mayor"
+                  ]
+                },
+                {
+                  "channel": "noel_reports",
+                  "side": "ukraine_aligned",
+                  "origins": []
+                }
+              ]
+            }
+          ],
+          "corroboration": [
+            {
+              "channel": "noel_reports",
+              "url": "https://t.me/noel_reports/47982",
+              "origins": []
+            }
+          ]
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47872",
           "at": "2026-06-16T14:58:25Z",
@@ -2095,6 +3141,23 @@
           "excerpt": "…Ukraine’s drone strike halted operations at Gazprom Neft’s Moscow refinery, according to Reuters. Industry sources said the attack damaged a prim…",
           "parsed": {
             "weapon": "drone",
+            "target": null,
+            "targetType": "refinery",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-16",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16644",
+          "at": "2026-06-16T11:25:26Z",
+          "text": "According to OSINT analysts, an AVT-6 crude distillation and electric desalting unit is also on fire at the Moscow Oil Refinery. This plant processes about 11 million tons of oil annually and directly supplies around 40% of Moscow's gasoline and 50% of its diesel needs.",
+          "sentence": "According to OSINT analysts, an AVT-6 crude distillation and electric desalting unit is also on fire at the Moscow Oil Refinery.",
+          "excerpt": "…illation and electric desalting unit is also on fire at the Moscow Oil Refinery. This plant processes about 11 million tons of oil annually and di…",
+          "parsed": {
+            "weapon": null,
             "target": null,
             "targetType": "refinery",
             "casualties": null
@@ -2121,6 +3184,24 @@
           "statusEvidence": []
         },
         {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89035",
+          "at": "2026-06-16T05:54:18Z",
+          "text": "🇺🇦🇷🇺⚡️ — A massive attack by Ukrainian drones is being repelled in Moscow and the surrounding region, with at least fifty drones already shot down.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇺🇦🇷🇺⚡️ — A massive attack by Ukrainian drones is being repelled in Moscow and the surrounding region, with at least fifty drones already shot down.",
+          "excerpt": "…— A massive attack by Ukrainian drones is being repelled in Moscow and the surrounding region, with at least fifty drones already shot down. @Int…",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "corroboration": [],
+          "status": "reported",
+          "statusChanged": "2026-06-16",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47781",
           "at": "2026-06-15T07:57:28Z",
@@ -2136,9 +3217,60 @@
           "status": "reported",
           "statusChanged": "2026-06-15",
           "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16410",
+          "at": "2026-06-08T11:34:42Z",
+          "text": "According to the Drone Bomber channel, these are the approximate flight paths of the strike UAVs heading toward Moscow and the occupied territories. The Russians are reporting around 210 drones in the air.",
+          "sentence": "According to the Drone Bomber channel, these are the approximate flight paths of the strike UAVs heading toward Moscow and the occupied territories.",
+          "excerpt": "…approximate flight paths of the strike UAVs heading toward Moscow and the occupied territories. The Russians are reporting around 210 drones in t…",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-08",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47266",
+          "at": "2026-06-04T09:52:49Z",
+          "text": "Ukraine may test a ballistic missile as early as this summer with a potential direction toward Moscow, Fire Point co-founder Shtilerman said. According to him, the system is practically ready, with only the engine still unfinished. Once that issue is resolved, the next test launch is planned.",
+          "sentence": "Ukraine may test a ballistic missile as early as this summer with a potential direction toward Moscow, Fire Point co-founder Shtilerman said.",
+          "excerpt": "…e as early as this summer with a potential direction toward Moscow, Fire Point co-founder Shtilerman said. According to him, the system is practic…",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-04",
+          "statusEvidence": []
         }
       ],
       "Mariupol": [
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17892",
+          "at": "2026-08-06T21:56:39Z",
+          "text": "A fire is reported at the \"Misto 11\" substation in Mariupol. 4 hits have been recorded.",
+          "sentence": "A fire is reported at the \"Misto 11\" substation in Mariupol.",
+          "excerpt": "A fire is reported at the \"Misto 11\" substation in Mariupol. 4 hits have been recorded.",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "substation",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-06",
+          "statusEvidence": []
+        },
         {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50704",
@@ -2174,6 +3306,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17496",
+          "at": "2026-07-21T11:38:07Z",
+          "text": "In Mariupol, a fuel depot is allegedly on fire following a series of strikes.",
+          "sentence": "In Mariupol, a fuel depot is allegedly on fire following a series of strikes.",
+          "excerpt": "In Mariupol, a fuel depot is allegedly on fire following a series of strikes.",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "fuel depot",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-21",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/49733",
           "at": "2026-07-21T07:34:40Z",
@@ -2186,15 +3335,15 @@
           "statusEvidence": []
         },
         {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49655",
-          "at": "2026-07-19T20:56:39Z",
-          "text": "Explosions have been reported in occupied Mariupol.",
-          "sentence": "Explosions have been reported in occupied Mariupol.",
-          "excerpt": "Explosions have been reported in occupied Mariupol.",
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16880",
+          "at": "2026-06-23T18:50:09Z",
+          "text": "In Mariupol, Russians who had just driven down a road were admiring the sight of burning Russian logistics on their way back.\n\nIf our translations help you stay informed, consider supporting the project.\nIt keeps WarTranslated independent and active every day.\n\n🩵 Patreon: patreon.com/c/WarTranslated\n☕️ BuyMeACoffee: buymeacoffee.com/wartranslated",
+          "sentence": "In Mariupol, Russians who had just driven down a road were admiring the sight of burning Russian logistics on their way back.",
+          "excerpt": "In Mariupol, Russians who had just driven down a road were admiring the sight of burning Ru…",
           "parsed": null,
           "status": "reported",
-          "statusChanged": "2026-07-19",
+          "statusChanged": "2026-06-23",
           "statusEvidence": []
         },
         {
@@ -2249,6 +3398,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16679",
+          "at": "2026-06-17T18:19:16Z",
+          "text": "The fuel crisis has also hit occupied Mariupol. Fuel is either completely unavailable or in limited supply at high prices.",
+          "sentence": "The fuel crisis has also hit occupied Mariupol.",
+          "excerpt": "The fuel crisis has also hit occupied Mariupol. Fuel is either completely unavailable or in limited supply at high prices.",
+          "parsed": {
+            "weapon": null,
+            "target": "occupied Mariupol",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-17",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47871",
           "at": "2026-06-16T14:57:46Z",
@@ -2263,6 +3429,157 @@
           },
           "status": "reported",
           "statusChanged": "2026-06-16",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47534",
+          "at": "2026-06-10T08:25:45Z",
+          "text": "Ukraine’s Azov Corps, SBU and Unmanned Systems Forces struck critical infrastructure at the occupied Mariupol port in a joint operation. Targets included power substations, radar systems, repair facilities, the control tower, fuel storage and the sanctioned cargo vessel Lady Augusta.",
+          "sentence": "Ukraine’s Azov Corps, SBU and Unmanned Systems Forces struck critical infrastructure at the occupied Mariupol port in a joint operation.",
+          "excerpt": "…stems Forces struck critical infrastructure at the occupied Mariupol port in a joint operation. Targets included power substations, radar systems, r…",
+          "parsed": {
+            "weapon": null,
+            "target": "critical infrastructure",
+            "targetType": "port",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-10",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47494",
+          "at": "2026-06-09T14:44:58Z",
+          "text": "Ukraine struck the deployment site of Russia’s 90th Engineer-Sapper Regiment in occupied Pionerske, Donetsk region, on June 5 using 25 attack drones, Dosye Shpiona said. Three servicemen were killed, five were wounded and a Major is listed missing. Engineering equipment, ammunition and several vehicles were also lost.",
+          "sentence": "Ukraine struck the deployment site of Russia’s 90th Engineer-Sapper Regiment in occupied Pionerske, Donetsk region, on June 5 using 25 attack drones, Dosye Shpiona said.",
+          "excerpt": "…site of Russia’s 90th Engineer-Sapper Regiment in occupied Pionerske, Donetsk region, on June 5 using 25 attack drones, Dosye Shpiona said. Three se…",
+          "parsed": {
+            "weapon": "drone",
+            "target": "deployment site",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-09",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47424",
+          "at": "2026-06-07T22:04:19Z",
+          "text": "A series of explosions sparked a major fire near a substation in occupied Mariupol. Video captures the moment a strike UAV hit the facility, triggering the blaze.",
+          "sentence": "A series of explosions sparked a major fire near a substation in occupied Mariupol.",
+          "excerpt": "…plosions sparked a major fire near a substation in occupied Mariupol. Video captures the moment a strike UAV hit the facility, triggering the blaze.",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "substation",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-07",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47380",
+          "at": "2026-06-06T15:19:58Z",
+          "text": "Ukraine’s Unmanned Systems Forces launched a mass overnight strike on June 5 against a deployment site of Russia’s 90th Engineer-Sapper Regiment in occupied Pionerske, Donetsk region. The unit was involved in mining and building the Surovikin Line in Kherson and Zaporizhzhia sectors, and carried out engineer tasks near Bakhmut and Avdiivka. Trucks, logistics sites and substations also burned, including toward Mariupol port.",
+          "sentence": "Ukraine’s Unmanned Systems Forces launched a mass overnight strike on June 5 against a deployment site of Russia’s 90th Engineer-Sapper Regiment in occupied Pionerske, Donetsk region.",
+          "excerpt": "…site of Russia’s 90th Engineer-Sapper Regiment in occupied Pionerske, Donetsk region. The unit was involved in mining and building the Surovikin Lin…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-06",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47369",
+          "at": "2026-06-06T12:07:22Z",
+          "text": "Two separate fires are ongoing in the port of Mariupol after Ukrainian drone attacks.",
+          "sentence": "Two separate fires are ongoing in the port of Mariupol after Ukrainian drone attacks.",
+          "excerpt": "Two separate fires are ongoing in the port of Mariupol after Ukrainian drone attacks.",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": "port",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-06",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16332",
+          "at": "2026-06-06T08:36:34Z",
+          "text": "A fire broke out at the port of occupied Mariupol this morning.",
+          "sentence": "A fire broke out at the port of occupied Mariupol this morning.",
+          "excerpt": "A fire broke out at the port of occupied Mariupol this morning.",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "port",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-06",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47354",
+          "at": "2026-06-06T06:03:12Z",
+          "text": "Overnight, Ukrainian drones hit the occupied port of Mariupol. Damage assessment is still ongoing.",
+          "sentence": "Overnight, Ukrainian drones hit the occupied port of Mariupol.",
+          "excerpt": "Overnight, Ukrainian drones hit the occupied port of Mariupol. Damage assessment is still ongoing.",
+          "parsed": {
+            "weapon": "drone",
+            "target": "occupied port",
+            "targetType": "port",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-06",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47305",
+          "at": "2026-06-05T09:49:35Z",
+          "text": "Ukraine’s Unmanned Systems Forces hit five vessels overnight on June 5 in Mariupol, Berdiansk and coastal waters of occupied territory. The targets included dry cargo ships and a tanker operating with painted-over names and switched-off radars. The vessels were part of logistics used for stealing Ukrainian grain, moving military cargo and transporting fuel.",
+          "sentence": "Ukraine’s Unmanned Systems Forces hit five vessels overnight on June 5 in Mariupol, Berdiansk and coastal waters of occupied territory.",
+          "excerpt": "…nned Systems Forces hit five vessels overnight on June 5 in Mariupol, Berdiansk and coastal waters of occupied territory. The targets included dry c…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-05",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16299",
+          "at": "2026-06-05T09:24:55Z",
+          "text": "Reports of a possible ship strike.\n\n1:31\n\n    Media is too big\n    VIEW IN TELEGRAM\n\nMadyar confirms USF Birds hit five vessels overnight in Mariupol, Berdyansk and nearby coastal waters. Dry cargo ships and tankers running dark, hauling Ukrainian grain, military cargo and fuel for the occupation. All five struck.",
+          "sentence": "Madyar confirms USF Birds hit five vessels overnight in Mariupol, Berdyansk and nearby coastal waters.",
+          "excerpt": "…AM Madyar confirms USF Birds hit five vessels overnight in Mariupol, Berdyansk and nearby coastal waters. Dry cargo ships and tankers running dark,…",
+          "parsed": null,
+          "corroboration": [],
+          "status": "reported",
+          "statusChanged": "2026-06-05",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47286",
+          "at": "2026-06-04T22:11:07Z",
+          "text": "More images from occupied Luhansk after Ukrainian drone strikes. Meanwhile there are additional reports of explosions in occupied Mariupol.",
+          "sentence": "Meanwhile there are additional reports of explosions in occupied Mariupol.",
+          "excerpt": "…hile there are additional reports of explosions in occupied Mariupol.",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-04",
           "statusEvidence": []
         }
       ],
@@ -2285,6 +3602,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18419",
+          "at": "2026-08-29T10:16:35Z",
+          "text": "Exilenova+ reports that the August 26 strike on Donetsk command posts left 27 dead and 58 wounded, including two generals and three senior officers critically injured.\n\nExilenova+ says missiles entered through the foundation of an unfinished hotel in Donetsk and detonated in the underground parking where the command posts were located. Satellite imagery shows no shopping center damage despite what Russian propagandists claimed.",
+          "sentence": "Exilenova+ reports that the August 26 strike on Donetsk command posts left 27 dead and 58 wounded, including two generals and three senior officers critically injured.",
+          "excerpt": "Exilenova+ reports that the August 26 strike on Donetsk command posts left 27 dead and 58 wounded, including two generals and three sen…",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": null,
+            "casualties": "27 killed, 58 wounded, 3 injured"
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-29",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51843",
           "at": "2026-08-28T18:51:47Z",
@@ -2297,6 +3631,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18361",
+          "at": "2026-08-27T16:22:38Z",
+          "text": "Defense Express reports that the Armed Forces of Ukraine may have used the latest American JDAM-LR missile against Donetsk for the first time. At the site of the destroyed underground Russian military headquarters in Donetsk, debris from a jet-powered missile with a range of approximately 550 km was found. According to the outlet, its testing in the US was completed only in April of this year. Ukraine could have received an experimental batch of JDAM-LR to test the new weapon directly under combat conditions.",
+          "sentence": "At the site of the destroyed underground Russian military headquarters in Donetsk, debris from a jet-powered missile with a range of approximately 550 km was found.",
+          "excerpt": "…the destroyed underground Russian military headquarters in Donetsk, debris from a jet-powered missile with a range of approximately 550 km was fou…",
+          "parsed": {
+            "weapon": "missile",
+            "target": "underground Russian military",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-27",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51791",
           "at": "2026-08-27T14:54:05Z",
@@ -2306,6 +3657,35 @@
           "parsed": {
             "weapon": null,
             "target": "something important",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-27",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18351",
+          "at": "2026-08-27T10:13:57Z",
+          "text": "According to monitoring channels, Donetsk came under a massive missile and drone attack, with about ten explosions recorded. One of the strikes hit a building located at 97 Illicha Avenue.   According to open-source data, this address previously housed research…\n\nMore photos of the aftermath of yesterday's attack on occupied Donetsk.",
+          "sentence": "More photos of the aftermath of yesterday's attack on occupied Donetsk.",
+          "excerpt": "…e photos of the aftermath of yesterday's attack on occupied Donetsk.",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-27",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/93319",
+          "at": "2026-08-27T08:45:33Z",
+          "text": "Ukraine carried out a large-scale, combined missile strike on Donetsk today, using a mix of FP-5 Flamingo cruise missiles, Storm Shadow/SCALP-EG cruise missiles, and potentially another unidentified munition. Two separate targets were struck.\n\nSix missiles hit an underground parking facility at an unfinished residential complex, while another seven struck an industrial building. Ukrainian channels claim both locations were being used to store large quantities of military equipment, including missile and rocket launchers, armored vehicles, and personnel.\n\nSeveral fragments with folded wings, typically associated with glide bombs and jet-powered stand-off munitions, were recovered. Based on the surviving markings, at least some of the munitions used in the strike have been identified as Storm Shadow/SCALP-EG cruise missiles.\n\nOne fragment bears a manufacturer’s plate marked MBDA FRANCE, along with the manufacturer code F0555. Another fragment contains a toothed mechanism, serial number 10625, and the date 20.08.2024. This is likely part of the mechanism used to deploy or control the missile’s wing.\n\nAs for the unidentified munition, one possibility is a weapon developed under the U.S. Extended-Range Attack Missile (ERAM) program. However, no confirmed photographs of an intact ERAM missile have emerged so far, making this identification highly speculative.\n\nAnother possibility is the AGM-158A JASSM air-launched cruise missile.",
+          "sentence": "Ukraine carried out a large-scale, combined missile strike on Donetsk today, using a mix of FP-5 Flamingo cruise missiles, Storm Shadow/SCALP-EG cruise missiles, and potentially another unidentified munition.",
+          "excerpt": "…raine carried out a large-scale, combined missile strike on Donetsk today, using a mix of FP-5 Flamingo cruise missiles, Storm Shadow/SCALP-EG crui…",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
             "targetType": null,
             "casualties": null
           },
@@ -2365,6 +3745,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18345",
+          "at": "2026-08-26T17:41:58Z",
+          "text": "Russian media report that several \"Flamingo\" drones struck Donetsk. A total of 13 impacts have been reported. The combined attack caused significant damage in the occupied city.",
+          "sentence": "Russian media report that several \"Flamingo\" drones struck Donetsk.",
+          "excerpt": "Russian media report that several \"Flamingo\" drones struck Donetsk. A total of 13 impacts have been reported. The combined attack caused significan…",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-26",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51738",
           "at": "2026-08-26T14:09:16Z",
@@ -2379,6 +3776,40 @@
           },
           "status": "reported",
           "statusChanged": "2026-08-26",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/93064",
+          "at": "2026-08-23T19:04:49Z",
+          "text": "The Russian Aerospace Forces (VKS) carried out strikes using FAB-500 and FAB-1500 bombs fitted with UMPK guidance kits against Ukrainian forces’ temporary deployment sites in Donetsk and Kharkiv Oblasts.",
+          "sentence": "The Russian Aerospace Forces (VKS) carried out strikes using FAB-500 and FAB-1500 bombs fitted with UMPK guidance kits against Ukrainian forces’ temporary deployment sites in Donetsk and Kharkiv Oblasts.",
+          "excerpt": "…its against Ukrainian forces’ temporary deployment sites in Donetsk and Kharkiv Oblasts.",
+          "parsed": {
+            "weapon": "glide bomb",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-23",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18228",
+          "at": "2026-08-21T11:07:30Z",
+          "text": "Smoke is rising over occupied Donetsk after a drone strike. Locals say there was a secondary detonation.",
+          "sentence": "Smoke is rising over occupied Donetsk after a drone strike.",
+          "excerpt": "Smoke is rising over occupied Donetsk after a drone strike. Locals say there was a secondary detonation.",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-21",
           "statusEvidence": []
         },
         {
@@ -2445,6 +3876,86 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17652",
+          "at": "2026-07-27T09:52:27Z",
+          "text": "Results of the SBU’s Long-Range Strikes Over the Week:\n🔹 Belbek and Saky Airfields in Crimea - Hit a \"Nebo-U\" radar system and a fuel reservoir;\n\n🔹 Rostov Region - Destroyed a \"Grave Stone\" S-400 radar, a \"Tor-M2\" SAM system, and a \"Pole-21\" electronic warfare system;\n\n🔹 UAV Warehouses - Target struck in occupied Donetsk Region and Crimea;\n\n🔹 Maritime Targets - A \"Molniya\" missile boat and two sanctioned cargo vessels transporting military supplies between Iran and Russia;\n\n🔹 Filanovsky Oil Production Platform - Hit in the Caspian Sea;\n\n🔹 Oil Infrastructure - \"Subkhankulovo\" oil pumping station (Bashkortostan) and mini-refineries in Ulyanovsk and Kaluga regions;\n\n🔹Coordination Center in Kherson Region – Up to 100 personnel targeted in a strike involving 13 drones;\n\n🔹Two additional FSB deployment sites – Hit in Kherson and Donetsk regions.",
+          "sentence": "🔹Two additional FSB deployment sites – Hit in Kherson and Donetsk regions.",
+          "excerpt": "…🔹Two additional FSB deployment sites – Hit in Kherson and Donetsk regions.",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-27",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/90918",
+          "at": "2026-07-19T11:43:20Z",
+          "text": "🇷🇺❌🇺🇦 — Servicemen of the Battlegroup South destroyed Ukrainian infantry and two ground-based robotic systems in the Donetsk People’s Republic (DPR).\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦 — Servicemen of the Battlegroup South destroyed Ukrainian infantry and two ground-based robotic systems in the Donetsk People’s Republic (DPR).",
+          "excerpt": "…ainian infantry and two ground-based robotic systems in the Donetsk People’s Republic (DPR). @IntelSlava Please open Telegram to view this po…",
+          "parsed": {
+            "weapon": null,
+            "target": "infantry",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-19",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/90769",
+          "at": "2026-07-17T14:23:02Z",
+          "text": "🇷🇺❌🇺🇦 — Russian forces destroyed a Ukrainian unmanned ground vehicle (UGV), enemy troops, and a military vehicle near Konstantinovka in the Donetsk People's Republic, the Russian Defense Ministry said.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦 — Russian forces destroyed a Ukrainian unmanned ground vehicle (UGV), enemy troops, and a military vehicle near Konstantinovka in the Donetsk People's Republic, the Russian Defense Ministry said.",
+          "excerpt": "…y troops, and a military vehicle near Konstantinovka in the Donetsk People's Republic, the Russian Defense Ministry said. @IntelSlava Please…",
+          "parsed": {
+            "weapon": null,
+            "target": "unmanned ground",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-17",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/90483",
+          "at": "2026-07-14T05:01:15Z",
+          "text": "🇷🇺❌🇺🇦 — A FAB-3000 strike destroyed a temporary deployment area of Ukraine's 63rd Separate Mechanised Brigade near Shchurovo, Donetsk.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦 — A FAB-3000 strike destroyed a temporary deployment area of Ukraine's 63rd Separate Mechanised Brigade near Shchurovo, Donetsk.",
+          "excerpt": "…Ukraine's 63rd Separate Mechanised Brigade near Shchurovo, Donetsk. @IntelSlava Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": {
+            "weapon": null,
+            "target": "temporary deployment area",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-14",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17352",
+          "at": "2026-07-13T20:25:22Z",
+          "text": "A loud explosion was heard in occupied Donetsk after a warehouse was hit.",
+          "sentence": "A loud explosion was heard in occupied Donetsk after a warehouse was hit.",
+          "excerpt": "A loud explosion was heard in occupied Donetsk after a warehouse was hit.",
+          "parsed": {
+            "weapon": null,
+            "target": "Donetsk after",
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-13",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/49312",
           "at": "2026-07-13T20:03:24Z",
@@ -2462,12 +3973,12 @@
           "statusEvidence": []
         },
         {
-          "channel": "noel_reports",
-          "url": "https://t.me/noel_reports/49209",
-          "at": "2026-07-11T17:01:19Z",
-          "text": "Ukrainian FP-2 drone strikes on a Russian command post in occupied Donetsk.",
-          "sentence": "Ukrainian FP-2 drone strikes on a Russian command post in occupied Donetsk.",
-          "excerpt": "…an FP-2 drone strikes on a Russian command post in occupied Donetsk.",
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17278",
+          "at": "2026-07-10T14:47:07Z",
+          "text": "The 7th Airborne Corps is expanding its middle-strike capabilities, \"Taras Hryhorovych Reports\" writes. The 147th brigade became first to use Behemot kamikaze drones, while the 237th UAV battalion struck targets near Donetsk using Fire Point-2 systems with 370km range and 200kg warheads.",
+          "sentence": "The 147th brigade became first to use Behemot kamikaze drones, while the 237th UAV battalion struck targets near Donetsk using Fire Point-2 systems with 370km range and 200kg warheads.",
+          "excerpt": "…e drones, while the 237th UAV battalion struck targets near Donetsk using Fire Point-2 systems with 370km range and 200kg warheads.",
           "parsed": {
             "weapon": "drone",
             "target": null,
@@ -2475,8 +3986,54 @@
             "casualties": null
           },
           "status": "reported",
-          "statusChanged": "2026-07-11",
+          "statusChanged": "2026-07-10",
           "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89582",
+          "at": "2026-06-30T14:19:26Z",
+          "text": "🇷🇺🇺🇦⚡️ — Despite the periodic strikes by the Armed Forces of Ukraine on the Donetsk airport, the enemy reports that work is continuing on its territory to deploy new launchers for jet kamikaze drones \"Geran-3\", as well as the construction of another drone warehouse.\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺🇺🇦⚡️ — Despite the periodic strikes by the Armed Forces of Ukraine on the Donetsk airport, the enemy reports that work is continuing on its territory to deploy new launchers for jet kamikaze drones \"Geran-3\", as well as the construction of another drone warehouse.",
+          "excerpt": "…the periodic strikes by the Armed Forces of Ukraine on the Donetsk airport, the enemy reports that work is continuing on its territory to deploy n…",
+          "parsed": {
+            "weapon": "Geran",
+            "target": null,
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "corroboration": [
+            {
+              "channel": "noel_reports",
+              "url": "https://t.me/noel_reports/49209",
+              "origins": []
+            }
+          ],
+          "statusEvidence": [
+            {
+              "kind": "corroboration",
+              "at": "2026-08-31",
+              "reason": "Russian-side report confirmed by Ukrainian-aligned media",
+              "sides": [
+                "russia_aligned",
+                "ukraine_aligned"
+              ],
+              "sources": [
+                {
+                  "channel": "intelslava",
+                  "side": "russia_aligned",
+                  "origins": []
+                },
+                {
+                  "channel": "noel_reports",
+                  "side": "ukraine_aligned",
+                  "origins": []
+                }
+              ]
+            }
+          ],
+          "status": "corroborated",
+          "statusChanged": "2026-08-31"
         },
         {
           "channel": "noel_reports",
@@ -2494,6 +4051,18 @@
           "status": "reported",
           "statusChanged": "2026-06-15",
           "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16280",
+          "at": "2026-06-04T22:26:24Z",
+          "text": "Warriors of the 1st Separate Center of the Unmanned Systems Forces have established fire control over the Donetsk Airport.\n\nIf our translations help you stay informed, consider supporting the project.\nIt keeps WarTranslated independent and active every day.\n\n🩵 Patreon: patreon.com/c/WarTranslated\n☕️ BuyMeACoffee: buymeacoffee.com/wartranslated",
+          "sentence": "Warriors of the 1st Separate Center of the Unmanned Systems Forces have established fire control over the Donetsk Airport.",
+          "excerpt": "…anned Systems Forces have established fire control over the Donetsk Airport. If our translations help you stay informed, consider supporting the p…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-04",
+          "statusEvidence": []
         }
       ],
       "Novorossiysk": [
@@ -2510,6 +4079,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/92738",
+          "at": "2026-08-17T20:17:00Z",
+          "text": "🇺🇦❌🇬🇷 — A Ukrainian drone struck the Greek tanker Skiros in the Black Sea after it had loaded oil at the port of Novorossiysk on August 16.\n\nGreek media published a video of the attack featuring a drone carrying out a reconnaissance flight over the sea, and then striking the deck bridge of a Greek tanker. A fire breaks out immediately after the strike, though it is unclear whether any crew members have been injured.\n\nIt is believed that the attack was carried out by a drone operated by the Ukrainian authorities, who have recently carried out similar attacks on tankers loaded with oil from this Russian port.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇺🇦❌🇬🇷 — A Ukrainian drone struck the Greek tanker Skiros in the Black Sea after it had loaded oil at the port of Novorossiysk on August 16.",
+          "excerpt": "…ros in the Black Sea after it had loaded oil at the port of Novorossiysk on August 16. Greek media published a video of the attack featuring a drone ca…",
+          "parsed": {
+            "weapon": "drone",
+            "target": "Greek tanker Skiros",
+            "targetType": "port",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-17",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51065",
           "at": "2026-08-13T14:47:53Z",
@@ -2519,6 +4105,57 @@
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-08-13",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18030",
+          "at": "2026-08-12T19:43:07Z",
+          "text": "The Defense Forces likely hit oil and grain terminals, as well as a Black Sea Fleet base during the attack on Novorossiysk. According to OSINT analysts, the reported damages include:\n\n▪️ The NKHP grain terminal - multiple impacts were recorded on grain silos and transport infrastructure facilities, including elevators;\n▪️ A Project 266M minesweeper;\n▪️ An unidentified dry cargo ship;\n▪️ Coastal infrastructure.",
+          "sentence": "The Defense Forces likely hit oil and grain terminals, as well as a Black Sea Fleet base during the attack on Novorossiysk.",
+          "excerpt": "…als, as well as a Black Sea Fleet base during the attack on Novorossiysk. According to OSINT analysts, the reported damages include: ▪️ The NKHP grain t…",
+          "parsed": {
+            "weapon": null,
+            "target": "oil",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-12",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/92480",
+          "at": "2026-08-12T17:48:09Z",
+          "text": "🇺🇦🇷🇺⚡️ — The aftermath of a massive overnight drone attack on Novorossiysk, captured by Western satellites.\n\nThe roof of the Bread Products Combine was damaged, a conveyor belt for grain collapsed at the Grain Terminal, a tanker was hit near the oil loading pier, and piers at the Novorossiysk Naval Base, where naval vessels are stationed, were also affected.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇺🇦🇷🇺⚡️ — The aftermath of a massive overnight drone attack on Novorossiysk, captured by Western satellites.",
+          "excerpt": "…🇺⚡️ — The aftermath of a massive overnight drone attack on Novorossiysk, captured by Western satellites. The roof of the Bread Products Combine was da…",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-12",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18025",
+          "at": "2026-08-12T17:45:02Z",
+          "text": "The General Staff reported that the Defense Forces of Ukraine hit four Russian military vessels in Novorossiysk.\n\nVessels suffered varying degrees of damage:\n\n▪️ two Project 11356 frigates, the \"Admiral Makarov\" and the \"Admiral Essen\";\n▪️ a Project 21631 small missile ship, the \"Buyan-M\";\n▪️ a Project 22160 patrol ship, the \"Vasily Bykov\".",
+          "sentence": "The General Staff reported that the Defense Forces of Ukraine hit four Russian military vessels in Novorossiysk.",
+          "excerpt": "…ense Forces of Ukraine hit four Russian military vessels in Novorossiysk. Vessels suffered varying degrees of damage: ▪️ two Project 11356 frigates, th…",
+          "parsed": {
+            "weapon": null,
+            "target": "military vessels",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-12",
           "statusEvidence": []
         },
         {
@@ -2568,6 +4205,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18018",
+          "at": "2026-08-12T10:29:20Z",
+          "text": "Confirmed strikes hit an air defense position, piers, and port infrastructure in Novorossiysk.\n\nThe Russians claimed to have downed over a thousand UAVs and 5 HIMARS systems, but failed to specify the number of intercepted \"Neptune\" missiles.",
+          "sentence": "Confirmed strikes hit an air defense position, piers, and port infrastructure in Novorossiysk.",
+          "excerpt": "…an air defense position, piers, and port infrastructure in Novorossiysk. The Russians claimed to have downed over a thousand UAVs and 5 HIMARS systems,…",
+          "parsed": {
+            "weapon": null,
+            "target": "air defense position",
+            "targetType": "port",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-12",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50982",
           "at": "2026-08-12T08:44:22Z",
@@ -2602,6 +4256,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/92326",
+          "at": "2026-08-09T08:53:18Z",
+          "text": "🇺🇦🇷🇺⚡️ — Drones attacked two facilities in Novorossiysk, according to the city's head, Andrey Kravchenko.\n\nHe did not specify which facilities were targeted, nor did he mention whether the drones caused any damage.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇺🇦🇷🇺⚡️ — Drones attacked two facilities in Novorossiysk, according to the city's head, Andrey Kravchenko.",
+          "excerpt": "🇺🇦🇷🇺⚡️ — Drones attacked two facilities in Novorossiysk, according to the city's head, Andrey Kravchenko. He did not specify which fac…",
+          "parsed": {
+            "weapon": "drone",
+            "target": "facilities",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-09",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/50756",
           "at": "2026-08-07T20:07:58Z",
@@ -2611,6 +4282,40 @@
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-08-07",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/92023",
+          "at": "2026-08-04T17:41:10Z",
+          "text": "🇺🇦🇷🇺⚡️ — A Turkish-flagged cargo ship carrying fruits and vegetables to Russia was attacked by Ukraine near Novorossiysk.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇺🇦🇷🇺⚡️ — A Turkish-flagged cargo ship carrying fruits and vegetables to Russia was attacked by Ukraine near Novorossiysk.",
+          "excerpt": "…ruits and vegetables to Russia was attacked by Ukraine near Novorossiysk. @Intelslava Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": {
+            "weapon": null,
+            "target": "Russia",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-04",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/90920",
+          "at": "2026-07-19T12:11:13Z",
+          "text": "🇺🇦🇷🇺⚡️ — A Ukrainian unmanned surface vehicle (USV) attacked the oil tanker AVERO, flying the flag of Barbados, in the area near the port of Novorossiysk in the Black Sea.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇺🇦🇷🇺⚡️ — A Ukrainian unmanned surface vehicle (USV) attacked the oil tanker AVERO, flying the flag of Barbados, in the area near the port of Novorossiysk in the Black Sea.",
+          "excerpt": "…, flying the flag of Barbados, in the area near the port of Novorossiysk in the Black Sea. @Intelslava Please open Telegram to view this post…",
+          "parsed": {
+            "weapon": null,
+            "target": "oil tanker AVERO",
+            "targetType": "port",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-19",
           "statusEvidence": []
         },
         {
@@ -2646,6 +4351,69 @@
           "status": "reported",
           "statusChanged": "2026-06-14",
           "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16461",
+          "at": "2026-06-10T09:50:29Z",
+          "text": "Satellite imagery showing the aftermath of the attack on the \"Grushovaya\" oil pumping station in Novorossiysk. It is estimated that another 4 to 5 reservoirs were damaged by the strike, in addition to those damaged in previous attacks.",
+          "sentence": "Satellite imagery showing the aftermath of the attack on the \"Grushovaya\" oil pumping station in Novorossiysk.",
+          "excerpt": "…th of the attack on the \"Grushovaya\" oil pumping station in Novorossiysk. It is estimated that another 4 to 5 reservoirs were damaged by the strike, in a…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-10",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16408",
+          "at": "2026-06-08T10:08:31Z",
+          "text": "Tonight, Ukrainian UAVs struck a key local oil depot in Novorossiysk. The target was the \"Grushovaya\" oil depot, hidden among the mountains in Grushovaya Balka.",
+          "sentence": "Tonight, Ukrainian UAVs struck a key local oil depot in Novorossiysk.",
+          "excerpt": "Tonight, Ukrainian UAVs struck a key local oil depot in Novorossiysk. The target was the \"Grushovaya\" oil depot, hidden among the mountains in Grusho…",
+          "parsed": {
+            "weapon": "drone",
+            "target": "key local oil",
+            "targetType": "oil depot",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-08",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47433",
+          "at": "2026-06-08T06:28:13Z",
+          "text": "Ukraine attacked the Grushovaya Balka oil storage and pumping hub in Novorossiysk overnight. The facility is part of Russia’s export infrastructure and is described as the largest oil storage site in the Caucasus, with underground and above-ground tanks.",
+          "sentence": "Ukraine attacked the Grushovaya Balka oil storage and pumping hub in Novorossiysk overnight.",
+          "excerpt": "…ttacked the Grushovaya Balka oil storage and pumping hub in Novorossiysk overnight. The facility is part of Russia’s export infrastructure and is descri…",
+          "parsed": {
+            "weapon": null,
+            "target": "Grushovaya Balka oil",
+            "targetType": "oil terminal",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-08",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/88596",
+          "at": "2026-06-08T06:12:49Z",
+          "text": "🇺🇦🇷🇺A fire broke out at a transshipment complex in Novorossiysk as a result of a drone attack - the operational headquarters of Krasnodar Krai.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇺🇦🇷🇺A fire broke out at a transshipment complex in Novorossiysk as a result of a drone attack - the operational headquarters of Krasnodar Krai.",
+          "excerpt": "🇺🇦🇷🇺A fire broke out at a transshipment complex in Novorossiysk as a result of a drone attack - the operational headquarters of Krasnodar Krai.…",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-08",
+          "statusEvidence": []
         }
       ],
       "Kharkiv": [
@@ -2657,6 +4425,23 @@
           "sentence": "In May 2022, after a Mi-28 from Russian military unit 12633 was shot down near Kharkiv, Ukraine's HUR accused the regiment of strikes on civilians in Kharkiv region.",
           "excerpt": "…a Mi-28 from Russian military unit 12633 was shot down near Kharkiv, Ukraine's HUR accused the regiment of strikes on civilians in Kharkiv region.…",
           "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-08-28",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18395",
+          "at": "2026-08-28T13:07:04Z",
+          "text": "Update on the St. Petersburg car bombing. A 24-year-old woman planted the bomb, local media report. She was reportedly contacted months ago by unknown individuals who allegedly posed as Ukrainian Armed Forces representatives.  They supposedly talked her into…\n\nRussian media report that the pilot killed in the St. Petersburg car bombing served in a regiment that struck civilians in Sumy and Kharkiv regions. Lt. Col. Sergiy Sechkov, 332nd Separate Guards Helicopter Regiment. His wife Anna was injured. His father confirmed the death.",
+          "sentence": "Russian media report that the pilot killed in the St. Petersburg car bombing served in a regiment that struck civilians in Sumy and Kharkiv regions.",
+          "excerpt": "…bing served in a regiment that struck civilians in Sumy and Kharkiv regions. Lt. Col. Sergiy Sechkov, 332nd Separate Guards Helicopter Regiment. Hi…",
+          "parsed": {
+            "weapon": null,
+            "target": "civilians",
+            "targetType": null,
+            "casualties": null
+          },
           "status": "reported",
           "statusChanged": "2026-08-28",
           "statusEvidence": []
@@ -2679,6 +4464,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17966",
+          "at": "2026-08-09T07:39:35Z",
+          "text": "Zelensky says Russia fired 61 missiles, 56 of them ballistic, over 1,560 drones and 1,540 guided bombs at Ukraine this week alone. Kharkiv, Odesa, Pavlograd and 9 other regions hit. 2 killed in Kharkiv after a drone took out four floors of a residential building.",
+          "sentence": "2 killed in Kharkiv after a drone took out four floors of a residential building.",
+          "excerpt": "…rkiv, Odesa, Pavlograd and 9 other regions hit. 2 killed in Kharkiv after a drone took out four floors of a residential building.",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": "apartment block",
+            "casualties": "2 killed"
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-09",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/49621",
           "at": "2026-07-19T11:02:35Z",
@@ -2693,6 +4495,54 @@
           },
           "status": "reported",
           "statusChanged": "2026-07-19",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89833",
+          "at": "2026-07-06T10:34:16Z",
+          "text": "🇷🇺❌🇺🇦 — Russian strikes on Ukrainian fuel facilities continue, with two more gas stations destroyed in Kharkiv.\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦 — Russian strikes on Ukrainian fuel facilities continue, with two more gas stations destroyed in Kharkiv.",
+          "excerpt": "…acilities continue, with two more gas stations destroyed in Kharkiv. Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-06",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89539",
+          "at": "2026-06-29T16:00:06Z",
+          "text": "🇷🇺❌🇺🇦 — A strike has been carried out on an enemy enterprise in Kharkiv; the city is in smoke.\n\n➡️ Large-scale smoke in Kharkiv after the arrival of airstrikes on an industrial facility.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦 — A strike has been carried out on an enemy enterprise in Kharkiv; the city is in smoke.",
+          "excerpt": "…\udde6 — A strike has been carried out on an enemy enterprise in Kharkiv; the city is in smoke. ➡️ Large-scale smoke in Kharkiv after the arrival of ai…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-29",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89536",
+          "at": "2026-06-29T15:26:07Z",
+          "text": "🇷🇺❌🇺🇦 — WATCH: Russian Aerospace Forces strike temporary deployment areas of Ukraine's 120th Separate Territorial Defence Brigade in Petrovka, Kharkiv region, using five OFAB-250-270 guided aerial bombs.\n\n@intelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦 — WATCH: Russian Aerospace Forces strike temporary deployment areas of Ukraine's 120th Separate Territorial Defence Brigade in Petrovka, Kharkiv region, using five OFAB-250-270 guided aerial bombs.",
+          "excerpt": "…of Ukraine's 120th Separate Territorial Defence Brigade in Petrovka, Kharkiv region, using five OFAB-250-270 guided aerial bombs. @intelSlava…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-29",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16847",
+          "at": "2026-06-22T10:49:11Z",
+          "text": "The Russians have published a video of the June 20 strike on a Nova Poshta terminal near Kharkiv. As a result of the Shahed drone strikes, a fire engulfed an area of over 400 square meters, severely damaging the terminal building, cargo trucks, and containers.",
+          "sentence": "The Russians have published a video of the June 20 strike on a Nova Poshta terminal near Kharkiv.",
+          "excerpt": "…video of the June 20 strike on a Nova Poshta terminal near Kharkiv. As a result of the Shahed drone strikes, a fire engulfed an area of over 400 sq…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-06-22",
           "statusEvidence": []
         },
         {
@@ -2711,9 +4561,78 @@
           "status": "reported",
           "statusChanged": "2026-06-15",
           "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/88988",
+          "at": "2026-06-14T23:04:49Z",
+          "text": "🇷🇺❌🇺🇦 — NOW: Russia launches widespread missile strikes across Ukraine.\n\n🇷🇺❌🇺🇦 — Missile strike on Kharkiv reported.\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦 — Missile strike on Kharkiv reported.",
+          "excerpt": "…sile strikes across Ukraine. 🇷🇺❌🇺🇦 — Missile strike on Kharkiv reported. Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "corroboration": [],
+          "statusEvidence": [],
+          "status": "reported",
+          "statusChanged": "2026-06-14"
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16411",
+          "at": "2026-06-08T13:30:37Z",
+          "text": "In Kharkiv, a Russian \"Shahed\" drone struck a Ukrposhta hub, destroying most of the parcels.",
+          "sentence": "In Kharkiv, a Russian \"Shahed\" drone struck a Ukrposhta hub, destroying most of the parcels.",
+          "excerpt": "In Kharkiv, a Russian \"Shahed\" drone struck a Ukrposhta hub, destroying most of the parcel…",
+          "parsed": {
+            "weapon": "Shahed",
+            "target": "Ukrposhta hub",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-08",
+          "statusEvidence": []
         }
       ],
       "Odesa": [
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18475",
+          "at": "2026-08-31T09:34:42Z",
+          "text": "In Odesa, a Russian attack destroyed an innovative \"Nova Poshta\" terminal. The facility is beyond repair. A European-standard sorting line was also destroyed.",
+          "sentence": "In Odesa, a Russian attack destroyed an innovative \"Nova Poshta\" terminal.",
+          "excerpt": "In Odesa, a Russian attack destroyed an innovative \"Nova Poshta\" terminal. The facility…",
+          "parsed": {
+            "weapon": null,
+            "target": "innovative",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-31",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18296",
+          "at": "2026-08-24T08:58:17Z",
+          "text": "Ukrainian monitoring channels report that Odesa is currently under a massive missile attack: in just a few minutes, 6 missiles have already struck the city, and new launches are ongoing.\n\nIn total, over the past 50 days, the RF has launched 357 missiles and around 30 guided bombs at Odesa and the region.",
+          "sentence": "In total, over the past 50 days, the RF has launched 357 missiles and around 30 guided bombs at Odesa and the region.",
+          "excerpt": "…RF has launched 357 missiles and around 30 guided bombs at Odesa and the region.",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-24",
+          "statusEvidence": []
+        },
         {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51598",
@@ -2723,6 +4642,23 @@
           "excerpt": "…icentr hypermarkets. A large fire erupted at an Epicentr in Odesa as the city came under attack by Russian jet-powered drones from early morning.…",
           "parsed": {
             "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-24",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/93093",
+          "at": "2026-08-24T02:15:34Z",
+          "text": "🇷🇺🇺🇦⚡️ — Toward Odesa, so far this night:   5 Kh-31 missiles, 3 Kh-59 cruise missiles, 3 Banderol cruise missiles, 2 Onyx supersonic missiles, 2-3 KABs, and 3 Shahed-238 have been launched.  @IntelSlava\n\nThe attack on Odesa used 6 Su-34, 2 Su-57, and 4 Su-35.\n\n@IntelSlava",
+          "sentence": "🇷🇺🇺🇦⚡️ — Toward Odesa, so far this night: 5 Kh-31 missiles, 3 Kh-59 cruise missiles, 3 Banderol cruise missiles, 2 Onyx supersonic missiles, 2-3 KABs, and 3 Shahed-238 have been launched.",
+          "excerpt": "🇷🇺🇺🇦⚡️ — Toward Odesa, so far this night: 5 Kh-31 missiles, 3 Kh-59 cruise missiles, 3 Banderol cru…",
+          "parsed": {
+            "weapon": "glide bomb",
             "target": null,
             "targetType": null,
             "casualties": null
@@ -2795,6 +4731,23 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17599",
+          "at": "2026-07-25T09:16:24Z",
+          "text": "A gunner in a Yak-52 cockpit shot down a Shahed drone near Odesa over the sea.",
+          "sentence": "A gunner in a Yak-52 cockpit shot down a Shahed drone near Odesa over the sea.",
+          "excerpt": "A gunner in a Yak-52 cockpit shot down a Shahed drone near Odesa over the sea.",
+          "parsed": {
+            "weapon": "Shahed",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-25",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/49642",
           "at": "2026-07-19T17:52:53Z",
@@ -2809,6 +4762,137 @@
           },
           "status": "reported",
           "statusChanged": "2026-07-19",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17471",
+          "at": "2026-07-19T14:10:11Z",
+          "text": "Another vessel was damaged in a Russian attack on Odesa, local channels report. Russia is hitting the city and region with missiles. Earlier strikes hit ships under Togo, Tanzania, Liberia and Marshall Islands flags off Odesa coast with crew casualties.",
+          "sentence": "Another vessel was damaged in a Russian attack on Odesa, local channels report.",
+          "excerpt": "Another vessel was damaged in a Russian attack on Odesa, local channels report. Russia is hitting the city and region with missiles. Ea…",
+          "parsed": {
+            "weapon": null,
+            "target": "vessel",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-19",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/90751",
+          "at": "2026-07-17T10:01:30Z",
+          "text": "🇷🇺❌🇺🇦 — The Russian Armed Forces continued striking Ukrainian ports last night, which are used for delivering cargo for the Armed Forces of Ukraine, the Ministry of Defense reported.\n\n▶️ As a result of the strikes by the Russian Armed Forces, port infrastructure facilities in the ports of Odesa and Chornomorsk in Odesa Oblast were hit, as well as a fireboat.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "▶️ As a result of the strikes by the Russian Armed Forces, port infrastructure facilities in the ports of Odesa and Chornomorsk in Odesa Oblast were hit, as well as a fireboat.",
+          "excerpt": "…rmed Forces, port infrastructure facilities in the ports of Odesa and Chornomorsk in Odesa Oblast were hit, as well as a fireboat. @IntelSlava…",
+          "parsed": {
+            "weapon": null,
+            "target": "Oblast",
+            "targetType": "port",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-17",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17410",
+          "at": "2026-07-16T19:48:40Z",
+          "text": "Russia launched a missile strike on Odesa this evening: the bodies of the victims are lying right in the middle of the street.",
+          "sentence": "Russia launched a missile strike on Odesa this evening: the bodies of the victims are lying right in the middle of the street.",
+          "excerpt": "Russia launched a missile strike on Odesa this evening: the bodies of the victims are lying right in the middle of the st…",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-16",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/90305",
+          "at": "2026-07-12T13:33:36Z",
+          "text": "🇷🇺❌🇺🇦 — Geran-4 Seeker UAV strikes on Chornomorsk port, Odessa region.\n\n➡️ A seiner converted for launching uncrewed surface vehicles was hit.\n➡️ A patrol vessel, a ferry, and a dry cargo vessel were also struck.\n➡️ Strikes aim to reduce Ukraine's capacity to transport weapons and military hardware in the Black Sea operational zone.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦 — Geran-4 Seeker UAV strikes on Chornomorsk port, Odessa region.",
+          "excerpt": "🇷🇺❌🇺🇦 — Geran-4 Seeker UAV strikes on Chornomorsk port, Odessa region. ➡️ A seiner converted for launching uncrewed surface vehi…",
+          "parsed": {
+            "weapon": "Geran",
+            "target": null,
+            "targetType": "port",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-12",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/90232",
+          "at": "2026-07-11T14:41:53Z",
+          "text": "🇷🇺❌🇺🇦— A series of Russian strikes hit targets in Odessa.\n\n➡️ Enemy logistics facilities, a cargo ship of the Ukrainian shadow fleet flying a Saint Kitts and Nevis flag, and vehicles were struck.\n\n➡️ The port in Illyichevsk (Chornomorsk) was among the targets hit, with a strike also carried out on an ammunition warehouse within the port area.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦— A series of Russian strikes hit targets in Odessa.",
+          "excerpt": "🇷🇺❌🇺🇦— A series of Russian strikes hit targets in Odessa. ➡️ Enemy logistics facilities, a cargo ship of the Ukrainian shadow fleet flyi…",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-11",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/90213",
+          "at": "2026-07-11T09:04:46Z",
+          "text": "🇷🇺❌🇺🇦— New Russian strikes hit Ukrainian infrastructure in Odessa, with local authorities confirming a ballistic missile was used.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦— New Russian strikes hit Ukrainian infrastructure in Odessa, with local authorities confirming a ballistic missile was used.",
+          "excerpt": "…\uddfa❌🇺🇦— New Russian strikes hit Ukrainian infrastructure in Odessa, with local authorities confirming a ballistic missile was used. @IntelSlava…",
+          "parsed": {
+            "weapon": "missile",
+            "target": "infrastructure",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-11",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17232",
+          "at": "2026-07-08T21:04:39Z",
+          "text": "Today, four people were killed in Odesa due to a Russian missile strike. Another seven were injured.",
+          "sentence": "Today, four people were killed in Odesa due to a Russian missile strike.",
+          "excerpt": "Today, four people were killed in Odesa due to a Russian missile strike. Another seven were injured.",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
+            "targetType": null,
+            "casualties": "4 killed"
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-08",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89338",
+          "at": "2026-06-24T11:31:58Z",
+          "text": "🇺🇦🇷🇺⚡️ — The Ukrainian Navy has released footage showing the destruction of a Russian unmanned surface vessel (USV) in the Black Sea, involved in an attack on targets in the port of Odesa.\n\nIt is claimed that three USVs were destroyed; however, only footage of a single USV being struck was shown. The target appears to have been hit by a possible MAM-C laser-guided precision munition launched from a Turkish-made Bayraktar TB2 unmanned combat aerial vehicle (UCAV).\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇺🇦🇷🇺⚡️ — The Ukrainian Navy has released footage showing the destruction of a Russian unmanned surface vessel (USV) in the Black Sea, involved in an attack on targets in the port of Odesa.",
+          "excerpt": "…Black Sea, involved in an attack on targets in the port of Odesa. It is claimed that three USVs were destroyed; however, only footage of a singl…",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "port",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-24",
           "statusEvidence": []
         },
         {
@@ -2831,6 +4915,40 @@
       ],
       "Kherson": [
         {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/93634",
+          "at": "2026-08-31T15:20:40Z",
+          "text": "🇷🇺🇺🇦⚡️ — Russian Aerospace Forces (VKS) strikes, in order:\n\n• Four FAB-500 bombs struck a UAV control/launch position of the Ukrainian Armed Forces’ 81st Separate Airmobile Brigade in the settlement of Mykolaivka, Kherson Oblast.\n\n• One FAB-3000 bomb struck a logistics/material-technical support warehouse of the 414th Separate Brigade of Unmanned Systems in Kherson.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "• One FAB-3000 bomb struck a logistics/material-technical support warehouse of the 414th Separate Brigade of Unmanned Systems in Kherson.",
+          "excerpt": "…ehouse of the 414th Separate Brigade of Unmanned Systems in Kherson. @IntelSlava Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": {
+            "weapon": null,
+            "target": "logistics",
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-31",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/93214",
+          "at": "2026-08-26T01:00:44Z",
+          "text": "🇷🇺🇺🇦⚡️ — UAV operators from the 18th Combined Arms Army (18th CAA) of the Dnepr Group of Forces continue to strike Ukrainian Armed Forces positions in Kherson.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺🇺🇦⚡️ — UAV operators from the 18th Combined Arms Army (18th CAA) of the Dnepr Group of Forces continue to strike Ukrainian Armed Forces positions in Kherson.",
+          "excerpt": "…rces continue to strike Ukrainian Armed Forces positions in Kherson. @IntelSlava Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-26",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/51486",
           "at": "2026-08-21T21:06:00Z",
@@ -2845,6 +4963,57 @@
           },
           "status": "reported",
           "statusChanged": "2026-08-21",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18002",
+          "at": "2026-08-11T09:51:07Z",
+          "text": "Marines of the 34th Marine Brigade struck two Russian UAV control points that were terrorizing Kherson.",
+          "sentence": "Marines of the 34th Marine Brigade struck two Russian UAV control points that were terrorizing Kherson.",
+          "excerpt": "…struck two Russian UAV control points that were terrorizing Kherson.",
+          "parsed": {
+            "weapon": "drone",
+            "target": "UAV control",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-11",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/92333",
+          "at": "2026-08-09T10:56:09Z",
+          "text": "🇷🇺🇺🇦⚡️ — Paratroopers of Russia’s 98th Guards Airborne Division detected and destroyed a Ukrainian UAV control station on the eastern flank of Kherson.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺🇺🇦⚡️ — Paratroopers of Russia’s 98th Guards Airborne Division detected and destroyed a Ukrainian UAV control station on the eastern flank of Kherson.",
+          "excerpt": "…yed a Ukrainian UAV control station on the eastern flank of Kherson. @IntelSlava Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": {
+            "weapon": "drone",
+            "target": "UAV control",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-09",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17847",
+          "at": "2026-08-04T18:26:10Z",
+          "text": "\"I was showing him, 'Look, just vegetables.' But he started diving straight at me.\" - Mr. Yurii, a survivor of the drone attack, recounted arriving in Kherson this morning to sell vegetables. His wife was with him. They were just unpacking their goods when a Russian drone hovered right over them.",
+          "sentence": "- Mr. Yurii, a survivor of the drone attack, recounted arriving in Kherson this morning to sell vegetables.",
+          "excerpt": "…urii, a survivor of the drone attack, recounted arriving in Kherson this morning to sell vegetables. His wife was with him. They were just unpackin…",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-04",
           "statusEvidence": []
         },
         {
@@ -2865,6 +5034,86 @@
           "statusEvidence": []
         },
         {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17652",
+          "at": "2026-07-27T09:52:27Z",
+          "text": "Results of the SBU’s Long-Range Strikes Over the Week:\n🔹 Belbek and Saky Airfields in Crimea - Hit a \"Nebo-U\" radar system and a fuel reservoir;\n\n🔹 Rostov Region - Destroyed a \"Grave Stone\" S-400 radar, a \"Tor-M2\" SAM system, and a \"Pole-21\" electronic warfare system;\n\n🔹 UAV Warehouses - Target struck in occupied Donetsk Region and Crimea;\n\n🔹 Maritime Targets - A \"Molniya\" missile boat and two sanctioned cargo vessels transporting military supplies between Iran and Russia;\n\n🔹 Filanovsky Oil Production Platform - Hit in the Caspian Sea;\n\n🔹 Oil Infrastructure - \"Subkhankulovo\" oil pumping station (Bashkortostan) and mini-refineries in Ulyanovsk and Kaluga regions;\n\n🔹Coordination Center in Kherson Region – Up to 100 personnel targeted in a strike involving 13 drones;\n\n🔹Two additional FSB deployment sites – Hit in Kherson and Donetsk regions.",
+          "sentence": "🔹Two additional FSB deployment sites – Hit in Kherson and Donetsk regions.",
+          "excerpt": "…13 drones; 🔹Two additional FSB deployment sites – Hit in Kherson and Donetsk regions.",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-27",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17390",
+          "at": "2026-07-15T20:28:41Z",
+          "text": "Just a regular Wednesday in Kherson: a woman walks to work while a Russian Shahed being shot down can be heard in the background.",
+          "sentence": "Just a regular Wednesday in Kherson: a woman walks to work while a Russian Shahed being shot down can be heard in the background.",
+          "excerpt": "Just a regular Wednesday in Kherson: a woman walks to work while a Russian Shahed being shot down can be heard in t…",
+          "parsed": {
+            "weapon": "Shahed",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-15",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89705",
+          "at": "2026-07-03T13:08:49Z",
+          "text": "🇷🇺🇺🇦⚡️ — Objective-control footage of strikes carried out by two Russian S8000 Banderol cruise missiles against targets in Kherson.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺🇺🇦⚡️ — Objective-control footage of strikes carried out by two Russian S8000 Banderol cruise missiles against targets in Kherson.",
+          "excerpt": "…o Russian S8000 Banderol cruise missiles against targets in Kherson. @IntelSlava Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": {
+            "weapon": "missile",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-03",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17062",
+          "at": "2026-07-02T16:48:24Z",
+          "text": "And this is a hospital in Kherson, which was also hit by Russian shelling. A doctor was killed there.",
+          "sentence": "And this is a hospital in Kherson, which was also hit by Russian shelling.",
+          "excerpt": "And this is a hospital in Kherson, which was also hit by Russian shelling. A doctor was killed there.",
+          "parsed": {
+            "weapon": "shell",
+            "target": "by Russian shelling",
+            "targetType": "hospital",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-02",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89623",
+          "at": "2026-07-01T17:53:11Z",
+          "text": "🇷🇺❌🇺🇦 — WATCH: Ukrainian Armed Forces air defense system in the Kherson direction takes a series of powerful incoming strikes.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦 — WATCH: Ukrainian Armed Forces air defense system in the Kherson direction takes a series of powerful incoming strikes.",
+          "excerpt": "…\udde6 — WATCH: Ukrainian Armed Forces air defense system in the Kherson direction takes a series of powerful incoming strikes. @IntelSlava Please…",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": "air defence system",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-01",
+          "statusEvidence": []
+        },
+        {
           "channel": "noel_reports",
           "url": "https://t.me/noel_reports/47692",
           "at": "2026-06-13T06:07:36Z",
@@ -2874,6 +5123,74 @@
           "parsed": null,
           "status": "reported",
           "statusChanged": "2026-06-13",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47618",
+          "at": "2026-06-11T20:41:11Z",
+          "text": "A Ukrainian MiG-29 hit a Russian drone-operator position in Oleshky, Kherson region, using an AASM-250 Hammer guided bomb.",
+          "sentence": "A Ukrainian MiG-29 hit a Russian drone-operator position in Oleshky, Kherson region, using an AASM-250 Hammer guided bomb.",
+          "excerpt": "A Ukrainian MiG-29 hit a Russian drone-operator position in Oleshky, Kherson region, using an AASM-250 Hammer guided bomb.",
+          "parsed": {
+            "weapon": "drone",
+            "target": "drone-operator position",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-11",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47511",
+          "at": "2026-06-09T20:59:40Z",
+          "text": "Ukrainian aviation struck a Russian UAV operator position in Oleshky, Kherson region.",
+          "sentence": "Ukrainian aviation struck a Russian UAV operator position in Oleshky, Kherson region.",
+          "excerpt": "…krainian aviation struck a Russian UAV operator position in Oleshky, Kherson region.",
+          "parsed": {
+            "weapon": "drone",
+            "target": "UAV operator",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-09",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47322",
+          "at": "2026-06-05T13:58:35Z",
+          "text": "Ukraine’s 38th Anti-Aircraft Missile Regiment said one crew and one duty shift downed five valuable Russian reconnaissance drones, causing about &#036;500,000 in losses and cutting enemy reconnaissance capacity on the Kherson front.",
+          "sentence": "Ukraine’s 38th Anti-Aircraft Missile Regiment said one crew and one duty shift downed five valuable Russian reconnaissance drones, causing about &#036;500,000 in losses and cutting enemy reconnaissance capacity on the Kherson front.",
+          "excerpt": "…in losses and cutting enemy reconnaissance capacity on the Kherson front.",
+          "parsed": {
+            "weapon": "drone",
+            "target": null,
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-05",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16268",
+          "at": "2026-06-04T16:20:27Z",
+          "text": "The Russians deliberately struck an ambulance in Kherson.",
+          "sentence": "The Russians deliberately struck an ambulance in Kherson.",
+          "excerpt": "The Russians deliberately struck an ambulance in Kherson.",
+          "parsed": {
+            "weapon": null,
+            "target": "ambulance",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-04",
           "statusEvidence": []
         }
       ],
@@ -2894,6 +5211,40 @@
           "status": "reported",
           "statusChanged": "2026-08-10",
           "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/91094",
+          "at": "2026-07-21T11:47:10Z",
+          "text": "🇺🇦🇷🇺⚡️ — The Ukrainian Ground Forces' 15th Separate Artillery Reconnaissance Brigade \"Black Forest\" struck a Russian MiG-29 multirole fighter aircraft and a Pantsir-S1 air defense system at Khalino Air Base in Russia's Kursk Oblast.\n\n@IntelSlava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇺🇦🇷🇺⚡️ — The Ukrainian Ground Forces' 15th Separate Artillery Reconnaissance Brigade \"Black Forest\" struck a Russian MiG-29 multirole fighter aircraft and a Pantsir-S1 air defense system at Khalino Air Base in Russia's Kursk Oblast.",
+          "excerpt": "…ole fighter aircraft and a Pantsir-S1 air defense system at Khalino Air Base in Russia's Kursk Oblast. @IntelSlava Please open Telegram to vi…",
+          "parsed": {
+            "weapon": "artillery",
+            "target": "MiG-29 multirole",
+            "targetType": "air defence system",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-21",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16566",
+          "at": "2026-06-13T12:47:24Z",
+          "text": "Ukrainian border guard drone operators of the \"Steel Border\" unit struck 3 antennas, 2 shelters, an artillery gun, a vehicle, 2 warehouses and a quad bike in the Kursk and North Sloboda directions, and also tracked down and destroyed 2 Russian loitering drones.",
+          "sentence": "Ukrainian border guard drone operators of the \"Steel Border\" unit struck 3 antennas, 2 shelters, an artillery gun, a vehicle, 2 warehouses and a quad bike in the Kursk and North Sloboda directions, and also tracked down and destroyed 2 Russian loitering drones.",
+          "excerpt": "…tillery gun, a vehicle, 2 warehouses and a quad bike in the Kursk and North Sloboda directions, and also tracked down and destroyed 2 Russian loi…",
+          "parsed": {
+            "weapon": "drone",
+            "target": "antennas",
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-13",
+          "statusEvidence": []
         }
       ],
       "Zaporizhzhia": [
@@ -2913,6 +5264,155 @@
           "status": "reported",
           "statusChanged": "2026-06-15",
           "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47406",
+          "at": "2026-06-07T08:54:07Z",
+          "text": "Russia attacked Zaporizhzhia with drones from the morning, damaging infrastructure and causing a fire, the regional administration said. In Balabyne, three people were preliminarily killed and a woman injured after private homes were damaged.",
+          "sentence": "In Balabyne, three people were preliminarily killed and a woman injured after private homes were damaged.",
+          "excerpt": "…re and causing a fire, the regional administration said. In Balabyne, three people were preliminarily killed and a woman injured after private homes…",
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": null,
+            "casualties": "3 killed"
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-07",
+          "statusEvidence": []
+        }
+      ],
+      "Dnipro": [
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17975",
+          "at": "2026-08-09T14:06:10Z",
+          "text": "Russia hit a WHO medical warehouse in Dnipro that supplied frontline hospitals. The organization's CEO says they evacuated 130 out of 300 pallets of humanitarian supplies before the strike.",
+          "sentence": "Russia hit a WHO medical warehouse in Dnipro that supplied frontline hospitals.",
+          "excerpt": "Russia hit a WHO medical warehouse in Dnipro that supplied frontline hospitals. The organization's CEO says they evacuated 1…",
+          "parsed": {
+            "weapon": null,
+            "target": "WHO medical warehouse",
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-09",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/90902",
+          "at": "2026-07-19T08:44:01Z",
+          "text": "🇷🇺🇺🇦⚡️ — Drone strikes, reportedly using \"Geran-4 seeker\" drones, targeted a warehouse in Dnipro and a locomotive in Volnyansk, Zaporzhoye region.\n\n@Intelslava\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺🇺🇦⚡️ — Drone strikes, reportedly using \"Geran-4 seeker\" drones, targeted a warehouse in Dnipro and a locomotive in Volnyansk, Zaporzhoye region.",
+          "excerpt": "…edly using \"Geran-4 seeker\" drones, targeted a warehouse in Dnipro and a locomotive in Volnyansk, Zaporzhoye region. @Intelslava Please open…",
+          "parsed": {
+            "weapon": "Geran",
+            "target": "warehouse",
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "corroboration": [],
+          "statusEvidence": [],
+          "status": "reported",
+          "statusChanged": "2026-07-19"
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/16251",
+          "at": "2026-06-03T18:26:10Z",
+          "text": "The Russians struck a Nova Poshta terminal and ATB warehouses in Dnipro. I guess in their minds, these are also \"strategic targets\".",
+          "sentence": "The Russians struck a Nova Poshta terminal and ATB warehouses in Dnipro.",
+          "excerpt": "…ussians struck a Nova Poshta terminal and ATB warehouses in Dnipro. I guess in their minds, these are also \"strategic targets\".",
+          "parsed": {
+            "weapon": null,
+            "target": "Nova Poshta terminal",
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-03",
+          "statusEvidence": []
+        },
+        {
+          "channel": "noel_reports",
+          "url": "https://t.me/noel_reports/47234",
+          "at": "2026-06-03T15:05:27Z",
+          "text": "Russian ballistic strikes sparked a major fire in Dnipro, with Mayor Filatov saying ATB warehouses were hit. Cluster munitions were also reportedly used again during the attack on the city.",
+          "sentence": "Russian ballistic strikes sparked a major fire in Dnipro, with Mayor Filatov saying ATB warehouses were hit.",
+          "excerpt": "Russian ballistic strikes sparked a major fire in Dnipro, with Mayor Filatov saying ATB warehouses were hit. Cluster munitions were also…",
+          "parsed": {
+            "weapon": null,
+            "target": "ATB warehouses",
+            "targetType": "warehouse",
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-06-03",
+          "statusEvidence": []
+        }
+      ],
+      "Sumy": [
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/18395",
+          "at": "2026-08-28T13:07:04Z",
+          "text": "Update on the St. Petersburg car bombing. A 24-year-old woman planted the bomb, local media report. She was reportedly contacted months ago by unknown individuals who allegedly posed as Ukrainian Armed Forces representatives.  They supposedly talked her into…\n\nRussian media report that the pilot killed in the St. Petersburg car bombing served in a regiment that struck civilians in Sumy and Kharkiv regions. Lt. Col. Sergiy Sechkov, 332nd Separate Guards Helicopter Regiment. His wife Anna was injured. His father confirmed the death.",
+          "sentence": "Russian media report that the pilot killed in the St. Petersburg car bombing served in a regiment that struck civilians in Sumy and Kharkiv regions.",
+          "excerpt": "…g car bombing served in a regiment that struck civilians in Sumy and Kharkiv regions. Lt. Col. Sergiy Sechkov, 332nd Separate Guards Helicopter…",
+          "parsed": {
+            "weapon": null,
+            "target": "civilians",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-08-28",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17680",
+          "at": "2026-07-28T14:21:12Z",
+          "text": "This night, Russia struck the private residential sector in Sumy with aerial bombs. The State Emergency Service of Ukraine reported that among the injured are 6 people, including 3 children. As a result of the Russian attack, private houses as well as a civil infrastructure facility were destroyed and damaged.",
+          "sentence": "This night, Russia struck the private residential sector in Sumy with aerial bombs.",
+          "excerpt": "This night, Russia struck the private residential sector in Sumy with aerial bombs. The State Emergency Service of Ukraine reported that among t…",
+          "parsed": {
+            "weapon": null,
+            "target": "private residential sector",
+            "targetType": null,
+            "casualties": null
+          },
+          "status": "reported",
+          "statusChanged": "2026-07-28",
+          "statusEvidence": []
+        },
+        {
+          "channel": "wartranslated",
+          "url": "https://t.me/wartranslated/17312",
+          "at": "2026-07-11T16:38:48Z",
+          "text": "Footage of today's guided bomb strike on Sumy. Five people were killed in the attack.",
+          "sentence": "Footage of today's guided bomb strike on Sumy.",
+          "excerpt": "Footage of today's guided bomb strike on Sumy. Five people were killed in the attack.",
+          "parsed": null,
+          "status": "reported",
+          "statusChanged": "2026-07-11",
+          "statusEvidence": []
+        },
+        {
+          "channel": "intelslava",
+          "url": "https://t.me/intelslava/89665",
+          "at": "2026-07-02T00:37:17Z",
+          "text": "🇷🇺❌🇺🇦 — Several explosions reported in Sumy.\n\n    Please open Telegram to view this post\n    VIEW IN TELEGRAM",
+          "sentence": "🇷🇺❌🇺🇦 — Several explosions reported in Sumy.",
+          "excerpt": "🇷🇺❌🇺🇦 — Several explosions reported in Sumy. Please open Telegram to view this post VIEW IN TELEGRAM",
+          "parsed": null,
+          "corroboration": [],
+          "statusEvidence": [],
+          "status": "reported",
+          "statusChanged": "2026-07-02"
         }
       ]
     }

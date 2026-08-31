@@ -1,9 +1,23 @@
 {
   "noel_reports": {
-    "lowestIdSeen": 47671,
-    "postsProcessed": 3088,
-    "oldestDate": "2026-06-12",
-    "done": false,
-    "eventsFound": 330
+    "lowestIdSeen": 47161,
+    "postsProcessed": 3449,
+    "oldestDate": "2026-06-02",
+    "done": true,
+    "eventsFound": 348
+  },
+  "wartranslated": {
+    "lowestIdSeen": 16222,
+    "postsProcessed": 1706,
+    "oldestDate": "2026-06-02",
+    "done": true,
+    "eventsFound": 129
+  },
+  "intelslava": {
+    "lowestIdSeen": 88354,
+    "postsProcessed": 3736,
+    "oldestDate": "2026-06-02",
+    "done": true,
+    "eventsFound": 245
   }
 }
