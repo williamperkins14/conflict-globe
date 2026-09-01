@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T00:05:54.520Z",
+  "generated": "2026-09-01T06:05:23.236Z",
   "conflicts": {
     "ukraine": [
       {
@@ -671,7 +671,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 46,
+        "count": 40,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-01"
       },
@@ -679,7 +679,7 @@
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
-        "count": 19,
+        "count": 23,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-01"
       },
@@ -704,14 +704,6 @@
         "lat": 35.4421,
         "lng": 47.3506,
         "count": 10,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-08-31"
-      },
-      {
-        "name": "Kharg, Bushehr, Iran",
-        "lat": 29.25,
-        "lng": 50.3286,
-        "count": 9,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-08-31"
       },
@@ -756,14 +748,6 @@
         "lastSeen": "2026-08-31"
       },
       {
-        "name": "Armenia",
-        "lat": 40,
-        "lng": 45,
-        "count": 6,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-08-31"
-      },
-      {
         "name": "Hormozgan, Hormozgan, Iran",
         "lat": 27.75,
         "lng": 56.5,
@@ -788,12 +772,28 @@
         "lastSeen": "2026-09-01"
       },
       {
+        "name": "Kharg, Bushehr, Iran",
+        "lat": 29.25,
+        "lng": 50.3286,
+        "count": 4,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-01"
+      },
+      {
         "name": "Shahed, Fars, Iran",
         "lat": 28.5934,
         "lng": 52.2295,
         "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-08-31"
+      },
+      {
+        "name": "Armenia",
+        "lat": 40,
+        "lng": 45,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-01"
       },
       {
         "name": "Qatari",
