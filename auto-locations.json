@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T12:05:22.519Z",
+  "generated": "2026-09-01T18:04:51.082Z",
   "conflicts": {
     "ukraine": [
       {
@@ -671,16 +671,24 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 101,
+        "count": 111,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-01"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 17,
-        "firstSeen": "2026-08-28",
+        "name": "Larak Island, Hormozgan, Iran",
+        "lat": 26.8533,
+        "lng": 56.3556,
+        "count": 31,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-01"
+      },
+      {
+        "name": "Bandar Abbas, Hormozgan, Iran",
+        "lat": 27.1865,
+        "lng": 56.2808,
+        "count": 26,
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-01"
       },
       {
@@ -692,36 +700,28 @@
         "lastSeen": "2026-08-31"
       },
       {
-        "name": "Bandar Abbas, Hormozgan, Iran",
-        "lat": 27.1865,
-        "lng": 56.2808,
-        "count": 14,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-08-31"
-      },
-      {
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
+        "count": 14,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-01"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
         "count": 12,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-01"
       },
       {
-        "name": "Larak Island, Hormozgan, Iran",
-        "lat": 26.8533,
-        "lng": 56.3556,
-        "count": 11,
-        "firstSeen": "2026-08-31",
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 12,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-01"
-      },
-      {
-        "name": "Qeshm, Kordestan, Iran",
-        "lat": 35.4421,
-        "lng": 47.3506,
-        "count": 10,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-08-31"
       },
       {
         "name": "Sepah, Ilam, Iran",
@@ -740,20 +740,12 @@
         "lastSeen": "2026-08-31"
       },
       {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 6,
-        "firstSeen": "2026-08-30",
+        "name": "Gulf Of Oman, Iran (General), Iran",
+        "lat": 25.4489,
+        "lng": 57.7939,
+        "count": 7,
+        "firstSeen": "2026-09-01",
         "lastSeen": "2026-09-01"
-      },
-      {
-        "name": "Hormozgan, Hormozgan, Iran",
-        "lat": 27.75,
-        "lng": 56.5,
-        "count": 6,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-08-31"
       },
       {
         "name": "Minhad, Dubayy, United Arab Emirates",
@@ -764,11 +756,11 @@
         "lastSeen": "2026-09-01"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 6,
-        "firstSeen": "2026-08-28",
+        "name": "Qeshm, Kordestan, Iran",
+        "lat": 35.4421,
+        "lng": 47.3506,
+        "count": 5,
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-01"
       },
       {
@@ -776,6 +768,22 @@
         "lat": 31.8706,
         "lng": 59.9008,
         "count": 5,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-01"
+      },
+      {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 4,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-09-01"
+      },
+      {
+        "name": "Hormozgan, Hormozgan, Iran",
+        "lat": 27.75,
+        "lng": 56.5,
+        "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-01"
       },
