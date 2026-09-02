@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T00:05:40.432Z",
+  "generated": "2026-09-02T06:04:34.381Z",
   "conflicts": {
     "ukraine": [
       {
@@ -680,7 +680,15 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 112,
+        "count": 77,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-02"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 21,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-02"
       },
@@ -701,17 +709,17 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Bandar Abbas, Hormozgan, Iran",
-        "lat": 27.1865,
-        "lng": 56.2808,
-        "count": 9,
-        "firstSeen": "2026-08-31",
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 11,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Qeshm, Kordestan, Iran",
-        "lat": 35.4421,
-        "lng": 47.3506,
+        "name": "Sirik, Hormozgan, Iran",
+        "lat": 26.5055,
+        "lng": 57.122,
         "count": 9,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-02"
@@ -725,27 +733,11 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Hormozgan, Hormozgan, Iran",
-        "lat": 27.75,
-        "lng": 56.5,
-        "count": 8,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-02"
-      },
-      {
         "name": "Jiroft, Kerman, Iran",
         "lat": 28.678,
         "lng": 57.7406,
         "count": 8,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-02"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 7,
-        "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-02"
       },
       {
@@ -765,11 +757,11 @@
         "lastSeen": "2026-09-01"
       },
       {
-        "name": "Sirik, Hormozgan, Iran",
-        "lat": 26.5055,
-        "lng": 57.122,
-        "count": 6,
-        "firstSeen": "2026-08-31",
+        "name": "Erbil, Liwa' Irbil, Iraq",
+        "lat": 36.1926,
+        "lng": 44.0106,
+        "count": 7,
+        "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-02"
       },
       {
@@ -779,22 +771,6 @@
         "count": 6,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-01"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-02"
-      },
-      {
-        "name": "Chabahar, Sistan Va Baluchestan, Iran",
-        "lat": 25.2919,
-        "lng": 60.643,
-        "count": 6,
-        "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-02"
       },
       {
         "name": "Kuhestak, Kerman, Iran",
@@ -811,6 +787,14 @@
         "count": 5,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-01"
+      },
+      {
+        "name": "Chabahar, Sistan Va Baluchestan, Iran",
+        "lat": 25.2919,
+        "lng": 60.643,
+        "count": 4,
+        "firstSeen": "2026-09-02",
+        "lastSeen": "2026-09-02"
       },
       {
         "name": "Kharg, Bushehr, Iran",
@@ -837,9 +821,33 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
+        "name": "Bandar Abbas, Hormozgan, Iran",
+        "lat": 27.1865,
+        "lng": 56.2808,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-02"
+      },
+      {
+        "name": "Qeshm, Kordestan, Iran",
+        "lat": 35.4421,
+        "lng": 47.3506,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-02"
+      },
+      {
+        "name": "Hormozgan, Hormozgan, Iran",
+        "lat": 27.75,
+        "lng": 56.5,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-02"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
         "count": 3,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-02"
