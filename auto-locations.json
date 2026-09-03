@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T18:05:09.394Z",
+  "generated": "2026-09-03T00:05:58.907Z",
   "conflicts": {
     "ukraine": [
       {
@@ -680,9 +680,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 126,
+        "count": 107,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-02"
+        "lastSeen": "2026-09-03"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
@@ -696,41 +696,33 @@
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
-        "count": 31,
+        "count": 23,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-02"
+        "lastSeen": "2026-09-03"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 29,
+        "count": 23,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-02"
+        "lastSeen": "2026-09-03"
       },
       {
         "name": "Kuwait",
         "lat": 29.5,
         "lng": 47.75,
-        "count": 26,
+        "count": 20,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-02"
+        "lastSeen": "2026-09-03"
       },
       {
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
-        "count": 23,
+        "count": 18,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-02"
-      },
-      {
-        "name": "Kuhestak, Kerman, Iran",
-        "lat": 28,
-        "lng": 58.4167,
-        "count": 17,
-        "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-02"
+        "lastSeen": "2026-09-03"
       },
       {
         "name": "Khasab, Musandam, Oman",
@@ -739,22 +731,6 @@
         "count": 16,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-08-31"
-      },
-      {
-        "name": "Basij, Fars, Iran",
-        "lat": 30.608,
-        "lng": 53.1874,
-        "count": 16,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-09-02"
-      },
-      {
-        "name": "Minab, Sistan Va Baluchestan, Iran",
-        "lat": 25.7893,
-        "lng": 61.1025,
-        "count": 15,
-        "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-02"
       },
       {
         "name": "Bandar Abbas, Hormozgan, Iran",
@@ -773,12 +749,28 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Sirik, Hormozgan, Iran",
-        "lat": 26.5055,
-        "lng": 57.122,
-        "count": 8,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-02"
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 13,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-03"
+      },
+      {
+        "name": "Kurdistan, Khuzestan, Iran",
+        "lat": 30.6693,
+        "lng": 50.2055,
+        "count": 11,
+        "firstSeen": "2026-09-02",
+        "lastSeen": "2026-09-03"
+      },
+      {
+        "name": "Doha, Ad Daw?Ah, Qatar",
+        "lat": 25.2867,
+        "lng": 51.5333,
+        "count": 10,
+        "firstSeen": "2026-09-03",
+        "lastSeen": "2026-09-03"
       },
       {
         "name": "Jiroft, Kerman, Iran",
@@ -813,12 +805,28 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-02"
+        "name": "Kuhestak, Kerman, Iran",
+        "lat": 28,
+        "lng": 58.4167,
+        "count": 4,
+        "firstSeen": "2026-09-02",
+        "lastSeen": "2026-09-03"
+      },
+      {
+        "name": "Basij, Fars, Iran",
+        "lat": 30.608,
+        "lng": 53.1874,
+        "count": 4,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-09-03"
+      },
+      {
+        "name": "Sirik, Hormozgan, Iran",
+        "lat": 26.5055,
+        "lng": 57.122,
+        "count": 4,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-03"
       },
       {
         "name": "Gulf Of Oman, Iran (General), Iran",
@@ -861,12 +869,12 @@
         "lastSeen": "2026-08-31"
       },
       {
-        "name": "Kurdistan, Khuzestan, Iran",
-        "lat": 30.6693,
-        "lng": 50.2055,
+        "name": "Minab, Sistan Va Baluchestan, Iran",
+        "lat": 25.7893,
+        "lng": 61.1025,
         "count": 3,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-02"
+        "lastSeen": "2026-09-03"
       },
       {
         "name": "Erbil, Liwa' Irbil, Iraq",
