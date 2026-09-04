@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T00:05:03.278Z",
+  "generated": "2026-09-04T06:04:20.795Z",
   "conflicts": {
     "ukraine": [
       {
@@ -680,7 +680,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 78,
+        "count": 46,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-04"
       },
@@ -693,30 +693,6 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 19,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-04"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 19,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-04"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 15,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-04"
-      },
-      {
         "name": "Bandar Abbas, Hormozgan, Iran",
         "lat": 27.1865,
         "lng": 56.2808,
@@ -725,28 +701,12 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 14,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-04"
-      },
-      {
         "name": "Larak Island, Hormozgan, Iran",
         "lat": 26.8533,
         "lng": 56.3556,
         "count": 13,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-02"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 12,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-04"
       },
       {
         "name": "Kurdistan, Khuzestan, Iran",
@@ -765,11 +725,19 @@
         "lastSeen": "2026-09-03"
       },
       {
-        "name": "Sirik, Hormozgan, Iran",
-        "lat": 26.5055,
-        "lng": 57.122,
-        "count": 10,
-        "firstSeen": "2026-08-31",
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 9,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-04"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 9,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-04"
       },
       {
@@ -795,6 +763,22 @@
         "count": 8,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-03"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-04"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-04"
       },
       {
         "name": "Sepah, Ilam, Iran",
@@ -829,6 +813,14 @@
         "lastSeen": "2026-09-03"
       },
       {
+        "name": "Kuhestak, Kerman, Iran",
+        "lat": 28,
+        "lng": 58.4167,
+        "count": 7,
+        "firstSeen": "2026-09-02",
+        "lastSeen": "2026-09-04"
+      },
+      {
         "name": "Khasab, Musandam, Oman",
         "lat": 26.1799,
         "lng": 56.2477,
@@ -853,19 +845,27 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Kuhestak, Kerman, Iran",
-        "lat": 28,
-        "lng": 58.4167,
-        "count": 5,
-        "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-03"
-      },
-      {
         "name": "Minab, Sistan Va Baluchestan, Iran",
         "lat": 25.7893,
         "lng": 61.1025,
         "count": 5,
         "firstSeen": "2026-09-02",
+        "lastSeen": "2026-09-04"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-04"
+      },
+      {
+        "name": "Sirik, Hormozgan, Iran",
+        "lat": 26.5055,
+        "lng": 57.122,
+        "count": 4,
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-04"
       },
       {
