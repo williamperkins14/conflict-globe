@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T12:04:22.507Z",
+  "generated": "2026-09-04T18:04:11.118Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,20 +640,20 @@
     ],
     "sudan": [
       {
+        "name": "Ethiopians",
+        "lat": 8,
+        "lng": 38,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-04"
+      },
+      {
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
         "count": 5,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-03"
-      },
-      {
-        "name": "Ethiopians",
-        "lat": 8,
-        "lng": 38,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-02"
       },
       {
         "name": "South Sudan",
@@ -680,17 +680,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 90,
+        "count": 43,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-04"
-      },
-      {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 32,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-09-02"
       },
       {
         "name": "Bandar Abbas, Hormozgan, Iran",
@@ -781,14 +773,6 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Hormozgan, Hormozgan, Iran",
-        "lat": 27.75,
-        "lng": 56.5,
-        "count": 8,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-03"
-      },
-      {
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
@@ -861,14 +845,6 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Minab, Sistan Va Baluchestan, Iran",
-        "lat": 25.7893,
-        "lng": 61.1025,
-        "count": 5,
-        "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-04"
-      },
-      {
         "name": "Hansi, Az¯Arbayjan-E Gharbi, Iran",
         "lat": 38.2,
         "lng": 44.8167,
@@ -915,6 +891,30 @@
         "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-08-31"
+      },
+      {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 3,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-09-04"
+      },
+      {
+        "name": "Hormozgan, Hormozgan, Iran",
+        "lat": 27.75,
+        "lng": 56.5,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-04"
+      },
+      {
+        "name": "Minab, Sistan Va Baluchestan, Iran",
+        "lat": 25.7893,
+        "lng": 61.1025,
+        "count": 3,
+        "firstSeen": "2026-09-02",
+        "lastSeen": "2026-09-04"
       },
       {
         "name": "Kuhestak, Kerman, Iran",
