@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T18:04:11.118Z",
+  "generated": "2026-09-05T00:05:10.306Z",
   "conflicts": {
     "ukraine": [
       {
@@ -680,9 +680,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 43,
+        "count": 79,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-04"
+        "lastSeen": "2026-09-05"
       },
       {
         "name": "Bandar Abbas, Hormozgan, Iran",
@@ -691,6 +691,14 @@
         "count": 14,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-02"
+      },
+      {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 14,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-05"
       },
       {
         "name": "Larak Island, Hormozgan, Iran",
@@ -773,14 +781,6 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-04"
-      },
-      {
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
@@ -821,20 +821,12 @@
         "lastSeen": "2026-09-01"
       },
       {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-04"
-      },
-      {
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
         "count": 5,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-04"
+        "lastSeen": "2026-09-05"
       },
       {
         "name": "Qeshm, Kordestan, Iran",
@@ -851,6 +843,22 @@
         "count": 5,
         "firstSeen": "2026-09-04",
         "lastSeen": "2026-09-04"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-05"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-05"
       },
       {
         "name": "Gulf Of Oman, Iran (General), Iran",
@@ -922,15 +930,7 @@
         "lng": 58.4167,
         "count": 3,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-04"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-04"
+        "lastSeen": "2026-09-05"
       },
       {
         "name": "Erbil, Liwa' Irbil, Iraq",
