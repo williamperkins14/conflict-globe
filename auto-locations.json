@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05T12:03:52.528Z",
+  "generated": "2026-09-05T18:03:42.324Z",
   "conflicts": {
     "ukraine": [
       {
@@ -680,8 +680,24 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 81,
+        "count": 69,
         "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-05"
+      },
+      {
+        "name": "Gulf Of Oman, Iran (General), Iran",
+        "lat": 25.4489,
+        "lng": 57.7939,
+        "count": 34,
+        "firstSeen": "2026-09-01",
+        "lastSeen": "2026-09-05"
+      },
+      {
+        "name": "Kharg, Bushehr, Iran",
+        "lat": 29.25,
+        "lng": 50.3286,
+        "count": 30,
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-05"
       },
       {
@@ -749,14 +765,6 @@
         "lastSeen": "2026-09-04"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 11,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-05"
-      },
-      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
@@ -779,14 +787,6 @@
         "count": 8,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-02"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-05"
       },
       {
         "name": "Bahrain",
@@ -813,19 +813,19 @@
         "lastSeen": "2026-09-03"
       },
       {
-        "name": "Kharg, Bushehr, Iran",
-        "lat": 29.25,
-        "lng": 50.3286,
-        "count": 7,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-05"
-      },
-      {
         "name": "Kuhestak, Kerman, Iran",
         "lat": 28,
         "lng": 58.4167,
         "count": 7,
         "firstSeen": "2026-09-02",
+        "lastSeen": "2026-09-05"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 6,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-05"
       },
       {
@@ -843,6 +843,14 @@
         "count": 6,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-01"
+      },
+      {
+        "name": "Minab, Sistan Va Baluchestan, Iran",
+        "lat": 25.7893,
+        "lng": 61.1025,
+        "count": 6,
+        "firstSeen": "2026-09-02",
+        "lastSeen": "2026-09-05"
       },
       {
         "name": "Qeshm, Kordestan, Iran",
@@ -867,14 +875,6 @@
         "count": 4,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-05"
-      },
-      {
-        "name": "Gulf Of Oman, Iran (General), Iran",
-        "lat": 25.4489,
-        "lng": 57.7939,
-        "count": 4,
-        "firstSeen": "2026-09-01",
-        "lastSeen": "2026-09-02"
       },
       {
         "name": "Larak, Khorasan-E Janubi, Iran",
@@ -909,6 +909,14 @@
         "lastSeen": "2026-09-05"
       },
       {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-05"
+      },
+      {
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
@@ -922,14 +930,6 @@
         "lng": 56.5,
         "count": 3,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-04"
-      },
-      {
-        "name": "Minab, Sistan Va Baluchestan, Iran",
-        "lat": 25.7893,
-        "lng": 61.1025,
-        "count": 3,
-        "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-04"
       },
       {
