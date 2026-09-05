@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05T00:05:10.306Z",
+  "generated": "2026-09-05T06:04:48.388Z",
   "conflicts": {
     "ukraine": [
       {
@@ -680,7 +680,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 79,
+        "count": 46,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-05"
       },
@@ -946,7 +946,7 @@
         "lng": 45,
         "count": 3,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-03"
+        "lastSeen": "2026-09-05"
       },
       {
         "name": "Asaluyeh, Bushehr, Iran",
