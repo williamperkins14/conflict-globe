@@ -885,6 +885,17 @@
         .ringsData(ringItems())
         .ringLat(d => d.lat)
         .ringLng(d => d.lng)
+        // Above the country borders, which sit at 0.002.
+        //
+        // The borders are drawn as polygons with a fully transparent fill, and
+        // a transparent material in three.js still writes to the depth buffer:
+        // invisible geometry, but it occludes anything underneath it just the
+        // same. Rings at the default 0.0015 were therefore being punched
+        // through wherever a country's fill covered them, so a ring came out
+        // chopped along the coastline or the border it crossed. Lifting them
+        // above that layer is all it takes; 0.003 still sits below the marker
+        // cylinders at 0.004, so the marker stays on top of its own ring.
+        .ringAltitude(0.003)
         .ringMaxRadius(d => ringRadius(d))
         .ringPropagationSpeed(ringStyle().speed)
         .ringRepeatPeriod(ringStyle().period)
