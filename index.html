@@ -586,10 +586,22 @@
         const geo = topojson.feature(topo, topo.objects.countries);
         globe
           .polygonsData(geo.features)
-          .polygonCapColor(() => 'rgba(0,0,0,0)')   // no fill on top
+          .polygonCapColor(f => countryColour(f))   // filled only while hovered
           .polygonSideColor(() => 'rgba(0,0,0,0)')  // no extruded walls
           .polygonStrokeColor(() => 'rgba(130,175,220,0.6)')
-          .polygonAltitude(0.002);
+          .polygonAltitude(0.002)
+          // Long enough to read as a fade rather than a flicker, short enough
+          // that the country is lit before the eye has finished arriving.
+          .polygonsTransitionDuration(200);
+
+        // Hovering a conflict marker lights the countries fighting it.
+        // World level only: inside a conflict you already know whose war it
+        // is, and lighting whole countries while the reader is on a city is
+        // noise. d is null when the cursor leaves a marker, which clears it.
+        globe.onPointHover(d => {
+          const c = (!activeConflict && d && d.locations) ? d : null;
+          setHighlight(c ? (BELLIGERENTS[c.id] || []) : []);
+        });
       })
       .catch(() => {
         // Borders are decoration. If the CDN is unreachable the globe
@@ -614,6 +626,57 @@
     // (the place already has a red marker) but which are still real
     // reports about that place. They used to be logged and thrown away.
     let autoEvents = {};
+
+    // ---------------------------------------------------------------
+    // Which countries light up when the cursor is over a conflict marker.
+    //
+    // This list is editorial, not geographic. It is the states the war is
+    // actually between, plus territory being used to wage it. Not allies, not
+    // suppliers, not the countries with an interest in the outcome. North
+    // Korean troops have fought in Kursk and American aircraft struck Natanz,
+    // and both are still left out: including them turns a map of wars into a
+    // map of the alliance system, which is a different site with a different
+    // argument. A reader who wants to know who arms whom is not served by a
+    // hover state.
+    //
+    // Names must match the country data exactly. These were read off the
+    // loaded features rather than guessed - 'Palestine' is a single feature
+    // covering both the West Bank and Gaza, and the file writes several
+    // countries in forms you would not type from memory.
+    // ---------------------------------------------------------------
+    const BELLIGERENTS = {
+      ukraine: ['Ukraine', 'Russia', 'Belarus'],
+      sudan:   ['Sudan'],
+      gaza:    ['Israel', 'Palestine'],
+      haiti:   ['Haiti'],
+      iran:    ['Iran', 'Israel'],
+    };
+
+    // Darker than the markers on purpose. The marker is the thing being
+    // pointed at; the country is context behind it, and context that competes
+    // with the marker for attention is doing the reader no favours.
+    const COUNTRY_HIGHLIGHT = 'rgba(122,20,15,0.6)';
+
+    let highlighted = new Set();
+
+    function countryColour(f) {
+      return highlighted.has(f.properties.name)
+        ? COUNTRY_HIGHLIGHT
+        : 'rgba(0,0,0,0)';
+    }
+
+    // onPointHover fires on every mouse move across a marker, and repainting
+    // 241 country polygons each time is the difference between smooth and
+    // stuttering. So: do nothing unless the set has actually changed.
+    function setHighlight(names) {
+      const unchanged = names.length === highlighted.size
+        && names.every(n => highlighted.has(n));
+      if (unchanged) return;
+      highlighted = new Set(names);
+      // A freshly created function every time. globe.gl compares accessors by
+      // identity, and passing the same reference reads as "nothing changed".
+      globe.polygonCapColor(f => countryColour(f));
+    }
 
     // The marker the reader has actually clicked. Everything else on the
     // globe dims away from it, and it is the only thing that pulses, so the
@@ -911,6 +974,7 @@
     // Level 1: every conflict, one marker each.
     function showWorld() {
       clearRings();
+      setHighlight([]);
       activeConflict = null;
       activeLocation = null;
       panelBack.classList.remove('visible');
@@ -926,6 +990,7 @@
     // Level 2: one conflict, its locations.
     function openConflict(c) {
       clearRings();
+      setHighlight([]);   // the cursor may still be on the marker we just left
       activeConflict = c;
       activeLocation = null;   // a new level of the map, nothing selected in it yet
       panelBack.classList.add('visible');
