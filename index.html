@@ -594,14 +594,7 @@
           // that the country is lit before the eye has finished arriving.
           .polygonsTransitionDuration(200);
 
-        // Hovering a conflict marker lights the countries fighting it.
-        // World level only: inside a conflict you already know whose war it
-        // is, and lighting whole countries while the reader is on a city is
-        // noise. d is null when the cursor leaves a marker, which clears it.
-        globe.onPointHover(d => {
-          const c = (!activeConflict && d && d.locations) ? d : null;
-          setHighlight(c ? (BELLIGERENTS[c.id] || []) : []);
-        });
+        globe.onPointHover(d => hoverMarker(d));
       })
       .catch(() => {
         // Borders are decoration. If the CDN is unreachable the globe
@@ -676,6 +669,31 @@
       // A freshly created function every time. globe.gl compares accessors by
       // identity, and passing the same reference reads as "nothing changed".
       globe.polygonCapColor(f => countryColour(f));
+    }
+
+    // Auto-rotation belongs to the world view with nothing selected. Anywhere
+    // else it is off, and it must stay off - so this is asked rather than
+    // remembered. Restoring whatever the value was before a hover would turn
+    // the spin back on if the reader clicked through to a conflict while the
+    // cursor was still sitting on the marker.
+    function rotationWanted() {
+      return !activeConflict && !activeLocation;
+    }
+
+    // Hovering a marker stops the globe. Reading a country name off something
+    // that is sliding out from under the cursor is the sort of small
+    // frustration nobody reports and everybody feels.
+    //
+    // d is null when the cursor leaves the marker, which is what puts the
+    // rotation back and clears the highlight.
+    function hoverMarker(d) {
+      globe.controls().autoRotate = d ? false : rotationWanted();
+
+      // The country highlight is world level only: inside a conflict the
+      // reader already knows whose war it is, and lighting whole countries
+      // while they are reading a city is noise.
+      const c = (!activeConflict && d && d.locations) ? d : null;
+      setHighlight(c ? (BELLIGERENTS[c.id] || []) : []);
     }
 
     // The marker the reader has actually clicked. Everything else on the
