@@ -7,6 +7,15 @@
   <link rel="icon" href="data:,">
 
   <style>
+    /* Panel widths scale with the window so the globe keeps a usable middle
+       on a 13-inch screen and does not look lost on a 27-inch one. clamp
+       gives a floor, a proportion, and a ceiling in one value. */
+    :root {
+      --left-w: clamp(300px, 25vw, 400px);
+      --right-w: clamp(300px, 24vw, 380px);
+      --rail-w: 34px;
+    }
+
     body {
       margin: 0;
       background: #000;
@@ -18,11 +27,28 @@
        It is always on the page. We just slide it off-screen to the
        left until a marker is clicked. That is what translateX does.
     ---------------------------------------------------------------- */
+    /* The globe does not sit under the panels, it sits BETWEEN them. The
+       inset moves with whichever panels are open and the canvas is resized
+       to match, so the globe stays centred in whatever space is left rather
+       than half-hidden behind a panel. */
+    #globeViz {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: left 0.35s ease, right 0.35s ease;
+    }
+
+    body.left-open #globeViz { left: var(--left-w); }
+    body.right-open #globeViz { right: var(--right-w); }
+    body.right-open.right-min #globeViz { right: var(--rail-w); }
+
     #panel {
       position: fixed;
       top: 0;
       left: 0;
-      width: 380px;
+      width: var(--left-w);
       height: 100%;
       box-sizing: border-box;
       padding: 40px 32px;
@@ -467,6 +493,107 @@
     .source-item:hover {
       color: #ff8177;
     }
+
+    /* ---- The reporting panel -------------------------------------- */
+    #news-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: var(--right-w);
+      height: 100%;
+      box-sizing: border-box;
+      background: rgba(10, 12, 16, 0.92);
+      backdrop-filter: blur(12px);
+      border-left: 1px solid rgba(255, 255, 255, 0.08);
+      color: #e8eaed;
+      transform: translateX(100%);
+      transition: transform 0.35s ease, width 0.35s ease;
+      overflow: hidden;
+    }
+
+    #news-panel.open { transform: translateX(0); }
+    #news-panel.min  { width: var(--rail-w); }
+
+    #news-inner {
+      height: 100%;
+      box-sizing: border-box;
+      padding: 40px 28px;
+      overflow-y: auto;
+    }
+
+    #news-panel.min #news-inner { display: none; }
+
+    #news-min {
+      position: absolute;
+      top: 18px;
+      left: 6px;
+      z-index: 2;
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+
+    #news-min:hover { color: #fff; }
+
+    /* Collapsed, the panel keeps a rail wide enough to say what it is.
+       A bare stripe with an arrow on it tells the reader nothing. */
+    #news-rail {
+      display: none;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: var(--rail-w);
+      text-align: center;
+      writing-mode: vertical-rl;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: rgba(255, 255, 255, 0.35);
+      pointer-events: none;
+    }
+
+    #news-panel.min #news-rail { display: block; }
+    #news-panel.min #news-min { transform: rotate(180deg); left: 2px; }
+
+    #news-head {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.45);
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    #news-head strong {
+      display: block;
+      font-size: 17px;
+      letter-spacing: 0;
+      text-transform: none;
+      color: #e8eaed;
+      margin-bottom: 4px;
+    }
+
+    /* Which place a report is about, when the panel is showing a whole
+       conflict rather than one marker. */
+    .ev-place {
+      color: #ff8177;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-right: 6px;
+    }
+
+    /* Below this width there is no middle left to protect: the panels stop
+       squeezing the globe and simply cover it, one at a time. */
+    @media (max-width: 900px) {
+      :root { --left-w: min(92vw, 400px); --right-w: min(92vw, 400px); }
+      body.left-open #globeViz,
+      body.right-open #globeViz { left: 0; right: 0; }
+    }
   </style>
 </head>
 
@@ -483,11 +610,24 @@
     <p id="panel-meta"></p>
     <p id="panel-summary"></p>
     <div id="panel-key-events"></div>
-    <div id="panel-events"></div>
     <div id="panel-sources"></div>
     <div id="panel-locations"></div>
-    <div id="panel-news"></div>
   </div>
+
+  <!-- The reporting panel. Everything on this side is what is being SAID
+       right now: unverified reports and press coverage. The left panel is
+       what the site is prepared to stand behind. Keeping the two on
+       opposite sides of the globe is the whole point - a reader should
+       never have to work out which kind of claim they are reading. -->
+  <aside id="news-panel">
+    <button id="news-min" title="Hide reporting">&rsaquo;</button>
+    <div id="news-rail">REPORTING</div>
+    <div id="news-inner">
+      <div id="news-head"></div>
+      <div id="panel-events"></div>
+      <div id="panel-news"></div>
+    </div>
+  </aside>
 
   <!-- Downloads the globe.gl library and gives us the Globe() function. -->
   <script src="https://cdn.jsdelivr.net/npm/globe.gl@2.46.2/dist/globe.gl.min.js"></script>
@@ -529,7 +669,7 @@
 
     // Auto-detected markers are deliberately smaller than any curated one
     // and do not pulse. They read as a hint, not a fact.
-    const markerRadius = d => (d.auto ? 0.2 : (0.33 + d.intensity * 0.12)) * zoomScale();
+    const markerRadius = d => (0.33 + d.intensity * 0.12) * zoomScale();
     // Rings are pronounced in two situations and subtle in the third:
     //
     //   world view, conflict markers      pronounced — five markers, far apart,
@@ -608,11 +748,6 @@
     // Everything loaded from conflicts.json, and which conflict is open.
     let allConflicts = [];
     let activeConflict = null;
-
-    // Auto-detected locations, keyed by conflict id, from auto-locations.json.
-    // This layer is additive: if the file is missing or broken the site behaves
-    // exactly as it did before it existed.
-    let autoLocations = {};
 
     // Events at curated places, keyed by conflict id then location name.
     // These are the matches the detector suppresses for MARKER creation
@@ -707,25 +842,31 @@
     let activeLocation = null;
     let currentItems = [];
 
-    // The two hues at full strength, and the same hues pushed down to near
-    // background level. Dimming rather than hiding: a reader still needs to
-    // see that the rest of the war is there.
-    const MARKER_BRIGHT = { curated: '#ff2a1f', auto: '#a855f7' };
-    const MARKER_DIM    = { curated: '#4a1512', auto: '#2e1745' };
+    // One kind of marker, one colour.
+    //
+    // There used to be two: red for places the site stands behind, purple
+    // for places a scraper had found. The purple ones are gone. A marker is
+    // an assertion that something happened at a point on the earth, and the
+    // detector was not good enough to make it: it put 'Ethiopians' in Sudan,
+    // 'Iranian' and 'Basij' in Iran and 'Haitian' in Haiti, having geocoded
+    // demonyms as towns. A caption saying "unverified" does not undo a dot
+    // planted on a map.
+    //
+    // What the detector finds still reaches the reader, on the right, as
+    // reporting - which is what it always was.
+    const MARKER_BRIGHT = '#ff2a1f';
+    const MARKER_DIM    = '#4a1512';
 
     function markerColour(d) {
-      const key = d.auto ? 'auto' : 'curated';
-      if (!activeLocation) return MARKER_BRIGHT[key];
-      return d === activeLocation ? MARKER_BRIGHT[key] : MARKER_DIM[key];
+      if (!activeLocation) return MARKER_BRIGHT;
+      return d === activeLocation ? MARKER_BRIGHT : MARKER_DIM;
     }
 
-    // Which markers pulse. With something selected: only that one, so the
-    // ring reads as "this is what you clicked". With nothing selected: the
-    // curated markers, as before — a ring on an auto marker would claim
-    // "something is happening here", which is more than we know.
+    // Which markers pulse: the selected one alone, or all of them when
+    // nothing is selected.
     function ringItems() {
       if (activeLocation) return [activeLocation];
-      return currentItems.filter(d => !d.auto);
+      return currentItems;
     }
 
     // globe.gl compares accessor functions BY IDENTITY. Passing the same
@@ -738,8 +879,7 @@
     // travel and then drops away, which is what makes the pulse read as a
     // pulse rather than a faint smudge.
     function ringPaint() {
-      const key = activeLocation && activeLocation.auto ? 'auto' : 'curated';
-      const rgb = key === 'auto' ? '168,85,247' : '255,60,48';
+      const rgb = '255,60,48';
       const ease = ringStyle().ease;
       // ease 1 is the original linear fade; below 1 holds the ring near full
       // strength through the first half of its travel, which is what reads as
@@ -889,21 +1029,18 @@
     fetch('auto-locations.json')
       .then(r => (r.ok ? r.json() : null))
       .then(data => {
-        if (data && data.conflicts) autoLocations = data.conflicts;
+        // data.conflicts is the detector's own list of places. It is still
+        // written by the pipeline and still feeds the confidence ladder, but
+        // nothing on the site reads it any more: those guesses were not good
+        // enough to put a dot on a map with.
         if (data && data.events) autoEvents = data.events;
       })
       .catch(() => console.warn('auto-locations.json not loaded; showing curated markers only.'));
 
-    // Curated locations for a conflict, plus its auto-detected ones tagged
-    // so every downstream check can tell them apart.
+    // Curated locations only. The detector's own place guesses are no longer
+    // put on the globe at all; see the note on marker colour above.
     function locationsFor(c) {
-      const curated = c.locations || [];
-      const auto = (autoLocations[c.id] || []).map(a => Object.assign({}, a, {
-        auto: true,
-        intensity: 0.2,
-        type: a.source === 'telegram' ? 'Reported by a trusted channel' : 'Auto-detected from news'
-      }));
-      return curated.concat(auto);
+      return c.locations || [];
     }
 
     fetch('conflicts.json')
@@ -956,14 +1093,8 @@
         .pointLng(d => d.lng)
         .pointAltitude(0.004)
         .pointRadius(d => markerRadius(d))
-        // Red is a claim the site stands behind. Purple is a claim
-        // somebody else made that we are passing on. The two must never
-        // look alike: a reader who cannot tell them apart is being told
-        // that a scraped Telegram post carries the same weight as a
-        // checked historical record, and it does not.
         .pointColor(d => markerColour(d))
-        .pointLabel(d => !d.auto ? d.name
-          : d.name + (d.source === 'telegram' ? ' (reported)' : ' (auto-detected)'))
+        .pointLabel(d => d.name)
         // Ignore clicks that land while the camera is already moving - during
         // the load settle or any flyTo. Without this a click meant for empty
         // space, caught mid-flight, navigates somewhere unexpected.
@@ -993,6 +1124,71 @@
     // ---------------------------------------------------------------
     const panel = document.getElementById('panel');
     const panelBack = document.getElementById('panel-back');
+    const newsPanel = document.getElementById('news-panel');
+    const viz = document.getElementById('globeViz');
+
+    // ---------------------------------------------------------------
+    // The globe sits between the panels, so it has to be resized when they
+    // move. CSS moves the box; the canvas needs telling separately, because
+    // a WebGL drawing buffer left at its old dimensions comes out stretched.
+    //
+    // Coalesced to one call per frame: the panel slide fires a resize on
+    // every frame of its 350ms transition, and rebuilding the renderer
+    // twenty times in a row for the same end state is wasted work.
+    // ---------------------------------------------------------------
+    let _sizeQueued = false;
+
+    function sizeGlobe() {
+      if (_sizeQueued) return;
+      _sizeQueued = true;
+      requestAnimationFrame(() => {
+        _sizeQueued = false;
+        const r = viz.getBoundingClientRect();
+        if (r.width > 0 && r.height > 0) globe.width(r.width).height(r.height);
+      });
+    }
+
+    new ResizeObserver(sizeGlobe).observe(viz);
+    sizeGlobe();
+
+    // Both panels tell the body what is open, and the body is what moves the
+    // globe. One place decides, rather than every call site remembering.
+    function setLeftPanel(open) {
+      panel.classList.toggle('open', open);
+      document.body.classList.toggle('left-open', open);
+    }
+
+    function closeNews() {
+      newsPanel.classList.remove('open');
+      document.body.classList.remove('right-open');
+    }
+
+    // What is being SAID about the selected thing: unverified reports first,
+    // then press coverage. Pass a location for one place, or null for the
+    // conflict as a whole.
+    function showReporting(d, conflict) {
+      if (!conflict) { closeNews(); return; }
+
+      document.getElementById('news-head').innerHTML =
+        '<strong>' + escapeHtml(d ? d.name : conflict.name) + '</strong>'
+        + (d ? 'What is being reported here' : 'Reported across this conflict');
+
+      showEvents(d, conflict);
+      loadNews(d || conflict);
+
+      newsPanel.classList.add('open');
+      document.body.classList.add('right-open');
+    }
+
+    // Minimising leaves a labelled rail rather than hiding the panel, so the
+    // reader can tell there is something there to bring back.
+    document.getElementById('news-min').addEventListener('click', () => {
+      const min = !newsPanel.classList.contains('min');
+      newsPanel.classList.toggle('min', min);
+      document.body.classList.toggle('right-min', min);
+      document.getElementById('news-min').title = min
+        ? 'Show reporting' : 'Hide reporting';
+    });
 
     // Level 1: every conflict, one marker each.
     function showWorld() {
@@ -1001,7 +1197,8 @@
       activeConflict = null;
       activeLocation = null;
       panelBack.classList.remove('visible');
-      panel.classList.remove('open');
+      setLeftPanel(false);
+      closeNews();
       globe.controls().autoRotate = true;
       flyTo({ altitude: 2.5 }, 1400);
 
@@ -1020,6 +1217,7 @@
 
       fillPanel(c);
       showLocationList(c);
+      showReporting(null, c);   // the conflict's recent reporting, all places
 
       globe.controls().autoRotate = false;
       flyTo({ lat: c.lat, lng: c.lng, altitude: 0.85 }, 1800);
@@ -1040,6 +1238,7 @@
       // hidden tab, and the selected ring must not depend on being watched.
       setTimeout(refreshRings, 32);
       fillPanel(d);
+      showReporting(d, activeConflict);
       document.getElementById('panel-locations').innerHTML = '';
       globe.controls().autoRotate = false;
       flyTo({ lat: d.lat, lng: d.lng, altitude: 0.45 }, 1300);
@@ -1050,63 +1249,6 @@
       document.getElementById('panel-title').textContent = d.name;
 
       const summary = document.getElementById('panel-summary');
-
-      // Auto-detected place: no write-up, no news feed, just a plain
-      // statement of what it is and the evidence behind it.
-      if (d.auto && d.source === 'telegram') {
-        const channels = [...new Set((d.evidence || []).map(e => e.channel))];
-        document.getElementById('panel-meta').textContent =
-          'Reported \u00b7 ' + (activeConflict ? activeConflict.name : '');
-        summary.style.color = '';
-        summary.innerHTML =
-          '<span class="auto-note">Reported by '
-          + escapeHtml(channels.join(', ') || 'a trusted channel')
-          + '. Not independently verified.</span><br><br>'
-          + 'A source William follows said something happened here. '
-          + 'It does not mean it did.'
-          + '<span class="auto-stats">'
-          + escapeHtml(String(d.count)) + ' post' + (d.count === 1 ? '' : 's')
-          + ' \u00b7 first ' + escapeHtml(String(d.firstSeen))
-          + ' \u00b7 last ' + escapeHtml(String(d.lastSeen))
-          + '</span>';
-        const ev = (d.evidence || []).map(e =>
-          '<a class="tg-evidence" href="' + (/^https:\/\/t\.me\//.test(e.url) ? escapeHtml(e.url) : '#')
-          + '" target="_blank" rel="noopener">'
-          + '<span class="tg-ev-meta">' + escapeHtml(e.channel) + ' \u00b7 '
-          + escapeHtml((e.at || '').slice(0, 10)) + '</span>'
-          + '<span class="tg-ev-text">' + escapeHtml(e.excerpt || '') + '</span></a>'
-        ).join('');
-        document.getElementById('panel-sources').innerHTML = ev;
-        document.getElementById('panel-news').innerHTML = '';
-        document.getElementById('panel-events').innerHTML = '';
-        document.getElementById('panel-key-events').innerHTML = '';
-        panel.classList.add('open');
-        return;
-      }
-
-      if (d.auto) {
-        document.getElementById('panel-meta').textContent =
-          'Auto-detected \u00b7 ' + (activeConflict ? activeConflict.name : '');
-        summary.style.color = '';
-        summary.innerHTML =
-          '<span class="auto-note">Automatically detected from news coverage. '
-          + 'Not verified.</span><br><br>'
-          + 'Recent articles about this conflict mentioned this place repeatedly. '
-          + 'That is all this marker means. It is not confirmation that an event '
-          + 'happened here.'
-          + '<span class="auto-stats">'
-          + escapeHtml(String(d.count)) + ' article' + (d.count === 1 ? '' : 's')
-          + ' in the last few days<br>'
-          + 'First seen ' + escapeHtml(String(d.firstSeen))
-          + ' \u00b7 last seen ' + escapeHtml(String(d.lastSeen))
-          + '</span>';
-        panel.classList.add('open');
-        document.getElementById('panel-sources').innerHTML = '';
-        document.getElementById('panel-news').innerHTML = '';
-        document.getElementById('panel-events').innerHTML = '';
-        document.getElementById('panel-key-events').innerHTML = '';
-        return;
-      }
 
       document.getElementById('panel-meta').textContent =
         (d.type || (activeConflict ? activeConflict.name : '')) +
@@ -1120,11 +1262,9 @@
         summary.style.color = 'rgba(255,255,255,0.3)';
       }
 
-      panel.classList.add('open');
+      setLeftPanel(true);
       showKeyEvents(d);
-      showEvents(d);
       showSources(d);
-      loadNews(d);
     }
 
     // The clickable list of places, so you can navigate from the panel
@@ -1132,21 +1272,14 @@
     function showLocationList(c) {
       const box = document.getElementById('panel-locations');
       const curated = c.locations || [];
-      const allAuto = (autoLocations[c.id] || []).map(a => Object.assign({}, a, {
-        auto: true, intensity: 0.2
-      }));
-      const reported = allAuto.filter(a => a.source === 'telegram');
-      const auto = allAuto.filter(a => a.source !== 'telegram');
 
-      if (curated.length === 0 && allAuto.length === 0) { box.innerHTML = ''; return; }
+      if (curated.length === 0) { box.innerHTML = ''; return; }
       box.innerHTML = '';
 
-      // Alphabetical within each section. The file order was the order
-      // things happened to be written in, which means nothing to a reader.
+      // Alphabetical. The file order was the order things happened to be
+      // written in, which means nothing to a reader.
       const az = (a, b) => a.name.localeCompare(b.name, 'en');
       addLocSection('Locations', curated.slice().sort(az), '');
-      addLocSection('Reported · unverified', reported.slice().sort(az), 'tg');
-      addLocSection('Auto-detected · unverified', auto.slice().sort(az), 'auto');
 
       function addLocSection(heading, list, kind) {
         if (list.length === 0) return;
@@ -1179,7 +1312,10 @@
       clearRings();
       refreshPointColours();
       setTimeout(refreshRings, 80);
-      panel.classList.remove('open');
+      setLeftPanel(false);
+      // Deselecting a place does not mean the reader has left the conflict,
+      // so the reporting panel falls back to the conflict as a whole.
+      showReporting(null, activeConflict);
       if (!activeConflict) globe.controls().autoRotate = true;
     });
 
@@ -1592,16 +1728,32 @@
       return String(Number(p[2])) + ' ' + m[Number(p[1]) - 1] + ' ' + p[0];
     }
 
-    function showEvents(d) {
+    // d is a location, or null for every place in the conflict at once.
+    // At conflict level each row is labelled with its place, because
+    // 'a drone hit a substation' means nothing without knowing where.
+    function showEvents(d, conflict) {
       const box = document.getElementById('panel-events');
       if (!box) return;
 
-      const forConflict = (activeConflict && autoEvents[activeConflict.id]) || {};
-      const list = forConflict[d.name] || [];
+      const forConflict = (conflict && autoEvents[conflict.id]) || {};
+
+      let list;
+      if (d) {
+        list = (forConflict[d.name] || []).map(e => Object.assign({}, e, { place: null }));
+      } else {
+        list = Object.keys(forConflict).reduce((acc, place) => acc.concat(
+          forConflict[place].map(e => Object.assign({}, e, { place: place }))
+        ), []);
+      }
+
       if (list.length === 0) { box.innerHTML = ''; return; }
 
+      // Capped. A conflict with 261 reports across 14 places is a wall of
+      // text nobody reads to the end of, and the oldest of them are the
+      // least worth the reader's attention.
       const sorted = list.slice()
-        .sort((a, b) => String(b.at).localeCompare(String(a.at)));
+        .sort((a, b) => String(b.at).localeCompare(String(a.at)))
+        .slice(0, d ? 400 : 60);
 
       const days = [];
       sorted.forEach(e => {
@@ -1646,6 +1798,9 @@
     //                      with the source sentence underneath to check it.
     function renderEvent(e) {
       const p = e.parsed;
+      const place = e.place
+        ? '<span class="ev-place">' + escapeHtml(e.place) + '</span>'
+        : '';
       const safeUrl = /^https:\/\/t\.me\//.test(e.url) ? escapeHtml(e.url) : '#';
       const said = e.sentence || e.excerpt || '';
       const status = e.status || 'reported';
@@ -1661,10 +1816,10 @@
         else if (p.targetType)        line = cap(p.targetType) + ' hit';
         if (p.target)     line += ' (' + p.target + ')';
         if (p.casualties) line += ' · ' + p.casualties;
-        head = '<span class="ev-line">' + escapeHtml(line) + '</span>'
+        head = '<span class="ev-line">' + place + escapeHtml(line) + '</span>'
              + '<span class="ev-said">' + escapeHtml(said) + '</span>';
       } else {
-        head = '<span class="ev-line ev-line-plain">'
+        head = '<span class="ev-line ev-line-plain">' + place
              + '<span class="ev-speaker">' + escapeHtml(e.channel) + ':</span> '
              + escapeHtml('“' + said + '”') + '</span>';
       }
