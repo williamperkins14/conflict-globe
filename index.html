@@ -506,6 +506,11 @@
       .atmosphereColor('#3a7bd5')
       .atmosphereAltitude(0.18);
 
+    // Exposed so the globe can be inspected from the console. It is the only
+    // way to see what the ring layer is actually holding when its behaviour
+    // does not match what the code says it should be.
+    window.globe = globe;
+
     // ---------------------------------------------------------------
     // PART 2: camera and motion.
     // ---------------------------------------------------------------
@@ -525,7 +530,44 @@
     // Auto-detected markers are deliberately smaller than any curated one
     // and do not pulse. They read as a hint, not a fact.
     const markerRadius = d => (d.auto ? 0.2 : (0.33 + d.intensity * 0.12)) * zoomScale();
-    const ringRadius   = d => (1.1 + d.intensity * 1.4) * zoomScale();
+    // Rings are pronounced in two situations and subtle in the third:
+    //
+    //   world view, conflict markers      pronounced — five markers, far apart,
+    //                                     nothing to crowd
+    //   inside a conflict, one selected   pronounced — it is the only ring on
+    //                                     the globe, and the reach is what
+    //                                     makes it read as "this one"
+    //   inside a conflict, none selected  SUBTLE — a dozen city markers close
+    //                                     together, and big rings overlap into
+    //                                     a mess
+    //
+    // In any one of those states every visible ring shares a style, so this is
+    // one setting per state rather than a value per ring. That also avoids
+    // assuming globe.gl takes function accessors for propagation speed and
+    // repeat period, which is the sort of assumption that has silently wiped
+    // every marker on this globe before.
+    // Three profiles, not two. The world view and a selected city both want
+    // emphasis but they are not the same problem: one selected city has an
+    // empty globe to expand into, five conflict markers do not. Treating them
+    // alike made the world view sprawl.
+    const RING_STYLE = {
+      // One city, alone on the globe. Nothing to crowd, so it can travel.
+      selected: { reach: 2.1, speed: 0.85, period: 700,  ease: 0.5 },
+      // Five conflict markers. Enough presence to read as alive, tight enough
+      // that they do not run into each other.
+      world:    { reach: 1.4, speed: 1.1,  period: 1100, ease: 0.7 },
+      // A dozen city markers close together. The original settings.
+      subtle:   { reach: 1,   speed: 1.2,  period: 1400, ease: 1   },
+    };
+
+    function ringStyle() {
+      if (activeLocation) return RING_STYLE.selected;
+      if (!activeConflict) return RING_STYLE.world;
+      return RING_STYLE.subtle;
+    }
+
+    const ringRadius = d =>
+      (1.1 + d.intensity * 1.4) * ringStyle().reach * zoomScale();
 
     // ---------------------------------------------------------------
     // PART 2b: country borders.
@@ -572,6 +614,165 @@
     // (the place already has a red marker) but which are still real
     // reports about that place. They used to be logged and thrown away.
     let autoEvents = {};
+
+    // The marker the reader has actually clicked. Everything else on the
+    // globe dims away from it, and it is the only thing that pulses, so the
+    // eye has one place to go.
+    let activeLocation = null;
+    let currentItems = [];
+
+    // The two hues at full strength, and the same hues pushed down to near
+    // background level. Dimming rather than hiding: a reader still needs to
+    // see that the rest of the war is there.
+    const MARKER_BRIGHT = { curated: '#ff2a1f', auto: '#a855f7' };
+    const MARKER_DIM    = { curated: '#4a1512', auto: '#2e1745' };
+
+    function markerColour(d) {
+      const key = d.auto ? 'auto' : 'curated';
+      if (!activeLocation) return MARKER_BRIGHT[key];
+      return d === activeLocation ? MARKER_BRIGHT[key] : MARKER_DIM[key];
+    }
+
+    // Which markers pulse. With something selected: only that one, so the
+    // ring reads as "this is what you clicked". With nothing selected: the
+    // curated markers, as before — a ring on an auto marker would claim
+    // "something is happening here", which is more than we know.
+    function ringItems() {
+      if (activeLocation) return [activeLocation];
+      return currentItems.filter(d => !d.auto);
+    }
+
+    // globe.gl compares accessor functions BY IDENTITY. Passing the same
+    // reference again reads as "nothing changed" and the redraw is skipped,
+    // so every one of these has to be a freshly created arrow function. This
+    // is not defensive style; it is the difference between the highlight
+    // appearing and nothing happening at all.
+    // A linear 1-t fade spends most of the ring's life almost invisible. The
+    // eased curve holds it near full strength through the first half of its
+    // travel and then drops away, which is what makes the pulse read as a
+    // pulse rather than a faint smudge.
+    function ringPaint() {
+      const key = activeLocation && activeLocation.auto ? 'auto' : 'curated';
+      const rgb = key === 'auto' ? '168,85,247' : '255,60,48';
+      const ease = ringStyle().ease;
+      // ease 1 is the original linear fade; below 1 holds the ring near full
+      // strength through the first half of its travel, which is what reads as
+      // a pulse rather than a smudge.
+      return t => `rgba(${rgb},${Math.pow(1 - t, ease).toFixed(3)})`;
+    }
+
+    // ---------------------------------------------------------------
+    // Removing a ring that is already travelling.
+    //
+    // Four attempts failed before this one, all of them working through the
+    // library: emptying ringsData, collapsing ringMaxRadius to zero, painting
+    // the ring transparent, hiding the whole ring layer for a fixed window.
+    // Measured in the browser on 6 Sep 2026, clicking a conflict marker:
+    //
+    //   immediately   data  0   meshes  5    (the 5 stale world rings)
+    //   +400ms        data 15   meshes 20    (5 stale + 15 new)
+    //   +5500ms       data 15   meshes 20    (the 5 stale are STILL there)
+    //
+    // globe.gl never removes a ring mesh. Not late - never. So no amount of
+    // waiting works, which is why the timed blackout failed too: it hid the
+    // stale rings for 1.6s and then showed them again, still travelling. At
+    // the world view those rings are 8.75 degrees wide, so at city zoom they
+    // spill right across the neighbouring countries.
+    //
+    // Every child of the ring layer carries a __data property holding the
+    // datum it was built from. That is the handle the library does not give
+    // us: a mesh whose __data is not in the current ringsData() is stale and
+    // can be hidden on the spot. Done once per frame it needs no timers and
+    // no guess about how long a ring takes to finish, and if globe.gl ever
+    // recycles a mesh for a live datum it becomes visible again by itself.
+    // ---------------------------------------------------------------
+    let _ringLayer = null;
+
+    function ringLayer() {
+      if (_ringLayer) return _ringLayer;
+      try {
+        const data = globe.ringsData();
+        if (!data.length) return null;          // nothing to identify it by yet
+        const root = globe.scene().children.find(c => c.type === 'Group');
+        if (!root) return null;
+        _ringLayer = root.children.find(l => {
+          const kids = l.children || [];
+          if (!kids.length) return false;
+          // The points layer also has one child per datum, but those are
+          // meshes with their own geometry. Ring children are containers.
+          if (kids[0].geometry) return false;
+          return kids.some(k => data.indexOf(k.__data) !== -1);
+        }) || null;
+      } catch (e) {
+        _ringLayer = null;
+      }
+      return _ringLayer;
+    }
+
+    // Hide every ring mesh whose datum is no longer being drawn. Guarded end
+    // to end: if the library's internals change shape this quietly does
+    // nothing, and the trails return as a cosmetic bug rather than the globe
+    // breaking.
+    function syncRings() {
+      try {
+        const layer = ringLayer();
+        if (!layer) return;
+        const data = globe.ringsData();
+        // Backwards, because globe.gl appends. Leaving a level and coming back
+        // to it leaves the old mesh in place AND builds a new one for the same
+        // datum, so a marker ends up with two rings pulsing out of it, each
+        // carrying whatever settings it was built with. Only the newest mesh
+        // for any datum is the one the current settings apply to; every
+        // earlier one is a leftover and is hidden with the rest.
+        const seen = new Set();
+        for (let i = layer.children.length - 1; i >= 0; i--) {
+          const child = layer.children[i];
+          const live = data.indexOf(child.__data) !== -1 && !seen.has(child.__data);
+          if (live) seen.add(child.__data);
+          if (child.visible !== live) child.visible = live;
+        }
+      } catch (e) { /* cosmetic only */ }
+    }
+
+    // Once per drawn frame, so a stale ring is hidden before it is ever
+    // painted. requestAnimationFrame stops in a hidden tab, which is exactly
+    // when nothing needs hiding — but a slow interval as well means the state
+    // is never left wrong for long if the page comes back into view mid-cycle.
+    (function ringJanitor() {
+      syncRings();
+      requestAnimationFrame(ringJanitor);
+    })();
+    setInterval(syncRings, 200);
+
+    // Emptying the data is what makes every existing ring stale; syncRings
+    // then hides it. Called directly as well as once per frame so the change
+    // lands on this frame rather than the next.
+    function clearRings() {
+      globe.ringsData([]);
+      syncRings();
+    }
+
+    // Split because the two want different timing. Marker colour should change
+    // the instant you click. Rings must stay collapsed for a frame first, or
+    // restoring the radius immediately hands the lingering meshes something to
+    // expand into again and the trail comes straight back.
+    function refreshPointColours() {
+      globe.pointColor(d => markerColour(d));
+    }
+
+    function refreshRings() {
+      globe
+        .ringsData(ringItems())
+        .ringMaxRadius(d => ringRadius(d))
+        .ringPropagationSpeed(ringStyle().speed)
+        .ringRepeatPeriod(ringStyle().period)
+        .ringColor(() => ringPaint());
+    }
+
+    function refreshMarkerStyling() {
+      refreshPointColours();
+      refreshRings();
+    }
 
     // True while the camera is flying somewhere under our own instruction.
     // Without this, the "zoom out to go back" rule below fires during the
@@ -662,6 +863,7 @@
       globe.pointsTransitionDuration(dur);
       setTimeout(() => globe.pointsTransitionDuration(0), dur + 120);
 
+      currentItems = items;
       globe
         .pointsData(items)
         .pointLat(d => d.lat)
@@ -673,22 +875,20 @@
         // look alike: a reader who cannot tell them apart is being told
         // that a scraped Telegram post carries the same weight as a
         // checked historical record, and it does not.
-        .pointColor(d => d.auto ? '#a855f7' : '#ff2a1f')
+        .pointColor(d => markerColour(d))
         .pointLabel(d => !d.auto ? d.name
           : d.name + (d.source === 'telegram' ? ' (reported)' : ' (auto-detected)'))
         // Ignore clicks that land while the camera is already moving - during
         // the load settle or any flyTo. Without this a click meant for empty
         // space, caught mid-flight, navigates somewhere unexpected.
         .onPointClick(d => { if (navigating) return; return d.locations ? openConflict(d) : openLocation(d); })
-        // Only curated markers pulse. A ring on an auto marker would read as
-        // "something is happening here", which is more than we know.
-        .ringsData(items.filter(d => !d.auto))
+        .ringsData(ringItems())
         .ringLat(d => d.lat)
         .ringLng(d => d.lng)
         .ringMaxRadius(d => ringRadius(d))
-        .ringPropagationSpeed(1.2)
-        .ringRepeatPeriod(1400)
-        .ringColor(() => t => `rgba(255,60,48,${1 - t})`);
+        .ringPropagationSpeed(ringStyle().speed)
+        .ringRepeatPeriod(ringStyle().period)
+        .ringColor(() => ringPaint());
     }
 
     // ---------------------------------------------------------------
@@ -699,7 +899,9 @@
 
     // Level 1: every conflict, one marker each.
     function showWorld() {
+      clearRings();
       activeConflict = null;
+      activeLocation = null;
       panelBack.classList.remove('visible');
       panel.classList.remove('open');
       globe.controls().autoRotate = true;
@@ -712,7 +914,9 @@
 
     // Level 2: one conflict, its locations.
     function openConflict(c) {
+      clearRings();
       activeConflict = c;
+      activeLocation = null;   // a new level of the map, nothing selected in it yet
       panelBack.classList.add('visible');
 
       fillPanel(c);
@@ -729,6 +933,13 @@
 
     // A single place inside a conflict.
     function openLocation(d) {
+      clearRings();
+      activeLocation = d;
+      refreshPointColours();
+      // One frame with the old rings hidden before the new one grows.
+      // setTimeout rather than requestAnimationFrame: rAF never fires in a
+      // hidden tab, and the selected ring must not depend on being watched.
+      setTimeout(refreshRings, 32);
       fillPanel(d);
       document.getElementById('panel-locations').innerHTML = '';
       globe.controls().autoRotate = false;
@@ -863,6 +1074,12 @@
     panelBack.addEventListener('click', () => showWorld());
 
     document.getElementById('panel-close').addEventListener('click', () => {
+      // Closing the panel deselects. Otherwise the globe keeps one marker lit
+      // for something the reader is no longer looking at.
+      activeLocation = null;
+      clearRings();
+      refreshPointColours();
+      setTimeout(refreshRings, 80);
       panel.classList.remove('open');
       if (!activeConflict) globe.controls().autoRotate = true;
     });

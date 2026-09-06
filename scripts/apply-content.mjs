@@ -12,6 +12,8 @@ const SOURCES = [
     conflictHeading: 'CONFLICT: Russia-Ukraine war' },
   { id: 'sudan', writeups: 'WRITEUPS-SUDAN.md', keyEvents: 'KEY-EVENTS-SUDAN.md',
     conflictHeading: 'CONFLICT: Sudan civil war' },
+  { id: 'gaza', writeups: 'WRITEUPS-GAZA.md', keyEvents: 'KEY-EVENTS-GAZA.md',
+    conflictHeading: 'CONFLICT: Gaza war' },
 ];
 
 // Curated-only markers that have no entry in conflicts.json yet. Nord Stream
