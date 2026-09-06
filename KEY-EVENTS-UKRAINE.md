@@ -1,10 +1,25 @@
 # Key events — Ukraine
 
-Criterion (agreed 30 Aug 2026): an event earns a place if it CHANGED THE
-STATUS of the location — captured, liberated, besieged, encircled,
-evacuated — or is historically significant in its own right regardless of
-military effect: mass civilian casualties, a documented war crime, a
-strike on a protected site. Routine strikes do not qualify however large.
+Criterion (agreed 30 Aug 2026, widened 6 Sep 2026): an event earns a
+place if ANY of these is true.
+
+  1. It CHANGED THE STATUS of the location — captured, liberated,
+     besieged, encircled, evacuated.
+  2. It is historically significant in its own right regardless of
+     military effect: mass civilian casualties, a documented war crime.
+  3. It was a MAJOR ATTACK, meaning it killed five or more people, or
+     struck a protected site (hospital, school, place of worship,
+     shelter, cultural site, embassy), or destroyed civilian
+     infrastructure at city scale (power, heat, water), or was the
+     largest attack of its kind on that place up to that date.
+
+Rule 3 replaced "routine strikes do not qualify however large", which was
+keeping the lists honest and nearly empty at the same time. The threshold
+is now a number rather than a judgement, so it can be applied the same way
+twice. Attacks below it are not lost: they arrive in the reporting panel
+on the right as the detector picks them up. That panel is a live feed and
+not an archive, so minor attacks from before the detector existed appear
+nowhere on the site. That is a known gap, not an oversight.
 
 Every date below was verified against a source this session. Items marked
 [CONTESTED] have two defensible dates or a toll that changed between
@@ -17,10 +32,35 @@ Format: YYYY-MM-DD — one sentence, past tense, no hedging.
 
 ## Kyiv
 2022-02-24 — Russian troops crossed from Belarus and an airborne assault seized Hostomel airport north-west of the city. | src: https://en.wikipedia.org/wiki/Kyiv_offensive_(2022)
+2022-03-01 — Missiles struck the main television tower, killing five, and hit the ground beside the Babyn Yar Holocaust memorial. | src: https://www.npr.org/2022/03/01/1083733323/russia-bombards-a-kyiv-tv-tower-and-the-babyn-yar-holocaust-memorial-site
+2022-03-20 — An Iskander missile destroyed part of the Retroville shopping mall in Podilskyi district, killing at least eight. | src: https://kyivindependent.com/at-least-8-killed-by-russian-missile-attack-on-kyiv-shopping-mall-photos/
 2022-04-02 — Russian forces completed their withdrawal from Kyiv oblast, leaving mass killings of civilians documented at Bucha and Irpin. [CONTESTED: 2 April is when the withdrawal was declared complete and the Bucha killings became known; the Kyiv offensive is dated to 8 April in some accounts] | src: https://en.wikipedia.org/wiki/Russian_occupation_of_Kyiv_Oblast
 2022-10-10 — Russia began mass missile strikes on Ukrainian cities two days after the Kerch bridge attack, hitting central Kyiv in the morning rush hour. | src: https://www.aljazeera.com/news/2022/10/10/missile-attacks-hit-cities-across-ukraine-what-we-know-so-far
 2022-10-17 — Shahed drones killed four people in a residential block in Shevchenkivskyi district, among them a woman six months pregnant. | src: https://www.aljazeera.com/news/2022/10/17/several-blasts-hit-ukrainian-capital-in-early-morning-raids
-2024-07-08 — A cruise missile struck the Okhmatdyt children's hospital, killing two adults and injuring sixteen. | src: https://en.wikipedia.org/wiki/8_July_2024_Ukraine_missile_strikes
+2022-10-31 — More than fifty cruise missiles hit power infrastructure around the city, cutting water to about 80 per cent of the capital. | src: https://www.cnn.com/2022/10/31/europe/russian-missile-strikes-ukraine-intl/index.html
+2022-11-23 — A strike on energy infrastructure cut running water across the whole city and killed a seventeen-year-old girl. | src: https://www.npr.org/2022/11/23/1138904040/russia-kyiv-ukraine-missile-strikes-cut-power-water
+2022-12-16 — Russia fired around seventy-six missiles nationwide, more than half at Kyiv, in the largest attack on the capital to that date. | src: https://www.pbs.org/newshour/amp/world/russia-launches-another-major-missile-attack-across-ukraine
+2023-05-28 — Russia's largest drone attack of the war to that date sent at least forty Shaheds over the city across more than five hours. | src: https://www.npr.org/2023/05/28/1178642531/russia-has-launched-its-largest-drone-attack-of-the-war-on-kyiv-killing-one
+2023-11-25 — A drone attack surpassing the May record damaged a children's nursery and around two hundred buildings, wounding five. | src: https://kyivindependent.com/russian-forces-launch-drone-attack-in-kyiv/
+2023-12-29 — A mass missile and drone assault killed thirty-three people in Kyiv, the deadliest attack on the capital's civilians of the war, and damaged the Lukianivska metro station being used as a shelter. | src: https://kyivindependent.com/official-death-toll-of-russias-dec-29-attack-on-kyiv-rises-to-33/
+2024-01-02 — Russia used more Kinzhal missiles in one attack than at any point in the war, killing four people in Kyiv and wounding about seventy. | src: https://www.pbs.org/newshour/world/russian-missiles-hit-largest-cities-in-ukrainian-killing-5-and-injuring-almost-100-officials-say
+2024-04-11 — Missiles and drones destroyed the Trypilska thermal power plant, the largest generator supplying the capital and its region. | src: https://www.cnn.com/2024/04/11/europe/ukraine-power-plant-destroyed-russia-intl/index.html
+2024-07-08 — A cruise missile struck the Okhmatdyt children's hospital, killing two adults and injuring sixteen; the day's attack on the city killed thirty-three people in all. | src: https://en.wikipedia.org/wiki/8_July_2024_Russian_strikes_on_Ukraine
+2024-08-26 — A nationwide barrage struck the dam of the Kyiv hydroelectric plant and cut water on the right bank, though officials later said the dam held. | src: https://kyivindependent.com/kyiv-hydroelectric-dam-hit-during-massive-russian-attack-across-ukraine/
+2025-04-24 — Missiles including a North Korean KN-23 killed thirteen people and injured more than ninety, the deadliest attack on the capital since 2022. | src: https://en.wikipedia.org/wiki/April_2025_Russian_attack_on_Kyiv
+2025-06-17 — A mass drone and missile barrage killed twenty-eight people, twenty-three of them in a single nine-storey building, and wounded more than a hundred and thirty. | src: https://www.themoscowtimes.com/2025/06/18/death-toll-from-russian-attack-on-kyiv-rises-to-28-a89483
+2025-06-23 — A barrage six days later killed nine people in Shevchenkivskyi district and damaged a school. | src: https://www.themoscowtimes.com/2025/06/23/russian-barrage-kills-10-in-kyiv-including-11-year-old-girl-a89527
+2025-07-31 — A direct hit on an apartment block in Sviatoshynskyi district killed thirty-one people, five of them children, and wounded a hundred and fifty-nine. | src: https://edition.cnn.com/2025/08/01/europe/kyiv-apartment-block-attack-ukraine-russia-intl
+2025-08-28 — A combined drone and missile assault on central Kyiv killed twenty-three people and damaged the European Union delegation building and the British Council office. [CONTESTED toll: reported as at least 21 on the day, rising to 23 as bodies were recovered] | src: https://www.npr.org/2025/08/28/nx-s1-5520503/russian-drone-attack-kills-ukraine-kyiv
+2025-09-07 — In the largest air attack of the war to that date, 810 drones and 13 missiles, Russia struck the Cabinet of Ministers building for the first time. | src: https://www.aljazeera.com/news/2025/9/7/russian-attacks-on-ukraines-kyiv-kill-at-least-3-strike-govt-building
+2025-11-08 — One of the largest ballistic attacks on Ukraine's energy system since 2022 left the capital under more than twelve hours of emergency power cuts. | src: https://kyivindependent.com/drone-attack-sparks-fires-in-kyiv-russia-launches-massive-attack-on-ukrainian-energy-infrastructure/
+2025-11-14 — An overnight attack killed seven people and damaged a hospital, a school, the Azerbaijani embassy and sections of the district heating network. [CONTESTED date: the attack ran overnight and is dated to 13 November by some sources and 14 November by others] | src: https://kyivindependent.com/russian-attack-nov-13-2025/
+2026-01-09 — Russia fired an Oreshnik missile at the capital for only the second time in the war, killing four people, damaging the Qatari embassy and leaving nearly six thousand apartment buildings without heat. | src: https://www.npr.org/2026/01/09/nx-s1-5672279/russia-used-new-oreshnik-ballistic-missile-ukraine
+2026-01-24 — Strikes on the energy system cut heating, power and water to roughly half the capital's apartment buildings in temperatures below minus ten. | src: https://www.npr.org/2026/01/24/g-s1-107248/russia-strikes-kyiv-cold
+2026-05-14 — The largest aerial attack of the war, 1,567 drones and 56 missiles, fell hardest on Kyiv and killed twenty-four people in the city after a residential block collapsed in Darnytskyi district. | src: https://en.wikipedia.org/wiki/14_May_2026_Russian_strikes_on_Ukraine
+2026-07-02 — A drone and missile assault struck more than thirty locations across every district of the city, killing at least twenty-five people. | src: https://time.com/article/2026/07/02/russia-drone-missile-attack-kyiv-ukraine-death-toll/
+2026-08-20 — A missile and drone attack killed fifteen people in the city and struck a school and a children's hospital in Solomianskyi district. | src: https://www.themoscowtimes.com/2026/08/20/russian-missile-and-drone-attack-kills-17-in-kyiv-a93536
+2026-09-04 — A drone struck the headquarters of the Security Service in central Kyiv, near the UNESCO-listed Saint Sophia Cathedral, wounding twelve. | src: https://edition.cnn.com/2026/09/04/europe/russia-strikes-ukraine-security-service-kyiv-intl
 
 ## Kharkiv
 2022-02-24 — Russian forces reached the city's outskirts and sustained shelling of residential districts began.
