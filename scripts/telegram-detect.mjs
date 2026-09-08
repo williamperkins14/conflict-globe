@@ -876,8 +876,17 @@ function parseSentence(sentence, places = new Set()) {
   };
   for (const m of text.matchAll(new RegExp(`\\b${N}\\s+(${GAP})(?:were\\s+|are\\s+|reported\\s+|confirmed\\s+|left\\s+)?(killed|dead|wounded|injured)\\b`, 'gi')))
     if (!GAP_BAD.test(m[2])) push(m[1], m[3]);
-  for (const m of text.matchAll(new RegExp(`\\b(killed|wounded|injured)\\s+(?:at least\\s+|around\\s+|some\\s+)?${N}\\b`, 'gi')))
-    push(m[2], m[1]);
+  // The participles matter more than they look. Channels write "killing at
+  // least 27 people" far more often than "27 were killed", and the old
+  // pattern accepted only the past tense: of 261 stored reports just 11 came
+  // out with a casualty figure, while the sentences plainly carried them.
+  const VERB = '(killed|killing|wounded|wounding|injured|injuring)';
+  const HEDGE = '(?:at least\\s+|more than\\s+|around\\s+|some\\s+|about\\s+|up to\\s+|nearly\\s+|another\\s+)*';
+  const PARTICIPLE = { killing: 'killed', wounding: 'wounded', injuring: 'injured' };
+  for (const m of text.matchAll(new RegExp(`\\b${VERB}\\s+${HEDGE}${N}\\b`, 'gi'))) {
+    const v = m[1].toLowerCase();
+    push(m[2], PARTICIPLE[v] || v);
+  }
   const casualties = cas.length ? cas.join(', ') : null;
 
   if (!weapon && !target && !targetType && !casualties) return null;

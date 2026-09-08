@@ -1090,7 +1090,7 @@
             "weapon": null,
             "target": "ammunition storage site",
             "targetType": null,
-            "casualties": null
+            "casualties": "27 killed"
           },
           "status": "reported",
           "statusChanged": "2026-08-29",
@@ -1228,7 +1228,7 @@
             "weapon": "drone",
             "target": "railway infrastructure",
             "targetType": null,
-            "casualties": null
+            "casualties": "1 killed, 3 injured"
           },
           "status": "reported",
           "statusChanged": "2026-08-22",
@@ -1471,7 +1471,7 @@
             "weapon": null,
             "target": "Iranian cargo ship",
             "targetType": null,
-            "casualties": null
+            "casualties": "1 killed"
           },
           "status": "reported",
           "statusChanged": "2026-07-25",
@@ -1984,7 +1984,12 @@
           "text": "Russia launched a mass attack on Ukrainian cities, killing 4 people and injuring 25 in Kyiv, including 2 children. In Kharkiv, 5 rescuers were killed and at least 5 wounded during firefighting after a repeat Russian strike. Sumy and Dnipro also reported casualties and damage.",
           "sentence": "Russia launched a mass attack on Ukrainian cities, killing 4 people and injuring 25 in Kyiv, including 2 children.",
           "excerpt": "…ck on Ukrainian cities, killing 4 people and injuring 25 in Kyiv, including 2 children. In Kharkiv, 5 rescuers were killed and at least 5 wounde…",
-          "parsed": null,
+          "parsed": {
+            "weapon": null,
+            "target": null,
+            "targetType": null,
+            "casualties": "4 killed, 25 injured"
+          },
           "status": "reported",
           "statusChanged": "2026-06-15",
           "statusEvidence": []

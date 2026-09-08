@@ -579,6 +579,48 @@
 
     /* Which place a report is about, when the panel is showing a whole
        conflict rather than one marker. */
+    /* The one line that matters, in plain type. No quote marks: the source
+       line underneath says who is speaking, so the punctuation does not
+       have to. */
+    .ev-report {
+      display: block;
+      font-size: 13.5px;
+      line-height: 1.5;
+      color: #e8eaed;
+    }
+
+    /* Weapon, target, casualties as scannable chips. Only what the parser
+       actually found; nothing is inferred to fill the row out. */
+    .ev-facts {
+      display: block;
+      margin-top: 5px;
+      font-size: 11.5px;
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    .ev-fact {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 1px 6px;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .ev-fact-cas { color: #ff9a92; background: rgba(255, 60, 48, 0.1); }
+
+    /* Small, quiet, and the only clickable thing in the row. */
+    .ev-src {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 10.5px;
+      letter-spacing: 0.04em;
+      color: rgba(255, 255, 255, 0.38);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .ev-src:hover { color: #c99cff; border-bottom-color: rgba(201, 156, 255, 0.5); }
+
     .ev-place {
       color: #ff8177;
       font-size: 11px;
@@ -1746,7 +1788,22 @@
         ), []);
       }
 
-      if (list.length === 0) { box.innerHTML = ''; return; }
+      // Drop the posts that are not reporting anything before counting or
+      // grouping, so a day that produced four posts and no news does not
+      // announce itself as '4 reports'.
+      const total = list.length;
+      list = list.filter(e => worthShowing(cleanReport(e.sentence || e.excerpt || '')));
+      const skipped = total - list.length;
+
+      if (list.length === 0) {
+        box.innerHTML = total
+          ? '<div class="news-heading">Recent reports</div>'
+            + '<p class="news-status">' + total + ' post'
+            + (total === 1 ? '' : 's') + ' from the monitored channels, none of them '
+            + 'reporting an event here.</p>'
+          : '';
+        return;
+      }
 
       // Capped. A conflict with 261 reports across 14 places is a wall of
       // text nobody reads to the end of, and the oldest of them are the
@@ -1766,13 +1823,18 @@
       box.innerHTML =
         // Only claim the whole section is unverified while it actually is.
         // Once anything in it has been corroborated the blanket label is a
-        // false statement, and each row carries its own badge anyway.
-        '<div class="news-heading">Recent events'
+        // false statement, and each row carries its own source line anyway.
+        '<div class="news-heading">Recent reports'
         + (sorted.every(e => (e.status || 'reported') === 'reported')
              ? ' <span class="ev-unver">unverified</span>' : '')
         + '</div>'
+        // Say what was left out rather than quietly dropping it.
+        + (skipped
+            ? '<p class="news-status">' + skipped + ' further post'
+              + (skipped === 1 ? '' : 's') + ' set aside as comment rather than '
+              + 'reporting.</p>'
+            : '')
         + days.map(g => {
-            const chans = [...new Set(g.items.map(e => e.channel))];
             const times = g.items.map(e => String(e.at).slice(11, 16)).sort();
             const span = times.length > 1
               ? times[0] + '–' + times[times.length - 1]
@@ -1784,7 +1846,6 @@
               + (g.items.length === 1 ? '' : 's') + ' · ' + escapeHtml(span)
               + '</span></div>'
               + g.items.map(renderEvent).join('')
-              + '<div class="ev-chans">' + escapeHtml(chans.join(', ')) + '</div>'
               + '</div>';
           }).join('');
     }
@@ -1796,33 +1857,80 @@
     //   'corroborated'+ -> a second independent source, or news pickup.
     //                      Gets the structured line the parser produced,
     //                      with the source sentence underneath to check it.
+    // ---------------------------------------------------------------
+    // Turning a Telegram post into a line worth reading.
+    //
+    // What arrives is written for a Telegram feed: flag emojis, lightning
+    // bolts, channel handles, an occasional link. Quoting it verbatim put all
+    // of that on the page and made the reader do the work of finding the
+    // sentence inside it. The decoration carries no information, so it goes.
+    // ---------------------------------------------------------------
+    const REPORT_DECOR =
+      /[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\u{FE0F}\u{20E3}\u{2190}-\u{21FF}\u{2600}-\u{27BF}]/gu;
+
+    function cleanReport(t) {
+      return (t || '')
+        .replace(REPORT_DECOR, ' ')
+        .replace(/@[A-Za-z0-9_]{3,}/g, ' ')       // channel handles
+        .replace(/https?:\/\/\S+/g, ' ')          // bare links
+        .replace(/^[\s\u2026\u2014\u2013\-:|,."'\u00ab\u00bb]+/, '')
+        .replace(/^(?:meanwhile|also|and)[,\s]+/i, '')
+        .replace(/[\s\u2026]+$/, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+    }
+
+    // Not everything a war channel posts is news. Roughly one post in
+    // fourteen is somebody talking ABOUT the war rather than reporting it:
+    // a spokesman characterising a strike, a president promising something,
+    // a channel cheering. Those are dropped.
+    //
+    // The one rule worth stating: a speech verb at the START means somebody
+    // is talking, but the same verb at the END is an attribution on a real
+    // event - 'a building was damaged, officials said'. So a speech opening
+    // only rejects the line when nothing hard survives it: no damage done,
+    // no count of the dead. 'Zelensky said the attack killed 17' stays.
+    const R_EVENT = /\b(strike|struck|strikes|hit|hits|shell|shelled|shelling|attack|attacked|drone|drones|missile|missiles|explosion|explosions|blast|fire|burn(?:ed|t|ing)?|blaze|destroyed|damaged|killed|killing|wounded|injured|casualt|shot down|intercepted|downed|captured|seized|advanc|evacuat|shelter|bomb|bombed|refinery|substation|airport|hospital|school)\b/i;
+    const R_DAMAGE = /\b(struck|hit|destroyed|damaged|burn(?:ed|t|ing)|blaze|caught fire|exploded|detonat|shelled|shot down|downed|intercepted|collapsed|derailed)\b/i;
+    const R_NUM = '(?:\\d+|one|two|three|four|five|six|seven|eight|nine|ten|dozens|hundreds)';
+    const R_CASUALTY = new RegExp(
+      '\\b' + R_NUM + '\\s*(?:[a-z\u2019\'-]+\\s+){0,4}(?:were\\s+|are\\s+)?(?:killed|dead|wounded|injured)\\b'
+      + '|\\b(?:killed|killing|wounded|wounding|injured|injuring|toll)\\b[^.]{0,20}\\b' + R_NUM, 'i');
+    const R_SPEECH_LEAD =
+      /^(?:[A-Z][\w.'\u2019-]*\s+|of\s+|the\s+){1,5}(?:says?|said|claims?|claimed|announced|promised|warns?|warned|threatened|denied|accused|insists?|urges?|called|reports?)\b/;
+    const R_INTENT = /\b(is considering|plans to|planning to|intends to|may launch|could launch|would launch|is expected to|threatened to|promised (?:not )?to|is preparing to|would rather)\b/i;
+    const R_META = /^(i remind|for a moment|subscribe|read more|follow us|as a reminder|it seems|reminder|more from|some reactions|video|photo|footage)|(?:reactions from|has published|are cheering|is cheering)/i;
+
+    function worthShowing(c) {
+      if (!c || c.length < 25) return false;
+      if (!R_EVENT.test(c)) return false;
+      if (R_META.test(c)) return false;
+      if (R_INTENT.test(c)) return false;
+      if (R_SPEECH_LEAD.test(c) && !(R_DAMAGE.test(c) || R_CASUALTY.test(c))) return false;
+      return true;
+    }
+
+    // Whatever the parser managed to pull out, as chips. Never invented: an
+    // empty facts row means the post did not say.
+    function factChips(p) {
+      if (!p) return '';
+      const bits = [];
+      if (p.weapon)     bits.push('<span class="ev-fact">' + escapeHtml(cap(p.weapon)) + '</span>');
+      if (p.targetType) bits.push('<span class="ev-fact">' + escapeHtml(p.targetType) + '</span>');
+      if (p.target && (!p.targetType || p.target.toLowerCase() !== p.targetType.toLowerCase()))
+        bits.push('<span class="ev-fact">' + escapeHtml(p.target) + '</span>');
+      if (p.casualties) bits.push('<span class="ev-fact ev-fact-cas">' + escapeHtml(p.casualties) + '</span>');
+      return bits.length ? '<span class="ev-facts">' + bits.join('') + '</span>' : '';
+    }
+
     function renderEvent(e) {
       const p = e.parsed;
       const place = e.place
         ? '<span class="ev-place">' + escapeHtml(e.place) + '</span>'
         : '';
-      const safeUrl = /^https:\/\/t\.me\//.test(e.url) ? escapeHtml(e.url) : '#';
-      const said = e.sentence || e.excerpt || '';
+      const safeUrl = /^https:\/\/t\.me\//.test(e.url) ? escapeHtml(e.url) : '';
       const status = e.status || 'reported';
-      const structured = (status === 'corroborated' || status === 'confirmed') && p;
-
-      const badge = '<span class="ev-status ev-status-' + status + '">' + status + '</span>';
-
-      let head;
-      if (structured) {
-        let line = '';
-        if (p.weapon && p.targetType) line = cap(p.weapon) + ' strike on a ' + p.targetType;
-        else if (p.weapon)            line = cap(p.weapon) + ' strike';
-        else if (p.targetType)        line = cap(p.targetType) + ' hit';
-        if (p.target)     line += ' (' + p.target + ')';
-        if (p.casualties) line += ' · ' + p.casualties;
-        head = '<span class="ev-line">' + place + escapeHtml(line) + '</span>'
-             + '<span class="ev-said">' + escapeHtml(said) + '</span>';
-      } else {
-        head = '<span class="ev-line ev-line-plain">' + place
-             + '<span class="ev-speaker">' + escapeHtml(e.channel) + ':</span> '
-             + escapeHtml('“' + said + '”') + '</span>';
-      }
+      const line = cleanReport(e.sentence || e.excerpt || '');
 
       // What actually promoted this event, and by whom. With adversarial
       // corroboration the source is the substance of the claim: "a Ukrainian
@@ -1847,14 +1955,23 @@
             + '</span>';
       }
 
+      // The source, small and underneath, and the only clickable thing in
+      // the row. It carries the channel and the standing of the claim, so
+      // the sentence above it does not have to wear quote marks to say who
+      // is speaking.
+      const src = escapeHtml(e.channel) + ' \u00b7 '
+                + (status === 'reported' ? 'unverified' : escapeHtml(status));
+      const srcHtml = safeUrl
+        ? '<a class="ev-src" href="' + safeUrl + '" target="_blank" rel="noopener">' + src + '</a>'
+        : '<span class="ev-src">' + src + '</span>';
+
       return '<div class="ev-item">'
         + '<span class="ev-time">' + escapeHtml(String(e.at).slice(11, 16)) + '</span>'
         + '<span class="ev-body">'
-        + '<a class="ev-said-link" href="' + safeUrl + '" target="_blank" rel="noopener">'
-        + head + '</a>'
+        + '<span class="ev-report">' + place + escapeHtml(line) + '</span>'
+        + factChips(p)
         + why
-        + '<span class="ev-chan">' + badge
-        + (structured ? ' &middot; ' + escapeHtml(e.channel) : '') + '</span>'
+        + srcHtml
         + '</span></div>';
     }
 
