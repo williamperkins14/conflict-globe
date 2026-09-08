@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-08T06:04:21.833Z",
+  "generated": "2026-09-08T12:04:38.047Z",
   "conflicts": {
     "ukraine": [
       {
@@ -680,7 +680,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 62,
+        "count": 108,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-08"
       },
@@ -688,7 +688,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 29,
+        "count": 38,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-08"
       },
@@ -696,7 +696,7 @@
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
-        "count": 14,
+        "count": 13,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-08"
       },
@@ -773,20 +773,20 @@
         "lastSeen": "2026-09-04"
       },
       {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 9,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-08"
+      },
+      {
         "name": "Jiroft, Kerman, Iran",
         "lat": 28.678,
         "lng": 57.7406,
         "count": 8,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-02"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 8,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-08"
       },
       {
         "name": "Sepah, Ilam, Iran",
@@ -920,7 +920,7 @@
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
-        "count": 3,
+        "count": 4,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-09-08"
       },
@@ -928,8 +928,16 @@
         "name": "Kuwait",
         "lat": 29.5,
         "lng": 47.75,
-        "count": 3,
+        "count": 4,
         "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-08"
+      },
+      {
+        "name": "Armenia",
+        "lat": 40,
+        "lng": 45,
+        "count": 4,
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-08"
       },
       {
@@ -963,14 +971,6 @@
         "count": 3,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-02"
-      },
-      {
-        "name": "Armenia",
-        "lat": 40,
-        "lng": 45,
-        "count": 3,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-05"
       },
       {
         "name": "Asaluyeh, Bushehr, Iran",
