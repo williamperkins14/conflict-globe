@@ -1320,7 +1320,7 @@
             "weapon": null,
             "target": null,
             "targetType": null,
-            "casualties": "12 injured, 12 killed"
+            "casualties": "12 killed, 30 injured"
           },
           "status": "reported",
           "statusChanged": "2026-08-20",
@@ -1400,7 +1400,7 @@
             "weapon": null,
             "target": null,
             "targetType": null,
-            "casualties": "17 injured, 17 killed"
+            "casualties": "17 killed, 44 injured"
           },
           "status": "reported",
           "statusChanged": "2026-08-05",
@@ -1541,7 +1541,7 @@
             "weapon": null,
             "target": null,
             "targetType": null,
-            "casualties": "1 injured, 1 killed"
+            "casualties": "1 killed, 8 injured"
           },
           "status": "reported",
           "statusChanged": "2026-07-19",

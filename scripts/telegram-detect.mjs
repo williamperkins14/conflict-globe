@@ -864,7 +864,11 @@ function parseSentence(sentence, places = new Set()) {
   const NUMWORD = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10 };
   const N = '(\\d{1,4}|one|two|three|four|five|six|seven|eight|nine|ten)';
   const GAP = "(?:[a-z’'-]+\\s+){0,4}?";
-  const GAP_BAD = /\b(minute|hour|day|week|month|year|km|kilomet|mile|meters?|metres?|sq|percent|floor|storey|story|aircraft|drones?|missiles?)\b/i;
+  // A conjunction in the gap means the number belongs to the OTHER clause:
+  // "killed 17 people and injured 44" was binding 17 to `injured` as well as
+  // to `killed`, which is the same cross-attribution that once put one
+  // event's death toll on another.
+  const GAP_BAD = /\b(minute|hour|day|week|month|year|km|kilomet|mile|meters?|metres?|sq|percent|floor|storey|story|aircraft|drones?|missiles?|and|or|but|while|plus)\b|,/i;
   const cas = [];
   const seen = new Set();
   const toNum = s => NUMWORD[s.toLowerCase()] ?? s;
