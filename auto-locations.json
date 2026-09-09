@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09T06:04:20.898Z",
+  "generated": "2026-09-09T18:04:21.255Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,20 +640,20 @@
     ],
     "sudan": [
       {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 9,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-09"
+      },
+      {
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
         "count": 5,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-08"
-      },
-      {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 4,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-09"
       },
       {
         "name": "South Sudan",
@@ -670,7 +670,7 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 4,
+        "count": 10,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-09"
       }
@@ -680,32 +680,16 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 60,
+        "count": 76,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-09"
       },
       {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 20,
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 21,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-09"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 19,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-09"
-      },
-      {
-        "name": "Kharg, Bushehr, Iran",
-        "lat": 29.25,
-        "lng": 50.3286,
-        "count": 16,
-        "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-09"
       },
       {
@@ -717,19 +701,11 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 12,
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 13,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-09"
-      },
-      {
-        "name": "Gulf Of Oman, Iran (General), Iran",
-        "lat": 25.4489,
-        "lng": 57.7939,
-        "count": 11,
-        "firstSeen": "2026-09-01",
         "lastSeen": "2026-09-09"
       },
       {
@@ -773,14 +749,6 @@
         "lastSeen": "2026-09-04"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 11,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-09"
-      },
-      {
         "name": "Kuhestak, Kerman, Iran",
         "lat": 28,
         "lng": 58.4167,
@@ -800,9 +768,9 @@
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
-        "count": 8,
+        "count": 9,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-08"
+        "lastSeen": "2026-09-09"
       },
       {
         "name": "Jiroft, Kerman, Iran",
@@ -837,6 +805,22 @@
         "lastSeen": "2026-09-01"
       },
       {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-09"
+      },
+      {
+        "name": "Gulf Of Oman, Iran (General), Iran",
+        "lat": 25.4489,
+        "lng": 57.7939,
+        "count": 5,
+        "firstSeen": "2026-09-01",
+        "lastSeen": "2026-09-09"
+      },
+      {
         "name": "Qeshm, Kordestan, Iran",
         "lat": 35.4421,
         "lng": 47.3506,
@@ -859,6 +843,14 @@
         "count": 5,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-08"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-09"
       },
       {
         "name": "Basij, Fars, Iran",
@@ -938,6 +930,14 @@
         "lng": 55.28,
         "count": 4,
         "firstSeen": "2026-08-30",
+        "lastSeen": "2026-09-09"
+      },
+      {
+        "name": "Kharg, Bushehr, Iran",
+        "lat": 29.25,
+        "lng": 50.3286,
+        "count": 3,
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-09"
       },
       {
