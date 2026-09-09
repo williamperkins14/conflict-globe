@@ -589,25 +589,6 @@
       color: #e8eaed;
     }
 
-    /* Weapon, target, casualties as scannable chips. Only what the parser
-       actually found; nothing is inferred to fill the row out. */
-    .ev-facts {
-      display: block;
-      margin-top: 5px;
-      font-size: 11.5px;
-      color: rgba(255, 255, 255, 0.55);
-    }
-
-    .ev-fact {
-      display: inline-block;
-      margin-right: 10px;
-      padding: 1px 6px;
-      border-radius: 3px;
-      background: rgba(255, 255, 255, 0.06);
-    }
-
-    .ev-fact-cas { color: #ff9a92; background: rgba(255, 60, 48, 0.1); }
-
     /* Small, quiet, and the only clickable thing in the row. */
     .ev-src {
       display: inline-block;
@@ -1910,21 +1891,13 @@
       return true;
     }
 
-    // Whatever the parser managed to pull out, as chips. Never invented: an
-    // empty facts row means the post did not say.
-    function factChips(p) {
-      if (!p) return '';
-      const bits = [];
-      if (p.weapon)     bits.push('<span class="ev-fact">' + escapeHtml(cap(p.weapon)) + '</span>');
-      if (p.targetType) bits.push('<span class="ev-fact">' + escapeHtml(p.targetType) + '</span>');
-      if (p.target && (!p.targetType || p.target.toLowerCase() !== p.targetType.toLowerCase()))
-        bits.push('<span class="ev-fact">' + escapeHtml(p.target) + '</span>');
-      if (p.casualties) bits.push('<span class="ev-fact ev-fact-cas">' + escapeHtml(p.casualties) + '</span>');
-      return bits.length ? '<span class="ev-facts">' + bits.join('') + '</span>' : '';
-    }
-
     function renderEvent(e) {
-      const p = e.parsed;
+      // e.parsed is deliberately not shown. The weapon, the target and the
+      // building type were being printed as chips under every row, and they
+      // were saying a second time what the sentence had already said: a line
+      // reading 'drones struck Russian infantry' does not need 'drone' and
+      // 'infantry' repeated underneath it. The parse is still made and still
+      // does the work it was built for, deciding what corroborates what.
       const place = e.place
         ? '<span class="ev-place">' + escapeHtml(e.place) + '</span>'
         : '';
@@ -1969,7 +1942,6 @@
         + '<span class="ev-time">' + escapeHtml(String(e.at).slice(11, 16)) + '</span>'
         + '<span class="ev-body">'
         + '<span class="ev-report">' + place + escapeHtml(line) + '</span>'
-        + factChips(p)
         + why
         + srcHtml
         + '</span></div>';
