@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T12:04:36.940Z",
+  "generated": "2026-09-10T18:04:13.382Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,19 +640,27 @@
     ],
     "sudan": [
       {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 7,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-10"
+      },
+      {
+        "name": "Eritrea",
+        "lat": 15,
+        "lng": 39,
+        "count": 6,
+        "firstSeen": "2026-09-10",
+        "lastSeen": "2026-09-10"
+      },
+      {
         "name": "South Sudan",
         "lat": 8,
         "lng": 30,
         "count": 4,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-10"
-      },
-      {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 3,
-        "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-10"
       },
       {
@@ -670,7 +678,7 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 3,
+        "count": 8,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-10"
       }
@@ -680,7 +688,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 120,
+        "count": 143,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-10"
       },
@@ -805,14 +813,6 @@
         "lastSeen": "2026-09-10"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-10"
-      },
-      {
         "name": "Qeshm, Kordestan, Iran",
         "lat": 35.4421,
         "lng": 47.3506,
@@ -915,6 +915,14 @@
         "count": 4,
         "firstSeen": "2026-09-09",
         "lastSeen": "2026-09-09"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-10"
       },
       {
         "name": "Gulf Of Oman, Iran (General), Iran",
