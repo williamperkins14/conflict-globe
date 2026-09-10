@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T06:05:03.181Z",
+  "generated": "2026-09-10T12:04:36.940Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,28 +640,28 @@
     ],
     "sudan": [
       {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 9,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-09"
-      },
-      {
-        "name": "Ethiopians",
-        "lat": 8,
-        "lng": 38,
-        "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-08"
-      },
-      {
         "name": "South Sudan",
         "lat": 8,
         "lng": 30,
         "count": 4,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-08-31"
+        "lastSeen": "2026-09-10"
+      },
+      {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-10"
+      },
+      {
+        "name": "Ethiopians",
+        "lat": 8,
+        "lng": 38,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-10"
       }
     ],
     "gaza": [],
@@ -680,7 +680,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 63,
+        "count": 120,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-10"
       },
@@ -688,7 +688,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 15,
+        "count": 30,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-10"
       },
@@ -749,6 +749,14 @@
         "lastSeen": "2026-09-06"
       },
       {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 10,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-10"
+      },
+      {
         "name": "Ali Al Salem Air Base, Kuwait (General), Kuwait",
         "lat": 29.35,
         "lng": 47.5211,
@@ -773,14 +781,6 @@
         "lastSeen": "2026-09-03"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-10"
-      },
-      {
         "name": "Khasab, Musandam, Oman",
         "lat": 26.1799,
         "lng": 56.2477,
@@ -797,20 +797,20 @@
         "lastSeen": "2026-09-01"
       },
       {
-        "name": "Gulf Of Oman, Iran (General), Iran",
-        "lat": 25.4489,
-        "lng": 57.7939,
-        "count": 5,
-        "firstSeen": "2026-09-01",
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 6,
+        "firstSeen": "2026-08-30",
         "lastSeen": "2026-09-10"
       },
       {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 5,
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 6,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-09"
+        "lastSeen": "2026-09-10"
       },
       {
         "name": "Qeshm, Kordestan, Iran",
@@ -917,17 +917,17 @@
         "lastSeen": "2026-09-09"
       },
       {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 4,
-        "firstSeen": "2026-08-30",
+        "name": "Gulf Of Oman, Iran (General), Iran",
+        "lat": 25.4489,
+        "lng": 57.7939,
+        "count": 3,
+        "firstSeen": "2026-09-01",
         "lastSeen": "2026-09-10"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
         "count": 3,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-10"
