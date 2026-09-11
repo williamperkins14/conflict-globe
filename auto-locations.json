@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T12:04:17.676Z",
+  "generated": "2026-09-11T18:04:26.249Z",
   "conflicts": {
     "ukraine": [
       {
@@ -648,20 +648,20 @@
         "lastSeen": "2026-09-11"
       },
       {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 8,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-11"
-      },
-      {
         "name": "Eritrea",
         "lat": 15,
         "lng": 39,
         "count": 6,
         "firstSeen": "2026-09-10",
         "lastSeen": "2026-09-10"
+      },
+      {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 5,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-11"
       },
       {
         "name": "South Sudan",
@@ -688,15 +688,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 141,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-11"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 52,
+        "count": 163,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-11"
       },
@@ -704,7 +696,15 @@
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
-        "count": 37,
+        "count": 60,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-11"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 46,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-11"
       },
@@ -797,14 +797,6 @@
         "lastSeen": "2026-09-01"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-11"
-      },
-      {
         "name": "Qeshm, Kordestan, Iran",
         "lat": 35.4421,
         "lng": 47.3506,
@@ -827,6 +819,22 @@
         "count": 5,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-08"
+      },
+      {
+        "name": "Ali Asgari, Kohgiluyeh Va Buyer A?Mad, Iran",
+        "lat": 31.0954,
+        "lng": 50.1127,
+        "count": 5,
+        "firstSeen": "2026-09-11",
+        "lastSeen": "2026-09-11"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-11"
       },
       {
         "name": "Bahrain",
