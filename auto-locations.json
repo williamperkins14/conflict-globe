@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-10T18:04:13.382Z",
+  "generated": "2026-09-11T00:04:51.452Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,6 +640,14 @@
     ],
     "sudan": [
       {
+        "name": "Ethiopians",
+        "lat": 8,
+        "lng": 38,
+        "count": 15,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-11"
+      },
+      {
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
@@ -662,14 +670,6 @@
         "count": 4,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-10"
-      },
-      {
-        "name": "Ethiopians",
-        "lat": 8,
-        "lng": 38,
-        "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-10"
       }
     ],
     "gaza": [],
@@ -678,9 +678,9 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 8,
+        "count": 10,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-10"
+        "lastSeen": "2026-09-11"
       }
     ],
     "iran": [
@@ -688,17 +688,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 143,
+        "count": 101,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-10"
+        "lastSeen": "2026-09-11"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 30,
+        "count": 36,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-10"
+        "lastSeen": "2026-09-11"
       },
       {
         "name": "Larak Island, Hormozgan, Iran",
@@ -757,20 +757,20 @@
         "lastSeen": "2026-09-06"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 10,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-10"
-      },
-      {
         "name": "Ali Al Salem Air Base, Kuwait (General), Kuwait",
         "lat": 29.35,
         "lng": 47.5211,
         "count": 9,
         "firstSeen": "2026-09-04",
         "lastSeen": "2026-09-04"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 8,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-11"
       },
       {
         "name": "Jiroft, Kerman, Iran",
@@ -786,14 +786,6 @@
         "lng": 48.6693,
         "count": 7,
         "firstSeen": "2026-09-03",
-        "lastSeen": "2026-09-03"
-      },
-      {
-        "name": "Khasab, Musandam, Oman",
-        "lat": 26.1799,
-        "lng": 56.2477,
-        "count": 6,
-        "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-03"
       },
       {
@@ -915,6 +907,14 @@
         "count": 4,
         "firstSeen": "2026-09-09",
         "lastSeen": "2026-09-09"
+      },
+      {
+        "name": "Khasab, Musandam, Oman",
+        "lat": 26.1799,
+        "lng": 56.2477,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-11"
       },
       {
         "name": "Qatari",
