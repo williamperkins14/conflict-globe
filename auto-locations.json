@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-11T18:04:26.249Z",
+  "generated": "2026-09-12T00:04:24.066Z",
   "conflicts": {
     "ukraine": [
       {
@@ -648,20 +648,20 @@
         "lastSeen": "2026-09-11"
       },
       {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 9,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-12"
+      },
+      {
         "name": "Eritrea",
         "lat": 15,
         "lng": 39,
         "count": 6,
         "firstSeen": "2026-09-10",
         "lastSeen": "2026-09-10"
-      },
-      {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 5,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-11"
       },
       {
         "name": "South Sudan",
@@ -688,25 +688,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 163,
+        "count": 44,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-11"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 60,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-11"
+        "lastSeen": "2026-09-12"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 46,
+        "count": 20,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-11"
+        "lastSeen": "2026-09-12"
       },
       {
         "name": "Larak Island, Hormozgan, Iran",
@@ -779,6 +771,14 @@
         "count": 8,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-02"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-12"
       },
       {
         "name": "Ahvaz, Khuzestan, Iran",
@@ -915,6 +915,22 @@
         "count": 4,
         "firstSeen": "2026-09-09",
         "lastSeen": "2026-09-09"
+      },
+      {
+        "name": "Sadara, Fars, Iran",
+        "lat": 27.5237,
+        "lng": 52.9211,
+        "count": 4,
+        "firstSeen": "2026-09-12",
+        "lastSeen": "2026-09-12"
+      },
+      {
+        "name": "Jubail, Ash Sharqiyah, Saudi Arabia",
+        "lat": 27.0112,
+        "lng": 49.6583,
+        "count": 4,
+        "firstSeen": "2026-09-12",
+        "lastSeen": "2026-09-12"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
