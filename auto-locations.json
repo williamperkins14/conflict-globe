@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-12T12:03:55.078Z",
+  "generated": "2026-09-12T18:03:59.727Z",
   "conflicts": {
     "ukraine": [
       {
@@ -643,7 +643,7 @@
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
-        "count": 13,
+        "count": 22,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-12"
       },
@@ -659,7 +659,7 @@
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
-        "count": 9,
+        "count": 5,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-12"
       },
@@ -688,7 +688,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 123,
+        "count": 70,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-12"
       },
@@ -696,48 +696,8 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 52,
+        "count": 49,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 36,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Maysan, Maysan, Iraq",
-        "lat": 32,
-        "lng": 47,
-        "count": 30,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Shalamcheh, Khuzestan, Iran",
-        "lat": 30.5049,
-        "lng": 48.0294,
-        "count": 26,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Khuzestan, Khuzestan, Iran",
-        "lat": 31.5,
-        "lng": 49,
-        "count": 24,
-        "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Chazabeh, Khuzestan, Iran",
-        "lat": 31.788,
-        "lng": 47.9335,
-        "count": 24,
-        "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-12"
       },
       {
@@ -755,6 +715,14 @@
         "count": 13,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-02"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 12,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-12"
       },
       {
         "name": "Kurdistan, Khuzestan, Iran",
@@ -805,10 +773,10 @@
         "lastSeen": "2026-09-04"
       },
       {
-        "name": "Baghdad, Baghdad, Iraq",
-        "lat": 33.3386,
-        "lng": 44.3939,
-        "count": 9,
+        "name": "Maysan, Maysan, Iraq",
+        "lat": 32,
+        "lng": 47,
+        "count": 8,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-12"
       },
@@ -821,12 +789,28 @@
         "lastSeen": "2026-09-02"
       },
       {
+        "name": "Baghdad, Baghdad, Iraq",
+        "lat": 33.3386,
+        "lng": 44.3939,
+        "count": 7,
+        "firstSeen": "2026-09-12",
+        "lastSeen": "2026-09-12"
+      },
+      {
         "name": "Ahvaz, Khuzestan, Iran",
         "lat": 31.3203,
         "lng": 48.6693,
         "count": 7,
         "firstSeen": "2026-09-03",
         "lastSeen": "2026-09-03"
+      },
+      {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-12"
       },
       {
         "name": "Minhad, Dubayy, United Arab Emirates",
@@ -837,11 +821,35 @@
         "lastSeen": "2026-09-01"
       },
       {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
         "count": 6,
         "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-12"
+      },
+      {
+        "name": "Shalamcheh, Khuzestan, Iran",
+        "lat": 30.5049,
+        "lng": 48.0294,
+        "count": 5,
+        "firstSeen": "2026-09-12",
+        "lastSeen": "2026-09-12"
+      },
+      {
+        "name": "Khuzestan, Khuzestan, Iran",
+        "lat": 31.5,
+        "lng": 49,
+        "count": 5,
+        "firstSeen": "2026-09-02",
+        "lastSeen": "2026-09-12"
+      },
+      {
+        "name": "Chazabeh, Khuzestan, Iran",
+        "lat": 31.788,
+        "lng": 47.9335,
+        "count": 5,
+        "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-12"
       },
       {
@@ -882,6 +890,14 @@
         "lng": 51.25,
         "count": 5,
         "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-12"
+      },
+      {
+        "name": "Gulf Of Oman, Iran (General), Iran",
+        "lat": 25.4489,
+        "lng": 57.7939,
+        "count": 5,
+        "firstSeen": "2026-09-01",
         "lastSeen": "2026-09-12"
       },
       {
@@ -973,14 +989,6 @@
         "lastSeen": "2026-09-12"
       },
       {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-12"
-      },
-      {
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
@@ -994,14 +1002,6 @@
         "lng": 56.2477,
         "count": 3,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Gulf Of Oman, Iran (General), Iran",
-        "lat": 25.4489,
-        "lng": 57.7939,
-        "count": 3,
-        "firstSeen": "2026-09-01",
         "lastSeen": "2026-09-12"
       },
       {
