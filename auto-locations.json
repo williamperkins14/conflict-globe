@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-12T18:03:59.727Z",
+  "generated": "2026-09-13T00:04:27.449Z",
   "conflicts": {
     "ukraine": [
       {
@@ -688,17 +688,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 70,
+        "count": 46,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 49,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-12"
+        "lastSeen": "2026-09-13"
       },
       {
         "name": "Abqaiq, Ash Sharqiyah, Saudi Arabia",
@@ -715,14 +707,6 @@
         "count": 13,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-02"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 12,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-12"
       },
       {
         "name": "Kurdistan, Khuzestan, Iran",
@@ -765,6 +749,14 @@
         "lastSeen": "2026-09-06"
       },
       {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 9,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-13"
+      },
+      {
         "name": "Ali Al Salem Air Base, Kuwait (General), Kuwait",
         "lat": 29.35,
         "lng": 47.5211,
@@ -789,14 +781,6 @@
         "lastSeen": "2026-09-02"
       },
       {
-        "name": "Baghdad, Baghdad, Iraq",
-        "lat": 33.3386,
-        "lng": 44.3939,
-        "count": 7,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-12"
-      },
-      {
         "name": "Ahvaz, Khuzestan, Iran",
         "lat": 31.3203,
         "lng": 48.6693,
@@ -813,20 +797,20 @@
         "lastSeen": "2026-09-12"
       },
       {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-13"
+      },
+      {
         "name": "Minhad, Dubayy, United Arab Emirates",
         "lat": 25.025,
         "lng": 55.4067,
         "count": 6,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-01"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-12"
       },
       {
         "name": "Shalamcheh, Khuzestan, Iran",
@@ -987,6 +971,22 @@
         "count": 4,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-12"
+      },
+      {
+        "name": "Baghdad, Baghdad, Iraq",
+        "lat": 33.3386,
+        "lng": 44.3939,
+        "count": 3,
+        "firstSeen": "2026-09-12",
+        "lastSeen": "2026-09-13"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-13"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
