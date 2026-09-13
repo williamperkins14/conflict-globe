@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-13T00:04:27.449Z",
+  "generated": "2026-09-13T06:05:47.427Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,20 +640,20 @@
     ],
     "sudan": [
       {
-        "name": "Ethiopians",
-        "lat": 8,
-        "lng": 38,
-        "count": 22,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-12"
-      },
-      {
         "name": "Eritrea",
         "lat": 15,
         "lng": 39,
         "count": 11,
         "firstSeen": "2026-09-10",
         "lastSeen": "2026-09-12"
+      },
+      {
+        "name": "Ethiopians",
+        "lat": 8,
+        "lng": 38,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-13"
       },
       {
         "name": "Sudan",
@@ -688,7 +688,15 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 46,
+        "count": 61,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-13"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 27,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-13"
       },
@@ -765,14 +773,6 @@
         "lastSeen": "2026-09-04"
       },
       {
-        "name": "Maysan, Maysan, Iraq",
-        "lat": 32,
-        "lng": 47,
-        "count": 8,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-12"
-      },
-      {
         "name": "Jiroft, Kerman, Iran",
         "lat": 28.678,
         "lng": 57.7406,
@@ -797,20 +797,20 @@
         "lastSeen": "2026-09-12"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-13"
-      },
-      {
         "name": "Minhad, Dubayy, United Arab Emirates",
         "lat": 25.025,
         "lng": 55.4067,
         "count": 6,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-01"
+      },
+      {
+        "name": "Baghdad, Baghdad, Iraq",
+        "lat": 33.3386,
+        "lng": 44.3939,
+        "count": 6,
+        "firstSeen": "2026-09-12",
+        "lastSeen": "2026-09-13"
       },
       {
         "name": "Shalamcheh, Khuzestan, Iran",
@@ -973,9 +973,9 @@
         "lastSeen": "2026-09-12"
       },
       {
-        "name": "Baghdad, Baghdad, Iraq",
-        "lat": 33.3386,
-        "lng": 44.3939,
+        "name": "Maysan, Maysan, Iraq",
+        "lat": 32,
+        "lng": 47,
         "count": 3,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-13"
