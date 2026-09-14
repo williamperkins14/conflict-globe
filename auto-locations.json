@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-13T18:04:00.849Z",
+  "generated": "2026-09-14T00:05:05.954Z",
   "conflicts": {
     "ukraine": [
       {
@@ -688,25 +688,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 28,
+        "count": 40,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-13"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 20,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-13"
+        "lastSeen": "2026-09-14"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 19,
+        "count": 21,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-13"
+        "lastSeen": "2026-09-14"
       },
       {
         "name": "Abqaiq, Ash Sharqiyah, Saudi Arabia",
@@ -723,6 +715,14 @@
         "count": 13,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-02"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 11,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-14"
       },
       {
         "name": "Kurdistan, Khuzestan, Iran",
@@ -824,9 +824,9 @@
         "name": "Baghdad, Baghdad, Iraq",
         "lat": 33.3386,
         "lng": 44.3939,
-        "count": 6,
+        "count": 5,
         "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-13"
+        "lastSeen": "2026-09-14"
       },
       {
         "name": "Shalamcheh, Khuzestan, Iran",
@@ -851,14 +851,6 @@
         "count": 5,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Qeshm, Kordestan, Iran",
-        "lat": 35.4421,
-        "lng": 47.3506,
-        "count": 5,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-13"
       },
       {
         "name": "Hansi, Az¯Arbayjan-E Gharbi, Iran",
@@ -890,15 +882,15 @@
         "lng": 50.5,
         "count": 5,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-13"
+        "lastSeen": "2026-09-14"
       },
       {
-        "name": "Bandar Abbas, Hormozgan, Iran",
-        "lat": 27.1865,
-        "lng": 56.2808,
+        "name": "Qeshm, Kordestan, Iran",
+        "lat": 35.4421,
+        "lng": 47.3506,
         "count": 4,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-13"
+        "lastSeen": "2026-09-14"
       },
       {
         "name": "Basij, Fars, Iran",
@@ -923,14 +915,6 @@
         "count": 4,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-02"
-      },
-      {
-        "name": "Shahed, Fars, Iran",
-        "lat": 28.5934,
-        "lng": 52.2295,
-        "count": 4,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-08-31"
       },
       {
         "name": "Qalibaf, Semnan, Iran",
@@ -981,6 +965,30 @@
         "lastSeen": "2026-09-12"
       },
       {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 4,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-09-14"
+      },
+      {
+        "name": "Doha, Ad Daw?Ah, Qatar",
+        "lat": 25.2867,
+        "lng": 51.5333,
+        "count": 4,
+        "firstSeen": "2026-09-03",
+        "lastSeen": "2026-09-14"
+      },
+      {
+        "name": "Bandar Abbas, Hormozgan, Iran",
+        "lat": 27.1865,
+        "lng": 56.2808,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-14"
+      },
+      {
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
@@ -995,14 +1003,6 @@
         "count": 3,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-13"
-      },
-      {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 3,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-09-12"
       },
       {
         "name": "Khasab, Musandam, Oman",
@@ -1027,14 +1027,6 @@
         "count": 3,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-09"
-      },
-      {
-        "name": "Doha, Ad Daw?Ah, Qatar",
-        "lat": 25.2867,
-        "lng": 51.5333,
-        "count": 3,
-        "firstSeen": "2026-09-03",
-        "lastSeen": "2026-09-08"
       },
       {
         "name": "Minab, Sistan Va Baluchestan, Iran",
