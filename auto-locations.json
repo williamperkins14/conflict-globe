@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T00:04:19.038Z",
+  "generated": "2026-09-17T06:04:36.558Z",
   "conflicts": {
     "ukraine": [
       {
@@ -688,7 +688,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 40,
+        "count": 59,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-17"
       },
@@ -704,7 +704,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 11,
+        "count": 14,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-17"
       },
@@ -795,30 +795,6 @@
         "count": 8,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-15"
-      },
-      {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 6,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-09-15"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-17"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-16"
       },
       {
         "name": "Shalamcheh, Khuzestan, Iran",
@@ -941,6 +917,30 @@
         "lastSeen": "2026-09-16"
       },
       {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 3,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-09-17"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-17"
+      },
+      {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-17"
+      },
+      {
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
@@ -954,7 +954,7 @@
         "lng": 51.25,
         "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-16"
+        "lastSeen": "2026-09-17"
       },
       {
         "name": "Qeshm, Kordestan, Iran",
