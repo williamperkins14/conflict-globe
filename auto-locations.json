@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T12:04:18.500Z",
+  "generated": "2026-09-18T00:04:08.089Z",
   "conflicts": {
     "ukraine": [
       {
@@ -648,14 +648,6 @@
         "lastSeen": "2026-09-12"
       },
       {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 6,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-17"
-      },
-      {
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
@@ -670,6 +662,14 @@
         "count": 4,
         "firstSeen": "2026-09-17",
         "lastSeen": "2026-09-17"
+      },
+      {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-18"
       },
       {
         "name": "South Sudan",
@@ -696,17 +696,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 91,
+        "count": 64,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-17"
+        "lastSeen": "2026-09-18"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 39,
+        "count": 13,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-17"
+        "lastSeen": "2026-09-18"
       },
       {
         "name": "Abqaiq, Ash Sharqiyah, Saudi Arabia",
@@ -715,30 +715,6 @@
         "count": 12,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-17"
-      },
-      {
-        "name": "Kermanshah, Kermanshah, Iran",
-        "lat": 34.3142,
-        "lng": 47.065,
-        "count": 11,
-        "firstSeen": "2026-09-03",
-        "lastSeen": "2026-09-04"
-      },
-      {
-        "name": "Sirik, Hormozgan, Iran",
-        "lat": 26.5055,
-        "lng": 57.122,
-        "count": 11,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-04"
-      },
-      {
-        "name": "Lavan Island, Hormozgan, Iran",
-        "lat": 26.8,
-        "lng": 53.25,
-        "count": 11,
-        "firstSeen": "2026-09-04",
-        "lastSeen": "2026-09-04"
       },
       {
         "name": "Zahedan, Sistan Va Baluchestan, Iran",
@@ -781,22 +757,6 @@
         "lastSeen": "2026-09-06"
       },
       {
-        "name": "Ali Al Salem Air Base, Kuwait (General), Kuwait",
-        "lat": 29.35,
-        "lng": 47.5211,
-        "count": 9,
-        "firstSeen": "2026-09-04",
-        "lastSeen": "2026-09-04"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-17"
-      },
-      {
         "name": "Aminah, DiyaláZ, Iraq",
         "lat": 33.8886,
         "lng": 45.4275,
@@ -837,14 +797,6 @@
         "lastSeen": "2026-09-12"
       },
       {
-        "name": "Hansi, Az¯Arbayjan-E Gharbi, Iran",
-        "lat": 38.2,
-        "lng": 44.8167,
-        "count": 5,
-        "firstSeen": "2026-09-04",
-        "lastSeen": "2026-09-04"
-      },
-      {
         "name": "Ali Asgari, Kohgiluyeh Va Buyer A?Mad, Iran",
         "lat": 31.0954,
         "lng": 50.1127,
@@ -867,6 +819,14 @@
         "count": 5,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-17"
+      },
+      {
+        "name": "Minab, Sistan Va Baluchestan, Iran",
+        "lat": 25.7893,
+        "lng": 61.1025,
+        "count": 5,
+        "firstSeen": "2026-09-02",
+        "lastSeen": "2026-09-18"
       },
       {
         "name": "Basij, Fars, Iran",
@@ -949,12 +909,20 @@
         "lastSeen": "2026-09-17"
       },
       {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-18"
+      },
+      {
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
         "count": 3,
         "firstSeen": "2026-08-30",
-        "lastSeen": "2026-09-17"
+        "lastSeen": "2026-09-18"
       },
       {
         "name": "Kuwait",
@@ -1027,14 +995,6 @@
         "count": 3,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-09"
-      },
-      {
-        "name": "Minab, Sistan Va Baluchestan, Iran",
-        "lat": 25.7893,
-        "lng": 61.1025,
-        "count": 3,
-        "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-06"
       },
       {
         "name": "Jazan, Ostan-E Alborz, Iran",
