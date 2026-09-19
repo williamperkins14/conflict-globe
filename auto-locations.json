@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19T12:04:04.308Z",
+  "generated": "2026-09-19T18:03:32.124Z",
   "conflicts": {
     "ukraine": [
       {
@@ -648,18 +648,10 @@
         "lastSeen": "2026-09-18"
       },
       {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 4,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-19"
-      },
-      {
         "name": "Eritrea",
         "lat": 15,
         "lng": 39,
-        "count": 4,
+        "count": 6,
         "firstSeen": "2026-09-10",
         "lastSeen": "2026-09-19"
       },
@@ -667,8 +659,16 @@
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
-        "count": 3,
+        "count": 5,
         "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-19"
+      },
+      {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 4,
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-19"
       },
       {
@@ -704,15 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 67,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-19"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 27,
+        "count": 24,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-19"
       },
@@ -723,6 +715,14 @@
         "count": 18,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-09-18"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 13,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-19"
       },
       {
         "name": "Abqaiq, Ash Sharqiyah, Saudi Arabia",
@@ -803,6 +803,14 @@
         "count": 6,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-09-18"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-19"
       },
       {
         "name": "Kuwait",
@@ -939,14 +947,6 @@
         "count": 4,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-18"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-19"
       },
       {
         "name": "Doha, Ad Daw?Ah, Qatar",
