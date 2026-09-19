@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19T06:04:09.690Z",
+  "generated": "2026-09-19T12:04:04.308Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,20 +640,20 @@
     ],
     "sudan": [
       {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 14,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-18"
-      },
-      {
         "name": "Kordofan, Shamal Kurdufan, Sudan",
         "lat": 13.0833,
         "lng": 30.35,
         "count": 6,
         "firstSeen": "2026-09-17",
         "lastSeen": "2026-09-18"
+      },
+      {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 4,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-19"
       },
       {
         "name": "Eritrea",
@@ -704,7 +704,15 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 23,
+        "count": 67,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-19"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 27,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-19"
       },
@@ -717,36 +725,12 @@
         "lastSeen": "2026-09-18"
       },
       {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 17,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-19"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 17,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-19"
-      },
-      {
         "name": "Abqaiq, Ash Sharqiyah, Saudi Arabia",
         "lat": 25.9371,
         "lng": 49.6776,
         "count": 12,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-17"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 12,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-19"
       },
       {
         "name": "Zahedan, Sistan Va Baluchestan, Iran",
@@ -781,28 +765,12 @@
         "lastSeen": "2026-09-16"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 10,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-19"
-      },
-      {
         "name": "Kuhestak, Kerman, Iran",
         "lat": 28,
         "lng": 58.4167,
         "count": 10,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-06"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 8,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-19"
       },
       {
         "name": "Aminah, DiyaláZ, Iraq",
@@ -821,12 +789,28 @@
         "lastSeen": "2026-09-15"
       },
       {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-19"
+      },
+      {
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
         "count": 6,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-09-18"
+      },
+      {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-19"
       },
       {
         "name": "Shalamcheh, Khuzestan, Iran",
@@ -875,6 +859,14 @@
         "count": 5,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-18"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-19"
       },
       {
         "name": "Qalibaf, Semnan, Iran",
@@ -947,6 +939,14 @@
         "count": 4,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-18"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-19"
       },
       {
         "name": "Doha, Ad Daw?Ah, Qatar",
