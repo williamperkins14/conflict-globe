@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19T00:04:20.994Z",
+  "generated": "2026-09-19T06:04:09.690Z",
   "conflicts": {
     "ukraine": [
       {
@@ -704,15 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 73,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-19"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 25,
+        "count": 23,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-19"
       },
@@ -803,6 +795,14 @@
         "count": 10,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-06"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 8,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-19"
       },
       {
         "name": "Aminah, DiyaláZ, Iraq",
