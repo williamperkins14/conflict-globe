@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20T12:04:10.552Z",
+  "generated": "2026-09-20T18:05:46.341Z",
   "conflicts": {
     "ukraine": [
       {
@@ -656,20 +656,20 @@
         "lastSeen": "2026-09-19"
       },
       {
-        "name": "Ethiopians",
-        "lat": 8,
-        "lng": 38,
-        "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-19"
-      },
-      {
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
         "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-19"
+      },
+      {
+        "name": "Ethiopians",
+        "lat": 8,
+        "lng": 38,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-20"
       },
       {
         "name": "South Sudan",
@@ -694,9 +694,9 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 3,
+        "count": 6,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-19"
+        "lastSeen": "2026-09-20"
       }
     ],
     "iran": [
@@ -704,7 +704,15 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 53,
+        "count": 70,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-20"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 20,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-20"
       },
@@ -715,14 +723,6 @@
         "count": 18,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-09-18"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 13,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-20"
       },
       {
         "name": "Abqaiq, Ash Sharqiyah, Saudi Arabia",
@@ -803,6 +803,22 @@
         "count": 6,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-09-18"
+      },
+      {
+        "name": "Armenia",
+        "lat": 40,
+        "lng": 45,
+        "count": 6,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-20"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-20"
       },
       {
         "name": "Kuwait",
@@ -909,14 +925,6 @@
         "lastSeen": "2026-09-12"
       },
       {
-        "name": "Armenia",
-        "lat": 40,
-        "lng": 45,
-        "count": 4,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-16"
-      },
-      {
         "name": "Ras Tanura, Ash Sharqiyah, Saudi Arabia",
         "lat": 26.6439,
         "lng": 50.1592,
@@ -931,14 +939,6 @@
         "count": 4,
         "firstSeen": "2026-09-17",
         "lastSeen": "2026-09-17"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-20"
       },
       {
         "name": "Bahrain",
