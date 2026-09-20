@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20T00:04:40.033Z",
+  "generated": "2026-09-20T06:04:09.337Z",
   "conflicts": {
     "ukraine": [
       {
@@ -704,7 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 49,
+        "count": 37,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-20"
       },
@@ -712,7 +712,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 35,
+        "count": 23,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-20"
       },
@@ -795,14 +795,6 @@
         "count": 7,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-20"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-19"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
@@ -947,6 +939,14 @@
         "count": 4,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-18"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-20"
       },
       {
         "name": "Doha, Ad Daw?Ah, Qatar",
