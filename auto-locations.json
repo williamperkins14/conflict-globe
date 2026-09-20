@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20T06:04:09.337Z",
+  "generated": "2026-09-20T12:04:10.552Z",
   "conflicts": {
     "ukraine": [
       {
@@ -704,15 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 37,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-20"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 23,
+        "count": 53,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-20"
       },
@@ -723,6 +715,14 @@
         "count": 18,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-09-18"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 13,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-20"
       },
       {
         "name": "Abqaiq, Ash Sharqiyah, Saudi Arabia",
@@ -765,6 +765,14 @@
         "lastSeen": "2026-09-16"
       },
       {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 11,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-20"
+      },
+      {
         "name": "Bushehr, Bushehr, Iran",
         "lat": 28.9684,
         "lng": 50.8385,
@@ -789,14 +797,6 @@
         "lastSeen": "2026-09-15"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-20"
-      },
-      {
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
@@ -810,7 +810,7 @@
         "lng": 47.75,
         "count": 5,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-19"
+        "lastSeen": "2026-09-20"
       },
       {
         "name": "Shalamcheh, Khuzestan, Iran",
@@ -861,11 +861,11 @@
         "lastSeen": "2026-09-18"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 4,
-        "firstSeen": "2026-08-28",
+        "name": "Baghdad, Baghdad, Iraq",
+        "lat": 33.3386,
+        "lng": 44.3939,
+        "count": 5,
+        "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-20"
       },
       {
@@ -933,12 +933,12 @@
         "lastSeen": "2026-09-17"
       },
       {
-        "name": "Baghdad, Baghdad, Iraq",
-        "lat": 33.3386,
-        "lng": 44.3939,
-        "count": 4,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-18"
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-20"
       },
       {
         "name": "Bahrain",
