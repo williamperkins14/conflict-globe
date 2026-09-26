@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-25T20:51:20.900Z",
+  "generated": "2026-09-26T02:27:38.744Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,14 +640,6 @@
     ],
     "sudan": [
       {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 10,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-25"
-      },
-      {
         "name": "South Sudan",
         "lat": 8,
         "lng": 30,
@@ -670,6 +662,14 @@
         "count": 7,
         "firstSeen": "2026-09-10",
         "lastSeen": "2026-09-25"
+      },
+      {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 6,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-26"
       },
       {
         "name": "Kordofan, Shamal Kurdufan, Sudan",
@@ -704,9 +704,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 113,
+        "count": 60,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-25"
+        "lastSeen": "2026-09-26"
       },
       {
         "name": "Basij, Fars, Iran",
@@ -717,20 +717,12 @@
         "lastSeen": "2026-09-18"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 14,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-25"
-      },
-      {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 12,
+        "count": 13,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-25"
+        "lastSeen": "2026-09-26"
       },
       {
         "name": "Abqaiq, Ash Sharqiyah, Saudi Arabia",
@@ -747,6 +739,14 @@
         "count": 12,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-24"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 12,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-26"
       },
       {
         "name": "Gorgij, Sistan Va Baluchestan, Iran",
@@ -773,6 +773,14 @@
         "lastSeen": "2026-09-25"
       },
       {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 8,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-26"
+      },
+      {
         "name": "Aminah, DiyaláZ, Iraq",
         "lat": 33.8886,
         "lng": 45.4275,
@@ -795,14 +803,6 @@
         "count": 8,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-24"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-25"
       },
       {
         "name": "Zahedan, Sistan Va Baluchestan, Iran",
@@ -861,30 +861,6 @@
         "lastSeen": "2026-09-25"
       },
       {
-        "name": "Shalamcheh, Khuzestan, Iran",
-        "lat": 30.5049,
-        "lng": 48.0294,
-        "count": 5,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Khuzestan, Khuzestan, Iran",
-        "lat": 31.5,
-        "lng": 49,
-        "count": 5,
-        "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Chazabeh, Khuzestan, Iran",
-        "lat": 31.788,
-        "lng": 47.9335,
-        "count": 5,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-12"
-      },
-      {
         "name": "Chabahar, Sistan Va Baluchestan, Iran",
         "lat": 25.2919,
         "lng": 60.643,
@@ -907,22 +883,6 @@
         "count": 4,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-23"
-      },
-      {
-        "name": "Sadara, Fars, Iran",
-        "lat": 27.5237,
-        "lng": 52.9211,
-        "count": 4,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Jubail, Ash Sharqiyah, Saudi Arabia",
-        "lat": 27.0112,
-        "lng": 49.6583,
-        "count": 4,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-12"
       },
       {
         "name": "Ras Tanura, Ash Sharqiyah, Saudi Arabia",
@@ -995,22 +955,6 @@
         "count": 3,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-13"
-      },
-      {
-        "name": "Kharg, Bushehr, Iran",
-        "lat": 29.25,
-        "lng": 50.3286,
-        "count": 3,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-12"
-      },
-      {
-        "name": "Persian Gulf, Oceans (General), Oceans",
-        "lat": 27,
-        "lng": 51,
-        "count": 3,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-12"
       },
       {
         "name": "Erbil, Liwa' Irbil, Iraq",
