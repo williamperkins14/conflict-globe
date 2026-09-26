@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-26T15:20:01.800Z",
+  "generated": "2026-09-26T20:20:39.916Z",
   "conflicts": {
     "ukraine": [
       {
@@ -704,7 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 37,
+        "count": 39,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-26"
       },
@@ -739,14 +739,6 @@
         "count": 11,
         "firstSeen": "2026-09-16",
         "lastSeen": "2026-09-16"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-26"
       },
       {
         "name": "Qatari",
@@ -874,6 +866,14 @@
         "lng": 45,
         "count": 5,
         "firstSeen": "2026-08-31",
+        "lastSeen": "2026-09-26"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 4,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-26"
       },
       {
