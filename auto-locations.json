@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27T02:24:38.054Z",
+  "generated": "2026-09-27T10:59:50.287Z",
   "conflicts": {
     "ukraine": [
       {
@@ -704,7 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 31,
+        "count": 61,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-27"
       },
@@ -741,6 +741,14 @@
         "lastSeen": "2026-09-16"
       },
       {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 11,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-27"
+      },
+      {
         "name": "Bushehr, Bushehr, Iran",
         "lat": 28.9684,
         "lng": 50.8385,
@@ -749,12 +757,12 @@
         "lastSeen": "2026-09-20"
       },
       {
-        "name": "Baghdad, Baghdad, Iraq",
-        "lat": 33.3386,
-        "lng": 44.3939,
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
         "count": 9,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-25"
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-27"
       },
       {
         "name": "Hormozgan, Hormozgan, Iran",
@@ -776,9 +784,9 @@
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
-        "count": 7,
+        "count": 8,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-26"
+        "lastSeen": "2026-09-27"
       },
       {
         "name": "Zahedan, Sistan Va Baluchestan, Iran",
@@ -829,6 +837,14 @@
         "lastSeen": "2026-09-25"
       },
       {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 7,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-09-27"
+      },
+      {
         "name": "Chabahar, Sistan Va Baluchestan, Iran",
         "lat": 25.2919,
         "lng": 60.643,
@@ -837,28 +853,12 @@
         "lastSeen": "2026-09-14"
       },
       {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 5,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-09-25"
-      },
-      {
         "name": "Armenia",
         "lat": 40,
         "lng": 45,
         "count": 5,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-26"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-27"
       },
       {
         "name": "Minab, Sistan Va Baluchestan, Iran",
@@ -885,11 +885,11 @@
         "lastSeen": "2026-09-17"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
+        "name": "Baghdad, Baghdad, Iraq",
+        "lat": 33.3386,
+        "lng": 44.3939,
         "count": 3,
-        "firstSeen": "2026-08-28",
+        "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-27"
       },
       {
@@ -930,7 +930,7 @@
         "lng": 57.7939,
         "count": 3,
         "firstSeen": "2026-09-01",
-        "lastSeen": "2026-09-14"
+        "lastSeen": "2026-09-27"
       },
       {
         "name": "Bandar Abbas, Hormozgan, Iran",
