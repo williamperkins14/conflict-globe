@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-26T20:20:39.916Z",
+  "generated": "2026-09-27T02:24:38.054Z",
   "conflicts": {
     "ukraine": [
       {
@@ -694,9 +694,9 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 6,
+        "count": 3,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-25"
+        "lastSeen": "2026-09-27"
       }
     ],
     "iran": [
@@ -704,9 +704,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 39,
+        "count": 31,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-26"
+        "lastSeen": "2026-09-27"
       },
       {
         "name": "Basij, Fars, Iran",
@@ -741,14 +741,6 @@
         "lastSeen": "2026-09-16"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-26"
-      },
-      {
         "name": "Bushehr, Bushehr, Iran",
         "lat": 28.9684,
         "lng": 50.8385,
@@ -763,14 +755,6 @@
         "count": 9,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-09-25"
-      },
-      {
-        "name": "Aminah, DiyaláZ, Iraq",
-        "lat": 33.8886,
-        "lng": 45.4275,
-        "count": 8,
-        "firstSeen": "2026-09-13",
-        "lastSeen": "2026-09-13"
       },
       {
         "name": "Hormozgan, Hormozgan, Iran",
@@ -869,12 +853,12 @@
         "lastSeen": "2026-09-26"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
         "count": 4,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-26"
+        "lastSeen": "2026-09-27"
       },
       {
         "name": "Minab, Sistan Va Baluchestan, Iran",
@@ -899,6 +883,14 @@
         "count": 4,
         "firstSeen": "2026-09-17",
         "lastSeen": "2026-09-17"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-27"
       },
       {
         "name": "Najaf, An Najaf, Iraq",
@@ -947,14 +939,6 @@
         "count": 3,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-15"
-      },
-      {
-        "name": "Maysan, Maysan, Iraq",
-        "lat": 32,
-        "lng": 47,
-        "count": 3,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-09-13"
       },
       {
         "name": "Erbil, Liwa' Irbil, Iraq",
