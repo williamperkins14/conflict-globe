@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T12:18:18.321Z",
+  "generated": "2026-09-28T22:44:05.686Z",
   "conflicts": {
     "ukraine": [
       {
@@ -659,9 +659,9 @@
         "name": "South Sudan",
         "lat": 8,
         "lng": 30,
-        "count": 5,
+        "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-27"
+        "lastSeen": "2026-09-28"
       },
       {
         "name": "Sudan",
@@ -677,7 +677,7 @@
         "lng": 38,
         "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-27"
+        "lastSeen": "2026-09-28"
       },
       {
         "name": "Dabanga, Shamal Darfur, Sudan",
@@ -704,15 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 157,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-28"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 32,
+        "count": 47,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-28"
       },
@@ -733,20 +725,20 @@
         "lastSeen": "2026-09-17"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 12,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-28"
-      },
-      {
         "name": "Gorgij, Sistan Va Baluchestan, Iran",
         "lat": 25.5437,
         "lng": 61.2189,
         "count": 11,
         "firstSeen": "2026-09-16",
         "lastSeen": "2026-09-16"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 10,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-28"
       },
       {
         "name": "Bushehr, Bushehr, Iran",
@@ -829,14 +821,6 @@
         "lastSeen": "2026-09-25"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-28"
-      },
-      {
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
@@ -851,6 +835,22 @@
         "count": 5,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-26"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-28"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-28"
       },
       {
         "name": "Minab, Sistan Va Baluchestan, Iran",
