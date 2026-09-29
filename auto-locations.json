@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T11:46:29.758Z",
+  "generated": "2026-09-29T21:38:08.906Z",
   "conflicts": {
     "ukraine": [
       {
@@ -648,20 +648,20 @@
         "lastSeen": "2026-09-25"
       },
       {
+        "name": "South Sudan",
+        "lat": 8,
+        "lng": 30,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-29"
+      },
+      {
         "name": "Kordofan, Shamal Kurdufan, Sudan",
         "lat": 13.0833,
         "lng": 30.35,
         "count": 6,
         "firstSeen": "2026-09-17",
         "lastSeen": "2026-09-18"
-      },
-      {
-        "name": "South Sudan",
-        "lat": 8,
-        "lng": 30,
-        "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-28"
       },
       {
         "name": "Sudan",
@@ -694,7 +694,7 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 3,
+        "count": 7,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-09-29"
       }
@@ -704,31 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 91,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-29"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 22,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-29"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 21,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-09-29"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 21,
+        "count": 61,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-29"
       },
@@ -765,6 +741,22 @@
         "lastSeen": "2026-09-16"
       },
       {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 10,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-29"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 10,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-09-29"
+      },
+      {
         "name": "Bushehr, Bushehr, Iran",
         "lat": 28.9684,
         "lng": 50.8385,
@@ -786,6 +778,14 @@
         "lng": 55.28,
         "count": 8,
         "firstSeen": "2026-08-30",
+        "lastSeen": "2026-09-29"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 7,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-09-29"
       },
       {
