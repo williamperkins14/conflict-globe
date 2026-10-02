@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T11:32:48.766Z",
+  "generated": "2026-10-02T21:33:35.471Z",
   "conflicts": {
     "ukraine": [
       {
@@ -696,7 +696,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 79,
+        "count": 68,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-02"
       },
@@ -704,7 +704,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 64,
+        "count": 33,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-02"
       },
@@ -712,7 +712,7 @@
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
-        "count": 20,
+        "count": 12,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-10-02"
       },
