@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T03:02:23.235Z",
+  "generated": "2026-10-02T11:32:48.766Z",
   "conflicts": {
     "ukraine": [
       {
@@ -648,28 +648,36 @@
         "lastSeen": "2026-09-30"
       },
       {
-        "name": "Ethiopians",
-        "lat": 8,
-        "lng": 38,
-        "count": 10,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-01"
-      },
-      {
-        "name": "Eritrea",
-        "lat": 15,
-        "lng": 39,
-        "count": 7,
-        "firstSeen": "2026-09-10",
-        "lastSeen": "2026-09-25"
-      },
-      {
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
         "count": 5,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-09-30"
+        "lastSeen": "2026-10-02"
+      },
+      {
+        "name": "Ethiopians",
+        "lat": 8,
+        "lng": 38,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-02"
+      },
+      {
+        "name": "Eritrea",
+        "lat": 15,
+        "lng": 39,
+        "count": 3,
+        "firstSeen": "2026-09-10",
+        "lastSeen": "2026-10-02"
+      },
+      {
+        "name": "Asmara, Ma'akel, Eritrea",
+        "lat": 15.3333,
+        "lng": 38.9333,
+        "count": 3,
+        "firstSeen": "2026-10-02",
+        "lastSeen": "2026-10-02"
       }
     ],
     "gaza": [],
@@ -688,7 +696,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 75,
+        "count": 79,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-02"
       },
@@ -696,7 +704,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 36,
+        "count": 64,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-02"
       },
@@ -784,7 +792,15 @@
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
-        "count": 5,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-02"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 6,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-02"
       },
@@ -794,22 +810,6 @@
         "lng": 44.3939,
         "count": 5,
         "firstSeen": "2026-09-12",
-        "lastSeen": "2026-10-01"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-02"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 4,
-        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-01"
       },
       {
@@ -845,12 +845,36 @@
         "lastSeen": "2026-10-01"
       },
       {
+        "name": "Sarakhs, Khorasan-E Ra?Avi, Iran",
+        "lat": 36.5449,
+        "lng": 61.1577,
+        "count": 4,
+        "firstSeen": "2026-10-02",
+        "lastSeen": "2026-10-02"
+      },
+      {
+        "name": "Turkmenistan",
+        "lat": 40,
+        "lng": 60,
+        "count": 4,
+        "firstSeen": "2026-10-02",
+        "lastSeen": "2026-10-02"
+      },
+      {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-02"
+      },
+      {
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
         "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-01"
+        "lastSeen": "2026-10-02"
       },
       {
         "name": "Armenia",
