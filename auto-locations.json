@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T21:33:35.471Z",
+  "generated": "2026-10-03T02:48:36.203Z",
   "conflicts": {
     "ukraine": [
       {
@@ -696,25 +696,25 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 68,
+        "count": 33,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-02"
+        "lastSeen": "2026-10-03"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 33,
+        "count": 31,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-02"
+        "lastSeen": "2026-10-03"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
-        "count": 12,
+        "count": 29,
         "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-02"
+        "lastSeen": "2026-10-03"
       },
       {
         "name": "Bushehr, Bushehr, Iran",
@@ -731,6 +731,22 @@
         "count": 9,
         "firstSeen": "2026-09-27",
         "lastSeen": "2026-09-27"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 8,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-03"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 8,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-03"
       },
       {
         "name": "Hayi, Khuzestan, Iran",
@@ -789,20 +805,12 @@
         "lastSeen": "2026-09-25"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
+        "name": "Doha, Ad Daw?Ah, Qatar",
+        "lat": 25.2867,
+        "lng": 51.5333,
         "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-02"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-02"
+        "firstSeen": "2026-09-03",
+        "lastSeen": "2026-10-03"
       },
       {
         "name": "Baghdad, Baghdad, Iraq",
@@ -923,14 +931,6 @@
         "count": 3,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-09-23"
-      },
-      {
-        "name": "Doha, Ad Daw?Ah, Qatar",
-        "lat": 25.2867,
-        "lng": 51.5333,
-        "count": 3,
-        "firstSeen": "2026-09-03",
-        "lastSeen": "2026-09-30"
       },
       {
         "name": "Gulf Of Oman, Iran (General), Iran",
