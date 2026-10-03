@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T10:47:22.848Z",
+  "generated": "2026-10-03T15:23:28.675Z",
   "conflicts": {
     "ukraine": [
       {
@@ -648,28 +648,28 @@
         "lastSeen": "2026-09-30"
       },
       {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 5,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-02"
-      },
-      {
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
-        "count": 3,
+        "count": 6,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-02"
+        "lastSeen": "2026-10-03"
       },
       {
         "name": "Eritrea",
         "lat": 15,
         "lng": 39,
-        "count": 3,
+        "count": 5,
         "firstSeen": "2026-09-10",
-        "lastSeen": "2026-10-02"
+        "lastSeen": "2026-10-03"
+      },
+      {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-10-03"
       },
       {
         "name": "Asmara, Ma'akel, Eritrea",
@@ -693,18 +693,18 @@
     ],
     "iran": [
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 31,
+        "name": "Iranian",
+        "lat": 32,
+        "lng": 53,
+        "count": 77,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-03"
       },
       {
-        "name": "Iranian",
-        "lat": 32,
-        "lng": 53,
-        "count": 25,
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 38,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-03"
       },
@@ -736,14 +736,6 @@
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
-        "count": 8,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-03"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
         "count": 8,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-03"
@@ -813,12 +805,44 @@
         "lastSeen": "2026-10-03"
       },
       {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-03"
+      },
+      {
         "name": "Baghdad, Baghdad, Iraq",
         "lat": 33.3386,
         "lng": 44.3939,
-        "count": 5,
+        "count": 6,
         "firstSeen": "2026-09-12",
-        "lastSeen": "2026-10-01"
+        "lastSeen": "2026-10-03"
+      },
+      {
+        "name": "Shahrekord, Chahar Ma?All Va Bakhtiari, Iran",
+        "lat": 32.3256,
+        "lng": 50.8644,
+        "count": 6,
+        "firstSeen": "2026-10-03",
+        "lastSeen": "2026-10-03"
+      },
+      {
+        "name": "As Iran, Az¯Arbayjan-E Sharqi, Iran",
+        "lat": 39.0251,
+        "lng": 47.0697,
+        "count": 6,
+        "firstSeen": "2026-10-03",
+        "lastSeen": "2026-10-03"
+      },
+      {
+        "name": "Mizan, Ardabil, Iran",
+        "lat": 38.365,
+        "lng": 47.3979,
+        "count": 6,
+        "firstSeen": "2026-10-03",
+        "lastSeen": "2026-10-03"
       },
       {
         "name": "Najaf, An Najaf, Iraq",
@@ -987,14 +1011,6 @@
         "count": 3,
         "firstSeen": "2026-10-01",
         "lastSeen": "2026-10-01"
-      },
-      {
-        "name": "Shahrekord, Chahar Ma?All Va Bakhtiari, Iran",
-        "lat": 32.3256,
-        "lng": 50.8644,
-        "count": 3,
-        "firstSeen": "2026-10-03",
-        "lastSeen": "2026-10-03"
       }
     ]
   },
