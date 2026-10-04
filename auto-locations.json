@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-03T20:19:43.329Z",
+  "generated": "2026-10-04T03:18:49.232Z",
   "conflicts": {
     "ukraine": [
       {
@@ -696,25 +696,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 16,
+        "count": 30,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-03"
+        "lastSeen": "2026-10-04"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 15,
+        "count": 19,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-03"
-      },
-      {
-        "name": "Bushehr, Bushehr, Iran",
-        "lat": 28.9684,
-        "lng": 50.8385,
-        "count": 9,
-        "firstSeen": "2026-09-20",
-        "lastSeen": "2026-09-20"
+        "lastSeen": "2026-10-04"
       },
       {
         "name": "Shiraz, Fars, Iran",
@@ -797,14 +789,6 @@
         "lastSeen": "2026-10-03"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-03"
-      },
-      {
         "name": "Baghdad, Baghdad, Iraq",
         "lat": 33.3386,
         "lng": 44.3939,
@@ -835,6 +819,22 @@
         "count": 6,
         "firstSeen": "2026-10-03",
         "lastSeen": "2026-10-03"
+      },
+      {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 6,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-10-04"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-04"
       },
       {
         "name": "Najaf, An Najaf, Iraq",
@@ -883,14 +883,6 @@
         "count": 4,
         "firstSeen": "2026-10-02",
         "lastSeen": "2026-10-02"
-      },
-      {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 3,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-03"
       },
       {
         "name": "Kuwait",
