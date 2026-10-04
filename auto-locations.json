@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04T11:29:20.084Z",
+  "generated": "2026-10-04T16:07:56.693Z",
   "conflicts": {
     "ukraine": [
       {
@@ -648,27 +648,27 @@
         "lastSeen": "2026-09-30"
       },
       {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 5,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-10-04"
+      },
+      {
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
-        "count": 6,
+        "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-03"
+        "lastSeen": "2026-10-04"
       },
       {
         "name": "Eritrea",
         "lat": 15,
         "lng": 39,
-        "count": 5,
-        "firstSeen": "2026-09-10",
-        "lastSeen": "2026-10-03"
-      },
-      {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
         "count": 3,
-        "firstSeen": "2026-08-31",
+        "firstSeen": "2026-09-10",
         "lastSeen": "2026-10-04"
       },
       {
@@ -696,7 +696,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 31,
+        "count": 46,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-04"
       },
@@ -704,7 +704,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 15,
+        "count": 22,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-04"
       },
@@ -773,14 +773,6 @@
         "lastSeen": "2026-09-25"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-04"
-      },
-      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
@@ -826,6 +818,14 @@
         "lng": 55.28,
         "count": 6,
         "firstSeen": "2026-08-30",
+        "lastSeen": "2026-10-04"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 5,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-04"
       },
       {
@@ -898,7 +898,7 @@
         "lng": 50.5,
         "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-03"
+        "lastSeen": "2026-10-04"
       },
       {
         "name": "Armenia",
@@ -1003,6 +1003,14 @@
         "count": 3,
         "firstSeen": "2026-10-01",
         "lastSeen": "2026-10-01"
+      },
+      {
+        "name": "Khurais, Ash Sharqiyah, Saudi Arabia",
+        "lat": 25.0594,
+        "lng": 48.0639,
+        "count": 3,
+        "firstSeen": "2026-10-04",
+        "lastSeen": "2026-10-04"
       }
     ]
   },
