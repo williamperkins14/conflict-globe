@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04T20:37:23.466Z",
+  "generated": "2026-10-05T02:55:11.412Z",
   "conflicts": {
     "ukraine": [
       {
@@ -667,9 +667,9 @@
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
-        "count": 5,
+        "count": 3,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-04"
+        "lastSeen": "2026-10-05"
       },
       {
         "name": "Asmara, Ma'akel, Eritrea",
@@ -696,17 +696,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 37,
+        "count": 42,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-04"
+        "lastSeen": "2026-10-05"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 15,
+        "count": 10,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-04"
+        "lastSeen": "2026-10-05"
       },
       {
         "name": "Iraq",
@@ -893,6 +893,14 @@
         "lastSeen": "2026-10-02"
       },
       {
+        "name": "Khurais, Ash Sharqiyah, Saudi Arabia",
+        "lat": 25.0594,
+        "lng": 48.0639,
+        "count": 4,
+        "firstSeen": "2026-10-04",
+        "lastSeen": "2026-10-05"
+      },
+      {
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
@@ -1003,14 +1011,6 @@
         "count": 3,
         "firstSeen": "2026-10-01",
         "lastSeen": "2026-10-01"
-      },
-      {
-        "name": "Khurais, Ash Sharqiyah, Saudi Arabia",
-        "lat": 25.0594,
-        "lng": 48.0639,
-        "count": 3,
-        "firstSeen": "2026-10-04",
-        "lastSeen": "2026-10-04"
       }
     ]
   },
