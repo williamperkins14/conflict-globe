@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T02:55:11.412Z",
+  "generated": "2026-10-05T12:57:48.820Z",
   "conflicts": {
     "ukraine": [
       {
@@ -648,14 +648,6 @@
         "lastSeen": "2026-09-30"
       },
       {
-        "name": "Ethiopians",
-        "lat": 8,
-        "lng": 38,
-        "count": 8,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-04"
-      },
-      {
         "name": "Eritrea",
         "lat": 15,
         "lng": 39,
@@ -667,8 +659,16 @@
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
-        "count": 3,
+        "count": 5,
         "firstSeen": "2026-08-31",
+        "lastSeen": "2026-10-05"
+      },
+      {
+        "name": "Ethiopians",
+        "lat": 8,
+        "lng": 38,
+        "count": 4,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-05"
       },
       {
@@ -688,7 +688,7 @@
         "lng": -72.4167,
         "count": 4,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-10-01"
+        "lastSeen": "2026-10-05"
       }
     ],
     "iran": [
@@ -696,7 +696,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 42,
+        "count": 65,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-05"
       },
@@ -704,7 +704,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 10,
+        "count": 37,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-05"
       },
@@ -712,9 +712,17 @@
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
-        "count": 10,
+        "count": 14,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-04"
+        "lastSeen": "2026-10-05"
+      },
+      {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 11,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-05"
       },
       {
         "name": "Shiraz, Fars, Iran",
@@ -723,14 +731,6 @@
         "count": 9,
         "firstSeen": "2026-09-27",
         "lastSeen": "2026-09-27"
-      },
-      {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 8,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-04"
       },
       {
         "name": "Hayi, Khuzestan, Iran",
@@ -789,6 +789,14 @@
         "lastSeen": "2026-09-25"
       },
       {
+        "name": "Sumar, Kermanshah, Iran",
+        "lat": 33.8774,
+        "lng": 45.6418,
+        "count": 7,
+        "firstSeen": "2026-10-05",
+        "lastSeen": "2026-10-05"
+      },
+      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
@@ -821,14 +829,6 @@
         "lastSeen": "2026-10-03"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-04"
-      },
-      {
         "name": "Baghdad, Baghdad, Iraq",
         "lat": 33.3386,
         "lng": 44.3939,
@@ -837,12 +837,12 @@
         "lastSeen": "2026-10-04"
       },
       {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
+        "name": "Shuaiba, Kuwait (General), Kuwait",
+        "lat": 29.0411,
+        "lng": 48.1375,
         "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-04"
+        "firstSeen": "2026-10-05",
+        "lastSeen": "2026-10-05"
       },
       {
         "name": "Najaf, An Najaf, Iraq",
@@ -898,6 +898,30 @@
         "lng": 48.0639,
         "count": 4,
         "firstSeen": "2026-10-04",
+        "lastSeen": "2026-10-05"
+      },
+      {
+        "name": "Kuwait City, Kuwait (General), Kuwait",
+        "lat": 29.3697,
+        "lng": 47.9783,
+        "count": 4,
+        "firstSeen": "2026-10-05",
+        "lastSeen": "2026-10-05"
+      },
+      {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 3,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-10-05"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 3,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-05"
       },
       {
@@ -1011,6 +1035,14 @@
         "count": 3,
         "firstSeen": "2026-10-01",
         "lastSeen": "2026-10-01"
+      },
+      {
+        "name": "Balad, Sala? Ad Din, Iraq",
+        "lat": 34.0148,
+        "lng": 44.1457,
+        "count": 3,
+        "firstSeen": "2026-10-05",
+        "lastSeen": "2026-10-05"
       }
     ]
   },
