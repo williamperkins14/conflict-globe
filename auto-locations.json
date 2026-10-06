@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05T23:27:32.105Z",
+  "generated": "2026-10-06T03:45:08.592Z",
   "conflicts": {
     "ukraine": [
       {
@@ -696,25 +696,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 56,
+        "count": 57,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-05"
+        "lastSeen": "2026-10-06"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 19,
+        "count": 21,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-05"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 14,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-05"
+        "lastSeen": "2026-10-06"
       },
       {
         "name": "Shiraz, Fars, Iran",
@@ -749,14 +741,6 @@
         "lastSeen": "2026-09-25"
       },
       {
-        "name": "Alibaba, Lorestan, Iran",
-        "lat": 33.7333,
-        "lng": 47.7,
-        "count": 7,
-        "firstSeen": "2026-09-22",
-        "lastSeen": "2026-09-22"
-      },
-      {
         "name": "Ghezel Hesar, Ostan-E Alborz, Iran",
         "lat": 35.793,
         "lng": 50.8527,
@@ -789,14 +773,6 @@
         "lastSeen": "2026-10-05"
       },
       {
-        "name": "Doha, Ad Daw?Ah, Qatar",
-        "lat": 25.2867,
-        "lng": 51.5333,
-        "count": 6,
-        "firstSeen": "2026-09-03",
-        "lastSeen": "2026-10-04"
-      },
-      {
         "name": "Shahrekord, Chahar Ma?All Va Bakhtiari, Iran",
         "lat": 32.3256,
         "lng": 50.8644,
@@ -819,6 +795,22 @@
         "count": 6,
         "firstSeen": "2026-10-03",
         "lastSeen": "2026-10-03"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-06"
+      },
+      {
+        "name": "Doha, Ad Daw?Ah, Qatar",
+        "lat": 25.2867,
+        "lng": 51.5333,
+        "count": 5,
+        "firstSeen": "2026-09-03",
+        "lastSeen": "2026-10-06"
       },
       {
         "name": "Baghdad, Baghdad, Iraq",
@@ -914,7 +906,7 @@
         "lng": 55.28,
         "count": 3,
         "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-05"
+        "lastSeen": "2026-10-06"
       },
       {
         "name": "Qatari",
@@ -995,14 +987,6 @@
         "count": 3,
         "firstSeen": "2026-09-20",
         "lastSeen": "2026-09-30"
-      },
-      {
-        "name": "Shahed, Fars, Iran",
-        "lat": 28.5934,
-        "lng": 52.2295,
-        "count": 3,
-        "firstSeen": "2026-09-22",
-        "lastSeen": "2026-09-22"
       },
       {
         "name": "Karbala, Hormozgan, Iran",
