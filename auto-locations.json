@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T12:23:29.327Z",
+  "generated": "2026-10-06T21:59:55.944Z",
   "conflicts": {
     "ukraine": [
       {
@@ -648,19 +648,19 @@
         "lastSeen": "2026-09-30"
       },
       {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 6,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-06"
-      },
-      {
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
         "count": 5,
         "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-06"
+      },
+      {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 4,
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-06"
       },
       {
@@ -696,7 +696,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 81,
+        "count": 102,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-06"
       },
@@ -704,7 +704,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 24,
+        "count": 10,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-06"
       },
@@ -722,6 +722,14 @@
         "lng": 56.2477,
         "count": 9,
         "firstSeen": "2026-08-31",
+        "lastSeen": "2026-10-06"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 9,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-06"
       },
       {
@@ -789,6 +797,14 @@
         "lastSeen": "2026-10-05"
       },
       {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-06"
+      },
+      {
         "name": "Shahrekord, Chahar Ma?All Va Bakhtiari, Iran",
         "lat": 32.3256,
         "lng": 50.8644,
@@ -813,14 +829,6 @@
         "lastSeen": "2026-10-03"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-06"
-      },
-      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
@@ -840,9 +848,9 @@
         "name": "Shuaiba, Kuwait (General), Kuwait",
         "lat": 29.0411,
         "lng": 48.1375,
-        "count": 5,
+        "count": 4,
         "firstSeen": "2026-10-05",
-        "lastSeen": "2026-10-05"
+        "lastSeen": "2026-10-06"
       },
       {
         "name": "Najaf, An Najaf, Iraq",
@@ -914,14 +922,6 @@
         "lng": 51,
         "count": 4,
         "firstSeen": "2026-10-06",
-        "lastSeen": "2026-10-06"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 3,
-        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-06"
       },
       {
