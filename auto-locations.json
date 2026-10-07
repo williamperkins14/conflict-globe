@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T12:16:04.089Z",
+  "generated": "2026-10-07T22:25:03.333Z",
   "conflicts": {
     "ukraine": [
       {
@@ -686,7 +686,7 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 4,
+        "count": 3,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-10-07"
       }
@@ -696,15 +696,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 114,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-07"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 20,
+        "count": 106,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-07"
       },
@@ -712,7 +704,15 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 17,
+        "count": 21,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-07"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 12,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-07"
       },
@@ -789,14 +789,6 @@
         "lastSeen": "2026-10-05"
       },
       {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-06"
-      },
-      {
         "name": "Shahrekord, Chahar Ma?All Va Bakhtiari, Iran",
         "lat": 32.3256,
         "lng": 50.8644,
@@ -821,6 +813,14 @@
         "lastSeen": "2026-10-03"
       },
       {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-07"
+      },
+      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
@@ -829,10 +829,10 @@
         "lastSeen": "2026-10-06"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 5,
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 4,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-07"
       },
@@ -930,7 +930,7 @@
         "lng": 50.5,
         "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-04"
+        "lastSeen": "2026-10-07"
       },
       {
         "name": "Armenia",
