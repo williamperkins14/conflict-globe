@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-07T03:12:30.181Z",
+  "generated": "2026-10-07T12:16:04.089Z",
   "conflicts": {
     "ukraine": [
       {
@@ -651,17 +651,17 @@
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
-        "count": 5,
+        "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-06"
+        "lastSeen": "2026-10-07"
       },
       {
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
-        "count": 4,
+        "count": 3,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-06"
+        "lastSeen": "2026-10-07"
       },
       {
         "name": "Eritrea",
@@ -696,7 +696,15 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 57,
+        "count": 114,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-07"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 20,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-07"
       },
@@ -704,7 +712,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 15,
+        "count": 17,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-07"
       },
@@ -722,14 +730,6 @@
         "lng": 56.2477,
         "count": 9,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-06"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 8,
-        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-06"
       },
       {
@@ -829,12 +829,12 @@
         "lastSeen": "2026-10-06"
       },
       {
-        "name": "Baghdad, Baghdad, Iraq",
-        "lat": 33.3386,
-        "lng": 44.3939,
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
         "count": 5,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-10-04"
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-07"
       },
       {
         "name": "Shuaiba, Kuwait (General), Kuwait",
@@ -909,11 +909,11 @@
         "lastSeen": "2026-10-06"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
+        "name": "Baghdad, Baghdad, Iraq",
+        "lat": 33.3386,
+        "lng": 44.3939,
         "count": 3,
-        "firstSeen": "2026-08-28",
+        "firstSeen": "2026-09-12",
         "lastSeen": "2026-10-07"
       },
       {
@@ -922,7 +922,7 @@
         "lng": 55.28,
         "count": 3,
         "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-06"
+        "lastSeen": "2026-10-07"
       },
       {
         "name": "Bahrain",
