@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-06T21:59:55.944Z",
+  "generated": "2026-10-07T03:12:30.181Z",
   "conflicts": {
     "ukraine": [
       {
@@ -686,9 +686,9 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 6,
+        "count": 4,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-10-06"
+        "lastSeen": "2026-10-07"
       }
     ],
     "iran": [
@@ -696,17 +696,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 102,
+        "count": 57,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-06"
+        "lastSeen": "2026-10-07"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 10,
+        "count": 15,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-06"
+        "lastSeen": "2026-10-07"
       },
       {
         "name": "Shiraz, Fars, Iran",
@@ -722,14 +722,6 @@
         "lng": 56.2477,
         "count": 9,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-06"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 9,
-        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-06"
       },
       {
@@ -861,14 +853,6 @@
         "lastSeen": "2026-09-30"
       },
       {
-        "name": "Minab, Sistan Va Baluchestan, Iran",
-        "lat": 25.7893,
-        "lng": 61.1025,
-        "count": 4,
-        "firstSeen": "2026-09-02",
-        "lastSeen": "2026-09-23"
-      },
-      {
         "name": "Ras Tanura, Ash Sharqiyah, Saudi Arabia",
         "lat": 26.6439,
         "lng": 50.1592,
@@ -923,6 +907,14 @@
         "count": 4,
         "firstSeen": "2026-10-06",
         "lastSeen": "2026-10-06"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-07"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
