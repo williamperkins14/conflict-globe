@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T03:28:08.832Z",
+  "generated": "2026-10-08T12:26:08.306Z",
   "conflicts": {
     "ukraine": [
       {
@@ -696,7 +696,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 58,
+        "count": 135,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-08"
       },
@@ -704,7 +704,23 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 25,
+        "count": 16,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-08"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 16,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-08"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 15,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-08"
       },
@@ -725,9 +741,9 @@
         "lastSeen": "2026-10-06"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
         "count": 9,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-08"
@@ -813,19 +829,11 @@
         "lastSeen": "2026-10-03"
       },
       {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
+        "name": "Armenia",
+        "lat": 40,
+        "lng": 45,
         "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-08"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 6,
-        "firstSeen": "2026-08-28",
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-08"
       },
       {
@@ -909,9 +917,9 @@
         "lastSeen": "2026-10-08"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
         "count": 3,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-08"
@@ -923,14 +931,6 @@
         "count": 3,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-10-07"
-      },
-      {
-        "name": "Armenia",
-        "lat": 40,
-        "lng": 45,
-        "count": 3,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-01"
       },
       {
         "name": "Kurdistan, Khuzestan, Iran",
