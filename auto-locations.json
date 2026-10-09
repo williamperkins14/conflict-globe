@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T22:38:13.334Z",
+  "generated": "2026-10-09T03:33:40.345Z",
   "conflicts": {
     "ukraine": [
       {
@@ -696,9 +696,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 63,
+        "count": 93,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-08"
+        "lastSeen": "2026-10-09"
       },
       {
         "name": "Bahrain",
@@ -712,9 +712,9 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 11,
+        "count": 9,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-08"
+        "lastSeen": "2026-10-09"
       },
       {
         "name": "Shiraz, Fars, Iran",
@@ -733,60 +733,12 @@
         "lastSeen": "2026-10-06"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-08"
-      },
-      {
         "name": "Hayi, Khuzestan, Iran",
         "lat": 31.7167,
         "lng": 48.5333,
         "count": 7,
         "firstSeen": "2026-09-27",
         "lastSeen": "2026-09-28"
-      },
-      {
-        "name": "Zahedan, Sistan Va Baluchestan, Iran",
-        "lat": 29.4963,
-        "lng": 60.8629,
-        "count": 7,
-        "firstSeen": "2026-09-07",
-        "lastSeen": "2026-09-25"
-      },
-      {
-        "name": "Sistan, Nimruz, Afghanistan",
-        "lat": 30.25,
-        "lng": 61.5,
-        "count": 7,
-        "firstSeen": "2026-09-16",
-        "lastSeen": "2026-09-25"
-      },
-      {
-        "name": "Ghezel Hesar, Ostan-E Alborz, Iran",
-        "lat": 35.793,
-        "lng": 50.8527,
-        "count": 7,
-        "firstSeen": "2026-09-25",
-        "lastSeen": "2026-09-25"
-      },
-      {
-        "name": "Ashianeh, Markazi, Iran",
-        "lat": 33.8319,
-        "lng": 49.9933,
-        "count": 7,
-        "firstSeen": "2026-09-25",
-        "lastSeen": "2026-09-25"
-      },
-      {
-        "name": "Saravan, Sistan Va Baluchestan, Iran",
-        "lat": 27.2333,
-        "lng": 61.0667,
-        "count": 7,
-        "firstSeen": "2026-09-25",
-        "lastSeen": "2026-09-25"
       },
       {
         "name": "Sumar, Kermanshah, Iran",
@@ -797,12 +749,12 @@
         "lastSeen": "2026-10-05"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
         "count": 6,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-08"
+        "lastSeen": "2026-10-09"
       },
       {
         "name": "Shahrekord, Chahar Ma?All Va Bakhtiari, Iran",
@@ -827,14 +779,6 @@
         "count": 6,
         "firstSeen": "2026-10-03",
         "lastSeen": "2026-10-03"
-      },
-      {
-        "name": "Armenia",
-        "lat": 40,
-        "lng": 45,
-        "count": 6,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-08"
       },
       {
         "name": "Doha, Ad Daw?Ah, Qatar",
@@ -915,6 +859,22 @@
         "count": 4,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-10-08"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-09"
+      },
+      {
+        "name": "Armenia",
+        "lat": 40,
+        "lng": 45,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-10-09"
       },
       {
         "name": "Kuwait",
