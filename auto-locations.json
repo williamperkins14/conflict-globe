@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10T03:14:26.943Z",
+  "generated": "2026-10-10T11:32:54.020Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,6 +640,30 @@
     ],
     "sudan": [
       {
+        "name": "Ethiopians",
+        "lat": 8,
+        "lng": 38,
+        "count": 16,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-10"
+      },
+      {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 15,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-10-10"
+      },
+      {
+        "name": "Abu Shandi, An Nil Al Azraq, Sudan",
+        "lat": 11.35,
+        "lng": 34.7,
+        "count": 13,
+        "firstSeen": "2026-10-10",
+        "lastSeen": "2026-10-10"
+      },
+      {
         "name": "South Sudan",
         "lat": 8,
         "lng": 30,
@@ -653,22 +677,6 @@
         "lng": 39,
         "count": 4,
         "firstSeen": "2026-09-10",
-        "lastSeen": "2026-10-09"
-      },
-      {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 3,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-09"
-      },
-      {
-        "name": "Ethiopians",
-        "lat": 8,
-        "lng": 38,
-        "count": 3,
-        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-09"
       },
       {
@@ -696,7 +704,15 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 48,
+        "count": 40,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-10"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 26,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-10"
       },
@@ -707,14 +723,6 @@
         "count": 16,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-08"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 10,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-10"
       },
       {
         "name": "Shiraz, Fars, Iran",
@@ -773,20 +781,20 @@
         "lastSeen": "2026-10-03"
       },
       {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 5,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-10"
-      },
-      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
         "count": 5,
         "firstSeen": "2026-09-03",
         "lastSeen": "2026-10-06"
+      },
+      {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 4,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-10-10"
       },
       {
         "name": "Qatari",
