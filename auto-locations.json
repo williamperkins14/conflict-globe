@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T13:49:53.936Z",
+  "generated": "2026-10-12T23:56:04.132Z",
   "conflicts": {
     "ukraine": [
       {
@@ -704,7 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 88,
+        "count": 26,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-12"
       },
@@ -712,7 +712,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 54,
+        "count": 15,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-12"
       },
@@ -885,19 +885,19 @@
         "lastSeen": "2026-10-09"
       },
       {
-        "name": "Shahed, Fars, Iran",
-        "lat": 28.5934,
-        "lng": 52.2295,
-        "count": 4,
-        "firstSeen": "2026-10-10",
-        "lastSeen": "2026-10-10"
-      },
-      {
         "name": "Chabahar, Sistan Va Baluchestan, Iran",
         "lat": 25.2919,
         "lng": 60.643,
         "count": 4,
         "firstSeen": "2026-10-12",
+        "lastSeen": "2026-10-12"
+      },
+      {
+        "name": "Shahed, Fars, Iran",
+        "lat": 28.5934,
+        "lng": 52.2295,
+        "count": 3,
+        "firstSeen": "2026-10-10",
         "lastSeen": "2026-10-12"
       },
       {
