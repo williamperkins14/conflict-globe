@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T13:08:09.419Z",
+  "generated": "2026-10-13T22:04:36.540Z",
   "conflicts": {
     "ukraine": [
       {
@@ -704,7 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 115,
+        "count": 100,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-13"
       },
@@ -712,7 +712,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 31,
+        "count": 23,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-13"
       },
@@ -720,24 +720,8 @@
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
-        "count": 21,
+        "count": 9,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-13"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 20,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-13"
-      },
-      {
-        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
-        "lat": 26.4344,
-        "lng": 50.1033,
-        "count": 14,
-        "firstSeen": "2026-10-12",
         "lastSeen": "2026-10-13"
       },
       {
@@ -747,6 +731,14 @@
         "count": 9,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-06"
+      },
+      {
+        "name": "Gulf Of Oman, Iran (General), Iran",
+        "lat": 25.4489,
+        "lng": 57.7939,
+        "count": 9,
+        "firstSeen": "2026-09-01",
+        "lastSeen": "2026-10-13"
       },
       {
         "name": "Sumar, Kermanshah, Iran",
@@ -781,11 +773,11 @@
         "lastSeen": "2026-10-03"
       },
       {
-        "name": "Gulf Of Oman, Iran (General), Iran",
-        "lat": 25.4489,
-        "lng": 57.7939,
-        "count": 6,
-        "firstSeen": "2026-09-01",
+        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
+        "lat": 26.4344,
+        "lng": 50.1033,
+        "count": 5,
+        "firstSeen": "2026-10-12",
         "lastSeen": "2026-10-13"
       },
       {
@@ -793,6 +785,14 @@
         "lat": 29.5,
         "lng": 47.75,
         "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-13"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 4,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-13"
       },
