@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T23:56:04.132Z",
+  "generated": "2026-10-13T04:38:24.615Z",
   "conflicts": {
     "ukraine": [
       {
@@ -694,9 +694,9 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 3,
+        "count": 14,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-10-12"
+        "lastSeen": "2026-10-13"
       }
     ],
     "iran": [
@@ -704,25 +704,25 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 26,
+        "count": 74,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-12"
+        "lastSeen": "2026-10-13"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 15,
+        "count": 23,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-12"
+        "lastSeen": "2026-10-13"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 10,
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 21,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-12"
+        "lastSeen": "2026-10-13"
       },
       {
         "name": "Khasab, Musandam, Oman",
@@ -739,30 +739,6 @@
         "count": 7,
         "firstSeen": "2026-10-05",
         "lastSeen": "2026-10-05"
-      },
-      {
-        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
-        "lat": 26.4344,
-        "lng": 50.1033,
-        "count": 7,
-        "firstSeen": "2026-10-12",
-        "lastSeen": "2026-10-12"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-12"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-12"
       },
       {
         "name": "Shahrekord, Chahar Ma?All Va Bakhtiari, Iran",
@@ -789,14 +765,6 @@
         "lastSeen": "2026-10-11"
       },
       {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-12"
-      },
-      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
@@ -811,6 +779,14 @@
         "count": 5,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-10-12"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-13"
       },
       {
         "name": "Mizan, Ardabil, Iran",
@@ -891,6 +867,30 @@
         "count": 4,
         "firstSeen": "2026-10-12",
         "lastSeen": "2026-10-12"
+      },
+      {
+        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
+        "lat": 26.4344,
+        "lng": 50.1033,
+        "count": 3,
+        "firstSeen": "2026-10-12",
+        "lastSeen": "2026-10-13"
+      },
+      {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-13"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-13"
       },
       {
         "name": "Shahed, Fars, Iran",
