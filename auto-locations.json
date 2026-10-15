@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14T16:08:54.566Z",
+  "generated": "2026-10-15T02:16:31.777Z",
   "conflicts": {
     "ukraine": [
       {
@@ -694,9 +694,9 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 3,
+        "count": 4,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-10-14"
+        "lastSeen": "2026-10-15"
       }
     ],
     "iran": [
@@ -704,17 +704,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 139,
+        "count": 50,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-14"
+        "lastSeen": "2026-10-15"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 23,
+        "count": 13,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-14"
+        "lastSeen": "2026-10-15"
       },
       {
         "name": "Qatari",
@@ -733,14 +733,6 @@
         "lastSeen": "2026-10-06"
       },
       {
-        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
-        "lat": 26.4344,
-        "lng": 50.1033,
-        "count": 7,
-        "firstSeen": "2026-10-12",
-        "lastSeen": "2026-10-14"
-      },
-      {
         "name": "Sumar, Kermanshah, Iran",
         "lat": 33.8774,
         "lng": 45.6418,
@@ -749,12 +741,20 @@
         "lastSeen": "2026-10-05"
       },
       {
+        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
+        "lat": 26.4344,
+        "lng": 50.1033,
+        "count": 6,
+        "firstSeen": "2026-10-12",
+        "lastSeen": "2026-10-15"
+      },
+      {
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
-        "count": 7,
+        "count": 6,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-13"
+        "lastSeen": "2026-10-15"
       },
       {
         "name": "Shahrekord, Chahar Ma?All Va Bakhtiari, Iran",
@@ -771,14 +771,6 @@
         "count": 6,
         "firstSeen": "2026-10-03",
         "lastSeen": "2026-10-03"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-14"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
@@ -803,14 +795,6 @@
         "count": 4,
         "firstSeen": "2026-10-05",
         "lastSeen": "2026-10-06"
-      },
-      {
-        "name": "Erbil, Liwa' Irbil, Iraq",
-        "lat": 36.1926,
-        "lng": 44.0106,
-        "count": 4,
-        "firstSeen": "2026-09-18",
-        "lastSeen": "2026-10-01"
       },
       {
         "name": "Sarakhs, Khorasan-E Ra?Avi, Iran",
@@ -861,6 +845,14 @@
         "lastSeen": "2026-10-12"
       },
       {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-15"
+      },
+      {
         "name": "Gulf Of Oman, Iran (General), Iran",
         "lat": 25.4489,
         "lng": 57.7939,
@@ -907,30 +899,6 @@
         "count": 3,
         "firstSeen": "2026-10-02",
         "lastSeen": "2026-10-12"
-      },
-      {
-        "name": "Kurdistan, Khuzestan, Iran",
-        "lat": 30.6693,
-        "lng": 50.2055,
-        "count": 3,
-        "firstSeen": "2026-09-18",
-        "lastSeen": "2026-10-01"
-      },
-      {
-        "name": "Tankan, Sistan Va Baluchestan, Iran",
-        "lat": 26.5519,
-        "lng": 60.9622,
-        "count": 3,
-        "firstSeen": "2026-10-01",
-        "lastSeen": "2026-10-01"
-      },
-      {
-        "name": "Helmand, Helmand, Afghanistan",
-        "lat": 31,
-        "lng": 64,
-        "count": 3,
-        "firstSeen": "2026-10-01",
-        "lastSeen": "2026-10-01"
       },
       {
         "name": "Balad, Sala? Ad Din, Iraq",
