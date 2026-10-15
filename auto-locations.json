@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T02:16:31.777Z",
+  "generated": "2026-10-15T10:31:59.787Z",
   "conflicts": {
     "ukraine": [
       {
@@ -648,6 +648,22 @@
         "lastSeen": "2026-10-10"
       },
       {
+        "name": "Ethiopians",
+        "lat": 8,
+        "lng": 38,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-15"
+      },
+      {
+        "name": "Eritrea",
+        "lat": 15,
+        "lng": 39,
+        "count": 4,
+        "firstSeen": "2026-09-10",
+        "lastSeen": "2026-10-15"
+      },
+      {
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
@@ -662,22 +678,6 @@
         "count": 3,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-14"
-      },
-      {
-        "name": "Ethiopians",
-        "lat": 8,
-        "lng": 38,
-        "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-14"
-      },
-      {
-        "name": "Eritrea",
-        "lat": 15,
-        "lng": 39,
-        "count": 3,
-        "firstSeen": "2026-09-10",
-        "lastSeen": "2026-10-11"
       },
       {
         "name": "Asmara, Ma'akel, Eritrea",
@@ -704,7 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 50,
+        "count": 104,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-15"
       },
@@ -741,14 +741,6 @@
         "lastSeen": "2026-10-05"
       },
       {
-        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
-        "lat": 26.4344,
-        "lng": 50.1033,
-        "count": 6,
-        "firstSeen": "2026-10-12",
-        "lastSeen": "2026-10-15"
-      },
-      {
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
@@ -773,12 +765,12 @@
         "lastSeen": "2026-10-03"
       },
       {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 6,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-14"
+        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
+        "lat": 26.4344,
+        "lng": 50.1033,
+        "count": 5,
+        "firstSeen": "2026-10-12",
+        "lastSeen": "2026-10-15"
       },
       {
         "name": "Armenia",
@@ -837,12 +829,20 @@
         "lastSeen": "2026-10-14"
       },
       {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 3,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-10-15"
+      },
+      {
         "name": "Chabahar, Sistan Va Baluchestan, Iran",
         "lat": 25.2919,
         "lng": 60.643,
-        "count": 4,
+        "count": 3,
         "firstSeen": "2026-10-12",
-        "lastSeen": "2026-10-12"
+        "lastSeen": "2026-10-15"
       },
       {
         "name": "Iraq",
@@ -866,7 +866,7 @@
         "lng": 47.3979,
         "count": 3,
         "firstSeen": "2026-10-03",
-        "lastSeen": "2026-10-14"
+        "lastSeen": "2026-10-15"
       },
       {
         "name": "Kuwait",
@@ -907,6 +907,38 @@
         "count": 3,
         "firstSeen": "2026-10-05",
         "lastSeen": "2026-10-05"
+      },
+      {
+        "name": "Basij, Fars, Iran",
+        "lat": 30.608,
+        "lng": 53.1874,
+        "count": 3,
+        "firstSeen": "2026-10-15",
+        "lastSeen": "2026-10-15"
+      },
+      {
+        "name": "Zabol, Sistan Va Baluchestan, Iran",
+        "lat": 31.0287,
+        "lng": 61.5012,
+        "count": 3,
+        "firstSeen": "2026-10-15",
+        "lastSeen": "2026-10-15"
+      },
+      {
+        "name": "Sistan, Gilan, Iran",
+        "lat": 36.9573,
+        "lng": 49.849,
+        "count": 3,
+        "firstSeen": "2026-10-15",
+        "lastSeen": "2026-10-15"
+      },
+      {
+        "name": "Mashhad, (Ir30), Iran",
+        "lat": 36.297,
+        "lng": 59.6062,
+        "count": 3,
+        "firstSeen": "2026-10-15",
+        "lastSeen": "2026-10-15"
       }
     ]
   },
