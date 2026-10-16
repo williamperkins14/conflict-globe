@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16T15:44:38.627Z",
+  "generated": "2026-10-16T20:13:30.639Z",
   "conflicts": {
     "ukraine": [
       {
@@ -651,7 +651,7 @@
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
-        "count": 10,
+        "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-16"
       },
@@ -696,7 +696,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 75,
+        "count": 63,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-16"
       },
@@ -704,23 +704,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 19,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-16"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 13,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-16"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 12,
+        "count": 10,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-16"
       },
@@ -731,6 +715,14 @@
         "count": 9,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-06"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-16"
       },
       {
         "name": "Sumar, Kermanshah, Iran",
@@ -755,6 +747,14 @@
         "count": 6,
         "firstSeen": "2026-10-03",
         "lastSeen": "2026-10-03"
+      },
+      {
+        "name": "Asad Khan, Khuzestan, Iran",
+        "lat": 31.6856,
+        "lng": 48.5707,
+        "count": 6,
+        "firstSeen": "2026-10-16",
+        "lastSeen": "2026-10-16"
       },
       {
         "name": "Kuwait",
@@ -810,6 +810,14 @@
         "lng": 51.5333,
         "count": 4,
         "firstSeen": "2026-09-03",
+        "lastSeen": "2026-10-16"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 3,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-16"
       },
       {
