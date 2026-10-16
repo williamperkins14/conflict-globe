@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16T02:08:06.853Z",
+  "generated": "2026-10-16T10:19:10.263Z",
   "conflicts": {
     "ukraine": [
       {
@@ -696,7 +696,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 85,
+        "count": 75,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-16"
       },
@@ -704,33 +704,9 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 18,
+        "count": 13,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-16"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 14,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-15"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 12,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-16"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 10,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-15"
       },
       {
         "name": "Khasab, Musandam, Oman",
@@ -765,20 +741,20 @@
         "lastSeen": "2026-10-03"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 4,
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 5,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-16"
       },
       {
-        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
-        "lat": 26.4344,
-        "lng": 50.1033,
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
         "count": 4,
-        "firstSeen": "2026-10-12",
-        "lastSeen": "2026-10-15"
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-16"
       },
       {
         "name": "Armenia",
@@ -821,6 +797,38 @@
         "lastSeen": "2026-10-14"
       },
       {
+        "name": "Gulf Of Oman, Iran (General), Iran",
+        "lat": 25.4489,
+        "lng": 57.7939,
+        "count": 4,
+        "firstSeen": "2026-09-01",
+        "lastSeen": "2026-10-16"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-16"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-16"
+      },
+      {
+        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
+        "lat": 26.4344,
+        "lng": 50.1033,
+        "count": 3,
+        "firstSeen": "2026-10-12",
+        "lastSeen": "2026-10-16"
+      },
+      {
         "name": "Persian Gulf, Oceans (General), Oceans",
         "lat": 27,
         "lng": 51,
@@ -843,14 +851,6 @@
         "count": 3,
         "firstSeen": "2026-10-12",
         "lastSeen": "2026-10-15"
-      },
-      {
-        "name": "Gulf Of Oman, Iran (General), Iran",
-        "lat": 25.4489,
-        "lng": 57.7939,
-        "count": 3,
-        "firstSeen": "2026-09-01",
-        "lastSeen": "2026-10-14"
       },
       {
         "name": "Mizan, Ardabil, Iran",
