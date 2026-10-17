@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T02:01:52.393Z",
+  "generated": "2026-10-17T09:52:34.925Z",
   "conflicts": {
     "ukraine": [
       {
@@ -696,7 +696,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 33,
+        "count": 70,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-17"
       },
@@ -704,7 +704,39 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 9,
+        "count": 34,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 13,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 11,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Al Jubayl, Ash Sharqiyah, Saudi Arabia",
+        "lat": 27.0112,
+        "lng": 49.6583,
+        "count": 11,
+        "firstSeen": "2026-10-17",
+        "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 10,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-17"
       },
@@ -725,11 +757,11 @@
         "lastSeen": "2026-10-05"
       },
       {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
+        "name": "Sistan, Gilan, Iran",
+        "lat": 36.9573,
+        "lng": 49.849,
         "count": 7,
-        "firstSeen": "2026-08-28",
+        "firstSeen": "2026-10-15",
         "lastSeen": "2026-10-17"
       },
       {
@@ -744,17 +776,9 @@
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
-        "count": 4,
+        "count": 6,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-17"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-16"
       },
       {
         "name": "Shuaiba, Kuwait (General), Kuwait",
@@ -802,15 +826,31 @@
         "lng": 51.5333,
         "count": 4,
         "firstSeen": "2026-09-03",
-        "lastSeen": "2026-10-16"
+        "lastSeen": "2026-10-17"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-16"
+        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
+        "lat": 26.4344,
+        "lng": 50.1033,
+        "count": 4,
+        "firstSeen": "2026-10-12",
+        "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 4,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Ras Al Khaimah, Ra's Al Khaymah, United Arab Emirates",
+        "lat": 25.7895,
+        "lng": 55.9432,
+        "count": 4,
+        "firstSeen": "2026-10-17",
+        "lastSeen": "2026-10-17"
       },
       {
         "name": "Armenia",
@@ -821,28 +861,12 @@
         "lastSeen": "2026-10-16"
       },
       {
-        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
-        "lat": 26.4344,
-        "lng": 50.1033,
-        "count": 3,
-        "firstSeen": "2026-10-12",
-        "lastSeen": "2026-10-16"
-      },
-      {
         "name": "Persian Gulf, Oceans (General), Oceans",
         "lat": 27,
         "lng": 51,
         "count": 3,
         "firstSeen": "2026-10-06",
         "lastSeen": "2026-10-15"
-      },
-      {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 3,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-17"
       },
       {
         "name": "Chabahar, Sistan Va Baluchestan, Iran",
@@ -896,14 +920,6 @@
         "name": "Zabol, Sistan Va Baluchestan, Iran",
         "lat": 31.0287,
         "lng": 61.5012,
-        "count": 3,
-        "firstSeen": "2026-10-15",
-        "lastSeen": "2026-10-15"
-      },
-      {
-        "name": "Sistan, Gilan, Iran",
-        "lat": 36.9573,
-        "lng": 49.849,
         "count": 3,
         "firstSeen": "2026-10-15",
         "lastSeen": "2026-10-15"
