@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-17T19:49:21.507Z",
+  "generated": "2026-10-18T02:01:18.599Z",
   "conflicts": {
     "ukraine": [
       {
@@ -693,14 +693,6 @@
     ],
     "iran": [
       {
-        "name": "Iranian",
-        "lat": 32,
-        "lng": 53,
-        "count": 27,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-17"
-      },
-      {
         "name": "Kuwait",
         "lat": 29.5,
         "lng": 47.75,
@@ -725,20 +717,20 @@
         "lastSeen": "2026-10-17"
       },
       {
+        "name": "Iranian",
+        "lat": 32,
+        "lng": 53,
+        "count": 9,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-18"
+      },
+      {
         "name": "Khasab, Musandam, Oman",
         "lat": 26.1799,
         "lng": 56.2477,
         "count": 9,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-06"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 8,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-17"
       },
       {
         "name": "Sumar, Kermanshah, Iran",
@@ -843,6 +835,14 @@
         "count": 4,
         "firstSeen": "2026-10-17",
         "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-18"
       },
       {
         "name": "Qatari",
