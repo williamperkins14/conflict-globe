@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-18T15:03:58.417Z",
+  "generated": "2026-10-18T19:50:23.135Z",
   "conflicts": {
     "ukraine": [
       {
@@ -696,7 +696,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 54,
+        "count": 64,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-18"
       },
@@ -704,7 +704,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 13,
+        "count": 15,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-18"
       },
