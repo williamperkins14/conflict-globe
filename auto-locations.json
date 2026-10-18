@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-18T02:01:18.599Z",
+  "generated": "2026-10-18T10:04:17.923Z",
   "conflicts": {
     "ukraine": [
       {
@@ -693,12 +693,20 @@
     ],
     "iran": [
       {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 13,
+        "name": "Iranian",
+        "lat": 32,
+        "lng": 53,
+        "count": 48,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-17"
+        "lastSeen": "2026-10-18"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 19,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-18"
       },
       {
         "name": "Bahrain",
@@ -717,20 +725,20 @@
         "lastSeen": "2026-10-17"
       },
       {
-        "name": "Iranian",
-        "lat": 32,
-        "lng": 53,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-18"
-      },
-      {
         "name": "Khasab, Musandam, Oman",
         "lat": 26.1799,
         "lng": 56.2477,
         "count": 9,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-06"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 8,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-18"
       },
       {
         "name": "Sumar, Kermanshah, Iran",
@@ -749,6 +757,14 @@
         "lastSeen": "2026-10-17"
       },
       {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-18"
+      },
+      {
         "name": "Asad Khan, Khuzestan, Iran",
         "lat": 31.6856,
         "lng": 48.5707,
@@ -757,12 +773,12 @@
         "lastSeen": "2026-10-16"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
+        "name": "Baghdad, Baghdad, Iraq",
+        "lat": 33.3386,
+        "lng": 44.3939,
         "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-17"
+        "firstSeen": "2026-09-12",
+        "lastSeen": "2026-10-18"
       },
       {
         "name": "Shuaiba, Kuwait (General), Kuwait",
@@ -787,14 +803,6 @@
         "count": 4,
         "firstSeen": "2026-10-05",
         "lastSeen": "2026-10-05"
-      },
-      {
-        "name": "Baghdad, Baghdad, Iraq",
-        "lat": 33.3386,
-        "lng": 44.3939,
-        "count": 4,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-10-16"
       },
       {
         "name": "Gulf Of Oman, Iran (General), Iran",
@@ -835,14 +843,6 @@
         "count": 4,
         "firstSeen": "2026-10-17",
         "lastSeen": "2026-10-17"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-18"
       },
       {
         "name": "Qatari",
@@ -931,6 +931,14 @@
         "count": 3,
         "firstSeen": "2026-10-15",
         "lastSeen": "2026-10-15"
+      },
+      {
+        "name": "Manama, Al Manamah, Bahrain",
+        "lat": 26.2361,
+        "lng": 50.5831,
+        "count": 3,
+        "firstSeen": "2026-10-18",
+        "lastSeen": "2026-10-18"
       }
     ]
   },
