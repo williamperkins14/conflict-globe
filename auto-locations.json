@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T17:55:35.664Z",
+  "generated": "2026-10-19T21:50:43.426Z",
   "conflicts": {
     "ukraine": [
       {
@@ -651,7 +651,7 @@
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
-        "count": 9,
+        "count": 10,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-19"
       },
@@ -694,7 +694,7 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 4,
+        "count": 8,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-10-19"
       }
@@ -704,7 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 162,
+        "count": 127,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-19"
       },
@@ -712,15 +712,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 22,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-19"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 12,
+        "count": 15,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-19"
       },
@@ -757,6 +749,14 @@
         "lastSeen": "2026-10-18"
       },
       {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-19"
+      },
+      {
         "name": "Asad Khan, Khuzestan, Iran",
         "lat": 31.6856,
         "lng": 48.5707,
@@ -781,17 +781,17 @@
         "lastSeen": "2026-10-19"
       },
       {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
         "count": 5,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-19"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
         "count": 4,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-19"
@@ -835,6 +835,14 @@
         "count": 4,
         "firstSeen": "2026-10-17",
         "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Taj Mahal, Kerman, Iran",
+        "lat": 28.15,
+        "lng": 58.0667,
+        "count": 4,
+        "firstSeen": "2026-10-19",
+        "lastSeen": "2026-10-19"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
