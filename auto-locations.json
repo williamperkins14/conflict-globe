@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-18T19:50:23.135Z",
+  "generated": "2026-10-19T02:18:20.808Z",
   "conflicts": {
     "ukraine": [
       {
@@ -696,25 +696,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 64,
+        "count": 20,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-18"
+        "lastSeen": "2026-10-19"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 15,
+        "count": 13,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-18"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 11,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-17"
+        "lastSeen": "2026-10-19"
       },
       {
         "name": "Al Jubayl, Ash Sharqiyah, Saudi Arabia",
@@ -733,20 +725,20 @@
         "lastSeen": "2026-10-06"
       },
       {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-19"
+      },
+      {
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
         "count": 7,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-18"
-      },
-      {
-        "name": "Sumar, Kermanshah, Iran",
-        "lat": 33.8774,
-        "lng": 45.6418,
-        "count": 7,
-        "firstSeen": "2026-10-05",
-        "lastSeen": "2026-10-05"
       },
       {
         "name": "Sistan, Gilan, Iran",
@@ -802,7 +794,7 @@
         "lng": 51.25,
         "count": 5,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-18"
+        "lastSeen": "2026-10-19"
       },
       {
         "name": "Shuaiba, Kuwait (General), Kuwait",
@@ -811,22 +803,6 @@
         "count": 4,
         "firstSeen": "2026-10-05",
         "lastSeen": "2026-10-06"
-      },
-      {
-        "name": "Khurais, Ash Sharqiyah, Saudi Arabia",
-        "lat": 25.0594,
-        "lng": 48.0639,
-        "count": 4,
-        "firstSeen": "2026-10-04",
-        "lastSeen": "2026-10-05"
-      },
-      {
-        "name": "Kuwait City, Kuwait (General), Kuwait",
-        "lat": 29.3697,
-        "lng": 47.9783,
-        "count": 4,
-        "firstSeen": "2026-10-05",
-        "lastSeen": "2026-10-05"
       },
       {
         "name": "Gulf Of Oman, Iran (General), Iran",
@@ -850,7 +826,7 @@
         "lng": 50.1033,
         "count": 4,
         "firstSeen": "2026-10-12",
-        "lastSeen": "2026-10-17"
+        "lastSeen": "2026-10-19"
       },
       {
         "name": "Ras Al Khaimah, Ra's Al Khaymah, United Arab Emirates",
@@ -901,14 +877,6 @@
         "lastSeen": "2026-10-12"
       },
       {
-        "name": "Balad, Sala? Ad Din, Iraq",
-        "lat": 34.0148,
-        "lng": 44.1457,
-        "count": 3,
-        "firstSeen": "2026-10-05",
-        "lastSeen": "2026-10-05"
-      },
-      {
         "name": "Basij, Fars, Iran",
         "lat": 30.608,
         "lng": 53.1874,
@@ -938,7 +906,7 @@
         "lng": 50.5831,
         "count": 3,
         "firstSeen": "2026-10-18",
-        "lastSeen": "2026-10-18"
+        "lastSeen": "2026-10-19"
       }
     ]
   },
