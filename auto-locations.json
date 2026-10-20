@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T15:59:45.987Z",
+  "generated": "2026-10-20T20:59:32.034Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,14 +640,6 @@
     ],
     "sudan": [
       {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 21,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-20"
-      },
-      {
         "name": "Abu Shandi, An Nil Al Azraq, Sudan",
         "lat": 11.35,
         "lng": 34.7,
@@ -659,15 +651,23 @@
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
-        "count": 9,
+        "count": 13,
         "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-20"
+      },
+      {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 4,
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-20"
       },
       {
         "name": "South Sudan",
         "lat": 8,
         "lng": 30,
-        "count": 8,
+        "count": 4,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-20"
       },
@@ -688,20 +688,20 @@
         "lastSeen": "2026-10-20"
       },
       {
+        "name": "Kordofan, Shamal Kurdufan, Sudan",
+        "lat": 13.0833,
+        "lng": 30.35,
+        "count": 4,
+        "firstSeen": "2026-10-20",
+        "lastSeen": "2026-10-20"
+      },
+      {
         "name": "Atbara, Nahr An Nil, Sudan",
         "lat": 17.6925,
         "lng": 33.9852,
         "count": 3,
         "firstSeen": "2026-10-19",
         "lastSeen": "2026-10-19"
-      },
-      {
-        "name": "Kordofan, Shamal Kurdufan, Sudan",
-        "lat": 13.0833,
-        "lng": 30.35,
-        "count": 3,
-        "firstSeen": "2026-10-20",
-        "lastSeen": "2026-10-20"
       },
       {
         "name": "Al-Mujlad, Janub Kurdufan, Sudan",
@@ -728,15 +728,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 95,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-20"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 52,
+        "count": 141,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-20"
       },
@@ -749,20 +741,20 @@
         "lastSeen": "2026-10-20"
       },
       {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 11,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-20"
+      },
+      {
         "name": "Al Jubayl, Ash Sharqiyah, Saudi Arabia",
         "lat": 27.0112,
         "lng": 49.6583,
         "count": 11,
         "firstSeen": "2026-10-17",
         "lastSeen": "2026-10-17"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-20"
       },
       {
         "name": "Doha, Ad Daw?Ah, Qatar",
@@ -874,6 +866,14 @@
         "lng": 50.0049,
         "count": 4,
         "firstSeen": "2026-10-20",
+        "lastSeen": "2026-10-20"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 3,
+        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-20"
       },
       {
