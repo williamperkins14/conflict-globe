@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T16:16:35.723Z",
+  "generated": "2026-10-21T21:00:10.762Z",
   "conflicts": {
     "ukraine": [
       {
@@ -728,22 +728,14 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 95,
+        "count": 93,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-21"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 31,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-21"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
         "count": 26,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-21"
@@ -757,10 +749,18 @@
         "lastSeen": "2026-10-21"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 15,
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 19,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-21"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 13,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-21"
       },
@@ -789,20 +789,20 @@
         "lastSeen": "2026-10-17"
       },
       {
+        "name": "Baghdad, Baghdad, Iraq",
+        "lat": 33.3386,
+        "lng": 44.3939,
+        "count": 7,
+        "firstSeen": "2026-09-12",
+        "lastSeen": "2026-10-21"
+      },
+      {
         "name": "Asad Khan, Khuzestan, Iran",
         "lat": 31.6856,
         "lng": 48.5707,
         "count": 6,
         "firstSeen": "2026-10-16",
         "lastSeen": "2026-10-16"
-      },
-      {
-        "name": "Baghdad, Baghdad, Iraq",
-        "lat": 33.3386,
-        "lng": 44.3939,
-        "count": 5,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-10-21"
       },
       {
         "name": "Armenia",
