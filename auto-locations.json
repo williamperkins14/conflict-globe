@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T02:26:15.320Z",
+  "generated": "2026-10-21T10:48:05.980Z",
   "conflicts": {
     "ukraine": [
       {
@@ -651,7 +651,7 @@
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
-        "count": 5,
+        "count": 10,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-21"
       },
@@ -728,15 +728,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 70,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-21"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 15,
+        "count": 33,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-21"
       },
@@ -757,20 +749,20 @@
         "lastSeen": "2026-10-17"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-21"
-      },
-      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
         "count": 8,
         "firstSeen": "2026-09-03",
         "lastSeen": "2026-10-20"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-21"
       },
       {
         "name": "Sistan, Gilan, Iran",
@@ -813,20 +805,20 @@
         "lastSeen": "2026-10-19"
       },
       {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 5,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-20"
-      },
-      {
         "name": "Kuwait",
         "lat": 29.5,
         "lng": 47.75,
         "count": 5,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-20"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-21"
       },
       {
         "name": "Gulf Of Oman, Iran (General), Iran",
@@ -875,6 +867,14 @@
         "count": 4,
         "firstSeen": "2026-10-20",
         "lastSeen": "2026-10-20"
+      },
+      {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 3,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-10-21"
       },
       {
         "name": "Persian Gulf, Oceans (General), Oceans",
