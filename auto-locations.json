@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20T20:59:32.034Z",
+  "generated": "2026-10-21T02:26:15.320Z",
   "conflicts": {
     "ukraine": [
       {
@@ -651,9 +651,9 @@
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
-        "count": 13,
+        "count": 5,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-20"
+        "lastSeen": "2026-10-21"
       },
       {
         "name": "Sudan",
@@ -728,25 +728,25 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 141,
+        "count": 70,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-20"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 28,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-20"
+        "lastSeen": "2026-10-21"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 11,
+        "count": 15,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-20"
+        "lastSeen": "2026-10-21"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 15,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-21"
       },
       {
         "name": "Al Jubayl, Ash Sharqiyah, Saudi Arabia",
@@ -755,6 +755,14 @@
         "count": 11,
         "firstSeen": "2026-10-17",
         "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 9,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-21"
       },
       {
         "name": "Doha, Ad Daw?Ah, Qatar",
@@ -866,14 +874,6 @@
         "lng": 50.0049,
         "count": 4,
         "firstSeen": "2026-10-20",
-        "lastSeen": "2026-10-20"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 3,
-        "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-20"
       },
       {
