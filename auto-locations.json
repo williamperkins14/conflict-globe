@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-21T10:48:05.980Z",
+  "generated": "2026-10-21T16:16:35.723Z",
   "conflicts": {
     "ukraine": [
       {
@@ -718,9 +718,9 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 9,
+        "count": 4,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-10-20"
+        "lastSeen": "2026-10-21"
       }
     ],
     "iran": [
@@ -728,7 +728,31 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 33,
+        "count": 95,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-21"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 31,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-21"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 26,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-21"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 22,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-21"
       },
@@ -757,36 +781,12 @@
         "lastSeen": "2026-10-20"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-21"
-      },
-      {
         "name": "Sistan, Gilan, Iran",
         "lat": 36.9573,
         "lng": 49.849,
         "count": 7,
         "firstSeen": "2026-10-15",
         "lastSeen": "2026-10-17"
-      },
-      {
-        "name": "Baghdad, Baghdad, Iraq",
-        "lat": 33.3386,
-        "lng": 44.3939,
-        "count": 7,
-        "firstSeen": "2026-09-12",
-        "lastSeen": "2026-10-18"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-20"
       },
       {
         "name": "Asad Khan, Khuzestan, Iran",
@@ -797,27 +797,19 @@
         "lastSeen": "2026-10-16"
       },
       {
+        "name": "Baghdad, Baghdad, Iraq",
+        "lat": 33.3386,
+        "lng": 44.3939,
+        "count": 5,
+        "firstSeen": "2026-09-12",
+        "lastSeen": "2026-10-21"
+      },
+      {
         "name": "Armenia",
         "lat": 40,
         "lng": 45,
-        "count": 5,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-19"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-20"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
         "count": 4,
-        "firstSeen": "2026-08-28",
+        "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-21"
       },
       {
@@ -853,20 +845,36 @@
         "lastSeen": "2026-10-19"
       },
       {
+        "name": "Bukha, Musandam, Oman",
+        "lat": 26.1431,
+        "lng": 56.1528,
+        "count": 4,
+        "firstSeen": "2026-10-21",
+        "lastSeen": "2026-10-21"
+      },
+      {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-21"
+      },
+      {
         "name": "Manama, Al Manamah, Bahrain",
         "lat": 26.2361,
         "lng": 50.5831,
-        "count": 4,
+        "count": 3,
         "firstSeen": "2026-10-18",
-        "lastSeen": "2026-10-20"
+        "lastSeen": "2026-10-21"
       },
       {
         "name": "Qazvin, Qazvin, Iran",
         "lat": 36.2797,
         "lng": 50.0049,
-        "count": 4,
+        "count": 3,
         "firstSeen": "2026-10-20",
-        "lastSeen": "2026-10-20"
+        "lastSeen": "2026-10-21"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
@@ -947,6 +955,22 @@
         "count": 3,
         "firstSeen": "2026-10-20",
         "lastSeen": "2026-10-20"
+      },
+      {
+        "name": "Chazabeh, Khuzestan, Iran",
+        "lat": 31.788,
+        "lng": 47.9335,
+        "count": 3,
+        "firstSeen": "2026-10-21",
+        "lastSeen": "2026-10-21"
+      },
+      {
+        "name": "Shalamcheh, Khuzestan, Iran",
+        "lat": 30.5049,
+        "lng": 48.0294,
+        "count": 3,
+        "firstSeen": "2026-10-21",
+        "lastSeen": "2026-10-21"
       }
     ]
   },
