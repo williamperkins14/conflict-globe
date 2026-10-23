@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T10:41:14.176Z",
+  "generated": "2026-10-23T16:05:23.174Z",
   "conflicts": {
     "ukraine": [
       {
@@ -653,13 +653,13 @@
         "lng": 38,
         "count": 6,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-22"
+        "lastSeen": "2026-10-23"
       },
       {
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
-        "count": 6,
+        "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-23"
       },
@@ -728,7 +728,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 46,
+        "count": 71,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-23"
       },
@@ -736,7 +736,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 11,
+        "count": 18,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-23"
       },
@@ -765,20 +765,20 @@
         "lastSeen": "2026-10-17"
       },
       {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-23"
+      },
+      {
         "name": "Asad Khan, Khuzestan, Iran",
         "lat": 31.6856,
         "lng": 48.5707,
         "count": 6,
         "firstSeen": "2026-10-16",
         "lastSeen": "2026-10-16"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-22"
       },
       {
         "name": "Doha, Ad Daw?Ah, Qatar",
