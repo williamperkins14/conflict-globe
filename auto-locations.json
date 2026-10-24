@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T20:46:31.185Z",
+  "generated": "2026-10-24T02:25:22.154Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,14 +640,6 @@
     ],
     "sudan": [
       {
-        "name": "Abu Shandi, An Nil Al Azraq, Sudan",
-        "lat": 11.35,
-        "lng": 34.7,
-        "count": 13,
-        "firstSeen": "2026-10-10",
-        "lastSeen": "2026-10-10"
-      },
-      {
         "name": "Ethiopians",
         "lat": 8,
         "lng": 38,
@@ -728,25 +720,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 73,
+        "count": 74,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-23"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 21,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-23"
+        "lastSeen": "2026-10-24"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 15,
+        "count": 21,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-23"
+        "lastSeen": "2026-10-24"
       },
       {
         "name": "Al Jubayl, Ash Sharqiyah, Saudi Arabia",
@@ -755,6 +739,14 @@
         "count": 11,
         "firstSeen": "2026-10-17",
         "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 10,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-24"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
@@ -781,12 +773,12 @@
         "lastSeen": "2026-10-16"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
         "count": 5,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-23"
+        "lastSeen": "2026-10-24"
       },
       {
         "name": "Doha, Ad Daw?Ah, Qatar",
