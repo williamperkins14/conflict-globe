@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T02:12:32.071Z",
+  "generated": "2026-10-25T10:21:34.686Z",
   "conflicts": {
     "ukraine": [
       {
@@ -712,7 +712,7 @@
         "lng": -72.4167,
         "count": 3,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-10-24"
+        "lastSeen": "2026-10-25"
       }
     ],
     "iran": [
@@ -720,15 +720,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 79,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-25"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 18,
+        "count": 22,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-25"
       },
@@ -749,12 +741,12 @@
         "lastSeen": "2026-10-25"
       },
       {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
         "count": 8,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-22"
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-25"
       },
       {
         "name": "Sistan, Gilan, Iran",
@@ -867,6 +859,14 @@
         "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-23"
+      },
+      {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 3,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-10-25"
       },
       {
         "name": "Qatari",
