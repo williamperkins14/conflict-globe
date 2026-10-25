@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T19:57:28.886Z",
+  "generated": "2026-10-25T02:12:32.071Z",
   "conflicts": {
     "ukraine": [
       {
@@ -720,17 +720,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 43,
+        "count": 79,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-24"
+        "lastSeen": "2026-10-25"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 17,
+        "count": 18,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-24"
+        "lastSeen": "2026-10-25"
       },
       {
         "name": "Al Jubayl, Ash Sharqiyah, Saudi Arabia",
@@ -744,9 +744,9 @@
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
-        "count": 8,
+        "count": 9,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-24"
+        "lastSeen": "2026-10-25"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
@@ -757,20 +757,20 @@
         "lastSeen": "2026-10-22"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-24"
-      },
-      {
         "name": "Sistan, Gilan, Iran",
         "lat": 36.9573,
         "lng": 49.849,
         "count": 7,
         "firstSeen": "2026-10-15",
         "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
+        "lat": 26.4344,
+        "lng": 50.1033,
+        "count": 7,
+        "firstSeen": "2026-10-12",
+        "lastSeen": "2026-10-25"
       },
       {
         "name": "Asad Khan, Khuzestan, Iran",
@@ -781,28 +781,12 @@
         "lastSeen": "2026-10-16"
       },
       {
-        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
-        "lat": 26.4344,
-        "lng": 50.1033,
-        "count": 6,
-        "firstSeen": "2026-10-12",
-        "lastSeen": "2026-10-24"
-      },
-      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
         "count": 5,
         "firstSeen": "2026-09-03",
         "lastSeen": "2026-10-22"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-24"
       },
       {
         "name": "Kuwait",
@@ -883,6 +867,22 @@
         "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-23"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-25"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-25"
       },
       {
         "name": "Gulf Of Oman, Iran (General), Iran",
