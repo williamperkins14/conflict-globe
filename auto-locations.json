@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T21:35:43.152Z",
+  "generated": "2026-10-28T02:57:08.058Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,14 +640,6 @@
     ],
     "sudan": [
       {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 11,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-27"
-      },
-      {
         "name": "Darfur, Gharb Darfur, Sudan",
         "lat": 13.5,
         "lng": 23.5,
@@ -696,6 +688,14 @@
         "lastSeen": "2026-10-20"
       },
       {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 3,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-10-28"
+      },
+      {
         "name": "Eritrea",
         "lat": 15,
         "lng": 39,
@@ -736,17 +736,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 136,
+        "count": 68,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-27"
+        "lastSeen": "2026-10-28"
       },
       {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 19,
+        "count": 18,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-27"
+        "lastSeen": "2026-10-28"
       },
       {
         "name": "Baghdad, Baghdad, Iraq",
@@ -765,20 +765,20 @@
         "lastSeen": "2026-10-17"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-27"
-      },
-      {
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
         "count": 9,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-27"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 8,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-28"
       },
       {
         "name": "Sistan, Gilan, Iran",
@@ -829,20 +829,20 @@
         "lastSeen": "2026-10-27"
       },
       {
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-28"
+      },
+      {
         "name": "Armenia",
         "lat": 40,
         "lng": 45,
         "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-27"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-24"
       },
       {
         "name": "Ras Al Khaimah, Ra's Al Khaymah, United Arab Emirates",
@@ -914,7 +914,7 @@
         "lng": 55.28,
         "count": 3,
         "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-26"
+        "lastSeen": "2026-10-28"
       },
       {
         "name": "Persian Gulf, Oceans (General), Oceans",
