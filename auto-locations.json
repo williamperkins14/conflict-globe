@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-28T21:59:13.942Z",
+  "generated": "2026-10-29T03:23:17.553Z",
   "conflicts": {
     "ukraine": [
       {
@@ -736,17 +736,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 58,
+        "count": 62,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-28"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 14,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-28"
+        "lastSeen": "2026-10-29"
       },
       {
         "name": "Baghdad, Baghdad, Iraq",
@@ -757,20 +749,20 @@
         "lastSeen": "2026-10-27"
       },
       {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 11,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-29"
+      },
+      {
         "name": "Al Jubayl, Ash Sharqiyah, Saudi Arabia",
         "lat": 27.0112,
         "lng": 49.6583,
         "count": 11,
         "firstSeen": "2026-10-17",
         "lastSeen": "2026-10-17"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 10,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-28"
       },
       {
         "name": "Bahrain",
@@ -781,6 +773,14 @@
         "lastSeen": "2026-10-27"
       },
       {
+        "name": "Shahed, Fars, Iran",
+        "lat": 28.5934,
+        "lng": 52.2295,
+        "count": 9,
+        "firstSeen": "2026-10-29",
+        "lastSeen": "2026-10-29"
+      },
+      {
         "name": "Sistan, Gilan, Iran",
         "lat": 36.9573,
         "lng": 49.849,
@@ -789,20 +789,20 @@
         "lastSeen": "2026-10-17"
       },
       {
-        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
-        "lat": 26.4344,
-        "lng": 50.1033,
-        "count": 7,
-        "firstSeen": "2026-10-12",
-        "lastSeen": "2026-10-28"
-      },
-      {
         "name": "Asad Khan, Khuzestan, Iran",
         "lat": 31.6856,
         "lng": 48.5707,
         "count": 6,
         "firstSeen": "2026-10-16",
         "lastSeen": "2026-10-16"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-29"
       },
       {
         "name": "Doha, Ad Daw?Ah, Qatar",
@@ -901,12 +901,20 @@
         "lastSeen": "2026-10-22"
       },
       {
+        "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
+        "lat": 26.4344,
+        "lng": 50.1033,
+        "count": 3,
+        "firstSeen": "2026-10-12",
+        "lastSeen": "2026-10-29"
+      },
+      {
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
         "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-28"
+        "lastSeen": "2026-10-29"
       },
       {
         "name": "Gulf Of Oman, Iran (General), Iran",
@@ -917,60 +925,12 @@
         "lastSeen": "2026-10-27"
       },
       {
-        "name": "Persian Gulf, Oceans (General), Oceans",
-        "lat": 27,
-        "lng": 51,
-        "count": 3,
-        "firstSeen": "2026-10-06",
-        "lastSeen": "2026-10-15"
-      },
-      {
-        "name": "Chabahar, Sistan Va Baluchestan, Iran",
-        "lat": 25.2919,
-        "lng": 60.643,
-        "count": 3,
-        "firstSeen": "2026-10-12",
-        "lastSeen": "2026-10-15"
-      },
-      {
-        "name": "Mizan, Ardabil, Iran",
-        "lat": 38.365,
-        "lng": 47.3979,
-        "count": 3,
-        "firstSeen": "2026-10-03",
-        "lastSeen": "2026-10-15"
-      },
-      {
         "name": "Turkmenistan",
         "lat": 40,
         "lng": 60,
         "count": 3,
         "firstSeen": "2026-10-02",
         "lastSeen": "2026-10-19"
-      },
-      {
-        "name": "Basij, Fars, Iran",
-        "lat": 30.608,
-        "lng": 53.1874,
-        "count": 3,
-        "firstSeen": "2026-10-15",
-        "lastSeen": "2026-10-15"
-      },
-      {
-        "name": "Zabol, Sistan Va Baluchestan, Iran",
-        "lat": 31.0287,
-        "lng": 61.5012,
-        "count": 3,
-        "firstSeen": "2026-10-15",
-        "lastSeen": "2026-10-15"
-      },
-      {
-        "name": "Mashhad, (Ir30), Iran",
-        "lat": 36.297,
-        "lng": 59.6062,
-        "count": 3,
-        "firstSeen": "2026-10-15",
-        "lastSeen": "2026-10-15"
       },
       {
         "name": "Abyan, Fars, Iran",
