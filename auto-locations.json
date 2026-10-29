@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29T03:23:17.553Z",
+  "generated": "2026-10-29T17:49:31.715Z",
   "conflicts": {
     "ukraine": [
       {
@@ -659,9 +659,9 @@
         "name": "South Sudan",
         "lat": 8,
         "lng": 30,
-        "count": 6,
+        "count": 4,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-27"
+        "lastSeen": "2026-10-29"
       },
       {
         "name": "Abyei, Janub Kurdufan, Sudan",
@@ -675,9 +675,9 @@
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
-        "count": 4,
+        "count": 3,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-28"
+        "lastSeen": "2026-10-29"
       },
       {
         "name": "Darfur, Gharb Darfur, Sudan",
@@ -736,7 +736,15 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 62,
+        "count": 115,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-29"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 17,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-29"
       },
@@ -747,14 +755,6 @@
         "count": 13,
         "firstSeen": "2026-09-12",
         "lastSeen": "2026-10-27"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 11,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-29"
       },
       {
         "name": "Al Jubayl, Ash Sharqiyah, Saudi Arabia",
@@ -781,6 +781,14 @@
         "lastSeen": "2026-10-29"
       },
       {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-29"
+      },
+      {
         "name": "Sistan, Gilan, Iran",
         "lat": 36.9573,
         "lng": 49.849,
@@ -797,20 +805,12 @@
         "lastSeen": "2026-10-16"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-29"
-      },
-      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
         "count": 5,
         "firstSeen": "2026-09-03",
-        "lastSeen": "2026-10-22"
+        "lastSeen": "2026-10-29"
       },
       {
         "name": "Bandar Abbas, Hormozgan, Iran",
@@ -824,17 +824,9 @@
         "name": "Kuwait",
         "lat": 29.5,
         "lng": 47.75,
-        "count": 5,
+        "count": 4,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-28"
-      },
-      {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 5,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-10-28"
+        "lastSeen": "2026-10-29"
       },
       {
         "name": "Armenia",
@@ -899,6 +891,14 @@
         "count": 4,
         "firstSeen": "2026-10-21",
         "lastSeen": "2026-10-22"
+      },
+      {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 3,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-10-29"
       },
       {
         "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
