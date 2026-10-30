@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T17:25:31.899Z",
+  "generated": "2026-10-30T21:46:51.702Z",
   "conflicts": {
     "ukraine": [
       {
@@ -726,7 +726,7 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 3,
+        "count": 4,
         "firstSeen": "2026-09-02",
         "lastSeen": "2026-10-30"
       }
@@ -736,7 +736,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 52,
+        "count": 83,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-30"
       },
@@ -744,7 +744,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 14,
+        "count": 11,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-30"
       },
@@ -797,12 +797,20 @@
         "lastSeen": "2026-10-30"
       },
       {
-        "name": "Doha, Ad Daw?Ah, Qatar",
-        "lat": 25.2867,
-        "lng": 51.5333,
-        "count": 5,
-        "firstSeen": "2026-09-03",
-        "lastSeen": "2026-10-29"
+        "name": "Lavan Island, Hormozgan, Iran",
+        "lat": 26.8,
+        "lng": 53.25,
+        "count": 6,
+        "firstSeen": "2026-10-30",
+        "lastSeen": "2026-10-30"
+      },
+      {
+        "name": "Qeshm, Kordestan, Iran",
+        "lat": 35.4421,
+        "lng": 47.3506,
+        "count": 6,
+        "firstSeen": "2026-10-30",
+        "lastSeen": "2026-10-30"
       },
       {
         "name": "Bandar Abbas, Hormozgan, Iran",
@@ -898,6 +906,14 @@
         "lng": 55.28,
         "count": 4,
         "firstSeen": "2026-08-30",
+        "lastSeen": "2026-10-30"
+      },
+      {
+        "name": "Doha, Ad Daw?Ah, Qatar",
+        "lat": 25.2867,
+        "lng": 51.5333,
+        "count": 3,
+        "firstSeen": "2026-09-03",
         "lastSeen": "2026-10-30"
       },
       {
