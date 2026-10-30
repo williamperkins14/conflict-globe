@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T11:50:30.990Z",
+  "generated": "2026-10-30T17:25:31.899Z",
   "conflicts": {
     "ukraine": [
       {
@@ -656,14 +656,6 @@
         "lastSeen": "2026-10-27"
       },
       {
-        "name": "Ethiopians",
-        "lat": 8,
-        "lng": 38,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-30"
-      },
-      {
         "name": "South Sudan",
         "lat": 8,
         "lng": 30,
@@ -680,12 +672,20 @@
         "lastSeen": "2026-10-20"
       },
       {
+        "name": "Ethiopians",
+        "lat": 8,
+        "lng": 38,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-30"
+      },
+      {
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
         "count": 3,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-29"
+        "lastSeen": "2026-10-30"
       },
       {
         "name": "Darfur, Gharb Darfur, Sudan",
@@ -728,7 +728,7 @@
         "lng": -72.4167,
         "count": 3,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-10-27"
+        "lastSeen": "2026-10-30"
       }
     ],
     "iran": [
@@ -736,7 +736,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 100,
+        "count": 52,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-30"
       },
@@ -744,7 +744,7 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 22,
+        "count": 14,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-30"
       },
@@ -755,14 +755,6 @@
         "count": 11,
         "firstSeen": "2026-10-17",
         "lastSeen": "2026-10-17"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 10,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-30"
       },
       {
         "name": "Bahrain",
@@ -781,20 +773,20 @@
         "lastSeen": "2026-10-29"
       },
       {
-        "name": "Bukha, Musandam, Oman",
-        "lat": 26.1431,
-        "lng": 56.1528,
-        "count": 9,
-        "firstSeen": "2026-10-21",
-        "lastSeen": "2026-10-30"
-      },
-      {
         "name": "Sistan, Gilan, Iran",
         "lat": 36.9573,
         "lng": 49.849,
         "count": 7,
         "firstSeen": "2026-10-15",
         "lastSeen": "2026-10-17"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-30"
       },
       {
         "name": "Iraq",
@@ -819,6 +811,14 @@
         "count": 5,
         "firstSeen": "2026-10-27",
         "lastSeen": "2026-10-27"
+      },
+      {
+        "name": "Bukha, Musandam, Oman",
+        "lat": 26.1431,
+        "lng": 56.1528,
+        "count": 4,
+        "firstSeen": "2026-10-21",
+        "lastSeen": "2026-10-30"
       },
       {
         "name": "Baghdad, Baghdad, Iraq",
