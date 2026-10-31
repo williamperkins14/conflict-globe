@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T21:46:51.702Z",
+  "generated": "2026-10-31T03:09:51.316Z",
   "conflicts": {
     "ukraine": [
       {
@@ -728,7 +728,7 @@
         "lng": -72.4167,
         "count": 4,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-10-30"
+        "lastSeen": "2026-10-31"
       }
     ],
     "iran": [
@@ -736,25 +736,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 83,
+        "count": 34,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-30"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 11,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-30"
-      },
-      {
-        "name": "Al Jubayl, Ash Sharqiyah, Saudi Arabia",
-        "lat": 27.0112,
-        "lng": 49.6583,
-        "count": 11,
-        "firstSeen": "2026-10-17",
-        "lastSeen": "2026-10-17"
+        "lastSeen": "2026-10-31"
       },
       {
         "name": "Bahrain",
@@ -773,25 +757,9 @@
         "lastSeen": "2026-10-29"
       },
       {
-        "name": "Sistan, Gilan, Iran",
-        "lat": 36.9573,
-        "lng": 49.849,
-        "count": 7,
-        "firstSeen": "2026-10-15",
-        "lastSeen": "2026-10-17"
-      },
-      {
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-30"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
         "count": 6,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-30"
@@ -813,12 +781,28 @@
         "lastSeen": "2026-10-30"
       },
       {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-31"
+      },
+      {
         "name": "Bandar Abbas, Hormozgan, Iran",
         "lat": 27.1865,
         "lng": 56.2808,
         "count": 5,
         "firstSeen": "2026-10-27",
         "lastSeen": "2026-10-27"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-31"
       },
       {
         "name": "Bukha, Musandam, Oman",
@@ -851,14 +835,6 @@
         "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-27"
-      },
-      {
-        "name": "Ras Al Khaimah, Ra's Al Khaymah, United Arab Emirates",
-        "lat": 25.7895,
-        "lng": 55.9432,
-        "count": 4,
-        "firstSeen": "2026-10-17",
-        "lastSeen": "2026-10-17"
       },
       {
         "name": "Taj Mahal, Kerman, Iran",
