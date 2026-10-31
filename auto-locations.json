@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31T03:09:51.316Z",
+  "generated": "2026-10-31T11:24:05.701Z",
   "conflicts": {
     "ukraine": [
       {
@@ -640,6 +640,14 @@
     ],
     "sudan": [
       {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 19,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-10-31"
+      },
+      {
         "name": "Kordofan, Shamal Kurdufan, Sudan",
         "lat": 13.0833,
         "lng": 30.35,
@@ -677,14 +685,6 @@
         "lng": 38,
         "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-30"
-      },
-      {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 3,
-        "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-30"
       },
       {
@@ -736,7 +736,15 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 34,
+        "count": 62,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-31"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 15,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-31"
       },
@@ -744,9 +752,9 @@
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
-        "count": 9,
+        "count": 11,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-27"
+        "lastSeen": "2026-10-31"
       },
       {
         "name": "Shahed, Fars, Iran",
@@ -760,9 +768,9 @@
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
-        "count": 6,
+        "count": 8,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-30"
+        "lastSeen": "2026-10-31"
       },
       {
         "name": "Lavan Island, Hormozgan, Iran",
@@ -781,11 +789,11 @@
         "lastSeen": "2026-10-30"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 5,
-        "firstSeen": "2026-08-28",
+        "name": "Manama, Al Manamah, Bahrain",
+        "lat": 26.2361,
+        "lng": 50.5831,
+        "count": 6,
+        "firstSeen": "2026-10-18",
         "lastSeen": "2026-10-31"
       },
       {
@@ -797,9 +805,9 @@
         "lastSeen": "2026-10-27"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
         "count": 4,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-31"
@@ -843,14 +851,6 @@
         "count": 4,
         "firstSeen": "2026-10-19",
         "lastSeen": "2026-10-19"
-      },
-      {
-        "name": "Manama, Al Manamah, Bahrain",
-        "lat": 26.2361,
-        "lng": 50.5831,
-        "count": 4,
-        "firstSeen": "2026-10-18",
-        "lastSeen": "2026-10-22"
       },
       {
         "name": "Qazvin, Qazvin, Iran",
