@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31T11:24:05.701Z",
+  "generated": "2026-10-31T16:29:12.123Z",
   "conflicts": {
     "ukraine": [
       {
@@ -736,7 +736,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 62,
+        "count": 43,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-31"
       },
@@ -744,14 +744,14 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 15,
+        "count": 13,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-31"
       },
       {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
         "count": 11,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-31"
@@ -765,10 +765,10 @@
         "lastSeen": "2026-10-29"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 8,
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 6,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-31"
       },
@@ -834,7 +834,7 @@
         "lng": 47.75,
         "count": 4,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-29"
+        "lastSeen": "2026-10-31"
       },
       {
         "name": "Armenia",
@@ -842,7 +842,7 @@
         "lng": 45,
         "count": 4,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-10-27"
+        "lastSeen": "2026-10-31"
       },
       {
         "name": "Taj Mahal, Kerman, Iran",
@@ -885,12 +885,36 @@
         "lastSeen": "2026-10-30"
       },
       {
+        "name": "Turkmenistan",
+        "lat": 40,
+        "lng": 60,
+        "count": 4,
+        "firstSeen": "2026-10-02",
+        "lastSeen": "2026-10-31"
+      },
+      {
+        "name": "Shuaiba, Kuwait (General), Kuwait",
+        "lat": 29.0411,
+        "lng": 48.1375,
+        "count": 4,
+        "firstSeen": "2026-10-31",
+        "lastSeen": "2026-10-31"
+      },
+      {
+        "name": "Nakhichevan, NaxçAn**, Azerbaijan",
+        "lat": 39.2089,
+        "lng": 45.4122,
+        "count": 4,
+        "firstSeen": "2026-10-31",
+        "lastSeen": "2026-10-31"
+      },
+      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
         "count": 3,
         "firstSeen": "2026-09-03",
-        "lastSeen": "2026-10-30"
+        "lastSeen": "2026-10-31"
       },
       {
         "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
@@ -907,14 +931,6 @@
         "count": 3,
         "firstSeen": "2026-09-01",
         "lastSeen": "2026-10-27"
-      },
-      {
-        "name": "Turkmenistan",
-        "lat": 40,
-        "lng": 60,
-        "count": 3,
-        "firstSeen": "2026-10-02",
-        "lastSeen": "2026-10-19"
       },
       {
         "name": "Abyan, Fars, Iran",
@@ -947,6 +963,14 @@
         "count": 3,
         "firstSeen": "2026-10-30",
         "lastSeen": "2026-10-30"
+      },
+      {
+        "name": "Ali Al Salem Air Base, Kuwait (General), Kuwait",
+        "lat": 29.35,
+        "lng": 47.5211,
+        "count": 3,
+        "firstSeen": "2026-10-31",
+        "lastSeen": "2026-10-31"
       }
     ]
   },
