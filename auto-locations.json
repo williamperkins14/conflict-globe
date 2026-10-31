@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31T16:29:12.123Z",
+  "generated": "2026-10-31T20:46:28.023Z",
   "conflicts": {
     "ukraine": [
       {
@@ -736,15 +736,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 43,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-31"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 13,
+        "count": 49,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-31"
       },
@@ -752,8 +744,16 @@
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
-        "count": 11,
+        "count": 17,
         "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-31"
+      },
+      {
+        "name": "Doha, Ad Daw?Ah, Qatar",
+        "lat": 25.2867,
+        "lng": 51.5333,
+        "count": 12,
+        "firstSeen": "2026-09-03",
         "lastSeen": "2026-10-31"
       },
       {
@@ -768,6 +768,22 @@
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
+        "count": 9,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-31"
+      },
+      {
+        "name": "Mashhad, (Ir30), Iran",
+        "lat": 36.297,
+        "lng": 59.6062,
+        "count": 9,
+        "firstSeen": "2026-10-31",
+        "lastSeen": "2026-10-31"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
         "count": 6,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-10-31"
@@ -781,19 +797,27 @@
         "lastSeen": "2026-10-30"
       },
       {
-        "name": "Qeshm, Kordestan, Iran",
-        "lat": 35.4421,
-        "lng": 47.3506,
-        "count": 6,
-        "firstSeen": "2026-10-30",
-        "lastSeen": "2026-10-30"
-      },
-      {
         "name": "Manama, Al Manamah, Bahrain",
         "lat": 26.2361,
         "lng": 50.5831,
         "count": 6,
         "firstSeen": "2026-10-18",
+        "lastSeen": "2026-10-31"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-10-31"
+      },
+      {
+        "name": "Qeshm, Kordestan, Iran",
+        "lat": 35.4421,
+        "lng": 47.3506,
+        "count": 5,
+        "firstSeen": "2026-10-30",
         "lastSeen": "2026-10-31"
       },
       {
@@ -803,14 +827,6 @@
         "count": 5,
         "firstSeen": "2026-10-27",
         "lastSeen": "2026-10-27"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-31"
       },
       {
         "name": "Bukha, Musandam, Oman",
@@ -906,14 +922,6 @@
         "lng": 45.4122,
         "count": 4,
         "firstSeen": "2026-10-31",
-        "lastSeen": "2026-10-31"
-      },
-      {
-        "name": "Doha, Ad Daw?Ah, Qatar",
-        "lat": 25.2867,
-        "lng": 51.5333,
-        "count": 3,
-        "firstSeen": "2026-09-03",
         "lastSeen": "2026-10-31"
       },
       {
