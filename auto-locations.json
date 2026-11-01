@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-01T12:17:24.703Z",
+  "generated": "2026-11-01T21:28:23.561Z",
   "conflicts": {
     "ukraine": [
       {
@@ -736,7 +736,15 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 41,
+        "count": 46,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-01"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 10,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-01"
       },
@@ -749,28 +757,12 @@
         "lastSeen": "2026-10-29"
       },
       {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-31"
-      },
-      {
         "name": "Mashhad, (Ir30), Iran",
         "lat": 36.297,
         "lng": 59.6062,
         "count": 9,
         "firstSeen": "2026-10-31",
         "lastSeen": "2026-10-31"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-01"
       },
       {
         "name": "Lavan Island, Hormozgan, Iran",
@@ -781,12 +773,12 @@
         "lastSeen": "2026-10-30"
       },
       {
-        "name": "Manama, Al Manamah, Bahrain",
-        "lat": 26.2361,
-        "lng": 50.5831,
-        "count": 6,
-        "firstSeen": "2026-10-18",
-        "lastSeen": "2026-10-31"
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-01"
       },
       {
         "name": "Qeshm, Kordestan, Iran",
@@ -813,11 +805,11 @@
         "lastSeen": "2026-11-01"
       },
       {
-        "name": "Doha, Ad Daw?Ah, Qatar",
-        "lat": 25.2867,
-        "lng": 51.5333,
-        "count": 5,
-        "firstSeen": "2026-09-03",
+        "name": "Manama, Al Manamah, Bahrain",
+        "lat": 26.2361,
+        "lng": 50.5831,
+        "count": 4,
+        "firstSeen": "2026-10-18",
         "lastSeen": "2026-11-01"
       },
       {
@@ -915,6 +907,14 @@
         "count": 4,
         "firstSeen": "2026-10-31",
         "lastSeen": "2026-10-31"
+      },
+      {
+        "name": "Doha, Ad Daw?Ah, Qatar",
+        "lat": 25.2867,
+        "lng": 51.5333,
+        "count": 3,
+        "firstSeen": "2026-09-03",
+        "lastSeen": "2026-11-01"
       },
       {
         "name": "Iraq",
