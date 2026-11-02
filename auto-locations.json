@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-01T21:28:23.561Z",
+  "generated": "2026-11-02T03:16:29.473Z",
   "conflicts": {
     "ukraine": [
       {
@@ -704,14 +704,6 @@
         "lastSeen": "2026-10-22"
       },
       {
-        "name": "Atbara, Nahr An Nil, Sudan",
-        "lat": 17.6925,
-        "lng": 33.9852,
-        "count": 3,
-        "firstSeen": "2026-10-19",
-        "lastSeen": "2026-10-19"
-      },
-      {
         "name": "Al-Mujlad, Janub Kurdufan, Sudan",
         "lat": 11.0333,
         "lng": 27.7333,
@@ -736,17 +728,17 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 46,
+        "count": 44,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-01"
+        "lastSeen": "2026-11-02"
       },
       {
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
-        "count": 10,
+        "count": 12,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-01"
+        "lastSeen": "2026-11-02"
       },
       {
         "name": "Shahed, Fars, Iran",
@@ -763,6 +755,14 @@
         "count": 9,
         "firstSeen": "2026-10-31",
         "lastSeen": "2026-10-31"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-02"
       },
       {
         "name": "Lavan Island, Hormozgan, Iran",
@@ -795,14 +795,6 @@
         "count": 5,
         "firstSeen": "2026-10-27",
         "lastSeen": "2026-10-27"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-01"
       },
       {
         "name": "Manama, Al Manamah, Bahrain",
@@ -843,14 +835,6 @@
         "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-10-31"
-      },
-      {
-        "name": "Taj Mahal, Kerman, Iran",
-        "lat": 28.15,
-        "lng": 58.0667,
-        "count": 4,
-        "firstSeen": "2026-10-19",
-        "lastSeen": "2026-10-19"
       },
       {
         "name": "Qazvin, Qazvin, Iran",
