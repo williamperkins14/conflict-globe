@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T13:41:28.796Z",
+  "generated": "2026-11-05T23:00:43.020Z",
   "conflicts": {
     "ukraine": [
       {
@@ -656,6 +656,14 @@
         "lastSeen": "2026-10-27"
       },
       {
+        "name": "Sudan",
+        "lat": 16,
+        "lng": 30,
+        "count": 6,
+        "firstSeen": "2026-08-31",
+        "lastSeen": "2026-11-05"
+      },
+      {
         "name": "South Sudan",
         "lat": 8,
         "lng": 30,
@@ -670,14 +678,6 @@
         "count": 4,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-05"
-      },
-      {
-        "name": "Sudan",
-        "lat": 16,
-        "lng": 30,
-        "count": 3,
-        "firstSeen": "2026-08-31",
-        "lastSeen": "2026-11-03"
       },
       {
         "name": "Darfur, Gharb Darfur, Sudan",
@@ -704,7 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 106,
+        "count": 98,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-05"
       },
@@ -723,14 +723,6 @@
         "count": 11,
         "firstSeen": "2026-11-03",
         "lastSeen": "2026-11-03"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-05"
       },
       {
         "name": "Shahed, Fars, Iran",
@@ -803,6 +795,14 @@
         "count": 6,
         "firstSeen": "2026-10-30",
         "lastSeen": "2026-10-30"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-05"
       },
       {
         "name": "Armenia",
