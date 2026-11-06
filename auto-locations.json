@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T13:25:31.271Z",
+  "generated": "2026-11-06T22:30:53.811Z",
   "conflicts": {
     "ukraine": [
       {
@@ -704,7 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 24,
+        "count": 38,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-06"
       },
@@ -765,14 +765,6 @@
         "lastSeen": "2026-11-05"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-06"
-      },
-      {
         "name": "Bandar Abbas, Hormozgan, Iran",
         "lat": 27.1865,
         "lng": 56.2808,
@@ -827,6 +819,14 @@
         "count": 5,
         "firstSeen": "2026-11-05",
         "lastSeen": "2026-11-05"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-06"
       },
       {
         "name": "Qatari",
