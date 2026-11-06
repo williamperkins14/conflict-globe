@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T04:04:45.618Z",
+  "generated": "2026-11-06T13:25:31.271Z",
   "conflicts": {
     "ukraine": [
       {
@@ -694,9 +694,9 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 3,
+        "count": 4,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-11-05"
+        "lastSeen": "2026-11-06"
       }
     ],
     "iran": [
@@ -704,7 +704,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 60,
+        "count": 24,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-06"
       },
@@ -723,14 +723,6 @@
         "count": 11,
         "firstSeen": "2026-11-03",
         "lastSeen": "2026-11-03"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 10,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-06"
       },
       {
         "name": "Shahed, Fars, Iran",
@@ -773,9 +765,9 @@
         "lastSeen": "2026-11-05"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
         "count": 7,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-06"
@@ -837,10 +829,10 @@
         "lastSeen": "2026-11-05"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 5,
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 4,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-06"
       },
@@ -901,12 +893,20 @@
         "lastSeen": "2026-10-31"
       },
       {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-06"
+      },
+      {
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
         "count": 3,
         "firstSeen": "2026-08-30",
-        "lastSeen": "2026-11-05"
+        "lastSeen": "2026-11-06"
       },
       {
         "name": "Qeshm, Kordestan, Iran",
@@ -971,6 +971,14 @@
         "count": 3,
         "firstSeen": "2026-11-03",
         "lastSeen": "2026-11-03"
+      },
+      {
+        "name": "Ras Al Khaimah, Ra's Al Khaymah, United Arab Emirates",
+        "lat": 25.7895,
+        "lng": 55.9432,
+        "count": 3,
+        "firstSeen": "2026-11-06",
+        "lastSeen": "2026-11-06"
       }
     ]
   },
