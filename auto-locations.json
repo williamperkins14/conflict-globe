@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T22:30:53.811Z",
+  "generated": "2026-11-07T03:40:01.057Z",
   "conflicts": {
     "ukraine": [
       {
@@ -694,9 +694,9 @@
         "name": "Haitian",
         "lat": 19,
         "lng": -72.4167,
-        "count": 4,
+        "count": 3,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-11-06"
+        "lastSeen": "2026-11-07"
       }
     ],
     "iran": [
@@ -704,9 +704,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 38,
+        "count": 31,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-06"
+        "lastSeen": "2026-11-07"
       },
       {
         "name": "Kuwait",
@@ -765,22 +765,6 @@
         "lastSeen": "2026-11-05"
       },
       {
-        "name": "Bandar Abbas, Hormozgan, Iran",
-        "lat": 27.1865,
-        "lng": 56.2808,
-        "count": 6,
-        "firstSeen": "2026-10-27",
-        "lastSeen": "2026-11-04"
-      },
-      {
-        "name": "Hengam, Sistan Va Baluchestan, Iran",
-        "lat": 25.8847,
-        "lng": 59.5333,
-        "count": 6,
-        "firstSeen": "2026-11-03",
-        "lastSeen": "2026-11-04"
-      },
-      {
         "name": "Lavan Island, Hormozgan, Iran",
         "lat": 26.8,
         "lng": 53.25,
@@ -819,22 +803,6 @@
         "count": 5,
         "firstSeen": "2026-11-05",
         "lastSeen": "2026-11-05"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-06"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-06"
       },
       {
         "name": "Bahrain",
@@ -893,12 +861,52 @@
         "lastSeen": "2026-10-31"
       },
       {
+        "name": "Qeshm, Kordestan, Iran",
+        "lat": 35.4421,
+        "lng": 47.3506,
+        "count": 4,
+        "firstSeen": "2026-10-30",
+        "lastSeen": "2026-11-07"
+      },
+      {
+        "name": "Bandar Abbas, Hormozgan, Iran",
+        "lat": 27.1865,
+        "lng": 56.2808,
+        "count": 3,
+        "firstSeen": "2026-10-27",
+        "lastSeen": "2026-11-07"
+      },
+      {
+        "name": "Hengam, Sistan Va Baluchestan, Iran",
+        "lat": 25.8847,
+        "lng": 59.5333,
+        "count": 3,
+        "firstSeen": "2026-11-03",
+        "lastSeen": "2026-11-07"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-07"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-07"
+      },
+      {
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
         "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-06"
+        "lastSeen": "2026-11-07"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
@@ -907,14 +915,6 @@
         "count": 3,
         "firstSeen": "2026-08-30",
         "lastSeen": "2026-11-06"
-      },
-      {
-        "name": "Qeshm, Kordestan, Iran",
-        "lat": 35.4421,
-        "lng": 47.3506,
-        "count": 3,
-        "firstSeen": "2026-10-30",
-        "lastSeen": "2026-11-05"
       },
       {
         "name": "Dammam, Ash Sharqiyah, Saudi Arabia",
@@ -931,14 +931,6 @@
         "count": 3,
         "firstSeen": "2026-09-01",
         "lastSeen": "2026-11-05"
-      },
-      {
-        "name": "Umm Al Quwain, Umm Al Qaywayn, United Arab Emirates",
-        "lat": 25.5,
-        "lng": 55.75,
-        "count": 3,
-        "firstSeen": "2026-10-24",
-        "lastSeen": "2026-10-24"
       },
       {
         "name": "Tigris River, Al Basrah, Iraq",
@@ -979,6 +971,14 @@
         "count": 3,
         "firstSeen": "2026-11-06",
         "lastSeen": "2026-11-06"
+      },
+      {
+        "name": "Suza, Hormozgan, Iran",
+        "lat": 26.7807,
+        "lng": 56.063,
+        "count": 3,
+        "firstSeen": "2026-11-07",
+        "lastSeen": "2026-11-07"
       }
     ]
   },
