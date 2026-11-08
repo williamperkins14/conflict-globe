@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-07T21:13:24.647Z",
+  "generated": "2026-11-08T03:13:12.162Z",
   "conflicts": {
     "ukraine": [
       {
@@ -704,9 +704,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 31,
+        "count": 36,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-07"
+        "lastSeen": "2026-11-08"
       },
       {
         "name": "Kuwait",
@@ -715,6 +715,14 @@
         "count": 18,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-03"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 16,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-08"
       },
       {
         "name": "Basij, Fars, Iran",
@@ -757,20 +765,12 @@
         "lastSeen": "2026-11-05"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-07"
-      },
-      {
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
-        "count": 6,
+        "count": 8,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-07"
+        "lastSeen": "2026-11-08"
       },
       {
         "name": "Lavan Island, Hormozgan, Iran",
@@ -781,12 +781,20 @@
         "lastSeen": "2026-10-30"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
+        "name": "Qeshm, Kordestan, Iran",
+        "lat": 35.4421,
+        "lng": 47.3506,
+        "count": 6,
+        "firstSeen": "2026-10-30",
+        "lastSeen": "2026-11-08"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
         "count": 5,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-07"
+        "lastSeen": "2026-11-08"
       },
       {
         "name": "Fujairah, Al Fujayrah, United Arab Emirates",
@@ -917,12 +925,12 @@
         "lastSeen": "2026-11-07"
       },
       {
-        "name": "Qeshm, Kordestan, Iran",
-        "lat": 35.4421,
-        "lng": 47.3506,
-        "count": 3,
-        "firstSeen": "2026-10-30",
-        "lastSeen": "2026-11-07"
+        "name": "Gulf Of Oman, Iran (General), Iran",
+        "lat": 25.4489,
+        "lng": 57.7939,
+        "count": 4,
+        "firstSeen": "2026-09-01",
+        "lastSeen": "2026-11-08"
       },
       {
         "name": "Bandar Abbas, Hormozgan, Iran",
@@ -955,14 +963,6 @@
         "count": 3,
         "firstSeen": "2026-10-12",
         "lastSeen": "2026-11-03"
-      },
-      {
-        "name": "Gulf Of Oman, Iran (General), Iran",
-        "lat": 25.4489,
-        "lng": 57.7939,
-        "count": 3,
-        "firstSeen": "2026-09-01",
-        "lastSeen": "2026-11-05"
       },
       {
         "name": "Tigris River, Al Basrah, Iraq",
