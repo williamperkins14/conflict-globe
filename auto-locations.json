@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T23:49:38.770Z",
+  "generated": "2026-11-12T04:49:13.738Z",
   "conflicts": {
     "ukraine": [
       {
@@ -659,17 +659,17 @@
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
-        "count": 6,
+        "count": 3,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-11-11"
+        "lastSeen": "2026-11-12"
       },
       {
         "name": "South Sudan",
         "lat": 8,
         "lng": 30,
-        "count": 4,
+        "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-10-29"
+        "lastSeen": "2026-11-12"
       },
       {
         "name": "Shendi, Nahr An Nil, Sudan",
@@ -702,6 +702,14 @@
         "count": 3,
         "firstSeen": "2026-11-08",
         "lastSeen": "2026-11-08"
+      },
+      {
+        "name": "Abiemnom, Wilayat Al Wahda, South Sudan",
+        "lat": 9.3394,
+        "lng": 28.9032,
+        "count": 3,
+        "firstSeen": "2026-11-12",
+        "lastSeen": "2026-11-12"
       }
     ],
     "gaza": [],
@@ -720,25 +728,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 144,
+        "count": 32,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-11"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 14,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-11"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 13,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-11"
+        "lastSeen": "2026-11-12"
       },
       {
         "name": "Basij, Fars, Iran",
@@ -797,20 +789,20 @@
         "lastSeen": "2026-11-08"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-11"
-      },
-      {
         "name": "Lavan Island, Hormozgan, Iran",
         "lat": 26.8,
         "lng": 53.25,
         "count": 6,
         "firstSeen": "2026-10-30",
         "lastSeen": "2026-10-30"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-12"
       },
       {
         "name": "Armenia",
@@ -939,6 +931,22 @@
         "count": 4,
         "firstSeen": "2026-11-07",
         "lastSeen": "2026-11-07"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-12"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-12"
       },
       {
         "name": "Kuwait",
