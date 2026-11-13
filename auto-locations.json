@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T03:59:31.083Z",
+  "generated": "2026-11-13T23:00:32.951Z",
   "conflicts": {
     "ukraine": [
       {
@@ -720,7 +720,7 @@
         "lng": -72.4167,
         "count": 6,
         "firstSeen": "2026-09-02",
-        "lastSeen": "2026-11-12"
+        "lastSeen": "2026-11-13"
       }
     ],
     "iran": [
@@ -728,17 +728,25 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 51,
+        "count": 54,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-13"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 12,
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 14,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-12"
+        "lastSeen": "2026-11-13"
+      },
+      {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 14,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-13"
       },
       {
         "name": "Basij, Fars, Iran",
@@ -749,20 +757,28 @@
         "lastSeen": "2026-11-03"
       },
       {
-        "name": "Sirik, Hormozgan, Iran",
-        "lat": 26.5055,
-        "lng": 57.122,
-        "count": 11,
-        "firstSeen": "2026-11-08",
-        "lastSeen": "2026-11-12"
-      },
-      {
         "name": "Hormozgan, Hormozgan, Iran",
         "lat": 27.75,
         "lng": 56.5,
         "count": 11,
         "firstSeen": "2026-11-12",
         "lastSeen": "2026-11-12"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 10,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-13"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 9,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-13"
       },
       {
         "name": "Mashhad, (Ir30), Iran",
@@ -789,6 +805,14 @@
         "lastSeen": "2026-11-05"
       },
       {
+        "name": "Sirik, Hormozgan, Iran",
+        "lat": 26.5055,
+        "lng": 57.122,
+        "count": 7,
+        "firstSeen": "2026-11-08",
+        "lastSeen": "2026-11-13"
+      },
+      {
         "name": "Bandar Abbas, Hormozgan, Iran",
         "lat": 27.1865,
         "lng": 56.2808,
@@ -797,26 +821,18 @@
         "lastSeen": "2026-11-08"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-13"
-      },
-      {
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
         "count": 6,
         "firstSeen": "2026-08-30",
-        "lastSeen": "2026-11-12"
+        "lastSeen": "2026-11-13"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 5,
+        "name": "Kuwait",
+        "lat": 29.5,
+        "lng": 47.75,
+        "count": 6,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-13"
       },
@@ -859,14 +875,6 @@
         "count": 5,
         "firstSeen": "2026-11-07",
         "lastSeen": "2026-11-07"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 5,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-11"
       },
       {
         "name": "Gulf Of Oman, Iran (General), Iran",
@@ -939,14 +947,6 @@
         "count": 4,
         "firstSeen": "2026-11-07",
         "lastSeen": "2026-11-07"
-      },
-      {
-        "name": "Kuwait",
-        "lat": 29.5,
-        "lng": 47.75,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-12"
       },
       {
         "name": "Qeshm, Kordestan, Iran",
