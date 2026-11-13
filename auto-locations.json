@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T22:57:37.762Z",
+  "generated": "2026-11-13T03:59:31.083Z",
   "conflicts": {
     "ukraine": [
       {
@@ -728,17 +728,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 66,
+        "count": 51,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-12"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 13,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-12"
+        "lastSeen": "2026-11-13"
       },
       {
         "name": "Qatari",
@@ -805,6 +797,14 @@
         "lastSeen": "2026-11-08"
       },
       {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-13"
+      },
+      {
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
@@ -813,12 +813,12 @@
         "lastSeen": "2026-11-12"
       },
       {
-        "name": "Lavan Island, Hormozgan, Iran",
-        "lat": 26.8,
-        "lng": 53.25,
-        "count": 6,
-        "firstSeen": "2026-10-30",
-        "lastSeen": "2026-10-30"
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-13"
       },
       {
         "name": "Armenia",
@@ -869,14 +869,6 @@
         "lastSeen": "2026-11-11"
       },
       {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 4,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-12"
-      },
-      {
         "name": "Gulf Of Oman, Iran (General), Iran",
         "lat": 25.4489,
         "lng": 57.7939,
@@ -899,14 +891,6 @@
         "count": 4,
         "firstSeen": "2026-10-18",
         "lastSeen": "2026-11-02"
-      },
-      {
-        "name": "Bukha, Musandam, Oman",
-        "lat": 26.1431,
-        "lng": 56.1528,
-        "count": 4,
-        "firstSeen": "2026-10-21",
-        "lastSeen": "2026-10-30"
       },
       {
         "name": "Turkmenistan",
@@ -1003,14 +987,6 @@
         "count": 3,
         "firstSeen": "2026-10-12",
         "lastSeen": "2026-11-03"
-      },
-      {
-        "name": "Tigris River, Al Basrah, Iraq",
-        "lat": 31,
-        "lng": 47.4167,
-        "count": 3,
-        "firstSeen": "2026-10-30",
-        "lastSeen": "2026-10-30"
       },
       {
         "name": "Ali Al Salem Air Base, Kuwait (General), Kuwait",
