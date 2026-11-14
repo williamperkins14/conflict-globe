@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14T03:58:24.773Z",
+  "generated": "2026-11-14T12:41:20.278Z",
   "conflicts": {
     "ukraine": [
       {
@@ -728,17 +728,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 36,
+        "count": 41,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-14"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 14,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-13"
       },
       {
         "name": "Basij, Fars, Iran",
@@ -757,12 +749,20 @@
         "lastSeen": "2026-11-12"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
         "count": 9,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-13"
+        "lastSeen": "2026-11-14"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 9,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-14"
       },
       {
         "name": "Limah, Musandam, Oman",
@@ -781,12 +781,12 @@
         "lastSeen": "2026-11-05"
       },
       {
-        "name": "Sirik, Hormozgan, Iran",
-        "lat": 26.5055,
-        "lng": 57.122,
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
         "count": 7,
-        "firstSeen": "2026-11-08",
-        "lastSeen": "2026-11-13"
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-14"
       },
       {
         "name": "Bandar Abbas, Hormozgan, Iran",
@@ -802,15 +802,15 @@
         "lng": 55.28,
         "count": 6,
         "firstSeen": "2026-08-30",
-        "lastSeen": "2026-11-13"
+        "lastSeen": "2026-11-14"
       },
       {
         "name": "Kuwait",
         "lat": 29.5,
         "lng": 47.75,
-        "count": 6,
+        "count": 5,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-13"
+        "lastSeen": "2026-11-14"
       },
       {
         "name": "Armenia",
@@ -853,11 +853,19 @@
         "lastSeen": "2026-11-07"
       },
       {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
         "count": 4,
         "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-14"
+      },
+      {
+        "name": "Sirik, Hormozgan, Iran",
+        "lat": 26.5055,
+        "lng": 57.122,
+        "count": 4,
+        "firstSeen": "2026-11-08",
         "lastSeen": "2026-11-14"
       },
       {
@@ -915,14 +923,6 @@
         "count": 4,
         "firstSeen": "2026-11-07",
         "lastSeen": "2026-11-07"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-14"
       },
       {
         "name": "Qeshm, Kordestan, Iran",
