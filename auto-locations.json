@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T23:00:32.951Z",
+  "generated": "2026-11-14T03:58:24.773Z",
   "conflicts": {
     "ukraine": [
       {
@@ -659,9 +659,9 @@
         "name": "Sudan",
         "lat": 16,
         "lng": 30,
-        "count": 3,
+        "count": 4,
         "firstSeen": "2026-08-31",
-        "lastSeen": "2026-11-12"
+        "lastSeen": "2026-11-14"
       },
       {
         "name": "South Sudan",
@@ -728,22 +728,14 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 54,
+        "count": 36,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-13"
+        "lastSeen": "2026-11-14"
       },
       {
         "name": "Iraq",
         "lat": 33,
         "lng": 44,
-        "count": 14,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-13"
-      },
-      {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
         "count": 14,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-13"
@@ -765,28 +757,12 @@
         "lastSeen": "2026-11-12"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 10,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-13"
-      },
-      {
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
         "count": 9,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-13"
-      },
-      {
-        "name": "Mashhad, (Ir30), Iran",
-        "lat": 36.297,
-        "lng": 59.6062,
-        "count": 9,
-        "firstSeen": "2026-10-31",
-        "lastSeen": "2026-10-31"
       },
       {
         "name": "Limah, Musandam, Oman",
@@ -877,6 +853,14 @@
         "lastSeen": "2026-11-07"
       },
       {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 4,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-14"
+      },
+      {
         "name": "Gulf Of Oman, Iran (General), Iran",
         "lat": 25.4489,
         "lng": 57.7939,
@@ -909,22 +893,6 @@
         "lastSeen": "2026-11-02"
       },
       {
-        "name": "Shuaiba, Kuwait (General), Kuwait",
-        "lat": 29.0411,
-        "lng": 48.1375,
-        "count": 4,
-        "firstSeen": "2026-10-31",
-        "lastSeen": "2026-10-31"
-      },
-      {
-        "name": "Nakhichevan, NaxçAn**, Azerbaijan",
-        "lat": 39.2089,
-        "lng": 45.4122,
-        "count": 4,
-        "firstSeen": "2026-10-31",
-        "lastSeen": "2026-10-31"
-      },
-      {
         "name": "Sistan, Gilan, Iran",
         "lat": 36.9573,
         "lng": 49.849,
@@ -947,6 +915,14 @@
         "count": 4,
         "firstSeen": "2026-11-07",
         "lastSeen": "2026-11-07"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-14"
       },
       {
         "name": "Qeshm, Kordestan, Iran",
@@ -987,14 +963,6 @@
         "count": 3,
         "firstSeen": "2026-10-12",
         "lastSeen": "2026-11-03"
-      },
-      {
-        "name": "Ali Al Salem Air Base, Kuwait (General), Kuwait",
-        "lat": 29.35,
-        "lng": 47.5211,
-        "count": 3,
-        "firstSeen": "2026-10-31",
-        "lastSeen": "2026-10-31"
       },
       {
         "name": "Ras Al Khaimah, Ra's Al Khaymah, United Arab Emirates",
