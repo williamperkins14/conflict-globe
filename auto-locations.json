@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T13:07:41.734Z",
+  "generated": "2026-11-15T22:15:58.964Z",
   "conflicts": {
     "ukraine": [
       {
@@ -728,15 +728,7 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 32,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-15"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 14,
+        "count": 24,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-15"
       },
@@ -779,14 +771,6 @@
         "count": 8,
         "firstSeen": "2026-11-05",
         "lastSeen": "2026-11-05"
-      },
-      {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-14"
       },
       {
         "name": "Bandar Abbas, Hormozgan, Iran",
@@ -850,7 +834,7 @@
         "lng": 44,
         "count": 4,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-14"
+        "lastSeen": "2026-11-15"
       },
       {
         "name": "Sirik, Hormozgan, Iran",
@@ -915,6 +899,22 @@
         "count": 4,
         "firstSeen": "2026-11-07",
         "lastSeen": "2026-11-07"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-15"
+      },
+      {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-15"
       },
       {
         "name": "Fujairah, Al Fujayrah, United Arab Emirates",
