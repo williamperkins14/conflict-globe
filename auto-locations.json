@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14T12:41:20.278Z",
+  "generated": "2026-11-15T03:42:23.766Z",
   "conflicts": {
     "ukraine": [
       {
@@ -728,9 +728,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 41,
+        "count": 19,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-14"
+        "lastSeen": "2026-11-15"
       },
       {
         "name": "Basij, Fars, Iran",
@@ -752,14 +752,6 @@
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-14"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
         "count": 9,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-14"
@@ -795,6 +787,14 @@
         "count": 7,
         "firstSeen": "2026-10-27",
         "lastSeen": "2026-11-08"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 6,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-15"
       },
       {
         "name": "Dubai, Dubayy, United Arab Emirates",
