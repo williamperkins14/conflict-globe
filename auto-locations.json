@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T03:42:23.766Z",
+  "generated": "2026-11-15T13:07:41.734Z",
   "conflicts": {
     "ukraine": [
       {
@@ -728,7 +728,15 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 19,
+        "count": 32,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-15"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 14,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-15"
       },
@@ -752,9 +760,9 @@
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
-        "count": 9,
+        "count": 11,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-14"
+        "lastSeen": "2026-11-15"
       },
       {
         "name": "Limah, Musandam, Oman",
@@ -789,22 +797,6 @@
         "lastSeen": "2026-11-08"
       },
       {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 6,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-15"
-      },
-      {
-        "name": "Dubai, Dubayy, United Arab Emirates",
-        "lat": 25.2522,
-        "lng": 55.28,
-        "count": 6,
-        "firstSeen": "2026-08-30",
-        "lastSeen": "2026-11-14"
-      },
-      {
         "name": "Kuwait",
         "lat": 29.5,
         "lng": 47.75,
@@ -819,14 +811,6 @@
         "count": 5,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-11-11"
-      },
-      {
-        "name": "Fujairah, Al Fujayrah, United Arab Emirates",
-        "lat": 25.1164,
-        "lng": 56.3414,
-        "count": 5,
-        "firstSeen": "2026-11-03",
-        "lastSeen": "2026-11-03"
       },
       {
         "name": "Ras Al-Khafji, Ash Sharqiyah, Saudi Arabia",
@@ -851,6 +835,14 @@
         "count": 5,
         "firstSeen": "2026-11-07",
         "lastSeen": "2026-11-07"
+      },
+      {
+        "name": "Dubai, Dubayy, United Arab Emirates",
+        "lat": 25.2522,
+        "lng": 55.28,
+        "count": 4,
+        "firstSeen": "2026-08-30",
+        "lastSeen": "2026-11-15"
       },
       {
         "name": "Iraq",
@@ -923,6 +915,14 @@
         "count": 4,
         "firstSeen": "2026-11-07",
         "lastSeen": "2026-11-07"
+      },
+      {
+        "name": "Fujairah, Al Fujayrah, United Arab Emirates",
+        "lat": 25.1164,
+        "lng": 56.3414,
+        "count": 3,
+        "firstSeen": "2026-11-03",
+        "lastSeen": "2026-11-15"
       },
       {
         "name": "Qeshm, Kordestan, Iran",
