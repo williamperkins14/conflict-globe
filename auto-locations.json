@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T13:52:17.103Z",
+  "generated": "2026-11-21T22:33:54.429Z",
   "conflicts": {
     "ukraine": [
       {
@@ -725,14 +725,6 @@
     ],
     "iran": [
       {
-        "name": "Iranian",
-        "lat": 32,
-        "lng": 53,
-        "count": 44,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-21"
-      },
-      {
         "name": "Musandam Peninsula, Musandam, Oman",
         "lat": 26.2706,
         "lng": 56.3892,
@@ -755,6 +747,14 @@
         "count": 11,
         "firstSeen": "2026-11-12",
         "lastSeen": "2026-11-12"
+      },
+      {
+        "name": "Iranian",
+        "lat": 32,
+        "lng": 53,
+        "count": 9,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-21"
       },
       {
         "name": "Kuwait",
