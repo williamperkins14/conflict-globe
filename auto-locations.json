@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T22:33:54.429Z",
+  "generated": "2026-11-22T03:57:02.835Z",
   "conflicts": {
     "ukraine": [
       {
@@ -672,38 +672,6 @@
         "lastSeen": "2026-11-21"
       },
       {
-        "name": "Shendi, Nahr An Nil, Sudan",
-        "lat": 16.6915,
-        "lng": 33.4341,
-        "count": 3,
-        "firstSeen": "2026-10-27",
-        "lastSeen": "2026-11-08"
-      },
-      {
-        "name": "Darfur, Gharb Darfur, Sudan",
-        "lat": 13.5,
-        "lng": 23.5,
-        "count": 3,
-        "firstSeen": "2026-10-27",
-        "lastSeen": "2026-11-08"
-      },
-      {
-        "name": "Kassala, Kassala, Sudan",
-        "lat": 15.457,
-        "lng": 36.4001,
-        "count": 3,
-        "firstSeen": "2026-11-08",
-        "lastSeen": "2026-11-08"
-      },
-      {
-        "name": "Fasher, Kassala, Sudan",
-        "lat": 15.0667,
-        "lng": 35.95,
-        "count": 3,
-        "firstSeen": "2026-11-08",
-        "lastSeen": "2026-11-08"
-      },
-      {
         "name": "Abiemnom, Wilayat Al Wahda, South Sudan",
         "lat": 9.3394,
         "lng": 28.9032,
@@ -749,20 +717,20 @@
         "lastSeen": "2026-11-12"
       },
       {
-        "name": "Iranian",
-        "lat": 32,
-        "lng": 53,
-        "count": 9,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-21"
-      },
-      {
         "name": "Kuwait",
         "lat": 29.5,
         "lng": 47.75,
         "count": 8,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-19"
+      },
+      {
+        "name": "Iranian",
+        "lat": 32,
+        "lng": 53,
+        "count": 7,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-22"
       },
       {
         "name": "Iraq",
