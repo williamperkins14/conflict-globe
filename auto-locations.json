@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T16:41:12.012Z",
+  "generated": "2026-11-25T01:43:59.432Z",
   "conflicts": {
     "ukraine": [
       {
@@ -685,26 +685,10 @@
     ],
     "iran": [
       {
-        "name": "Iranian",
-        "lat": 32,
-        "lng": 53,
-        "count": 58,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-24"
-      },
-      {
         "name": "Qatari",
         "lat": 25.5,
         "lng": 51.25,
         "count": 24,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-24"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 17,
         "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-24"
       },
@@ -725,20 +709,20 @@
         "lastSeen": "2026-11-21"
       },
       {
+        "name": "Iranian",
+        "lat": 32,
+        "lng": 53,
+        "count": 14,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-25"
+      },
+      {
         "name": "Bandar Abbas, Hormozgan, Iran",
         "lat": 27.1865,
         "lng": 56.2808,
         "count": 12,
         "firstSeen": "2026-10-27",
         "lastSeen": "2026-11-18"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 12,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-24"
       },
       {
         "name": "Hormozgan, Hormozgan, Iran",
@@ -771,6 +755,22 @@
         "count": 6,
         "firstSeen": "2026-11-24",
         "lastSeen": "2026-11-24"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-25"
+      },
+      {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-25"
       },
       {
         "name": "Qeshm, Kordestan, Iran",
