@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25T16:25:50.451Z",
+  "generated": "2026-11-26T01:17:44.889Z",
   "conflicts": {
     "ukraine": [
       {
@@ -664,14 +664,6 @@
         "lastSeen": "2026-11-23"
       },
       {
-        "name": "Abiemnom, Wilayat Al Wahda, South Sudan",
-        "lat": 9.3394,
-        "lng": 28.9032,
-        "count": 3,
-        "firstSeen": "2026-11-12",
-        "lastSeen": "2026-11-12"
-      },
-      {
         "name": "Eritrea",
         "lat": 15,
         "lng": 39,
@@ -696,9 +688,9 @@
         "name": "Iranian",
         "lat": 32,
         "lng": 53,
-        "count": 51,
+        "count": 28,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-25"
+        "lastSeen": "2026-11-26"
       },
       {
         "name": "Baghdad, Baghdad, Iraq",
@@ -723,22 +715,6 @@
         "count": 12,
         "firstSeen": "2026-10-27",
         "lastSeen": "2026-11-18"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 12,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-25"
-      },
-      {
-        "name": "Hormozgan, Hormozgan, Iran",
-        "lat": 27.75,
-        "lng": 56.5,
-        "count": 11,
-        "firstSeen": "2026-11-12",
-        "lastSeen": "2026-11-12"
       },
       {
         "name": "Qatari",
@@ -773,19 +749,19 @@
         "lastSeen": "2026-11-19"
       },
       {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 5,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-26"
+      },
+      {
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
         "count": 4,
         "firstSeen": "2026-08-30",
-        "lastSeen": "2026-11-25"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 4,
-        "firstSeen": "2026-08-28",
         "lastSeen": "2026-11-25"
       },
       {
@@ -835,6 +811,14 @@
         "count": 4,
         "firstSeen": "2026-11-03",
         "lastSeen": "2026-11-24"
+      },
+      {
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-26"
       },
       {
         "name": "Doha, Ad Daw?Ah, Qatar",
