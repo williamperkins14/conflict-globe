@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-26T15:58:58.128Z",
+  "generated": "2026-11-27T01:15:36.730Z",
   "conflicts": {
     "ukraine": [
       {
@@ -685,28 +685,20 @@
     ],
     "iran": [
       {
-        "name": "Iranian",
-        "lat": 32,
-        "lng": 53,
-        "count": 32,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-26"
-      },
-      {
-        "name": "Saudi Arabia",
-        "lat": 25,
-        "lng": 45,
-        "count": 17,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-26"
-      },
-      {
         "name": "Musandam Peninsula, Musandam, Oman",
         "lat": 26.2706,
         "lng": 56.3892,
         "count": 15,
         "firstSeen": "2026-11-21",
         "lastSeen": "2026-11-21"
+      },
+      {
+        "name": "Iranian",
+        "lat": 32,
+        "lng": 53,
+        "count": 13,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-27"
       },
       {
         "name": "Bandar Abbas, Hormozgan, Iran",
@@ -765,12 +757,12 @@
         "lastSeen": "2026-11-19"
       },
       {
-        "name": "Bahrain",
-        "lat": 26,
-        "lng": 50.5,
-        "count": 5,
+        "name": "Saudi Arabia",
+        "lat": 25,
+        "lng": 45,
+        "count": 4,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-26"
+        "lastSeen": "2026-11-27"
       },
       {
         "name": "Armenia",
@@ -813,6 +805,14 @@
         "lastSeen": "2026-11-24"
       },
       {
+        "name": "Bahrain",
+        "lat": 26,
+        "lng": 50.5,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-27"
+      },
+      {
         "name": "Baghdad, Baghdad, Iraq",
         "lat": 33.3386,
         "lng": 44.3939,
@@ -826,7 +826,7 @@
         "lng": 51.25,
         "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-26"
+        "lastSeen": "2026-11-27"
       },
       {
         "name": "Doha, Ad Daw?Ah, Qatar",
