@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T01:15:36.730Z",
+  "generated": "2026-11-28T00:49:47.715Z",
   "conflicts": {
     "ukraine": [
       {
@@ -685,28 +685,20 @@
     ],
     "iran": [
       {
+        "name": "Iranian",
+        "lat": 32,
+        "lng": 53,
+        "count": 32,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-28"
+      },
+      {
         "name": "Musandam Peninsula, Musandam, Oman",
         "lat": 26.2706,
         "lng": 56.3892,
         "count": 15,
         "firstSeen": "2026-11-21",
         "lastSeen": "2026-11-21"
-      },
-      {
-        "name": "Iranian",
-        "lat": 32,
-        "lng": 53,
-        "count": 13,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-27"
-      },
-      {
-        "name": "Bandar Abbas, Hormozgan, Iran",
-        "lat": 27.1865,
-        "lng": 56.2808,
-        "count": 12,
-        "firstSeen": "2026-10-27",
-        "lastSeen": "2026-11-18"
       },
       {
         "name": "Kuwait",
@@ -717,6 +709,14 @@
         "lastSeen": "2026-11-26"
       },
       {
+        "name": "Qatari",
+        "lat": 25.5,
+        "lng": 51.25,
+        "count": 9,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-28"
+      },
+      {
         "name": "Dubai, Dubayy, United Arab Emirates",
         "lat": 25.2522,
         "lng": 55.28,
@@ -725,20 +725,28 @@
         "lastSeen": "2026-11-26"
       },
       {
+        "name": "Gulf Of Oman, Iran (General), Iran",
+        "lat": 25.4489,
+        "lng": 57.7939,
+        "count": 8,
+        "firstSeen": "2026-09-01",
+        "lastSeen": "2026-11-28"
+      },
+      {
+        "name": "Bandar Abbas, Hormozgan, Iran",
+        "lat": 27.1865,
+        "lng": 56.2808,
+        "count": 7,
+        "firstSeen": "2026-10-27",
+        "lastSeen": "2026-11-28"
+      },
+      {
         "name": "Chenab, Az¯Arbayjan-E Sharqi, Iran",
         "lat": 38.7604,
         "lng": 47.3786,
         "count": 7,
         "firstSeen": "2026-11-23",
         "lastSeen": "2026-11-23"
-      },
-      {
-        "name": "Iraq",
-        "lat": 33,
-        "lng": 44,
-        "count": 7,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-26"
       },
       {
         "name": "Ras Al Khaimah, Ra's Al Khaymah, United Arab Emirates",
@@ -760,9 +768,9 @@
         "name": "Saudi Arabia",
         "lat": 25,
         "lng": 45,
-        "count": 4,
+        "count": 5,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-27"
+        "lastSeen": "2026-11-28"
       },
       {
         "name": "Armenia",
@@ -771,14 +779,6 @@
         "count": 4,
         "firstSeen": "2026-08-31",
         "lastSeen": "2026-11-21"
-      },
-      {
-        "name": "Sirik, Hormozgan, Iran",
-        "lat": 26.5055,
-        "lng": 57.122,
-        "count": 4,
-        "firstSeen": "2026-11-08",
-        "lastSeen": "2026-11-14"
       },
       {
         "name": "Turkmenistan",
@@ -805,12 +805,20 @@
         "lastSeen": "2026-11-24"
       },
       {
+        "name": "Iraq",
+        "lat": 33,
+        "lng": 44,
+        "count": 3,
+        "firstSeen": "2026-08-28",
+        "lastSeen": "2026-11-28"
+      },
+      {
         "name": "Bahrain",
         "lat": 26,
         "lng": 50.5,
         "count": 3,
         "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-27"
+        "lastSeen": "2026-11-28"
       },
       {
         "name": "Baghdad, Baghdad, Iraq",
@@ -821,28 +829,12 @@
         "lastSeen": "2026-11-26"
       },
       {
-        "name": "Qatari",
-        "lat": 25.5,
-        "lng": 51.25,
-        "count": 3,
-        "firstSeen": "2026-08-28",
-        "lastSeen": "2026-11-27"
-      },
-      {
         "name": "Doha, Ad Daw?Ah, Qatar",
         "lat": 25.2867,
         "lng": 51.5333,
         "count": 3,
         "firstSeen": "2026-09-03",
         "lastSeen": "2026-11-25"
-      },
-      {
-        "name": "Gulf Of Oman, Iran (General), Iran",
-        "lat": 25.4489,
-        "lng": 57.7939,
-        "count": 3,
-        "firstSeen": "2026-09-01",
-        "lastSeen": "2026-11-24"
       },
       {
         "name": "Ali Al Salem Air Base, Kuwait (General), Kuwait",
@@ -867,6 +859,14 @@
         "count": 3,
         "firstSeen": "2026-11-25",
         "lastSeen": "2026-11-26"
+      },
+      {
+        "name": "Persian Gulf, Oceans (General), Oceans",
+        "lat": 27,
+        "lng": 51,
+        "count": 3,
+        "firstSeen": "2026-11-28",
+        "lastSeen": "2026-11-28"
       }
     ]
   },
